@@ -1,0 +1,12 @@
+{
+  "status": "SCOPE_AUDIT_SYNCED_WITH_DOCUMENTATION_BACKUPS",
+  "synced_at_utc": "2026-10-30T00:33:08.788152+00:00",
+  "sha256": {
+    "records/protocol_remaining_scope_20261030_0834/README.md": "c8b297ef2a70466ac93412b4b99365fa9c0b4106a58dec76d6f945a551f1b9a8",
+    "records/protocol_remaining_scope_20261030_0834/result.json": "9bd9c0cac01d48e3f8d2ade3ec4394b99aa573f7d0f36d5e695cb633932662fe",
+    "REPORT.md": "a0bbdc8cb7fec87c976f3134c7c9e03c6e19170fd5f0a333420d3259649bc37f",
+    "NEXT_STEPS.md": "fcc9d8a3354327200a03b6ac0a44184777ab8be10cd4901b2246f0a60150a39f"
+  },
+  "training_state_polled": false,
+  "running_sources_modified": false
+}

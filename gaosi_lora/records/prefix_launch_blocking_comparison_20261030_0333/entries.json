@@ -1,0 +1,14 @@
+[
+  {
+    "job": "diagnose_core_prefix_v7_launch_blocking_r1",
+    "config": "configs/diagnose_core_prefix_v7_launch_blocking_r1.json",
+    "config_sha256": "e2635a236123ff6d4cbdf8d5c6b7e49624ed915d745a1f735a5413d90025da14",
+    "MUSA_LAUNCH_BLOCKING": "1"
+  },
+  {
+    "job": "diagnose_core_prefix_v7_async_control_r2",
+    "config": "configs/diagnose_core_prefix_v7_async_control_r2.json",
+    "config_sha256": "153b9b620bd9019ef257b1c0c4e776d6c1e4aa42ad1e650696efa4798176483c",
+    "MUSA_LAUNCH_BLOCKING": null
+  }
+]

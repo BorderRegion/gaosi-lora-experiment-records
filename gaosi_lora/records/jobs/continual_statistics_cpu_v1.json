@@ -1,0 +1,17 @@
+{
+  "name": "continual_statistics_cpu_v1",
+  "command": [
+    "/usr/bin/python",
+    "-u",
+    "tools/validate_continual_statistics.py"
+  ],
+  "wrapper_pid": 103522,
+  "started_at_utc": "2026-10-29T14:04:44.035349+00:00",
+  "start_epoch": 1793282684.0353684,
+  "status": "PASS",
+  "child_pid": 103523,
+  "child_proc_start_ticks": "55675354",
+  "exit_code": 0,
+  "wall_seconds": 34.36967587471008,
+  "finished_at_utc": "2026-10-29T14:05:18.405050+00:00"
+}

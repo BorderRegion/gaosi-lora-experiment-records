@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "scope": "Pure complete-R continuation20/80 and one fixed entity reteach-two/untaught-six diagnostic. Both development-frozen rates, primary-K sources only.",
+  "contrasts": "phi-Dminus minus Adam-Dminus at0/20/80, and paired change-from0 contrasts at20/80; each versus the one matched retain-only continuation reference. F/R and candidate/strict EM separate. Positive F change means more target answers, not selective success.",
+  "pure_R_inference": "Average three corruptions within entity for seed17. Independent phi seeds outside shared entity draws; 2000 percentile bootstrap draws/seed7719. Seed17, confirmations29/43 and all three reported separately on common noise1729.",
+  "entity_inference": "Exactly one outcome-independent target entity, two taught IDs fixed by seed91. Never resample its six untaught attributes as six independent entities. Collapse each query part to the fixed request before seed inference; seed17 has no population interval. Multi-seed intervals describe phi-seed variability conditional on that same request and shared parents.",
+  "references": "Matched retain-only is shared across source methods, fractions and corruptions within continuation seed/rate/request. It does not enlarge the number of independent phi trainings. Reference comparisons deliberately have different source adapters.",
+  "audit": "Recompute raw query metrics, full F/R and taught2/untaught6 identities, source checkpoint hashes, frozen phi/rates, exact Dminus primary endpoint, complete0/20/80 trajectory, selected-only support IDs and identical paired token exposures.",
+  "interpretation": "Report F/R/language jointly, including raw initial and20/80 curves, coverage and costs. No automatic success/erasure label. Pure adapter continuation cannot erase immutable W0.",
+  "settings_selected_by_summary": false
+}

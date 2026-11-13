@@ -1,0 +1,43 @@
+{
+  "out": "runs/diagnose_L_training_recompute_v7/repeat_0",
+  "model": "/root/autodl-tmp/models/Qwen2.5-3B",
+  "base_revision": "3aab1f1954e9cc14eb9509a215f9e5ca08227a9b",
+  "rank": 32,
+  "targets": "all7",
+  "scale": 1.0,
+  "organization": "O1",
+  "device": "musa",
+  "architecture": "L",
+  "seed": 17,
+  "parents": [
+    "runs/parent_3b_meta_parent_a_r32_s17_extend512_v2/latest.pt",
+    "runs/parent_3b_meta_parent_b_r32_s17_extend512_v2/latest.pt"
+  ],
+  "parent_data": [
+    "data/synthetic/meta_parent_a.jsonl",
+    "data/synthetic/meta_parent_b.jsonl"
+  ],
+  "episode_K": [
+    2,
+    2
+  ],
+  "known_warm_episodes": 2,
+  "q_cycle": [
+    0.0,
+    0.5,
+    0.7
+  ],
+  "meta_lr": 0.0003,
+  "inner_lr": 0.0003,
+  "seq": 512,
+  "effective_tokens": 512,
+  "retain_weight": 0.25,
+  "retain_fact_support": true,
+  "penalty": 1.0,
+  "chunk": 262144,
+  "horizon": "EXACT_H2_tail",
+  "world_manifest": "data/synthetic/rules_integer_v1/active_manifest.json",
+  "selection_data": "development_only",
+  "calibration_manifest": "records/calibration_frozen.json",
+  "purpose": "Instrumented original readiness; raw gradient diagnosis only"
+}

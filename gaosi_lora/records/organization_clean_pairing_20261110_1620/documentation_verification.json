@@ -1,0 +1,18 @@
+{
+  "status": "BOTH_DOCUMENTATION_HISTORIES_PRESERVED_PRIMARY_V2_RECORDED",
+  "recorded_at_utc": "2026-11-10T16:26:57.608240+00:00",
+  "remote_reference_files_rehashed": 12,
+  "documents": {
+    "REPORT.md": {
+      "local_sha256": "01c6819977cdf5967217a54488380ed135abb5a3404c1b69fd4bf5702ff7a27f",
+      "remote_sha256": "c16709f2c46fa1311c93948974b06ec6f94edda5311b6985b202ffd870b831f7"
+    },
+    "NEXT_STEPS.md": {
+      "local_sha256": "fbb136d6adb999002302167e4c13ee7f00d59b6a0e027681dc00e6107605190e",
+      "remote_sha256": "48d8337be5c276e96a1eebd3afe3f1c37082cfeded80cc2a803a0d5b9f0355aa"
+    }
+  },
+  "training_or_controller_modified": false,
+  "method_validated": false,
+  "full_goal_complete": false
+}

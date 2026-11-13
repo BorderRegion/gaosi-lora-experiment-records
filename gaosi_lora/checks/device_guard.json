@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "scope": "Linux subprocess locking; no model or MUSA training performed",
+  "tests": {
+    "MUSA_leaves_only_no_dispatcher_or_CPU_locks": "PASS",
+    "two_real_processes_never_overlap_and_exec_preserves_PID": "PASS",
+    "process_exit_releases_device_without_stale_lock_deadlock": "PASS",
+    "live_predeployment_leaf_drains_before_new_training": "PASS",
+    "reused_PID_and_terminal_job_do_not_block": "PASS",
+    "job_ledger_records_real_child_identity_and_failure_code": "PASS"
+  }
+}

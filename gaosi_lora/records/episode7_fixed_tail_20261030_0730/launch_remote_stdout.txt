@@ -1,0 +1,143 @@
+{
+  "health": {
+    "utc": "2026-10-30T07:29:08.175812+00:00",
+    "pid1_ticks": "53704581",
+    "boot_id": "0f99d7c6-c419-42cc-a3dc-18fc7de07ff0",
+    "storage_GiB": {
+      "/root/autodl-tmp": {
+        "total": 1050.0,
+        "free": 983.18
+      },
+      "/": {
+        "total": 30.0,
+        "free": 18.17
+      }
+    },
+    "gpu_lock_inode": 31148027670,
+    "production_checkpoint_sha256": "1c5cb6f62eb38261a3738c0481d20af867ba2bb7c44e511e2a28f6895a203297",
+    "production_status": "FAIL",
+    "production_modified_or_restarted": false
+  },
+  "launch": {
+    "utc": "2026-10-30T07:29:08.278369+00:00",
+    "status": "ONE_BOUNDED_FIXED_TAIL_DIAGNOSTIC_LAUNCHED",
+    "job": "diagnose_L_episode7_fixed_tail_blocking_r1",
+    "command": [
+      "/usr/bin/python",
+      "-u",
+      "tools/job.py",
+      "--name",
+      "diagnose_L_episode7_fixed_tail_blocking_r1",
+      "--musa-lock",
+      "/tmp/gaosi_musa_device0.lock",
+      "--",
+      "/usr/bin/env",
+      "MUSA_LAUNCH_BLOCKING=1",
+      "/usr/bin/python",
+      "-u",
+      "tools/diagnose_fixed_tail_gradient.py",
+      "--config",
+      "configs/diagnose_L_episode7_fixed_tail_blocking_r1.json"
+    ],
+    "job_state": {
+      "name": "diagnose_L_episode7_fixed_tail_blocking_r1",
+      "command": [
+        "/usr/bin/env",
+        "MUSA_LAUNCH_BLOCKING=1",
+        "/usr/bin/python",
+        "-u",
+        "tools/diagnose_fixed_tail_gradient.py",
+        "--config",
+        "configs/diagnose_L_episode7_fixed_tail_blocking_r1.json"
+      ],
+      "wrapper_pid": 638925,
+      "started_at_utc": "2026-10-30T07:29:08.213137+00:00",
+      "start_epoch": 1793345348.2131577,
+      "status": "RUNNING",
+      "device_lock": {
+        "path": "/tmp/gaosi_musa_device0.lock",
+        "version": 1
+      },
+      "child_pid": 638926,
+      "child_proc_start_ticks": "61941771"
+    },
+    "wrapper_pid": 638925,
+    "wrapper_start_ticks": "61941768",
+    "config": "configs/diagnose_L_episode7_fixed_tail_blocking_r1.json",
+    "config_sha256": "7a4a28d0d32d500bb09cfc3c29260ce72f1cf15d6159827a5de7c99037054d9b",
+    "source_pins_validated": {
+      "status": "VALIDATED_NOT_EXECUTED",
+      "phi_updates": 0,
+      "tail_steps": 2,
+      "numeric_tail_evaluations": 7
+    },
+    "previous_jobs": {
+      "diagnose_L_episode7_same_state_async_r1": {
+        "name": "diagnose_L_episode7_same_state_async_r1",
+        "command": [
+          "/usr/bin/env",
+          "-u",
+          "MUSA_LAUNCH_BLOCKING",
+          "/usr/bin/python",
+          "-u",
+          "tools/diagnose_repeat_gradient.py",
+          "--config",
+          "configs/diagnose_L_episode7_same_state_async_r1.json"
+        ],
+        "wrapper_pid": 585691,
+        "started_at_utc": "2026-10-30T05:59:16.317681+00:00",
+        "start_epoch": 1793339956.317701,
+        "status": "PASS",
+        "device_lock": {
+          "path": "/tmp/gaosi_musa_device0.lock",
+          "version": 1
+        },
+        "child_pid": 585692,
+        "child_proc_start_ticks": "61402582",
+        "exit_code": 0,
+        "wall_seconds": 930.822624206543,
+        "finished_at_utc": "2026-10-30T06:14:47.140338+00:00"
+      },
+      "diagnose_L_episode7_same_state_blocking_r1": {
+        "name": "diagnose_L_episode7_same_state_blocking_r1",
+        "command": [
+          "/usr/bin/env",
+          "MUSA_LAUNCH_BLOCKING=1",
+          "/usr/bin/python",
+          "-u",
+          "tools/diagnose_repeat_gradient.py",
+          "--config",
+          "configs/diagnose_L_episode7_same_state_blocking_r1.json"
+        ],
+        "wrapper_pid": 585693,
+        "started_at_utc": "2026-10-30T05:59:16.419084+00:00",
+        "start_epoch": 1793339956.419102,
+        "status": "PASS",
+        "device_lock": {
+          "path": "/tmp/gaosi_musa_device0.lock",
+          "version": 1
+        },
+        "child_pid": 585694,
+        "child_proc_start_ticks": "61402592",
+        "exit_code": 0,
+        "wall_seconds": 3491.744165658951,
+        "finished_at_utc": "2026-10-30T06:57:28.163277+00:00"
+      }
+    },
+    "device_lock_inode": 31148027670,
+    "diagnostic_inner_updates_max": 22,
+    "phi_optimizer_updates": 0,
+    "core_budget_credit": 0,
+    "production_modified_or_restarted": false,
+    "formal_data_used": false,
+    "method_validated": false,
+    "estimated_runtime_minutes": [
+      30,
+      60
+    ],
+    "limitations": [
+      "BF16 fixed-tail finite differences are a sensitivity diagnosis, not exact derivative proof.",
+      "Do not promote the diagnostic phi or resume the failed production checkpoint."
+    ]
+  }
+}

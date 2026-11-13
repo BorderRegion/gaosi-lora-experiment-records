@@ -1,0 +1,10 @@
+{
+  "status": "OFFLINE_SCOPE_AUDIT_REVIEWED_AND_SYNCED",
+  "reviewed_at_utc": "2026-10-30T00:33:35.548358+00:00",
+  "files_verified": 4,
+  "scheduled_observer_live": true,
+  "scheduled_observer_state": "WAITING_UNTIL_DUE_NO_REMOTE_CONNECTION_YET",
+  "next_observation_due_utc": "2026-10-30T00:39:00+00:00",
+  "new_training_observation_taken": false,
+  "full_goal_complete": false
+}

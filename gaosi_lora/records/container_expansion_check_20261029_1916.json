@@ -1,0 +1,17 @@
+{
+  "status": "POST_EXPANSION_HEALTHY",
+  "utc": "2026-10-29T11:16:46+00:00",
+  "data_disk_total_GiB": 1050,
+  "data_disk_free_GiB": 1005.31,
+  "system_disk_free_GiB": 18.25,
+  "all_expected_queues_live": true,
+  "identity_validation": "PID, proc start ticks, non-zombie via tools/status.py",
+  "active_run": "recovery_dev_factor_medium_s17",
+  "last_training_step": 64,
+  "final_evaluation_pending": true,
+  "seven_b_acquisition_candidate_accuracy": 1.0,
+  "seven_b_acquisition_strict_EM": 1.0,
+  "manual_training_restart": false,
+  "next_routine_supervision_Beijing": "2026-10-29 19:46",
+  "monitoring_interval_minutes": 30
+}

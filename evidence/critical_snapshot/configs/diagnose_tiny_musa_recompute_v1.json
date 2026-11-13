@@ -1,0 +1,6 @@
+{
+  "name": "diagnose_tiny_musa_recompute_v1",
+  "script_sha256": "4a215ea7d957ffdf138ad9732371da78c0668e15804b6bd0df2c2919e12d33b0",
+  "device": "musa",
+  "scope": "Random tiny direct/recomputed H2 comparison; not real training efficacy"
+}

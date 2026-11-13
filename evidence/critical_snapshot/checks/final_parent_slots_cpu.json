@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "scope": "CPU tiny random fixtures; actual final knowledge remains untrained",
+  "tests": {
+    "all_fixed_slot_parent_matches_independent_Adam": "PASS",
+    "retain_only_fixed_slot_parent_matches_independent_Adam": "PASS",
+    "retain_only_omits_F_preserving_R_and_language_samples_and_mass": "PASS",
+    "fixed_slot_parent_resume_preserves_both_streams_bitwise": "PASS",
+    "final_parent_before_phi_freeze_rejected": "PASS"
+  }
+}

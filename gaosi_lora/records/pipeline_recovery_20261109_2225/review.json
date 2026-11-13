@@ -1,0 +1,26 @@
+{
+  "status": "SCHEDULED_SNAPSHOT_VERIFIED_AND_PRE_EXEC_GUARD_ALERT_DIAGNOSED",
+  "recorded_at_utc": "2026-11-09T22:21:40.649030+00:00",
+  "observation": "records/pipeline_monitor_20261109_221943_utc",
+  "archive_sha256": "ee078b8af883b6c81f791d453c74b406ec1d0ddf17175dce4171f9ce3b758a08",
+  "source_files_independently_rehashed": 97,
+  "controller_count": 15,
+  "controller_status_counts": {
+    "RUNNING": 12,
+    "PASS": 2,
+    "FAIL": 1
+  },
+  "raw_alerts_preserved": [
+    "horizon_known_K4_H2_s17_observed_blocking_v8: job ended FAIL",
+    "horizon_queue_observed_blocking_v8: job ended FAIL",
+    "horizon_support_modes_K4_boundary3_s17_observed_blocking_v8: blocking environment absent"
+  ],
+  "probe_alert_classification": "Device guard is blocked on the original lock before exec of /usr/bin/env MUSA_LAUNCH_BLOCKING=1; no probe computation has started. The active leaf must still have the actual blocking environment.",
+  "guard_capture": "records/pipeline_recovery_20261109_2225/guard_capture.json",
+  "guard_capture_sha256": "dd0dac171e08b16f0d9f6ac3934c1df5db0467e676443b6253e95737024c6128",
+  "predecessor_observer_terminal": true,
+  "device_lock_inode": 31148027670,
+  "production_modified_or_restarted": false,
+  "method_validated": false,
+  "full_goal_complete": false
+}

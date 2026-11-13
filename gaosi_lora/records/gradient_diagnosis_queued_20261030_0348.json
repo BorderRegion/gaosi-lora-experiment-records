@@ -1,0 +1,43 @@
+{
+  "utc": "2026-10-29T19:51:31.880483+00:00",
+  "reason": "Readiness K2 clean raw norm1.5522e14 and core episode7 q.5 raw norm2.7146e10, finite and clipped; derivative correctness unresolved",
+  "queued_job": {
+    "name": "diagnose_L_clean_K2_gradient_s17_v1",
+    "command": [
+      "/usr/bin/python",
+      "-u",
+      "tools/diagnose_meta_gradient.py",
+      "--config",
+      "configs/diagnose_L_clean_K2_gradient_s17_v1.json"
+    ],
+    "wrapper_pid": 275337,
+    "started_at_utc": "2026-10-29T19:51:31.815811+00:00",
+    "start_epoch": 1793303491.8158317,
+    "status": "RUNNING",
+    "device_lock": {
+      "path": "/tmp/gaosi_musa_device0.lock",
+      "version": 1
+    },
+    "child_pid": 275340,
+    "child_proc_start_ticks": "57756132"
+  },
+  "config": {
+    "out": "runs/diagnose_L_clean_K2_gradient_s17_v1",
+    "device": "musa",
+    "source_config": "configs/phi_L_real_episode_readiness_s17.json",
+    "source_config_sha256": "dedfe92961ffd2969a4b601b141583f51d4e77c5bfc11ac59a7e873a453896ea",
+    "epsilons": [
+      0.001,
+      0.01,
+      0.1
+    ],
+    "purpose": "Additional diagnosis of anomalous real clean K2 readiness gradient; not training or efficacy",
+    "formal_data_used": false,
+    "script_sha256": "6f33ecca819a412eb0f9819921ab58c6d44f7e0564bcaa5a81907ee24d5efaf8"
+  },
+  "process_identity_verified": true,
+  "running_training_unchanged": true,
+  "device_lock_shared": true,
+  "diagnostic_budget_separate": true,
+  "limitations": "BF16 central differences are sensitivity evidence, not smooth FP64 ground truth; no phi update or formal data."
+}

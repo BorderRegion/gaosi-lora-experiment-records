@@ -1,0 +1,19 @@
+{
+  "experiment_cutoff": "2026-11-11",
+  "public_export_date": "2026-11-13",
+  "method_validated": false,
+  "full_goal_complete": false,
+  "selected_architecture": "X",
+  "formal_phi_frozen": false,
+  "development_base_cells_completed": 60,
+  "phi_training_seeds_completed_in_development_comparison": [
+    17
+  ],
+  "O2_specialization": {
+    "episodes": 64,
+    "inner_updates": 512,
+    "numeric_status": "PASS",
+    "full_scientific_audit_complete": false
+  },
+  "conclusion": "Composite development scores favor both Adam baselines. Language NLL favors X2560 in 10/10 matched conditions; keep NLL favors both baselines in 9/10. No overall superiority established."
+}

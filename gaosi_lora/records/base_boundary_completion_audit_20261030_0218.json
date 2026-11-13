@@ -1,0 +1,129 @@
+{
+  "utc": "2026-10-29T18:20:05.114853+00:00",
+  "scope": "Development-only full-base-noise plus ordinary LoRA repair boundary; not phi efficacy, permanent deletion or main adapter-noise results",
+  "status": "PASS",
+  "run": "runs/base_boundary_small_Adam64_s17_v1",
+  "base_q": 0.0001,
+  "actual_relative_base_damage": 0.010130226569191488,
+  "pristine_base_digest": "d1f3f668a4bd02dbd1f1e6a04ba5ea1368ef67fa8686b1c9696c904016a6cfd4",
+  "perturbed_base_digest": "9ca155b79e1b11b82c87d17995a5a0be4ae486ada9e0e0c1534cb86b0eb3803b",
+  "repair_base_digest": "9ca155b79e1b11b82c87d17995a5a0be4ae486ada9e0e0c1534cb86b0eb3803b",
+  "corrupted_base_unchanged_during_repair": true,
+  "primary_K": 32,
+  "actual_K": 64,
+  "step_count": 64,
+  "complete_steps_1_to_64": true,
+  "coverage": 512,
+  "pool": 512,
+  "pristine_reference": {
+    "task": {
+      "n": 512,
+      "candidate_accuracy": 1.0,
+      "mean_margin": 10.186212864077874,
+      "nll": 0.023651785981122126,
+      "answer_tokens": 1288,
+      "strict_EM": 0.984375,
+      "abnormal_rate": 0.0
+    },
+    "language": {
+      "nll": 2.120082481864213,
+      "answer_tokens": 4463
+    }
+  },
+  "evaluations": {
+    "0": {
+      "event": "evaluation",
+      "utc": "2026-10-29T17:46:09.329005+00:00",
+      "process_wall_seconds": 572.3775355815887,
+      "step": 0,
+      "metrics": {
+        "task": {
+          "n": 512,
+          "candidate_accuracy": 1.0,
+          "mean_margin": 10.162707176583563,
+          "nll": 0.027222961904570936,
+          "answer_tokens": 1288,
+          "strict_EM": 0.984375,
+          "abnormal_rate": 0.0
+        },
+        "language": {
+          "nll": 2.1230488345410934,
+          "answer_tokens": 4463
+        }
+      },
+      "language_residual_nats": 0.0,
+      "coverage_slot": "task",
+      "coverage": 0,
+      "pool": 512
+    },
+    "32": {
+      "event": "evaluation",
+      "utc": "2026-10-29T17:58:59.318814+00:00",
+      "process_wall_seconds": 1342.367346048355,
+      "step": 32,
+      "metrics": {
+        "task": {
+          "n": 512,
+          "candidate_accuracy": 0.998046875,
+          "mean_margin": 10.874172668064451,
+          "nll": 0.026207988362700788,
+          "answer_tokens": 1288,
+          "strict_EM": 0.984375,
+          "abnormal_rate": 0.0
+        },
+        "language": {
+          "nll": 2.1383632779949426,
+          "answer_tokens": 4463
+        }
+      },
+      "language_residual_nats": 0.015314443453849247,
+      "coverage_slot": "task",
+      "coverage": 512,
+      "pool": 512
+    },
+    "64": {
+      "event": "evaluation",
+      "utc": "2026-10-29T18:06:25.690538+00:00",
+      "process_wall_seconds": 1788.739069223404,
+      "step": 64,
+      "metrics": {
+        "task": {
+          "n": 512,
+          "candidate_accuracy": 0.998046875,
+          "mean_margin": 11.110073147368553,
+          "nll": 0.016491752546792266,
+          "answer_tokens": 1288,
+          "strict_EM": 0.990234375,
+          "abnormal_rate": 0.0
+        },
+        "language": {
+          "nll": 2.1663288858848757,
+          "answer_tokens": 4463
+        }
+      },
+      "language_residual_nats": 0.04328005134378232,
+      "coverage_slot": "task",
+      "coverage": 512,
+      "pool": 512
+    }
+  },
+  "loss_changes_vs_pristine_base": {
+    "task": {
+      "injected": 0.00357117592344881,
+      "recovered": 0.01073120935777867,
+      "residual": -0.00716003343432986
+    },
+    "language": {
+      "injected": 0.0029663526768803905,
+      "recovered": -0.04328005134378232,
+      "residual": 0.04624640402066271
+    }
+  },
+  "phi_primary_training_started": false,
+  "limitations": [
+    "ordinary Adam base-noise development boundary; no phi efficacy evidence",
+    "digests and metrics are recorded-run evidence; checkpoints were not independently loaded or compared",
+    "primary recovery endpoint remains frozen K32; K64 is the longer diagnostic trajectory",
+    "readiness is not yet running; its configured two episodes do not test interruption/resumption"
+  ]
+}

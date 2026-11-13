@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "scope": "stdlib_adversarial_fixture_validation_only",
+  "checks": [
+    "accept_exact_common_warm_endpoint_metadata",
+    "reject_mismatched_3584_budget",
+    "reject_unfinished_endpoint",
+    "reject_changed_seed",
+    "reject_changed_load_initial_meta_optimizer",
+    "reject_changed_start_episode",
+    "missing_checkpoint_or_review_never_creates_job",
+    "reject_replaced_gpu_lock",
+    "accept_complete_recovery_ledger_fixture",
+    "reject_changed_recovery_K",
+    "reject_changed_data_seed",
+    "reject_incomplete_data_coverage",
+    "reject_changed_saved_numerical_source",
+    "reject_changed_phi_bytes"
+  ],
+  "training_started_or_modified": false,
+  "method_validated": false
+}

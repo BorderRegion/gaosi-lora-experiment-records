@@ -1,0 +1,91 @@
+--- original/phi_core_queue.py
++++ tools/phi_core_queue.py
+@@ -9,28 +9,7 @@
+ from storage import preserve_space
+ 
+ 
+-def run_job(name, command, resultfile):
+-    resultfile = Path(resultfile)
+-    jobfile = Path('records/jobs') / (name + '.json')
+-    if resultfile.exists():
+-        result = json.loads(resultfile.read_text())
+-        if result['status'] != 'PASS':
+-            raise RuntimeError(f'Preserved unsuccessful prerequisite {name}')
+-        return result
+-    if jobfile.exists():
+-        raise RuntimeError(f'Incomplete prior job {name}; inspect before resume')
+-    for event in preserve_space():
+-        print(json.dumps({'storage': event}), flush=True)
+-    with Path(f'records/logs/{name}.log').open('ab', buffering=0) as log:
+-        code = subprocess.call(['/usr/bin/python', '-u', 'tools/job.py', '--name', name,
+-                                '--', *command], stdout=log, stderr=subprocess.STDOUT,
+-                               stdin=subprocess.DEVNULL)
+-    if code:
+-        raise RuntimeError(f'{name} failed {code}; preserve trace and inspect')
+-    result = json.loads(resultfile.read_text())
+-    if result['status'] != 'PASS':
+-        raise RuntimeError(f'{name} returned unsuccessful result')
+-    return result
++from guarded_pipeline import run_job
+ 
+ 
+ def train(name, config):
+@@ -45,10 +24,15 @@
+     return result
+ 
+ 
++
++from guarded_pipeline import adopt_l as wait_for_adopted_l
++
++
+ def main():
+     p = argparse.ArgumentParser()
+-    p.add_argument('--calibration-job', default='calibration_queue')
++    p.add_argument('--calibration-job', default='calibration_queue_v3')
+     args = p.parse_args()
++    adopted_l = wait_for_adopted_l()
+     while not Path('records/calibration_frozen.json').exists():
+         job = Path('records/jobs') / (args.calibration_job + '.json')
+         if job.exists() and json.loads(job.read_text())['status'] != 'RUNNING':
+@@ -60,8 +44,8 @@
+     meta = [p for p in parents if 'meta_parent_' in p['config']['data']]
+     assert len(meta) == 2 and all(p['acquisition_gate_passed'] for p in meta)
+     dev = next(p for p in parents if p['config']['data'].endswith('dev_parent.jsonl'))
+-    for architecture in ['L', 'X']:
+-        name = f'profile_3b_{architecture}_H2_three_routes_learned_parent'
++    for architecture in ['X']:
++        name = f'profile_3b_{architecture}_H2_three_routes_learned_parent_observed_blocking_v8'
+         run_job(name, ['/usr/bin/python', '-u', 'tools/profile_transition.py',
+                        '--checkpoint', dev['checkpoint'], '--out', f'checks/{name}.json',
+                        '--seq', '512', '--effective-tokens', '512', '--architecture', architecture,
+@@ -86,17 +70,25 @@
+         smoke = copy.deepcopy(template)
+         smoke.update(architecture=architecture, episode_K=[2, 2], known_warm_episodes=2,
+                      purpose='real_end_to_end_optimizer_readiness_not_core_budget')
+-        train(f'phi_{architecture}_real_episode_readiness_s17', smoke)
++        if architecture != 'L':
++            train(f'phi_{architecture}_real_episode_readiness_s17_observed_blocking_v8', smoke)
+         core = copy.deepcopy(template)
+-        core.update(architecture=architecture, purpose='full_protocol_O1_phi_mix_2560')
+-        endpoints[architecture] = train(f'phi_mix_O1_{architecture}_H2_core_s17', core)
++        core.update(architecture=architecture, purpose='full_protocol_O1_phi_mix_2560_fresh_phi_candidate_blocking_mitigation_review_required')
++        if architecture == 'L':
++            expected = dict(core, out='runs/phi_mix_O1_L_H2_core_s17_observed_blocking_v8')
++            actual = json.loads(Path('configs/phi_mix_O1_L_H2_core_s17_observed_blocking_v8.json').read_text())
++            if actual != expected:
++                raise RuntimeError('Adopted L differs from the calibrated core template')
++            endpoints[architecture] = adopted_l
++        else:
++            endpoints[architecture] = train(f'phi_mix_O1_{architecture}_H2_core_s17_observed_blocking_v8', core)
+     # Exactly common phi and meta-optimizer state at 512 inner updates. All
+     # subsequent episode indexes, data seeds and q cycling match the H2 core.
+     alternate = copy.deepcopy(template)
+     alternate.update(architecture='L', horizon='H1', start_episode=64,
+-                     initial_phi='runs/phi_mix_O1_L_H2_core_s17/phi_0512.pt',
++                     initial_phi='runs/phi_mix_O1_L_H2_core_s17_observed_blocking_v8/phi_0512.pt',
+                      load_initial_meta_optimizer=True, purpose='common_512_warm_alternate_H1')
+-    alternate_result = train('phi_mix_O1_L_H1_commonwarm_s17', alternate)
++    alternate_result = train('phi_mix_O1_L_H1_commonwarm_s17_observed_blocking_v8', alternate)
+     manifest = {'status': 'CORE_TRAINING_COMPLETE_PENDING_DEV_SELECTION', 'core_endpoints': endpoints,
+                 'alternate_horizon': alternate_result, 'main_inner_steps_each': 2560,
+                 'common_warm_inner_steps': 512, 'alternate_additional_steps': 2048,

@@ -1,0 +1,20 @@
+--- original/final_parent_queue.py
++++ tools/final_parent_queue.py
+@@ -16,7 +16,7 @@
+ 
+ def main():
+     parser = argparse.ArgumentParser()
+-    parser.add_argument('--organization-job', default='organization_queue_v1')
++    parser.add_argument('--organization-job', default='organization_queue_observed_blocking_v8')
+     args = parser.parse_args()
+     assert json.loads(Path('checks/final_parent_slots_cpu.json').read_text())['status'] == 'PASS'
+     frozen = wait_for('records/all_phi_frozen.json', args.organization_job)
+@@ -59,7 +59,7 @@
+         c = dict(template, parent_mode=mode)
+         if mode == 'retain_only':
+             c['query_data'] = str(retain_file)
+-        outcomes[mode] = fit_parent(f'parent_3b_final_{mode}_matched_s17', c)
++        outcomes[mode] = fit_parent(f'parent_3b_final_{mode}_matched_s17_observed_blocking_v8', c)
+     if not all(r['acquisition_gate_passed'] for r in outcomes.values()):
+         for mode, previous in list(outcomes.items()):
+             c = dict(previous['config'], steps=512, continue_from=previous['checkpoint'],

@@ -1,0 +1,322 @@
+{
+  "status": "TWELFTH_DEVELOPMENT_CELL_AND_KNOWN_TASK_CHECKPOINT_PAIRS_DESCRIPTIVE_REVIEW_ONLY",
+  "recorded_at_utc": "2026-11-05T19:28:11.013155+00:00",
+  "scope": "L-H2 known development task, q_apply0/0.7, seed17, K64;12 of60 base development cells complete. Only2 of10 checkpoint-matched L2048/L2560 cells are complete, both from the known-task family.",
+  "run": "runs/phi_dev_L_2560_t0_medium_s17",
+  "task_data": "data/synthetic/dev_parent.jsonl",
+  "keep_data": "data/synthetic/dev_parent.jsonl",
+  "task_and_keep_are_the_same_query_pool": true,
+  "checkpoint_pair_config_differences_verified": [
+    "out",
+    "phi"
+  ],
+  "dose_pair_config_differences_verified": [
+    "out",
+    "q_apply"
+  ],
+  "clean_evaluation_identical_across_all_four_cells": true,
+  "medium_initial_evaluation_identical_across_checkpoints": true,
+  "metrics_by_phi_training_updates": {
+    "2048": {
+      "clean": {
+        "clean": {
+          "task": {
+            "candidate_correct": 512,
+            "strict_EM_correct": 504,
+            "query_count": 512,
+            "nll": 0.023651785981122126
+          },
+          "keep": {
+            "candidate_correct": 512,
+            "strict_EM_correct": 504,
+            "query_count": 512,
+            "nll": 0.023651785981122126
+          }
+        },
+        "initial": {
+          "task": {
+            "candidate_correct": 512,
+            "strict_EM_correct": 504,
+            "query_count": 512,
+            "nll": 0.023651785981122126
+          },
+          "keep": {
+            "candidate_correct": 512,
+            "strict_EM_correct": 504,
+            "query_count": 512,
+            "nll": 0.023651785981122126
+          }
+        },
+        "final": {
+          "task": {
+            "candidate_correct": 510,
+            "strict_EM_correct": 506,
+            "query_count": 512,
+            "nll": 0.01921761107767991
+          },
+          "keep": {
+            "candidate_correct": 510,
+            "strict_EM_correct": 506,
+            "query_count": 512,
+            "nll": 0.01921761107767991
+          }
+        }
+      },
+      "medium": {
+        "clean": {
+          "task": {
+            "candidate_correct": 512,
+            "strict_EM_correct": 504,
+            "query_count": 512,
+            "nll": 0.023651785981122126
+          },
+          "keep": {
+            "candidate_correct": 512,
+            "strict_EM_correct": 504,
+            "query_count": 512,
+            "nll": 0.023651785981122126
+          }
+        },
+        "initial": {
+          "task": {
+            "candidate_correct": 364,
+            "strict_EM_correct": 362,
+            "query_count": 512,
+            "nll": 0.3426414310627744
+          },
+          "keep": {
+            "candidate_correct": 364,
+            "strict_EM_correct": 362,
+            "query_count": 512,
+            "nll": 0.3426414310627744
+          }
+        },
+        "final": {
+          "task": {
+            "candidate_correct": 510,
+            "strict_EM_correct": 498,
+            "query_count": 512,
+            "nll": 0.06108506727984276
+          },
+          "keep": {
+            "candidate_correct": 510,
+            "strict_EM_correct": 498,
+            "query_count": 512,
+            "nll": 0.06108506727984276
+          }
+        }
+      }
+    },
+    "2560": {
+      "clean": {
+        "clean": {
+          "task": {
+            "candidate_correct": 512,
+            "strict_EM_correct": 504,
+            "query_count": 512,
+            "nll": 0.023651785981122126
+          },
+          "keep": {
+            "candidate_correct": 512,
+            "strict_EM_correct": 504,
+            "query_count": 512,
+            "nll": 0.023651785981122126
+          }
+        },
+        "initial": {
+          "task": {
+            "candidate_correct": 512,
+            "strict_EM_correct": 504,
+            "query_count": 512,
+            "nll": 0.023651785981122126
+          },
+          "keep": {
+            "candidate_correct": 512,
+            "strict_EM_correct": 504,
+            "query_count": 512,
+            "nll": 0.023651785981122126
+          }
+        },
+        "final": {
+          "task": {
+            "candidate_correct": 511,
+            "strict_EM_correct": 506,
+            "query_count": 512,
+            "nll": 0.016017792729135494
+          },
+          "keep": {
+            "candidate_correct": 511,
+            "strict_EM_correct": 506,
+            "query_count": 512,
+            "nll": 0.016017792729135494
+          }
+        }
+      },
+      "medium": {
+        "clean": {
+          "task": {
+            "candidate_correct": 512,
+            "strict_EM_correct": 504,
+            "query_count": 512,
+            "nll": 0.023651785981122126
+          },
+          "keep": {
+            "candidate_correct": 512,
+            "strict_EM_correct": 504,
+            "query_count": 512,
+            "nll": 0.023651785981122126
+          }
+        },
+        "initial": {
+          "task": {
+            "candidate_correct": 364,
+            "strict_EM_correct": 362,
+            "query_count": 512,
+            "nll": 0.3426414310627744
+          },
+          "keep": {
+            "candidate_correct": 364,
+            "strict_EM_correct": 362,
+            "query_count": 512,
+            "nll": 0.3426414310627744
+          }
+        },
+        "final": {
+          "task": {
+            "candidate_correct": 507,
+            "strict_EM_correct": 498,
+            "query_count": 512,
+            "nll": 0.06749915890835728
+          },
+          "keep": {
+            "candidate_correct": 507,
+            "strict_EM_correct": 498,
+            "query_count": 512,
+            "nll": 0.06749915890835728
+          }
+        }
+      }
+    }
+  },
+  "language_nll_by_phi_training_updates": {
+    "2048": {
+      "clean": {
+        "clean": 2.120082481864213,
+        "initial": 2.120082481864213,
+        "final": 2.140236832223183
+      },
+      "medium": {
+        "clean": 2.120082481864213,
+        "initial": 2.140740751632521,
+        "final": 2.1175214745072592
+      }
+    },
+    "2560": {
+      "clean": {
+        "clean": 2.120082481864213,
+        "initial": 2.120082481864213,
+        "final": 2.138567423649548
+      },
+      "medium": {
+        "clean": 2.120082481864213,
+        "initial": 2.140740751632521,
+        "final": 2.117195805919937
+      }
+    }
+  },
+  "medium_loss_changes": {
+    "2048": {
+      "task": {
+        "injected": 0.3189896450816523,
+        "recovered": 0.28155636378293164,
+        "residual": 0.03743328129872063
+      },
+      "keep": {
+        "injected": 0.3189896450816523,
+        "recovered": 0.28155636378293164,
+        "residual": 0.03743328129872063
+      },
+      "language": {
+        "injected": 0.0206582697683082,
+        "recovered": 0.02321927712526195,
+        "residual": -0.0025610073569537484
+      }
+    },
+    "2560": {
+      "task": {
+        "injected": 0.3189896450816523,
+        "recovered": 0.2751422721544171,
+        "residual": 0.04384737292723516
+      },
+      "keep": {
+        "injected": 0.3189896450816523,
+        "recovered": 0.2751422721544171,
+        "residual": 0.04384737292723516
+      },
+      "language": {
+        "injected": 0.0206582697683082,
+        "recovered": 0.02354494571258403,
+        "residual": -0.0028866759442758294
+      }
+    }
+  },
+  "checkpoint2560_minus2048_final": {
+    "clean": {
+      "candidate_correct": 1,
+      "strict_EM_correct": 0,
+      "task_nll": -0.0031998183485444157,
+      "language_nll": -0.0016694085736350672
+    },
+    "medium": {
+      "candidate_correct": -3,
+      "strict_EM_correct": 0,
+      "task_nll": 0.006414091628514522,
+      "language_nll": -0.00032566858732208104
+    }
+  },
+  "job_wall_seconds": {
+    "2048": {
+      "clean": 7827.016048669815,
+      "medium": 7966.128138542175
+    },
+    "2560": {
+      "clean": 7510.800407409668,
+      "medium": 7714.773886442184
+    }
+  },
+  "interpretation": "At phi2560 q0.7, known-task candidate accuracy recovers364 to507/512 and strictEM362 to498/512. Compared with the clean parent512 and504,5 candidate and6 strictEM errors remain in aggregate. The corresponding phi2048 run ends510 and498: the later checkpoint has3 fewer candidate-correct answers, identical strictEM, and task NLL0.06750 versus0.06109. The q0 checkpoint comparison previously had1 more candidate-correct answer and identical strictEM. These two known-task pairs therefore give mixed, small checkpoint differences, without evidence of uniform improvement from additional meta-training. Task and keep share the same pool and cannot provide independent retention evidence. No matched Adam result, aggregate family-balanced selection score, convergence conclusion or conditional-extension decision is available.",
+  "evidence_sha256": {
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t0_clean_s17.json": "01546584f94766f18038c2fa7463e6a2f622e91818c781e38e1c9f1985426ba4",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t0_medium_s17.json": "a0fba54f09871edbdb1bb4e507d280fb56b8130ce900f3f9247bd84f3116582e",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t0_clean_s17.json": "0296fd3695b886874b772dec1f0298538c82789bc08e1f986e52f537739bc54c",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t0_medium_s17.json": "d5b3a8ae8c4ece5bfe267ef4d5ed9c411ee6e2df737e28000719fc993d8395cb",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t0_clean_s17_evidence/snapshot/runs/phi_dev_L_2048_t0_clean_s17/config.json": "dd00289eee037d1b6480164664ca612d0d42dc05b10990c14ae49cda3f676103",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t0_medium_s17_evidence/snapshot/runs/phi_dev_L_2048_t0_medium_s17/config.json": "2c0eebc3bef6cf3665af168abd71f151d213acd4c922ad6666831bf4cb599400",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t0_clean_s17_evidence/snapshot/runs/phi_dev_L_2560_t0_clean_s17/config.json": "d501d0e33bb6262f05bcfd44b93ddceb6f2eb8d8e27efb9fc9d3512a7037693c",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t0_medium_s17_evidence/snapshot/runs/phi_dev_L_2560_t0_medium_s17/config.json": "bcfb37617619159ebc624a0d48de650754fd50e60a8b6ac0ecd7ddeb0e3d20bd",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2048_t0_clean_s17.json": "417e47f2bf5486d8349c4a626fab18673bacdcb9287f2b68fbf05dab732295af",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2048_t0_medium_s17.json": "5a819593aeaa3231554ada855eaf30ee6b207f89729ca746e128b603e959047a",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2560_t0_clean_s17.json": "4b58a5c25d4229ef125db1eb482b53e3dcd5d4c3398d599678c2521841ffc4d0",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2560_t0_medium_s17.json": "5c687f3955311644521703bafd8c817ac469923331b0e9c89abf69a5c3672983",
+    "records/pipeline_observer_20261104_1301/followup_20261105_1925.json": "ffe1db9697560672e02631c2457bb437bf66214814cb2ef640432f17ff174d79"
+  },
+  "limitations": [
+    "CPU inspection of saved tensors and re-aggregation of saved predictions only; no model forward, tokenizer or derivative recomputation.",
+    "Language NLL is checked against the event ledger; no saved per-token language audit.",
+    "Model compute counters omit direct QA candidate/generation calls; they are not total evaluation FLOPs or total model forwards.",
+    "Frozen phi/base flags plus pinned source and file identities are provenance evidence, not an independent in-memory mutation trace.",
+    "No paired-method efficacy, held-out generalization, convergence or multi-seed conclusion from one completed development cell.",
+    "One known-task pool at one phi seed and one nonzero noise seed; no independent seed replication or uncertainty estimate.",
+    "The shared task/keep query pool is not independent new-learning and retention evidence.",
+    "Only2 of10 matched2048/2560 cells are complete, from the same known family; the frozen family-balanced aggregate policy is not evaluated or changed.",
+    "Net correct-count deficits do not identify which clean-correct queries were recovered without a separate per-query transition analysis.",
+    "Checkpoint comparisons and clean/noise comparisons do not establish optimizer superiority, generalization, sufficient meta-training or a noise benefit."
+  ],
+  "selection_policy_changed": false,
+  "aggregate_selection_score_computed": false,
+  "conditional_extension_decision_made": false,
+  "scientific_receipt_generated": false,
+  "method_validated": false,
+  "full_goal_complete": false,
+  "training_modified_or_restarted": false
+}

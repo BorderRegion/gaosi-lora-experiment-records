@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "purpose": "Few full H4/H8 development trajectories versus H1/H2 terminal gradients at the same K and numerical state.",
+  "task_selection": "Known development parent plus first fact development world sorted by world_id.",
+  "phi": "Development-selected mixed core checkpoint, unchanged; no phi or adapter optimization is retained.",
+  "K": [
+    4,
+    8
+  ],
+  "tails_for_each_K": "1,2,K",
+  "q": "Frozen development medium dose; one shared corruption per task/K replay.",
+  "data_seed": 1701,
+  "query_seed": 1702,
+  "noise_seed": 1729,
+  "support": "Production task + .25*(half inner language, half development known facts), three routes each512 effective tokens.",
+  "query": "One fixed512-effective-token batch group per task/keep/dev-language route. Positive terminal task CE plus language/keep residual above .1; not a full512-binding recovery benchmark.",
+  "features": "Same declared total K across tails; all adapter, moment and continuous-history dependencies remain within the exact tail.",
+  "metrics": "Full terminal state/sample-flow equality, objective, phi gradient cosine and relative L2 error against complete H4/H8, wall/peak memory/compute.",
+  "limitation": "Record explicit MUSA OOM or unavailable operator; no sequence/rank/token reduction, no silent H1 substitute. Unknown failure stops for diagnosis.",
+  "training_settings_selected_from_this_diagnostic": false,
+  "formal_data_used": false
+}

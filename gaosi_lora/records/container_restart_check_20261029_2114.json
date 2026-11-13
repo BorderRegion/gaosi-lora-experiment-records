@@ -1,0 +1,588 @@
+{
+  "utc": "2026-10-29T13:15:15.024381+00:00",
+  "check": "Lightweight post-expansion verification; no training process restarted",
+  "supervision": {
+    "utc": "2026-10-29T13:14:00.995016+00:00",
+    "jobs": [
+      {
+        "job": "base_boundary_queue_v1",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 68031,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "tools/base_boundary_queue.py"
+        ]
+      },
+      {
+        "job": "calibration_queue_v3",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 3901,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "records/restart_20261029_1641/continue_calibration.py"
+        ]
+      },
+      {
+        "job": "confirmation_queue_v1",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 83680,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "tools/confirmation_queue.py"
+        ]
+      },
+      {
+        "job": "continual_queue_v1",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 57128,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "tools/continual_queue.py"
+        ]
+      },
+      {
+        "job": "factor_recovery_queue_v1",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 45773,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "tools/factor_recovery_queue.py"
+        ]
+      },
+      {
+        "job": "final_parent_queue_v1",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 18882,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "tools/final_parent_queue.py",
+          "--organization-job",
+          "organization_queue_v1"
+        ]
+      },
+      {
+        "job": "formal_recovery_queue_v2",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 47495,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "tools/formal_recovery_queue.py",
+          "--final-parent-job",
+          "final_parent_queue_v1",
+          "--factor-job",
+          "factor_recovery_queue_v1"
+        ]
+      },
+      {
+        "job": "horizon_queue_v1",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 75728,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "tools/horizon_queue.py"
+        ]
+      },
+      {
+        "job": "organization_queue_v1",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 7370,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "tools/organization_queue.py",
+          "--development-job",
+          "phi_development_queue_v1"
+        ]
+      },
+      {
+        "job": "phi_core_queue_v3",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 3902,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "tools/phi_core_queue.py",
+          "--calibration-job",
+          "calibration_queue_v3"
+        ]
+      },
+      {
+        "job": "phi_development_queue_v1",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 5211,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "tools/phi_development_queue.py",
+          "--core-job",
+          "phi_core_queue_v3"
+        ]
+      },
+      {
+        "job": "recovery_dev_factor_ratio4_lr3e-05_s17_v1",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 76873,
+        "process_state": "R",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "-m",
+          "gaosi.recover",
+          "--config",
+          "configs/recovery_dev_factor_ratio4_lr3e-05_s17_v1.json"
+        ]
+      },
+      {
+        "job": "recovery_dev_factor_s17",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 85208,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "-m",
+          "gaosi.recover",
+          "--config",
+          "configs/recovery_dev_factor_s17.json"
+        ]
+      },
+      {
+        "job": "reflow_queue_v1",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 52783,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "tools/reflow_queue.py"
+        ]
+      },
+      {
+        "job": "seven_b_early_queue_v1",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 30266,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "tools/seven_b_early_queue.py"
+        ]
+      },
+      {
+        "job": "seven_b_scale_queue_v1",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 64131,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "tools/seven_b_queue.py"
+        ]
+      }
+    ],
+    "recent_runs": [
+      {
+        "run": "runs/recovery_dev_factor_ratio4_lr3e-05_s17_v1",
+        "last": {
+          "event": "recover",
+          "utc": "2026-10-29T13:13:53.856101+00:00",
+          "process_wall_seconds": 374.1010341644287,
+          "step": 2,
+          "loss_D": 0.057817861437797546,
+          "loss_language": 2.695840358734131,
+          "route_tokens": {
+            "task": 534,
+            "language": 1022
+          },
+          "step_seconds": 9.19878363609314,
+          "coverage_slot": "task",
+          "coverage": 421,
+          "raw_update_norm": 0.4749847650527954,
+          "update_norm": 0.4749847650527954,
+          "update_norm_scale": 1.0,
+          "compute_counters": {
+            "loss_forwards": 40,
+            "loss_backwards": 22,
+            "input_tokens": 19998,
+            "supervised_tokens": 12028,
+            "hessian_vector_products": 0
+          },
+          "cpu_rss_bytes": 7773929472,
+          "allocated_bytes": 9410537472,
+          "reserved_bytes": 18467520512,
+          "peak_allocated_bytes": 15528120832,
+          "peak_reserved_bytes": 18467520512
+        },
+        "last_evaluation": {
+          "event": "evaluation",
+          "utc": "2026-10-29T13:13:33.551213+00:00",
+          "process_wall_seconds": 353.79615354537964,
+          "step": 0,
+          "metrics": {
+            "task": {
+              "n": 512,
+              "candidate_accuracy": 0.7109375,
+              "mean_margin": 1.517247106036848,
+              "nll": 0.3426414310627744,
+              "answer_tokens": 1288,
+              "strict_EM": 0.70703125,
+              "abnormal_rate": 0.0
+            },
+            "language": {
+              "nll": 2.140740751632521,
+              "answer_tokens": 4463
+            }
+          },
+          "language_residual_nats": 0.0206582697683082,
+          "coverage_slot": "task",
+          "coverage": 0,
+          "pool": 512
+        },
+        "checkpoint_mtime_utc": "2026-10-29T13:13:55.245245+00:00"
+      },
+      {
+        "run": "runs/recovery_dev_uniform_s17",
+        "last": {
+          "event": "evaluation",
+          "utc": "2026-10-29T13:07:22.411055+00:00",
+          "process_wall_seconds": 1553.2555847167969,
+          "step": 64,
+          "metrics": {
+            "task": {
+              "n": 512,
+              "candidate_accuracy": 1.0,
+              "mean_margin": 11.232882985146261,
+              "nll": 0.010771322602251561,
+              "answer_tokens": 1288,
+              "strict_EM": 0.9921875,
+              "abnormal_rate": 0.0
+            },
+            "language": {
+              "nll": 2.130826590548923,
+              "answer_tokens": 4463
+            }
+          },
+          "language_residual_nats": 0.010744108684709985,
+          "coverage_slot": "task",
+          "coverage": 512,
+          "pool": 512
+        },
+        "last_evaluation": {
+          "event": "evaluation",
+          "utc": "2026-10-29T13:07:22.411055+00:00",
+          "process_wall_seconds": 1553.2555847167969,
+          "step": 64,
+          "metrics": {
+            "task": {
+              "n": 512,
+              "candidate_accuracy": 1.0,
+              "mean_margin": 11.232882985146261,
+              "nll": 0.010771322602251561,
+              "answer_tokens": 1288,
+              "strict_EM": 0.9921875,
+              "abnormal_rate": 0.0
+            },
+            "language": {
+              "nll": 2.130826590548923,
+              "answer_tokens": 4463
+            }
+          },
+          "language_residual_nats": 0.010744108684709985,
+          "coverage_slot": "task",
+          "coverage": 512,
+          "pool": 512
+        },
+        "checkpoint_mtime_utc": "2026-10-29T13:04:43.114109+00:00"
+      },
+      {
+        "run": "runs/recovery_dev_factor_ratio1_lr0.0001_s17_v1",
+        "last": {
+          "event": "evaluation",
+          "utc": "2026-10-29T12:41:13.353743+00:00",
+          "process_wall_seconds": 1680.9148955345154,
+          "step": 64,
+          "metrics": {
+            "task": {
+              "n": 512,
+              "candidate_accuracy": 0.9921875,
+              "mean_margin": 9.368001475216309,
+              "nll": 0.060797099562368645,
+              "answer_tokens": 1288,
+              "strict_EM": 0.974609375,
+              "abnormal_rate": 0.0
+            },
+            "language": {
+              "nll": 2.1157796013763925,
+              "answer_tokens": 4463
+            }
+          },
+          "language_residual_nats": -0.00430288048782046,
+          "coverage_slot": "task",
+          "coverage": 512,
+          "pool": 512
+        },
+        "last_evaluation": {
+          "event": "evaluation",
+          "utc": "2026-10-29T12:41:13.353743+00:00",
+          "process_wall_seconds": 1680.9148955345154,
+          "step": 64,
+          "metrics": {
+            "task": {
+              "n": 512,
+              "candidate_accuracy": 0.9921875,
+              "mean_margin": 9.368001475216309,
+              "nll": 0.060797099562368645,
+              "answer_tokens": 1288,
+              "strict_EM": 0.974609375,
+              "abnormal_rate": 0.0
+            },
+            "language": {
+              "nll": 2.1157796013763925,
+              "answer_tokens": 4463
+            }
+          },
+          "language_residual_nats": -0.00430288048782046,
+          "coverage_slot": "task",
+          "coverage": 512,
+          "pool": 512
+        },
+        "checkpoint_mtime_utc": "2026-10-29T12:38:31.966294+00:00"
+      }
+    ],
+    "queue": {
+      "utc": "2026-10-29T05:57:59.297986+00:00",
+      "event": "DEVELOPMENT_AND_PARENTS_COMPLETE",
+      "note": "Noise calibration and production H1/H2 profile are next; phi core is not marked complete."
+    },
+    "storage": {
+      "/root/autodl-tmp": {
+        "free_bytes": 1073202311168,
+        "total_bytes": 1127428915200
+      },
+      "/": {
+        "free_bytes": 19592581120,
+        "total_bytes": 32212254720
+      }
+    }
+  },
+  "container_pid1": {
+    "returncode": 0,
+    "output": "   PID                  STARTED COMMAND\n     1 Thu Oct 29 16:36:15 2026 bash /init/boot/boot.sh\n"
+  },
+  "storage_mounts": {
+    "returncode": 0,
+    "output": "Filesystem     Type     Size  Used Avail Use% Mounted on\n/dev/md0       xfs      1.1T   51G 1000G   5% /root/autodl-tmp\noverlay        overlay   30G   12G   19G  40% /\n"
+  },
+  "device_observation": {
+    "local_time": "2026-10-29T21:14:16+08:00",
+    "process_pid": 76873,
+    "memory_MiB": 18426,
+    "total_memory_MiB": 49152,
+    "temperature_C": 53,
+    "utilization_percent": 2,
+    "note": "Single snapshot between training/evaluation; recent recover event step2 at 21:13:53 verifies progress."
+  },
+  "checkpoints": [
+    {
+      "path": "runs/parent_7b_dev_lr1e-4_s17_continue512_v1/latest.pt",
+      "exists": true,
+      "bytes": 969369357,
+      "previous_bytes": 969369357,
+      "size_matches": true
+    },
+    {
+      "path": "runs/parent_3b_meta_parent_a_r32_s17_extend512_v2/latest.pt",
+      "exists": true,
+      "bytes": 719024717,
+      "previous_bytes": 719024717,
+      "size_matches": true
+    },
+    {
+      "path": "runs/parent_3b_meta_parent_b_r32_s17_extend512_v2/latest.pt",
+      "exists": true,
+      "bytes": 719024717,
+      "previous_bytes": 719024717,
+      "size_matches": true
+    },
+    {
+      "path": "runs/parent_3b_dev_parent_r32_s17_extend512_v2/latest.pt",
+      "exists": true,
+      "bytes": 719023117,
+      "previous_bytes": 719023117,
+      "size_matches": true
+    }
+  ],
+  "models": [
+    {
+      "model": "Qwen2.5-3B",
+      "shards": [
+        {
+          "path": "/root/autodl-tmp/models/Qwen2.5-3B/model-00001-of-00002.safetensors",
+          "exists": true,
+          "bytes": 3968658944,
+          "size_matches": true
+        },
+        {
+          "path": "/root/autodl-tmp/models/Qwen2.5-3B/model-00002-of-00002.safetensors",
+          "exists": true,
+          "bytes": 2203268048,
+          "size_matches": true
+        }
+      ]
+    },
+    {
+      "model": "Qwen2.5-7B",
+      "shards": [
+        {
+          "path": "/root/autodl-tmp/models/Qwen2.5-7B/model-00001-of-00004.safetensors",
+          "exists": true,
+          "bytes": 3945441440,
+          "size_matches": true
+        },
+        {
+          "path": "/root/autodl-tmp/models/Qwen2.5-7B/model-00002-of-00004.safetensors",
+          "exists": true,
+          "bytes": 3864726352,
+          "size_matches": true
+        },
+        {
+          "path": "/root/autodl-tmp/models/Qwen2.5-7B/model-00003-of-00004.safetensors",
+          "exists": true,
+          "bytes": 3864726424,
+          "size_matches": true
+        },
+        {
+          "path": "/root/autodl-tmp/models/Qwen2.5-7B/model-00004-of-00004.safetensors",
+          "exists": true,
+          "bytes": 3556377672,
+          "size_matches": true
+        }
+      ]
+    }
+  ],
+  "run_symlinks": {
+    "count": 16,
+    "broken": []
+  },
+  "log_tail_error_matches": [
+    {
+      "job": "base_boundary_queue_v1",
+      "log_exists": true,
+      "matches": []
+    },
+    {
+      "job": "calibration_queue_v3",
+      "log_exists": true,
+      "matches": []
+    },
+    {
+      "job": "confirmation_queue_v1",
+      "log_exists": true,
+      "matches": []
+    },
+    {
+      "job": "continual_queue_v1",
+      "log_exists": true,
+      "matches": []
+    },
+    {
+      "job": "factor_recovery_queue_v1",
+      "log_exists": true,
+      "matches": []
+    },
+    {
+      "job": "final_parent_queue_v1",
+      "log_exists": true,
+      "matches": []
+    },
+    {
+      "job": "formal_recovery_queue_v2",
+      "log_exists": true,
+      "matches": []
+    },
+    {
+      "job": "horizon_queue_v1",
+      "log_exists": true,
+      "matches": []
+    },
+    {
+      "job": "organization_queue_v1",
+      "log_exists": true,
+      "matches": []
+    },
+    {
+      "job": "phi_core_queue_v3",
+      "log_exists": true,
+      "matches": []
+    },
+    {
+      "job": "phi_development_queue_v1",
+      "log_exists": true,
+      "matches": []
+    },
+    {
+      "job": "recovery_dev_factor_ratio4_lr3e-05_s17_v1",
+      "log_exists": true,
+      "matches": []
+    },
+    {
+      "job": "recovery_dev_factor_s17",
+      "log_exists": true,
+      "matches": []
+    },
+    {
+      "job": "reflow_queue_v1",
+      "log_exists": true,
+      "matches": []
+    },
+    {
+      "job": "seven_b_early_queue_v1",
+      "log_exists": true,
+      "matches": []
+    },
+    {
+      "job": "seven_b_scale_queue_v1",
+      "log_exists": true,
+      "matches": []
+    }
+  ],
+  "limitations": "File existence/size and recent log check; not a full checkpoint deserialization or model rehash. No additional container restart since PID1 at 16:36:15.",
+  "next_regular_check_local": "2026-10-29T21:44:00+08:00",
+  "calibration_frozen_exists": false,
+  "all_phi_frozen_exists": false
+}

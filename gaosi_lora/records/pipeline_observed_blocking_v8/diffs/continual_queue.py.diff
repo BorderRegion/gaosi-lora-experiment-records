@@ -1,0 +1,42 @@
+--- original/continual_queue.py
++++ tools/continual_queue.py
+@@ -98,9 +98,9 @@
+ 
+ def main():
+     parser = argparse.ArgumentParser()
+-    parser.add_argument('--organization-job', default='organization_queue_v1')
+-    parser.add_argument('--final-parent-job', default='final_parent_queue_v1')
+-    parser.add_argument('--reflow-job', default='reflow_queue_v1')
++    parser.add_argument('--organization-job', default='organization_queue_observed_blocking_v8')
++    parser.add_argument('--final-parent-job', default='final_parent_queue_observed_blocking_v8')
++    parser.add_argument('--reflow-job', default='reflow_queue_observed_blocking_v8')
+     args = parser.parse_args()
+     preserve_json('records/continual_policy_v1.json', POLICY)
+     if json.loads(Path('checks/continual_v2_cpu.json').read_text())['status'] != 'PASS':
+@@ -137,7 +137,7 @@
+         outcomes = []
+         for label, q in [('clean',0.),('medium',f['q_medium'])]:
+             config = dict(template, day_steps=day_steps, night_steps=night_steps, q_apply=q)
+-            name=f'continual_dev_O1_Adam_{label}_d{day_steps}_n{night_steps}_s17_v1'
++            name=f'continual_dev_O1_Adam_{label}_d{day_steps}_n{night_steps}_s17_observed_blocking_v8'
+             outcomes.append(execute(name,config,'gaosi.continual'))
+         adequate, metrics = pilot_adequacy(outcomes)
+         trials.append({'day_steps':day_steps, 'night_steps':night_steps, 'adequate':adequate, 'metrics':metrics})
+@@ -175,7 +175,7 @@
+     base_config={'freeze_manifest':all_frozen['manifests']['O1'],
+                  'schedule_manifest':'records/continual_schedule_frozen_v1.json','parent':parent['checkpoint'],
+                  'probe_worlds':probes,'seq':512,'effective_tokens':512,'device':'musa','inference_repetitions':5}
+-    reference=execute('continual_base_rank16_reference_s17_v1',base_config,'gaosi.capacity_reference')
++    reference=execute('continual_base_rank16_reference_s17_observed_blocking_v8',base_config,'gaosi.capacity_reference')
+     Path('records/continual_completed').mkdir(parents=True,exist_ok=True)
+     outcomes=[]
+     for organization in POLICY['organizations']:
+@@ -189,7 +189,7 @@
+                    language_eval='data/language/final.jsonl',measure_inference=True,inference_repetitions=5)
+             if c['night_method']=='phi':
+                 c['phi']=frozen[organization]['phi']
+-            name=f'continual_{organization}_{label}_8round_s17_v1'
++            name=f'continual_{organization}_{label}_8round_s17_observed_blocking_v8'
+             result=execute(name,c,'gaosi.continual')
+             entry={'organization':organization,'method':label,'run':result['config']['out'],
+                    'completed_rounds':result['completed_rounds'],'result':result}

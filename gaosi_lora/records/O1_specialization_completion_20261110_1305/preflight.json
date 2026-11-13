@@ -1,0 +1,51 @@
+{
+  "completed_O1_job": {
+    "name": "phi_mix_O1_X_specialize512_s17_observed_blocking_v8",
+    "command": [
+      "/usr/bin/env",
+      "MUSA_LAUNCH_BLOCKING=1",
+      "/usr/bin/python",
+      "-u",
+      "tools/train_guarded_meta.py",
+      "run",
+      "--manifest",
+      "records/pipeline_observed_blocking_v8/meta_entries/phi_mix_O1_X_specialize512_s17_observed_blocking_v8.json"
+    ],
+    "wrapper_pid": 68658,
+    "started_at_utc": "2026-11-10T00:37:02.344696+00:00",
+    "start_epoch": 1794271022.3447187,
+    "status": "PASS",
+    "device_lock": {
+      "path": "/tmp/gaosi_musa_device0.lock",
+      "version": 1
+    },
+    "child_pid": 68659,
+    "child_proc_start_ticks": "154509185",
+    "exit_code": 0,
+    "wall_seconds": 44237.745111227036,
+    "finished_at_utc": "2026-11-10T12:54:20.089839+00:00"
+  },
+  "uniform_gate_job": {
+    "name": "horizon_uniform_initial_gate_observed_blocking_v8",
+    "command": [
+      "/usr/bin/python",
+      "-u",
+      "records/horizon_uniform_numerics_20261109_2330/initial_gate.py"
+    ],
+    "wrapper_pid": 48796,
+    "started_at_utc": "2026-11-09T23:25:53.682034+00:00",
+    "start_epoch": 1794266753.6820536,
+    "status": "PASS",
+    "child_pid": 48797,
+    "child_proc_start_ticks": "154082318",
+    "exit_code": 0,
+    "wall_seconds": 49057.41943478584,
+    "finished_at_utc": "2026-11-10T13:03:31.101495+00:00"
+  },
+  "uniform_artifacts": {
+    "initial_gate_completed.json": true,
+    "initial_saved_tensor_review.json": false,
+    "remaining_queue_launch_receipt.json": false
+  },
+  "lock_inode": 31148027670
+}

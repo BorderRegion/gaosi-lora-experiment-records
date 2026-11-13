@@ -1,0 +1,413 @@
+{
+  "status": "FORTIETH_DEVELOPMENT_CELL_AND_TENTH_X2560_MEDIUM_RULE_DESCRIPTIVE_REVIEW_ONLY",
+  "recorded_at_utc": "2026-11-08T13:07:57.852893+00:00",
+  "scope": "Tenth X2560 cell, second doubling rule task, medium q=0.7, seed17, K64; 40/60 base cells complete; compare L2560 and X2048.",
+  "runs": {
+    "L": "runs/phi_dev_L_2560_t4_medium_s17",
+    "X": "runs/phi_dev_X_2560_t4_medium_s17",
+    "X2048": "runs/phi_dev_X_2048_t4_medium_s17"
+  },
+  "task_and_keep_are_the_same_query_pool": false,
+  "distinct_rule_task_and_fact_keep_pools_verified": {
+    "L": {
+      "task_kind": "affine_integer",
+      "rule": "f(x)=2x",
+      "task_support_rows": 7,
+      "task_query_rows": 4,
+      "support_inputs": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "query_inputs": [
+        3,
+        5,
+        7,
+        9
+      ],
+      "support_and_query_inputs_disjoint": true,
+      "query_inputs_within_support_range": true,
+      "task_and_keep_sample_ids_and_worlds_disjoint": true,
+      "keep_fact_bindings": 512,
+      "task_evaluation_queries": 4,
+      "keep_evaluation_queries": 512,
+      "prediction_files": 12,
+      "prediction_rows": 3096
+    },
+    "X": {
+      "task_kind": "affine_integer",
+      "rule": "f(x)=2x",
+      "task_support_rows": 7,
+      "task_query_rows": 4,
+      "support_inputs": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "query_inputs": [
+        3,
+        5,
+        7,
+        9
+      ],
+      "support_and_query_inputs_disjoint": true,
+      "query_inputs_within_support_range": true,
+      "task_and_keep_sample_ids_and_worlds_disjoint": true,
+      "keep_fact_bindings": 512,
+      "task_evaluation_queries": 4,
+      "keep_evaluation_queries": 512,
+      "prediction_files": 12,
+      "prediction_rows": 3096
+    },
+    "X2048": {
+      "task_kind": "affine_integer",
+      "rule": "f(x)=2x",
+      "task_support_rows": 7,
+      "task_query_rows": 4,
+      "support_inputs": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "query_inputs": [
+        3,
+        5,
+        7,
+        9
+      ],
+      "support_and_query_inputs_disjoint": true,
+      "query_inputs_within_support_range": true,
+      "task_and_keep_sample_ids_and_worlds_disjoint": true,
+      "keep_fact_bindings": 512,
+      "task_evaluation_queries": 4,
+      "keep_evaluation_queries": 512,
+      "prediction_files": 12,
+      "prediction_rows": 3096
+    }
+  },
+  "config_differences_verified": [
+    "architecture",
+    "out",
+    "phi"
+  ],
+  "clean_and_initial_evaluations_identical_between_architectures": true,
+  "metrics_by_architecture": {
+    "L": {
+      "clean": {
+        "task": {
+          "candidate_correct": 1,
+          "strict_EM_correct": 2,
+          "query_count": 4,
+          "nll": 0.6623856371099298
+        },
+        "keep": {
+          "candidate_correct": 512,
+          "strict_EM_correct": 504,
+          "query_count": 512,
+          "nll": 0.023651785981122126
+        }
+      },
+      "initial": {
+        "task": {
+          "candidate_correct": 0,
+          "strict_EM_correct": 1,
+          "query_count": 4,
+          "nll": 1.0341072299263694
+        },
+        "keep": {
+          "candidate_correct": 364,
+          "strict_EM_correct": 362,
+          "query_count": 512,
+          "nll": 0.3426414310627744
+        }
+      },
+      "final": {
+        "task": {
+          "candidate_correct": 4,
+          "strict_EM_correct": 4,
+          "query_count": 4,
+          "nll": 4.9091903675120685e-06
+        },
+        "keep": {
+          "candidate_correct": 496,
+          "strict_EM_correct": 478,
+          "query_count": 512,
+          "nll": 0.12214768630967866
+        }
+      }
+    },
+    "X": {
+      "clean": {
+        "task": {
+          "candidate_correct": 1,
+          "strict_EM_correct": 2,
+          "query_count": 4,
+          "nll": 0.6623856371099298
+        },
+        "keep": {
+          "candidate_correct": 512,
+          "strict_EM_correct": 504,
+          "query_count": 512,
+          "nll": 0.023651785981122126
+        }
+      },
+      "initial": {
+        "task": {
+          "candidate_correct": 0,
+          "strict_EM_correct": 1,
+          "query_count": 4,
+          "nll": 1.0341072299263694
+        },
+        "keep": {
+          "candidate_correct": 364,
+          "strict_EM_correct": 362,
+          "query_count": 512,
+          "nll": 0.3426414310627744
+        }
+      },
+      "final": {
+        "task": {
+          "candidate_correct": 4,
+          "strict_EM_correct": 4,
+          "query_count": 4,
+          "nll": 6.285572970393166e-07
+        },
+        "keep": {
+          "candidate_correct": 503,
+          "strict_EM_correct": 494,
+          "query_count": 512,
+          "nll": 0.06595443308460094
+        }
+      }
+    },
+    "X2048": {
+      "clean": {
+        "task": {
+          "candidate_correct": 1,
+          "strict_EM_correct": 2,
+          "query_count": 4,
+          "nll": 0.6623856371099298
+        },
+        "keep": {
+          "candidate_correct": 512,
+          "strict_EM_correct": 504,
+          "query_count": 512,
+          "nll": 0.023651785981122126
+        }
+      },
+      "initial": {
+        "task": {
+          "candidate_correct": 0,
+          "strict_EM_correct": 1,
+          "query_count": 4,
+          "nll": 1.0341072299263694
+        },
+        "keep": {
+          "candidate_correct": 364,
+          "strict_EM_correct": 362,
+          "query_count": 512,
+          "nll": 0.3426414310627744
+        }
+      },
+      "final": {
+        "task": {
+          "candidate_correct": 4,
+          "strict_EM_correct": 4,
+          "query_count": 4,
+          "nll": 6.719058247158087e-07
+        },
+        "keep": {
+          "candidate_correct": 498,
+          "strict_EM_correct": 482,
+          "query_count": 512,
+          "nll": 0.11580078352343633
+        }
+      }
+    }
+  },
+  "language_nll_by_architecture": {
+    "L": {
+      "clean": 2.120082481864213,
+      "initial": 2.140740751632521,
+      "final": 2.116550832940088
+    },
+    "X": {
+      "clean": 2.120082481864213,
+      "initial": 2.140740751632521,
+      "final": 2.1138408345383377
+    },
+    "X2048": {
+      "clean": 2.120082481864213,
+      "initial": 2.140740751632521,
+      "final": 2.1168567351688057
+    }
+  },
+  "final_X_minus_L": {
+    "task": {
+      "candidate_correct": 0,
+      "strict_EM_correct": 0,
+      "nll": -4.280633070472752e-06
+    },
+    "keep": {
+      "candidate_correct": 7,
+      "strict_EM_correct": 16,
+      "nll": -0.05619325322507772
+    },
+    "language_nll": -0.0027099984017504575
+  },
+  "X2560_minus_X2048": {
+    "task": {
+      "candidate_correct": 0,
+      "strict_EM_correct": 0,
+      "nll": -4.3348527676492106e-08
+    },
+    "keep": {
+      "candidate_correct": 5,
+      "strict_EM_correct": 12,
+      "nll": -0.04984635043883538
+    },
+    "language_nll": -0.0030159006304679714
+  },
+  "checkpoint_config_differences_verified": [
+    "out",
+    "phi"
+  ],
+  "loss_changes_by_architecture": {
+    "L": {
+      "task": {
+        "injected": 0.37172159281643957,
+        "recovered": 1.0341023207360018,
+        "residual": -0.6623807279195623
+      },
+      "keep": {
+        "injected": 0.3189896450816523,
+        "recovered": 0.22049374475309574,
+        "residual": 0.09849590032855654
+      },
+      "language": {
+        "injected": 0.0206582697683082,
+        "recovered": 0.024189918692433032,
+        "residual": -0.0035316489241248306
+      }
+    },
+    "X": {
+      "task": {
+        "injected": 0.37172159281643957,
+        "recovered": 1.0341066013690723,
+        "residual": -0.6623850085526328
+      },
+      "keep": {
+        "injected": 0.3189896450816523,
+        "recovered": 0.2766869979781734,
+        "residual": 0.04230264710347882
+      },
+      "language": {
+        "injected": 0.0206582697683082,
+        "recovered": 0.02689991709418349,
+        "residual": -0.006241647325875288
+      }
+    },
+    "X2048": {
+      "task": {
+        "injected": 0.37172159281643957,
+        "recovered": 1.0341065580205446,
+        "residual": -0.6623849652041051
+      },
+      "keep": {
+        "injected": 0.3189896450816523,
+        "recovered": 0.22684064753933808,
+        "residual": 0.0921489975423142
+      },
+      "language": {
+        "injected": 0.0206582697683082,
+        "recovered": 0.02388401646371552,
+        "residual": -0.0032257466954073166
+      }
+    }
+  },
+  "wrapper_wall_seconds_including_possible_lock_wait": {
+    "L": 6010.256709575653,
+    "X": 6263.849169015884,
+    "X2048": 12355.410785198212
+  },
+  "last_event_process_wall_seconds": {
+    "L": 5993.166350364685,
+    "X": 6245.532215356827,
+    "X2048": 6343.2985932827
+  },
+  "pair_evidence_reverification": {
+    "non_tensor_files_per_cell": {
+      "L": 75,
+      "X": 75,
+      "X2048": 75
+    },
+    "remote_unique_tensor_files_sha256_reverified": {
+      "status": "REMOTE_PAIRED_TENSOR_FILE_SHA256_REVERIFIED",
+      "files": 10,
+      "sha256": {
+        "runs/parent_3b_dev_parent_r32_s17_extend512_v2/latest.pt": "1fa4765c5c5d478f8dd0d7089ab6fbecd2f85190cc8d0a875aa1498da6ffc66f",
+        "runs/phi_dev_L_2560_t4_medium_s17/initial.pt": "2e10ef6e9f6105eaf17534371578044aac2c84133a7c5b5bc5a328dd7dc0f761",
+        "runs/phi_dev_L_2560_t4_medium_s17/latest.pt": "1046824971789afc1a0aab07dcb87789cb305a5f8c0f012d9ec36f7a4166ccc5",
+        "runs/phi_mix_O1_L_H2_core_s17_observed_blocking_v8/phi_2560.pt": "4e97db0e17ef8c2b59afc6a41aaf8eaad8349b0ba470f69c8209c9b41b305c03",
+        "runs/phi_dev_X_2560_t4_medium_s17/initial.pt": "1cafa913ea00942a75c4a64fc55daa1717b8e6dfec0576cb5c772e9c01f0438f",
+        "runs/phi_dev_X_2560_t4_medium_s17/latest.pt": "f8d92847a2d1b6ebeaba210f74ad3b0f172bdc0823965d6b96c2a2bb660325bc",
+        "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/phi_2560.pt": "0d14d7b8882dcd55ca3edb3284405569ed3aec343746e0900381e577b263641b",
+        "runs/phi_dev_X_2048_t4_medium_s17/initial.pt": "97933cd68fedfc86eeb275234818ecfd1662563606239fc8278f01784e84e675",
+        "runs/phi_dev_X_2048_t4_medium_s17/latest.pt": "5c8170a275c0e11f673943bffc415b54eedf0da6e92f25f8d742e6d473cc4255",
+        "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/phi_2048.pt": "34e1c605e232805fb89cb494c5266d4de4910e3878be04a4c4cad28bfae9e2ab"
+      }
+    }
+  },
+  "interpretation": "All three cells learn four held-out doubling-rule queries from0/4 candidate and1/4 strictEM after noise to4/4 on both metrics; parent task answers are1/4 candidate and2/4 strictEM. Noise damages task NLL by0.37172159 and keep NLL by0.31898965. Known keep answers fall from512/504 parent to364/362 after noise, then recover to503/494 for X2560,496/478 for L2560 and498/482 for X2048. X2560 exceeds L2560 by7 candidate and16 strict keep answers, with keep NLL lower by0.05619325 and language NLL lower by0.00271000. Relative to X2048, X2560 gains5 candidate and12 strict keep answers, keep NLL lower by0.04984635 and language NLL lower by0.00301590. All task answers tie and final task NLL differences are below0.000005. X2560 keep residual is+0.04230265 and language residual-0.00624165, below frozen0.1 penalty thresholds; nine parent candidate and ten strict keep answers still remain lost. This cell supplies positive task learning and substantial old-knowledge restoration, with better retention than the two comparison endpoints. Four within-range rule queries and one phi seed do not establish general rule reasoning, extrapolation or robustness. All ten X2560 cells are complete, but the frozen60-cell grid still lacks the20 matching Adam cells; no aggregate architecture choice, conditional extension, superiority to matched Adam or independent-seed claim follows.",
+  "limitations": [
+    "CPU inspection of saved tensors and re-aggregation of saved predictions only; no model forward, tokenizer or derivative recomputation.",
+    "Language NLL is checked against the event ledger; no saved per-token language audit.",
+    "Model compute counters omit direct QA candidate/generation calls; they are not total evaluation FLOPs or total model forwards.",
+    "Frozen phi/base flags plus pinned source and file identities are provenance evidence, not an independent in-memory mutation trace.",
+    "No paired-method efficacy, held-out generalization, convergence or multi-seed conclusion from one completed development cell.",
+    "All ten X2560 cells complete, five tasks and one phi seed; this doubling rule world has four interpolation queries and the frozen architecture/dose/task grid remains incomplete.",
+    "Matching configurations and saved initial evaluations do not independently establish tensor-by-tensor equality of initial adapters.",
+    "No architecture selection or conditional extension before completion of the frozen grid."
+  ],
+  "evidence_sha256": {
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t4_medium_s17.json": "7a6c073389ac0ba3bffdecf472c3350a1316f4066a3b460993b452b652d195b1",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2560_t4_medium_s17.json": "9840c88a902b1e1a5247813d5232fa68ec92ef5bf0a17a847bcf593f9fda3ce6",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t4_medium_s17_evidence/manifest.json": "81a91213d7aebc4a0b67fa66a3e5912585fb24f6388fcf73d4afbe4bc91aecb2",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t4_medium_s17_evidence/snapshot/runs/phi_dev_L_2560_t4_medium_s17/config.json": "d7bf2f9ff12724111c28460a54f3118c2418b9b76a4952b4d2b3f67aa87ffa13",
+    "records/development_completion_20261104_2358/phi_dev_X_2560_t4_medium_s17.json": "281d92fdb8482af20df95896cd81b90704b8e29ff470f0cbbca7bb0226f02708",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_X_2560_t4_medium_s17.json": "1d58f30c7ba2a30efcddacec9a67a730aa6859446755760072e4de016d4f598d",
+    "records/development_completion_20261104_2358/phi_dev_X_2560_t4_medium_s17_evidence/manifest.json": "6afe04d39604abcce63d06711bcff33b180ae4dc35c574b64ebf17920f174c9e",
+    "records/development_completion_20261104_2358/phi_dev_X_2560_t4_medium_s17_evidence/snapshot/runs/phi_dev_X_2560_t4_medium_s17/config.json": "bf51aedb787d546c7e027ed72645a77bbf5c512c2aafc31cbd036dda39f1cc55",
+    "records/development_completion_20261104_2358/phi_dev_X_2048_t4_medium_s17.json": "133e735a5eb72c3a4dffa3242a0505af0f88760064d1e256260321c2d6418a6f",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_X_2048_t4_medium_s17.json": "8459f798edba8ce5619aa7ad43afb26893d2438b81d9c4e7803669bdd4071aa3",
+    "records/development_completion_20261104_2358/phi_dev_X_2048_t4_medium_s17_evidence/manifest.json": "f6931226f08197e47bcb0a045d4a1e4a76151859de8e355e3edce281eda6d441",
+    "records/development_completion_20261104_2358/phi_dev_X_2048_t4_medium_s17_evidence/snapshot/runs/phi_dev_X_2048_t4_medium_s17/config.json": "e9392358be3eabc23f70c6417cabe95814642a4a00c602484a2e06328c56aab1",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t4_medium_s17_evidence/snapshot/data/synthetic/rules_integer_v1/dev_integer_world_001.jsonl": "71844daf82a62c173509706198e703e0b7d7d6918c35a1e84928958602912290",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t4_medium_s17_evidence/snapshot/data/synthetic/dev_parent.jsonl": "7d4353f9b9a8f1f74c182b503c01d7fb2181836aa464e8d17e1bb3282db25d11",
+    "records/development_completion_20261104_2358/phi_dev_X_2560_t4_medium_s17_evidence/snapshot/data/synthetic/rules_integer_v1/dev_integer_world_001.jsonl": "71844daf82a62c173509706198e703e0b7d7d6918c35a1e84928958602912290",
+    "records/development_completion_20261104_2358/phi_dev_X_2560_t4_medium_s17_evidence/snapshot/data/synthetic/dev_parent.jsonl": "7d4353f9b9a8f1f74c182b503c01d7fb2181836aa464e8d17e1bb3282db25d11",
+    "records/development_completion_20261104_2358/phi_dev_X_2048_t4_medium_s17_evidence/snapshot/data/synthetic/rules_integer_v1/dev_integer_world_001.jsonl": "71844daf82a62c173509706198e703e0b7d7d6918c35a1e84928958602912290",
+    "records/development_completion_20261104_2358/phi_dev_X_2048_t4_medium_s17_evidence/snapshot/data/synthetic/dev_parent.jsonl": "7d4353f9b9a8f1f74c182b503c01d7fb2181836aa464e8d17e1bb3282db25d11",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t4_medium_s17_evidence/snapshot/runs/phi_dev_L_2560_t4_medium_s17/events.jsonl": "b8e640a32b9e7f47c532fa9715893980e3fa9a6724d150f0a47f8c27c139e283",
+    "records/development_completion_20261104_2358/phi_dev_X_2560_t4_medium_s17_evidence/snapshot/runs/phi_dev_X_2560_t4_medium_s17/events.jsonl": "a9b128808d35e1cf0eb324619eb91558988f289940a67400cc3e7d23dd4d67bd",
+    "records/development_completion_20261104_2358/phi_dev_X_2048_t4_medium_s17_evidence/snapshot/runs/phi_dev_X_2048_t4_medium_s17/events.jsonl": "09058e87ed39ee55915ae1ac6f3941cb1bab1f9d3fe83be5d3646ee235e76852",
+    "records/development_completion_20261104_2358/review_tenth_X2560_20261108.py": "db0c887c4b29f9e580aeb72ae598be6e81bc8fba1fb2dc9fc31cdc66dbdf8b17"
+  },
+  "selection_policy_changed": false,
+  "scientific_receipt_generated": false,
+  "method_validated": false,
+  "full_goal_complete": false,
+  "training_modified_or_restarted": false
+}

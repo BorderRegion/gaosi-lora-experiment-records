@@ -1,0 +1,14 @@
+## 2026-11-01 19:44：完整 L 结束并完成独立复核，后续流水线已启动
+
+v8 L 于北京时间15:01:15正常结束（job exit0）：完整192 episodes/2560 inner updates，耗时约46.91小时。最终phi/Adam有限，基座未变，最终检查点SHA=d72964706a7e673724cfd80c9d66fa259dfb8bc2707dd182295e19375801e380。15:06终态归档SHA=33d198072e69c5b4527bfce4a377d8425e33bcfe392f47f73c9563e0c40c2e6e及49项文件已另行核验，原L观察器按设计正常退出。
+
+完整CPU产物审计通过，证据records/observed_blocking_core_final_audit_20261101_1139.json（SHA=9cbe5eb4ee6432817e0b0cfb7d3b0ebba3b318ca88cb92e3d700c091754f385c）；451项输入/源码/产物哈希独立复核，192份raw梯度全部有限，最大norm=.5823351201809523，无裁剪触发或episode内phi变化。全部2560步日志连续，最后两步exact_window标记一致，各路有效token满足配置。
+
+另对全部192次保存的Adam更新做CPU逐次重放：每轮起始phi与对应before checkpoint相同，所有Adam step/一二阶矩逐张量相同，phi最大绝对差1.4901161193847656e-08、最大相对L2差8.777369198149701e-08。结果records/observed_blocking_core_completion_20261101_1143/adam_replay.json；这是逐轮保存起点重放，不是整条CPU独立轨迹，也没有重新计算梯度。
+
+综合tiny直接AD/FP64数学检查、独立blocking前8轮一致性、真实3B固定H2尾部方向差分及完整新L证据，agent判断支持带局限继续原协议。真实BF16差分仅eps=.1时尺度差约3.418%，小eps仍噪声大；blocking根因未证明，旧v7失败与异常诊断不具备提升资格。科学判断和证据SHA见records/observed_blocking_core_completion_20261101_1143/scientific_assessment.json；绑定receipt见records/pipeline_observed_blocking_v8/reviews/phi_mix_O1_L_H2_core_s17_observed_blocking_v8.json。method_validated=false，不据训练成功声称效果、收敛或H2后端全面正确。
+
+launcher validate-only通过，15个新控制器已一次启动并核验PID/start ticks。19:42:31初始运行证据显示X/H2实际profile正在独占GPU，原锁inode31148027670及MUSA_LAUNCH_BLOCKING=1一致；其他控制器按依赖等待。接下来X两episode真实optimizer readiness须单独审计/科学复核后才进入完整X；随后共同warm H1、dev结构选择及全部原协议阶段继续。新只读观察器2930339/start ticks77913891，records/pipeline_observer_20261101_1143/，首次20:12:31，此后每30分钟采集，不自动批准或恢复训练。
+
+完整任务仍未完成；L/X、共同warm H1、匹配延长、四组织/clean、正式父状态与恢复/选择性/回流/持续、7B、统计、phi seeds29/43及条件追加范围保持。默认phi预算30720（既有匹配延长全触发39936），失败/诊断成本另列。以下保留各端独立历史。
+

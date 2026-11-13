@@ -1,0 +1,19 @@
+{
+  "status": "ADDITIVE_CONTINUATION_V2_MONITOR_PREPARED_OLD_FAILURE_RETAINED",
+  "recorded_at_utc": "2026-11-06T12:34:43.086341+00:00",
+  "files_sha256": {
+    "collect_runtime_v2.py": "97566154f88d21cec777d2b30c8a37ff97e71cbdc30a5b5200be4427b81881cd",
+    "sample_runtime_v2.py": "667991e42eb014e6fc6c780da1d65f298b8382540a3e8779d131a57a4bb95e5e"
+  },
+  "predecessor_sources_sha256": {
+    "collect_runtime_v1.py": "26bc221f710dda22304a5292f8a9ce55ef0a589f9fb5a2e04bc568b1c21d5e11",
+    "sample_runtime_v1.py": "cc1f7046944ce49a27bf7e6dacb82c7c428171dca35a7478b01746e5891101e2"
+  },
+  "controller": "phi_horizon_effect_comparison_s17_noise_timing_v2",
+  "predecessor_FAILURE_requires_exact_preserved_job_sha256": true,
+  "same_scheduled_cadence": true,
+  "original_observer_modified": false,
+  "training_modified_or_restarted": false,
+  "method_validated": false,
+  "full_goal_complete": false
+}

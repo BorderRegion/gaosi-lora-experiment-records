@@ -1,0 +1,18 @@
+{
+  "name": "calibration_queue_v2",
+  "command": [
+    "/usr/bin/python",
+    "-u",
+    "tools/calibration_queue.py",
+    "--noise-plan",
+    "records/noise_dose_extension_plan_v2.json",
+    "--window-name",
+    "noise_calibration_dev_extended_s17"
+  ],
+  "wrapper_pid": 472636,
+  "started_at_utc": "2026-10-29T06:54:21.111306+00:00",
+  "start_epoch": 1793256861.1113248,
+  "status": "RUNNING",
+  "child_pid": 472637,
+  "child_proc_start_ticks": "53093061"
+}

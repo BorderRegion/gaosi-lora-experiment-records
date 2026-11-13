@@ -1,0 +1,334 @@
+{
+  "status": "SEVENTH_H1_FIRST_CLEAN_RULE_MATCHED_ENDPOINT_DESCRIPTIVE_REVIEW_NO_HORIZON_SELECTION",
+  "recorded_at_utc": "2026-11-07T08:28:00.815857+00:00",
+  "scope": "First rule task, clean q0, seed17, K64; seven of ten additional H1 cells now audited.",
+  "metrics": {
+    "H1": {
+      "clean": {
+        "task": {
+          "n": 4,
+          "candidate_accuracy": 0.0,
+          "mean_margin": -2.672334313392639,
+          "nll": 2.144101768732071,
+          "answer_tokens": 8,
+          "strict_EM": 0.0,
+          "abnormal_rate": 0.0
+        },
+        "keep": {
+          "n": 512,
+          "candidate_accuracy": 1.0,
+          "mean_margin": 10.186212864077874,
+          "nll": 0.023651785981122126,
+          "answer_tokens": 1288,
+          "strict_EM": 0.984375,
+          "abnormal_rate": 0.0
+        },
+        "language": {
+          "nll": 2.120082481864213,
+          "answer_tokens": 4463
+        }
+      },
+      "initial": {
+        "task": {
+          "n": 4,
+          "candidate_accuracy": 0.0,
+          "mean_margin": -2.672334313392639,
+          "nll": 2.144101768732071,
+          "answer_tokens": 8,
+          "strict_EM": 0.0,
+          "abnormal_rate": 0.0
+        },
+        "keep": {
+          "n": 512,
+          "candidate_accuracy": 1.0,
+          "mean_margin": 10.186212864077874,
+          "nll": 0.023651785981122126,
+          "answer_tokens": 1288,
+          "strict_EM": 0.984375,
+          "abnormal_rate": 0.0
+        },
+        "language": {
+          "nll": 2.120082481864213,
+          "answer_tokens": 4463
+        }
+      },
+      "final": {
+        "task": {
+          "n": 4,
+          "candidate_accuracy": 1.0,
+          "mean_margin": 20.47579109668743,
+          "nll": 1.7881387748275301e-07,
+          "answer_tokens": 8,
+          "strict_EM": 1.0,
+          "abnormal_rate": 0.0
+        },
+        "keep": {
+          "n": 512,
+          "candidate_accuracy": 0.998046875,
+          "mean_margin": 9.736054274036029,
+          "nll": 0.019942879485623472,
+          "answer_tokens": 1288,
+          "strict_EM": 0.982421875,
+          "abnormal_rate": 0.0
+        },
+        "language": {
+          "nll": 2.120299156460558,
+          "answer_tokens": 4463
+        }
+      }
+    },
+    "H2": {
+      "clean": {
+        "task": {
+          "n": 4,
+          "candidate_accuracy": 0.0,
+          "mean_margin": -2.672334313392639,
+          "nll": 2.144101768732071,
+          "answer_tokens": 8,
+          "strict_EM": 0.0,
+          "abnormal_rate": 0.0
+        },
+        "keep": {
+          "n": 512,
+          "candidate_accuracy": 1.0,
+          "mean_margin": 10.186212864077874,
+          "nll": 0.023651785981122126,
+          "answer_tokens": 1288,
+          "strict_EM": 0.984375,
+          "abnormal_rate": 0.0
+        },
+        "language": {
+          "nll": 2.120082481864213,
+          "answer_tokens": 4463
+        }
+      },
+      "initial": {
+        "task": {
+          "n": 4,
+          "candidate_accuracy": 0.0,
+          "mean_margin": -2.672334313392639,
+          "nll": 2.144101768732071,
+          "answer_tokens": 8,
+          "strict_EM": 0.0,
+          "abnormal_rate": 0.0
+        },
+        "keep": {
+          "n": 512,
+          "candidate_accuracy": 1.0,
+          "mean_margin": 10.186212864077874,
+          "nll": 0.023651785981122126,
+          "answer_tokens": 1288,
+          "strict_EM": 0.984375,
+          "abnormal_rate": 0.0
+        },
+        "language": {
+          "nll": 2.120082481864213,
+          "answer_tokens": 4463
+        }
+      },
+      "final": {
+        "task": {
+          "n": 4,
+          "candidate_accuracy": 1.0,
+          "mean_margin": 20.549083322286705,
+          "nll": 1.9371504578202803e-07,
+          "answer_tokens": 8,
+          "strict_EM": 1.0,
+          "abnormal_rate": 0.0
+        },
+        "keep": {
+          "n": 512,
+          "candidate_accuracy": 1.0,
+          "mean_margin": 9.830035934814699,
+          "nll": 0.014630726263582377,
+          "answer_tokens": 1288,
+          "strict_EM": 0.98828125,
+          "abnormal_rate": 0.0
+        },
+        "language": {
+          "nll": 2.1216234877161346,
+          "answer_tokens": 4463
+        }
+      }
+    }
+  },
+  "H1_minus_H2": {
+    "task": {
+      "candidate_correct": 0,
+      "strict_EM_correct": 0,
+      "nll": -1.4901168299275014e-08
+    },
+    "keep": {
+      "candidate_correct": -1,
+      "strict_EM_correct": -3,
+      "nll": 0.005312153222041096
+    },
+    "language_nll": -0.0013243312555766273
+  },
+  "config_differences_verified": [
+    "freeze_manifest",
+    "initial_adapter",
+    "out",
+    "phi"
+  ],
+  "loss_changes": {
+    "H1": {
+      "task": {
+        "injected": 0.0,
+        "recovered": 2.1441015899181934,
+        "residual": -2.1441015899181934
+      },
+      "keep": {
+        "injected": 0.0,
+        "recovered": 0.003708906495498654,
+        "residual": -0.003708906495498654
+      },
+      "language": {
+        "injected": 0.0,
+        "recovered": -0.0002166745963450012,
+        "residual": 0.0002166745963450012
+      }
+    },
+    "H2": {
+      "task": {
+        "injected": 0.0,
+        "recovered": 2.144101575017025,
+        "residual": -2.144101575017025
+      },
+      "keep": {
+        "injected": 0.0,
+        "recovered": 0.00902105971753975,
+        "residual": -0.00902105971753975
+      },
+      "language": {
+        "injected": 0.0,
+        "recovered": -0.0015410058519216285,
+        "residual": 0.0015410058519216285
+      }
+    }
+  },
+  "frozen_single_cell_scores": {
+    "H1": 1.0,
+    "H2": 1.0
+  },
+  "task_and_keep_are_same_query_pool": false,
+  "distinct_pools_verified": {
+    "H1": {
+      "task_kind": "affine_integer",
+      "rule": "f(x)=x",
+      "support_inputs": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "query_inputs": [
+        3,
+        5,
+        7,
+        9
+      ],
+      "support_and_query_inputs_disjoint": true,
+      "query_inputs_within_support_range": true,
+      "task_and_keep_sample_ids_and_worlds_disjoint": true,
+      "task_evaluation_count": 4,
+      "keep_fact_bindings_and_evaluation_count": 512,
+      "prediction_files": 12,
+      "prediction_rows": 3096
+    },
+    "H2": {
+      "task_kind": "affine_integer",
+      "rule": "f(x)=x",
+      "support_inputs": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "query_inputs": [
+        3,
+        5,
+        7,
+        9
+      ],
+      "support_and_query_inputs_disjoint": true,
+      "query_inputs_within_support_range": true,
+      "task_and_keep_sample_ids_and_worlds_disjoint": true,
+      "task_evaluation_count": 4,
+      "keep_fact_bindings_and_evaluation_count": 512,
+      "prediction_files": 12,
+      "prediction_rows": 3096
+    }
+  },
+  "non_tensor_files_rehashed": {
+    "H1": 79,
+    "H2": 75
+  },
+  "unique_remote_tensor_files_sha256_reverified": 6,
+  "remote_reverification": {
+    "status": "PAIRED_SAVED_TENSOR_FILES_AND_V2_PAIR_REPORT_SHA256_REVERIFIED",
+    "sha256": {
+      "runs/parent_3b_dev_parent_r32_s17_extend512_v2/latest.pt": "1fa4765c5c5d478f8dd0d7089ab6fbecd2f85190cc8d0a875aa1498da6ffc66f",
+      "runs/phi_dev_L_2560_t3_clean_s17/initial.pt": "8f537d9e979c8c3c12a116fa3b2fab2f49a52edc9b20a09d69eaede329f6b92d",
+      "runs/phi_horizon_L_H1_2560_t3_clean_s17_v1/latest.pt": "51cd038fdcc67eafd4bfc3fcf30a3a8ec5923548c4be69035e253793425e68d4",
+      "runs/phi_mix_O1_L_H1_commonwarm_s17_observed_blocking_v8/phi_2560.pt": "669ebfa4f72dd5fee938863d0ef4b793312b5af2ee1229057876e6221fafae91",
+      "runs/phi_dev_L_2560_t3_clean_s17/latest.pt": "23a964754d70fd3b78d353886e653b85ced5f2a521c851df8cce1f3f3d82e9ec",
+      "runs/phi_mix_O1_L_H2_core_s17_observed_blocking_v8/phi_2560.pt": "4e97db0e17ef8c2b59afc6a41aaf8eaad8349b0ba470f69c8209c9b41b305c03",
+      "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t3_clean_s17_v1_paired_review_v2.json": "7e2b34da7573a5c10729384122890c13ac331b9315484e4c3fd0d9d350843b8d"
+    }
+  },
+  "last_event_process_seconds": {
+    "H1": 6314.205145120621,
+    "H2": 6196.025333166122
+  },
+  "wrapper_wall_seconds_including_possible_lock_wait": {
+    "H1": 12782.842809438705,
+    "H2": 6213.814972639084
+  },
+  "noise_timing_review": {
+    "all_non_timing_fields_exactly_equal": true,
+    "excluded_fields": [
+      "boundary_seconds"
+    ],
+    "left_boundary_seconds": 1.5986080169677734,
+    "right_boundary_seconds": 1.5384693145751953
+  },
+  "interpretation": "Both learn four query inputs for the identity rule from0/4 to4/4 candidate and strictEM answers. H1 retains511/503 known keep answers versus H2=512/506, against parent512/504; H2 has one more candidate and three more strictEM keep answers. H1 keep NLL is higher by0.00531215 while task NLL is lower by1.49e-8 and language NLL lower by0.00132433. H1/H2 keep residual NLL is-0.00370891/-0.00902106 and language residual+0.00021667/+0.00154101; both frozen single-cell scores are1, which does not imply identical retention. This is positive within-world interpolation with mixed horizon differences and retention favoring H2 in this cell. Query inputs are disjoint from support inputs but within their range; copying the input solves f(x)=x and only four queries are evaluated, so neither general rule reasoning nor extrapolation is established. The zero-noise cell does not measure injected-damage recovery. Four development tasks, seven pairs and one phi seed cannot justify horizon selection or superiority to Adam.",
+  "limitations": [
+    "CPU inspection of saved tensors and re-aggregation of saved predictions only; no model forward, tokenizer or derivative recomputation.",
+    "Language NLL is checked against the event ledger; no saved per-token language audit.",
+    "Model compute counters omit direct QA candidate/generation calls; they are not total evaluation FLOPs or total model forwards.",
+    "Frozen phi/base flags plus pinned source and file identities are provenance evidence, not an independent in-memory mutation trace.",
+    "No paired-method efficacy, held-out generalization, convergence or multi-seed conclusion from one completed development cell.",
+    "Seven of ten declared H1 pairs are complete; first-rule medium and the two second-rule pairs remain incomplete.",
+    "Distinct task4 rule-query and keep512 fact-binding pools are checked; this is a small interpolation world with no formal-set or independent phi-seed conclusion.",
+    "Wrapper time includes lock wait and is not additive independent GPU cost.",
+    "Matching saved initial evaluations do not independently establish tensor-by-tensor equality of initial adapters."
+  ],
+  "evidence_sha256": {
+    "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t3_clean_s17_v1.json": "9c3c56992c8e167b4212cf519f4c3cc4aba537abfa233e5b65149da329a53f5e",
+    "records/horizon_effect_comparison_20261103_1005/fetch_receipt_phi_horizon_L_H1_2560_t3_clean_s17_v1.json": "67a9892f3a7ea3daff70aed506a59887f282fc9e0151f541dbe42201249b59f2",
+    "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t3_clean_s17_v1_evidence/manifest.json": "d57b7c145bdc3544287ef4407b8f220f449c479757992c052664086c1406622d",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t3_clean_s17.json": "b6ae4951568470ebf32bb10fa9a693d21cd9a6ef326d4ecf112c93426d0368d6",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2560_t3_clean_s17.json": "362793917eaea5ac9e105a85bb63f8e26743ccb97a12a5c4bf74e6d4355d4ff7",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t3_clean_s17_evidence/manifest.json": "b087d0178455f9f599bd20d75ab40a52b378c32022f8bd75d86ba094a815ea3b",
+    "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t3_clean_s17_v1_evidence/snapshot/data/synthetic/rules_integer_v1/dev_integer_world_000.jsonl": "5ce527b91b07df51cc12fafaf7be0b0292ae28aaf32a1d0ad73f3fd1c17fc846",
+    "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t3_clean_s17_v1_evidence/snapshot/data/synthetic/dev_parent.jsonl": "7d4353f9b9a8f1f74c182b503c01d7fb2181836aa464e8d17e1bb3282db25d11",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t3_clean_s17_evidence/snapshot/data/synthetic/rules_integer_v1/dev_integer_world_000.jsonl": "5ce527b91b07df51cc12fafaf7be0b0292ae28aaf32a1d0ad73f3fd1c17fc846",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t3_clean_s17_evidence/snapshot/data/synthetic/dev_parent.jsonl": "7d4353f9b9a8f1f74c182b503c01d7fb2181836aa464e8d17e1bb3282db25d11",
+    "records/horizon_effect_monitor_20261107_082551_utc/snapshot/records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t3_clean_s17_v1_paired_review_v2.json": "7e2b34da7573a5c10729384122890c13ac331b9315484e4c3fd0d9d350843b8d",
+    "records/horizon_effect_monitor_20261107_082551_utc/review.json": "a2e52cc3459a2e6227229573078cbb7d6409cca10062f91a5a0c2329759d609c",
+    "records/horizon_effect_comparison_20261103_1005/review_seventh_H1_20261107.py": "46ec66de644244d9f6e40bc05143396d605c131f95260f315aff1881c490358c"
+  },
+  "selection_policy_changed": false,
+  "method_validated": false,
+  "scientific_promotion_allowed": false,
+  "full_goal_complete": false,
+  "training_modified_or_restarted": false
+}

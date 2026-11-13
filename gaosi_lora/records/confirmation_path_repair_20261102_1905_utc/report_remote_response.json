@@ -1,0 +1,5 @@
+{
+  "returncode": 0,
+  "stdout": "{\"before_sha256\": \"52efba4cd114bea738a8e9af1ed9d915a6fad6ac327a7ef5d24a8f1e00561b66\", \"after_sha256\": \"0ac66ba9647b56b847d47898427873cb225b3f57a7fe6b5a6fcf1c903f9c7fb4\", \"backup\": \"records/confirmation_path_repair_20261102_1905_utc/REPORT.before_documentation.remote.md\", \"history_preserved\": true}\n",
+  "stderr": ""
+}

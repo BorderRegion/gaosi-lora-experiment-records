@@ -1,0 +1,13 @@
+{
+  "returncode": 0,
+  "command": [
+    "/usr/bin/python",
+    "-u",
+    "tools/audit_observed_meta.py",
+    "--run",
+    "runs/phi_mix_O1_X_specialize512_s17_observed_blocking_v8",
+    "--out",
+    "records/O1_specialization_completion_20261110_1305/artifact_audit.json"
+  ],
+  "log_sha256": "b84137cb8bbfbc4fd715063c2be4da7e9771bd86daac900a38093f0cfabe89d9"
+}

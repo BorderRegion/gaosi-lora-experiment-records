@@ -1,0 +1,241 @@
+{
+  "status": "SCOPE_AND_DEPENDENCIES_PREPARED_NOT_EXECUTABLE",
+  "created_at_utc": "2026-10-30T13:04:54.080357+00:00",
+  "current_run": "phi_mix_O1_L_H2_core_s17_observed_blocking_v8",
+  "current_config_sha256": "e09faf76b672452e3b3d3000bcff1956d04117bb5e66dab6a89059b77cf25685",
+  "method_validated": false,
+  "downstream_started": false,
+  "production_source_changes": false,
+  "old_15_failed_controllers_must_remain_terminal": true,
+  "new_controller_names": {
+    "phi_core": "phi_core_queue_observed_blocking_v8",
+    "phi_development": "phi_development_queue_observed_blocking_v8",
+    "organization": "organization_queue_observed_blocking_v8",
+    "final_parent": "final_parent_queue_observed_blocking_v8",
+    "formal_recovery": "formal_recovery_queue_observed_blocking_v8",
+    "reflow": "reflow_queue_observed_blocking_v8",
+    "continual": "continual_queue_observed_blocking_v8",
+    "seven_b": "seven_b_queue_observed_blocking_v8",
+    "horizon": "horizon_queue_observed_blocking_v8",
+    "confirmation": "confirmation_queue_observed_blocking_v8",
+    "noise_controls": "noise_controls_queue_observed_blocking_v8",
+    "recovery_statistics": "recovery_statistics_queue_observed_blocking_v8",
+    "selective_statistics": "selective_statistics_queue_observed_blocking_v8",
+    "reflow_statistics": "reflow_statistics_queue_observed_blocking_v8",
+    "continual_statistics": "continual_statistics_queue_observed_blocking_v8"
+  },
+  "planned_jobs": [
+    {
+      "module": "phi_core",
+      "dependencies": [
+        "reviewed_v8_L",
+        "calibration_frozen"
+      ],
+      "required_scope": [
+        "L adopted once",
+        "X real readiness and full core",
+        "L H1 from identical 512-step warm state"
+      ]
+    },
+    {
+      "module": "phi_development",
+      "dependencies": [
+        "phi_core"
+      ],
+      "required_scope": [
+        "2048/2560 learning-curve endpoints",
+        "known and new fact/rule development evaluation",
+        "matched L/X +1024 if late improvement > .01",
+        "development-only architecture choice"
+      ]
+    },
+    {
+      "module": "organization",
+      "dependencies": [
+        "phi_development"
+      ],
+      "required_scope": [
+        "same selected phi/meta optimizer",
+        "O1/O2/O3/O4 each 512",
+        "independent O4 historical masters and current parents",
+        "O1 clean from zero with matching total budget",
+        "freeze every required phi before final parent data"
+      ]
+    },
+    {
+      "module": "final_parent",
+      "dependencies": [
+        "organization"
+      ],
+      "required_scope": [
+        "final all and retain-only ordinary parents",
+        "coverage and acquisition checks"
+      ]
+    },
+    {
+      "module": "formal_recovery",
+      "dependencies": [
+        "final_parent"
+      ],
+      "required_scope": [
+        "matched clean/noise Adam and frozen phi",
+        "main recovery and new fact/rule worlds",
+        "selective D+ and D- with matched data"
+      ]
+    },
+    {
+      "module": "reflow",
+      "dependencies": [
+        "formal_recovery"
+      ],
+      "required_scope": [
+        "original selective source checkpoints",
+        "entity requests",
+        "new-order factual relearning and reflow endpoints"
+      ]
+    },
+    {
+      "module": "continual",
+      "dependencies": [
+        "formal_recovery"
+      ],
+      "required_scope": [
+        "all four organization schedules",
+        "eight rounds of matched baseline and phi trajectories",
+        "data and seed pairing"
+      ]
+    },
+    {
+      "module": "seven_b",
+      "dependencies": [
+        "organization"
+      ],
+      "required_scope": [
+        "preserved early real 7B readiness",
+        "local mixed/clean training and matched extensions",
+        "key scale recovery and continual checks"
+      ]
+    },
+    {
+      "module": "horizon",
+      "dependencies": [
+        "phi_core",
+        "phi_development"
+      ],
+      "required_scope": [
+        "H1/H2 common warm comparison",
+        "small exact H4/H8 diagnostics on identical states"
+      ]
+    },
+    {
+      "module": "confirmation",
+      "dependencies": [
+        "formal_recovery",
+        "continual"
+      ],
+      "required_scope": [
+        "two independently trained phi seeds 29 and 43",
+        "same declared core/clean budgets",
+        "O1 and selected second organization",
+        "locked independent evaluation"
+      ]
+    },
+    {
+      "module": "noise_controls",
+      "dependencies": [
+        "formal_recovery"
+      ],
+      "required_scope": [
+        "factor/subspace/shrink/uniform controls",
+        "fixed update norm and functional damage matching"
+      ]
+    },
+    {
+      "module": "recovery_statistics",
+      "dependencies": [
+        "formal_recovery"
+      ],
+      "required_scope": [
+        "paired blocks and confidence intervals",
+        "separate factual and rule generalization"
+      ]
+    },
+    {
+      "module": "selective_statistics",
+      "dependencies": [
+        "formal_recovery"
+      ],
+      "required_scope": [
+        "D+ and D- request/retain contrasts",
+        "drop adapter and retain-only references"
+      ]
+    },
+    {
+      "module": "reflow_statistics",
+      "dependencies": [
+        "reflow"
+      ],
+      "required_scope": [
+        "paired request, reflow, and retention summaries"
+      ]
+    },
+    {
+      "module": "continual_statistics",
+      "dependencies": [
+        "continual"
+      ],
+      "required_scope": [
+        "round-wise learn/retain/language tradeoffs",
+        "paired trajectories and uncertainty"
+      ]
+    }
+  ],
+  "prerequisites_before_implementation_can_be_launched": [
+    "Review full 192-episode raw gradient and checkpoint evidence; execution PASS alone is insufficient.",
+    "Use a separate per-run guard for X, H1 partial schedules, extensions, organization adaptation, and independent confirmations; do not edit the wrapper pinned by the running L process.",
+    "Guarded partial schedules must start at config.start_episode and preserve the corresponding initial phi and optimizer; validate byte-identical ordinary updates and failure-before-update behavior.",
+    "Route gaosi.confirmation action=meta through the same guarded numerical path while preserving its frozen input checks.",
+    "Keep the original device lock and process-local launch blocking; never replace its inode or resume a failed output.",
+    "Version all phi, profile, and readiness paths and controller references consistently; never adopt v7 results.",
+    "Inspect existing stable downstream manifests before any reuse; preserve failed controllers and unrelated calibration.",
+    "Preserve each local and remote documentation history and input hashes separately."
+  ],
+  "promotion_review": [
+    "Complete source/configuration/parent/data provenance and unchanged base checks.",
+    "Inspect all raw gradient artifacts and guard ledger; audit abnormal scale even below the stop threshold.",
+    "Review same-state numerical and directional-derivative evidence with BF16 limitations; finite/repeatable alone is insufficient.",
+    "Verify full L budget, all required learning-curve checkpoints, and the common warm phi plus optimizer.",
+    "Document scientific limitations explicitly and evaluate development outcomes before freezing final phi."
+  ],
+  "phi_inner_update_budget": {
+    "default": 30720,
+    "with_all_current_matched_core_extensions": 39936,
+    "past_failed_and_diagnostic_updates_excluded": true,
+    "current_v8_executed_updates_provisional": 224,
+    "full_protocol_time_completion_fraction_unknown": true
+  },
+  "conditional_followups": [
+    {
+      "condition": "Key organization still improves with its short adaptation budget",
+      "action": "Matched organization and baseline extension per protocol 7.2"
+    },
+    {
+      "condition": "O2 is best and a superiority claim is pursued",
+      "action": "Official LoRA-FA or equal-budget faithful port per protocol 3"
+    },
+    {
+      "condition": "Eight-round mechanisms have an interpretable signal",
+      "action": "New-order 16/32-round continuation per protocol 10"
+    },
+    {
+      "condition": "Synthetic task mechanisms are clear",
+      "action": "Freeze a real-text subtask with independent development and formal data per protocol 11"
+    }
+  ],
+  "implementation_outstanding": [
+    "Independent v8 scheduler snapshots and validator",
+    "General guarded runner for every meta-training leaf",
+    "Review receipt bound to exact completed source/config/checkpoint/evidence hashes",
+    "Staged launcher with duplicate job and process identity checks"
+  ]
+}

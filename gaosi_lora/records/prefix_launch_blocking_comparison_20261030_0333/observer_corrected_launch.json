@@ -1,0 +1,23 @@
+{
+  "corrected_at_utc": "2026-10-30T03:36:20.839964+00:00",
+  "reason": "Catch and fix repeated-observation output paths before first observation; no SSH sent by recorder yet",
+  "superseded_local_pid": 4151879,
+  "pid": 4154412,
+  "proc_start_ticks": "57710112",
+  "first_due_at_utc": "2026-10-30T03:55:17+00:00",
+  "max_checks": 8,
+  "interval_seconds": 1800,
+  "dynamic_paths_checked": [
+    {
+      "observation": "records/diagnostic_pair_monitor_20261030_035517_utc",
+      "archive": "records/diagnostic_pair_monitor_20261030_035517_utc.tar.gz",
+      "remote_syntax_and_destinations_validated": true
+    },
+    {
+      "observation": "records/diagnostic_pair_monitor_20261030_042517_utc",
+      "archive": "records/diagnostic_pair_monitor_20261030_042517_utc.tar.gz",
+      "remote_syntax_and_destinations_validated": true
+    }
+  ],
+  "training_changes": false
+}

@@ -1,0 +1,14 @@
+{
+  "status": "SCOPED_KNOWN_K4_CPU_AUDIT_PREPARED_NOT_EXECUTED",
+  "at_utc": "2026-11-10T14:19:16.226624+00:00",
+  "source_sha256": "9d6735e9c1447924b43d1527b1276053c56561c599190ce8746485eda6df9f3e",
+  "derived_from_sha256": "bd077590f06571af4bea1df1db93f5555df3c39d966b9a22600948ff125b2c5d",
+  "indices": [
+    0,
+    1,
+    2
+  ],
+  "replay_submitted": false,
+  "production_modified": false,
+  "full_goal_complete": false
+}

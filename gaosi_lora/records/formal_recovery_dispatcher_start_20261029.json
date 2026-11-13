@@ -1,0 +1,25 @@
+{
+  "utc": "2026-10-29T10:46:50.753664+00:00",
+  "job": {
+    "name": "formal_recovery_queue_v1",
+    "command": [
+      "/usr/bin/python",
+      "-u",
+      "tools/formal_recovery_queue.py",
+      "--final-parent-job",
+      "final_parent_queue_v1"
+    ],
+    "wrapper_pid": 39487,
+    "started_at_utc": "2026-10-29T10:46:40.459392+00:00",
+    "start_epoch": 1793270800.4594119,
+    "status": "RUNNING",
+    "child_pid": 39488,
+    "child_proc_start_ticks": "54486996"
+  },
+  "live": true,
+  "policy_recorded": true,
+  "all_phi_frozen": false,
+  "final_parents_ready": false,
+  "formal_configs_created": [],
+  "references_auto_device_lock": true
+}

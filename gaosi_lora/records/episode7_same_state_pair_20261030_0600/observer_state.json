@@ -1,0 +1,11 @@
+{
+  "status": "DIAGNOSTICS_TERMINAL_REQUIRES_AGENT_REVIEW",
+  "pid": 87941,
+  "proc_start_ticks": "58573466",
+  "due_at_utc": "2026-10-30T07:25:17.265934+00:00",
+  "observation_state": "records/scheduled_episode7_same_state_20261030_072517_utc.json",
+  "observations": 3,
+  "production_modified_or_restarted": false,
+  "last_observation": "records/episode7_same_state_monitor_20261030_072517_utc",
+  "alerts": []
+}

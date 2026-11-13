@@ -1,0 +1,27 @@
+{
+  "status": "ISOLATED_CANDIDATE_NOT_ACTIVATED",
+  "created_at_utc": "2026-11-02T19:06:18.676288+00:00",
+  "changes": {
+    "tools/build_observed_v8_pipeline.py": {
+      "before_sha256": "87ff9e74c24b6b77d1d0bc84f1c5037951896415c012bc94ec899e78b04bf0e9",
+      "candidate_sha256": "c3e803e806897c8c2ca4bdc6e616b1b3e3c42a1baa18f9e41e2f7d60e2e09599"
+    },
+    "records/pipeline_observed_blocking_v8/tools/confirmation_queue.py": {
+      "before_sha256": "bf82f5d4bc3e7aa23ccb0d719714f8eb795312e01a74616cf9dff4e15f1d67ba",
+      "candidate_sha256": "b1d27d04fadfae1e56ff1f83357e87b0382705c388b7ab96c654fa6ae5f26545"
+    }
+  },
+  "problem": "Generated per-seed writers use observed_blocking_v8; final manifest uses v1.",
+  "affected_consumers": [
+    "recovery",
+    "selective",
+    "reflow",
+    "continual"
+  ],
+  "live_training_modified_or_restarted": false,
+  "live_controllers_modified_or_restarted": false,
+  "historical_evidence_overwritten": false,
+  "activation_pending": "A running Python main retains its original code. Disk edits alone cannot repair it.",
+  "forbidden_workaround": "Do not silently select existing legacy v1 results or alias historical records.",
+  "previous_goal_turn_classification": "no progress: status response only; current turn prepares and tests a repair."
+}

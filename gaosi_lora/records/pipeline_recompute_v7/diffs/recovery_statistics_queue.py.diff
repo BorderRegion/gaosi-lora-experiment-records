@@ -1,0 +1,23 @@
+--- original/recovery_statistics_queue.py
++++ tools/recovery_statistics_queue.py
+@@ -12,11 +12,11 @@
+         raise RuntimeError('Paired cluster/statistics integration checks must pass first')
+     from gaosi.recovery_statistics import POLICY
+     preserve_json('records/recovery_statistics_policy_v1.json', POLICY)
+-    wait_for('records/formal_main_grid_ready_v2.json', 'formal_recovery_queue_v2')
++    wait_for('records/formal_main_grid_ready_v2.json', 'formal_recovery_queue_recompute_v7')
+     primary = run_job('recovery_statistics_primary_v1',
+                       ['/usr/bin/python', '-u', 'tools/summarize_recovery.py', '--stage', 'primary',
+                        '--out', 'analysis/recovery_primary_v1'], 'analysis/recovery_primary_v1/result.json')
+-    wait_for('records/confirmation_ready_v1.json', 'confirmation_queue_v1')
++    wait_for('records/confirmation_ready_v1.json', 'confirmation_queue_recompute_v7')
+     full = run_job('recovery_statistics_three_seed_v1',
+                    ['/usr/bin/python', '-u', 'tools/summarize_recovery.py', '--stage', 'full',
+                     '--out', 'analysis/recovery_three_seed_v1'], 'analysis/recovery_three_seed_v1/result.json')
+@@ -29,5 +29,5 @@
+ 
+ if __name__ == '__main__':
+     import sys
+-    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
++    sys.path.insert(0, str(Path.cwd()))
+     main()

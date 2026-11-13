@@ -1,0 +1,137 @@
+{
+  "status": "RECORDED_CORE_INNER_LEDGER_CHECKS_PASS_ONLY",
+  "reviewed_at_utc": "2026-11-03T08:53:47.699424+00:00",
+  "source": "records/X_core_completion_preparation_20261103_0852/review_core_inner_ledger.py",
+  "source_sha256": "0b097f2b30c353ec147aa817b616c8c31cb1c6d946f686ae72adcbf46a92a0f2",
+  "observation": "records/observed_blocking_core_monitor_20261101_070654_utc",
+  "run": "runs/phi_mix_O1_L_H2_core_s17_observed_blocking_v8",
+  "architecture": "L",
+  "require_complete": true,
+  "full_core_episode_ledger_present": true,
+  "input_sha256": {
+    "records/observed_blocking_core_monitor_20261101_070654_utc/snapshot/runs/phi_mix_O1_L_H2_core_s17_observed_blocking_v8/config.json": "5cc9a94a6b803c595d7d2b2fa1cb6a1b466539ca5c049227a651a50e3d2b40ec",
+    "records/observed_blocking_core_monitor_20261101_070654_utc/snapshot/runs/phi_mix_O1_L_H2_core_s17_observed_blocking_v8/events.jsonl": "cbf5b045408ad93b37cfd73ee6e5fd8639fc180a4756f085b4cdc7094f2518de",
+    "records/observed_blocking_core_monitor_20261101_070654_utc/snapshot/runs/phi_mix_O1_L_H2_core_s17_observed_blocking_v8/raw_gradients.jsonl": "480d060aa506993ec5bf9da91b3a1255fd9d7376c123a209dede6209eefd8c4c",
+    "records/observed_blocking_core_monitor_20261101_070654_utc/snapshot/runs/phi_mix_O1_L_H2_core_s17_observed_blocking_v8/result.json": "ef5739df00926ecfe510dd3dcbaa027ecd5fa37910acf45062dbf249f3454ac8",
+    "records/observed_blocking_core_monitor_20261101_070654_utc/snapshot/runs/phi_mix_O1_L_H2_core_s17_observed_blocking_v8/observed_training_result.json": "d7525bc0b3e7957dc00c6bb2e2abd222a12deabde0d8b1744ee7d43869e80aed",
+    "records/observed_blocking_core_monitor_20261101_070654_utc/archive_source_sha256.json": "52fe7183bedd46e489e8dd190ce183b2037c5d67d9206758cfb3ca4882db888e"
+  },
+  "source_files_rehashed": 49,
+  "completed_episodes_checked": 192,
+  "completed_inner_steps_checked": 2560,
+  "exact_window_flag_matches_last_two_steps_in_every_completed_episode": true,
+  "minimum_recorded_effective_tokens": {
+    "task_tokens": 512,
+    "language_tokens": 516,
+    "keep_tokens": 512
+  },
+  "groups": [
+    {
+      "K": 8,
+      "mode": "known",
+      "q_train": 0.0,
+      "count": 22,
+      "mean_episode_seconds": 609.0573981818181,
+      "median_raw_norm": 4.0819139152340004e-05,
+      "min_raw_norm": 1.528648804462009e-05,
+      "max_raw_norm": 9.813503122128407e-05,
+      "median_objective": 0.00011064783393521793
+    },
+    {
+      "K": 8,
+      "mode": "known",
+      "q_train": 0.5,
+      "count": 21,
+      "mean_episode_seconds": 612.3712684285714,
+      "median_raw_norm": 0.0277261827291289,
+      "min_raw_norm": 0.002373791605177245,
+      "max_raw_norm": 0.22966086724073495,
+      "median_objective": 0.015452425926923752
+    },
+    {
+      "K": 8,
+      "mode": "known",
+      "q_train": 0.7,
+      "count": 21,
+      "mean_episode_seconds": 611.7339160476191,
+      "median_raw_norm": 0.034215120180218835,
+      "min_raw_norm": 0.002280693974005638,
+      "max_raw_norm": 0.11979637376772051,
+      "median_objective": 0.017554238438606262
+    },
+    {
+      "K": 16,
+      "mode": "known",
+      "q_train": 0.0,
+      "count": 21,
+      "mean_episode_seconds": 949.9518029047618,
+      "median_raw_norm": 1.9206618452888347e-05,
+      "min_raw_norm": 4.627029909386178e-06,
+      "max_raw_norm": 0.00011652853827964206,
+      "median_objective": 0.0001241492573171854
+    },
+    {
+      "K": 16,
+      "mode": "known",
+      "q_train": 0.5,
+      "count": 22,
+      "mean_episode_seconds": 949.011837,
+      "median_raw_norm": 0.0005273111637299189,
+      "min_raw_norm": 4.762709909246364e-05,
+      "max_raw_norm": 0.005067355559185192,
+      "median_objective": 0.0018203952349722385
+    },
+    {
+      "K": 16,
+      "mode": "known",
+      "q_train": 0.7,
+      "count": 21,
+      "mean_episode_seconds": 944.7229762380953,
+      "median_raw_norm": 0.00093729227025415,
+      "min_raw_norm": 0.000125134956818008,
+      "max_raw_norm": 0.0033148268517323187,
+      "median_objective": 0.006467846687883139
+    },
+    {
+      "K": 16,
+      "mode": "new",
+      "q_train": 0.0,
+      "count": 21,
+      "mean_episode_seconds": 1003.4379823333334,
+      "median_raw_norm": 0.05204706263639401,
+      "min_raw_norm": 3.233108539786406e-08,
+      "max_raw_norm": 0.5529931291135208,
+      "median_objective": 0.00688881566748023
+    },
+    {
+      "K": 16,
+      "mode": "new",
+      "q_train": 0.5,
+      "count": 21,
+      "mean_episode_seconds": 1017.160725952381,
+      "median_raw_norm": 0.0372603023303214,
+      "min_raw_norm": 4.545643910986812e-06,
+      "max_raw_norm": 0.5823351201809523,
+      "median_objective": 0.011832601390779018
+    },
+    {
+      "K": 16,
+      "mode": "new",
+      "q_train": 0.7,
+      "count": 22,
+      "mean_episode_seconds": 1006.5633567272728,
+      "median_raw_norm": 0.022907370405723146,
+      "min_raw_norm": 1.077388813542202e-06,
+      "max_raw_norm": 0.5415884329454607,
+      "median_objective": 0.014899307396262884
+    }
+  ],
+  "method_validated": false,
+  "downstream_promotion_allowed": false,
+  "limitations": [
+    "Checks recorded flags and tokens, not graph connectivity or derivatives.",
+    "Task routes and noise levels differ; these summaries do not establish convergence.",
+    "Only committed episodes are summarized; live files may reflect adjacent instants.",
+    "Even a full ledger needs job identity verification, tensor artifact audit, Adam replay and a separate scientific review."
+  ]
+}

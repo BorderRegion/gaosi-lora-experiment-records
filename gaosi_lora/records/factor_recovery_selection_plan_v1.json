@@ -1,0 +1,52 @@
+{
+  "status": "DEVELOPMENT_PLAN",
+  "policy": {
+    "version": 1,
+    "reason": "Acquisition-selected B/A=16 degrades ordinary recovery at development steps8/16; tune the recovery baseline before any formal comparison.",
+    "ratios": [
+      1.0,
+      4.0,
+      16.0
+    ],
+    "lrs": [
+      3e-05,
+      0.0001,
+      0.0003
+    ],
+    "K": 64,
+    "eval_steps": [
+      8,
+      16,
+      32,
+      64
+    ],
+    "data": "same dev parent and q_medium candidate as original calibration",
+    "selection_step": "3B recovery_K, once frozen by the original standard-Adam calibration",
+    "score": "candidate plus strict_EM minus language residual above .2 nats; ties prefer lower ratio then lower learning rate",
+    "reuse": "preserve original factor16/lr3e-4; factor1/lr3e-4 is exactly the existing paired-Adam update",
+    "horizon": "These fixed Adam-family updates do not use phi time features; recorded K64 intermediate states are valid fixed-budget endpoints.",
+    "calibration_and_phi": "do not change their q, primary K, phi LR or current training; override only formal factor-LR settings",
+    "formal_data_used": false
+  },
+  "allowed_data": [
+    "data/synthetic/dev_parent.jsonl"
+  ],
+  "allowed_parents": [
+    "runs/parent_3b_dev_parent_r32_s17_extend512_v2/latest.pt"
+  ],
+  "lr_candidates": [
+    3e-05,
+    0.0001,
+    0.0003
+  ],
+  "K_candidates": [
+    64
+  ],
+  "q_candidates": [
+    0.7
+  ],
+  "noise_schemes": [
+    "subspace"
+  ],
+  "formal_data_used": false
+}

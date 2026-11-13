@@ -1,0 +1,115 @@
+{
+  "observed_at_utc": "2026-10-30T00:57:46.050104+00:00",
+  "pid1_start": "Thu Oct 29 16:36:15 2026",
+  "data_storage_GiB": {
+    "total": 1050.0,
+    "free": 983.48
+  },
+  "original_training_pid": 344804,
+  "training_identity_live": true,
+  "completed_episodes": 51,
+  "episode_budget": 192,
+  "completed_inner_updates": 408,
+  "update_budget": 2560,
+  "last_event": {
+    "event": "inner",
+    "utc": "2026-10-30T00:56:40.301210+00:00",
+    "process_wall_seconds": 12094.059779882431,
+    "episode": 51,
+    "k": 8,
+    "ld": 4.4699147110804915e-05,
+    "lr": 1.0155909061431885,
+    "task_tokens": 565,
+    "language_tokens": 1022,
+    "support_forwards": 20,
+    "keep_tokens": 565,
+    "keep_forwards": 9,
+    "step_seconds": 14.958478689193726,
+    "exact_window": true,
+    "cpu_rss_bytes": 8095211520,
+    "allocated_bytes": 17651933184,
+    "reserved_bytes": 34007416832,
+    "peak_allocated_bytes": 31301750784,
+    "peak_reserved_bytes": 34007416832
+  },
+  "checkpoint": {
+    "exists": true,
+    "bytes": 968309,
+    "modified_at_utc": "2026-10-30T00:54:23.839892+00:00"
+  },
+  "production_controllers": [
+    {
+      "name": "confirmation_queue_recompute_v7",
+      "identity_live": true
+    },
+    {
+      "name": "continual_queue_recompute_v7",
+      "identity_live": true
+    },
+    {
+      "name": "continual_statistics_queue_recompute_v7",
+      "identity_live": true
+    },
+    {
+      "name": "final_parent_queue_recompute_v7",
+      "identity_live": true
+    },
+    {
+      "name": "formal_recovery_queue_recompute_v7",
+      "identity_live": true
+    },
+    {
+      "name": "horizon_queue_recompute_v7",
+      "identity_live": true
+    },
+    {
+      "name": "noise_controls_queue_recompute_v7",
+      "identity_live": true
+    },
+    {
+      "name": "organization_queue_recompute_v7",
+      "identity_live": true
+    },
+    {
+      "name": "phi_core_queue_recompute_v7",
+      "identity_live": true
+    },
+    {
+      "name": "phi_development_queue_recompute_v7",
+      "identity_live": true
+    },
+    {
+      "name": "recovery_statistics_queue_recompute_v7",
+      "identity_live": true
+    },
+    {
+      "name": "reflow_queue_recompute_v7",
+      "identity_live": true
+    },
+    {
+      "name": "reflow_statistics_queue_recompute_v7",
+      "identity_live": true
+    },
+    {
+      "name": "selective_statistics_queue_recompute_v7",
+      "identity_live": true
+    },
+    {
+      "name": "seven_b_queue_recompute_v7",
+      "identity_live": true
+    }
+  ],
+  "model_directories_present": true,
+  "synthetic_data_directory_present": true,
+  "log_error_lines": [],
+  "production_training_modified_or_restarted": false,
+  "same_remote_container_start_as_previous": true,
+  "same_training_pid_as_previous": true,
+  "scheduled_observation": {
+    "due_at_utc": "2026-10-30T01:09:00+00:00",
+    "pid": 3997115,
+    "identity_live": true
+  },
+  "checkpoint_finiteness_last_verified_at_utc": "2026-10-30T00:39:04.617453+00:00",
+  "existing_numerical_risk": "Episode 7 large preclip gradient remains unresolved; this check verifies infrastructure and progress."
+}

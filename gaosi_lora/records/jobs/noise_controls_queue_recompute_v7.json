@@ -1,0 +1,14 @@
+{
+  "name": "noise_controls_queue_recompute_v7",
+  "command": [
+    "/usr/bin/python",
+    "-u",
+    "/root/autodl-tmp/gaosi_lora/records/pipeline_recompute_v7/tools/noise_controls_queue.py"
+  ],
+  "wrapper_pid": 379890,
+  "started_at_utc": "2026-10-29T22:58:26.858300+00:00",
+  "start_epoch": 1793314706.858317,
+  "status": "RUNNING",
+  "child_pid": 379891,
+  "child_proc_start_ticks": "58877636"
+}

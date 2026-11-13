@@ -1,0 +1,138 @@
+{
+  "created_at_utc": "2026-10-30T03:32:04.967550+00:00",
+  "status": "TWO_BOUNDED_DIAGNOSTICS_LAUNCHED_SAME_DEVICE_LOCK",
+  "experiment": "Process-local launch-blocking vs environment-unset control, same pinned v7 full-model fresh prefix",
+  "production_modified_or_restarted": false,
+  "formal_data_used": false,
+  "core_budget_credit": 0,
+  "diagnostic_inner_updates_max": 128,
+  "diagnostic_meta_updates_max": 16,
+  "device_lock_inode": 31148027670,
+  "jobs": [
+    {
+      "job": "diagnose_core_prefix_v7_launch_blocking_r1",
+      "config": "configs/diagnose_core_prefix_v7_launch_blocking_r1.json",
+      "config_sha256": "e2635a236123ff6d4cbdf8d5c6b7e49624ed915d745a1f735a5413d90025da14",
+      "MUSA_LAUNCH_BLOCKING": "1",
+      "validation": {
+        "status": "VALIDATED_NOT_EXECUTED",
+        "inner_updates_max": 64,
+        "output": "runs/diagnostics/core_prefix_v7_launch_blocking_r1",
+        "torch_imported": false
+      },
+      "command": [
+        "/usr/bin/python",
+        "-u",
+        "tools/job.py",
+        "--name",
+        "diagnose_core_prefix_v7_launch_blocking_r1",
+        "--musa-lock",
+        "/tmp/gaosi_musa_device0.lock",
+        "--",
+        "/usr/bin/env",
+        "MUSA_LAUNCH_BLOCKING=1",
+        "/usr/bin/python",
+        "-u",
+        "tools/diagnose_prefix_gradient.py",
+        "--config",
+        "configs/diagnose_core_prefix_v7_launch_blocking_r1.json",
+        "--execute"
+      ],
+      "wrapper_pid": 522975,
+      "wrapper_start_ticks": "60519447",
+      "job_state": {
+        "name": "diagnose_core_prefix_v7_launch_blocking_r1",
+        "command": [
+          "/usr/bin/env",
+          "MUSA_LAUNCH_BLOCKING=1",
+          "/usr/bin/python",
+          "-u",
+          "tools/diagnose_prefix_gradient.py",
+          "--config",
+          "configs/diagnose_core_prefix_v7_launch_blocking_r1.json",
+          "--execute"
+        ],
+        "wrapper_pid": 522975,
+        "started_at_utc": "2026-10-30T03:32:05.003889+00:00",
+        "start_epoch": 1793331125.0039074,
+        "status": "RUNNING",
+        "device_lock": {
+          "path": "/tmp/gaosi_musa_device0.lock",
+          "version": 1
+        },
+        "child_pid": 522977,
+        "child_proc_start_ticks": "60519450"
+      },
+      "identity_live": true,
+      "observed_child_launch_blocking": [
+        "MUSA_LAUNCH_BLOCKING=1"
+      ],
+      "log_tail": "{\"event\": \"waiting_device\", \"utc\": \"2026-10-30T03:32:05.034522+00:00\", \"job\": \"diagnose_core_prefix_v7_launch_blocking_r1\", \"lock\": \"/tmp/gaosi_musa_device0.lock\"}\n{\"event\": \"device_acquired\", \"utc\": \"2026-10-30T03:32:05.040207+00:00\", \"job\": \"diagnose_core_prefix_v7_launch_blocking_r1\", \"lock\": \"/tmp/gaosi_musa_device0.lock\"}\n"
+    },
+    {
+      "job": "diagnose_core_prefix_v7_async_control_r2",
+      "config": "configs/diagnose_core_prefix_v7_async_control_r2.json",
+      "config_sha256": "153b9b620bd9019ef257b1c0c4e776d6c1e4aa42ad1e650696efa4798176483c",
+      "MUSA_LAUNCH_BLOCKING": null,
+      "validation": {
+        "status": "VALIDATED_NOT_EXECUTED",
+        "inner_updates_max": 64,
+        "output": "runs/diagnostics/core_prefix_v7_async_control_r2",
+        "torch_imported": false
+      },
+      "command": [
+        "/usr/bin/python",
+        "-u",
+        "tools/job.py",
+        "--name",
+        "diagnose_core_prefix_v7_async_control_r2",
+        "--musa-lock",
+        "/tmp/gaosi_musa_device0.lock",
+        "--",
+        "/usr/bin/env",
+        "-u",
+        "MUSA_LAUNCH_BLOCKING",
+        "/usr/bin/python",
+        "-u",
+        "tools/diagnose_prefix_gradient.py",
+        "--config",
+        "configs/diagnose_core_prefix_v7_async_control_r2.json",
+        "--execute"
+      ],
+      "wrapper_pid": 523002,
+      "wrapper_start_ticks": "60519457",
+      "job_state": {
+        "name": "diagnose_core_prefix_v7_async_control_r2",
+        "command": [
+          "/usr/bin/env",
+          "-u",
+          "MUSA_LAUNCH_BLOCKING",
+          "/usr/bin/python",
+          "-u",
+          "tools/diagnose_prefix_gradient.py",
+          "--config",
+          "configs/diagnose_core_prefix_v7_async_control_r2.json",
+          "--execute"
+        ],
+        "wrapper_pid": 523002,
+        "started_at_utc": "2026-10-30T03:32:05.104971+00:00",
+        "start_epoch": 1793331125.1049902,
+        "status": "RUNNING",
+        "device_lock": {
+          "path": "/tmp/gaosi_musa_device0.lock",
+          "version": 1
+        },
+        "child_pid": 523003,
+        "child_proc_start_ticks": "60519461"
+      },
+      "identity_live": true,
+      "observed_child_launch_blocking": [],
+      "log_tail": "{\"event\": \"waiting_device\", \"utc\": \"2026-10-30T03:32:05.135552+00:00\", \"job\": \"diagnose_core_prefix_v7_async_control_r2\", \"lock\": \"/tmp/gaosi_musa_device0.lock\"}\n"
+    }
+  ],
+  "limitations": [
+    "Two independent diagnostic trajectories; later phi may diverge if gradients differ.",
+    "No finite-gradient or exit-code result alone validates H2.",
+    "Environment setting is recognized by installed backend source; runtime efficacy still to be measured."
+  ]
+}

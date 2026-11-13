@@ -1,0 +1,86 @@
+--- gaosi/confirmation.py
++++ records/confirmation_clean_pairing_20261110_1430/confirmation_runner_corrected.py
+@@ -4,7 +4,7 @@
+ from pathlib import Path
+ import random
+ 
+-from .scale import sha256
++from gaosi.scale import sha256
+ 
+ 
+ def check_config(config):
+@@ -78,25 +78,41 @@
+             if not source or any(not r.get('world_id', '').startswith('meta') for r in source):
+                 raise ValueError('Independent phi training may only consume meta-world rows')
+         stage = config['confirmation_stage']
+-        if stage in ['mixed_core_from_zero', 'clean_full_from_zero']:
++        fresh = stage in ['mixed_core_from_zero', 'clean_core_from_zero']
++        specializing = stage in ['organization_specialization', 'clean_organization_specialization']
++        clean = stage in ['clean_core_from_zero', 'clean_organization_specialization']
++        if fresh:
+             if config.get('initial_phi') or config.get('start_episode') or config.get('load_initial_meta_optimizer'):
+                 raise ValueError('An independent phi must start from zero output and fresh meta optimizer')
+-        elif stage == 'organization_specialization':
++        elif specializing:
+             import torch
+             parent = torch.load(config['initial_phi'], map_location='cpu', weights_only=False)
+-            if (parent['config']['confirmation_seed'] != seed
+-                    or parent['config']['confirmation_stage'] != 'mixed_core_from_zero'
++            parent_config = parent['config']
++            parent_stage = 'clean_core_from_zero' if clean else 'mixed_core_from_zero'
++            if (parent_config['confirmation_seed'] != seed or parent_config['seed'] != seed
++                    or parent_config['confirmation_stage'] != parent_stage
++                    or parent_config['organization'] != 'O1'
++                    or parent_config['episode_K'] != schedule
++                    or parent_config['known_warm_episodes'] != 64
++                    or parent_config['q_cycle'] != ([0.] if clean else reference['q_cycle'])
++                    or parent_config.get('initial_phi') or parent_config.get('start_episode')
+                     or parent['inner_updates'] != selected['core_inner_steps']
+-                    or not config['load_initial_meta_optimizer']):
+-                raise ValueError('Specialization must start at its own independently trained mixed core')
++                    or parent['next_episode'] != len(schedule)
++                    or not config['load_initial_meta_optimizer'] or config.get('start_episode', 0) != 0):
++                raise ValueError('Specialization must inherit its own completed mixed/clean core and restart episode zero')
++            for key in ['world_manifest', 'meta_reference_config', 'architecture', 'meta_lr',
++                        'inner_lr', 'seq', 'effective_tokens', 'retain_weight', 'penalty', 'horizon']:
++                if parent_config[key] != config[key]:
++                    raise ValueError('Specialization changed its own core setting: ' + key)
++            states = parent['meta_optimizer']['state']
++            if not states or any(float(value['step']) != len(schedule) for value in states.values()):
++                raise ValueError('Specialization must inherit the complete core Adam state')
+         else:
+-            raise ValueError('Unknown independent meta stage')
+-        expected = [8] * 64 if stage == 'organization_specialization' else schedule
+-        if stage == 'clean_full_from_zero':
+-            expected = schedule + [8] * 64
+-        if config['episode_K'] != expected or config['known_warm_episodes'] != (0 if stage == 'organization_specialization' else 64):
++            raise ValueError('Unknown independent meta stage; concatenated clean control is not paired')
++        expected = [8] * 64 if specializing else schedule
++        if config['episode_K'] != expected or config['known_warm_episodes'] != (0 if specializing else 64):
+             raise ValueError('Independent core/clean/specialization schedule changed')
+-        if config['q_cycle'] != ([0.] if stage == 'clean_full_from_zero' else reference['q_cycle']):
++        if config['q_cycle'] != ([0.] if clean else reference['q_cycle']):
+             raise ValueError('Independent training noise schedule changed')
+         if stage != 'organization_specialization' and config['organization'] != 'O1':
+             raise ValueError('Independent cores and clean rules are trained in O1')
+@@ -174,16 +190,16 @@
+     torch.set_num_threads(8)
+     action = config['confirmation_action']
+     if action == 'meta':
+-        from .meta import train
++        from gaosi.meta import train
+         train(config, args.resume)
+     elif action == 'recover':
+-        from .recover import run_recovery
++        from gaosi.recover import run_recovery
+         run_recovery(config, args.resume)
+     elif action == 'reflow':
+-        from .reflow import run_reflow
++        from gaosi.reflow import run_reflow
+         run_reflow(config, args.resume)
+     else:
+-        from .continual import train
++        from gaosi.continual import train
+         train(config, args.resume)
+ 
+ 

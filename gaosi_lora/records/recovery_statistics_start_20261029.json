@@ -1,0 +1,40 @@
+{
+  "utc": "2026-10-29T13:30:40.572161+00:00",
+  "job": {
+    "name": "recovery_statistics_queue_v1",
+    "command": [
+      "/usr/bin/python",
+      "-u",
+      "tools/recovery_statistics_queue.py"
+    ],
+    "wrapper_pid": 92495,
+    "started_at_utc": "2026-10-29T13:30:20.420377+00:00",
+    "start_epoch": 1793280620.4203966,
+    "status": "RUNNING",
+    "child_pid": 92496,
+    "child_proc_start_ticks": "55468992"
+  },
+  "process_identity_live": true,
+  "stage": "WAITING_FOR_COMPLETE_PRIMARY_MAIN_GRID",
+  "upstream_jobs": [
+    "formal_recovery_queue_v2",
+    "confirmation_queue_v1"
+  ],
+  "upstream_process_identities_verified_at_start": true,
+  "source_hashes": {
+    "gaosi/recovery_statistics.py": "1286a9e2ef9d26166069916de40b85424ce33ec8c2677f59c965ea7b4a2d5690",
+    "tools/summarize_recovery.py": "974b0e8f04dcfdcbd947e82844587f36c520f117a06902f49a6347906998ad72",
+    "tools/recovery_statistics_queue.py": "eff24fc77ebd53b50ff6c8293e8c9c5275a132be40e6c28d79ef71f078b594d5",
+    "tools/validate_recovery_statistics.py": "adb13013acb868759f0da71dadd6434ccb692a8c8c562945850a03486f0f27a3"
+  },
+  "cpu_check": {
+    "status": "PASS",
+    "count": 10,
+    "sha256": "0648b5819a134f39720918e93315a3dd1c0988cbcc2adf9565728a07a941ff01",
+    "scope": "Pure CPU statistical logic and explicitly simulated production-format grids; no real effect evidence"
+  },
+  "policy": "records/recovery_statistics_policy_v1.json",
+  "actual_formal_statistics_started": false,
+  "overall_experiment_complete": false,
+  "production_recover_sha256": "955babb1fb4303e6b367ba848cf909a0d94442620d27a031e215730cf76f44c1"
+}

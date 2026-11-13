@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "scope": "Primary-horizon main recovery only; selective/reflow/continual/7B and conditional extensions remain separate.",
+  "contrasts": [
+    [
+      "phi_mix",
+      "standard_adam"
+    ],
+    [
+      "phi_mix",
+      "paired_adam"
+    ],
+    [
+      "phi_mix",
+      "factor_lr"
+    ],
+    [
+      "phi_mix",
+      "phi_clean"
+    ]
+  ],
+  "accuracy": "Paired task candidate accuracy and strict EM, first averaged within entity for fact tasks. Each rule world is one cluster. Equal worlds within fact/rule, then equal family weight.",
+  "known": "Average repeated noise-seed measurements within each entity before inference. Noise seeds are repeated corruptions, never independent phi training.",
+  "bootstrap": "Percentile paired hierarchical bootstrap: independent phi seed at the outside; shared stratified world/entity draws across seeds. Families fixed, matched example IDs, common task subset only. 2000 draws, deterministic analysis seed7719.",
+  "seed17": "Full32-world primary-seed estimate is conditional on that one trained phi. Three-seed estimate uses known plus the predeclared first4 fact/first4 rule worlds; seed17 is also reported separately.",
+  "interpretation": "Intervals are descriptive/exploratory with only three phi seeds, conditional on shared parent adapters and these task families. No p-values or automatic superiority claim; all per-seed estimates retained.",
+  "other_metrics": "Raw clean/noisy/final task/keep/language metrics, actual coverage and compute/time/memory are exported without changing their production denominators. NLL and costs are not given entity-bootstrap intervals here.",
+  "settings_selected_by_summary": false
+}

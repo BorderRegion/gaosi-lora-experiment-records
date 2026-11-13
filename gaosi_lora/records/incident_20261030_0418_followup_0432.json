@@ -1,0 +1,25 @@
+{
+  "utc": "2026-10-29T20:32:52.321590+00:00",
+  "jobs": [
+    {
+      "name": "diagnose_L_clean_K2_gradient_s17_v2",
+      "status": "RUNNING",
+      "pid": 292941,
+      "start_ticks": "57966588",
+      "identity_valid": true
+    },
+    {
+      "name": "diagnose_L_episode13_repeat_s17_v3",
+      "status": "RUNNING",
+      "pid": 295036,
+      "start_ticks": "57983603",
+      "identity_valid": true
+    }
+  ],
+  "free_GiB": 983.5339622497559,
+  "documents": {
+    "REPORT.md": "4bb86338b7e5ed32abe04fca2632208aa2994c5876c1d5a29619c07b2c5417fc",
+    "NEXT_STEPS.md": "79f43e9e348b91c975bcaab25910286c873c93cc25c4e27b1e778c8e4ccd1b4a"
+  },
+  "production_training_resumed": false
+}

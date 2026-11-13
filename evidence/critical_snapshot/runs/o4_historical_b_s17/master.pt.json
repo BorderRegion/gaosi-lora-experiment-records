@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "parent": "runs/parent_3b_meta_parent_b_r32_s17_extend512_v2/latest.pt",
+  "historical_bindings": "data/synthetic/meta_parent_b.jsonl",
+  "current_adapter_requirement": "Must independently train another allowed meta binding set on this historical base before O4 phi specialization",
+  "master": "runs/o4_historical_b_s17/master.pt",
+  "master_digest": "6306957116e56569fda9ed651fccb65c1b0486de8ec51dd64d5a35fb96f90235",
+  "merge": {
+    "merge_seconds": 34.19733643531799,
+    "merge_count": 1,
+    "cumulative_rank_upper_bound": 32,
+    "working_BF16_rounding_sq": 4.872985973226605,
+    "FP32_master_sq": 1806094.2379302979,
+    "adapter_reset": true,
+    "KV_cache_discarded": true
+  }
+}

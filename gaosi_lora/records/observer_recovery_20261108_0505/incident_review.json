@@ -1,0 +1,98 @@
+{
+  "status": "EXITED_OBSERVER_SSH_FAILURE_REVIEWED_CONNECTION_RESTORED",
+  "recorded_at_utc": "2026-11-08T05:04:31.387410+00:00",
+  "old_observer_identity_verified_dead": true,
+  "old_follower_identity_verified_dead": true,
+  "old_observation_count": 3,
+  "last_committed_observation": {
+    "observation": "records/pipeline_monitor_20261108_043251_utc",
+    "archive_sha256": "1b34fa33b933aafe64ce25830952c739b0790fc455479a9081feed8a33bfd89e",
+    "verified_source_files": 56,
+    "alerts": [],
+    "pending_scientific_reviews": [],
+    "meta_runs": [],
+    "production_modified_or_restarted": false
+  },
+  "last_snapshot_files_independently_rehashed": 56,
+  "last_completion_receipt_evidence_independently_rehashed": 7,
+  "failure": "SSH exited 255 before the scheduled 05:02 snapshot was created; original control socket was absent.",
+  "recovery": "Authenticated SSH master restored in a detached foreground process with standard streams disconnected; control and read-only remote reads succeeded. Prior master exit cause remains unproven.",
+  "remote_preflight": {
+    "status": "SSH_RESTORED_NO_FAILED_SLOT_OUTPUT_OR_DEVICE_LOCK_REPLACEMENT",
+    "utc": "2026-11-08T05:04:31.365241+00:00",
+    "device_lock_inode": 31148027670,
+    "last_training_event": {
+      "event": "recover",
+      "utc": "2026-11-08T05:04:28.356584+00:00",
+      "process_wall_seconds": 3934.903652906418,
+      "step": 35,
+      "loss_D": 6.200878851814196e-05,
+      "loss_language": 0.8669199347496033,
+      "route_tokens": {
+        "task": 513,
+        "language": 698,
+        "keep": 528
+      },
+      "step_seconds": 46.52434802055359,
+      "coverage_slot": "task",
+      "coverage": 32,
+      "raw_update_norm": 0.15305310487747192,
+      "update_norm": 0.15305310487747192,
+      "update_norm_scale": 1.0,
+      "compute_counters": {
+        "loss_forwards": 741,
+        "loss_backwards": 696,
+        "input_tokens": 369760,
+        "supervised_tokens": 93523,
+        "hessian_vector_products": 0
+      },
+      "cpu_rss_bytes": 7787700224,
+      "allocated_bytes": 9678762496,
+      "reserved_bytes": 23540531200,
+      "peak_allocated_bytes": 15811884544,
+      "peak_reserved_bytes": 23540531200
+    }
+  },
+  "evidence_sha256": {
+    "records/pipeline_observer_20261108_0330/observer_state.json": "0bb04394e6c6a3dee755f57e9148963b69eb2004232a378c9bf3602e2d8b790b",
+    "records/pipeline_observer_20261108_0330/observations.jsonl": "a6c071ff35439356917b5c696666c38a71226d1dafabd5b734ed24f1346477bd",
+    "records/pipeline_observer_20261108_0330/stderr.log": "af4ae67a88e535f4dd797016208889b7c3d36bcb14ac8642ff9e488456a3088f",
+    "records/scheduled_review_follower_20261108_0410/state.json": "2936a64f9d2254ebfd76afa64dabaa076c25921790d728803dd05a3b8a583cfb",
+    "records/scheduled_review_follower_20261108_0410/completed.jsonl": "323c9640ffa67ffd942615710332cbcc5802803a5134f6025718af4a0a40c5b1",
+    "records/pipeline_observer_20261108_0330/completion_receipt_20261108_0432.json": "50ab0a8c5f067061a984bb805fcfa250088f453eac7d9b08db491a8a1a50ec58",
+    "records/pipeline_observer_20261108_0330/followup_20261108_0432.json": "17a3a0243e0592a2ae0f8e5a4a65cfb2e48bc5e143eac0647fc5a5d16cff22e7"
+  },
+  "copied_sources_unchanged": {
+    "observe.py": {
+      "source": "records/pipeline_observer_20261108_0330/observe.py",
+      "sha256": "ebd599f6c6ca93ecc91951b4f71dba4606d4d94f43aab38bd698ee53303f2098"
+    },
+    "collect_snapshot.py": {
+      "source": "records/pipeline_observer_20261108_0330/collect_snapshot.py",
+      "sha256": "a67e876069319e2246601a08f43eefbd94defb7b854a0ab26d0a3e6d3634bb1c"
+    },
+    "wait_next_observation.py": {
+      "source": "records/pipeline_observer_20261108_0330/wait_next_observation.py",
+      "sha256": "a64444e4047cd15f32ad8e8cf0bc2ec4ae9bc1a3bba578d9bdbe9578777878a3"
+    },
+    "review_snapshot.py": {
+      "source": "records/pipeline_observer_20261108_0330/review_snapshot.py",
+      "sha256": "8338feefffe45bb5205e597ff945292a2a34b4e7fbcc10b278fcc0a0e38ad243"
+    },
+    "record_runtime_review.py": {
+      "source": "records/pipeline_observer_20261108_0330/record_runtime_review.py",
+      "sha256": "f518aa6cac7bd7fc1c4aa8c0594adfc61804ea2a96056792b43bda16e63bbf7e"
+    },
+    "complete_scheduled_followup_v1.py": {
+      "source": "records/pipeline_observer_20261108_0330/complete_scheduled_followup_v1.py",
+      "sha256": "fb9bc2f1c027a2e880024f2260a19d2bfe1fc155cc284ecc866d2c7d34abe82a"
+    }
+  },
+  "bridge_followup": "records/pipeline_observer_20261108_0505/previous_observer_followup_20261108_0432.json",
+  "bridge_sha256": "17a3a0243e0592a2ae0f8e5a4a65cfb2e48bc5e143eac0647fc5a5d16cff22e7",
+  "bridge_original": "records/pipeline_observer_20261108_0330/followup_20261108_0432.json",
+  "training_modified_or_restarted": false,
+  "old_observer_modified_or_restarted": false,
+  "method_validated": false,
+  "full_goal_complete": false
+}

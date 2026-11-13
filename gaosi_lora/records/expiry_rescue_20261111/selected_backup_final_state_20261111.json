@@ -1,0 +1,21 @@
+{
+  "utc": "2026-11-11T11:33:36.536265+00:00",
+  "status": "USER_SELECTED_PARTIAL_BACKUP_FINALIZED",
+  "historical_upload_cancelled_by_user": true,
+  "optional_checkpoint_cleanup_complete": true,
+  "core_records_and_small_checkpoints_complete": true,
+  "parent_o4_and_diagnostic_states_complete": true,
+  "all_source_files_available": false,
+  "available_files_by_priority": [
+    334966,
+    23,
+    2
+  ],
+  "retained_source_pack_bytes": 38707600710,
+  "net_allocated_bytes_released": 2957307904,
+  "free_bytes_after": 47140806656,
+  "cleanup_receipt": "cleanup_20261111T1130Z_receipt.json",
+  "backup_host_root": "/root/gaosi_expiry_rescue_20261111",
+  "no_automatic_historical_resume": true,
+  "method_validated": false
+}

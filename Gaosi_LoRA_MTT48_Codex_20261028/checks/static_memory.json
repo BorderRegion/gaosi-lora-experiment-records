@@ -1,0 +1,78 @@
+{
+  "source": "official Qwen model configs; actual instantiated trainable count must be audited",
+  "units": "decimal GB",
+  "rows": [
+    {
+      "model": "Qwen2.5-3B",
+      "rank": 32,
+      "coverage": "all7",
+      "AB_parameters": 59867136,
+      "B_only_parameters": 33030144,
+      "bf16_base_GB": 6.18,
+      "adapter_master_grad_mD_mR_v_GB": 1.19734272,
+      "subtotal_GB": 7.37734272,
+      "one_extra_fp32_adapter_vector_GB": 0.239468544,
+      "not_included": "activations, high-order graph, logits, temporary tensors, PEFT caches; NOT peak VRAM"
+    },
+    {
+      "model": "Qwen2.5-3B",
+      "rank": 32,
+      "coverage": "attn4",
+      "AB_parameters": 14745600,
+      "B_only_parameters": 5308416,
+      "bf16_base_GB": 6.18,
+      "adapter_master_grad_mD_mR_v_GB": 0.294912,
+      "subtotal_GB": 6.474912,
+      "one_extra_fp32_adapter_vector_GB": 0.0589824,
+      "not_included": "activations, high-order graph, logits, temporary tensors, PEFT caches; NOT peak VRAM"
+    },
+    {
+      "model": "Qwen2.5-3B",
+      "rank": 32,
+      "coverage": "qv",
+      "AB_parameters": 7372800,
+      "B_only_parameters": 2654208,
+      "bf16_base_GB": 6.18,
+      "adapter_master_grad_mD_mR_v_GB": 0.147456,
+      "subtotal_GB": 6.327456,
+      "one_extra_fp32_adapter_vector_GB": 0.0294912,
+      "not_included": "activations, high-order graph, logits, temporary tensors, PEFT caches; NOT peak VRAM"
+    },
+    {
+      "model": "Qwen2.5-7B",
+      "rank": 32,
+      "coverage": "all7",
+      "AB_parameters": 80740352,
+      "B_only_parameters": 44498944,
+      "bf16_base_GB": 15.22,
+      "adapter_master_grad_mD_mR_v_GB": 1.61480704,
+      "subtotal_GB": 16.83480704,
+      "one_extra_fp32_adapter_vector_GB": 0.322961408,
+      "not_included": "activations, high-order graph, logits, temporary tensors, PEFT caches; NOT peak VRAM"
+    },
+    {
+      "model": "Qwen2.5-7B",
+      "rank": 32,
+      "coverage": "attn4",
+      "AB_parameters": 20185088,
+      "B_only_parameters": 7340032,
+      "bf16_base_GB": 15.22,
+      "adapter_master_grad_mD_mR_v_GB": 0.40370176,
+      "subtotal_GB": 15.62370176,
+      "one_extra_fp32_adapter_vector_GB": 0.080740352,
+      "not_included": "activations, high-order graph, logits, temporary tensors, PEFT caches; NOT peak VRAM"
+    },
+    {
+      "model": "Qwen2.5-7B",
+      "rank": 32,
+      "coverage": "qv",
+      "AB_parameters": 10092544,
+      "B_only_parameters": 3670016,
+      "bf16_base_GB": 15.22,
+      "adapter_master_grad_mD_mR_v_GB": 0.20185088,
+      "subtotal_GB": 15.42185088,
+      "one_extra_fp32_adapter_vector_GB": 0.040370176,
+      "not_included": "activations, high-order graph, logits, temporary tensors, PEFT caches; NOT peak VRAM"
+    }
+  ]
+}

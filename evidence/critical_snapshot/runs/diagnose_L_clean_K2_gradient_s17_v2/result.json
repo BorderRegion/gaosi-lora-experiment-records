@@ -1,0 +1,73 @@
+{
+  "status": "PASS",
+  "diagnosis_executed": true,
+  "method_validated": false,
+  "actual_device": "musa:0",
+  "raw_gradient_norm": 0.0001447561117209181,
+  "measurements": [
+    {
+      "epsilon": 0.0,
+      "values": [
+        8.78751598065719e-05
+      ]
+    },
+    {
+      "epsilon": 0.001,
+      "values": [
+        8.863367838785052e-05,
+        8.789358980720863e-05
+      ],
+      "central_difference": 0.00037004429032094777,
+      "analytic_directional": 0.0001447561117209181,
+      "relative_discrepancy": 0.6088140919689158
+    },
+    {
+      "epsilon": 0.01,
+      "values": [
+        8.953229553299025e-05,
+        8.447712752968073e-05
+      ],
+      "central_difference": 0.0002527584001654759,
+      "analytic_directional": 0.0001447561117209181,
+      "relative_discrepancy": 0.42729455627924084
+    },
+    {
+      "epsilon": 0.1,
+      "values": [
+        0.00011798010382335633,
+        8.26720061013475e-05
+      ],
+      "central_difference": 0.00017654048861004412,
+      "analytic_directional": 0.0001447561117209181,
+      "relative_discrepancy": 0.1800401547507538
+    }
+  ],
+  "analytic_terminal": {
+    "query_task": 8.78751598065719e-05,
+    "query_language": 2.4339523315429688,
+    "query_keep": 8.78751598065719e-05,
+    "objective": 8.78751598065719e-05
+  },
+  "baseline_objective_absolute_difference": 0.0,
+  "base_unchanged": true,
+  "compute_counters": {
+    "loss_forwards": 616,
+    "loss_backwards": 462,
+    "input_tokens": 307578,
+    "supervised_tokens": 59410,
+    "hessian_vector_products": 44
+  },
+  "memory": {
+    "cpu_rss_bytes": 6621917184,
+    "allocated_bytes": 7487588352,
+    "reserved_bytes": 31350325248,
+    "peak_allocated_bytes": 28981100544,
+    "peak_reserved_bytes": 31350325248
+  },
+  "scope": "Additional real 3B derivative sensitivity diagnosis; no phi updates",
+  "limitations": [
+    "BF16 rounding makes finite differences noisy; this is not a smooth FP64 derivative proof.",
+    "Execution PASS does not resolve the large gradient or validate training efficacy.",
+    "The source episode and any loaded starting phi are identified in the immutable config."
+  ]
+}

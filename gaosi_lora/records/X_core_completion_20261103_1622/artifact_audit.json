@@ -1,0 +1,1929 @@
+{
+  "status": "ARTIFACT_AUDIT_PASS_REQUIRES_SCIENTIFIC_REVIEW",
+  "audited_at_utc": "2026-11-03T16:22:06.975847+00:00",
+  "run": "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8",
+  "config": {
+    "out": "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8",
+    "model": "/root/autodl-tmp/models/Qwen2.5-3B",
+    "base_revision": "3aab1f1954e9cc14eb9509a215f9e5ca08227a9b",
+    "rank": 32,
+    "targets": "all7",
+    "scale": 1.0,
+    "organization": "O1",
+    "device": "musa",
+    "architecture": "X",
+    "seed": 17,
+    "parents": [
+      "runs/parent_3b_meta_parent_a_r32_s17_extend512_v2/latest.pt",
+      "runs/parent_3b_meta_parent_b_r32_s17_extend512_v2/latest.pt"
+    ],
+    "parent_data": [
+      "data/synthetic/meta_parent_a.jsonl",
+      "data/synthetic/meta_parent_b.jsonl"
+    ],
+    "episode_K": [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16
+    ],
+    "known_warm_episodes": 64,
+    "q_cycle": [
+      0.0,
+      0.5,
+      0.7
+    ],
+    "meta_lr": 0.0003,
+    "inner_lr": 0.0003,
+    "seq": 512,
+    "effective_tokens": 512,
+    "retain_weight": 0.25,
+    "retain_fact_support": true,
+    "penalty": 1.0,
+    "chunk": 262144,
+    "horizon": "EXACT_H2_tail",
+    "world_manifest": "data/synthetic/rules_integer_v1/active_manifest.json",
+    "selection_data": "development_only",
+    "calibration_manifest": "records/calibration_frozen.json",
+    "purpose": "full_protocol_O1_phi_mix_2560_fresh_phi_candidate_blocking_mitigation_review_required"
+  },
+  "start_episode": 0,
+  "episodes_committed": 192,
+  "executed_inner_updates": 2560,
+  "cumulative_inner_updates": 2560,
+  "maximum_raw_norm": 0.5486493067867867,
+  "episodes": [
+    {
+      "episode": 0,
+      "raw_norm_cpu_fp64": 2.6812588590035967e-05,
+      "gradient_artifact_sha256": "eed5107aa1ac3ea008266670596027b741b636fd26cdb5d240dbfb1ede5af088",
+      "committed": true
+    },
+    {
+      "episode": 1,
+      "raw_norm_cpu_fp64": 0.0702310200883044,
+      "gradient_artifact_sha256": "9e383945d7a1491bc43ed000526f958c696c974f2d819142297617892348f31a",
+      "committed": true
+    },
+    {
+      "episode": 2,
+      "raw_norm_cpu_fp64": 0.028826248732471377,
+      "gradient_artifact_sha256": "5e8f068ad6a8674e1830d5e499a4b1e3d57fbd220d474d3bace5233ea8137230",
+      "committed": true
+    },
+    {
+      "episode": 3,
+      "raw_norm_cpu_fp64": 8.433864761772943e-05,
+      "gradient_artifact_sha256": "0a36f74eb9edf95898ed4dd2b726de985e53c02201f1e2fb4b4c6961d5ac6454",
+      "committed": true
+    },
+    {
+      "episode": 4,
+      "raw_norm_cpu_fp64": 0.04459298889179526,
+      "gradient_artifact_sha256": "4e8033cfa0aaac6563d4a67e4deea1b9523512ff5faf4b8bb3c4ec8ed259e9ee",
+      "committed": true
+    },
+    {
+      "episode": 5,
+      "raw_norm_cpu_fp64": 0.06933208174169858,
+      "gradient_artifact_sha256": "65f5fdfcd4ef53b2615274d7913bc27277141afe29c42975eb1f5be502ef8e3b",
+      "committed": true
+    },
+    {
+      "episode": 6,
+      "raw_norm_cpu_fp64": 1.5259196440030753e-05,
+      "gradient_artifact_sha256": "b782f9a842b3d41e3aadcb9199c229953f3e41583b8513a1fa771522d64d0a45",
+      "committed": true
+    },
+    {
+      "episode": 7,
+      "raw_norm_cpu_fp64": 0.06878698686775657,
+      "gradient_artifact_sha256": "f93ef7f37ed1b9652741a9c29815a4c829b15efe5abb876149127964bd3fe8b3",
+      "committed": true
+    },
+    {
+      "episode": 8,
+      "raw_norm_cpu_fp64": 0.13090263101129582,
+      "gradient_artifact_sha256": "f294430f97968bc1d8cd96c5fbc344b961c32e286222dfbaef5db9dcd05e16bc",
+      "committed": true
+    },
+    {
+      "episode": 9,
+      "raw_norm_cpu_fp64": 5.1301216281804954e-05,
+      "gradient_artifact_sha256": "689a05226d20ec09894dba9fee0607b59dd553d2cfa3088b049b3bc7a9bb2cea",
+      "committed": true
+    },
+    {
+      "episode": 10,
+      "raw_norm_cpu_fp64": 0.05880610116484205,
+      "gradient_artifact_sha256": "fe1059a26a7e5de6f1e4e30c3cde917d76ea40bb0e6b81390ebf1315b7bc0c01",
+      "committed": true
+    },
+    {
+      "episode": 11,
+      "raw_norm_cpu_fp64": 0.010440354165232774,
+      "gradient_artifact_sha256": "5bbb1bb8c2f02fe7f6f0602546167b60b7961956c28c12f08934762e73b0b1db",
+      "committed": true
+    },
+    {
+      "episode": 12,
+      "raw_norm_cpu_fp64": 3.7792497989660386e-05,
+      "gradient_artifact_sha256": "6e1b6fc2b1e95519f7e7d5fe6b3eff3c9e4c101d6c45e5cc5384b3453be7f8d0",
+      "committed": true
+    },
+    {
+      "episode": 13,
+      "raw_norm_cpu_fp64": 0.014270610058812269,
+      "gradient_artifact_sha256": "3b08985874450097021dbb58caf1def163df4b522718f0447882b827bf392a16",
+      "committed": true
+    },
+    {
+      "episode": 14,
+      "raw_norm_cpu_fp64": 0.0709556655923213,
+      "gradient_artifact_sha256": "fceea282e38939fa8f51494446db0058b7f69ea589c0a2c20157bd49a5fb7f42",
+      "committed": true
+    },
+    {
+      "episode": 15,
+      "raw_norm_cpu_fp64": 6.432779966409526e-05,
+      "gradient_artifact_sha256": "63933ab069fda899bd336e760bae694f1ce80f81e2608935c4848b056dc334a2",
+      "committed": true
+    },
+    {
+      "episode": 16,
+      "raw_norm_cpu_fp64": 0.10920200249009046,
+      "gradient_artifact_sha256": "dc9969e0fd1908d842a46616a4ee59e6ed84ae6d31c39f8e86c9f5b519440d9e",
+      "committed": true
+    },
+    {
+      "episode": 17,
+      "raw_norm_cpu_fp64": 0.01460161774253405,
+      "gradient_artifact_sha256": "6cbf74a8f4edf7f001a8ca1019a7ab1c9f7a0b79d50ddc0bba5b0dc73ca9d73d",
+      "committed": true
+    },
+    {
+      "episode": 18,
+      "raw_norm_cpu_fp64": 2.2256798597833806e-05,
+      "gradient_artifact_sha256": "e0cdd9b5b7eb2679e8542c81c6b1166e318d5a4b8b85721a0eff2c4e813c043b",
+      "committed": true
+    },
+    {
+      "episode": 19,
+      "raw_norm_cpu_fp64": 0.013273166990580919,
+      "gradient_artifact_sha256": "9b55f7f7926d69db00eedbc9bd38cfffefaed7a3af750bcb8d89efea91fea3a7",
+      "committed": true
+    },
+    {
+      "episode": 20,
+      "raw_norm_cpu_fp64": 0.07244786941837995,
+      "gradient_artifact_sha256": "99a31251ee2a0f34a901965d3b0d534c362a543fc6db2236b1c10758b5f454e1",
+      "committed": true
+    },
+    {
+      "episode": 21,
+      "raw_norm_cpu_fp64": 7.859807401626422e-05,
+      "gradient_artifact_sha256": "81df571f15c0663daab38b443658487340929d4400e925d8a678d7b0301be2df",
+      "committed": true
+    },
+    {
+      "episode": 22,
+      "raw_norm_cpu_fp64": 0.07728997737320722,
+      "gradient_artifact_sha256": "5c00cb5a60143d10b1536d31640be46ebbae656c6427af7bd9d17a51e5e2c86b",
+      "committed": true
+    },
+    {
+      "episode": 23,
+      "raw_norm_cpu_fp64": 0.04288287946780959,
+      "gradient_artifact_sha256": "d622894acbbe715bce6d7a3dad04b9d7575f86062886cc6987b3afec38b482af",
+      "committed": true
+    },
+    {
+      "episode": 24,
+      "raw_norm_cpu_fp64": 4.6259166612523005e-05,
+      "gradient_artifact_sha256": "bb34e70dec3b359a6bd5eaadee7351e3e7abbc0f45c92432ac5f35ccbd0890c1",
+      "committed": true
+    },
+    {
+      "episode": 25,
+      "raw_norm_cpu_fp64": 0.03982265064881377,
+      "gradient_artifact_sha256": "45c05a2e8821ffa06b01c5eccbbf48b317b573f500f977ad04878f1dfd7768e6",
+      "committed": true
+    },
+    {
+      "episode": 26,
+      "raw_norm_cpu_fp64": 0.0567042945482689,
+      "gradient_artifact_sha256": "c92db580fae1f0b685040d0e7d51af3afdec773c5407b8dbdcff8b6a1865a6ae",
+      "committed": true
+    },
+    {
+      "episode": 27,
+      "raw_norm_cpu_fp64": 3.93603839514965e-05,
+      "gradient_artifact_sha256": "e8cac4387db16897e662c0282e70bb9fd6993be47a5998e1b6decbb3bc0c2a4f",
+      "committed": true
+    },
+    {
+      "episode": 28,
+      "raw_norm_cpu_fp64": 0.15420388685471983,
+      "gradient_artifact_sha256": "fc8038cb817782eef6f4b701eb667be5270d16495026662231a8e0c962279c07",
+      "committed": true
+    },
+    {
+      "episode": 29,
+      "raw_norm_cpu_fp64": 0.061319089369224596,
+      "gradient_artifact_sha256": "9a6818a4fc588f5b1b4331ccf293d4913a7644db378a94f2aab543a5b9bc751d",
+      "committed": true
+    },
+    {
+      "episode": 30,
+      "raw_norm_cpu_fp64": 6.085126256184261e-05,
+      "gradient_artifact_sha256": "360f9e2023729f743db9d20018c409e3d493e9706e3bdbd89517e24ca1214394",
+      "committed": true
+    },
+    {
+      "episode": 31,
+      "raw_norm_cpu_fp64": 0.1341698875536592,
+      "gradient_artifact_sha256": "a8a2f56e4bbb6d1985411a96f1478fc1ae72e9226a0a6f37179c79d077542bc6",
+      "committed": true
+    },
+    {
+      "episode": 32,
+      "raw_norm_cpu_fp64": 0.06056537062086686,
+      "gradient_artifact_sha256": "b40b2906f45733773aed8b8e9ccc5b6e15bfb34497a3460662549d5bfdbf0e3c",
+      "committed": true
+    },
+    {
+      "episode": 33,
+      "raw_norm_cpu_fp64": 5.602922998596823e-05,
+      "gradient_artifact_sha256": "fa3057de0817c54e8538a5572f78fe420755423fbab9b4c925cae102ab261a3d",
+      "committed": true
+    },
+    {
+      "episode": 34,
+      "raw_norm_cpu_fp64": 0.035615251494953815,
+      "gradient_artifact_sha256": "4c67e878a7ec2e89a6896fdcc521c33a0601725cbba73f213f2e4e9e5c3c33bb",
+      "committed": true
+    },
+    {
+      "episode": 35,
+      "raw_norm_cpu_fp64": 0.09700700727252586,
+      "gradient_artifact_sha256": "074b4f638acc99c26cf502492c1315b7a7de01f7088e9e8acbb1a2a4f3fe216d",
+      "committed": true
+    },
+    {
+      "episode": 36,
+      "raw_norm_cpu_fp64": 3.982136542771207e-05,
+      "gradient_artifact_sha256": "af6094dd388609ae4af792d7d3d3ee965f583c0dd76671307dd5c909347231c1",
+      "committed": true
+    },
+    {
+      "episode": 37,
+      "raw_norm_cpu_fp64": 0.04026677444904085,
+      "gradient_artifact_sha256": "693ffe0f8ef62c93a9e39888538476f260aed8945619e095a65c9ca307bb4fcb",
+      "committed": true
+    },
+    {
+      "episode": 38,
+      "raw_norm_cpu_fp64": 0.04123283750055488,
+      "gradient_artifact_sha256": "0a1d1cf9d89cfb7eb3d4c7947f2241c721c8ef18e766088c27bbd34ce60f5900",
+      "committed": true
+    },
+    {
+      "episode": 39,
+      "raw_norm_cpu_fp64": 0.00010058714997322425,
+      "gradient_artifact_sha256": "9862c50fda981c280be87e7fbc58b4856b5a6dc037c0127e2e67f26ec5a72175",
+      "committed": true
+    },
+    {
+      "episode": 40,
+      "raw_norm_cpu_fp64": 0.02381084793171985,
+      "gradient_artifact_sha256": "07faa4265a7cbff687142c8c4383b1cea36eac6141ca59ee97e01fe11538f791",
+      "committed": true
+    },
+    {
+      "episode": 41,
+      "raw_norm_cpu_fp64": 0.0019170214741478428,
+      "gradient_artifact_sha256": "84003486c3350804ef7d084c9e3788b7bfa94070d757a6d8b072e1d6eae72ef7",
+      "committed": true
+    },
+    {
+      "episode": 42,
+      "raw_norm_cpu_fp64": 3.587406480638277e-05,
+      "gradient_artifact_sha256": "d7a4bd9a4de184fae645f178c297bd17cbdfcf3d245bb057229e4e8c4896996f",
+      "committed": true
+    },
+    {
+      "episode": 43,
+      "raw_norm_cpu_fp64": 0.02439510105255898,
+      "gradient_artifact_sha256": "35dde785bd5460df5d584fd2506d6d35eee44bab77b3965f79ea59cb09203625",
+      "committed": true
+    },
+    {
+      "episode": 44,
+      "raw_norm_cpu_fp64": 0.015742790429781068,
+      "gradient_artifact_sha256": "49457ae7f7e2a4a4e319de60ab4e204d7d0bffc9a7624a944791a4e325ab2e78",
+      "committed": true
+    },
+    {
+      "episode": 45,
+      "raw_norm_cpu_fp64": 5.66001379717406e-05,
+      "gradient_artifact_sha256": "d9f474bb6c2840044ab9d3fbb74ec0cb29bfbcf6db8add7e6f00997d6f1fe51f",
+      "committed": true
+    },
+    {
+      "episode": 46,
+      "raw_norm_cpu_fp64": 0.0009023097263530804,
+      "gradient_artifact_sha256": "e4e3a7db01a996c10d9622151adc5a66c5712b2b49d962a561a85d7a454e8ced",
+      "committed": true
+    },
+    {
+      "episode": 47,
+      "raw_norm_cpu_fp64": 0.060262192751517535,
+      "gradient_artifact_sha256": "503662018f89bd202279707dc60eadd070bed44893ab1435985ca8d294a8e3ea",
+      "committed": true
+    },
+    {
+      "episode": 48,
+      "raw_norm_cpu_fp64": 4.339763609099111e-05,
+      "gradient_artifact_sha256": "b8fd865b710ddf5d6de085c25615cf1a1a410080c16743b9c640965323ab2c97",
+      "committed": true
+    },
+    {
+      "episode": 49,
+      "raw_norm_cpu_fp64": 0.02199507321217639,
+      "gradient_artifact_sha256": "0f636f065973d53fe0e24687d8d24c57df7dc636b085e02902bcf59ceb8a4b70",
+      "committed": true
+    },
+    {
+      "episode": 50,
+      "raw_norm_cpu_fp64": 0.003972557653318785,
+      "gradient_artifact_sha256": "15aef11c76d3b77dc90ae66924012d3ded215086e0d899bc4b45d58ac784aafb",
+      "committed": true
+    },
+    {
+      "episode": 51,
+      "raw_norm_cpu_fp64": 6.542345629863557e-05,
+      "gradient_artifact_sha256": "4ce88c2cece31b328837dd6211b45e2db503e4a2d84db440554f558060c6fdd5",
+      "committed": true
+    },
+    {
+      "episode": 52,
+      "raw_norm_cpu_fp64": 0.007482244315491167,
+      "gradient_artifact_sha256": "ee061f764fc657a5381c10e4dfe5df10aeed9a5181345c1f67d250e140fac1c7",
+      "committed": true
+    },
+    {
+      "episode": 53,
+      "raw_norm_cpu_fp64": 0.001980642685248466,
+      "gradient_artifact_sha256": "6ee0330fdcfd6fe6dc81295b5e0095e99fe3feb0b4222ebc453a40c251fb84dd",
+      "committed": true
+    },
+    {
+      "episode": 54,
+      "raw_norm_cpu_fp64": 2.9919440598673837e-05,
+      "gradient_artifact_sha256": "c468c629f9c6924206ab7a8374d59afa64435567623f9aaa632a609b7344216f",
+      "committed": true
+    },
+    {
+      "episode": 55,
+      "raw_norm_cpu_fp64": 0.014643488039003033,
+      "gradient_artifact_sha256": "731cfa8acca145899db72f4090ea3c3eb51b80e73758a363898a98ef5285c256",
+      "committed": true
+    },
+    {
+      "episode": 56,
+      "raw_norm_cpu_fp64": 0.0067225666849283,
+      "gradient_artifact_sha256": "ef95a7760c447904e12dc83618c5908d19f1363fe252f53375b072a00cc2ff4f",
+      "committed": true
+    },
+    {
+      "episode": 57,
+      "raw_norm_cpu_fp64": 5.999904025695878e-05,
+      "gradient_artifact_sha256": "00036e4984e16aa349724832ea67883e7b8ed07747b5fca98a7ab828422adc70",
+      "committed": true
+    },
+    {
+      "episode": 58,
+      "raw_norm_cpu_fp64": 0.00220157944582549,
+      "gradient_artifact_sha256": "211b655ad627832167f90eb6bcdccb5dce3865a336f2c5ec4ae1673a08589032",
+      "committed": true
+    },
+    {
+      "episode": 59,
+      "raw_norm_cpu_fp64": 0.0034979458072040203,
+      "gradient_artifact_sha256": "50a41d08fc1f4ec494787b8a81f33d0d8f04b23ce7aedc9490ad99d6caca8d90",
+      "committed": true
+    },
+    {
+      "episode": 60,
+      "raw_norm_cpu_fp64": 2.3456559283733184e-05,
+      "gradient_artifact_sha256": "3dfb6f2eff2c8bc544f5ec7a6ec47a9049dec130d10c57dc38062d38a7b79885",
+      "committed": true
+    },
+    {
+      "episode": 61,
+      "raw_norm_cpu_fp64": 0.0075598362795957314,
+      "gradient_artifact_sha256": "52d33d49dee06e0c1738576fbd48797dd7876ba5ff9ecddb7697fd4869665f18",
+      "committed": true
+    },
+    {
+      "episode": 62,
+      "raw_norm_cpu_fp64": 0.008798120862193382,
+      "gradient_artifact_sha256": "2e9d24958b27c0d88ae084523fd39d186833025de6bd618db97d25c075e223f1",
+      "committed": true
+    },
+    {
+      "episode": 63,
+      "raw_norm_cpu_fp64": 6.288756500616478e-05,
+      "gradient_artifact_sha256": "964c31e41f122086fae6d1efba87e8e87d4c3b433bc0043321a215fba68bd82a",
+      "committed": true
+    },
+    {
+      "episode": 64,
+      "raw_norm_cpu_fp64": 0.001406306693234094,
+      "gradient_artifact_sha256": "f24cfa90502e79b3ecd8c687ef4878ac063f579c3970a11535b35b13bd7992b8",
+      "committed": true
+    },
+    {
+      "episode": 65,
+      "raw_norm_cpu_fp64": 0.3084798260825365,
+      "gradient_artifact_sha256": "0b067f7b993e562c95671dbf22cf12b88be9f4917f767e6ba24235636feeaac2",
+      "committed": true
+    },
+    {
+      "episode": 66,
+      "raw_norm_cpu_fp64": 1.058147565323866e-05,
+      "gradient_artifact_sha256": "7355476dce0605b5feaf2755ad0b6fe9548cee5dcd4305611e36aa7e891d30a7",
+      "committed": true
+    },
+    {
+      "episode": 67,
+      "raw_norm_cpu_fp64": 0.2644577925030618,
+      "gradient_artifact_sha256": "2f7ac712ff4bbd1199bfad2f612943222ff3d1cced549abd817f22d535e7b454",
+      "committed": true
+    },
+    {
+      "episode": 68,
+      "raw_norm_cpu_fp64": 0.00477879970438651,
+      "gradient_artifact_sha256": "53e33e161bf04be16802ba087243344cb79586fb4aecf3e511a5beb92874efc9",
+      "committed": true
+    },
+    {
+      "episode": 69,
+      "raw_norm_cpu_fp64": 0.011141666726898068,
+      "gradient_artifact_sha256": "4f548ec9298b4f12ef15dbf8be5452b8ff101492dee677c1b7ef1188f1a29a86",
+      "committed": true
+    },
+    {
+      "episode": 70,
+      "raw_norm_cpu_fp64": 0.0007816573284738347,
+      "gradient_artifact_sha256": "42f73687138929e4bc6c52545af6dbfb68b2b2f9695459e845412f2f0c1cd5b8",
+      "committed": true
+    },
+    {
+      "episode": 71,
+      "raw_norm_cpu_fp64": 0.5373832535281683,
+      "gradient_artifact_sha256": "90a704e515efda1c48b517229501ef9c357b7ed1e1ea8eaef16dcc149122ae1c",
+      "committed": true
+    },
+    {
+      "episode": 72,
+      "raw_norm_cpu_fp64": 5.108701305914819e-05,
+      "gradient_artifact_sha256": "ed7348613d9461ae99ccd217583c42314b2c83877b7636f2e2a3b792dc5cb9a0",
+      "committed": true
+    },
+    {
+      "episode": 73,
+      "raw_norm_cpu_fp64": 0.04528280960625733,
+      "gradient_artifact_sha256": "56351c874e920e7410e689e5c6b11c6c8b7f8053ce192e90cf7455dd69a84684",
+      "committed": true
+    },
+    {
+      "episode": 74,
+      "raw_norm_cpu_fp64": 0.0011991807288261782,
+      "gradient_artifact_sha256": "b48807de749101b87bdd2d88e6bc93e611023aed787543822f775067f36e61c6",
+      "committed": true
+    },
+    {
+      "episode": 75,
+      "raw_norm_cpu_fp64": 0.015172078823839525,
+      "gradient_artifact_sha256": "5d3810a6dc0d64a67bed5bf48f63d65859ebca02afa0b9bc6650aabc1ad7c634",
+      "committed": true
+    },
+    {
+      "episode": 76,
+      "raw_norm_cpu_fp64": 0.0014887965483044035,
+      "gradient_artifact_sha256": "3223d798eb69c54c2ff30061242fbd80095d6015280cd092a0b73f599c466dd7",
+      "committed": true
+    },
+    {
+      "episode": 77,
+      "raw_norm_cpu_fp64": 0.24408695587944287,
+      "gradient_artifact_sha256": "41bf0ee3dc5e679a36d600789a9a3efe894ee10e11785d1f7394b8cd25388b72",
+      "committed": true
+    },
+    {
+      "episode": 78,
+      "raw_norm_cpu_fp64": 1.2146558302908182e-05,
+      "gradient_artifact_sha256": "ae4a4021b69b9314299930077752e79f0e104c55ff46eb4ab4773550b2fd505a",
+      "committed": true
+    },
+    {
+      "episode": 79,
+      "raw_norm_cpu_fp64": 0.0036195027231629624,
+      "gradient_artifact_sha256": "d89524f66632a6440d5df9ad02fea4569765d841d711a3fa936b5bf193992c04",
+      "committed": true
+    },
+    {
+      "episode": 80,
+      "raw_norm_cpu_fp64": 0.0005764219473877635,
+      "gradient_artifact_sha256": "648c56642b133028db0a648f6476c831cb5a0e8b6b30e30a673074dc0c680394",
+      "committed": true
+    },
+    {
+      "episode": 81,
+      "raw_norm_cpu_fp64": 0.011071694608284438,
+      "gradient_artifact_sha256": "fbbac59c50ffeebd9f08912a828221f2cc9ab449f1bfcae0b42b2ddd6db3e905",
+      "committed": true
+    },
+    {
+      "episode": 82,
+      "raw_norm_cpu_fp64": 0.0034999043764134693,
+      "gradient_artifact_sha256": "52d5843c1cfd9e606f7de96069ff39aedb670afbe66af75fd4cdde0f2a81451e",
+      "committed": true
+    },
+    {
+      "episode": 83,
+      "raw_norm_cpu_fp64": 0.2742557322462699,
+      "gradient_artifact_sha256": "d394812e97f950c4bc89944936f75e4f4a3f3152ee2c39cc336a1a0079eee316",
+      "committed": true
+    },
+    {
+      "episode": 84,
+      "raw_norm_cpu_fp64": 1.61756824132658e-05,
+      "gradient_artifact_sha256": "338441fdea7abfcc05e35b49258a097dceed420c666db4c0dcc37a69395f9f3b",
+      "committed": true
+    },
+    {
+      "episode": 85,
+      "raw_norm_cpu_fp64": 0.2716154475258941,
+      "gradient_artifact_sha256": "aa6c5c025b188b04f648852bbcbcf6dd6b0236b4c30f451f89a2265d8f2e4aae",
+      "committed": true
+    },
+    {
+      "episode": 86,
+      "raw_norm_cpu_fp64": 0.0005510302435875031,
+      "gradient_artifact_sha256": "22e11f0655ce58791b7f3de63ca2a194b8a5e28b663edf2f0f087a3e751e6a41",
+      "committed": true
+    },
+    {
+      "episode": 87,
+      "raw_norm_cpu_fp64": 0.02998894594605477,
+      "gradient_artifact_sha256": "138597f16803e2b2df5e56f986c7b6d5e193aae0de6d4219faec99a9ec4f3a96",
+      "committed": true
+    },
+    {
+      "episode": 88,
+      "raw_norm_cpu_fp64": 0.0004419513051854596,
+      "gradient_artifact_sha256": "e25e800f85ea334912e3a08e4a0b0e18b561d2755c8c26af3130236150713cba",
+      "committed": true
+    },
+    {
+      "episode": 89,
+      "raw_norm_cpu_fp64": 0.5028706281798009,
+      "gradient_artifact_sha256": "bab637d021a38749227b6cafa4c369755934977cd267c71bd1c9aa8d56d0c35b",
+      "committed": true
+    },
+    {
+      "episode": 90,
+      "raw_norm_cpu_fp64": 9.289026276925714e-06,
+      "gradient_artifact_sha256": "61cc3ca72a4e910cb0efcf0265c002a6af4ee864945cb0eefdc6314b2bec3fa2",
+      "committed": true
+    },
+    {
+      "episode": 91,
+      "raw_norm_cpu_fp64": 0.24359999880560396,
+      "gradient_artifact_sha256": "9d0ace0b30676782c029c78982c43ba46c1cf25aa5e534993cd089f14651492b",
+      "committed": true
+    },
+    {
+      "episode": 92,
+      "raw_norm_cpu_fp64": 0.0017428425047964658,
+      "gradient_artifact_sha256": "918a11f4a83562a2f8a841c73ccac3b45df4edf3b266111cff9aea982402ff82",
+      "committed": true
+    },
+    {
+      "episode": 93,
+      "raw_norm_cpu_fp64": 0.010521914849019919,
+      "gradient_artifact_sha256": "2706dc8e9f4ff849d26aab88ddb7e052355114e379ad324a58a96e7bb3cc147d",
+      "committed": true
+    },
+    {
+      "episode": 94,
+      "raw_norm_cpu_fp64": 0.000168152991741512,
+      "gradient_artifact_sha256": "0342662790e113d411e405fd1aaa91b61bc1bf45657fe9a27f2583178281df8a",
+      "committed": true
+    },
+    {
+      "episode": 95,
+      "raw_norm_cpu_fp64": 0.542901398343944,
+      "gradient_artifact_sha256": "a2d048b22e3df2b6325cba91157f5dd05371a8906701defe8157909fe395390c",
+      "committed": true
+    },
+    {
+      "episode": 96,
+      "raw_norm_cpu_fp64": 2.5609407713130342e-05,
+      "gradient_artifact_sha256": "c19ba25bd01741a8e6bb8a47ec47f5f81089538fca300d8f570f4b39212e8ccf",
+      "committed": true
+    },
+    {
+      "episode": 97,
+      "raw_norm_cpu_fp64": 5.715810566445337e-06,
+      "gradient_artifact_sha256": "57ab99d58b3cc32a202f82e9c8d2ccf381efab3acc9590d5be63ef95ba902d8f",
+      "committed": true
+    },
+    {
+      "episode": 98,
+      "raw_norm_cpu_fp64": 0.0023799707863128004,
+      "gradient_artifact_sha256": "76a703467cd7f08bef58dc4fdd3f70631d1f45fe83d99a73db1438b89d15b3ec",
+      "committed": true
+    },
+    {
+      "episode": 99,
+      "raw_norm_cpu_fp64": 7.527963506575759e-08,
+      "gradient_artifact_sha256": "c7107f9ce11816f8ccf6d48ac10f82713c0bc32f13ea574820ddc79ee0c4e498",
+      "committed": true
+    },
+    {
+      "episode": 100,
+      "raw_norm_cpu_fp64": 0.00016188178853084623,
+      "gradient_artifact_sha256": "5f33ee6385aae95c528c34383ef6ccd535997bac999cabbef0d06bf2a6c52e98",
+      "committed": true
+    },
+    {
+      "episode": 101,
+      "raw_norm_cpu_fp64": 0.04883941356808103,
+      "gradient_artifact_sha256": "29636f0508d03a55fc6e6341d74493ec2c0f0906a2e48371e051f027fb90947c",
+      "committed": true
+    },
+    {
+      "episode": 102,
+      "raw_norm_cpu_fp64": 0.00016682730103576287,
+      "gradient_artifact_sha256": "9d3732719f308370da28107366f8733e19eb1077fd0f52eac8395b50005ab140",
+      "committed": true
+    },
+    {
+      "episode": 103,
+      "raw_norm_cpu_fp64": 0.35309454305257376,
+      "gradient_artifact_sha256": "f32ac4181c417736f9e6eb04bd76371cae2ee6b9dd7b75411151c1f1177dd075",
+      "committed": true
+    },
+    {
+      "episode": 104,
+      "raw_norm_cpu_fp64": 0.00024639241544030836,
+      "gradient_artifact_sha256": "540efaaf55cddfcefb43cee7391d19814775b4e302d96fb43f7805fc9f73a307",
+      "committed": true
+    },
+    {
+      "episode": 105,
+      "raw_norm_cpu_fp64": 0.45074742428753917,
+      "gradient_artifact_sha256": "79a489ba3d66e7c80ee6cd11d6be3b70c7b76e34a771022c973cdac60520d21f",
+      "committed": true
+    },
+    {
+      "episode": 106,
+      "raw_norm_cpu_fp64": 0.001685587795026837,
+      "gradient_artifact_sha256": "e2f9a1b644d8dd716cb52a9e810c3d28240eb6aca20cba7e80aa54d0e4753b40",
+      "committed": true
+    },
+    {
+      "episode": 107,
+      "raw_norm_cpu_fp64": 0.32524048063666483,
+      "gradient_artifact_sha256": "36bc675a06e758040933ea34394687964078d5fe44d1f7120cb4b53ac8b2fc25",
+      "committed": true
+    },
+    {
+      "episode": 108,
+      "raw_norm_cpu_fp64": 3.6364465678959884e-05,
+      "gradient_artifact_sha256": "1920d95857b3c34b3821a6cc732773d4aa06ee35a845c31fd8fc7f570cfca959",
+      "committed": true
+    },
+    {
+      "episode": 109,
+      "raw_norm_cpu_fp64": 0.0010798893797803275,
+      "gradient_artifact_sha256": "4cff8458b405d111401090b0ae98802e094721611af8fa20ccd61902cee3d5b7",
+      "committed": true
+    },
+    {
+      "episode": 110,
+      "raw_norm_cpu_fp64": 0.0033640613990164854,
+      "gradient_artifact_sha256": "7426fb0df13c94b04a50ce68ae3082feb214f96d3f7e225db7e1b29bce4287ea",
+      "committed": true
+    },
+    {
+      "episode": 111,
+      "raw_norm_cpu_fp64": 0.5486493067867867,
+      "gradient_artifact_sha256": "90d7bff26f5f4feaca4a06ac25036be990378b47dde35b81afe2331fedb8d3f3",
+      "committed": true
+    },
+    {
+      "episode": 112,
+      "raw_norm_cpu_fp64": 0.004686744690332089,
+      "gradient_artifact_sha256": "ed82c45bd62348a9fe2399a918656ac5d49d9450479198467ae18857882a899b",
+      "committed": true
+    },
+    {
+      "episode": 113,
+      "raw_norm_cpu_fp64": 8.981820185439986e-07,
+      "gradient_artifact_sha256": "186fb37ea744573d9950b488bb3bcb6540a5e9a1f51eb9652e2cc24527165a0a",
+      "committed": true
+    },
+    {
+      "episode": 114,
+      "raw_norm_cpu_fp64": 4.0718034150208654e-05,
+      "gradient_artifact_sha256": "6603509f73fc9058d92870f2e57a22fc24a698c1867086a354f7adf0f280b7ba",
+      "committed": true
+    },
+    {
+      "episode": 115,
+      "raw_norm_cpu_fp64": 0.2704073257323468,
+      "gradient_artifact_sha256": "d3b226e3d7a7a6f6054237bfa942d33fb8966a054d96cb3bfe1500feca810b96",
+      "committed": true
+    },
+    {
+      "episode": 116,
+      "raw_norm_cpu_fp64": 0.0015348964541358268,
+      "gradient_artifact_sha256": "960ad470990c7e0a870ac7c11fa11e631a7f2a14e2a028eca5983ae9137860c0",
+      "committed": true
+    },
+    {
+      "episode": 117,
+      "raw_norm_cpu_fp64": 0.058752143685078834,
+      "gradient_artifact_sha256": "9524cb66e74821ce27da07a99d8cde66b68a698e07c668b2fb083b6e2743bde1",
+      "committed": true
+    },
+    {
+      "episode": 118,
+      "raw_norm_cpu_fp64": 0.0059751929175037,
+      "gradient_artifact_sha256": "2b17e04da27d22746714b013bb0f854a7b940398180ac2e0aa007c44de7d5529",
+      "committed": true
+    },
+    {
+      "episode": 119,
+      "raw_norm_cpu_fp64": 1.0185660691159873e-05,
+      "gradient_artifact_sha256": "92be6d621fe812e306dc1cd2a40b669a64a1ceccca562376eab183a1ba9389c4",
+      "committed": true
+    },
+    {
+      "episode": 120,
+      "raw_norm_cpu_fp64": 4.487828988573105e-05,
+      "gradient_artifact_sha256": "4480085932cb60e67abca74c254e5c4ab984abaf4207f3b9cdaf6ae31589c5be",
+      "committed": true
+    },
+    {
+      "episode": 121,
+      "raw_norm_cpu_fp64": 0.003878543928432399,
+      "gradient_artifact_sha256": "fcdef61aa6756570495f682cbedfedbc0022d11d1cf02f8f1bbaa87423401b0b",
+      "committed": true
+    },
+    {
+      "episode": 122,
+      "raw_norm_cpu_fp64": 0.0033516077779665817,
+      "gradient_artifact_sha256": "6ba5994d418b4d3ae1fbf60876989320219d265142c0f999e65e27e00f803ce1",
+      "committed": true
+    },
+    {
+      "episode": 123,
+      "raw_norm_cpu_fp64": 6.716746324320829e-06,
+      "gradient_artifact_sha256": "fedb9b0a5b3e986cbae5e5e03f3555bad2745e59a0f4fbbbf94804967663b715",
+      "committed": true
+    },
+    {
+      "episode": 124,
+      "raw_norm_cpu_fp64": 0.0003685288582926568,
+      "gradient_artifact_sha256": "8cba8d3176e8a42a289f0e9a9518ff2efe7f25858dea10ef10733d4494aecc50",
+      "committed": true
+    },
+    {
+      "episode": 125,
+      "raw_norm_cpu_fp64": 0.3114801990104817,
+      "gradient_artifact_sha256": "bafc09d8f05613aa63afee52f0ba0327938b067241ee2797a28134d99269ae47",
+      "committed": true
+    },
+    {
+      "episode": 126,
+      "raw_norm_cpu_fp64": 1.8570741180648655e-05,
+      "gradient_artifact_sha256": "f8c2acf964b8c0a588de40aa2566e4cae2221aea77ce035d3850c21cfdd70916",
+      "committed": true
+    },
+    {
+      "episode": 127,
+      "raw_norm_cpu_fp64": 2.500902158587166e-05,
+      "gradient_artifact_sha256": "0d9990f31fee042932132d44f41f7ca99b0137695620f235da761e36a1ff1394",
+      "committed": true
+    },
+    {
+      "episode": 128,
+      "raw_norm_cpu_fp64": 0.0011652213263428106,
+      "gradient_artifact_sha256": "7bd576d0d5d9d70def416d983a0fef14ea8b5e6fb558c79c8872d6183757c3a3",
+      "committed": true
+    },
+    {
+      "episode": 129,
+      "raw_norm_cpu_fp64": 0.1434989207016249,
+      "gradient_artifact_sha256": "9d4eddd31e969fb571d3865b66f819f667dd3d74145c6f0aa97f89fac44f64ae",
+      "committed": true
+    },
+    {
+      "episode": 130,
+      "raw_norm_cpu_fp64": 0.0006911483237545738,
+      "gradient_artifact_sha256": "cbc0d3731fac27a58fca7735aa25144e6ef90997dfc293e5828c7574362a2736",
+      "committed": true
+    },
+    {
+      "episode": 131,
+      "raw_norm_cpu_fp64": 0.005201210222654012,
+      "gradient_artifact_sha256": "208acc6da535661102fcb254498035212dc97b93b392f6ea78c6160d1bc1b1f9",
+      "committed": true
+    },
+    {
+      "episode": 132,
+      "raw_norm_cpu_fp64": 2.0138825289738454e-05,
+      "gradient_artifact_sha256": "a885c48ea9607c25bdccfc6ac0abb5b80924c59adc37286a95bc79075ecd74d7",
+      "committed": true
+    },
+    {
+      "episode": 133,
+      "raw_norm_cpu_fp64": 0.10336262101659649,
+      "gradient_artifact_sha256": "b195da107c1f48e2a70a7726c7a25948f8961879a428670bd09beaf5a482ed65",
+      "committed": true
+    },
+    {
+      "episode": 134,
+      "raw_norm_cpu_fp64": 0.001980594356590024,
+      "gradient_artifact_sha256": "0e46d121b49416996e49bb2ca45c98dc0565ba68c1e717944074b7b447d26999",
+      "committed": true
+    },
+    {
+      "episode": 135,
+      "raw_norm_cpu_fp64": 0.12399898450837477,
+      "gradient_artifact_sha256": "6fb478beb1c85837a879dc66e43ac4aa1f84a4fac63a60578455afa5579b01b3",
+      "committed": true
+    },
+    {
+      "episode": 136,
+      "raw_norm_cpu_fp64": 0.00024142251393928727,
+      "gradient_artifact_sha256": "19f665243e777b5d1916f440af181d121396acb9e4e6cbaa2cd2fe9d63445b9b",
+      "committed": true
+    },
+    {
+      "episode": 137,
+      "raw_norm_cpu_fp64": 0.004406188831760539,
+      "gradient_artifact_sha256": "e4c1725afda59fea3a2b6b2ab5a66f996c13fe3116f8281978dae7859c579895",
+      "committed": true
+    },
+    {
+      "episode": 138,
+      "raw_norm_cpu_fp64": 0.00011973968556030555,
+      "gradient_artifact_sha256": "d550f0d6be599c5ca2402962b6e0c4c8bf7aea881992cf42918431a2fa27e1b5",
+      "committed": true
+    },
+    {
+      "episode": 139,
+      "raw_norm_cpu_fp64": 0.007696352930227908,
+      "gradient_artifact_sha256": "bc74a5bbc9349c15eb6ee3e02fc4d438155687581c18489f47af623ee8736ee6",
+      "committed": true
+    },
+    {
+      "episode": 140,
+      "raw_norm_cpu_fp64": 0.006226889872913013,
+      "gradient_artifact_sha256": "e430279d60f118a208df5a2f24d0bea76639e7747d7847a59e3946710e974c89",
+      "committed": true
+    },
+    {
+      "episode": 141,
+      "raw_norm_cpu_fp64": 0.16616658050932717,
+      "gradient_artifact_sha256": "20bf8257b232400073c7d50d2abd310b9bace6f6838f8c81fef40b1c688f8397",
+      "committed": true
+    },
+    {
+      "episode": 142,
+      "raw_norm_cpu_fp64": 0.0005720818081425044,
+      "gradient_artifact_sha256": "3178985f98c3e2daafccdf11edf974da7b32375132c78a18503d64302f3c3767",
+      "committed": true
+    },
+    {
+      "episode": 143,
+      "raw_norm_cpu_fp64": 0.021076142658911137,
+      "gradient_artifact_sha256": "5ead1047721137ac6a5f97fa9d4c9df5fb3a1542e15cec8dcbd3bb88878bc99e",
+      "committed": true
+    },
+    {
+      "episode": 144,
+      "raw_norm_cpu_fp64": 1.1023099621156093e-05,
+      "gradient_artifact_sha256": "0d3d3c9a87f5f3c485a80355f5ae72e064cf6a2e7c4c3176eac72b7f810cfa02",
+      "committed": true
+    },
+    {
+      "episode": 145,
+      "raw_norm_cpu_fp64": 0.3340630332421701,
+      "gradient_artifact_sha256": "b9b6807912e7ca7e1c96f82e7302ac9f4959373928ecb5dd61be0e0e61da175e",
+      "committed": true
+    },
+    {
+      "episode": 146,
+      "raw_norm_cpu_fp64": 0.0019217827660641168,
+      "gradient_artifact_sha256": "202ce970f7d02a3ea636cd787fa0df76caec74faba475dada4c1be3dd4010ad3",
+      "committed": true
+    },
+    {
+      "episode": 147,
+      "raw_norm_cpu_fp64": 0.091533410617303,
+      "gradient_artifact_sha256": "047c1e04086fc6c9a32cf0a2cad601c81e4f3d6cc4db804b918fb1b2f6795a25",
+      "committed": true
+    },
+    {
+      "episode": 148,
+      "raw_norm_cpu_fp64": 0.0001087933332408741,
+      "gradient_artifact_sha256": "90ffa889349e37bafa25504010cfbcbc83520814543dd1ec39d983c4aff5055f",
+      "committed": true
+    },
+    {
+      "episode": 149,
+      "raw_norm_cpu_fp64": 0.09636744600965998,
+      "gradient_artifact_sha256": "c677efbd64447e2f5c8bc827d957367f7bd47f3d221fc398adb902ad701d1eea",
+      "committed": true
+    },
+    {
+      "episode": 150,
+      "raw_norm_cpu_fp64": 1.5565036799834726e-05,
+      "gradient_artifact_sha256": "33da2dde753d8381dd0721e5fcd30f51df0386052333609c7c1d9a0a18eb96d7",
+      "committed": true
+    },
+    {
+      "episode": 151,
+      "raw_norm_cpu_fp64": 0.006320449655844211,
+      "gradient_artifact_sha256": "cb6d66482ec3eab5c95b16dbbdfd2db8e3d2a4c4d9c0bef60096ecde725b27e7",
+      "committed": true
+    },
+    {
+      "episode": 152,
+      "raw_norm_cpu_fp64": 0.0015165430737920749,
+      "gradient_artifact_sha256": "44ea29a129f0c1cbc848601b6a829e176242ac54a4a73a217d2d0d5124590341",
+      "committed": true
+    },
+    {
+      "episode": 153,
+      "raw_norm_cpu_fp64": 0.06081771037653143,
+      "gradient_artifact_sha256": "a45f4f2b227d5182167414389746a71e43a3f93465437ea9e26f9e4fa5fd4881",
+      "committed": true
+    },
+    {
+      "episode": 154,
+      "raw_norm_cpu_fp64": 0.0010085052183997115,
+      "gradient_artifact_sha256": "fde64c1b479fc8637da7a66492c3891f8807ecf5743363a56eef4bc5cdbde2c1",
+      "committed": true
+    },
+    {
+      "episode": 155,
+      "raw_norm_cpu_fp64": 0.006605797864995217,
+      "gradient_artifact_sha256": "3078b83d384f1a04f43474eca1458daadfe365ef130908e68ce065f06cdcde6f",
+      "committed": true
+    },
+    {
+      "episode": 156,
+      "raw_norm_cpu_fp64": 8.248664076118146e-05,
+      "gradient_artifact_sha256": "60d061bda481c33d0170b644b51d16b6b3ae8259ea95c93f64f3fb7e8009985f",
+      "committed": true
+    },
+    {
+      "episode": 157,
+      "raw_norm_cpu_fp64": 0.07463029604263235,
+      "gradient_artifact_sha256": "6e752869be20d5790a6aa7482cf52e7f0423d665489c56990852362299f6cfa1",
+      "committed": true
+    },
+    {
+      "episode": 158,
+      "raw_norm_cpu_fp64": 0.008930790601359475,
+      "gradient_artifact_sha256": "f4fffe8d43ea8537c1c0458a436af690e2b465a5b77f276b26d7915e90adeed5",
+      "committed": true
+    },
+    {
+      "episode": 159,
+      "raw_norm_cpu_fp64": 0.01891755862867239,
+      "gradient_artifact_sha256": "c102ff596780e7f8db8b15661330c4da0d74dd74cfc3ab128611f444ce16d6cf",
+      "committed": true
+    },
+    {
+      "episode": 160,
+      "raw_norm_cpu_fp64": 0.00022937034336425143,
+      "gradient_artifact_sha256": "aeb0cd1bf20bb1df256c6d454f4b0de324ad7f6771a4c96438585cb39c6afb8c",
+      "committed": true
+    },
+    {
+      "episode": 161,
+      "raw_norm_cpu_fp64": 0.010257896170996279,
+      "gradient_artifact_sha256": "b8944d46d12c7938400166b6bf87c3e19fac4884dc6b919f1c4560c7b934e6d8",
+      "committed": true
+    },
+    {
+      "episode": 162,
+      "raw_norm_cpu_fp64": 2.1750529601948847e-05,
+      "gradient_artifact_sha256": "0e6b811410339da51a00b762b0bec8053d63034c0b5e083be1deb9efada5398b",
+      "committed": true
+    },
+    {
+      "episode": 163,
+      "raw_norm_cpu_fp64": 0.11051076651772407,
+      "gradient_artifact_sha256": "dba07a9a308aaf64609992110db367386a5f45e1a9eabf138e96b72b49c6f808",
+      "committed": true
+    },
+    {
+      "episode": 164,
+      "raw_norm_cpu_fp64": 0.0012905769898143116,
+      "gradient_artifact_sha256": "7c9064f9ae5cb8c429d7485931bf3c04b96ea4319c0f5d7acf0a769e67d0be5d",
+      "committed": true
+    },
+    {
+      "episode": 165,
+      "raw_norm_cpu_fp64": 0.16725354264945302,
+      "gradient_artifact_sha256": "a97df76d05ccf89ec0deeeca8728ee90d5300f954213103c6c16ed4f4ed683d9",
+      "committed": true
+    },
+    {
+      "episode": 166,
+      "raw_norm_cpu_fp64": 0.00029791976717939494,
+      "gradient_artifact_sha256": "479adac5ec991894308905eb49fb1ad3807b5f2265566c2791020fe2ebccd34f",
+      "committed": true
+    },
+    {
+      "episode": 167,
+      "raw_norm_cpu_fp64": 0.06890151026659513,
+      "gradient_artifact_sha256": "b3db11af317a95f3411352206e8faa905f385b536521da71247d89a9ee49cb38",
+      "committed": true
+    },
+    {
+      "episode": 168,
+      "raw_norm_cpu_fp64": 3.158345847067932e-05,
+      "gradient_artifact_sha256": "5ab12e65deec0a76cf3e08dc9e4e74f18717e80282f0ae65cacaa3642bd9d5d9",
+      "committed": true
+    },
+    {
+      "episode": 169,
+      "raw_norm_cpu_fp64": 0.04053407101945987,
+      "gradient_artifact_sha256": "33a7f2c833d47236bfa917a18dd3b410a50d8d8b333569c0f0641fbea4bfea24",
+      "committed": true
+    },
+    {
+      "episode": 170,
+      "raw_norm_cpu_fp64": 0.0010350852351489511,
+      "gradient_artifact_sha256": "6862e1d90528bd8b08efc0859a04983f2465825f8fd433b3489b27b7b0b5fdee",
+      "committed": true
+    },
+    {
+      "episode": 171,
+      "raw_norm_cpu_fp64": 0.0511477714667512,
+      "gradient_artifact_sha256": "e7a091e42560509ce756ddfe95cfa994cd22d07aa1032786b1da1ddb65343eb5",
+      "committed": true
+    },
+    {
+      "episode": 172,
+      "raw_norm_cpu_fp64": 0.002229316929699208,
+      "gradient_artifact_sha256": "a21decf8f0d8455ae0607b9e2c169ee66497042ee5fa27961ac0a60d7ec84136",
+      "committed": true
+    },
+    {
+      "episode": 173,
+      "raw_norm_cpu_fp64": 0.34955409137421883,
+      "gradient_artifact_sha256": "e0fe114391e55adbbbb900eed7f0d75f27795877b560e3dbca52b0a2680f6298",
+      "committed": true
+    },
+    {
+      "episode": 174,
+      "raw_norm_cpu_fp64": 2.3084586895966103e-05,
+      "gradient_artifact_sha256": "1e6a26dfe326029472518bce349ed266d4e99fa2e5e0553149db470652b980d8",
+      "committed": true
+    },
+    {
+      "episode": 175,
+      "raw_norm_cpu_fp64": 0.20522077264597433,
+      "gradient_artifact_sha256": "d787fd9b5cebd5cf1e7df3348c455214ef367dbc62445c0edf0bbfca9a1c0a4e",
+      "committed": true
+    },
+    {
+      "episode": 176,
+      "raw_norm_cpu_fp64": 0.000683293661970481,
+      "gradient_artifact_sha256": "ebad636567fa73009bacebd2752de624919967d08e0c446dcac95eff6708fa2c",
+      "committed": true
+    },
+    {
+      "episode": 177,
+      "raw_norm_cpu_fp64": 0.09675377215228406,
+      "gradient_artifact_sha256": "bfccd82cd0ab84f16ba9f139c6266386f3f76b9aa9fa1bea02f2b6f1fe5c627a",
+      "committed": true
+    },
+    {
+      "episode": 178,
+      "raw_norm_cpu_fp64": 0.011492240444031406,
+      "gradient_artifact_sha256": "b84235d9d060b3e5c60d4a67bfebe8a8a9c2858faf913d912228f068dd3ca1b5",
+      "committed": true
+    },
+    {
+      "episode": 179,
+      "raw_norm_cpu_fp64": 0.006693808093680263,
+      "gradient_artifact_sha256": "0e906d780021bf49ac74b98713add72b8a7ad241eea0254cd74d9d074aefbbff",
+      "committed": true
+    },
+    {
+      "episode": 180,
+      "raw_norm_cpu_fp64": 4.891638279561949e-05,
+      "gradient_artifact_sha256": "3e4777d636ee3a3af6fbd7c57dad6d10a094069f1386bd5511b443e2e2987c4c",
+      "committed": true
+    },
+    {
+      "episode": 181,
+      "raw_norm_cpu_fp64": 0.20392264755575376,
+      "gradient_artifact_sha256": "7db1a59ca7189ae3c7f6d599d2fd9881dd0833b1bdb38cc814d93456664cf1d2",
+      "committed": true
+    },
+    {
+      "episode": 182,
+      "raw_norm_cpu_fp64": 0.0011575598050202547,
+      "gradient_artifact_sha256": "ac9e80f0e26bbacff64bee5f5e8e61fd331cfac5171bab86bac18364aad97a35",
+      "committed": true
+    },
+    {
+      "episode": 183,
+      "raw_norm_cpu_fp64": 0.021535883775539846,
+      "gradient_artifact_sha256": "c491916fcc902722abe17de043b3958475fecdd36d3d0a25f8db6d8bd88eec05",
+      "committed": true
+    },
+    {
+      "episode": 184,
+      "raw_norm_cpu_fp64": 0.0013400106362005,
+      "gradient_artifact_sha256": "fe2d6b125bca516218dd4edf5bedf209eb75d478e5f9fa261dedb639d2280a39",
+      "committed": true
+    },
+    {
+      "episode": 185,
+      "raw_norm_cpu_fp64": 0.00888699691404463,
+      "gradient_artifact_sha256": "2ed598b234a2f64dd68dc1894a19bc7e9c06876943b75193af07187c9879474e",
+      "committed": true
+    },
+    {
+      "episode": 186,
+      "raw_norm_cpu_fp64": 3.3708299232294416e-05,
+      "gradient_artifact_sha256": "6c7ce56a6bc38cb808ca9004bfaa37b91fd2fda1158fb5883937bd5eb67faebe",
+      "committed": true
+    },
+    {
+      "episode": 187,
+      "raw_norm_cpu_fp64": 0.1398338653970808,
+      "gradient_artifact_sha256": "f0ea409cfe3e03e6fbc3668351f45a6974a5151a018fccfdef2e9ec31a2f0a7c",
+      "committed": true
+    },
+    {
+      "episode": 188,
+      "raw_norm_cpu_fp64": 0.005060129588004388,
+      "gradient_artifact_sha256": "41b942e4026fe023c086ea214d355be1934f314da8b6376fc65c5e4d3ff61cf3",
+      "committed": true
+    },
+    {
+      "episode": 189,
+      "raw_norm_cpu_fp64": 0.06170480255428502,
+      "gradient_artifact_sha256": "52d4dcc970b46a25b804d2d9da0fa20b493c937ee075d451b8f1358fb30f2a96",
+      "committed": true
+    },
+    {
+      "episode": 190,
+      "raw_norm_cpu_fp64": 0.0004634984751573707,
+      "gradient_artifact_sha256": "cc300b13c66ec9f195e5090a8b621c48d717e1587acc84d9e6bfc46aba8679d0",
+      "committed": true
+    },
+    {
+      "episode": 191,
+      "raw_norm_cpu_fp64": 0.00916155329284777,
+      "gradient_artifact_sha256": "4413693248ecbb3d9e0b032920fbe70d609a8643f9951d6cf8a8e7f11c083686",
+      "committed": true
+    }
+  ],
+  "evidence_sha256": {
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/config.json": "6d001aca619f34f5b6ea4be54e672980e56169c7edf2eaf30add36086ea1bcdd",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/result.json": "1cb9662e124c7d07600a0824ce322888360be893891aefa33cafe5961b44fdc3",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/observed_training_result.json": "a7689ca1e5e7aba381514f3bf0e21043a4b84e7f0903d82a47cfa60e5528e1a6",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/observed_training_manifest.json": "9f8e069eb96d53c3c3dfcb8e37bbc2f6ab9c0e9a08c04a626d30778c1c14e84d",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/raw_gradients.jsonl": "8dffb64e0bc1a6908f019d6ec2b3d80bf5ef8fa7eb354e9effd328dfd789f476",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/events.jsonl": "bf0eee8431a544d98a32ed2d855be9dfde9041d0af82a8143353a0081d532395",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/source_sha256.json": "23c137925a55b2f2d31ade48b2d5f32f58f4e329c13752ba0e9f6f0cf17a7b92",
+    "configs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8.json": "6d001aca619f34f5b6ea4be54e672980e56169c7edf2eaf30add36086ea1bcdd",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/source/__init__.py": "9d3e2a1719ce3b931437f026866daf29ce59e45288f1b54217530e5b0ec996fd",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/source/base_boundary.py": "4266d288301c610dd3cacd1569c49a46c8da33463c3ec0f8a92f7429a09752cd",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/source/capacity_reference.py": "fc552a0cab3a82b117413db71405421b7d5a7d26caac913e773d6bf166d6a9b8",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/source/confirmation.py": "3a2401539bfe2c8d7bebe111b9c4b105f9217f7cde3f2efef0b4c378a2c953c7",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/source/continual.py": "a1c82f3bccb9208979cb1babbdb31f5e6c91ffd5f1fd083a78c25d8671e5a9a2",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/source/data.py": "047c72038c39e39152115f44e0eea588f07ba324bb78cf06d004ba0137788204",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/source/evaluate.py": "4186749bcb0b7b60f31fa1d42cb6337daa620534a23d29b34f9038cb06b498c0",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/source/gradients.py": "9282db16226b7d2ee027713bf19296bbb27329cd4cdbd29ac6b635012c874315",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/source/horizon.py": "f31ccc7834ce05d1a391941e2da33aeedd1a7d9a0f573cea4900d34706ad9cfa",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/source/merge.py": "a6b27379d61d18d7e4c349cc026ba59fa359293d3bb53b8a1598aff22c345667",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/source/meta.py": "f9cf49a2975791fa3466e6caaa31bb8312a20eec64244a4f33d205cf1607ca69",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/source/model.py": "1b673f51cdfeaf4e95b0ed0570896ac2067ad983319850c0eda0ffa06084717d",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/source/noise.py": "6b80e499c95cef06d91e2c7725702765ea82dec8a4f5dcbb3ae2b5a55059879c",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/source/noise_controls.py": "43425dd30dd5542089efb63742ed730adb84664d1f4242701fefa74af4deaf02",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/source/recompute.py": "04f0fe1119f03657647f23cac7d35e9c903cfeb5f05f0f8637d019002167528e",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/source/recover.py": "955babb1fb4303e6b367ba848cf909a0d94442620d27a031e215730cf76f44c1",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/source/recovery_statistics.py": "1286a9e2ef9d26166069916de40b85424ce33ec8c2677f59c965ea7b4a2d5690",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/source/references.py": "5b29673953e87c8fa6b1eae3483f57cef3e3cbf8c2a3b226220020daf79f05cf",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/source/reflow.py": "13a9f03c5549e9b74eb309a3479ece65b9243fcdc5ff2b901f9523d8a94df8a7",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/source/reflow_statistics.py": "2e44abfd727670d46449ef03a1a14599e1aab3b77ce64d0b1e4da08e57e53aa1",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/source/runtime.py": "6d38d86b1985a4238abc00c7c960cc3a28dcd5eb11f07de15dd1ecf2edba4e86",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/source/scale.py": "75fc477b6ed2b2cf06d921141d315dedff4b3ebdcf9388eb453c2e52ddebb396",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/source/selective_statistics.py": "bb31c2e2fbe2bde2118d11fee79da96ebdd9f4d326bc823ede56d2ecd8a78f4f",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/source/train.py": "5becea49674f3d535094690e7b16185d60d03aed98c60c18122b563e475470dd",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/source/transition.py": "5afa7bc2c61b6e81a6f024026c02fe29761a11e8b65925aabafd525e57ead477",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/train_guarded_meta.py": "2ba1c7922b84efcf4adf9dbc669e2e6039f51797b8649810809d376b30da7d68",
+    "data/language/inner.jsonl": "296bb5e07a99e864911c21b4b05845baba0ee7b65529799eb075d6ee2989e766",
+    "data/language/meta_query.jsonl": "5da7b7c1ba6a0ef066630d3e5d2d564e8daa0cc6d538a5692d6e9fae406a2b22",
+    "data/synthetic/meta_parent_a.jsonl": "cef6d70194d5f9f5dc39bd5978ead84483441079b2d999387f909feaa867552e",
+    "data/synthetic/meta_parent_b.jsonl": "0ca5f667c96fb41391336882c5fa3896986f27838230b18d7b6d7637ff4a6673",
+    "data/synthetic/meta_world_000.jsonl": "8ac51db1a4cf0cfceabe335e46ffb002dffad7d8d1a3e3151cdc0ee36c7de1bb",
+    "data/synthetic/meta_world_001.jsonl": "1c4ea1e7647359bc9b15899bfaa2a7cd1e0403052d4e3e34aee1a217c929cb9d",
+    "data/synthetic/meta_world_002.jsonl": "9e9e0a1b586cf76043d51e132cdba824415bc4ea72dd01b35314c353a31c1682",
+    "data/synthetic/meta_world_003.jsonl": "e8f14ebb90bb2cc07b2b9d34b61fdd96563ec2eb6ef41e3cad0cd659c70feafc",
+    "data/synthetic/meta_world_004.jsonl": "39da7da7ae8676ac8cc3df562655a6af1685081136add8ed5971d6bb01e9301e",
+    "data/synthetic/meta_world_005.jsonl": "2b849279160df303e810c05e4c48801caba1a18c5d871e42e8eefe87e347838e",
+    "data/synthetic/meta_world_006.jsonl": "1a325f00991693e9475475894c33ad614bd9c38c84ff9aa11d87a72ab9d65630",
+    "data/synthetic/meta_world_007.jsonl": "f1249506001eeccd17fad8f5e7ecd0f7f48031a3dfbd8b18cf5ac3b710ffa922",
+    "data/synthetic/meta_world_008.jsonl": "05d908e103bedb8772a11fb89ffc2fed35e6f2d9149b312a96bac65f5de9211a",
+    "data/synthetic/meta_world_009.jsonl": "fccd7ea7c7e8f4d104036ee1af318d32b8bf0d9535588cffc5ae7867b99f7c62",
+    "data/synthetic/meta_world_010.jsonl": "d07514db8b17537a58f6aafca1a70cec4e5178abef891d6afcc70457b5101f3a",
+    "data/synthetic/meta_world_011.jsonl": "64ff823f1a2d0f24acce00865fda8f1bf2deefb02052f05f5b59e2a1eb42ac0f",
+    "data/synthetic/meta_world_012.jsonl": "83c57b13852672fb15c1b4dc05ffb8e894e5922aac5bbb0c77a17c3689d26df4",
+    "data/synthetic/meta_world_013.jsonl": "d8cef1771aeb308a821f8824c96fa59fb09259c167b8c5fd9a9bd5c72db96eeb",
+    "data/synthetic/meta_world_014.jsonl": "b8ac46f7dcdd8da9009fa038a64dffc85f0feb1c31fe37bff47e6c20bb34d851",
+    "data/synthetic/meta_world_015.jsonl": "593d2f8816469f64ce9f17e8271b340ba7c66d60b4fdeee0daf6c745e28d7995",
+    "data/synthetic/meta_world_016.jsonl": "73c6b0da927dad29213e1e2447af421bc7f1e89e9d325a32869c5ddfefdaaa4c",
+    "data/synthetic/meta_world_017.jsonl": "c82b1e93501e99d4f3539a9acb6121e03a9a8432424e98870199b057336994a9",
+    "data/synthetic/meta_world_018.jsonl": "37a7635120fc488632b34f881c1be14927ca4da17dc3da2663caa7dfdcf6ec6f",
+    "data/synthetic/meta_world_019.jsonl": "dd593cf6787938b8975a57bc703ee2b1d847c4d40439e7d7c47d3d2fe23e0f87",
+    "data/synthetic/meta_world_020.jsonl": "10da9e74278671d2723d9eb31292a298a7a081cbd41ee0e389d241f1ca0f3f49",
+    "data/synthetic/meta_world_021.jsonl": "b41208f8040a50f78bc767b9d98c804116ed498571379d4611d665729ab9e226",
+    "data/synthetic/meta_world_022.jsonl": "cc1bc80d0079023a732baa122202842bf6b8a7c4a8df4ce9df7d21bd1df19af3",
+    "data/synthetic/meta_world_023.jsonl": "ac5010439ce5723a59dea73bd21d6fe2e178c82f5a1e42dfee07ada2e8e5e81d",
+    "data/synthetic/meta_world_024.jsonl": "001be79b503328e8934d1838b006063d7040b50c439677cf33f8a36ed16a9be4",
+    "data/synthetic/meta_world_025.jsonl": "1eaa35dff031fd15d92edfaeac8a78357d9c22cd374ac009aac97529863ec0b7",
+    "data/synthetic/meta_world_026.jsonl": "cea3a971a18745ed3a4098343a9508f0e09210eefa380626e891e751d5426255",
+    "data/synthetic/meta_world_027.jsonl": "7a2ad8654dd038ae7a516bfba72d9eb50c87c3fefffaedc5a558a3c2b0faf5a5",
+    "data/synthetic/meta_world_028.jsonl": "ee91fd8edcb383bbdc44869597aa431cb2ce362788ed99c812cb31e901a02def",
+    "data/synthetic/meta_world_029.jsonl": "880760051074c4f0d1f6c6a1efd5810b2f0dcc0dc81728e6e0c74c2014de4e10",
+    "data/synthetic/meta_world_030.jsonl": "02cc6ae1f2b10b29fb714c481f52e84c004e112912b4b8b8d24ea5266f98233a",
+    "data/synthetic/meta_world_031.jsonl": "010b68f1968a429a8f9306c1afc91f9e1a8cd04b0fc6bd0a75cbd1ced31175c9",
+    "data/synthetic/meta_world_032.jsonl": "f822dea91d395b24b59212c08ae18b765ecac90a8028a793c64f82bfefba07ab",
+    "data/synthetic/meta_world_033.jsonl": "daf4f0e9b857cc2862a07aa207ca6d7bfa38a80447b2d2d8103c696dd747f709",
+    "data/synthetic/meta_world_034.jsonl": "af46ac7212c183d7418dee9f7eda47fafae605aeb176e43e4a5254be7891a2db",
+    "data/synthetic/meta_world_035.jsonl": "143181ce795822be9e16795e66795c74c1d56d66fc47fccae1419aeba5eede2a",
+    "data/synthetic/meta_world_036.jsonl": "884230ee56898499bce7d20b6054c8c55298828033aa2b0ccee68471500bf34c",
+    "data/synthetic/meta_world_037.jsonl": "1d80b91a973c378d6afbf08b993a7100cab640cf1e3abff14668f125e7d68863",
+    "data/synthetic/meta_world_038.jsonl": "7473ccf1964f06af0b6309892082439a4b264a394277d810ecb954e8af14979d",
+    "data/synthetic/meta_world_039.jsonl": "e6c93ebc7ce9ef7952dd8e972ebeb07f441951c4222b634cdab903fe356b94c0",
+    "data/synthetic/meta_world_040.jsonl": "c77a7cfc5ed56b536e888b5b2a4c4659bea2244f32a52da05146ea682627ea80",
+    "data/synthetic/meta_world_041.jsonl": "f4773ba02c84935f99e0100fc1e55feb538052c64877f946b9f56ca2e920772a",
+    "data/synthetic/meta_world_042.jsonl": "b94d1d34866fefa8cd14041c57c6ffcbb0c3ccbd869e4e2d384edf2431ac4d57",
+    "data/synthetic/meta_world_043.jsonl": "1887825624b7222159a491752c9f14f99e069676804997d5daadacbae59a30bb",
+    "data/synthetic/meta_world_044.jsonl": "800f1aef195cf313542a907062a76cc18e4bb057ecf39835d1c35d8f94f102f3",
+    "data/synthetic/meta_world_045.jsonl": "9570ba8ed0e8d634cee497a90aeff9a753db949c848ded28f9494fcfb21d924d",
+    "data/synthetic/meta_world_046.jsonl": "cc5a7682dc44dc1745e364dbb0ef0d46d7ed1a924d0b275a74abab2c434f35da",
+    "data/synthetic/meta_world_047.jsonl": "1279c229d443fed96131a9e16dd680d47230a106a28cedf87dc9077905de447a",
+    "data/synthetic/rules_integer_v1/active_manifest.json": "1460e5bc26adc01e41bb111d451afa8660bf7bd90d89cefbc90ab0b9ec09088e",
+    "data/synthetic/rules_integer_v1/meta_integer_world_048.jsonl": "d2832687f4ee31e212fda9e1f2f8836ca47b6620b0f9bd6c5947b60e8579645b",
+    "data/synthetic/rules_integer_v1/meta_integer_world_049.jsonl": "f1e60937ddd5eb92fe1d400e4b48d406501ff873e762d4830c9f68c049b13dca",
+    "data/synthetic/rules_integer_v1/meta_integer_world_050.jsonl": "eb8240cbd6c67d46930f49920463e3c36aa9e5bf0722f996e5afc54ee55e9eb4",
+    "data/synthetic/rules_integer_v1/meta_integer_world_051.jsonl": "3e1ef60fa8c50c056ff488f1f3d710daf9bb1e07c356e625219b325d8d78ec3f",
+    "data/synthetic/rules_integer_v1/meta_integer_world_052.jsonl": "61e6280ea286f9f51f6deadaa3762120aa569e7d3bbb0db83213e38db6b189da",
+    "data/synthetic/rules_integer_v1/meta_integer_world_053.jsonl": "98657473d6519489e3b9bc42235bd94e7048b4069e59929ab2e0a3575668e62f",
+    "data/synthetic/rules_integer_v1/meta_integer_world_054.jsonl": "bacc543f0290d763a6ec0a650f4fb3fd9144f15a0207ac73a69bfa2c55346e76",
+    "data/synthetic/rules_integer_v1/meta_integer_world_055.jsonl": "e58223854b4c7d1281f1b7b6d8ffe23ee8308491928c3e254f1a50168341a9a9",
+    "data/synthetic/rules_integer_v1/meta_integer_world_056.jsonl": "bb6abcd8a06984a3941121346181dd70cf866902400a8798cd8c3804a1ddbfe8",
+    "data/synthetic/rules_integer_v1/meta_integer_world_057.jsonl": "6d8742d6a688c4f19581493769b2503dbda4f622becacb33da698a3804fb7cf4",
+    "data/synthetic/rules_integer_v1/meta_integer_world_058.jsonl": "dbaa5353681b9f9325c74dbaa09fdba6ae649a9317d1a341821a74471b39d7cb",
+    "data/synthetic/rules_integer_v1/meta_integer_world_059.jsonl": "e8d6ba8249a54c047e5a578c0d8513d9bb8964169f660aa00ecb16d4e83b6269",
+    "data/synthetic/rules_integer_v1/meta_integer_world_060.jsonl": "34bf9c9d1b0a219fa1c60fa2b947e89ba72fa1719e90ee48c79028957b1f9b73",
+    "data/synthetic/rules_integer_v1/meta_integer_world_061.jsonl": "21071c41145e56a217f680ed424ddd51293277caf0454a6eac71adf884951d80",
+    "data/synthetic/rules_integer_v1/meta_integer_world_062.jsonl": "30518853ea2a96108cbc5a3f2cf5f8aeda2c899035adbea24f1b8609bd7959f1",
+    "data/synthetic/rules_integer_v1/meta_integer_world_063.jsonl": "a88b7172cf10e92ba86a33ee4f3f6afcbdb4aee799ef839a22cbe35b9394fb59",
+    "gaosi/__init__.py": "9d3e2a1719ce3b931437f026866daf29ce59e45288f1b54217530e5b0ec996fd",
+    "gaosi/base_boundary.py": "4266d288301c610dd3cacd1569c49a46c8da33463c3ec0f8a92f7429a09752cd",
+    "gaosi/capacity_reference.py": "fc552a0cab3a82b117413db71405421b7d5a7d26caac913e773d6bf166d6a9b8",
+    "gaosi/confirmation.py": "3a2401539bfe2c8d7bebe111b9c4b105f9217f7cde3f2efef0b4c378a2c953c7",
+    "gaosi/continual.py": "a1c82f3bccb9208979cb1babbdb31f5e6c91ffd5f1fd083a78c25d8671e5a9a2",
+    "gaosi/data.py": "047c72038c39e39152115f44e0eea588f07ba324bb78cf06d004ba0137788204",
+    "gaosi/evaluate.py": "4186749bcb0b7b60f31fa1d42cb6337daa620534a23d29b34f9038cb06b498c0",
+    "gaosi/gradients.py": "9282db16226b7d2ee027713bf19296bbb27329cd4cdbd29ac6b635012c874315",
+    "gaosi/horizon.py": "f31ccc7834ce05d1a391941e2da33aeedd1a7d9a0f573cea4900d34706ad9cfa",
+    "gaosi/merge.py": "a6b27379d61d18d7e4c349cc026ba59fa359293d3bb53b8a1598aff22c345667",
+    "gaosi/meta.py": "f9cf49a2975791fa3466e6caaa31bb8312a20eec64244a4f33d205cf1607ca69",
+    "gaosi/model.py": "1b673f51cdfeaf4e95b0ed0570896ac2067ad983319850c0eda0ffa06084717d",
+    "gaosi/noise.py": "6b80e499c95cef06d91e2c7725702765ea82dec8a4f5dcbb3ae2b5a55059879c",
+    "gaosi/noise_controls.py": "43425dd30dd5542089efb63742ed730adb84664d1f4242701fefa74af4deaf02",
+    "gaosi/recompute.py": "04f0fe1119f03657647f23cac7d35e9c903cfeb5f05f0f8637d019002167528e",
+    "gaosi/recover.py": "955babb1fb4303e6b367ba848cf909a0d94442620d27a031e215730cf76f44c1",
+    "gaosi/recovery_statistics.py": "1286a9e2ef9d26166069916de40b85424ce33ec8c2677f59c965ea7b4a2d5690",
+    "gaosi/references.py": "5b29673953e87c8fa6b1eae3483f57cef3e3cbf8c2a3b226220020daf79f05cf",
+    "gaosi/reflow.py": "13a9f03c5549e9b74eb309a3479ece65b9243fcdc5ff2b901f9523d8a94df8a7",
+    "gaosi/reflow_statistics.py": "2e44abfd727670d46449ef03a1a14599e1aab3b77ce64d0b1e4da08e57e53aa1",
+    "gaosi/runtime.py": "6d38d86b1985a4238abc00c7c960cc3a28dcd5eb11f07de15dd1ecf2edba4e86",
+    "gaosi/scale.py": "75fc477b6ed2b2cf06d921141d315dedff4b3ebdcf9388eb453c2e52ddebb396",
+    "gaosi/selective_statistics.py": "bb31c2e2fbe2bde2118d11fee79da96ebdd9f4d326bc823ede56d2ecd8a78f4f",
+    "gaosi/train.py": "5becea49674f3d535094690e7b16185d60d03aed98c60c18122b563e475470dd",
+    "gaosi/transition.py": "5afa7bc2c61b6e81a6f024026c02fe29761a11e8b65925aabafd525e57ead477",
+    "records/calibration_frozen.json": "da6d7c6e0efc6807430fc2f8a848c53126e105481dd0b8d84f6e6af819a11dc3",
+    "runs/parent_3b_meta_parent_a_r32_s17_extend512_v2/latest.pt": "473c687042faed8dffe3ee8667dec6aea3dd12478ed844404f4cdf14a2b05218",
+    "runs/parent_3b_meta_parent_a_r32_s17_extend512_v2/result.json": "ebc7fbcce08dba9aa6b9171d1aeee83c9ba20069874c3dc1b61895ad30c42c87",
+    "runs/parent_3b_meta_parent_b_r32_s17_extend512_v2/latest.pt": "af8da2a5aa1165f685b3ba194bc8b09b6328ab6d009ee437050836ea49fd6dc8",
+    "runs/parent_3b_meta_parent_b_r32_s17_extend512_v2/result.json": "a39b7515a901bbf32d1420b5f4583e565bce43bff00e86e8148a505fcabc3d8d",
+    "tools/device_guard.py": "b1068dc78b14c3e9dc55547d6d2050e3a0899a5d42407c82b8db56cdd4760bcf",
+    "tools/diagnose_prefix_gradient.py": "bde1f51a883987c37aee9b185f26890bfb31e38bb8844fee161db3771477540a",
+    "tools/train_guarded_meta.py": "2ba1c7922b84efcf4adf9dbc669e2e6039f51797b8649810809d376b30da7d68",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_000.pt": "eed5107aa1ac3ea008266670596027b741b636fd26cdb5d240dbfb1ede5af088",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_001.pt": "9e383945d7a1491bc43ed000526f958c696c974f2d819142297617892348f31a",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_001.pt": "f9b110e9ed2be7e82c2b39bae2a8d0e44f9e6004d82bc1942756134253657504",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_002.pt": "5e8f068ad6a8674e1830d5e499a4b1e3d57fbd220d474d3bace5233ea8137230",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_002.pt": "31b946ba60dbd11e2365981bb725542fd79a742bee436f847cc9dc9236d10c89",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_003.pt": "0a36f74eb9edf95898ed4dd2b726de985e53c02201f1e2fb4b4c6961d5ac6454",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_003.pt": "c0694f7b04967baab1fe09cc3f858191845af98d1c3abb46ab344de72b9c7d00",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_004.pt": "4e8033cfa0aaac6563d4a67e4deea1b9523512ff5faf4b8bb3c4ec8ed259e9ee",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_004.pt": "713fecc4f87cfc7b5d60bf0a01d4361ebac028a8a571fb867e633aad1c11f245",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_005.pt": "65f5fdfcd4ef53b2615274d7913bc27277141afe29c42975eb1f5be502ef8e3b",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_005.pt": "ece625b20462f05a90dd04da938f2693d8563a035398e9265ffe1bd45559f1b4",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_006.pt": "b782f9a842b3d41e3aadcb9199c229953f3e41583b8513a1fa771522d64d0a45",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_006.pt": "90186f3aa9faa7963748fdb3dae8e4381d9ef1c1cd46111e3fbb5eb5809941b5",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_007.pt": "f93ef7f37ed1b9652741a9c29815a4c829b15efe5abb876149127964bd3fe8b3",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_007.pt": "2e90df84572ddab708af52480bac551f281206dbd5810af9e0bcabcd9a413aad",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_008.pt": "f294430f97968bc1d8cd96c5fbc344b961c32e286222dfbaef5db9dcd05e16bc",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_008.pt": "7ffaab923f9657b1ba9822da545d569903e3b8fb0c1dbb1cfca46c1b07f8b8ad",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_009.pt": "689a05226d20ec09894dba9fee0607b59dd553d2cfa3088b049b3bc7a9bb2cea",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_009.pt": "4e538f4ca78b53147a3aab01662b62b201a1d7e282861863275a812620b3add9",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_010.pt": "fe1059a26a7e5de6f1e4e30c3cde917d76ea40bb0e6b81390ebf1315b7bc0c01",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_010.pt": "1ff2de748792bc599c0568e97c0c6972e8e7dc433fa0a94fd05c65202e42c515",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_011.pt": "5bbb1bb8c2f02fe7f6f0602546167b60b7961956c28c12f08934762e73b0b1db",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_011.pt": "6d4d4734f84dc81b196330e1f4f3d216c926c30dc8a9bbde9a11af3848dfd48f",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_012.pt": "6e1b6fc2b1e95519f7e7d5fe6b3eff3c9e4c101d6c45e5cc5384b3453be7f8d0",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_012.pt": "944e498c77ad5eae01db7e841f861fd3c67ee8ebe97e225418b91af9cb6b1fd7",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_013.pt": "3b08985874450097021dbb58caf1def163df4b522718f0447882b827bf392a16",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_013.pt": "277535a46de50343b4e1baa02ce682d8714025627f869e521ed698747790314f",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_014.pt": "fceea282e38939fa8f51494446db0058b7f69ea589c0a2c20157bd49a5fb7f42",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_014.pt": "64c97cf5a295e0e9888689e4da6b923a0e381b9b234b4b8fcf8953ab778ce047",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_015.pt": "63933ab069fda899bd336e760bae694f1ce80f81e2608935c4848b056dc334a2",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_015.pt": "c2fe0cf7ff37c44e476231f2f5e2efc1bf448423a993ebdf0e3f9f6f21a25270",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_016.pt": "dc9969e0fd1908d842a46616a4ee59e6ed84ae6d31c39f8e86c9f5b519440d9e",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_016.pt": "31aa10761345791e871186a4761d8960dffefd8511be3c481c653b892f359641",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_017.pt": "6cbf74a8f4edf7f001a8ca1019a7ab1c9f7a0b79d50ddc0bba5b0dc73ca9d73d",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_017.pt": "0207468f0b7097ac76779cea3d9939fec9913d3a49c7b18a436b7d8d0452ee62",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_018.pt": "e0cdd9b5b7eb2679e8542c81c6b1166e318d5a4b8b85721a0eff2c4e813c043b",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_018.pt": "206ffac4f1cc83d39adb4bc1b966e36bab16f7810ff98f0c165dcc8589b5de78",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_019.pt": "9b55f7f7926d69db00eedbc9bd38cfffefaed7a3af750bcb8d89efea91fea3a7",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_019.pt": "2d799ce3083135ebbdad57bde75aeaf0f89bab1c4f18ffed9e6b76faca85f14e",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_020.pt": "99a31251ee2a0f34a901965d3b0d534c362a543fc6db2236b1c10758b5f454e1",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_020.pt": "7f23c782af6e7467bfedffacc1379d575ba0e660f77815a54c18c80501789ba0",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_021.pt": "81df571f15c0663daab38b443658487340929d4400e925d8a678d7b0301be2df",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_021.pt": "fdbe86130056e3330ed973223d8dededfc91a8d84e06dbfbcbfac4518bf6aaf9",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_022.pt": "5c00cb5a60143d10b1536d31640be46ebbae656c6427af7bd9d17a51e5e2c86b",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_022.pt": "7a21659966876089580975e3acb78be26fbb9b9cba0d0f448ff37a739bb04dd1",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_023.pt": "d622894acbbe715bce6d7a3dad04b9d7575f86062886cc6987b3afec38b482af",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_023.pt": "fb5583a0dd2219cbca3d572c5a8dca37fe140bd466d7d9a59bd07fcf1283e918",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_024.pt": "bb34e70dec3b359a6bd5eaadee7351e3e7abbc0f45c92432ac5f35ccbd0890c1",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_024.pt": "72076cd940637314564ebc54319a04b1d48d314a2b0c5f0963c3efd1da11874f",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_025.pt": "45c05a2e8821ffa06b01c5eccbbf48b317b573f500f977ad04878f1dfd7768e6",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_025.pt": "a611c365977bf83e1138f053916298bd8d6139e55d8bc5b6ac85421e17a730bf",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_026.pt": "c92db580fae1f0b685040d0e7d51af3afdec773c5407b8dbdcff8b6a1865a6ae",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_026.pt": "a53ee108fddd69d03f65bb1c4544e92c5d4cbe41ef5d940b9fdf49e4eaf7491d",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_027.pt": "e8cac4387db16897e662c0282e70bb9fd6993be47a5998e1b6decbb3bc0c2a4f",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_027.pt": "116b24458ac61f36520e39d4aed411879736eac11133ec35fab320d482c43a86",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_028.pt": "fc8038cb817782eef6f4b701eb667be5270d16495026662231a8e0c962279c07",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_028.pt": "8d20d463548f0e57534b46df7cf5b1fe2b279aeecf3c0db23fc02b79d841e194",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_029.pt": "9a6818a4fc588f5b1b4331ccf293d4913a7644db378a94f2aab543a5b9bc751d",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_029.pt": "da1418b67760bfbe4db3e5c98ac49fba1ba4455152eb120164f5d0898f559020",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_030.pt": "360f9e2023729f743db9d20018c409e3d493e9706e3bdbd89517e24ca1214394",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_030.pt": "b04bd4c1a206332f83add0c5e3f338474d2420017642595fd60ec40dc291ea65",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_031.pt": "a8a2f56e4bbb6d1985411a96f1478fc1ae72e9226a0a6f37179c79d077542bc6",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_031.pt": "01ed5d0d0158534423379424d723fc55970c6a5c0e2ae426f08f558d98c9f6e2",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_032.pt": "b40b2906f45733773aed8b8e9ccc5b6e15bfb34497a3460662549d5bfdbf0e3c",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_032.pt": "53b978d7e6df043e67712fbb98059cf47905532be6ad75e3fc2d793e935860d4",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_033.pt": "fa3057de0817c54e8538a5572f78fe420755423fbab9b4c925cae102ab261a3d",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_033.pt": "13dfe19f97e0c6579f4143cc91190d5c44d2dbfd2ef069bbaaad9a596f07c615",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_034.pt": "4c67e878a7ec2e89a6896fdcc521c33a0601725cbba73f213f2e4e9e5c3c33bb",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_034.pt": "3fba2ac7b207eb836471769dbd5e2afb7b74bfda1655b2a737a6c4e8e0dff175",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_035.pt": "074b4f638acc99c26cf502492c1315b7a7de01f7088e9e8acbb1a2a4f3fe216d",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_035.pt": "9ae8b973c1f7088674dd2de8e0023de02a2263d20f88dd1b1d6984e6e7e681c1",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_036.pt": "af6094dd388609ae4af792d7d3d3ee965f583c0dd76671307dd5c909347231c1",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_036.pt": "27924f4ab0bb457be52a07072f82c8c7663733df08048bfde91ee935fa481020",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_037.pt": "693ffe0f8ef62c93a9e39888538476f260aed8945619e095a65c9ca307bb4fcb",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_037.pt": "a95f4ae9ef8b4901bf8f1d6422c67b58048961cf44fac5f4d36f4fb57135ce23",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_038.pt": "0a1d1cf9d89cfb7eb3d4c7947f2241c721c8ef18e766088c27bbd34ce60f5900",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_038.pt": "6982439b0db5cef572039dd79b91a89f358b2d3a59a582ff9d9b8ff8023b53a7",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_039.pt": "9862c50fda981c280be87e7fbc58b4856b5a6dc037c0127e2e67f26ec5a72175",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_039.pt": "dfc13fd2e3a3397f80dc8e9b9fd0d00ac5b623182612c4bd893e746ee14cf784",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_040.pt": "07faa4265a7cbff687142c8c4383b1cea36eac6141ca59ee97e01fe11538f791",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_040.pt": "d87a6328f8657ca98b28feb15ae9aea20659df3414e447b8be44ded8aa385136",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_041.pt": "84003486c3350804ef7d084c9e3788b7bfa94070d757a6d8b072e1d6eae72ef7",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_041.pt": "9b757a19f1486049d1979fe8736ec4d39bbfede40f6ee0104826d261668b2199",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_042.pt": "d7a4bd9a4de184fae645f178c297bd17cbdfcf3d245bb057229e4e8c4896996f",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_042.pt": "ee6500f079b16800fad46999cb8060a736b0048de6141e5fd10cb18a5dc3c9e8",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_043.pt": "35dde785bd5460df5d584fd2506d6d35eee44bab77b3965f79ea59cb09203625",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_043.pt": "5ec80d333cd34f1fdb322f5c00b206e6d8f153c863eab1fb5db64a852e00eb43",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_044.pt": "49457ae7f7e2a4a4e319de60ab4e204d7d0bffc9a7624a944791a4e325ab2e78",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_044.pt": "40d7e63eabc135db116ba6c861490c26f0c8c7a163539f9160331f82ccd430cc",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_045.pt": "d9f474bb6c2840044ab9d3fbb74ec0cb29bfbcf6db8add7e6f00997d6f1fe51f",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_045.pt": "22fe05ca216554e2f021213af82feff8f8709bd1696161c6a57cc832c57c7608",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_046.pt": "e4e3a7db01a996c10d9622151adc5a66c5712b2b49d962a561a85d7a454e8ced",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_046.pt": "01aaa407a1285e12b24f2ad50e93a0a4d67f3da2649c6c51866156c332a2c7c8",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_047.pt": "503662018f89bd202279707dc60eadd070bed44893ab1435985ca8d294a8e3ea",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_047.pt": "ba98dafdb33db751f43e4c14c1162fb86928b0fc3bd1fba0ab60a44a031edbc2",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_048.pt": "b8fd865b710ddf5d6de085c25615cf1a1a410080c16743b9c640965323ab2c97",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_048.pt": "2023c064cae9ddb9944cdf04c8fe8430510f11adf8c058d3236b7036a4b04ebd",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_049.pt": "0f636f065973d53fe0e24687d8d24c57df7dc636b085e02902bcf59ceb8a4b70",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_049.pt": "fd7d0e17e87134ff80b69c75c317881b2b46e0f4aeb1c3fe6971f60c88ca5f2f",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_050.pt": "15aef11c76d3b77dc90ae66924012d3ded215086e0d899bc4b45d58ac784aafb",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_050.pt": "fe965d9f1d7773956addbc76edb26257bddc884500c9bd0b7eca38d77bb526d9",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_051.pt": "4ce88c2cece31b328837dd6211b45e2db503e4a2d84db440554f558060c6fdd5",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_051.pt": "b40442324f82c85ebb1ae5647b93d516dda7e05d30f8a24ea9bcb749cb1152bf",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_052.pt": "ee061f764fc657a5381c10e4dfe5df10aeed9a5181345c1f67d250e140fac1c7",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_052.pt": "9f1f5118f66352091de2a2f5031422be2fa9b3f6435bfe4163e5109b96f09da5",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_053.pt": "6ee0330fdcfd6fe6dc81295b5e0095e99fe3feb0b4222ebc453a40c251fb84dd",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_053.pt": "f865e9ed3425fb2e0cddd1c6672aad6add635760d314c953a5adbd7e528bfa59",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_054.pt": "c468c629f9c6924206ab7a8374d59afa64435567623f9aaa632a609b7344216f",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_054.pt": "95760ef5f49d850fc935bb35e4dec26eb4e590aa233521738b3d1b4196f13fb6",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_055.pt": "731cfa8acca145899db72f4090ea3c3eb51b80e73758a363898a98ef5285c256",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_055.pt": "8b279f1fe407fecff03091715ed583ae8d3a3a79e022fe389a2c1812cd9241cb",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_056.pt": "ef95a7760c447904e12dc83618c5908d19f1363fe252f53375b072a00cc2ff4f",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_056.pt": "17b01af514b85e0a9f66bb8c67bad5d7180d54d7c9daea1645caefacc13cc1bd",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_057.pt": "00036e4984e16aa349724832ea67883e7b8ed07747b5fca98a7ab828422adc70",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_057.pt": "971a24767cd9a83804488b8e07eccaa3df2982e676f3dbee66869a472aa383c1",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_058.pt": "211b655ad627832167f90eb6bcdccb5dce3865a336f2c5ec4ae1673a08589032",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_058.pt": "86c9d51d0afa0d1d214ac6b46c8f7732936685e36e1e3cfe6ac486e7d1f13811",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_059.pt": "50a41d08fc1f4ec494787b8a81f33d0d8f04b23ce7aedc9490ad99d6caca8d90",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_059.pt": "149ee305fa735b29cbfb29e0301298a506e59c019bea8ef920aa7db17c40779d",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_060.pt": "3dfb6f2eff2c8bc544f5ec7a6ec47a9049dec130d10c57dc38062d38a7b79885",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_060.pt": "50e88af14671b4280034e5440b20a9c4854892fe637712df64a32e0a669a6ab7",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_061.pt": "52d33d49dee06e0c1738576fbd48797dd7876ba5ff9ecddb7697fd4869665f18",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_061.pt": "1f90a09e9edca475b2d81e12fed08834b4ae6695c5b783dadf0d207e7dfebd9f",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_062.pt": "2e9d24958b27c0d88ae084523fd39d186833025de6bd618db97d25c075e223f1",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_062.pt": "74a3f63b202b5f05d33c2cf77404385201fb84c39b911757adcf90e7e5be6265",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_063.pt": "964c31e41f122086fae6d1efba87e8e87d4c3b433bc0043321a215fba68bd82a",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_063.pt": "4143b074f9a786455cd25224d688d56416c6495215a4eb258ec4e2ddf41d2536",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_064.pt": "f24cfa90502e79b3ecd8c687ef4878ac063f579c3970a11535b35b13bd7992b8",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_064.pt": "c8c7618cf203a05579093d985d2226a3df1febda29b16b8db9a4da17f7937b7f",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_065.pt": "0b067f7b993e562c95671dbf22cf12b88be9f4917f767e6ba24235636feeaac2",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_065.pt": "5c6009950c13a72f3dff714221d75aa8ac1b49b2be41bf6348a40d917e0e90d1",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_066.pt": "7355476dce0605b5feaf2755ad0b6fe9548cee5dcd4305611e36aa7e891d30a7",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_066.pt": "b263ef248d72592e0d6cdd884a09db68be0ef65e5552179292365b8b69be5976",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_067.pt": "2f7ac712ff4bbd1199bfad2f612943222ff3d1cced549abd817f22d535e7b454",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_067.pt": "2bbb8e5c6c547f8ec3b07fdb0f15ae396b16a35ab14d657936343b3228434c20",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_068.pt": "53e33e161bf04be16802ba087243344cb79586fb4aecf3e511a5beb92874efc9",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_068.pt": "34e40726a32d6c3827191c27c12b5e31183ad3251f92dc53df791e74a60a5429",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_069.pt": "4f548ec9298b4f12ef15dbf8be5452b8ff101492dee677c1b7ef1188f1a29a86",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_069.pt": "a65dd0e4c1976df11ba2effc24c8d74735f8cfbaf96ad55583b33cac9eadd7f4",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_070.pt": "42f73687138929e4bc6c52545af6dbfb68b2b2f9695459e845412f2f0c1cd5b8",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_070.pt": "37432d8e8a2fe7383fdcad0a24e18463301400ad0090c180a6cd3f88972a26a2",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_071.pt": "90a704e515efda1c48b517229501ef9c357b7ed1e1ea8eaef16dcc149122ae1c",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_071.pt": "bfc85c3885a743553de1bfcb9d629d94cc482b4e46dc3d80e1b6d1d66db131bc",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_072.pt": "ed7348613d9461ae99ccd217583c42314b2c83877b7636f2e2a3b792dc5cb9a0",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_072.pt": "d958a16ec3cb4988199b2dfbcfb65752655afbb2cd0138228652124dbdbbce6b",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_073.pt": "56351c874e920e7410e689e5c6b11c6c8b7f8053ce192e90cf7455dd69a84684",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_073.pt": "c5cbc96aa7214dd9a30f8025accb07a22aa376aa8d43baa10a21eceeafc113f2",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_074.pt": "b48807de749101b87bdd2d88e6bc93e611023aed787543822f775067f36e61c6",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_074.pt": "f5c8352345bbfd354f0e09a3c017c151a4313e65e1ef0eb90f0cf849b1f63e17",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_075.pt": "5d3810a6dc0d64a67bed5bf48f63d65859ebca02afa0b9bc6650aabc1ad7c634",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_075.pt": "df8f5c8336be3620024b87e2c1b16f280e6d3f282a5809ea482ee4ce852168e8",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_076.pt": "3223d798eb69c54c2ff30061242fbd80095d6015280cd092a0b73f599c466dd7",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_076.pt": "e2f4c45157c349a3c6cab0427facfdbefc8041cab50cfdb5ebff6992008d9f5e",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_077.pt": "41bf0ee3dc5e679a36d600789a9a3efe894ee10e11785d1f7394b8cd25388b72",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_077.pt": "f08173cc024cdb6074c7572c43f3e73d688739ad88dd7b7cf80c5e206598d2bc",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_078.pt": "ae4a4021b69b9314299930077752e79f0e104c55ff46eb4ab4773550b2fd505a",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_078.pt": "6a06e56c5e119fa3f1797ba0b22f6d5f106e85e26e8979dce28a0662a71be5f6",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_079.pt": "d89524f66632a6440d5df9ad02fea4569765d841d711a3fa936b5bf193992c04",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_079.pt": "4ade7d44b962a08d4ad4170afc3e8598cc4c3a044db2c3fcc2847f53e9e07e29",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_080.pt": "648c56642b133028db0a648f6476c831cb5a0e8b6b30e30a673074dc0c680394",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_080.pt": "609cf412d420edea9c301bb59275762579cc9147d091014afc18dc4d3bb14df2",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_081.pt": "fbbac59c50ffeebd9f08912a828221f2cc9ab449f1bfcae0b42b2ddd6db3e905",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_081.pt": "30e8760fff71ac6536dfb055139b8b2ef4f9bbd6447ed8c91329099415369fdc",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_082.pt": "52d5843c1cfd9e606f7de96069ff39aedb670afbe66af75fd4cdde0f2a81451e",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_082.pt": "9edc0602f32941cbaede54994b0e83583a1ecb28583baabc82e98d541225f2a7",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_083.pt": "d394812e97f950c4bc89944936f75e4f4a3f3152ee2c39cc336a1a0079eee316",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_083.pt": "473b7e90085910f17ae208f51608326ba6b09ae6c56e4736cabe7b816debf3af",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_084.pt": "338441fdea7abfcc05e35b49258a097dceed420c666db4c0dcc37a69395f9f3b",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_084.pt": "5c4f47853002b5e0a49f2b238ea576e9193bb57f9f780be69e44343f6cedf75e",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_085.pt": "aa6c5c025b188b04f648852bbcbcf6dd6b0236b4c30f451f89a2265d8f2e4aae",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_085.pt": "5d447bb4492884c43e4fa0791f8d7da7ac3a97de1da198ab6eb28a87a1e1bbf9",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_086.pt": "22e11f0655ce58791b7f3de63ca2a194b8a5e28b663edf2f0f087a3e751e6a41",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_086.pt": "e19e1587f27e4bf5349aa29a0ac01247b710a87b7be06a495b951a0b42df0aa8",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_087.pt": "138597f16803e2b2df5e56f986c7b6d5e193aae0de6d4219faec99a9ec4f3a96",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_087.pt": "6f7d82310e02f3d5f94147a5a9af7361bee6f031650f5f3a294a0f8b3f65b0ad",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_088.pt": "e25e800f85ea334912e3a08e4a0b0e18b561d2755c8c26af3130236150713cba",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_088.pt": "5bb18143d07c1bbf59793264651777a614c03c7f25badfce17f87a81d0dcf672",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_089.pt": "bab637d021a38749227b6cafa4c369755934977cd267c71bd1c9aa8d56d0c35b",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_089.pt": "ad7a13e6723bc4b9693d3bdf26990ec7c7a036f2c37fa87a387cd9eb5ec166ba",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_090.pt": "61cc3ca72a4e910cb0efcf0265c002a6af4ee864945cb0eefdc6314b2bec3fa2",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_090.pt": "50dfea2dca0e02a7198697d87665f45b876ba8617d51d2ab9a466f68dd032a96",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_091.pt": "9d0ace0b30676782c029c78982c43ba46c1cf25aa5e534993cd089f14651492b",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_091.pt": "1a505545f6021868946a86546b441fc697f459abff786e7369fb60e7c7de9eb2",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_092.pt": "918a11f4a83562a2f8a841c73ccac3b45df4edf3b266111cff9aea982402ff82",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_092.pt": "5c8cc8188822e6e533800250bd06911d59c09ab684e13a2625e76323cbca6224",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_093.pt": "2706dc8e9f4ff849d26aab88ddb7e052355114e379ad324a58a96e7bb3cc147d",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_093.pt": "0d5c04fce9a8dbe19942e7bd6ad5c8fdfde302fbc2f7de25b1f2554ad8c90451",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_094.pt": "0342662790e113d411e405fd1aaa91b61bc1bf45657fe9a27f2583178281df8a",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_094.pt": "f1d4c8daf33c4d2443829f1c254665c0aa1d9f046f40cc334efb3886e9d04eaa",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_095.pt": "a2d048b22e3df2b6325cba91157f5dd05371a8906701defe8157909fe395390c",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_095.pt": "b77f8e1e10cad684c22495c63d95e24d505de5bd4cdc95b36303ec4bf1d87f84",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_096.pt": "c19ba25bd01741a8e6bb8a47ec47f5f81089538fca300d8f570f4b39212e8ccf",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_096.pt": "2939acd2cbf27568fed3c2e9f99e31c194def4f3de94cad700d1e317c162ffa7",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_097.pt": "57ab99d58b3cc32a202f82e9c8d2ccf381efab3acc9590d5be63ef95ba902d8f",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_097.pt": "87704c8d917665c6daec0ff488c2e649152ad6e29c0a1dba81927a1bdd426dff",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_098.pt": "76a703467cd7f08bef58dc4fdd3f70631d1f45fe83d99a73db1438b89d15b3ec",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_098.pt": "4ea2132313ae78ff0ee2de7119ee56ab7421670c8d35ec023380c4a1ec53211b",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_099.pt": "c7107f9ce11816f8ccf6d48ac10f82713c0bc32f13ea574820ddc79ee0c4e498",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_099.pt": "77bfdf448ffe93172e8f2f84956e0ec43e2b33700c9f85be90924e8f8746b14f",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_100.pt": "5f33ee6385aae95c528c34383ef6ccd535997bac999cabbef0d06bf2a6c52e98",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_100.pt": "d3ad97c4990ba2e2afb5c7568c17a283487f3328d3e2f1786fb29d4a5f4fe72d",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_101.pt": "29636f0508d03a55fc6e6341d74493ec2c0f0906a2e48371e051f027fb90947c",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_101.pt": "9247c75c4e28a94a39d04ab9e532668211b26019598280042e41eaba5bfabdd8",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_102.pt": "9d3732719f308370da28107366f8733e19eb1077fd0f52eac8395b50005ab140",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_102.pt": "e455400d64c176e821a48ba0f2e0519c8d7a8abf03f999ed4b5528851af412f6",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_103.pt": "f32ac4181c417736f9e6eb04bd76371cae2ee6b9dd7b75411151c1f1177dd075",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_103.pt": "c0e9ca87296e2b92269b4cac80d7182561bb01e8dbfea9d8f0a0ec8c637d7de7",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_104.pt": "540efaaf55cddfcefb43cee7391d19814775b4e302d96fb43f7805fc9f73a307",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_104.pt": "3bbdd15144dba8cea9b101437553a3057159001e403ad1c82417774ecab06ef8",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_105.pt": "79a489ba3d66e7c80ee6cd11d6be3b70c7b76e34a771022c973cdac60520d21f",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_105.pt": "4da00daaf588af5090d7fa355148cbd5b8cb056f02b530272b8668696ec05a6e",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_106.pt": "e2f9a1b644d8dd716cb52a9e810c3d28240eb6aca20cba7e80aa54d0e4753b40",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_106.pt": "2e877562305bed3b1d8dd2a1344c69bd36cecf3baeb895200ec6b0965448ed86",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_107.pt": "36bc675a06e758040933ea34394687964078d5fe44d1f7120cb4b53ac8b2fc25",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_107.pt": "905baa5c4211509b326a5c09c37cfc97898a41fb661fa128adc4d1cc4521c329",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_108.pt": "1920d95857b3c34b3821a6cc732773d4aa06ee35a845c31fd8fc7f570cfca959",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_108.pt": "2c201a829222f606eb8c5dc2b664dd7daaa0fb28f9475dbcd1936e9789b3df3c",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_109.pt": "4cff8458b405d111401090b0ae98802e094721611af8fa20ccd61902cee3d5b7",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_109.pt": "caa1ca52b2483d15f2c747eec6db12267a3613a7f58fef3417fb707da878a993",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_110.pt": "7426fb0df13c94b04a50ce68ae3082feb214f96d3f7e225db7e1b29bce4287ea",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_110.pt": "3167ccab0596abb19ab10bf9f8df4f8585297314f3a9ce1a680efcf5f208be55",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_111.pt": "90d7bff26f5f4feaca4a06ac25036be990378b47dde35b81afe2331fedb8d3f3",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_111.pt": "cf841e5fff804f04bba5765a45e84c5a6f32019ba9924092a5b9846bf5fedc22",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_112.pt": "ed82c45bd62348a9fe2399a918656ac5d49d9450479198467ae18857882a899b",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_112.pt": "c9b935a54a607aa5ae456b68e47b57bac457c8e316c84faf4616ae15212d785e",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_113.pt": "186fb37ea744573d9950b488bb3bcb6540a5e9a1f51eb9652e2cc24527165a0a",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_113.pt": "b7cc160a58a5c82c32a91d2a78d52d3e2ed33838e1bf47cf5b20e0e2283b319a",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_114.pt": "6603509f73fc9058d92870f2e57a22fc24a698c1867086a354f7adf0f280b7ba",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_114.pt": "a23b74dc0f3be2697a7337f6dfe28915f92e71cab8e90158801c990e49f77246",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_115.pt": "d3b226e3d7a7a6f6054237bfa942d33fb8966a054d96cb3bfe1500feca810b96",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_115.pt": "bebc8ec26b8c98fb54b32e2b9f6d83d6e2b0d04d2534f9b799f3de7a2710f047",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_116.pt": "960ad470990c7e0a870ac7c11fa11e631a7f2a14e2a028eca5983ae9137860c0",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_116.pt": "c32afd0811675c9ad088d15ad29b7bde3ea3ac6e79e7d53f3717af7b6266d220",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_117.pt": "9524cb66e74821ce27da07a99d8cde66b68a698e07c668b2fb083b6e2743bde1",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_117.pt": "367e7b70440b62cf76b6761b42105f60bc40331e6f0f8f00320771b6c41d69b0",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_118.pt": "2b17e04da27d22746714b013bb0f854a7b940398180ac2e0aa007c44de7d5529",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_118.pt": "c068d74cc543357d414418f3cb9d6d3726fb1043cd1e638a091e56f18bfdbe5e",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_119.pt": "92be6d621fe812e306dc1cd2a40b669a64a1ceccca562376eab183a1ba9389c4",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_119.pt": "4f51d24fae25d28cc2b1fd78eaad132fd6a458bb163637457bb2eb4b2936fa25",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_120.pt": "4480085932cb60e67abca74c254e5c4ab984abaf4207f3b9cdaf6ae31589c5be",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_120.pt": "7e20cca9184929e8eb33edd5e91ef892bcf8c977cf4b65452363fb3733a418fd",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_121.pt": "fcdef61aa6756570495f682cbedfedbc0022d11d1cf02f8f1bbaa87423401b0b",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_121.pt": "393431b75e0e408baa26801bc184053fb39ac49e75b77ec29e3467e7b753e1dd",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_122.pt": "6ba5994d418b4d3ae1fbf60876989320219d265142c0f999e65e27e00f803ce1",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_122.pt": "7f9236ee7240e6d51ab8bec26b5de7d3974e81ac46823c4bff59ea470c89d3ee",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_123.pt": "fedb9b0a5b3e986cbae5e5e03f3555bad2745e59a0f4fbbbf94804967663b715",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_123.pt": "bdd43ec238a1f177712f19ead41e45e3b958091b7725ea54e78f5ed3ccb9ec7e",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_124.pt": "8cba8d3176e8a42a289f0e9a9518ff2efe7f25858dea10ef10733d4494aecc50",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_124.pt": "6ee768c796914ef99ca84dffa97810e488bdb9c9ffde14f48a6f4a3648e48511",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_125.pt": "bafc09d8f05613aa63afee52f0ba0327938b067241ee2797a28134d99269ae47",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_125.pt": "1a439c4f8a360b361d78c9d07492d9fcdad1728c88f1b9deba7fc865167f507c",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_126.pt": "f8c2acf964b8c0a588de40aa2566e4cae2221aea77ce035d3850c21cfdd70916",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_126.pt": "6a197d1d51b9ac4d5d9ee551c575459c66052ea0a23624a3540114084f0e28ac",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_127.pt": "0d9990f31fee042932132d44f41f7ca99b0137695620f235da761e36a1ff1394",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_127.pt": "f84188e73741784a35e30a71a85f05fdcb6123e1deebc1777d707c4adb462509",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_128.pt": "7bd576d0d5d9d70def416d983a0fef14ea8b5e6fb558c79c8872d6183757c3a3",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_128.pt": "2c5b19a05d57264614ea443977bf18512e3a3211a87d002677b535f2ea6a89ae",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_129.pt": "9d4eddd31e969fb571d3865b66f819f667dd3d74145c6f0aa97f89fac44f64ae",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_129.pt": "9975a0a3956108dd3ffdc84ef936c1d2e14f1c958655bea04a2cd904da711f55",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_130.pt": "cbc0d3731fac27a58fca7735aa25144e6ef90997dfc293e5828c7574362a2736",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_130.pt": "94cae5981d0013a23b4ca56afa0bb699e566496722d42833bd23b1ca77835854",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_131.pt": "208acc6da535661102fcb254498035212dc97b93b392f6ea78c6160d1bc1b1f9",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_131.pt": "8e41d3b5e02d8028c8f50580c72f221e80afe3d5b1adcd238e97179a4f5ca371",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_132.pt": "a885c48ea9607c25bdccfc6ac0abb5b80924c59adc37286a95bc79075ecd74d7",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_132.pt": "39cc55f0a99312b93571f5f3d805d996fabb44c536dc1542be1779977f052d8e",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_133.pt": "b195da107c1f48e2a70a7726c7a25948f8961879a428670bd09beaf5a482ed65",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_133.pt": "24d4a90d67d6394ceca92cd93cae71ccfb150db0f9e66a86b22220670e63f5a0",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_134.pt": "0e46d121b49416996e49bb2ca45c98dc0565ba68c1e717944074b7b447d26999",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_134.pt": "140d05f420ed0e9736266d3f81c8a709becc17d9bc616a703437908840060011",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_135.pt": "6fb478beb1c85837a879dc66e43ac4aa1f84a4fac63a60578455afa5579b01b3",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_135.pt": "84616aca4a2b451d671b6145073a404f1ace7e288423782fd324dcb3fe272100",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_136.pt": "19f665243e777b5d1916f440af181d121396acb9e4e6cbaa2cd2fe9d63445b9b",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_136.pt": "91eff9060193baeb45c76cfc2ccdcc5236bcf1826f53c043ffb07342ea8f5a55",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_137.pt": "e4c1725afda59fea3a2b6b2ab5a66f996c13fe3116f8281978dae7859c579895",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_137.pt": "60e9ed464325c7c2665f9747919fcff7b5fa892fc65348efbdc8fce3d2cdf8a8",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_138.pt": "d550f0d6be599c5ca2402962b6e0c4c8bf7aea881992cf42918431a2fa27e1b5",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_138.pt": "c2bb0a3ef86952d41e78e4e6edab2c371bb812e49bfca19e11f2fbe4ef8b8e03",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_139.pt": "bc74a5bbc9349c15eb6ee3e02fc4d438155687581c18489f47af623ee8736ee6",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_139.pt": "69b9657552264ac6b7f229cdef654202ee1eb4fcdd216e5dd28761b5d255106a",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_140.pt": "e430279d60f118a208df5a2f24d0bea76639e7747d7847a59e3946710e974c89",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_140.pt": "18614c2bf307f13ed062f350df5603852fa41313ae85217ea2743b45a4fcd1fc",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_141.pt": "20bf8257b232400073c7d50d2abd310b9bace6f6838f8c81fef40b1c688f8397",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_141.pt": "351cabf416b9038d986f83c5fb16474fb1beaf1071b97b56160d82ac5f7d5ac4",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_142.pt": "3178985f98c3e2daafccdf11edf974da7b32375132c78a18503d64302f3c3767",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_142.pt": "5a9d52c9ee1204a76fd1425c713b3654e3b61db37ef3a08c9c1ac0fb3a0892b3",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_143.pt": "5ead1047721137ac6a5f97fa9d4c9df5fb3a1542e15cec8dcbd3bb88878bc99e",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_143.pt": "a12ce1d13120d90d703bef19eaa9d205a1cc01c57699715d334347dca1bf904e",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_144.pt": "0d3d3c9a87f5f3c485a80355f5ae72e064cf6a2e7c4c3176eac72b7f810cfa02",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_144.pt": "968e4b0f7d7706aacf46989b10b9b87d41c6663cbb7bd25eb1811d28c8ad7945",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_145.pt": "b9b6807912e7ca7e1c96f82e7302ac9f4959373928ecb5dd61be0e0e61da175e",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_145.pt": "0fcaaf2bac46b213f4bec5f003fd1ab400da6648f970ff8ac1328069857024bb",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_146.pt": "202ce970f7d02a3ea636cd787fa0df76caec74faba475dada4c1be3dd4010ad3",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_146.pt": "62676c7b66c5f68ee99a362b92f31b931e4dec8bbf013dcf868b043ebdc10411",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_147.pt": "047c1e04086fc6c9a32cf0a2cad601c81e4f3d6cc4db804b918fb1b2f6795a25",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_147.pt": "d708c542f0f19feb6e11ca988e69d8f7c3c08095659757a47233c320fa4fb5b6",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_148.pt": "90ffa889349e37bafa25504010cfbcbc83520814543dd1ec39d983c4aff5055f",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_148.pt": "bde428e5f6ffe491365ecdbbede14a1e91c3785ad21e605b2e8865bc3a442a4a",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_149.pt": "c677efbd64447e2f5c8bc827d957367f7bd47f3d221fc398adb902ad701d1eea",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_149.pt": "128a55f7b3aba71f5892c7a4ee8a077c01cac0c59e807233c10f682b771815f9",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_150.pt": "33da2dde753d8381dd0721e5fcd30f51df0386052333609c7c1d9a0a18eb96d7",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_150.pt": "2b0d6d9721ee64ccb0bdf6966a35fa68da19de649cfd012c2063966e53e85582",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_151.pt": "cb6d66482ec3eab5c95b16dbbdfd2db8e3d2a4c4d9c0bef60096ecde725b27e7",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_151.pt": "0f7510b63736ed9ed2f47ac04e4de5e48528be5ee020c0b87deb6eca60d78bf3",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_152.pt": "44ea29a129f0c1cbc848601b6a829e176242ac54a4a73a217d2d0d5124590341",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_152.pt": "51120f8f5005caff47b522863e39dc0655b63a895fc10ab641df942488e3a1aa",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_153.pt": "a45f4f2b227d5182167414389746a71e43a3f93465437ea9e26f9e4fa5fd4881",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_153.pt": "fe16cf9d0c7d00bfebbcd0d9e688048d706fd812b27765dcb8d5c0fa9ee3402e",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_154.pt": "fde64c1b479fc8637da7a66492c3891f8807ecf5743363a56eef4bc5cdbde2c1",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_154.pt": "3161517d21340b5358729506db2d8591bbb085ac045c2c6c608c62ec9500f904",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_155.pt": "3078b83d384f1a04f43474eca1458daadfe365ef130908e68ce065f06cdcde6f",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_155.pt": "10a50105db603da5b1c016ea362922cccb261e539246027412f0b61db70240ae",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_156.pt": "60d061bda481c33d0170b644b51d16b6b3ae8259ea95c93f64f3fb7e8009985f",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_156.pt": "a376931a86639c024d6fc128390ff2db77105163e0690f157ccc36a9845b86d5",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_157.pt": "6e752869be20d5790a6aa7482cf52e7f0423d665489c56990852362299f6cfa1",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_157.pt": "a0c1ea35bd546fec8abaff2b64a778da3d5f302b6b66ca5a299356991accdb9b",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_158.pt": "f4fffe8d43ea8537c1c0458a436af690e2b465a5b77f276b26d7915e90adeed5",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_158.pt": "f9394ee55472bb822ee1de4c548c28ee4c102ace483b37576e35c9ef6d8f5681",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_159.pt": "c102ff596780e7f8db8b15661330c4da0d74dd74cfc3ab128611f444ce16d6cf",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_159.pt": "111562853e238a7418d33cfc03822fb68a2c619f072c2e7003e48027bec6d59a",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_160.pt": "aeb0cd1bf20bb1df256c6d454f4b0de324ad7f6771a4c96438585cb39c6afb8c",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_160.pt": "a734087071a828357da36fd978f1bdbb3346d4a05714bdf008b0fb4b8088cd8e",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_161.pt": "b8944d46d12c7938400166b6bf87c3e19fac4884dc6b919f1c4560c7b934e6d8",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_161.pt": "45404162d598396cbed78a42b72893f7b86237d812dd61ea809ead3b7926f522",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_162.pt": "0e6b811410339da51a00b762b0bec8053d63034c0b5e083be1deb9efada5398b",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_162.pt": "5fed7c2974f6ce50aef19548f84c6be61bef834081f7348ab7ec71ee9f6b7db0",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_163.pt": "dba07a9a308aaf64609992110db367386a5f45e1a9eabf138e96b72b49c6f808",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_163.pt": "68adf9c4a11bef48708b042da74d096074a14e33b3c01db9a77246798a15ec77",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_164.pt": "7c9064f9ae5cb8c429d7485931bf3c04b96ea4319c0f5d7acf0a769e67d0be5d",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_164.pt": "5d764e0eb5a8684d4d3fe45f6e3da74c9d528d44ac66e1619627eb4955ea02d5",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_165.pt": "a97df76d05ccf89ec0deeeca8728ee90d5300f954213103c6c16ed4f4ed683d9",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_165.pt": "afbac3be7edf5fc10af8ba27e3a803c4c9e3e651b3758671eece61da08cec9e4",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_166.pt": "479adac5ec991894308905eb49fb1ad3807b5f2265566c2791020fe2ebccd34f",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_166.pt": "56ab97426d18e8ffdf396f0ae53002708cc7c3beaa87e93cfd6a37af0afb56e9",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_167.pt": "b3db11af317a95f3411352206e8faa905f385b536521da71247d89a9ee49cb38",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_167.pt": "1a91a5a5db2059af237714e45766206fad7fef496728afb35058b50e76dcca6f",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_168.pt": "5ab12e65deec0a76cf3e08dc9e4e74f18717e80282f0ae65cacaa3642bd9d5d9",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_168.pt": "9f5fcb58b7ba9b323a57fd753e6a0dba4723c371733f91ad548881c4910cbcf8",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_169.pt": "33a7f2c833d47236bfa917a18dd3b410a50d8d8b333569c0f0641fbea4bfea24",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_169.pt": "028217f21e84dd7ce68f47845020aeb8798d355204be57f0d4de65d88878706d",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_170.pt": "6862e1d90528bd8b08efc0859a04983f2465825f8fd433b3489b27b7b0b5fdee",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_170.pt": "ebdca91f6f51b131a2b69dee1577919a022585e9e5ccb32c9aebbf4306c9efa7",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_171.pt": "e7a091e42560509ce756ddfe95cfa994cd22d07aa1032786b1da1ddb65343eb5",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_171.pt": "1c603e3e49d9227cfdd199b24cf49350614fbdd7125c9fb4444878192b0b2371",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_172.pt": "a21decf8f0d8455ae0607b9e2c169ee66497042ee5fa27961ac0a60d7ec84136",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_172.pt": "d0f72d54c4f4839336693d7b17051e1f1dc9a9569e465adbd232754f18552885",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_173.pt": "e0fe114391e55adbbbb900eed7f0d75f27795877b560e3dbca52b0a2680f6298",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_173.pt": "c55f1d48f06bc45fb5d323bc18535d4db28786e581441c6eee703653d54250e5",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_174.pt": "1e6a26dfe326029472518bce349ed266d4e99fa2e5e0553149db470652b980d8",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_174.pt": "2379f93ee8d1fb26f7a52e071d3f2def935ea7b852747b07eb4b48363bb4c6e9",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_175.pt": "d787fd9b5cebd5cf1e7df3348c455214ef367dbc62445c0edf0bbfca9a1c0a4e",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_175.pt": "2267def315da4505c7f2def8b6967c5e8cd05cb21aa24736330cd5f29e8da7b1",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_176.pt": "ebad636567fa73009bacebd2752de624919967d08e0c446dcac95eff6708fa2c",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_176.pt": "778ad4d07d1e6fb51e6233d336380aad78051cba9ae693082dad43f362be915e",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_177.pt": "bfccd82cd0ab84f16ba9f139c6266386f3f76b9aa9fa1bea02f2b6f1fe5c627a",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_177.pt": "0de25c624a97f65b2c70d13ddaa4e7dad63f991b5a0918315dd23c322908edb8",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_178.pt": "b84235d9d060b3e5c60d4a67bfebe8a8a9c2858faf913d912228f068dd3ca1b5",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_178.pt": "a33197118c618d302ab61d714b1ed3c3f9ed8ab5c735bc02f12a423f29d4cb20",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_179.pt": "0e906d780021bf49ac74b98713add72b8a7ad241eea0254cd74d9d074aefbbff",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_179.pt": "30ec6e5f04b57d57a4213d7095c7404a6eb80101cd9261b91c0675a0d13f8945",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_180.pt": "3e4777d636ee3a3af6fbd7c57dad6d10a094069f1386bd5511b443e2e2987c4c",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_180.pt": "eef42d7713b9c0367a2b550f67cd20df477763c2397ec020f25c49e50f84f060",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_181.pt": "7db1a59ca7189ae3c7f6d599d2fd9881dd0833b1bdb38cc814d93456664cf1d2",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_181.pt": "e092291516994d10b243f7c198ca26fa64d65cec2964a0bf84e3ed6aab13f2cf",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_182.pt": "ac9e80f0e26bbacff64bee5f5e8e61fd331cfac5171bab86bac18364aad97a35",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_182.pt": "a0b5eb34a41b68d18f309c047926cf593053c38d8a93bbf0e8f732bb85591fb4",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_183.pt": "c491916fcc902722abe17de043b3958475fecdd36d3d0a25f8db6d8bd88eec05",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_183.pt": "2441a51ae4d84d25c4a99646108221a145509e48138749580d4a31bb90b43f05",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_184.pt": "fe2d6b125bca516218dd4edf5bedf209eb75d478e5f9fa261dedb639d2280a39",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_184.pt": "56ff36874a624946bed79e7c1cbe0677a3aa91179e2eb53bdba9f792704605c1",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_185.pt": "2ed598b234a2f64dd68dc1894a19bc7e9c06876943b75193af07187c9879474e",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_185.pt": "6ace2a9ba0865fa54b2f6c5f9171c5589c47f4ab63c9b5b19ee8c2b298f64447",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_186.pt": "6c7ce56a6bc38cb808ca9004bfaa37b91fd2fda1158fb5883937bd5eb67faebe",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_186.pt": "cb93ed75df53c6886f1e0d796558a69378f75526b866c3f9745837d9e1edc183",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_187.pt": "f0ea409cfe3e03e6fbc3668351f45a6974a5151a018fccfdef2e9ec31a2f0a7c",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_187.pt": "77fe84ffb3191412ce67832e76af601de2714da248549d1eee99162d97372544",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_188.pt": "41b942e4026fe023c086ea214d355be1934f314da8b6376fc65c5e4d3ff61cf3",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_188.pt": "9032c25b1777785dae4d77311202ed91146c9f4c948c315c0bdac055e93354ba",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_189.pt": "52d4dcc970b46a25b804d2d9da0fa20b493c937ee075d451b8f1358fb30f2a96",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_189.pt": "560671a023331256e784beb20f2ed6252ba85bfdcf33624fdf8d9b0d7a4dc3a7",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_190.pt": "cc300b13c66ec9f195e5090a8b621c48d717e1587acc84d9e6bfc46aba8679d0",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_190.pt": "60d7c3e908d42f9d95e468ba6876d27331443b3242f6d72b4b839879a7e5ad5d",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/gradient_episode_191.pt": "4413693248ecbb3d9e0b032920fbe70d609a8643f9951d6cf8a8e7f11c083686",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/before_episode_191.pt": "0e72e193e73e95c5ed871ed3cdfcec1a1c1587349c2624ef04fb0ea520287590",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/latest.pt": "89bf92fe6e0cc794621685041267f57d648abeac1d0cca6f96195949f4d570fe",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/phi_0512.pt": "f26d33350129101e5b8a4a6898f41cc44b11a67b2ab12f33cb38e81e254dfdce",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/phi_2048.pt": "34e1c605e232805fb89cb494c5266d4de4910e3878be04a4c4cad28bfae9e2ab",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/phi_2560.pt": "0d14d7b8882dcd55ca3edb3284405569ed3aec343746e0900381e577b263641b"
+  },
+  "method_validated": false,
+  "downstream_promotion_allowed": false,
+  "limitations": [
+    "This verifies artifacts and recorded guards, not MUSA derivative correctness.",
+    "Gradient scale, derivative evidence and scientific eligibility require agent review.",
+    "No checkpoint is trained, resumed, or promoted by this audit."
+  ]
+}

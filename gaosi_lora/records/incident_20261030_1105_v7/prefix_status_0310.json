@@ -1,0 +1,83 @@
+{
+  "observed_at_utc": "2026-10-30T03:09:46.037968+00:00",
+  "job": {
+    "name": "diagnose_core_prefix_v7_raw_gradient_r1",
+    "command": [
+      "/usr/bin/python",
+      "-u",
+      "tools/diagnose_prefix_gradient.py",
+      "--config",
+      "configs/diagnose_core_prefix_v7_raw_gradient.json",
+      "--execute"
+    ],
+    "wrapper_pid": 465264,
+    "started_at_utc": "2026-10-30T01:44:05.478175+00:00",
+    "start_epoch": 1793324645.4781954,
+    "status": "PASS",
+    "device_lock": {
+      "path": "/tmp/gaosi_musa_device0.lock",
+      "version": 1
+    },
+    "child_pid": 465265,
+    "child_proc_start_ticks": "59871498",
+    "exit_code": 0,
+    "wall_seconds": 5129.060818195343,
+    "finished_at_utc": "2026-10-30T03:09:34.539021+00:00"
+  },
+  "identity_live": false,
+  "diagnostic_result": {
+    "status": "EXECUTED_REQUIRES_SCIENTIFIC_REVIEW",
+    "method_validated": false,
+    "formal_data_used": false,
+    "production_modified": false,
+    "diagnostic_inner_updates_max": 64,
+    "limitations": [
+      "Instrumented reconstruction, not the historical trajectory.",
+      "CPU copies introduce synchronization and can change backend behavior.",
+      "Execution success does not establish gradient correctness."
+    ],
+    "finished_at_utc": "2026-10-30T03:09:32.211521+00:00"
+  },
+  "raw_norms": [
+    {
+      "episode": 0,
+      "finite": true,
+      "norm": 2.5731238716800286e-05
+    },
+    {
+      "episode": 1,
+      "finite": true,
+      "norm": 0.06615261925098836
+    },
+    {
+      "episode": 2,
+      "finite": true,
+      "norm": 0.029094509364180416
+    },
+    {
+      "episode": 3,
+      "finite": true,
+      "norm": 4.6953800381588306e-05
+    },
+    {
+      "episode": 4,
+      "finite": true,
+      "norm": 0.05485535261842206
+    },
+    {
+      "episode": 5,
+      "finite": true,
+      "norm": 0.08858779017664231
+    },
+    {
+      "episode": 6,
+      "finite": true,
+      "norm": 1.3826114200229862e-05
+    },
+    {
+      "episode": 7,
+      "finite": true,
+      "norm": 9.47850229661424e+21
+    }
+  ]
+}

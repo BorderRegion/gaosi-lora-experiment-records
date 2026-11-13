@@ -1,0 +1,25 @@
+{
+  "status": "PRIMARY_CLEAN_PAIRED_V2_PUBLISHED_AND_CPU_FIXTURES_PASSED_NOT_ACTIVATED",
+  "recorded_at_utc": "2026-11-10T16:22:39.667122+00:00",
+  "publication": {
+    "published_files": 8,
+    "original_references_rehashed": 6
+  },
+  "local_validation_sha256": "bc6a06e6c649b2b2410e184ec34c34c808b32248dd914f5b55b92c4fdc0fc816",
+  "remote_validation_sha256": "f08e47a038f6b2a93b6a33d9e24ab731fe7dabe72829a9200850c774954e97a3",
+  "candidate": "records/organization_clean_pairing_20261110_1620/organization_queue_corrected_v2.py",
+  "candidate_sha256": "7e3b37b630891150dd6f939dc21dc52c5d4024e962d50c38151aa80cfa6e5724",
+  "production_sources_sha256": {
+    "gaosi/meta.py": "f9cf49a2975791fa3466e6caaa31bb8312a20eec64244a4f33d205cf1607ca69",
+    "gaosi/runtime.py": "6d38d86b1985a4238abc00c7c960cc3a28dcd5eb11f07de15dd1ecf2edba4e86",
+    "tools/train_guarded_meta.py": "2ba1c7922b84efcf4adf9dbc669e2e6039f51797b8649810809d376b30da7d68",
+    "tools/guarded_pipeline.py": "86074a3cb14dbfa9d8a38496a61efeb0efec2a3653aecf0fb631320f6d72ac02",
+    "records/pipeline_observed_blocking_v8/tools/organization_queue.py": "ea06746497d5772d7fc2a462fe4020a64204b26b441efcca7f844cc0c7776b69",
+    "records/clean_schedule_pairing_20261110_1407/organization_queue_corrected.py": "c2fbe946e27f1eb01da102229dcd3215332012c6edc7e78b8caa2a4a92af3db5"
+  },
+  "previous_candidate_failure_reproduced": true,
+  "requires_before_activation": "Explicit controller handoff at completed/waiting review boundary; do not interrupt an active numerical leaf.",
+  "training_or_controller_modified": false,
+  "method_validated": false,
+  "full_goal_complete": false
+}

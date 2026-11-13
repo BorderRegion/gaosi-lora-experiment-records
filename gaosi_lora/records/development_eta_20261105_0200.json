@@ -1,0 +1,41 @@
+{
+  "status": "ROUGH_BASE_DEVELOPMENT_THROUGHPUT_EXTRAPOLATION_NOT_FULL_PROTOCOL_ETA",
+  "recorded_at_utc": "2026-11-05T01:59:13.349508+00:00",
+  "completed_base_cells": 2,
+  "declared_base_cells": 60,
+  "remaining_base_cells_including_running": 58,
+  "observed_completed_job_wall_seconds": [
+    7827.016048669815,
+    7966.128138542175
+  ],
+  "mean_seconds": 7896.572093605995,
+  "extrapolated_remaining_days_at_identical_cell_cost": 5.300939599874395,
+  "communicated_rough_range_days": [
+    5,
+    6
+  ],
+  "assumptions": [
+    "Single-device sequential queue; every remaining cell costs approximately the same as the first two known-task phi L2048 cells.",
+    "No interruption, retry, conditional extension or additional-device contention."
+  ],
+  "limitations": [
+    "Only known-task L2048 has completed; fact, rule, X and Adam wall times have not yet been measured.",
+    "Range is a rough planning estimate, not a confidence interval, upper bound or completion promise.",
+    "Excludes 10 additional H1 comparison cells, any conditional matched core/development extension and all later protocol stages."
+  ],
+  "full_protocol_eta": null,
+  "full_protocol_remaining_scope": [
+    "development selection and conditional matched extension",
+    "organization specialization and matched phi_clean",
+    "formal recovery, selective recovery, reflow and continual experiments",
+    "7B experiments and matched local budgets",
+    "independent phi seeds29/43, statistical analysis and conditional protocol additions"
+  ],
+  "evidence_sha256": {
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t0_clean_s17.json": "01546584f94766f18038c2fa7463e6a2f622e91818c781e38e1c9f1985426ba4",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t0_medium_s17.json": "a0fba54f09871edbdb1bb4e507d280fb56b8130ce900f3f9247bd84f3116582e",
+    "records/pipeline_observed_blocking_v8/tools/phi_development_queue.py": "a6a9a393235972a8cfc4f3faa6c3aa96f762185e7b8d875018eb513b7d784978"
+  },
+  "full_goal_complete": false,
+  "training_modified_or_restarted": false
+}

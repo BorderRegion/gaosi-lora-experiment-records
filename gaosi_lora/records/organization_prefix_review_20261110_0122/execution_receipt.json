@@ -1,0 +1,7 @@
+{
+  "status": "PARTIAL_O1_SPECIALIZATION_SAVED_PREFIX_AND_CPU_ADAM_REPLAY_PASSED",
+  "review_sha256": "917b38fcca1cdd4140f07aec8d2dff8f44aafa2781ea85cf227c2469198a62ff",
+  "episodes_checked": 3,
+  "inner_steps_checked": 24,
+  "remaining_61_episodes_same_speed_hours": 11.516505641111111
+}

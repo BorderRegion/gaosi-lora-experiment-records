@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/diff/gaosi_lora/records/pipeline_observer_20261108_0505/observe.py", line 88, in <module>
+    main()
+  File "/home/ubuntu/diff/gaosi_lora/records/pipeline_observer_20261108_0505/observe.py", line 51, in main
+    reply = remote('/usr/bin/python ' + shlex.quote(REMOTE_SOURCE) + ' ' + shlex.quote(rel),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/diff/gaosi_lora/records/pipeline_observer_20261108_0505/observe.py", line 33, in remote
+    return subprocess.run(SSH + [command], check=True, timeout=240, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['ssh', '-S', '/tmp/gaosi_autodl_12666_reboot.sock', '-p', '12666', '-o', 'BatchMode=yes', '-o', 'ConnectTimeout=20', 'root@training.example.invalid', '/usr/bin/python /root/autodl-tmp/gaosi_lora/records/pipeline_observer_20261108_0505/collect_snapshot.py records/pipeline_monitor_20261109_050539_utc']' returned non-zero exit status 255.

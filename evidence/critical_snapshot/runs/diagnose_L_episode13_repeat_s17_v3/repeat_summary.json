@@ -1,0 +1,29 @@
+[
+  {
+    "repeat": 0,
+    "all_finite": true,
+    "nonfinite_elements": 0,
+    "norm": 0.013263798417684722,
+    "terminal": {
+      "query_task": 0.015803683549165726,
+      "query_language": 2.430680513381958,
+      "query_keep": 0.015803683549165726,
+      "objective": 0.015803683549165726
+    }
+  },
+  {
+    "repeat": 1,
+    "all_finite": true,
+    "nonfinite_elements": 0,
+    "norm": 0.013272706166084804,
+    "terminal": {
+      "query_task": 0.015803683549165726,
+      "query_language": 2.430680513381958,
+      "query_keep": 0.015803683549165726,
+      "objective": 0.015803683549165726
+    },
+    "bitwise_equal": false,
+    "max_absolute_difference": 6.906688213348389e-06,
+    "relative_l2_difference": 0.0006726011910405203
+  }
+]

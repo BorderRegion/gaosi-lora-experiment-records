@@ -1,0 +1,54 @@
+{
+  "utc": "2026-10-29T19:52:00.527484+00:00",
+  "scope": "Recorded L core episodes and immutable CPU-loaded real checkpoint snapshot; no independent gradient recomputation",
+  "run": "runs/phi_mix_O1_L_H2_core_s17",
+  "checkpoint_snapshot": "records/phi_L_core_checkpoint_20261030_0348.pt",
+  "checkpoint_sha256": "c93a0bebf6ef460a3ec8f25c7ff29911940661a3c9166260d1bb9d014a3018d8",
+  "checkpoint_next_episode": 9,
+  "checkpoint_inner_updates": 72,
+  "checkpoint_phi_all_finite": true,
+  "checkpoint_optimizer_moments_all_finite": true,
+  "checkpoint_optimizer_steps": [
+    9.0
+  ],
+  "source_hashes_verified": 24,
+  "supervision_completed_episodes": 8,
+  "supervision_completed_inner_updates": 64,
+  "episode_median_seconds": 219.83407306671143,
+  "raw_gradient_norm_range": [
+    1.365154457744211e-05,
+    27145691136.0
+  ],
+  "large_gradient_events": [
+    {
+      "event": "episode_end",
+      "utc": "2026-10-29T19:46:59.757610+00:00",
+      "process_wall_seconds": 1906.7213244438171,
+      "episode": 7,
+      "inner_updates": 64,
+      "phi_grad_norm": 27145691136.0,
+      "compute_counters": {
+        "loss_forwards": 2156,
+        "loss_backwards": 2124,
+        "input_tokens": 1073764,
+        "supervised_tokens": 214704,
+        "hessian_vector_products": 320
+      },
+      "query_task": 0.024864783510565758,
+      "query_language": 2.436265468597412,
+      "query_keep": 0.024864783510565758,
+      "objective": 0.024864783510565758,
+      "q_train": 0.5,
+      "K": 8,
+      "episode_wall_seconds": 220.5350296497345
+    }
+  ],
+  "clip_threshold_in_source": 1.0,
+  "diagnostic_job": "diagnose_L_clean_K2_gradient_s17_v1",
+  "numerical_issue_status": "UNRESOLVED_LARGE_FINITE_RAW_GRADIENT; additional real-model diagnostic queued behind the device lock",
+  "limitations": [
+    "Clipping and finite checkpoint tensors do not validate gradient correctness or phi efficacy.",
+    "The snapshot may include a newer episode than the regular supervision snapshot; its own counters are authoritative.",
+    "No actual interruption or resume test was performed."
+  ]
+}

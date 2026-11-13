@@ -1,0 +1,36 @@
+{
+  "status": "ALLOW_NEXT_PROTOCOL_STAGE_WITH_LIMITATIONS",
+  "run": "runs/phi_X_real_episode_readiness_s17_observed_blocking_v8",
+  "reviewer": "Codex /root independent X readiness evidence review",
+  "reviewed_at_utc": "2026-11-01T12:17:07.276288+00:00",
+  "rationale": "Evidence supports the planned fresh full X/H2 run under the existing saved-gradient guards and blocking environment. This completes readiness only; no efficacy or backend-correctness claim is made.",
+  "limitations": [
+    "Readiness is2 episodes/K2, not the full192-episode2560-step schedule; its4 steps are extra readiness cost and receive zero core-budget credit.",
+    "Full X starts fresh phi/Adam; the readiness checkpoint is not a warm start or candidate for formal use.",
+    "MUSA BF16 higher-order root cause remains unresolved; no X-specific real-model finite-difference proof was obtained.",
+    "Finite gradients, saved-state consistency and nonzero head paths do not establish derivative correctness or convergence.",
+    "Preserve blocking, original GPU lock, immutable pins and preupdate gradient guards; full X completion needs its own artifact/scientific review.",
+    "Full protocol including common-warm H1, matched clean/organizations, formal/continual/7B/statistics/seeds remains incomplete."
+  ],
+  "artifact_audit": "records/pipeline_observer_20261101_1143/X_readiness_artifact_audit_20261101_1214.json",
+  "artifact_audit_sha256": "c1c1f69ababebbba3310ef9d720cf732b49da1f99d83fa0fbc2d4ac8b81e216c",
+  "scientific_evidence_sha256": {
+    "records/pipeline_observer_20261101_1143/X_readiness_artifact_audit_20261101_1214.json": "c1c1f69ababebbba3310ef9d720cf732b49da1f99d83fa0fbc2d4ac8b81e216c",
+    "records/pipeline_observer_20261101_1143/X_readiness_adam_replay_20261101_1214.json": "8e503d6eb8e684bc8c896506c1f98135ec168a1bcf83cf27449a3d984d05473d",
+    "records/pipeline_observer_20261101_1143/X_readiness_tensor_review_20261101_1216.json": "b73abee639d97380cfc362a0532a87474d17f46d7c8b10810be16d40ac4952c3",
+    "records/pipeline_observer_20261101_1143/inspect_X_readiness.py": "51aab32da90dfe115daaf71506666001f383b08c8a9ab75996e534eedcf22cbb",
+    "records/pipeline_observer_20261101_1143/replay_saved_adam.py": "9eedbe61dc0f18e26462ed5ebe658cc491600079afd1a64e6a35b486d8df95a2",
+    "records/pipeline_monitor_20261101_121231_utc/result.json": "ff00bc55b5b0c8cc45f19addd05749bb62ddd48cb85927d683c3e40ed561af8c",
+    "records/pipeline_monitor_20261101_121231_utc/archive_source_sha256.json": "a1f91529cea46523122d251a00da5e98ecafcbd2db2ae900aad823250eddfe08",
+    "records/pipeline_monitor_20261101_121231_utc/snapshot/checks/profile_3b_X_H2_three_routes_learned_parent_observed_blocking_v8.json": "ca82d8fd736c308d40b448cadfcbc79b66ade4a860cfd5f6b1c7c39f6cf447f1",
+    "checks/horizon_cpu.json": "fb139574cfbf3943b8c9d129853c4b6888a4ca22eca88f2e0798449bdccc8fed",
+    "checks/horizon_upstream_cpu.json": "69324da9da4c0558643739fd384480eb4adc8f7047f1f86e485a94a218e651ee",
+    "checks/meta_rollout_horizon_regression_cpu.json": "3c80b3fb0d4ff064ee85df5bd2f9bae6dd351e5a8f0d0af4cc55a6ae710357ee",
+    "tools/validate_horizon.py": "5702672159ddb4320bbcd0bc954fe277eb7e08a75de50cebf91f81f42ca04fad",
+    "tools/validate_meta_rollout.py": "dc6efd5f22c40f9b1c2b4f958bb7306339f49b944dd5cecda4dfcac8b86d9c75",
+    "records/observed_blocking_core_completion_20261101_1143/scientific_assessment.json": "e529750f7008ff049e01d9e045462fa106273af770804fbaf90a0c9da3e47b23",
+    "records/pipeline_observer_20261101_1143/X_readiness_scientific_assessment_20261101_1217.json": "d80539c4aa8f75ec5a3781cebca49b5e942aee8b42ffb85a6d1584cdc8c5458b"
+  },
+  "method_validated": false,
+  "scope": "Allow existing controller to start fresh full X/H2; no reuse of readiness phi."
+}

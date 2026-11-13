@@ -1,0 +1,22 @@
+--- validate_continual.py.before
++++ validate_continual.py
+@@ -134,6 +134,19 @@
+             continual.train(c)
+             saved = torch.load(root / organization / 'latest.pt', map_location='cpu', weights_only=False)
+             events = [json.loads(s) for s in (root / organization / 'events.jsonl').read_text().splitlines()]
++            day_models = [e['model'] for e in events if e['event'] == 'day_start']
++            night_models = [e['model'] for e in events if e['event'] == 'night_start']
++            assert len(day_models) == len(night_models) == 2
++            for d, n in zip(day_models, night_models):
++                assert d['adapter_parameters'] == n['adapter_parameters']
++                if organization == 'O3':
++                    assert 2 * d['trainable_parameters'] == n['trainable_parameters'] == n['adapter_parameters']
++                elif organization == 'O2':
++                    assert d['trainable_parameters'] == n['trainable_parameters'] < n['adapter_parameters']
++                else:
++                    assert d['trainable_parameters'] == n['trainable_parameters'] == n['adapter_parameters']
++            assert all(e['cpu_rss_bytes'] > 0 for e in events if e['event'] in ['day', 'night'])
++            tests[organization + '_stage_parameter_counts_and_step_memory_are_recorded'] = 'PASS'
+             replays = [e for e in events if e['event'] == 'night_complete']
+             assert len(replays[0]['replay_ids']) == 33 and len(replays[1]['replay_ids']) == 65
+             assert set(replays[0]['replay_ids']) < set(replays[1]['replay_ids'])

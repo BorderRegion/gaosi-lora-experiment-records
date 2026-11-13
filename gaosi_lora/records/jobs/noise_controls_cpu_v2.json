@@ -1,0 +1,17 @@
+{
+  "name": "noise_controls_cpu_v2",
+  "command": [
+    "/usr/bin/python",
+    "-u",
+    "tools/validate_noise_controls.py"
+  ],
+  "wrapper_pid": 86844,
+  "started_at_utc": "2026-10-29T13:11:56.932366+00:00",
+  "start_epoch": 1793279516.9323847,
+  "status": "PASS",
+  "child_pid": 86845,
+  "child_proc_start_ticks": "55358643",
+  "exit_code": 0,
+  "wall_seconds": 13.43488597869873,
+  "finished_at_utc": "2026-10-29T13:12:10.367276+00:00"
+}

@@ -1,0 +1,85 @@
+{
+  "status": "SCHEDULED_PIPELINE_EVIDENCE_VERIFIED_ONLY",
+  "reviewed_at_utc": "2026-11-01T15:13:19.476375+00:00",
+  "source_sha256": "8338feefffe45bb5205e597ff945292a2a34b4e7fbcc10b278fcc0a0e38ad243",
+  "observation": {
+    "observation": "records/pipeline_monitor_20261101_151256_utc",
+    "archive_sha256": "9edd9a9b9dcba41e7e1e37080b98cdf0797cb2501e1ff17fb9e532c0e16e84dc",
+    "verified_source_files": 84,
+    "alerts": [],
+    "pending_scientific_reviews": [],
+    "meta_runs": [
+      {
+        "run": "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8",
+        "job_status": "RUNNING",
+        "committed_gradient_rows": 13,
+        "maximum_raw_norm": 0.13090263101129582,
+        "committed_episodes": 13,
+        "committed_inner_updates": 104,
+        "last_inner": {
+          "event": "inner",
+          "utc": "2026-11-01T15:10:14.693954+00:00",
+          "process_wall_seconds": 9334.053369998932,
+          "episode": 13,
+          "k": 8,
+          "ld": 0.028175903484225273,
+          "lr": 0.9004554152488708,
+          "task_tokens": 522,
+          "language_tokens": 890,
+          "support_forwards": 18,
+          "keep_tokens": 522,
+          "keep_forwards": 8,
+          "step_seconds": 44.89643597602844,
+          "exact_window": true,
+          "cpu_rss_bytes": 8207491072,
+          "allocated_bytes": 18869877248,
+          "reserved_bytes": 34173091840,
+          "peak_allocated_bytes": 31261424128,
+          "peak_reserved_bytes": 34173091840
+        },
+        "checkpoint": {
+          "sha256": "277535a46de50343b4e1baa02ce682d8714025627f869e521ed698747790314f",
+          "next_episode": 13,
+          "inner_updates": 104,
+          "phi_finite": true,
+          "optimizer_finite": true,
+          "config_equal": true
+        }
+      }
+    ],
+    "production_modified_or_restarted": false
+  },
+  "files_independently_rehashed": 84,
+  "observer_identity_verified_live": true,
+  "observer_pid": 2961121,
+  "observer_start_ticks": "78120930",
+  "controller_count": 15,
+  "meta_runs_checked": [
+    {
+      "run": "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8",
+      "job_status": "RUNNING",
+      "gradient_rows_checked": 13,
+      "committed_episodes_checked": 13,
+      "last_committed_inner_updates": 104,
+      "total_planned_inner_updates": 2560,
+      "checkpoint": {
+        "sha256": "277535a46de50343b4e1baa02ce682d8714025627f869e521ed698747790314f",
+        "next_episode": 13,
+        "inner_updates": 104,
+        "phi_finite": true,
+        "optimizer_finite": true,
+        "config_equal": true
+      },
+      "maximum_raw_norm": 0.13090263101129582
+    }
+  ],
+  "pending_scientific_reviews": [],
+  "next_due_at_utc": "2026-11-01T15:43:01.290118+00:00",
+  "method_validated": false,
+  "downstream_promotion_allowed": false,
+  "limitations": [
+    "Recorded flags do not prove graph connectivity or derivative correctness.",
+    "Live files may represent adjacent instants; no atomic snapshot is claimed.",
+    "Tensor finiteness comes from the scheduled CPU checkpoint inspection."
+  ]
+}

@@ -1,0 +1,29 @@
+--- tools/guarded_pipeline.py
++++ records/confirmation_clean_pairing_20261110_1430/guarded_pipeline_corrected.py
+@@ -8,7 +8,7 @@
+ 
+ from device_guard import uses_musa
+ from storage import preserve_space
+-from train_guarded_meta import digest, prepare, LOCK
++from train_guarded_confirmation_paired import digest, prepare, LOCK
+ 
+ SNAPSHOT = Path('records/pipeline_observed_blocking_v8')
+ ADOPTED = 'phi_mix_O1_L_H2_core_s17_observed_blocking_v8'
+@@ -24,7 +24,7 @@
+         return 'meta'
+     if module == 'gaosi.scale' and config.get('scale_action') == 'meta':
+         return 'scale'
+-    if module == 'gaosi.confirmation' and config.get('confirmation_action') == 'meta':
++    if module in ['gaosi.confirmation', 'records.confirmation_clean_pairing_20261110_1430.confirmation_runner_corrected'] and config.get('confirmation_action') == 'meta':
+         return 'confirmation'
+     return None
+ 
+@@ -78,7 +78,7 @@
+             configfile = command[command.index('--config') + 1]
+             manifest_path = SNAPSHOT / 'meta_entries' / (name + '.json')
+             prepare(configfile, entry, manifest_path)
+-            command = ['/usr/bin/python', '-u', 'tools/train_guarded_meta.py',
++            command = ['/usr/bin/python', '-u', 'records/confirmation_clean_pairing_20261110_1430/train_guarded_confirmation_paired.py',
+                        'run', '--manifest', str(manifest_path)]
+         if numerical:
+             command = ['/usr/bin/env', 'MUSA_LAUNCH_BLOCKING=1', *command]

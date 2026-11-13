@@ -1,0 +1,20 @@
+--- original/seven_b_queue.py
++++ tools/seven_b_queue.py
+@@ -12,7 +12,7 @@
+ 
+ # This module is also imported by CPU tests without importing torch.
+ import sys
+-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
++sys.path.insert(0, str(Path.cwd()))
+ from gaosi.scale import sha256, check_config, valid_freeze
+ 
+ 
+@@ -189,7 +189,7 @@
+ 
+ def main():
+     parser = argparse.ArgumentParser()
+-    parser.add_argument('--freeze-job', default='organization_queue_v1')
++    parser.add_argument('--freeze-job', default='organization_queue_recompute_v7')
+     parser.add_argument('--early-job', default='seven_b_early_queue_v1')
+     args = parser.parse_args()
+     preserve_json('records/seven_b_policy_v1.json', POLICY)

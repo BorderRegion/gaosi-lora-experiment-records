@@ -1,0 +1,21 @@
+{
+  "EXPERIMENT_PROTOCOL.md": true,
+  "MUSA_SETUP.md": true,
+  "NUMERICAL_CONTRACT.md": true,
+  "README.md": true,
+  "REFERENCES.md": true,
+  "SOURCE_MANIFEST.json": true,
+  "START_HERE.md": true,
+  "checks/cpu_backend_probe.json": true,
+  "checks/cpu_reference.json": true,
+  "checks/data_check.json": true,
+  "checks/package_check.json": true,
+  "checks/static_memory.json": true,
+  "config.json": true,
+  "experiment_queue.csv": true,
+  "reference/core.py": true,
+  "reference/test_reference.py": true,
+  "tools/build_tasks.py": true,
+  "tools/estimate_resources.py": true,
+  "tools/probe_backend.py": true
+}

@@ -1,0 +1,21 @@
+{
+  "old_documents_read": [
+    {
+      "name": "ADDENDUM_FOR_CODEX.md",
+      "sha256": "e891e3c35391c8a895d97e9d49469fa56c2286d0d2be699b392c23013f5be26b",
+      "inherited": "specified intent/numerical semantics only; not included as binding old execution queue"
+    },
+    {
+      "name": "Gaosi_A80080_Codex_Full_Plan_20261026.md",
+      "sha256": "58c7c6c81f9fa0620c28a342bb1aec6a52fdfbcafb3153782d7c86719b203ae2",
+      "inherited": "specified intent/numerical semantics only; not included as binding old execution queue"
+    },
+    {
+      "name": "CODEX_MTT_48GB_ENV_HANDOFF_20261021.md",
+      "sha256": "5239a54ea2c78907156f3ea65f1b002ce834157094b097fa896347931d0eb3d9",
+      "inherited": "specified intent/numerical semantics only; not included as binding old execution queue"
+    }
+  ],
+  "new_date": "2026-10-28",
+  "new_status": "design plus CPU reference; not GPU execution"
+}

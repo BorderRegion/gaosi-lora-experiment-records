@@ -1,0 +1,22 @@
+{
+  "status": "LOCAL_SIGNAL_COMPARISON_AND_ALL_REFERENCES_VERIFIED_ON_BOTH_HOSTS",
+  "recorded_at_utc": "2026-11-10T07:41:08.510196+00:00",
+  "evidence_sha256": {
+    "records/development_aggregate_review_20261109_2058/assessment_verification.json": "a3c814c81ddc7b3fdd33641132c2b8dc1a9b6b6f0c04949071e3c226f2052218",
+    "records/development_signal_review_20261110_0742/review.py": "9099c2792c715672d92f0812d8efbd0b3e5474f8a7f91d5a61723f0b5ff70c7f",
+    "records/development_completion_20261104_2358/phi_dev_X_2560_t4_clean_s17_evidence/manifest.json": "87d096ce6bcd9b467b86074c7a8039b7ead89516f138c91eca3809cb36acb52c",
+    "records/development_completion_20261104_2358/phi_dev_X_2560_t4_clean_s17_evidence/snapshot/runs/phi_dev_X_2560_t4_clean_s17/result.json": "ade05265a8908313780e46caa58b2ea93965fbe28b25e76733e537a3f28d9695",
+    "records/development_completion_20261104_2358/phi_dev_standard_adam_t4_clean_s17_evidence/manifest.json": "508e30dc93f5ca8e5cfca52b833359f20de5ab796a659fb192f8f42f3a619fbe",
+    "records/development_completion_20261104_2358/phi_dev_standard_adam_t4_clean_s17_evidence/snapshot/runs/phi_dev_standard_adam_t4_clean_s17/result.json": "7122d62c7515f0120b17eda90ad13663620a7c191803cf62c13f71bb8c90d028",
+    "records/development_completion_20261104_2358/phi_dev_paired_adam_t4_clean_s17_evidence/manifest.json": "ca4e777985b20567b5767c5142a0f4e4392c79e240255c21cebfb893df49ca44",
+    "records/development_completion_20261104_2358/phi_dev_paired_adam_t4_clean_s17_evidence/snapshot/runs/phi_dev_paired_adam_t4_clean_s17/result.json": "c29fafa47d7c58004015989f958dc277b356c5e15efdbff5fba93ec94ac10336",
+    "records/development_signal_review_20261110_0742/descriptive_comparison.json": "a66fc5fbdf96c1a86875126a692c0a7b4bc54f5654c5be9af6cd38dfdb8312f6"
+  },
+  "remote_verification": {
+    "all_references_verified": true,
+    "verified_reference_files": 9
+  },
+  "training_modified_or_restarted": false,
+  "method_validated": false,
+  "full_goal_complete": false
+}

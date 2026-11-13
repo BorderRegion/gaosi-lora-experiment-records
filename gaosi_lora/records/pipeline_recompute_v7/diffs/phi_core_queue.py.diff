@@ -1,0 +1,107 @@
+--- original/phi_core_queue.py
++++ tools/phi_core_queue.py
+@@ -45,10 +45,61 @@
+     return result
+ 
+ 
++
++def wait_for_adopted_l():
++    """Adopt one exact running job; never launch or resume it here."""
++    import hashlib
++    name = 'phi_mix_O1_L_H2_core_s17_recompute_v7'
++    configfile = Path('configs') / (name + '.json')
++    expected_sha = 'f70511613b15835c3eae3ea0fa86e937bb51bf3559301c600a4f9206fca414bc'
++    resultfile = Path('runs') / name / 'result.json'
++    while True:
++        if hashlib.sha256(configfile.read_bytes()).hexdigest() != expected_sha:
++            raise RuntimeError('Adopted L configuration changed')
++        state = json.loads((Path('records/jobs') / (name + '.json')).read_text())
++        if state['status'] == 'PASS':
++            result = json.loads(resultfile.read_text())
++            config = json.loads(configfile.read_text())
++            if (result['status'] != 'PASS' or result['episodes'] != 192
++                    or result['inner_updates'] != 2560
++                    or result['horizon'] != 'EXACT_H2_tail'
++                    or result['checkpoint'] != f'runs/{name}/latest.pt'
++                    or json.loads((Path('runs') / name / 'config.json').read_text()) != config):
++                raise RuntimeError('Adopted L result does not match the full v7 schedule')
++            import torch
++            checkpoint = torch.load(result['checkpoint'], map_location='cpu', weights_only=False)
++            def finite(value):
++                if torch.is_tensor(value):
++                    return bool(torch.isfinite(value).all())
++                if isinstance(value, dict):
++                    return all(finite(v) for v in value.values())
++                if isinstance(value, (tuple, list)):
++                    return all(finite(v) for v in value)
++                return True
++            if (checkpoint['config'] != config or checkpoint['next_episode'] != 192
++                    or checkpoint['inner_updates'] != 2560
++                    or not finite(checkpoint['phi']) or not finite(checkpoint['meta_optimizer'])):
++                raise RuntimeError('Adopted L final checkpoint is incomplete or nonfinite')
++            for steps in [512, 2048, 2560]:
++                if not (Path('runs') / name / f'phi_{steps:04d}.pt').is_file():
++                    raise RuntimeError('Adopted L is missing a required learning-curve snapshot')
++            print(json.dumps({'event': 'adopted_existing_L_complete', 'job': name,
++                              'credited_inner_updates': 2560}), flush=True)
++            return result
++        if state['status'] != 'RUNNING':
++            raise RuntimeError('Adopted L failed; preserve all evidence and inspect')
++        proc = Path(f"/proc/{state.get('child_pid')}/stat")
++        fields = proc.read_text().split() if proc.exists() else []
++        if not fields or fields[2] == 'Z' or fields[21] != state.get('child_proc_start_ticks'):
++            raise RuntimeError('Adopted L has no matching live process')
++        time.sleep(30)
++
++
+ def main():
+     p = argparse.ArgumentParser()
+-    p.add_argument('--calibration-job', default='calibration_queue')
++    p.add_argument('--calibration-job', default='calibration_queue_v3')
+     args = p.parse_args()
++    adopted_l = wait_for_adopted_l()
+     while not Path('records/calibration_frozen.json').exists():
+         job = Path('records/jobs') / (args.calibration_job + '.json')
+         if job.exists() and json.loads(job.read_text())['status'] != 'RUNNING':
+@@ -60,8 +111,8 @@
+     meta = [p for p in parents if 'meta_parent_' in p['config']['data']]
+     assert len(meta) == 2 and all(p['acquisition_gate_passed'] for p in meta)
+     dev = next(p for p in parents if p['config']['data'].endswith('dev_parent.jsonl'))
+-    for architecture in ['L', 'X']:
+-        name = f'profile_3b_{architecture}_H2_three_routes_learned_parent'
++    for architecture in ['X']:
++        name = f'profile_3b_{architecture}_H2_three_routes_learned_parent_recompute_v7'
+         run_job(name, ['/usr/bin/python', '-u', 'tools/profile_transition.py',
+                        '--checkpoint', dev['checkpoint'], '--out', f'checks/{name}.json',
+                        '--seq', '512', '--effective-tokens', '512', '--architecture', architecture,
+@@ -86,17 +137,25 @@
+         smoke = copy.deepcopy(template)
+         smoke.update(architecture=architecture, episode_K=[2, 2], known_warm_episodes=2,
+                      purpose='real_end_to_end_optimizer_readiness_not_core_budget')
+-        train(f'phi_{architecture}_real_episode_readiness_s17', smoke)
++        if architecture != 'L':
++            train(f'phi_{architecture}_real_episode_readiness_s17_recompute_v7', smoke)
+         core = copy.deepcopy(template)
+-        core.update(architecture=architecture, purpose='full_protocol_O1_phi_mix_2560')
+-        endpoints[architecture] = train(f'phi_mix_O1_{architecture}_H2_core_s17', core)
++        core.update(architecture=architecture, purpose='full_protocol_O1_phi_mix_2560_fresh_phi_after_recompute_v7')
++        if architecture == 'L':
++            expected = dict(core, out='runs/phi_mix_O1_L_H2_core_s17_recompute_v7')
++            actual = json.loads(Path('configs/phi_mix_O1_L_H2_core_s17_recompute_v7.json').read_text())
++            if actual != expected:
++                raise RuntimeError('Adopted L differs from the calibrated core template')
++            endpoints[architecture] = adopted_l
++        else:
++            endpoints[architecture] = train(f'phi_mix_O1_{architecture}_H2_core_s17_recompute_v7', core)
+     # Exactly common phi and meta-optimizer state at 512 inner updates. All
+     # subsequent episode indexes, data seeds and q cycling match the H2 core.
+     alternate = copy.deepcopy(template)
+     alternate.update(architecture='L', horizon='H1', start_episode=64,
+-                     initial_phi='runs/phi_mix_O1_L_H2_core_s17/phi_0512.pt',
++                     initial_phi='runs/phi_mix_O1_L_H2_core_s17_recompute_v7/phi_0512.pt',
+                      load_initial_meta_optimizer=True, purpose='common_512_warm_alternate_H1')
+-    alternate_result = train('phi_mix_O1_L_H1_commonwarm_s17', alternate)
++    alternate_result = train('phi_mix_O1_L_H1_commonwarm_s17_recompute_v7', alternate)
+     manifest = {'status': 'CORE_TRAINING_COMPLETE_PENDING_DEV_SELECTION', 'core_endpoints': endpoints,
+                 'alternate_horizon': alternate_result, 'main_inner_steps_each': 2560,
+                 'common_warm_inner_steps': 512, 'alternate_additional_steps': 2048,

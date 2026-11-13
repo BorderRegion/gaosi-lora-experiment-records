@@ -1,0 +1,334 @@
+{
+  "status": "EIGHTH_H1_FIRST_MEDIUM_RULE_MATCHED_ENDPOINT_DESCRIPTIVE_REVIEW_NO_HORIZON_SELECTION",
+  "recorded_at_utc": "2026-11-07T11:57:32.041332+00:00",
+  "scope": "First rule task, medium q0.7, seed17, K64; eight of ten additional H1 cells now audited.",
+  "metrics": {
+    "H1": {
+      "clean": {
+        "task": {
+          "n": 4,
+          "candidate_accuracy": 0.0,
+          "mean_margin": -2.672334313392639,
+          "nll": 2.144101768732071,
+          "answer_tokens": 8,
+          "strict_EM": 0.0,
+          "abnormal_rate": 0.0
+        },
+        "keep": {
+          "n": 512,
+          "candidate_accuracy": 1.0,
+          "mean_margin": 10.186212864077874,
+          "nll": 0.023651785981122126,
+          "answer_tokens": 1288,
+          "strict_EM": 0.984375,
+          "abnormal_rate": 0.0
+        },
+        "language": {
+          "nll": 2.120082481864213,
+          "answer_tokens": 4463
+        }
+      },
+      "initial": {
+        "task": {
+          "n": 4,
+          "candidate_accuracy": 0.25,
+          "mean_margin": -0.3406195044517517,
+          "nll": 1.4412559866905212,
+          "answer_tokens": 8,
+          "strict_EM": 0.0,
+          "abnormal_rate": 0.0
+        },
+        "keep": {
+          "n": 512,
+          "candidate_accuracy": 0.7109375,
+          "mean_margin": 1.517247106036848,
+          "nll": 0.3426414310627744,
+          "answer_tokens": 1288,
+          "strict_EM": 0.70703125,
+          "abnormal_rate": 0.0
+        },
+        "language": {
+          "nll": 2.140740751632521,
+          "answer_tokens": 4463
+        }
+      },
+      "final": {
+        "task": {
+          "n": 4,
+          "candidate_accuracy": 1.0,
+          "mean_margin": 22.509077668190095,
+          "nll": 1.7881388814089405e-07,
+          "answer_tokens": 8,
+          "strict_EM": 1.0,
+          "abnormal_rate": 0.0
+        },
+        "keep": {
+          "n": 512,
+          "candidate_accuracy": 0.994140625,
+          "mean_margin": 7.836425180536112,
+          "nll": 0.018775744298554446,
+          "answer_tokens": 1288,
+          "strict_EM": 0.990234375,
+          "abnormal_rate": 0.0
+        },
+        "language": {
+          "nll": 2.1155671328940575,
+          "answer_tokens": 4463
+        }
+      }
+    },
+    "H2": {
+      "clean": {
+        "task": {
+          "n": 4,
+          "candidate_accuracy": 0.0,
+          "mean_margin": -2.672334313392639,
+          "nll": 2.144101768732071,
+          "answer_tokens": 8,
+          "strict_EM": 0.0,
+          "abnormal_rate": 0.0
+        },
+        "keep": {
+          "n": 512,
+          "candidate_accuracy": 1.0,
+          "mean_margin": 10.186212864077874,
+          "nll": 0.023651785981122126,
+          "answer_tokens": 1288,
+          "strict_EM": 0.984375,
+          "abnormal_rate": 0.0
+        },
+        "language": {
+          "nll": 2.120082481864213,
+          "answer_tokens": 4463
+        }
+      },
+      "initial": {
+        "task": {
+          "n": 4,
+          "candidate_accuracy": 0.25,
+          "mean_margin": -0.3406195044517517,
+          "nll": 1.4412559866905212,
+          "answer_tokens": 8,
+          "strict_EM": 0.0,
+          "abnormal_rate": 0.0
+        },
+        "keep": {
+          "n": 512,
+          "candidate_accuracy": 0.7109375,
+          "mean_margin": 1.517247106036848,
+          "nll": 0.3426414310627744,
+          "answer_tokens": 1288,
+          "strict_EM": 0.70703125,
+          "abnormal_rate": 0.0
+        },
+        "language": {
+          "nll": 2.140740751632521,
+          "answer_tokens": 4463
+        }
+      },
+      "final": {
+        "task": {
+          "n": 4,
+          "candidate_accuracy": 1.0,
+          "mean_margin": 22.62378549575822,
+          "nll": 2.384184973891479e-07,
+          "answer_tokens": 8,
+          "strict_EM": 1.0,
+          "abnormal_rate": 0.0
+        },
+        "keep": {
+          "n": 512,
+          "candidate_accuracy": 0.994140625,
+          "mean_margin": 8.086487319310638,
+          "nll": 0.018653708311536187,
+          "answer_tokens": 1288,
+          "strict_EM": 0.990234375,
+          "abnormal_rate": 0.0
+        },
+        "language": {
+          "nll": 2.1168404078499607,
+          "answer_tokens": 4463
+        }
+      }
+    }
+  },
+  "H1_minus_H2": {
+    "task": {
+      "candidate_correct": 0,
+      "strict_EM_correct": 0,
+      "nll": -5.960460924825384e-08
+    },
+    "keep": {
+      "candidate_correct": 0,
+      "strict_EM_correct": 0,
+      "nll": 0.0001220359870182583
+    },
+    "language_nll": -0.0012732749559032364
+  },
+  "config_differences_verified": [
+    "freeze_manifest",
+    "initial_adapter",
+    "out",
+    "phi"
+  ],
+  "loss_changes": {
+    "H1": {
+      "task": {
+        "injected": -0.7028457820415497,
+        "recovered": 1.441255807876633,
+        "residual": -2.144101589918183
+      },
+      "keep": {
+        "injected": 0.3189896450816523,
+        "recovered": 0.32386568676421995,
+        "residual": -0.0048760416825676806
+      },
+      "language": {
+        "injected": 0.0206582697683082,
+        "recovered": 0.025173618738463688,
+        "residual": -0.004515348970155486
+      }
+    },
+    "H2": {
+      "task": {
+        "injected": -0.7028457820415497,
+        "recovered": 1.4412557482720239,
+        "residual": -2.1441015303135735
+      },
+      "keep": {
+        "injected": 0.3189896450816523,
+        "recovered": 0.3239877227512382,
+        "residual": -0.004998077669585939
+      },
+      "language": {
+        "injected": 0.0206582697683082,
+        "recovered": 0.02390034378256045,
+        "residual": -0.0032420740142522497
+      }
+    }
+  },
+  "frozen_single_cell_scores": {
+    "H1": 1.0,
+    "H2": 1.0
+  },
+  "task_and_keep_are_same_query_pool": false,
+  "distinct_pools_verified": {
+    "H1": {
+      "task_kind": "affine_integer",
+      "rule": "f(x)=x",
+      "support_inputs": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "query_inputs": [
+        3,
+        5,
+        7,
+        9
+      ],
+      "support_and_query_inputs_disjoint": true,
+      "query_inputs_within_support_range": true,
+      "task_and_keep_sample_ids_and_worlds_disjoint": true,
+      "task_evaluation_count": 4,
+      "keep_fact_bindings_and_evaluation_count": 512,
+      "prediction_files": 12,
+      "prediction_rows": 3096
+    },
+    "H2": {
+      "task_kind": "affine_integer",
+      "rule": "f(x)=x",
+      "support_inputs": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "query_inputs": [
+        3,
+        5,
+        7,
+        9
+      ],
+      "support_and_query_inputs_disjoint": true,
+      "query_inputs_within_support_range": true,
+      "task_and_keep_sample_ids_and_worlds_disjoint": true,
+      "task_evaluation_count": 4,
+      "keep_fact_bindings_and_evaluation_count": 512,
+      "prediction_files": 12,
+      "prediction_rows": 3096
+    }
+  },
+  "non_tensor_files_rehashed": {
+    "H1": 79,
+    "H2": 75
+  },
+  "unique_remote_tensor_files_sha256_reverified": 6,
+  "remote_reverification": {
+    "status": "PAIRED_SAVED_TENSOR_FILES_AND_V2_PAIR_REPORT_SHA256_REVERIFIED",
+    "sha256": {
+      "runs/parent_3b_dev_parent_r32_s17_extend512_v2/latest.pt": "1fa4765c5c5d478f8dd0d7089ab6fbecd2f85190cc8d0a875aa1498da6ffc66f",
+      "runs/phi_dev_L_2560_t3_medium_s17/initial.pt": "197358f9856033e3aaebd08572dafb17d854e4798150ce384e4d4cfdbd1e9208",
+      "runs/phi_horizon_L_H1_2560_t3_medium_s17_v1/latest.pt": "d8edb528e4b4c15a1f2a1bdd5cfc87c7c774bd7355188744476686cc93447856",
+      "runs/phi_mix_O1_L_H1_commonwarm_s17_observed_blocking_v8/phi_2560.pt": "669ebfa4f72dd5fee938863d0ef4b793312b5af2ee1229057876e6221fafae91",
+      "runs/phi_dev_L_2560_t3_medium_s17/latest.pt": "2b6d420946666cefe6d81e82c00d0a9b8c0eab529fcdf890e38b1275dcce3c0c",
+      "runs/phi_mix_O1_L_H2_core_s17_observed_blocking_v8/phi_2560.pt": "4e97db0e17ef8c2b59afc6a41aaf8eaad8349b0ba470f69c8209c9b41b305c03",
+      "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t3_medium_s17_v1_paired_review_v2.json": "bb9c6b790b64843c92299db76c21e1e8c97addd028aad08a427bce32e325f05a"
+    }
+  },
+  "last_event_process_seconds": {
+    "H1": 6325.048326969147,
+    "H2": 6161.865304946899
+  },
+  "wrapper_wall_seconds_including_possible_lock_wait": {
+    "H1": 12816.942017793655,
+    "H2": 6179.05202293396
+  },
+  "noise_timing_review": {
+    "all_non_timing_fields_exactly_equal": true,
+    "excluded_fields": [
+      "boundary_seconds"
+    ],
+    "left_boundary_seconds": 1.2978546619415283,
+    "right_boundary_seconds": 1.292173147201538
+  },
+  "interpretation": "Both learn four query inputs for the identity rule from1/4 candidate and0/4 strictEM after noise to4/4 on both metrics. Known keep recovers from364/362 to509/507 for both H1 and H2, against clean parent512/504; candidate recovery is incomplete while strictEM exceeds the clean count. H1 task NLL is lower by5.96e-8 and language NLL lower by0.00127327, while keep NLL is higher by0.00012204. H1/H2 keep residual NLL is-0.00487604/-0.00499808 and language residual-0.00451535/-0.00324207; both frozen single-cell scores are1. Noise lowers task NLL2.144102 to1.441256 and increases candidate accuracy0/4 to1/4 while strictEM remains0/4; signed injected task loss is-0.702846, so this is acquisition rather than recovery of damaged task knowledge. Keep is damaged and substantially restored. This supports within-world interpolation and old-knowledge recovery with equal discrete retention and small mixed horizon differences. Query inputs are disjoint from support inputs but inside their range; copying the input solves f(x)=x and only four queries are evaluated, so general rule reasoning and extrapolation are not established. Four development tasks, eight pairs and one phi seed cannot justify horizon selection or superiority to matched Adam.",
+  "limitations": [
+    "CPU inspection of saved tensors and re-aggregation of saved predictions only; no model forward, tokenizer or derivative recomputation.",
+    "Language NLL is checked against the event ledger; no saved per-token language audit.",
+    "Model compute counters omit direct QA candidate/generation calls; they are not total evaluation FLOPs or total model forwards.",
+    "Frozen phi/base flags plus pinned source and file identities are provenance evidence, not an independent in-memory mutation trace.",
+    "No paired-method efficacy, held-out generalization, convergence or multi-seed conclusion from one completed development cell.",
+    "Eight of ten declared H1 pairs are complete; the two second-rule pairs remain incomplete.",
+    "Distinct task4 rule-query and keep512 fact-binding pools are checked; this is a small interpolation world with no formal-set or independent phi-seed conclusion.",
+    "Wrapper time includes lock wait and is not additive independent GPU cost.",
+    "Matching saved initial evaluations do not independently establish tensor-by-tensor equality of initial adapters."
+  ],
+  "evidence_sha256": {
+    "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t3_medium_s17_v1.json": "f5a122a74d8e2b76b74c5cdddf862dd6f8b47c52cb448a0522a60700a8cd7751",
+    "records/horizon_effect_comparison_20261103_1005/fetch_receipt_phi_horizon_L_H1_2560_t3_medium_s17_v1.json": "ca43adde0cba08c49df745d5d09e2690e01896f03a674bd928852f1ada5f8e88",
+    "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t3_medium_s17_v1_evidence/manifest.json": "b224094df9db8a5ce348ae86c9e621d8cc5a5c2f442718c27d2093b9b48a789b",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t3_medium_s17.json": "b27c79c1397d4b9f7192ce743edf2f7c619c0ca1d5b37d822d0f8ee1a7a3f752",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2560_t3_medium_s17.json": "0dbd725d54376c2f2ec3753c5ba29fc0ec6e50ebe2f4f139988f9eb84d56b7fd",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t3_medium_s17_evidence/manifest.json": "ea7e50de418b5b943edb9546f29944c3a42f634541460f76af4743c26c372cc9",
+    "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t3_medium_s17_v1_evidence/snapshot/data/synthetic/rules_integer_v1/dev_integer_world_000.jsonl": "5ce527b91b07df51cc12fafaf7be0b0292ae28aaf32a1d0ad73f3fd1c17fc846",
+    "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t3_medium_s17_v1_evidence/snapshot/data/synthetic/dev_parent.jsonl": "7d4353f9b9a8f1f74c182b503c01d7fb2181836aa464e8d17e1bb3282db25d11",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t3_medium_s17_evidence/snapshot/data/synthetic/rules_integer_v1/dev_integer_world_000.jsonl": "5ce527b91b07df51cc12fafaf7be0b0292ae28aaf32a1d0ad73f3fd1c17fc846",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t3_medium_s17_evidence/snapshot/data/synthetic/dev_parent.jsonl": "7d4353f9b9a8f1f74c182b503c01d7fb2181836aa464e8d17e1bb3282db25d11",
+    "records/horizon_effect_monitor_20261107_115552_utc/snapshot/records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t3_medium_s17_v1_paired_review_v2.json": "bb9c6b790b64843c92299db76c21e1e8c97addd028aad08a427bce32e325f05a",
+    "records/horizon_effect_monitor_20261107_115552_utc/review.json": "c411af385eed836eead238f32f6254fa5358e806389c9f6a70d6222897d2d7ae",
+    "records/horizon_effect_comparison_20261103_1005/review_eighth_H1_20261107.py": "1b7c6d22f550194959fe70eec6b906402dae20559ba51758d22eb79c088f6862"
+  },
+  "selection_policy_changed": false,
+  "method_validated": false,
+  "scientific_promotion_allowed": false,
+  "full_goal_complete": false,
+  "training_modified_or_restarted": false
+}

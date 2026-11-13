@@ -1,0 +1,12 @@
+{
+  "status": "PUBLISHED_REVIEW_VERIFIED_ORIGINAL_CONTROLLER_CONTINUES",
+  "at_utc": "2026-11-03T16:29:05.440003+00:00",
+  "run": "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8",
+  "receipt_sha256": "fa1ad3314c1277a37288cb338eb5e633ded0a8d4f184af46df1ae54e1a396b42",
+  "controllers_verified_live": 15,
+  "original_lock_inode": 31148027670,
+  "H1_job": "NOT_STARTED_AWAITING_EXISTING_CONTROLLER_POLL",
+  "new_controller_started": false,
+  "training_restarted": false,
+  "method_validated": false
+}

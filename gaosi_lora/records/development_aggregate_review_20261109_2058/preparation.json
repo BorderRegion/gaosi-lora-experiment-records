@@ -1,0 +1,11 @@
+{
+  "status": "REVIEW_SOURCE_PREPARED_NOT_EXECUTED",
+  "recorded_at_utc": "2026-11-09T21:00:58.594127+00:00",
+  "source": "records/development_aggregate_review_20261109_2058/review.py",
+  "source_sha256": "a6cb067ad240854b0c519008d3ef94029ca0a21581cb8e1fc950decab10e630e",
+  "gate": "All 60 completed audits and fetch receipts, final matched endpoint review and preserved controller assessment required before score calculations.",
+  "training_modified_or_restarted": false,
+  "aggregate_computed": false,
+  "method_validated": false,
+  "full_goal_complete": false
+}

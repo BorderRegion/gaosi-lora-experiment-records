@@ -1,0 +1,38 @@
+{
+  "observed_at_local": "2026-10-30T05:25:56+08:00",
+  "job": "diagnose_L_training_recompute_v7",
+  "job_status_at_observation": "RUNNING",
+  "processes": {
+    "wrapper_pid": 331675,
+    "child_pid": 331676
+  },
+  "repeat": 0,
+  "result_status": "PASS",
+  "episodes": 2,
+  "inner_updates": 4,
+  "hessian_vector_products": 88,
+  "preclip_phi_gradient_norms_fp64": [
+    0.00011764206748098384,
+    2.9464245084605425
+  ],
+  "checkpoint": {
+    "path": "runs/diagnose_L_training_recompute_v7/repeat_0/latest.pt",
+    "next_episode": 2,
+    "inner_updates": 4,
+    "phi_all_finite": true,
+    "optimizer_moments_all_finite": true,
+    "optimizer_steps": [2, 2, 2, 2, 2, 2],
+    "updated_output_head_norms": {
+      "net.4.weight": 0.004413133017048833,
+      "net.4.bias": 0.00010853902360997645
+    },
+    "base_revision": "3aab1f1954e9cc14eb9509a215f9e5ca08227a9b",
+    "base_digest": "d1f3f668a4bd02dbd1f1e6a04ba5ea1368ef67fa8686b1c9696c904016a6cfd4"
+  },
+  "limitations": [
+    "The diagnostic observer hooks torch.nn.utils.clip_grad_norm_, but production meta training uses stable_phi_clip_; no elementwise raw-gradient copies were saved.",
+    "Preclip norms come from stable_phi_clip_ and its finite-element guard; they do not prove elementwise equality between repeats.",
+    "The independent repeat 1 was still running at observation time."
+  ],
+  "formal_training_steps_credited": 0
+}

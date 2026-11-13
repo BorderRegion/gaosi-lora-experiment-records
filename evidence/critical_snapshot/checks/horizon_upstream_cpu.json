@@ -1,0 +1,107 @@
+{
+  "status": "PASS",
+  "tests": {
+    "L_K4_H1_positive_query_direct_chain_and_all_state": "PASS",
+    "L_K4_H2_positive_query_direct_chain_and_all_state": "PASS",
+    "L_K4_H4_positive_query_direct_chain_and_all_state": "PASS",
+    "L_K8_H1_positive_query_direct_chain_and_all_state": "PASS",
+    "L_K8_H2_positive_query_direct_chain_and_all_state": "PASS",
+    "L_K8_H8_positive_query_direct_chain_and_all_state": "PASS",
+    "X_K4_H1_positive_query_direct_chain_and_all_state": "PASS",
+    "X_K4_H2_positive_query_direct_chain_and_all_state": "PASS",
+    "X_K4_H4_positive_query_direct_chain_and_all_state": "PASS",
+    "X_K8_H1_positive_query_direct_chain_and_all_state": "PASS",
+    "X_K8_H2_positive_query_direct_chain_and_all_state": "PASS",
+    "X_K8_H8_positive_query_direct_chain_and_all_state": "PASS",
+    "trained_nonzero_heads_unchanged_and_truncation_difference_detected": "PASS",
+    "declared_config_budget_and_data_rejected_after_freeze": "PASS",
+    "phi_bytes_and_development_world_permission_enforced": "PASS",
+    "same_MUSA_leaf_device_lock": "PASS",
+    "real_diagnostic_entry_files_three_routes_all_state_and_phi_base_freeze": "PASS",
+    "only_explicit_MUSA_limitations_are_classified_not_unknown_failures": "PASS"
+  },
+  "comparisons": [
+    {
+      "architecture": "L",
+      "K": 4,
+      "tail": 1,
+      "gradient_norm": 0.00032582939253134594,
+      "full_gradient_norm": 0.008808088525586871,
+      "relative_l2_error": 0.9720280551960435,
+      "cosine": 0.7640810435265676,
+      "both_zero": false
+    },
+    {
+      "architecture": "L",
+      "K": 4,
+      "tail": 2,
+      "gradient_norm": 0.0007285086396094668,
+      "full_gradient_norm": 0.008808088525586871,
+      "relative_l2_error": 0.9378473008939048,
+      "cosine": 0.7694637184495561,
+      "both_zero": false
+    },
+    {
+      "architecture": "L",
+      "K": 8,
+      "tail": 1,
+      "gradient_norm": 7.018076621915874e-05,
+      "full_gradient_norm": 0.009490071773767234,
+      "relative_l2_error": 0.9939298054854622,
+      "cosine": 0.8220377571948425,
+      "both_zero": false
+    },
+    {
+      "architecture": "L",
+      "K": 8,
+      "tail": 2,
+      "gradient_norm": 0.0001963689487819897,
+      "full_gradient_norm": 0.009490071773767234,
+      "relative_l2_error": 0.9830335635282791,
+      "cosine": 0.8233401059897699,
+      "both_zero": false
+    },
+    {
+      "architecture": "X",
+      "K": 4,
+      "tail": 1,
+      "gradient_norm": 0.0003531770216426368,
+      "full_gradient_norm": 0.00902850366607264,
+      "relative_l2_error": 0.9693992418244994,
+      "cosine": 0.7898579342085031,
+      "both_zero": false
+    },
+    {
+      "architecture": "X",
+      "K": 4,
+      "tail": 2,
+      "gradient_norm": 0.000792193837391244,
+      "full_gradient_norm": 0.00902850366607264,
+      "relative_l2_error": 0.9315702955437617,
+      "cosine": 0.7970704263153887,
+      "both_zero": false
+    },
+    {
+      "architecture": "X",
+      "K": 8,
+      "tail": 1,
+      "gradient_norm": 7.185619103737031e-05,
+      "full_gradient_norm": 0.009775661635917627,
+      "relative_l2_error": 0.9937653914267998,
+      "cosine": 0.8492173250838637,
+      "both_zero": false
+    },
+    {
+      "architecture": "X",
+      "K": 8,
+      "tail": 2,
+      "gradient_norm": 0.00020915382467226977,
+      "full_gradient_norm": 0.009775661635917627,
+      "relative_l2_error": 0.9820319699982732,
+      "cosine": 0.8429623800092715,
+      "both_zero": false
+    }
+  ],
+  "reference_precision": "upstream forced-FP32 norm/attention",
+  "scope": "CPU random tiny Qwen; positive-query H4/H8 versus independent direct AD, plus finite differences only in FP64 reference. Not real MUSA feasibility or phi effectiveness."
+}

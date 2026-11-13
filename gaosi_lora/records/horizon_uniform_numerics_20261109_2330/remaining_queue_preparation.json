@@ -1,0 +1,14 @@
+{
+  "status": "CONTINUATION_SOURCE_PREPARED_NOT_LAUNCHED",
+  "source": "records/horizon_uniform_numerics_20261109_2330/remaining_queue.py",
+  "source_sha256": "e1db643e0d81b5da1859af19165777f3c50ce796478a9dfc2589e42896fb95db",
+  "syntax_parsed": true,
+  "remote_gate_state": {
+    "initial_gate_completed": false,
+    "initial_saved_tensor_review": false,
+    "remaining_queue_started": false
+  },
+  "launch_requires_exact_independent_saved_tensor_review_sha256": true,
+  "remaining_ten_launched": false,
+  "production_modified_or_restarted": false
+}

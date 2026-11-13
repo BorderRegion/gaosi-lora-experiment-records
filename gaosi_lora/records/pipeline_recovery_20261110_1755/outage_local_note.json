@@ -1,0 +1,61 @@
+{
+  "status": "TRANSPORT_OUTAGE_RECORDED_LOCALLY_REMOTE_PUBLICATION_PENDING",
+  "recorded_at_utc": "2026-11-10T18:05:15.684573+00:00",
+  "note": "## SSH\u8fde\u63a5\u6545\u969c\u4e0e\u5f52\u6863\u6062\u590d\u7b49\u5f85\uff08\u5317\u4eac\u65f6\u95f4 2026-11-11 02:05\uff09\n\n\u6700\u540e\u5b8c\u6574\u72ec\u7acb\u6838\u9a8c\u7684\u91c7\u6837\u4e3a\u5317\u4eac\u65f6\u95f401:15\uff0cO2\u5df2\u4fdd\u5b58192/512\u6b65\uff0824\u4e2a\u5b8c\u6574episode\uff09\u300201:45\u91c7\u96c6\u5668\u5355\u6b21\u63d0\u4ea4\u5df2\u6210\u529f\u9000\u51fa\uff0c\u4f46\u5f52\u6863\u4e0b\u8f7d\u57285505024/6882237\u5b57\u8282\u5904\u56e0SSH\u91cd\u8bd5\u8017\u5c3d\u505c\u6b62\uff1b\u672c\u5730\u524d21\u5757\u5df2\u6309\u539fmanifest\u9010\u5757\u91cd\u6838\u3002\u672a\u5b8c\u6210\u8be5\u91c7\u6837\u7684\u72ec\u7acb\u5b8c\u6574\u5ba1\u9605\uff0c\u56e0\u6b64\u4e0d\u636e\u6b64\u65b0\u589e\u8bad\u7ec3\u8fdb\u5ea6\u3001\u6709\u6548\u6027\u6216\u5f53\u524d\u8fdc\u7aef\u5b58\u6d3b\u7ed3\u8bba\u3002\n\n\u539f\u53ea\u8bfb\u89c2\u5bdf\u56682464224/start_ticks156222690\u5df2\u786e\u8ba4\u9000\u51fa\uff0c\u539f37\u6761ledger\u3001\u9519\u8bef\u72b6\u6001\u3001\u65e5\u5fd7\u548c\u90e8\u5206\u5f52\u6863\u5747\u4fdd\u7559\u3002\u65e2\u6709\u8fde\u63a5\u7ef4\u62a4\u8fdb\u7a0b896141/start_ticks146063673\u4ecd\u5b9e\u9645\u5b58\u6d3b\uff0c\u5f53\u524d\u5931\u8d25\u4e3a\u7f51\u5173\u5728\u5bc6\u94a5\u4ea4\u6362\u524dreset\u3002\u6062\u590d\u5de5\u4f5c\u89c1`records/pipeline_recovery_20261110_1755/`\uff1b\u7eed\u4f20\u4f7f\u7528\u65e2\u6709\u5f52\u6863\uff0c\u4e0d\u91cd\u6295\u91c7\u96c6\u5668\u3002\u65b0\u53ea\u8bfb\u89c2\u5bdf\u5668`records/pipeline_observer_20261110_1755/`\u4ec5\u51c6\u5907\u6e90\u6587\u4ef6\uff0c\u5c1a\u672a\u542f\u52a8\u3002\u6ca1\u6709\u6539\u52a8\u6216\u91cd\u542f\u8bad\u7ec3\u4e0e\u539f\u63a7\u5236\u5668\uff1b\u5f53\u524d\u4e0d\u80fd\u786e\u8ba4\u5b83\u4eec\u7684\u5b9e\u65f6\u72b6\u6001\u3002\u6062\u590d\u8fde\u63a5\u540e\u5e94\u5148\u6838\u5b9e\u5b9e\u9645\u8fdb\u7a0b\u8eab\u4efd\u3001\u7eed\u4f20\u5e76\u5ba1\u9605\u539f\u91c7\u6837\uff0c\u518d\u6062\u590d1800\u79d2\u89c2\u5bdf\u3002\u6b64\u6545\u969c\u8bf4\u660e\u76ee\u524d\u4ec5\u5199\u5165\u672c\u5730\uff0c\u8fdc\u7aef\u6587\u6863\u5f85\u8fde\u63a5\u6062\u590d\u540e\u8865\u8bb0\u3002\u5b8c\u6574\u5b9e\u9a8c\u8303\u56f4\u548c\u65b9\u6cd5\u7ed3\u8bba\u4e0d\u53d8\uff0cmethod_validated=false\uff0cfull_goal_complete=false\u3002\n\n",
+  "local_documents": {
+    "REPORT.md": {
+      "before_sha256": "419f060b66d8f056f6656ecf675aa3c6bb1b71fa5a857b9a1ea9ccf1718fda82",
+      "after_sha256": "b4d7908edca6e99ffd19b0525f7ee5e64e452c9b859bc9c6db076cc854d705af",
+      "prior_bytes_preserved_as_suffix": true
+    },
+    "NEXT_STEPS.md": {
+      "before_sha256": "1eca4fea780c9b92beaf6386671be35647c2fd2a5e7c6ecb3ff3b4877d2e8d18",
+      "after_sha256": "520175cf06b8895fa16a1c81715bdf8802cee87c2c21aeb2979eadaaf0b9fee9",
+      "prior_bytes_preserved_as_suffix": true
+    }
+  },
+  "evidence_sha256": {
+    "records/pipeline_observer_20261110_1315/observer_state.json": "fd6b42f9088997c704a942b0f7d52aa12dae4356aeeb4c3074d9721f5b8e9765",
+    "records/pipeline_observer_20261110_1315/collector_submission_37.json": "cf94ae47d40dbfb38d35e597ed7732cbd6ff18d984fb1e1eaaa2c1a620f91895",
+    "records/pipeline_observer_20261110_1315/collector_submission_result_37.json": "1ec48ce932a07fd0c0601e2ab39feceb7c89058d13c9d219e7c977eacd9f2dc0",
+    "records/pipeline_observer_20261110_1315/transfer_37/manifest.json": "49500bcadb97582810943e827f12812ed9b5ac141ff0c7e3d09ce503c70bf8f5",
+    "records/pipeline_recovery_20261110_1755/predecessor_observations.jsonl": "6b91c7bbdc586c59575dab67131ecb23ea0e83cf2bf0cd6d448a49a8ef4d2675",
+    "records/pipeline_recovery_20261110_1755/resume_archive.py": "cff043454bc47cd2c561883f81c949a46931b5d3498e44fb98d84bae3666c3df",
+    "records/pipeline_recovery_20261110_1755/launch_observer.py": "07234e459c8226b2279cd9cbb2b3c1d88d01df20d213a1e226437273398c1251",
+    "records/pipeline_recovery_20261110_1755/attempt1_failure.json": "0521fea36f1f7de4e38e6df857e7c806015c92215fc3483082a29a5a9c297514",
+    "records/pipeline_recovery_20261110_1755/attempt2_transport_failure.json": "b8d1557fa07d7f19bd52a88bc35932d2b8fd6f3d4a319bc504d2c69497f7aabc"
+  },
+  "partial_archive_bytes": 5505024,
+  "partial_archive_sha256": "e2e1b55a6b86e69c4af0e5d9a608c9ce6921fd4b27cab82006a3367d6b3a85d5",
+  "expected_full_archive_bytes": 6882237,
+  "expected_full_archive_sha256": "6444d8666cbd14f2f202724d038eb63656bf5c53bae6f11f7d5ed91c3bd3a064",
+  "partial_chunks_independently_rehashed": 21,
+  "transport_maintainer_identity_verified_live": {
+    "pid": 896141,
+    "start_ticks": "146063673",
+    "state": "R"
+  },
+  "transport_state": {
+    "status": "SSH_RETRY_BACKOFF_LOCAL_ONLY",
+    "recorded_at_utc": "2026-11-10T18:03:50.117931+00:00",
+    "identity": {
+      "pid": 896141,
+      "start_ticks": "146063673",
+      "state": "R"
+    },
+    "training_modified_or_restarted": false,
+    "full_goal_complete": false,
+    "attempt": 33,
+    "exit_code": 255,
+    "consecutive_failures": 8,
+    "retry_after_seconds": 240,
+    "log": "ssh_attempt_33.log"
+  },
+  "old_observer_verified_terminal": true,
+  "replacement_observer_started": false,
+  "remote_documentation_updated": false,
+  "collector_resubmitted": false,
+  "training_modified_or_restarted": false,
+  "method_validated": false,
+  "full_goal_complete": false
+}

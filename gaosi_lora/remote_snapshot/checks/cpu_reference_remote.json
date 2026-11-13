@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "device": "CPU",
+  "torch_version": "2.11.0.post1",
+  "scope": "small-tensor mathematical tests only; no MUSA/Qwen training",
+  "checks": {
+    "native_lora_identity_merge_and_frozen_base": "PASS",
+    "canonical_q0_and_zero_adapter": "PASS",
+    "effective_norm_split_merge": "PASS",
+    "subspace_expected_energy": {
+      "status": "PASS",
+      "empirical_ratio": 1.0026511199456865,
+      "samples": 24000
+    },
+    "combined_gradient_adam_equivalence": "PASS",
+    "positive_h1_chain_rule": {
+      "status": "PASS",
+      "max_abs_error": 0.0
+    },
+    "exact_h2_full_trajectory_difference": {
+      "status": "PASS",
+      "analytic": -0.402990037593394,
+      "finite_difference": -0.40299003760679847,
+      "relative_error": 3.32624704592434e-11
+    },
+    "phi_L_parameters": 78850,
+    "phi_X_parameters": 83795,
+    "parent_immutable_and_damage_accounting": "PASS"
+  }
+}

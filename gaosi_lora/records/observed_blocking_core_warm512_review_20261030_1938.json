@@ -1,0 +1,14 @@
+{
+  "checked_at_utc": "2026-10-30T19:38:01.141743+00:00",
+  "status": "WARM_512_ARTIFACT_CHECK_PASS_NOT_SCIENTIFIC_APPROVAL",
+  "source": "immutable 19:36 snapshot, no live training telemetry",
+  "next_episode": 64,
+  "inner_updates": 512,
+  "parameter_count": 78850,
+  "phi_and_optimizer_equal_latest": true,
+  "adam_steps_all_64": true,
+  "warm_checkpoint_sha256": "4998e1ef0596fd40f797bb208ff1ebc7374b422916dc4d7cfc8981f577b83b65",
+  "method_validated": false,
+  "downstream_promotion_allowed": false,
+  "training_modified_or_restarted": false
+}

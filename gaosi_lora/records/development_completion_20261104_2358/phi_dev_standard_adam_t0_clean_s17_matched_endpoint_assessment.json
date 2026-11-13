@@ -1,0 +1,549 @@
+{
+  "status": "SINGLE_ADAM_ENDPOINT_AND_MATCHED_PHI_SAVED_EVIDENCE_DESCRIPTIVE_REVIEW_ONLY",
+  "recorded_at_utc": "2026-11-08T14:37:39.875360+00:00",
+  "completed_base_cells_at_review": 41,
+  "run": "phi_dev_standard_adam_t0_clean_s17",
+  "runs": {
+    "baseline": "phi_dev_standard_adam_t0_clean_s17",
+    "L2048": "phi_dev_L_2048_t0_clean_s17",
+    "L2560": "phi_dev_L_2560_t0_clean_s17",
+    "X2048": "phi_dev_X_2048_t0_clean_s17",
+    "X2560": "phi_dev_X_2560_t0_clean_s17"
+  },
+  "dose": "clean",
+  "task_group": "known",
+  "pool_checks": {
+    "baseline": {
+      "task_and_keep_same_query_pool": true,
+      "task_rows": 3072,
+      "keep_rows": 3072,
+      "keep_fact_bindings": 512
+    },
+    "L2048": {
+      "task_and_keep_same_query_pool": true,
+      "task_rows": 3072,
+      "keep_rows": 3072,
+      "keep_fact_bindings": 512
+    },
+    "L2560": {
+      "task_and_keep_same_query_pool": true,
+      "task_rows": 3072,
+      "keep_rows": 3072,
+      "keep_fact_bindings": 512
+    },
+    "X2048": {
+      "task_and_keep_same_query_pool": true,
+      "task_rows": 3072,
+      "keep_rows": 3072,
+      "keep_fact_bindings": 512
+    },
+    "X2560": {
+      "task_and_keep_same_query_pool": true,
+      "task_rows": 3072,
+      "keep_rows": 3072,
+      "keep_fact_bindings": 512
+    }
+  },
+  "config_differences_verified": {
+    "L2048": [
+      "method",
+      "out",
+      "phi"
+    ],
+    "L2560": [
+      "method",
+      "out",
+      "phi"
+    ],
+    "X2048": [
+      "architecture",
+      "method",
+      "out",
+      "phi"
+    ],
+    "X2560": [
+      "architecture",
+      "method",
+      "out",
+      "phi"
+    ]
+  },
+  "metrics_by_method": {
+    "baseline": {
+      "clean": {
+        "task": {
+          "candidate_correct": 512,
+          "strict_EM_correct": 504,
+          "query_count": 512,
+          "nll": 0.023651785981122126
+        },
+        "keep": {
+          "candidate_correct": 512,
+          "strict_EM_correct": 504,
+          "query_count": 512,
+          "nll": 0.023651785981122126
+        }
+      },
+      "initial": {
+        "task": {
+          "candidate_correct": 512,
+          "strict_EM_correct": 504,
+          "query_count": 512,
+          "nll": 0.023651785981122126
+        },
+        "keep": {
+          "candidate_correct": 512,
+          "strict_EM_correct": 504,
+          "query_count": 512,
+          "nll": 0.023651785981122126
+        }
+      },
+      "final": {
+        "task": {
+          "candidate_correct": 511,
+          "strict_EM_correct": 508,
+          "query_count": 512,
+          "nll": 0.007301597226546049
+        },
+        "keep": {
+          "candidate_correct": 511,
+          "strict_EM_correct": 508,
+          "query_count": 512,
+          "nll": 0.007301597226546049
+        }
+      }
+    },
+    "L2048": {
+      "clean": {
+        "task": {
+          "candidate_correct": 512,
+          "strict_EM_correct": 504,
+          "query_count": 512,
+          "nll": 0.023651785981122126
+        },
+        "keep": {
+          "candidate_correct": 512,
+          "strict_EM_correct": 504,
+          "query_count": 512,
+          "nll": 0.023651785981122126
+        }
+      },
+      "initial": {
+        "task": {
+          "candidate_correct": 512,
+          "strict_EM_correct": 504,
+          "query_count": 512,
+          "nll": 0.023651785981122126
+        },
+        "keep": {
+          "candidate_correct": 512,
+          "strict_EM_correct": 504,
+          "query_count": 512,
+          "nll": 0.023651785981122126
+        }
+      },
+      "final": {
+        "task": {
+          "candidate_correct": 510,
+          "strict_EM_correct": 506,
+          "query_count": 512,
+          "nll": 0.01921761107767991
+        },
+        "keep": {
+          "candidate_correct": 510,
+          "strict_EM_correct": 506,
+          "query_count": 512,
+          "nll": 0.01921761107767991
+        }
+      }
+    },
+    "L2560": {
+      "clean": {
+        "task": {
+          "candidate_correct": 512,
+          "strict_EM_correct": 504,
+          "query_count": 512,
+          "nll": 0.023651785981122126
+        },
+        "keep": {
+          "candidate_correct": 512,
+          "strict_EM_correct": 504,
+          "query_count": 512,
+          "nll": 0.023651785981122126
+        }
+      },
+      "initial": {
+        "task": {
+          "candidate_correct": 512,
+          "strict_EM_correct": 504,
+          "query_count": 512,
+          "nll": 0.023651785981122126
+        },
+        "keep": {
+          "candidate_correct": 512,
+          "strict_EM_correct": 504,
+          "query_count": 512,
+          "nll": 0.023651785981122126
+        }
+      },
+      "final": {
+        "task": {
+          "candidate_correct": 511,
+          "strict_EM_correct": 506,
+          "query_count": 512,
+          "nll": 0.016017792729135494
+        },
+        "keep": {
+          "candidate_correct": 511,
+          "strict_EM_correct": 506,
+          "query_count": 512,
+          "nll": 0.016017792729135494
+        }
+      }
+    },
+    "X2048": {
+      "clean": {
+        "task": {
+          "candidate_correct": 512,
+          "strict_EM_correct": 504,
+          "query_count": 512,
+          "nll": 0.023651785981122126
+        },
+        "keep": {
+          "candidate_correct": 512,
+          "strict_EM_correct": 504,
+          "query_count": 512,
+          "nll": 0.023651785981122126
+        }
+      },
+      "initial": {
+        "task": {
+          "candidate_correct": 512,
+          "strict_EM_correct": 504,
+          "query_count": 512,
+          "nll": 0.023651785981122126
+        },
+        "keep": {
+          "candidate_correct": 512,
+          "strict_EM_correct": 504,
+          "query_count": 512,
+          "nll": 0.023651785981122126
+        }
+      },
+      "final": {
+        "task": {
+          "candidate_correct": 511,
+          "strict_EM_correct": 506,
+          "query_count": 512,
+          "nll": 0.015330650169105769
+        },
+        "keep": {
+          "candidate_correct": 511,
+          "strict_EM_correct": 506,
+          "query_count": 512,
+          "nll": 0.015330650169105769
+        }
+      }
+    },
+    "X2560": {
+      "clean": {
+        "task": {
+          "candidate_correct": 512,
+          "strict_EM_correct": 504,
+          "query_count": 512,
+          "nll": 0.023651785981122126
+        },
+        "keep": {
+          "candidate_correct": 512,
+          "strict_EM_correct": 504,
+          "query_count": 512,
+          "nll": 0.023651785981122126
+        }
+      },
+      "initial": {
+        "task": {
+          "candidate_correct": 512,
+          "strict_EM_correct": 504,
+          "query_count": 512,
+          "nll": 0.023651785981122126
+        },
+        "keep": {
+          "candidate_correct": 512,
+          "strict_EM_correct": 504,
+          "query_count": 512,
+          "nll": 0.023651785981122126
+        }
+      },
+      "final": {
+        "task": {
+          "candidate_correct": 511,
+          "strict_EM_correct": 506,
+          "query_count": 512,
+          "nll": 0.01901550848387115
+        },
+        "keep": {
+          "candidate_correct": 511,
+          "strict_EM_correct": 506,
+          "query_count": 512,
+          "nll": 0.01901550848387115
+        }
+      }
+    }
+  },
+  "baseline_minus_comparison": {
+    "L2048": {
+      "task": {
+        "candidate_correct": 1,
+        "strict_EM_correct": 2,
+        "nll": -0.011916013851133861
+      },
+      "keep": {
+        "candidate_correct": 1,
+        "strict_EM_correct": 2,
+        "nll": -0.011916013851133861
+      },
+      "language_nll": 0.021791254915839886
+    },
+    "L2560": {
+      "task": {
+        "candidate_correct": 0,
+        "strict_EM_correct": 2,
+        "nll": -0.008716195502589445
+      },
+      "keep": {
+        "candidate_correct": 0,
+        "strict_EM_correct": 2,
+        "nll": -0.008716195502589445
+      },
+      "language_nll": 0.023460663489474953
+    },
+    "X2048": {
+      "task": {
+        "candidate_correct": 0,
+        "strict_EM_correct": 2,
+        "nll": -0.00802905294255972
+      },
+      "keep": {
+        "candidate_correct": 0,
+        "strict_EM_correct": 2,
+        "nll": -0.00802905294255972
+      },
+      "language_nll": 0.020728635942885543
+    },
+    "X2560": {
+      "task": {
+        "candidate_correct": 0,
+        "strict_EM_correct": 2,
+        "nll": -0.0117139112573251
+      },
+      "keep": {
+        "candidate_correct": 0,
+        "strict_EM_correct": 2,
+        "nll": -0.0117139112573251
+      },
+      "language_nll": 0.029980341655749143
+    }
+  },
+  "language_nll_by_method": {
+    "baseline": {
+      "clean": 2.120082481864213,
+      "initial": 2.120082481864213,
+      "final": 2.162028087139023
+    },
+    "L2048": {
+      "clean": 2.120082481864213,
+      "initial": 2.120082481864213,
+      "final": 2.140236832223183
+    },
+    "L2560": {
+      "clean": 2.120082481864213,
+      "initial": 2.120082481864213,
+      "final": 2.138567423649548
+    },
+    "X2048": {
+      "clean": 2.120082481864213,
+      "initial": 2.120082481864213,
+      "final": 2.1412994511961374
+    },
+    "X2560": {
+      "clean": 2.120082481864213,
+      "initial": 2.120082481864213,
+      "final": 2.132047745483274
+    }
+  },
+  "loss_changes_by_method": {
+    "baseline": {
+      "task": {
+        "injected": 0.0,
+        "recovered": 0.016350188754576077,
+        "residual": -0.016350188754576077
+      },
+      "keep": {
+        "injected": 0.0,
+        "recovered": 0.016350188754576077,
+        "residual": -0.016350188754576077
+      },
+      "language": {
+        "injected": 0.0,
+        "recovered": -0.04194560527480995,
+        "residual": 0.04194560527480995
+      }
+    },
+    "L2048": {
+      "task": {
+        "injected": 0.0,
+        "recovered": 0.004434174903442216,
+        "residual": -0.004434174903442216
+      },
+      "keep": {
+        "injected": 0.0,
+        "recovered": 0.004434174903442216,
+        "residual": -0.004434174903442216
+      },
+      "language": {
+        "injected": 0.0,
+        "recovered": -0.020154350358970063,
+        "residual": 0.020154350358970063
+      }
+    },
+    "L2560": {
+      "task": {
+        "injected": 0.0,
+        "recovered": 0.007633993251986632,
+        "residual": -0.007633993251986632
+      },
+      "keep": {
+        "injected": 0.0,
+        "recovered": 0.007633993251986632,
+        "residual": -0.007633993251986632
+      },
+      "language": {
+        "injected": 0.0,
+        "recovered": -0.018484941785334996,
+        "residual": 0.018484941785334996
+      }
+    },
+    "X2048": {
+      "task": {
+        "injected": 0.0,
+        "recovered": 0.008321135812016357,
+        "residual": -0.008321135812016357
+      },
+      "keep": {
+        "injected": 0.0,
+        "recovered": 0.008321135812016357,
+        "residual": -0.008321135812016357
+      },
+      "language": {
+        "injected": 0.0,
+        "recovered": -0.021216969331924407,
+        "residual": 0.021216969331924407
+      }
+    },
+    "X2560": {
+      "task": {
+        "injected": 0.0,
+        "recovered": 0.004636277497250978,
+        "residual": -0.004636277497250978
+      },
+      "keep": {
+        "injected": 0.0,
+        "recovered": 0.004636277497250978,
+        "residual": -0.004636277497250978
+      },
+      "language": {
+        "injected": 0.0,
+        "recovered": -0.011965263619060806,
+        "residual": 0.011965263619060806
+      }
+    }
+  },
+  "last_event_process_wall_seconds": {
+    "baseline": 7094.788758993149,
+    "L2048": 7808.195418596268,
+    "L2560": 7494.865123033524,
+    "X2048": 7756.072432756424,
+    "X2560": 7964.263754606247
+  },
+  "wrapper_wall_seconds_including_possible_lock_wait": {
+    "baseline": 7113.128688097,
+    "L2048": 7827.016048669815,
+    "L2560": 7510.800407409668,
+    "X2048": 7772.0849051475525,
+    "X2560": 14046.082109212875
+  },
+  "pair_evidence_reverification": {
+    "non_tensor_files_per_cell": {
+      "baseline": 74,
+      "L2048": 74,
+      "L2560": 74,
+      "X2048": 74,
+      "X2560": 74
+    },
+    "remote_unique_tensors": {
+      "status": "MATCHED_REMOTE_TENSOR_SHA256_REVERIFIED",
+      "files": 15,
+      "sha256": {
+        "runs/parent_3b_dev_parent_r32_s17_extend512_v2/latest.pt": "1fa4765c5c5d478f8dd0d7089ab6fbecd2f85190cc8d0a875aa1498da6ffc66f",
+        "runs/phi_dev_standard_adam_t0_clean_s17/initial.pt": "9fa5031232e21c6b96864c9e95f858a555fcd06d45f75e62152e406a82db469a",
+        "runs/phi_dev_standard_adam_t0_clean_s17/latest.pt": "db7ee3028332298ce0733131c5d478a2df8bda53be7c78d5ec344a5b735a7ebb",
+        "runs/phi_dev_L_2048_t0_clean_s17/initial.pt": "6162fed5cea46d9a61e6959f9cdd4297513c6ee27ed3826a588cc20b3fe53440",
+        "runs/phi_dev_L_2048_t0_clean_s17/latest.pt": "0dfbd1a12796d5d1a979763d142d5ad59eefbdc066f5ce3deb7f716441bab841",
+        "runs/phi_mix_O1_L_H2_core_s17_observed_blocking_v8/phi_2048.pt": "524dca70a61125fbc65274d04f319aff71f4cdc889812f09e9888814ffdb0c85",
+        "runs/phi_dev_L_2560_t0_clean_s17/initial.pt": "641f2291040d97204bf8f5f8742348f6dab45dc584e20b41559db4097953e98f",
+        "runs/phi_dev_L_2560_t0_clean_s17/latest.pt": "c0543637bca72c68341aa53c44dbef25bb7e8ba6c0ee7bdaec968849935a5bf5",
+        "runs/phi_mix_O1_L_H2_core_s17_observed_blocking_v8/phi_2560.pt": "4e97db0e17ef8c2b59afc6a41aaf8eaad8349b0ba470f69c8209c9b41b305c03",
+        "runs/phi_dev_X_2048_t0_clean_s17/initial.pt": "93267bb6644c1a802e7c34590a5e4ed4f721c211c9731354edcc566c43d9a844",
+        "runs/phi_dev_X_2048_t0_clean_s17/latest.pt": "894da09dcf426fe3a06d735615827179fabe209a80f0adbe6911c7aa7a1f18fb",
+        "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/phi_2048.pt": "34e1c605e232805fb89cb494c5266d4de4910e3878be04a4c4cad28bfae9e2ab",
+        "runs/phi_dev_X_2560_t0_clean_s17/initial.pt": "014b8cb7d11279311a257eb131696907272bc04e4fed72bde396441e5f31e767",
+        "runs/phi_dev_X_2560_t0_clean_s17/latest.pt": "60ab8431ad9a406b08c5397e8e34a0364fe833f22bd8efb023c0e8b98395f853",
+        "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/phi_2560.pt": "0d14d7b8882dcd55ca3edb3284405569ed3aec343746e0900381e577b263641b"
+      }
+    }
+  },
+  "evidence_sha256": {
+    "records/development_completion_20261104_2358/phi_dev_standard_adam_t0_clean_s17.json": "9b2656f2365c1fca7413f9784dc38c5f31a81b3d8d9ed412c1c226881c9ecc2c",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_standard_adam_t0_clean_s17.json": "84927215ac9f33f4fa3f4a8a8d4f088056fd948a9d70609fd5462863fb055f4c",
+    "records/development_completion_20261104_2358/phi_dev_standard_adam_t0_clean_s17_evidence/manifest.json": "5640a802cc38009025780a7633664f2898ade533cd0e3298d73f3edb2a19087c",
+    "records/development_completion_20261104_2358/phi_dev_standard_adam_t0_clean_s17_evidence/snapshot/runs/phi_dev_standard_adam_t0_clean_s17/config.json": "ac28c96bd7e620d0092829630040508bf0d83899073b4c853a29eaa2d9cb07c3",
+    "records/development_completion_20261104_2358/phi_dev_standard_adam_t0_clean_s17_evidence/snapshot/data/synthetic/dev_parent.jsonl": "7d4353f9b9a8f1f74c182b503c01d7fb2181836aa464e8d17e1bb3282db25d11",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t0_clean_s17.json": "01546584f94766f18038c2fa7463e6a2f622e91818c781e38e1c9f1985426ba4",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2048_t0_clean_s17.json": "417e47f2bf5486d8349c4a626fab18673bacdcb9287f2b68fbf05dab732295af",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t0_clean_s17_evidence/manifest.json": "7bad87eed4c05dd31d5bb1bfe12bfe0dacf3dcddcaaec0b4e55e7abc854842a3",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t0_clean_s17_evidence/snapshot/runs/phi_dev_L_2048_t0_clean_s17/config.json": "dd00289eee037d1b6480164664ca612d0d42dc05b10990c14ae49cda3f676103",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t0_clean_s17_evidence/snapshot/data/synthetic/dev_parent.jsonl": "7d4353f9b9a8f1f74c182b503c01d7fb2181836aa464e8d17e1bb3282db25d11",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t0_clean_s17.json": "0296fd3695b886874b772dec1f0298538c82789bc08e1f986e52f537739bc54c",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2560_t0_clean_s17.json": "4b58a5c25d4229ef125db1eb482b53e3dcd5d4c3398d599678c2521841ffc4d0",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t0_clean_s17_evidence/manifest.json": "a07e800e678a493e27d2b68749be25d34382eb1b4dec24b84c523c95058c684b",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t0_clean_s17_evidence/snapshot/runs/phi_dev_L_2560_t0_clean_s17/config.json": "d501d0e33bb6262f05bcfd44b93ddceb6f2eb8d8e27efb9fc9d3512a7037693c",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t0_clean_s17_evidence/snapshot/data/synthetic/dev_parent.jsonl": "7d4353f9b9a8f1f74c182b503c01d7fb2181836aa464e8d17e1bb3282db25d11",
+    "records/development_completion_20261104_2358/phi_dev_X_2048_t0_clean_s17.json": "6224723e50bf1eda5ca1cab8a7e0d2980af3030559d2718d67679985c5fd9b45",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_X_2048_t0_clean_s17.json": "7c1de0c909e7cbe05425ddde90558014182c87b8eeb551c7930297a7bb4a675a",
+    "records/development_completion_20261104_2358/phi_dev_X_2048_t0_clean_s17_evidence/manifest.json": "27cdce03fe5c0322e8e837411b4496112c14f8a720e0337395bcb00f433ae336",
+    "records/development_completion_20261104_2358/phi_dev_X_2048_t0_clean_s17_evidence/snapshot/runs/phi_dev_X_2048_t0_clean_s17/config.json": "f06ad13a36e13ed2e69285f6aa2767cf836a4e2822295007e172d9d8d5ac0694",
+    "records/development_completion_20261104_2358/phi_dev_X_2048_t0_clean_s17_evidence/snapshot/data/synthetic/dev_parent.jsonl": "7d4353f9b9a8f1f74c182b503c01d7fb2181836aa464e8d17e1bb3282db25d11",
+    "records/development_completion_20261104_2358/phi_dev_X_2560_t0_clean_s17.json": "d26318d4872ee5ee6fae617a04cb706112d96cbee871e2af0851c2f75bef76c4",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_X_2560_t0_clean_s17.json": "bf625c6dfc789aba479a3d6b817e24a9854f01ff69927e6928bcd56927d1a76b",
+    "records/development_completion_20261104_2358/phi_dev_X_2560_t0_clean_s17_evidence/manifest.json": "ead28441378974d596d08a93932364cc8898f2255e8a8e927be6994514787b02",
+    "records/development_completion_20261104_2358/phi_dev_X_2560_t0_clean_s17_evidence/snapshot/runs/phi_dev_X_2560_t0_clean_s17/config.json": "30a07acd3b507720ee5f44b66d30d779c6b76c7ac661bf5bd97b772a2c00e1b8",
+    "records/development_completion_20261104_2358/phi_dev_X_2560_t0_clean_s17_evidence/snapshot/data/synthetic/dev_parent.jsonl": "7d4353f9b9a8f1f74c182b503c01d7fb2181836aa464e8d17e1bb3282db25d11",
+    "records/development_completion_20261104_2358/review_adam_endpoint_v2.py": "fee4cdc3d6635e8a1618551dca45c5878d15e276c4a7acf1561aedc828f0437f"
+  },
+  "limitations": [
+    "CPU inspection of saved tensors and re-aggregation of saved predictions only; no model forward, tokenizer or derivative recomputation.",
+    "Language NLL is checked against the event ledger; no saved per-token language audit.",
+    "Model compute counters omit direct QA candidate/generation calls; they are not total evaluation FLOPs or total model forwards.",
+    "Frozen phi/base flags plus pinned source and file identities are provenance evidence, not an independent in-memory mutation trace.",
+    "No paired-method efficacy, held-out generalization, convergence or multi-seed conclusion from one completed development cell.",
+    "Single development task, dose and phi seed; no full-grid selection or statistical superiority conclusion.",
+    "Matched saved initial evaluations do not establish tensor-by-tensor initial adapter equality.",
+    "Known-task and keep queries coincide for t0; these are not independent retention measurements.",
+    "Four within-range rule queries do not establish general rule reasoning or extrapolation."
+  ],
+  "grid_aggregation_or_method_selection_performed": false,
+  "scientific_receipt_generated": false,
+  "method_validated": false,
+  "full_goal_complete": false,
+  "training_modified_or_restarted": false
+}

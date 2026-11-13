@@ -1,0 +1,157 @@
+{
+  "status": "DESCRIPTIVE_INTERIM_LOG_SIGNAL_ONLY_EXPERIMENT_STILL_RUNNING",
+  "recorded_at_utc": "2026-11-05T00:57:05.326712+00:00",
+  "observation": "records/pipeline_monitor_20261105_005531_utc",
+  "run": "runs/phi_dev_L_2048_t0_medium_s17",
+  "scope": "L-H2 phi2048, seed17, known development task, q_apply0.7; evaluation through step16 of K64.",
+  "points": [
+    {
+      "label": "clean",
+      "step": null,
+      "utc": "2026-11-04T23:55:15.539674+00:00",
+      "metrics": {
+        "task": {
+          "n": 512,
+          "candidate_accuracy": 1.0,
+          "mean_margin": 10.186212864077874,
+          "nll": 0.023651785981122126,
+          "answer_tokens": 1288,
+          "strict_EM": 0.984375,
+          "abnormal_rate": 0.0
+        },
+        "keep": {
+          "n": 512,
+          "candidate_accuracy": 1.0,
+          "mean_margin": 10.186212864077874,
+          "nll": 0.023651785981122126,
+          "answer_tokens": 1288,
+          "strict_EM": 0.984375,
+          "abnormal_rate": 0.0
+        },
+        "language": {
+          "nll": 2.120082481864213,
+          "answer_tokens": 4463
+        }
+      }
+    },
+    {
+      "label": "evaluation",
+      "step": 0,
+      "utc": "2026-11-05T00:09:01.296108+00:00",
+      "metrics": {
+        "task": {
+          "n": 512,
+          "candidate_accuracy": 0.7109375,
+          "mean_margin": 1.517247106036848,
+          "nll": 0.3426414310627744,
+          "answer_tokens": 1288,
+          "strict_EM": 0.70703125,
+          "abnormal_rate": 0.0
+        },
+        "keep": {
+          "n": 512,
+          "candidate_accuracy": 0.7109375,
+          "mean_margin": 1.517247106036848,
+          "nll": 0.3426414310627744,
+          "answer_tokens": 1288,
+          "strict_EM": 0.70703125,
+          "abnormal_rate": 0.0
+        },
+        "language": {
+          "nll": 2.140740751632521,
+          "answer_tokens": 4463
+        }
+      }
+    },
+    {
+      "label": "evaluation",
+      "step": 8,
+      "utc": "2026-11-05T00:28:34.015815+00:00",
+      "metrics": {
+        "task": {
+          "n": 512,
+          "candidate_accuracy": 0.96875,
+          "mean_margin": 6.087331487010942,
+          "nll": 0.10219909873377475,
+          "answer_tokens": 1288,
+          "strict_EM": 0.951171875,
+          "abnormal_rate": 0.0
+        },
+        "keep": {
+          "n": 512,
+          "candidate_accuracy": 0.96875,
+          "mean_margin": 6.087331487010942,
+          "nll": 0.10219909873377475,
+          "answer_tokens": 1288,
+          "strict_EM": 0.951171875,
+          "abnormal_rate": 0.0
+        },
+        "language": {
+          "nll": 2.1283603883126165,
+          "answer_tokens": 4463
+        }
+      }
+    },
+    {
+      "label": "evaluation",
+      "step": 16,
+      "utc": "2026-11-05T00:48:15.013907+00:00",
+      "metrics": {
+        "task": {
+          "n": 512,
+          "candidate_accuracy": 0.982421875,
+          "mean_margin": 6.763426220522279,
+          "nll": 0.07967926957885665,
+          "answer_tokens": 1288,
+          "strict_EM": 0.958984375,
+          "abnormal_rate": 0.0
+        },
+        "keep": {
+          "n": 512,
+          "candidate_accuracy": 0.982421875,
+          "mean_margin": 6.763426220522279,
+          "nll": 0.07967926957885665,
+          "answer_tokens": 1288,
+          "strict_EM": 0.958984375,
+          "abnormal_rate": 0.0
+        },
+        "language": {
+          "nll": 2.123783605637744,
+          "answer_tokens": 4463
+        }
+      }
+    }
+  ],
+  "candidate_correct_counts": [
+    512,
+    364,
+    496,
+    503
+  ],
+  "strict_EM_correct_counts": [
+    504,
+    362,
+    487,
+    491
+  ],
+  "task_and_keep_are_the_same_known_query_pool": true,
+  "interpretation": "Recorded candidate accuracy recovers from 364/512 after damage to 503/512 at step16; strict EM recovers from 362/512 to 491/512. This is a preliminary within-cell recovery signal; no paired Adam result or method advantage is established.",
+  "evidence_sha256": {
+    "records/development_monitor_20261105_005531_utc/snapshot/runs/phi_dev_L_2048_t0_medium_s17/events.jsonl": "573fba4bcf1ccecc7e85e6893bb0c47e6102f98c7897529544c7567cb2dd0551",
+    "records/development_monitor_20261105_005531_utc/snapshot/runs/phi_dev_L_2048_t0_medium_s17/config.json": "2c0eebc3bef6cf3665af168abd71f151d213acd4c922ad6666831bf4cb599400",
+    "records/development_monitor_20261105_005531_utc/review.json": "054430037d16d7d50d0c3ff83e25a93330678767d2f400a6765a558e7577e46b",
+    "records/development_monitor_20261105_005531_utc/archive_source_sha256.json": "50f43bb7451b45247ce3c30914fce29fa0fe68ad1e28629ba523338835e63232",
+    "records/pipeline_observer_20261104_1301/followup_20261105_0055.json": "cd574d067be2c09bcafdafbefaf97457fda75264ecf784269a1bf52607c6e1b4"
+  },
+  "limitations": [
+    "Incomplete development cell and one seed; final64 metrics and completed-artifact audit are pending.",
+    "Log metrics only; saved predictions, tensors and model outputs were not independently checked in this interim assessment.",
+    "Task and keep are the same query pool; no independent retention claim.",
+    "No paired-method, generalization, convergence or full-protocol conclusion."
+  ],
+  "method_validated": false,
+  "scientific_promotion_allowed": false,
+  "selection_policy_changed": false,
+  "full_goal_complete": false,
+  "training_modified_or_restarted": false
+}

@@ -1,0 +1,35 @@
+{
+  "recorded_at_utc": "2026-11-01T12:44:27.963873+00:00",
+  "previous_goal_turn": "verified_wait_observer_identity_confirmed_and_existing_wait_handle_polled",
+  "current_goal_turn": "progress_scheduled_full_X_start_confirmed_and_independent_review_synced_docs_updated",
+  "observation": "records/pipeline_monitor_20261101_124235_utc",
+  "review": "records/pipeline_review_20261101_1243.json",
+  "review_sha256": "fb1b499acdc9f64be3843a7e20d67c8c39a330569b96935e0af74841d5df508d",
+  "verified_files": 78,
+  "X_started_at_utc": "2026-11-01T12:34:32.993973+00:00",
+  "X_process_identity": {
+    "pid": 776884,
+    "start_ticks": "81054249"
+  },
+  "X_committed_episodes": 0,
+  "X_committed_inner_updates": 0,
+  "last_recorded_inner": {
+    "episode": 0,
+    "k": 8
+  },
+  "fresh_start_configuration_verified": true,
+  "observer_identity_verified_live": true,
+  "observer": {
+    "status": "WAITING_UNTIL_DUE_NO_REMOTE_CONNECTION_YET",
+    "pid": 2961121,
+    "proc_start_ticks": "78120930",
+    "updated_at_utc": "2026-11-01T12:42:41.233123+00:00",
+    "production_modified_or_restarted": false,
+    "observations": 1,
+    "due_at_utc": "2026-11-01T13:12:39.773070+00:00"
+  },
+  "training_modified_or_restarted": false,
+  "method_validated": false,
+  "full_goal_complete": false,
+  "next_action": "Wait existing observer scheduled13:12:39UTC; inspect first committed full-X gradients and checkpoint, then continue full protocol."
+}

@@ -1,0 +1,43 @@
+{
+  "status": "DESCRIPTIVE_CURRENT_RUN_ETA_ONLY",
+  "recorded_at_utc": "2026-11-03T08:04:21.550998+00:00",
+  "run": "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8",
+  "source_review": "records/pipeline_review_20261103_0749.json",
+  "source_review_sha256": "f3554fb5bec5261478d2cba0051300dcb6b96d5037c9c932250d0b54d0110f52",
+  "source_events": "records/pipeline_monitor_20261103_074934_utc/snapshot/runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/events.jsonl",
+  "source_events_sha256": "cef982f147e414b3c996d3294e65a929f144503fa275a3a0ebc70211879fe89e",
+  "last_committed_at_utc": "2026-11-03T07:49:24.157264+00:00",
+  "committed_episodes": 164,
+  "committed_inner_updates": 2112,
+  "remaining_episodes": 28,
+  "remaining_inner_updates": 448,
+  "k16_episode_durations_seconds": {
+    "count": 100,
+    "mean_all": 1098.625518245697,
+    "mean_last32": 1050.2578272670507,
+    "mean_last8": 1054.5389924049377
+  },
+  "calculation": "remaining_episodes * mean observed K16 start-to-commit seconds; forecast anchored to last committed episode, not to record creation time",
+  "forecast_from_last_commit_hours": {
+    "all_k16_mean": 8.544865141910977,
+    "last32_mean": 8.16867198985484
+  },
+  "forecast_current_run_training_terminal_utc": {
+    "all_k16_mean": "2026-11-03T16:22:05.671775+00:00",
+    "last32_mean": "2026-11-03T15:59:31.376427+00:00"
+  },
+  "user_communicated_approximate_remaining_hours_at_20261103_0802_utc": [
+    8,
+    9
+  ],
+  "full_protocol_eta": "No reliable completion date; weeks is a rough planning scale only. Audit, paired development comparisons, H1, organization adaptation, clean phi, formal evaluations, 7B and independent training seeds remain.",
+  "limitations": [
+    "Uses existing scheduled snapshot only; no new remote training telemetry was polled.",
+    "Constant-throughput extrapolation is descriptive and is not a statistical confidence interval or an end-time guarantee.",
+    "Current-run training completion excludes its terminal audit, saved-gradient optimizer replay and scientific review.",
+    "No inference of method benefit, convergence or full-protocol completion follows from this estimate."
+  ],
+  "method_validated": false,
+  "full_goal_complete": false,
+  "training_modified_or_restarted": false
+}

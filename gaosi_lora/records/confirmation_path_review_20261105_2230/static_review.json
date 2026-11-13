@@ -1,0 +1,71 @@
+{
+  "status": "STATIC_FUTURE_CONFIRMATION_PATH_MISMATCH_CONFIRMED_FROM_PINNED_LOCAL_SOURCE",
+  "recorded_at_utc": "2026-11-05T22:30:43.023342+00:00",
+  "scope": "Static review of frozen controller source and downstream statistics path consumption; no training, runtime failure or completed confirmation is claimed.",
+  "source": "records/pipeline_observed_blocking_v8/tools/confirmation_queue.py",
+  "source_sha256": "bf82f5d4bc3e7aa23ccb0d719714f8eb795312e01a74616cf9dff4e15f1d67ba",
+  "source_matches_frozen_build_manifest": true,
+  "build_manifest_sha256": "a0c591237a330376c5068a8773e52cc29673812465184ba42bedc00d290ca05f",
+  "mismatches": [
+    {
+      "kind": "recovery",
+      "seed": 29,
+      "writer_path": "records/confirmation_recovery_ready_s29_observed_blocking_v8.json",
+      "completion_marker_reference": "records/confirmation_recovery_ready_s29_v1.json",
+      "writer_line": 305,
+      "reference_line": 368
+    },
+    {
+      "kind": "recovery",
+      "seed": 43,
+      "writer_path": "records/confirmation_recovery_ready_s43_observed_blocking_v8.json",
+      "completion_marker_reference": "records/confirmation_recovery_ready_s43_v1.json",
+      "writer_line": 305,
+      "reference_line": 368
+    },
+    {
+      "kind": "continual",
+      "seed": 29,
+      "writer_path": "records/confirmation_continual_ready_s29_observed_blocking_v8.json",
+      "completion_marker_reference": "records/confirmation_continual_ready_s29_v1.json",
+      "writer_line": 336,
+      "reference_line": 369
+    },
+    {
+      "kind": "continual",
+      "seed": 43,
+      "writer_path": "records/confirmation_continual_ready_s43_observed_blocking_v8.json",
+      "completion_marker_reference": "records/confirmation_continual_ready_s43_v1.json",
+      "writer_line": 336,
+      "reference_line": 369
+    }
+  ],
+  "consumers": {
+    "tools/summarize_recovery.py": {
+      "sha256": "974b0e8f04dcfdcbd947e82844587f36c520f117a06902f49a6347906998ad72",
+      "dereferenced_field": "recovery_records"
+    },
+    "tools/summarize_selective.py": {
+      "sha256": "6619cfb5ace8eab6edf3d7d2bf3b24829d5c80cd6c1630531b049a171d8e2d4e",
+      "dereferenced_field": "recovery_records"
+    },
+    "tools/summarize_reflow.py": {
+      "sha256": "5014aff0e750df53f89804deee9ac6b7513c760566f18a52d93c0862a2dc77f4",
+      "dereferenced_field": "recovery_records"
+    },
+    "tools/summarize_continual.py": {
+      "sha256": "d658512be63379a2714120d196729523f0c2dd3591bd280641aaeafc25b573c3",
+      "dereferenced_field": "continual_records"
+    }
+  },
+  "cause": "Snapshot transformation replaces the literal _s{seed}_v1 writer templates but does not replace the _s{s}_v1 list-comprehension references in the final completion marker.",
+  "effect": "After future independent confirmations finish, all four full statistics readers will dereference legacy per-seed record paths, while the controller writes the observed_blocking_v8 paths. Unless valid byte-identical aliases exist then, the full statistics stage will fail with missing records.",
+  "followup": "Before the future confirmation marker can release full statistics, verify the actual remote pinned source and choose a preserved metadata-only compatibility action. Any legacy alias must be a byte-identical copy of its genuinely completed source with SHA receipt, refuse mismatched existing files, and must never create an early confirmation-ready marker. Preserve all original sources, controllers, reviews and results; no retraining is needed for this path issue.",
+  "current_training_blocked": false,
+  "remote_source_rechecked_this_review": false,
+  "production_sources_modified": false,
+  "controllers_modified_or_restarted": false,
+  "completion_markers_created": false,
+  "aliases_created": false,
+  "full_goal_complete": false
+}

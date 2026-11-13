@@ -1,0 +1,29 @@
+{
+  "status": "SCHEDULED_PIPELINE_EVIDENCE_VERIFIED_ONLY",
+  "reviewed_at_utc": "2026-11-06T15:56:12.142046+00:00",
+  "source_sha256": "8338feefffe45bb5205e597ff945292a2a34b4e7fbcc10b278fcc0a0e38ad243",
+  "observation": {
+    "observation": "records/pipeline_monitor_20261106_155547_utc",
+    "archive_sha256": "29b96b59b74caf4eefc20488b5cf54779366f0f82ea3ea491b26f39428d41aa8",
+    "verified_source_files": 56,
+    "alerts": [],
+    "pending_scientific_reviews": [],
+    "meta_runs": [],
+    "production_modified_or_restarted": false
+  },
+  "files_independently_rehashed": 56,
+  "observer_identity_verified_live": true,
+  "observer_pid": 3073679,
+  "observer_start_ticks": "106978679",
+  "controller_count": 15,
+  "meta_runs_checked": [],
+  "pending_scientific_reviews": [],
+  "next_due_at_utc": "2026-11-06T16:25:47.401372+00:00",
+  "method_validated": false,
+  "downstream_promotion_allowed": false,
+  "limitations": [
+    "Recorded flags do not prove graph connectivity or derivative correctness.",
+    "Live files may represent adjacent instants; no atomic snapshot is claimed.",
+    "Tensor finiteness comes from the scheduled CPU checkpoint inspection."
+  ]
+}

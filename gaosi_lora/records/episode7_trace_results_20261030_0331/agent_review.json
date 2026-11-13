@@ -1,0 +1,13 @@
+{
+  "reviewed_at_utc": "2026-10-30T03:30:54.898907+00:00",
+  "files_sha_verified": 39,
+  "archive_sha256": "e358b57e81e792f41bd213d22863ede6efa3aaafc90b29fd2aea0c40ef515679",
+  "before_episode7_checkpoint_sha256": "c4db1810751c460de920cabf1db326109d93edba38e388ab9320b5a62bfd91fa",
+  "original_instrumented_forward_steps": 8,
+  "traced_forward_steps": 8,
+  "all_forward_values_match": true,
+  "previous_raw_norm": 9.47850229661424e+21,
+  "traced_raw_norm": 0.061408095512922534,
+  "scientific_status": "No stable reproduction. Timing/instrumentation sensitivity is a hypothesis, not proven cause or fix.",
+  "production_modified": false
+}

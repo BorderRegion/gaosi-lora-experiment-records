@@ -1,0 +1,37 @@
+{
+  "status": "FAILED_HORIZON_DIAGNOSTIC_PRESERVED_PENDING_ISOLATED_NUMERICAL_DIAGNOSIS",
+  "recorded_at_utc": "2026-11-09T21:54:09.563743+00:00",
+  "scheduled_observation": "records/pipeline_monitor_20261109_214943_utc",
+  "failed_jobs": [
+    "horizon_known_K4_H2_s17_observed_blocking_v8",
+    "horizon_queue_observed_blocking_v8"
+  ],
+  "acknowledged_alerts": [
+    "horizon_known_K4_H2_s17_observed_blocking_v8: job ended FAIL",
+    "horizon_queue_observed_blocking_v8: job ended FAIL"
+  ],
+  "remote_expected_sha256": {
+    "records/jobs/horizon_known_K4_H2_s17_observed_blocking_v8.json": "ba611cd8089f17cfb3a86f213ec774f3b1477792a29a297bb07a46c09a9a948b",
+    "records/logs/horizon_known_K4_H2_s17_observed_blocking_v8.log": "5cc1bb1e81952870bebfb6f159ad34bf3fea4b424dff067f2da478600dcce255",
+    "records/jobs/horizon_queue_observed_blocking_v8.json": "c4ffa2e127c5181e275e1f93770f580202cb494c9c8eac2e582ae84104ca285d",
+    "records/logs/horizon_queue_observed_blocking_v8.log": "5761a6c8128132ab1254988b38d2cf3bb9e36eb8c37a31a4ac676531462015f2",
+    "runs/horizon_known_K4_H2_s17_observed_blocking_v8/result.json": "c1b2671361898c67021da7f81debb46f752bd38150736dd2e950e5c91e1be646",
+    "configs/horizon_known_K4_H2_s17_observed_blocking_v8.json": "aec765af2ec00697cca1421b582e569e01772686c8b7be1579a1884386ef02d1",
+    "gaosi/horizon.py": "f31ccc7834ce05d1a391941e2da33aeedd1a7d9a0f573cea4900d34706ad9cfa",
+    "gaosi/meta.py": "f9cf49a2975791fa3466e6caaa31bb8312a20eec64244a4f33d205cf1607ca69",
+    "gaosi/recompute.py": "04f0fe1119f03657647f23cac7d35e9c903cfeb5f05f0f8637d019002167528e",
+    "gaosi/transition.py": "5afa7bc2c61b6e81a6f024026c02fe29761a11e8b65925aabafd525e57ead477",
+    "records/pipeline_observer_20261109_0520/observer_state.json": "18922804a5bba01f971ee36f1ca659cf84b7ed35ab31a24d3edfa684d94f6408",
+    "records/scheduled_review_follower_20261109_1955/state.json": "2992dcfed9a86e312bc97ae0f989d7e7a569040180bce2d39cd8b0a9e78f4d98"
+  },
+  "failure": "H2 terminal adapter/state does not match H1 under unchanged strict tolerance. No H2 gradient saved after comparison failed.",
+  "evidence": "Steps 1 and 2 support values match; first support loss difference is step 4, after H2 enters exact mode at step 3. This localizes the first observable divergence but does not prove a kernel root cause.",
+  "hypothesis": "The detached prefix uses first-order support gradients; the exact tail uses recomputed create_graph=True support gradients, which may produce different numerical values on this backend. Check at the same adapter and token batches.",
+  "disposition": "Preserve original jobs, configs, sources, logs and outputs. Continue other live controllers; use separately versioned diagnostics, with original data/rank/tokens and endpoint equality gate.",
+  "complete_development_review": "records/development_aggregate_review_20261109_2058/assessment_verification.json",
+  "complete_development_review_sha256": "a3c814c81ddc7b3fdd33641132c2b8dc1a9b6b6f0c04949071e3c226f2052218",
+  "original_observer_and_follower_terminal": true,
+  "training_modified_or_restarted": false,
+  "method_validated": false,
+  "full_goal_complete": false
+}

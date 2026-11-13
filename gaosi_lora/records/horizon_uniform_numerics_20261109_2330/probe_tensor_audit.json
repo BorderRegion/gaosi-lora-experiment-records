@@ -1,0 +1,54 @@
+{
+  "status": "SAVED_PROBE_WORST_GRADIENT_PAIRS_INDEPENDENTLY_AUDITED",
+  "recorded_at_utc": "2026-11-09T23:23:29.927106+00:00",
+  "routes": [
+    {
+      "route": "task",
+      "saved_worst_parameter": "llm.model.layers.2.mlp.down_proj.branches.single.A",
+      "worst_tensor_max_abs_independently_recomputed": 0.0002776011824607849,
+      "worst_tensor_relative_l2_independently_recomputed": 0.00821935125663641,
+      "reported_all_parameter_relative_l2": 0.014858291602506343,
+      "reported_nonclose_parameters": 484,
+      "same_mode_repeat_bitwise_equal_in_probe_report": true
+    },
+    {
+      "route": "language",
+      "saved_worst_parameter": "llm.model.layers.1.mlp.gate_proj.branches.single.B",
+      "worst_tensor_max_abs_independently_recomputed": 0.0005376252229325473,
+      "worst_tensor_relative_l2_independently_recomputed": 0.02798343676856393,
+      "reported_all_parameter_relative_l2": 0.010921210324738861,
+      "reported_nonclose_parameters": 497,
+      "same_mode_repeat_bitwise_equal_in_probe_report": true
+    },
+    {
+      "route": "keep",
+      "saved_worst_parameter": "llm.model.layers.2.mlp.down_proj.branches.single.A",
+      "worst_tensor_max_abs_independently_recomputed": 0.0002776011824607849,
+      "worst_tensor_relative_l2_independently_recomputed": 0.00821935125663641,
+      "reported_all_parameter_relative_l2": 0.014858291602506343,
+      "reported_nonclose_parameters": 484,
+      "same_mode_repeat_bitwise_equal_in_probe_report": true
+    }
+  ],
+  "shared_boundary_adapter_sha256": "009c1625bb914a352d0b8ec459db44d8cf802f55021e058550d3bf2b9cd3b4a8",
+  "evidence_sha256": {
+    "records/horizon_uniform_numerics_20261109_2330/audit_probe.py": "9124727c3b40abab7693b5c9e323ef2d7dfaa3acc499a271f9a5ba63df55a4d6",
+    "runs/horizon_support_modes_K4_boundary3_s17_observed_blocking_v8/result.json": "08f0caadbf4295c5544537e47ba7b1c4d642826d2716fd70af8f019aae708523",
+    "runs/horizon_support_modes_K4_boundary3_s17_observed_blocking_v8/worst_gradient_pairs.pt": "0f197851d60e217cb5df42f2317e9165b8c1e626b0dffaf70e30fd633af3818f",
+    "runs/horizon_support_modes_K4_boundary3_s17_observed_blocking_v8/events.jsonl": "364da1248a192cbec9c1cf054635352574a50225ae71f7f4162dd4e1a60a7661",
+    "records/jobs/horizon_support_modes_K4_boundary3_s17_observed_blocking_v8.json": "64e0db5e55ae3c8a6751350414338985b2b6e5891c808bd2f44c038d1cacc0e5",
+    "records/logs/horizon_support_modes_K4_boundary3_s17_observed_blocking_v8.log": "6df80b0a8820ea3e8f107f0618be393315aa827d9cbe59a428e7bd408b9253ba",
+    "records/horizon_numerical_diagnosis_20261109_2200/probe.py": "014b5cf644b513c1d8746ca4d0ee149f77c721de27ac1c486f3a40ae233868a7",
+    "gaosi/horizon.py": "f31ccc7834ce05d1a391941e2da33aeedd1a7d9a0f573cea4900d34706ad9cfa",
+    "gaosi/meta.py": "f9cf49a2975791fa3466e6caaa31bb8312a20eec64244a4f33d205cf1607ca69",
+    "gaosi/recompute.py": "04f0fe1119f03657647f23cac7d35e9c903cfeb5f05f0f8637d019002167528e",
+    "gaosi/transition.py": "5afa7bc2c61b6e81a6f024026c02fe29761a11e8b65925aabafd525e57ead477"
+  },
+  "method_validated": false,
+  "full_goal_complete": false,
+  "limitations": [
+    "Only the saved worst tensor pair per route is independently compared; whole-route and repeat statistics are from the executed probe report.",
+    "No low-level operator root cause or H2/full derivative correctness is established.",
+    "Task and keep use identical batches in this known-parent diagnostic."
+  ]
+}

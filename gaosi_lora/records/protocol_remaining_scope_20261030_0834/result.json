@@ -1,0 +1,133 @@
+{
+  "status": "OFFLINE_PROTOCOL_AND_FROZEN_SOURCE_AUDIT_NOT_TRAINING_TELEMETRY",
+  "created_at_utc": "2026-10-30T00:32:33.372080+00:00",
+  "training_observation_used_utc": "2026-10-30T00:24:59+00:00",
+  "training_observation_credited_updates": 344,
+  "base_phi_budget": [
+    {
+      "block": "3B seed17 L core",
+      "updates": 2560,
+      "credited_at_last_observation": 344
+    },
+    {
+      "block": "3B seed17 X core",
+      "updates": 2560
+    },
+    {
+      "block": "3B seed17 common-warm alternate H1, additional only",
+      "updates": 2048
+    },
+    {
+      "block": "3B seed17 four organization specializations",
+      "updates": 2048
+    },
+    {
+      "block": "3B seed17 clean O1 from scratch",
+      "updates": 3072
+    },
+    {
+      "block": "3B confirmation seed29: mixed core, two organizations, clean",
+      "updates": 6656
+    },
+    {
+      "block": "3B confirmation seed43: mixed core, two organizations, clean",
+      "updates": 6656
+    },
+    {
+      "block": "7B mixed and clean local meta-training",
+      "updates": 5120
+    }
+  ],
+  "base_phi_inner_updates_3B": 25600,
+  "base_phi_inner_updates_7B": 5120,
+  "base_phi_inner_updates_total": 30720,
+  "base_phi_inner_updates_remaining_at_last_observation": 30376,
+  "implemented_conditional_extension_updates": 9216,
+  "phi_updates_if_both_implemented_extensions_trigger": 39936,
+  "excluded_costs": [
+    "past failed/diagnostic/readiness runs",
+    "parent fitting",
+    "all dev/formal recovery and generation",
+    "selective recovery and reflow/relearning",
+    "continual pilots and confirmations and rank16 probes",
+    "horizon diagnostic trajectories",
+    "noise controls",
+    "conditional organization/LoRA-FA/16-or32-round/real-text additions"
+  ],
+  "existing_timing_evidence": {
+    "source": "records/training_monitor_20261030_0809/events.jsonl",
+    "complete_episodes": 39,
+    "all_K": [
+      8
+    ],
+    "median_episode_start_to_end_seconds": 219.50809621810913,
+    "last10_episode_mean_seconds": 221.434339261055,
+    "last10_start_to_start_mean_seconds": 236.2896375656128,
+    "extrapolation_limits": "No measured production K16, X, O2/O3/O4 or7B meta throughput yet; H1 differs. Counts are computational opportunity, not equal runtime."
+  },
+  "eta": {
+    "L_remaining_hours_rough": [
+      14,
+      20
+    ],
+    "L_eta_is_prior_estimate_not_new_observation": true,
+    "full_protocol_finish_date": null,
+    "reason": "Single-GPU pipeline has >30k default phi updates, plus uncounted evaluation and parent cost; insufficient throughput evidence for a dependable total ETA. Previous several-days language is order-of-magnitude only, not a completion promise."
+  },
+  "conditional_requirements": [
+    {
+      "id": "3B_core_late_improvement",
+      "trigger": "Either L/X dev score improves >0.01 from2048 to2560.",
+      "queue_coverage": "Implemented: extend BOTH cores once; selected clean and independent seeds inherit matching core budget.",
+      "additional_updates": 7168,
+      "source": "phi_development_queue.py:109; organization_queue.py:112; confirmation_queue.py:122"
+    },
+    {
+      "id": "7B_local_late_improvement",
+      "trigger": "Either mixed/clean dev score improves >0.01 from2048 to2560.",
+      "queue_coverage": "Implemented: extend BOTH local paths once by1024.",
+      "additional_updates": 2048,
+      "source": "seven_b_queue.py:157,367"
+    },
+    {
+      "id": "organization_transfer_still_improving",
+      "trigger": "Key organization is still improving after short adaptation; scientific review required.",
+      "queue_coverage": "Not implemented by current organization queue; do not infer saturation from512. Preserve dev evidence and define matched extension before using it for training decisions.",
+      "additional_updates": null,
+      "source": "EXPERIMENT_PROTOCOL.md:203"
+    },
+    {
+      "id": "O2_best",
+      "trigger": "O2 is best and a claim beyond fixed-A/B-only is considered.",
+      "queue_coverage": "Official LoRA-FA or equal-budget port required before superiority claim; not implemented by current queue.",
+      "additional_updates": null,
+      "source": "EXPERIMENT_PROTOCOL.md:73"
+    },
+    {
+      "id": "interpretable_continual_signal",
+      "trigger": "Interpretable signal after8 rounds.",
+      "queue_coverage": "New-order16/32-round extension remains a scientific decision and implementation task; eight rounds do not close the protocol.",
+      "additional_updates": null,
+      "source": "EXPERIMENT_PROTOCOL.md:263"
+    },
+    {
+      "id": "clear_synthetic_mechanism",
+      "trigger": "Clear synthetic mechanism.",
+      "queue_coverage": "Fixed CLINC150 in-scope or authorized equivalent with dev/formal isolation and frozen config; not yet implemented.",
+      "additional_updates": null,
+      "source": "EXPERIMENT_PROTOCOL.md:271"
+    }
+  ],
+  "scope_complete": false,
+  "running_sources_modified": false,
+  "source_sha256": {
+    "/home/ubuntu/diff/Gaosi_LoRA_MTT48_Codex_20261028/EXPERIMENT_PROTOCOL.md": "d5f97deb34905bc20e16a545ea35fad9c425374d5ea3dbeedf8ba33b77669804",
+    "/home/ubuntu/diff/Gaosi_LoRA_MTT48_Codex_20261028/experiment_queue.csv": "747c8806ebd797be7ce4f70ca17c0b109799b9ec2b085d04191aa72cd74f73c0",
+    "/home/ubuntu/diff/gaosi_lora/records/pipeline_recompute_v7/tools/phi_core_queue.py": "b95cfc8fd9a79d0dc47343c6f8e3940aa8b5a2e868b0afecf0167b1c4cc82a1e",
+    "/home/ubuntu/diff/gaosi_lora/records/pipeline_recompute_v7/tools/phi_development_queue.py": "5c1cd0281239d343358703a91ae5b7ab874c510bbdbc48d774db55380ddc2170",
+    "/home/ubuntu/diff/gaosi_lora/records/pipeline_recompute_v7/tools/organization_queue.py": "3c9550285635d6bfd1e1bbf2e3db117619473ffa3681adcb73f67f18c6dcd3bf",
+    "/home/ubuntu/diff/gaosi_lora/records/pipeline_recompute_v7/tools/confirmation_queue.py": "aed4acf25e7d9e208c13c389f27b467980875f47fc3fb381cf7483c938bccaf5",
+    "/home/ubuntu/diff/gaosi_lora/records/pipeline_recompute_v7/tools/seven_b_queue.py": "7c838743994ab3484c6a064f6949d17885529e48edc9147d8aa5d19699972337",
+    "/home/ubuntu/diff/gaosi_lora/records/pipeline_recompute_v7/tools/continual_queue.py": "035e1432675c2f7797cb3819b8f692c9221a6eda8b08f3f2d84c75ad89dd6ce0"
+  }
+}

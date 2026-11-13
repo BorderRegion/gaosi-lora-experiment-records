@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "diagnosis_executed": true,
+  "method_validated": false,
+  "actual_device": "musa:0",
+  "episode": 13,
+  "K": 8,
+  "q_train": 0.5,
+  "all_gradients_finite": true,
+  "raw_gradient_norm": 0.013272706166084804,
+  "gradient_parameters": {
+    "net.0.weight": {
+      "finite": true,
+      "nonfinite_elements": 0,
+      "norm": 0.00010236275214399328,
+      "max_abs": 6.383645995811094e-06
+    },
+    "net.0.bias": {
+      "finite": true,
+      "nonfinite_elements": 0,
+      "norm": 2.7452838449212763e-05,
+      "max_abs": 6.212466360011604e-06
+    },
+    "net.2.weight": {
+      "finite": true,
+      "nonfinite_elements": 0,
+      "norm": 0.0001987854832273646,
+      "max_abs": 6.429359473258955e-06
+    },
+    "net.2.bias": {
+      "finite": true,
+      "nonfinite_elements": 0,
+      "norm": 7.03328691601805e-05,
+      "max_abs": 1.2340672583377454e-05
+    },
+    "net.4.weight": {
+      "finite": true,
+      "nonfinite_elements": 0,
+      "norm": 0.008367273350029056,
+      "max_abs": 0.0019887180533260107
+    },
+    "net.4.bias": {
+      "finite": true,
+      "nonfinite_elements": 0,
+      "norm": 0.01030037724964127,
+      "max_abs": 0.010205895639955997
+    }
+  },
+  "analytic_terminal": {
+    "query_task": 0.015803683549165726,
+    "query_language": 2.430680513381958,
+    "query_keep": 0.015803683549165726,
+    "objective": 0.015803683549165726
+  },
+  "compute_counters": {
+    "loss_forwards": 518,
+    "loss_backwards": 532,
+    "input_tokens": 257382,
+    "supervised_tokens": 51130,
+    "hessian_vector_products": 80
+  },
+  "scope": "Real MUSA episode replay with raw gradients saved before clipping; no phi update"
+}

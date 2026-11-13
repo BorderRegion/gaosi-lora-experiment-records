@@ -1,0 +1,16 @@
+{
+  "name": "phi_core_queue_v2",
+  "command": [
+    "/usr/bin/python",
+    "-u",
+    "tools/phi_core_queue.py",
+    "--calibration-job",
+    "calibration_queue_v2"
+  ],
+  "wrapper_pid": 472902,
+  "started_at_utc": "2026-10-29T06:54:43.613162+00:00",
+  "start_epoch": 1793256883.6131861,
+  "status": "RUNNING",
+  "child_pid": 472903,
+  "child_proc_start_ticks": "53095311"
+}

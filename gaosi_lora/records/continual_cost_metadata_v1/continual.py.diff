@@ -1,0 +1,28 @@
+--- continual.py.before
++++ continual.py
+@@ -300,10 +300,11 @@
+         assert len({r['fact_id'] for r in support}) == 32
+         canonical, _ = canonical_noise(model.adapter_cpu(), model.specs, 0., round_seed)
+         model.load_adapter(canonical)
++        model.set_stage('day')
+         run.log('day_start', round=round_index + 1, model=model.summary(), replay_capacity=128)
+         day_state = day(model, support, lang, config['day_steps'], config['day_lr'], round_seed,
+                         config['seq'], config['effective_tokens'],
+-                        lambda **kw: run.log('day', round=round_index + 1, **kw))
++                        lambda **kw: run.log('day', round=round_index + 1, **kw, **memory(device)))
+         run.log('day_complete', round=round_index + 1, fact_stream=day_state)
+         if len(day_state['covered']) != len({row['fact_id'] for row in support}):
+             raise RuntimeError('Continual day endpoint did not cover all new bindings')
+@@ -314,9 +315,11 @@
+             all_bindings.setdefault(row['fact_id'], []).append(row)
+         selected = sorted(all_bindings, key=priority)[:128]
+         replay = [row for key in selected for row in all_bindings[key]]
++        model.set_stage('night')
++        run.log('night_start', round=round_index + 1, model=model.summary(), replay_capacity=128)
+         state, corruption = night(model, replay, lang, phi, config['night_steps'], config['night_lr'],
+                                    config['q_apply'], round_seed, config['seq'], config['effective_tokens'],
+-                                   lambda **kw: run.log('night', round=round_index + 1, **kw),
++                                   lambda **kw: run.log('night', round=round_index + 1, **kw, **memory(device)),
+                                    method=config['night_method'])
+         run.log('night_complete', round=round_index + 1, replay_ids=selected,
+                 replay_coverage=state, corruption={k: v for k, v in corruption.items() if k != 'factors'})

@@ -1,0 +1,91 @@
+{
+  "launch": {
+    "utc": "2026-10-30T08:06:40.804754+00:00",
+    "status": "FRESH_FULL_L_SCHEDULE_UNDER_CANDIDATE_MITIGATION",
+    "job": "phi_mix_O1_L_H2_core_s17_observed_blocking_v8",
+    "command": [
+      "/usr/bin/python",
+      "-u",
+      "tools/job.py",
+      "--name",
+      "phi_mix_O1_L_H2_core_s17_observed_blocking_v8",
+      "--musa-lock",
+      "/tmp/gaosi_musa_device0.lock",
+      "--",
+      "/usr/bin/env",
+      "MUSA_LAUNCH_BLOCKING=1",
+      "/usr/bin/python",
+      "-u",
+      "tools/train_observed_meta.py",
+      "--manifest",
+      "records/observed_blocking_core_20261030_0810/training_manifest.json"
+    ],
+    "job_state": {
+      "name": "phi_mix_O1_L_H2_core_s17_observed_blocking_v8",
+      "command": [
+        "/usr/bin/env",
+        "MUSA_LAUNCH_BLOCKING=1",
+        "/usr/bin/python",
+        "-u",
+        "tools/train_observed_meta.py",
+        "--manifest",
+        "records/observed_blocking_core_20261030_0810/training_manifest.json"
+      ],
+      "wrapper_pid": 650715,
+      "started_at_utc": "2026-10-30T08:06:40.741418+00:00",
+      "start_epoch": 1793347600.741437,
+      "status": "RUNNING",
+      "device_lock": {
+        "path": "/tmp/gaosi_musa_device0.lock",
+        "version": 1
+      },
+      "child_pid": 650716,
+      "child_proc_start_ticks": "62167024"
+    },
+    "child_identity_matches": true,
+    "wrapper_pid": 650715,
+    "wrapper_start_ticks": "62167020",
+    "manifest_sha256": "cbdf0881f85c5db30bbace91f3de5d059a7bab057055e559dfeafdfa451e7019",
+    "validation": {
+      "status": "VALIDATED_NOT_EXECUTED",
+      "episodes": 192,
+      "inner_updates": 2560,
+      "fresh_phi": true,
+      "method_validated": false
+    },
+    "device_lock_inode": 31148027670,
+    "fresh_phi": true,
+    "previous_failed_checkpoint_reused": false,
+    "all_old_results_preserved": true,
+    "no_downstream_launched": true,
+    "method_validated": false,
+    "downstream_promotion_allowed": false,
+    "full_goal_complete": false,
+    "estimated_L_runtime_hours": [
+      40,
+      60
+    ],
+    "estimated_full_protocol_runtime": "Not reliable until numerical path and downstream runtime are established."
+  },
+  "comparison": {
+    "raw_gradient": {
+      "elements": 78850,
+      "left_finite": true,
+      "right_finite": true,
+      "left_nonfinite_elements": 0,
+      "right_nonfinite_elements": 0,
+      "bitwise_equal": true,
+      "left_norm": 0.06140809536621527,
+      "right_norm": 0.06140809536621527,
+      "max_absolute_difference": 0.0,
+      "relative_l2_difference_to_left": 0.0,
+      "cosine": 0.9999999999999994
+    },
+    "terminal_equal": true,
+    "method_validated": false,
+    "evidence_sha256": {
+      "runs/diagnostics/L_episode7_fixed_tail_blocking_r1/tail_analytic.pt": "bacfeddd297e429bba2ce3262fc6070e7b09ed6e68f3b17f3e2e9db44cde8fd0",
+      "runs/diagnostics/L_episode7_same_state_blocking_r1/repeat_0.pt": "bb9958a837aedff706517ce43509638ba4ba8187c93c11471eb8d498b88bc39b"
+    }
+  }
+}

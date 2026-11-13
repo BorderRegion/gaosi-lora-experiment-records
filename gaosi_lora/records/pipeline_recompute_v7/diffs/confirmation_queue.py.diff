@@ -1,0 +1,29 @@
+--- original/confirmation_queue.py
++++ tools/confirmation_queue.py
+@@ -6,7 +6,7 @@
+ import random
+ import sys
+ 
+-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
++sys.path.insert(0, str(Path.cwd()))
+ from gaosi.scale import sha256
+ from organization_queue import wait_for
+ from phi_core_queue import run_job
+@@ -112,7 +112,7 @@
+     manifest = f'data/synthetic/confirmation_meta_order_s{seed}_v1.json'
+     preserve_json(manifest, reordered_manifest(source, seed))
+     architecture = selected['architecture']
+-    reference = f'configs/phi_mix_O1_{architecture}_H2_core_s17.json'
++    reference = f'configs/phi_mix_O1_{architecture}_H2_core_s17_recompute_v7.json'
+     core = json.loads(Path(reference).read_text())
+     for key in ['initial_phi', 'start_episode', 'load_initial_meta_optimizer', 'out']:
+         core.pop(key, None)
+@@ -343,7 +343,7 @@
+     preserve_json('records/confirmation_policy_v1.json', POLICY)
+     if json.loads(Path('checks/confirmation_cpu.json').read_text())['status'] != 'PASS':
+         raise RuntimeError('Independent confirmation entry/schedule checks must pass first')
+-    pilot = wait_for('records/continual_pilot_ready_v1.json', 'continual_queue_v1')
++    pilot = wait_for('records/continual_pilot_ready_v1.json', 'continual_queue_recompute_v7')
+     selection = select_second(pilot)
+     preserve_json('records/confirmation_organization_selected_v1.json', selection)
+     second = selection['organization']

@@ -1,0 +1,280 @@
+{
+  "status": "FACTOR_RECOVERY_FROZEN",
+  "selected_ratio": 1.0,
+  "selected_lr": 0.0003,
+  "selection_K": 32,
+  "q_medium": 0.7,
+  "parent": "runs/parent_3b_dev_parent_r32_s17_extend512_v2/latest.pt",
+  "policy": {
+    "version": 1,
+    "reason": "Acquisition-selected B/A=16 degrades ordinary recovery at development steps8/16; tune the recovery baseline before any formal comparison.",
+    "ratios": [
+      1.0,
+      4.0,
+      16.0
+    ],
+    "lrs": [
+      3e-05,
+      0.0001,
+      0.0003
+    ],
+    "K": 64,
+    "eval_steps": [
+      8,
+      16,
+      32,
+      64
+    ],
+    "data": "same dev parent and q_medium candidate as original calibration",
+    "selection_step": "3B recovery_K, once frozen by the original standard-Adam calibration",
+    "score": "candidate plus strict_EM minus language residual above .2 nats; ties prefer lower ratio then lower learning rate",
+    "reuse": "preserve original factor16/lr3e-4; factor1/lr3e-4 is exactly the existing paired-Adam update",
+    "horizon": "These fixed Adam-family updates do not use phi time features; recorded K64 intermediate states are valid fixed-budget endpoints.",
+    "calibration_and_phi": "do not change their q, primary K, phi LR or current training; override only formal factor-LR settings",
+    "formal_data_used": false
+  },
+  "trials": [
+    {
+      "ratio": 16.0,
+      "lr": 0.0003,
+      "score": 0.11238951325122742,
+      "primary_K": 32,
+      "metrics": {
+        "task": {
+          "n": 512,
+          "candidate_accuracy": 0.1171875,
+          "mean_margin": -1.208648031577468,
+          "nll": 1.0542942125419652,
+          "answer_tokens": 1288,
+          "strict_EM": 0.125,
+          "abnormal_rate": 0.0
+        },
+        "language": {
+          "nll": 2.4498804686129856,
+          "answer_tokens": 4463
+        }
+      },
+      "language_residual_nats": 0.3297979867487726,
+      "run": "runs/recovery_dev_factor_medium_s17",
+      "reused": true
+    },
+    {
+      "ratio": 1.0,
+      "lr": 0.0003,
+      "score": 1.99609375,
+      "primary_K": 32,
+      "metrics": {
+        "task": {
+          "n": 512,
+          "candidate_accuracy": 1.0,
+          "mean_margin": 9.102560447255719,
+          "nll": 0.00949174037756723,
+          "answer_tokens": 1288,
+          "strict_EM": 0.99609375,
+          "abnormal_rate": 0.0
+        },
+        "language": {
+          "nll": 2.122857380655884,
+          "answer_tokens": 4463
+        }
+      },
+      "language_residual_nats": 0.002774898791670921,
+      "run": "runs/recovery_dev_paired_medium_s17",
+      "reused": true
+    },
+    {
+      "ratio": 1.0,
+      "lr": 3e-05,
+      "score": 1.935546875,
+      "primary_K": 32,
+      "metrics": {
+        "task": {
+          "n": 512,
+          "candidate_accuracy": 0.978515625,
+          "mean_margin": 6.787519499206034,
+          "nll": 0.09065434930981774,
+          "answer_tokens": 1288,
+          "strict_EM": 0.95703125,
+          "abnormal_rate": 0.0
+        },
+        "language": {
+          "nll": 2.1246405012693583,
+          "answer_tokens": 4463
+        }
+      },
+      "language_residual_nats": 0.0045580194051453304,
+      "run": "runs/recovery_dev_factor_ratio1_lr3e-05_s17_v1",
+      "reused": false
+    },
+    {
+      "ratio": 1.0,
+      "lr": 0.0001,
+      "score": 1.951171875,
+      "primary_K": 32,
+      "metrics": {
+        "task": {
+          "n": 512,
+          "candidate_accuracy": 0.98828125,
+          "mean_margin": 8.424937091965925,
+          "nll": 0.06558437245362397,
+          "answer_tokens": 1288,
+          "strict_EM": 0.962890625,
+          "abnormal_rate": 0.0
+        },
+        "language": {
+          "nll": 2.118888473767164,
+          "answer_tokens": 4463
+        }
+      },
+      "language_residual_nats": -0.0011940080970491707,
+      "run": "runs/recovery_dev_factor_ratio1_lr0.0001_s17_v1",
+      "reused": false
+    },
+    {
+      "ratio": 4.0,
+      "lr": 3e-05,
+      "score": 1.953125,
+      "primary_K": 32,
+      "metrics": {
+        "task": {
+          "n": 512,
+          "candidate_accuracy": 0.986328125,
+          "mean_margin": 7.531216377759015,
+          "nll": 0.07276535361332584,
+          "answer_tokens": 1288,
+          "strict_EM": 0.966796875,
+          "abnormal_rate": 0.0
+        },
+        "language": {
+          "nll": 2.1210514158244202,
+          "answer_tokens": 4463
+        }
+      },
+      "language_residual_nats": 0.0009689339602072522,
+      "run": "runs/recovery_dev_factor_ratio4_lr3e-05_s17_v1",
+      "reused": false
+    },
+    {
+      "ratio": 4.0,
+      "lr": 0.0001,
+      "score": 1.966796875,
+      "primary_K": 32,
+      "metrics": {
+        "task": {
+          "n": 512,
+          "candidate_accuracy": 0.990234375,
+          "mean_margin": 8.623686369278513,
+          "nll": 0.06250002795011803,
+          "answer_tokens": 1288,
+          "strict_EM": 0.9765625,
+          "abnormal_rate": 0.0
+        },
+        "language": {
+          "nll": 2.126627870613541,
+          "answer_tokens": 4463
+        }
+      },
+      "language_residual_nats": 0.006545388749327863,
+      "run": "runs/recovery_dev_factor_ratio4_lr0.0001_s17_v1",
+      "reused": false
+    },
+    {
+      "ratio": 4.0,
+      "lr": 0.0003,
+      "score": 1.99609375,
+      "primary_K": 32,
+      "metrics": {
+        "task": {
+          "n": 512,
+          "candidate_accuracy": 0.998046875,
+          "mean_margin": 6.857198992992389,
+          "nll": 0.009898902645536027,
+          "answer_tokens": 1288,
+          "strict_EM": 0.998046875,
+          "abnormal_rate": 0.0
+        },
+        "language": {
+          "nll": 2.1565781681360803,
+          "answer_tokens": 4463
+        }
+      },
+      "language_residual_nats": 0.03649568627186728,
+      "run": "runs/recovery_dev_factor_ratio4_lr0.0003_s17_v1",
+      "reused": false
+    },
+    {
+      "ratio": 16.0,
+      "lr": 3e-05,
+      "score": 1.974609375,
+      "primary_K": 32,
+      "metrics": {
+        "task": {
+          "n": 512,
+          "candidate_accuracy": 0.98828125,
+          "mean_margin": 8.239341866494716,
+          "nll": 0.018915552955199512,
+          "answer_tokens": 1288,
+          "strict_EM": 0.986328125,
+          "abnormal_rate": 0.0
+        },
+        "language": {
+          "nll": 2.12711134860795,
+          "answer_tokens": 4463
+        }
+      },
+      "language_residual_nats": 0.007028866743736817,
+      "run": "runs/recovery_dev_factor_ratio16_lr3e-05_s17_v1",
+      "reused": false
+    },
+    {
+      "ratio": 16.0,
+      "lr": 0.0001,
+      "score": 0.439453125,
+      "primary_K": 32,
+      "metrics": {
+        "task": {
+          "n": 512,
+          "candidate_accuracy": 0.2109375,
+          "mean_margin": -0.3980260374955833,
+          "nll": 0.8442170955009342,
+          "answer_tokens": 1288,
+          "strict_EM": 0.228515625,
+          "abnormal_rate": 0.0
+        },
+        "language": {
+          "nll": 2.187082377592331,
+          "answer_tokens": 4463
+        }
+      },
+      "language_residual_nats": 0.06699989572811793,
+      "run": "runs/recovery_dev_factor_ratio16_lr0.0001_s17_v1",
+      "reused": false
+    }
+  ],
+  "selected": {
+    "ratio": 1.0,
+    "lr": 0.0003,
+    "score": 1.99609375,
+    "primary_K": 32,
+    "metrics": {
+      "task": {
+        "n": 512,
+        "candidate_accuracy": 1.0,
+        "mean_margin": 9.102560447255719,
+        "nll": 0.00949174037756723,
+        "answer_tokens": 1288,
+        "strict_EM": 0.99609375,
+        "abnormal_rate": 0.0
+      },
+      "language": {
+        "nll": 2.122857380655884,
+        "answer_tokens": 4463
+      }
+    },
+    "language_residual_nats": 0.002774898791670921,
+    "run": "runs/recovery_dev_paired_medium_s17",
+    "reused": true
+  },
+  "formal_data_used": false,
+  "independent_phi_training_seeds": 0
+}

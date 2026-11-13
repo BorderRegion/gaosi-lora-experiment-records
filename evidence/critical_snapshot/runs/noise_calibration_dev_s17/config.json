@@ -1,0 +1,19 @@
+{
+  "parent": "runs/parent_3b_dev_parent_r32_s17_extend512_v2/latest.pt",
+  "out": "runs/noise_calibration_dev_s17",
+  "noise_seed": 1729,
+  "q_grid": [
+    0,
+    0.0001,
+    0.0003,
+    0.001,
+    0.003,
+    0.01,
+    0.03,
+    0.1,
+    0.3
+  ],
+  "data": "data/synthetic/dev_parent.jsonl",
+  "language_pool": "dev",
+  "selection_rule": "Two development doses causing measurable known-knowledge loss, subject to full ordinary recovery validation before formal freezing"
+}

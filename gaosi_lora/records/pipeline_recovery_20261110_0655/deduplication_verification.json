@@ -1,0 +1,13 @@
+{
+  "status": "DEDUPLICATED_EVIDENCE_PATHS_REHASHED_AND_INODES_CHECKED",
+  "recorded_at_utc": "2026-11-10T06:55:39.627188+00:00",
+  "paths_rehashed": 4268,
+  "paths_also_bound_to_existing_capture_manifest": 4268,
+  "distinct_capture_manifests": 794,
+  "journal_sha256": "cce95aba45843f17f074bac3f4868a487b8ac8847b80844827d0a2ef35c03b23",
+  "deduplication_receipt_sha256": "b731b9dc9b1ba637018a6f7973adfbb77773e09aa9cff67074e632a404d582b1",
+  "evidence_paths_removed": 0,
+  "evidence_bytes_modified": false,
+  "original_training_artifacts_modified": false,
+  "full_goal_complete": false
+}

@@ -1,0 +1,21 @@
+{
+  "reviewed_at_utc": "2026-10-31T00:53:49.365082+00:00",
+  "status": "SAVED_EPISODE_82_UPDATE_CONSISTENT_WITH_CPU_ADAM_WITH_FP32_ROUNDOFF",
+  "comparison_sha256": "04c704ac186c5ea9d17e5e01d48fd30f3b13fac00330c7156a048f73064d45ee",
+  "input_files_independently_rehashed_locally": 3,
+  "all_starting_phi_tensor_equal": true,
+  "all_adam_step_and_moments_tensor_equal": true,
+  "maximum_phi_absolute_error": 1.4901161193847656e-08,
+  "maximum_phi_relative_l2_error": 3.844934113172922e-09,
+  "scientific_interpretation": "One archived episode update is consistent with saved gradients and Adam state. Tiny CPU versus MUSA phi differences remain; this is not a byte-identical phi update claim.",
+  "limitations": [
+    "Single archived episode only, CPU Adam compared against saved MUSA update.",
+    "This does not recompute gradients or establish H2 derivative correctness.",
+    "Roundoff metrics and the stated allclose tolerance do not authorize promotion."
+  ],
+  "method_validated": false,
+  "downstream_promotion_allowed": false,
+  "production_modified_or_restarted": false,
+  "additional_training_telemetry_polled": false,
+  "full_goal": "incomplete; production L and remaining full protocol remain active"
+}

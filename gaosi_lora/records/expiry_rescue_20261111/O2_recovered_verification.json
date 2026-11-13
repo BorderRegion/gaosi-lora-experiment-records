@@ -1,0 +1,58 @@
+{
+  "status": "COMPLETED_O2_CHECKPOINT_AND_LOGS_RECOVERED_LOCALLY_SOURCE_SHA256_MATCHED",
+  "utc": "2026-11-11T06:59:37.940472+00:00",
+  "source_archive_sha256": "1135cccb706412e32aa8ed3c4e2c917d3d26171838153bbbc6965a15505390e8",
+  "source_checkpoint_sha256": "dc88c3dfd03de88d4a824d57db7350f15b58aead8ad4a9247333024d845c291f",
+  "files": {
+    "latest.pt": {
+      "bytes": 1031349,
+      "sha256": "dc88c3dfd03de88d4a824d57db7350f15b58aead8ad4a9247333024d845c291f"
+    },
+    "result.json": {
+      "bytes": 513,
+      "sha256": "8634a1680eeaba42f9ab6eb4712ca75500741fd03813acf1fd3663bf08f446a9"
+    },
+    "config.json": {
+      "bytes": 1685,
+      "sha256": "5c8c3a181adf6baf2ad9fe6cbbbe2030e90a9fb156a84c6ece70fb93b8ae73db"
+    },
+    "source_sha256.json": {
+      "bytes": 2163,
+      "sha256": "23c137925a55b2f2d31ade48b2d5f32f58f4e329c13752ba0e9f6f0cf17a7b92"
+    },
+    "events.jsonl": {
+      "bytes": 338849,
+      "sha256": "ed78c10353a0e022d0aaf51dbd93e9ce23f8555cac5936e4039a26853ae4627a"
+    },
+    "raw_gradients.jsonl": {
+      "bytes": 28204,
+      "sha256": "2e13025b8b7e45fea326f1c3d65301c93ef05d0971d6011201c4d6006d9c1137"
+    },
+    "observed_training_manifest.json": {
+      "bytes": 16791,
+      "sha256": "236f8e3bad4c1fdc1bba8e37bbc5c15d08157b9960b96b919a07eab7f50ca139"
+    },
+    "observed_training_result.json": {
+      "bytes": 302,
+      "sha256": "5d86041cd7164669929802aaef9070b63c3258dd1d1b8c9ef85ffc7b0b62042c"
+    }
+  },
+  "result": {
+    "status": "PASS",
+    "episodes": 64,
+    "inner_updates": 512,
+    "base_unchanged": true,
+    "checkpoint": "runs/phi_mix_O2_X_specialize512_s17_observed_blocking_v8/latest.pt",
+    "horizon": "EXACT_H2_tail",
+    "compute_counters": {
+      "loss_forwards": 17330,
+      "loss_backwards": 17113,
+      "input_tokens": 8633584,
+      "supervised_tokens": 1713527,
+      "hessian_vector_products": 2599
+    },
+    "note": "Meta-training completion does not prove superiority; dev selection and frozen holdout tests remain required."
+  },
+  "archive_reader": "ignore_zeros=True recovers padding following source hard-link entries; all source bytes retained",
+  "method_validated": false
+}

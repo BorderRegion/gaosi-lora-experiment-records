@@ -1,0 +1,126 @@
+--- original/confirmation_queue.py
++++ tools/confirmation_queue.py
+@@ -6,7 +6,7 @@
+ import random
+ import sys
+ 
+-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
++sys.path.insert(0, str(Path.cwd()))
+ from gaosi.scale import sha256
+ from organization_queue import wait_for
+ from phi_core_queue import run_job
+@@ -109,10 +109,10 @@
+ 
+ def train_seed(seed, selected, original, second):
+     source = json.loads(Path(original['world_manifest']).read_text())
+-    manifest = f'data/synthetic/confirmation_meta_order_s{seed}_v1.json'
++    manifest = f'data/synthetic/confirmation_meta_order_s{seed}_observed_blocking_v8.json'
+     preserve_json(manifest, reordered_manifest(source, seed))
+     architecture = selected['architecture']
+-    reference = f'configs/phi_mix_O1_{architecture}_H2_core_s17.json'
++    reference = f'configs/phi_mix_O1_{architecture}_H2_core_s17_observed_blocking_v8.json'
+     core = json.loads(Path(reference).read_text())
+     for key in ['initial_phi', 'start_episode', 'load_initial_meta_optimizer', 'out']:
+         core.pop(key, None)
+@@ -133,7 +133,7 @@
+     meta_data = [str(Path('data/synthetic') / w['file']) for w in source['worlds'] if w['split'] == 'meta']
+     data = meta_data + core['parent_data'] + [manifest, original['world_manifest'],
+                                             'data/language/inner.jsonl', 'data/language/meta_query.jsonl']
+-    result = entry(f'confirm_phi_mix_O1_{architecture}_core_s{seed}_v1', core, 'meta', seed,
++    result = entry(f'confirm_phi_mix_O1_{architecture}_core_s{seed}_observed_blocking_v8', core, 'meta', seed,
+                    upstream + core['parents'], data, [])
+     core_phi = result['checkpoint']
+     if result['inner_updates'] != selected['core_inner_steps']:
+@@ -156,7 +156,7 @@
+             artifacts += ['records/o4_parents_ready.json'] + c['parents'] + c['historical_bases']
+             artifacts += [p + '.json' for p in c['historical_bases']]
+             sources += c['parent_data'] + c['historical_data']
+-        adapted = entry(f'confirm_phi_mix_{org}_{architecture}_specialize512_s{seed}_v1',
++        adapted = entry(f'confirm_phi_mix_{org}_{architecture}_specialize512_s{seed}_observed_blocking_v8',
+                         c, 'meta', seed, artifacts, sources, [])
+         if adapted['inner_updates'] != 512:
+             raise ValueError('Independent organization specialization has wrong budget')
+@@ -164,12 +164,12 @@
+     clean = copy.deepcopy(core)
+     clean.update(episode_K=schedule + [8] * 64, q_cycle=[0.],
+                  confirmation_stage='clean_full_from_zero', purpose='independent_clean_matched_from_zero')
+-    clean_result = entry(f'confirm_phi_clean_O1_{architecture}_matched_s{seed}_v1', clean, 'meta', seed,
++    clean_result = entry(f'confirm_phi_clean_O1_{architecture}_matched_s{seed}_observed_blocking_v8', clean, 'meta', seed,
+                          upstream + clean['parents'], data, [])
+     if clean_result['inner_updates'] != sum(schedule) + 512:
+         raise ValueError('Independent clean budget differs from mixed core plus specialization')
+     freezes['O1_clean'] = make_freeze(seed, 'O1', 'clean', clean_result['checkpoint'], original, selected)
+-    preserve_json(f'records/confirmation_phi_frozen_s{seed}_v1.json',
++    preserve_json(f'records/confirmation_phi_frozen_s{seed}_observed_blocking_v8.json',
+                   {'status': 'INDEPENDENT_PHI_FROZEN', 'seed': seed, 'manifests': freezes,
+                    'shared_parent_conditioning': True, 'meta_order_manifest': manifest,
+                    'final_data_used_in_phi_training': False, 'initialized_from_seed17_phi': False})
+@@ -187,7 +187,7 @@
+              primary_organization_plan=original.get('organization_plan'),
+              organization_plan='records/confirmation_policy_v1.json')
+     suffix = org + ('_clean' if training_noise == 'clean' else '')
+-    path = f'records/confirm_phi_frozen_{suffix}_s{seed}_v1.json'
++    path = f'records/confirm_phi_frozen_{suffix}_s{seed}_observed_blocking_v8.json'
+     preserve_json(path, f)
+     return path
+ 
+@@ -225,7 +225,7 @@
+             artifacts += ['records/factor_recovery_frozen_v1.json']
+         data = [config['data'], config.get('retain_data', config['data']),
+                 config['language_eval'], 'data/language/inner.jsonl']
+-        result = entry(f'confirm_{label}_s{seed}_v1', config, 'recover', seed,
++        result = entry(f'confirm_{label}_s{seed}_observed_blocking_v8', config, 'recover', seed,
+                        artifacts, data, [config['freeze_manifest']])
+         if result['coverage'] != result['pool'] or not result['base_unchanged']:
+             raise ValueError('Confirmation recovery endpoint lacks full selected support coverage')
+@@ -259,7 +259,7 @@
+                      'mode': mode, 'inner_lr': lr, 'device': 'musa', 'data_seed': seed,
+                      'K': 80, 'eval_steps': [20, 80], 'effective_tokens': 512,
+                      'language_eval': 'data/language/final.jsonl', 'language_eval_tokens': 4096}
+-                result = entry(f'confirm_{label}_{origin}_lr{lr:g}_s{seed}_v1', c, 'reflow', seed,
++                result = entry(f'confirm_{label}_{origin}_lr{lr:g}_s{seed}_observed_blocking_v8', c, 'reflow', seed,
+                                [checkpoint, source_parent['checkpoint'], 'records/reflow_lrs_frozen_v1.json'],
+                                [c['data'], c['language_eval']], [mixfile])
+                 events = [json.loads(line) for line in (Path(result['config']['out']) / 'events.jsonl').read_text().splitlines()]
+@@ -302,7 +302,7 @@
+         sources.append((method, result['checkpoint'], 'selective'))
+     sources.append(('matched_retain_only', entity['parents']['retain_only']['checkpoint'], 'retain_only'))
+     continue_sources('entity_reteach2', parent, request, 'reteach_two', sources)
+-    preserve_json(f'records/confirmation_recovery_ready_s{seed}_v1.json',
++    preserve_json(f'records/confirmation_recovery_ready_s{seed}_observed_blocking_v8.json',
+                   {'status': 'INDEPENDENT_MAIN_SELECTIVE_REFLOW_COMPLETE', 'seed': seed, 'outcomes': outcomes,
+                    'task_scope': [[label, file] for label, file in tasks],
+                    'shared_parent_conditioning': True, 'noise_seed': 1729})
+@@ -314,7 +314,7 @@
+     random.Random(seed).shuffle(worlds)
+     plan.update(worlds=worlds, seed=seed, replay_seed=seed * 100 + 12, probe_seed=37,
+                 independent_phi_seed=seed, source_seed17_pilot_selection_is_exploratory=True)
+-    path = f'records/confirmation_continual_schedule_s{seed}_v1.json'
++    path = f'records/confirmation_continual_schedule_s{seed}_observed_blocking_v8.json'
+     preserve_json(path, plan)
+     outcomes = []
+     for org in ['O1', second]:
+@@ -328,12 +328,12 @@
+                 c['phi'] = f['phi']
+             data = [c['parent_data'], *worlds, *c['probe_worlds'],
+                     'data/language/inner.jsonl', c['language_eval']]
+-            result = entry(f'confirm_continual_{org}_{method}_8round_s{seed}_v1',
++            result = entry(f'confirm_continual_{org}_{method}_8round_s{seed}_observed_blocking_v8',
+                            c, 'continual', seed, [c['parent'], path, f['phi']], data, [freezes[org]])
+             if result['completed_rounds'] != 8:
+                 raise ValueError('Independent continual run ended before eight rounds')
+             outcomes.append({'organization': org, 'method': method, 'run': result['config']['out'], 'result': result})
+-    preserve_json(f'records/confirmation_continual_ready_s{seed}_v1.json',
++    preserve_json(f'records/confirmation_continual_ready_s{seed}_observed_blocking_v8.json',
+                   {'status': 'INDEPENDENT_EIGHT_ROUND_CONFIRMATION_COMPLETE', 'seed': seed,
+                    'schedule': path, 'outcomes': outcomes, 'organizations': ['O1', second],
+                    'base_reference_shared_from_pilot': pilot['base_reference'], 'shared_parent_conditioning': True})
+@@ -343,7 +343,7 @@
+     preserve_json('records/confirmation_policy_v1.json', POLICY)
+     if json.loads(Path('checks/confirmation_cpu.json').read_text())['status'] != 'PASS':
+         raise RuntimeError('Independent confirmation entry/schedule checks must pass first')
+-    pilot = wait_for('records/continual_pilot_ready_v1.json', 'continual_queue_v1')
++    pilot = wait_for('records/continual_pilot_ready_v1.json', 'continual_queue_observed_blocking_v8')
+     selection = select_second(pilot)
+     preserve_json('records/confirmation_organization_selected_v1.json', selection)
+     second = selection['organization']

@@ -1,0 +1,10 @@
+## 2026-11-01 20:43：完整 X/H2 已启动，半小时巡检正常
+
+L 已完成全192 episodes/2560 inner updates及独立产物、Adam重放和科学复核。X/H2真实两episode readiness另行完成4 inner updates，140项输入/源码/产物审计与逐轮Adam重放通过，非零输出头路径已有实际梯度证据；独立科学复核与绑定SHA receipt已发布，允许现有控制器启动fresh完整X。readiness phi不作为warm起点、4步不计入正式core预算。证据见records/pipeline_observer_20261101_1143/X_readiness_scientific_assessment_20261101_1217.json及records/pipeline_observed_blocking_v8/reviews/phi_X_real_episode_readiness_s17_observed_blocking_v8.json。
+
+北京时间20:42:39定时采样确认完整X于20:34:32启动，run=phi_mix_O1_X_H2_core_s17_observed_blocking_v8；child776884/start ticks81054249及进程内MUSA_LAUNCH_BLOCKING=1匹配，15个原控制器保持存活、GPU仅该训练进程。当前episode0/K8已记录全部8个inner步骤，k7/k8标记exact，三路token满足512；episode_end、raw梯度和最新checkpoint尚未生成，所以正式已提交更新数仍为0，不把已运行8步称为已提交。完整固定日程[8]*64+[16]*128、192轮/2560步未变。GPU33174 MiB/49152 MiB、52°C，数据卷可用980.44 GiB，无告警。
+
+采样records/pipeline_monitor_20261101_124235_utc，归档SHA=e99e22868a7eb8371b681b9c848feb798dcffd057075074bb45314b91a913df9及78项文件已独立核验；复核records/pipeline_review_20261101_1243.json，SHA=fb1b499acdc9f64be3843a7e20d67c8c39a330569b96935e0af74841d5df508d。旧pipeline观察器因需在最终sidecar生成前采集活动meta而有序替换，训练/控制器未重启。当前只读观察器2961121/start ticks78120930，records/pipeline_observer_20261101_1220/，下次北京时间21:12:39；继续每1800秒采集，不自动启动、恢复或批准训练。
+
+method_validated=false；有限梯度、路径可达及已保存Adam一致性均不能证明MUSA高阶导数正确，旧v7故障根因仍未证明。每个完成meta仍需自己的完整审计和科学receipt。完整目标继续active：共同warm H1、开发选择/匹配延长、四组织/clean、正式父状态与恢复/选择性/回流/持续、7B、统计、独立phi seeds29/43及条件追加均保留。默认phi预算30720（既有延长全触发39936），诊断/失败/其他费用另计。当前X只有一轮运行证据，暂不据此报可靠总ETA。以下保留各端独立历史。
+

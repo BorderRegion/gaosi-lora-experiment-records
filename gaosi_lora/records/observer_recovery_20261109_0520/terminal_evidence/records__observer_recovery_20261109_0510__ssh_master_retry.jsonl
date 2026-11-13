@@ -1,0 +1,2 @@
+{"utc": "2026-11-09T05:16:26.291079+00:00", "attempt": 1, "pid": 695686, "exit_code": 255, "socket_ready": false, "log": "/tmp/gaosi_ssh_master_retry_20261109_1.log"}
+{"utc": "2026-11-09T05:17:26.993710+00:00", "attempt": 2, "pid": 696590, "exit_code": null, "socket_ready": true, "log": "/tmp/gaosi_ssh_master_retry_20261109_2.log"}

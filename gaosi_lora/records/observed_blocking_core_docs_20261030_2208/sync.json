@@ -1,0 +1,22 @@
+{
+  "remote": {
+    "NEXT_STEPS.md": {
+      "before_sha256": "ea53a9d05c3c6f0c37b62cc4a11b905dca1e73d6197662dc89f1fd4f8edcb225",
+      "after_sha256": "48cb8db984832b501c2f17746de7ca75eb11556fe1eb61361379c074a7d31fc3"
+    },
+    "REPORT.md": {
+      "before_sha256": "9a503f6cf9262cc64b44280f60a55f3fdcddbfee76d1f47088f9d788a68f0ca3",
+      "after_sha256": "c404652e12b7294444ecdc0c4e40c0509edcc9b04c53ab59c2da2aa8852efc8e"
+    }
+  },
+  "local": {
+    "NEXT_STEPS.md": {
+      "before_sha256": "e72d84d767f3c42968390c9bd75faff446627dbdd1bc248e57e113e8a704f3d5",
+      "after_sha256": "66069c18b1a349d42679e868f0e49aa0fb0f13fbdfa7515504ab1167d07f766d"
+    },
+    "REPORT.md": {
+      "before_sha256": "9f8530f2598ba391f3018a27d6e4111469361f01f15a5a094f6da38eefb74a02",
+      "after_sha256": "cdbc1486f376db75cb1ce66bf79f4994077f88b5f41765498f5c7a5d4b31cfd0"
+    }
+  }
+}

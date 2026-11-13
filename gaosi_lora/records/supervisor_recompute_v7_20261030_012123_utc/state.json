@@ -1,0 +1,26 @@
+{
+  "status": "REQUIRES_AGENT_REVIEW",
+  "pid": 4034427,
+  "proc_start_ticks": "56900372",
+  "updated_at_utc": "2026-10-30T03:05:19.378868+00:00",
+  "training_changes": false,
+  "last_review": {
+    "status": "REQUIRES_AGENT_REVIEW",
+    "alerts": [
+      "Training log contains an error",
+      "Training job is terminal without PASS"
+    ],
+    "inner_updates": 640,
+    "completed_episodes": 72,
+    "update_budget": 2560,
+    "new_large_preclip_norms": [],
+    "existing_numerical_risk": "Episode 7 raw gradient spike is unresolved; finite state is not scientific validation.",
+    "full_goal_complete": false,
+    "training_modified_or_restarted": false,
+    "reviewed_at_utc": "2026-10-30T03:05:19.378064+00:00",
+    "source_files_verified": 6,
+    "observation_utc": "2026-10-30T03:05:17.914796+00:00",
+    "observation": "records/training_monitor_auto_20261030_030513_utc"
+  },
+  "observations": 4
+}

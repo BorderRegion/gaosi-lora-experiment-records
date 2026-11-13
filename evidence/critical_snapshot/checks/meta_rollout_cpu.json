@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "scope": "CPU tiny Qwen rollout plumbing, not MUSA or method effect",
+  "tests": {
+    "L_full_rollout_three_support_routes_matches_direct_query_graph": "PASS",
+    "X_full_rollout_three_support_routes_matches_direct_query_graph": "PASS"
+  }
+}

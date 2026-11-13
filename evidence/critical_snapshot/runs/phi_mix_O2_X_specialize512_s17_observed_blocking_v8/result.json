@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "episodes": 64,
+  "inner_updates": 512,
+  "base_unchanged": true,
+  "checkpoint": "runs/phi_mix_O2_X_specialize512_s17_observed_blocking_v8/latest.pt",
+  "horizon": "EXACT_H2_tail",
+  "compute_counters": {
+    "loss_forwards": 17330,
+    "loss_backwards": 17113,
+    "input_tokens": 8633584,
+    "supervised_tokens": 1713527,
+    "hessian_vector_products": 2599
+  },
+  "note": "Meta-training completion does not prove superiority; dev selection and frozen holdout tests remain required."
+}

@@ -1,0 +1,19 @@
+{
+  "name": "recovery_norm_history_regression_cpu_v1",
+  "command": [
+    "/usr/bin/python",
+    "-u",
+    "tools/validate_recovery.py",
+    "--out",
+    "checks/recovery_norm_history_regression_cpu_v1.json"
+  ],
+  "wrapper_pid": 87904,
+  "started_at_utc": "2026-10-29T13:14:47.787208+00:00",
+  "start_epoch": 1793279687.7872283,
+  "status": "PASS",
+  "child_pid": 87905,
+  "child_proc_start_ticks": "55375729",
+  "exit_code": 0,
+  "wall_seconds": 84.09849214553833,
+  "finished_at_utc": "2026-10-29T13:16:11.885730+00:00"
+}

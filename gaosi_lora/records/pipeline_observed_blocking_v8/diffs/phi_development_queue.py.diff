@@ -1,0 +1,34 @@
+--- original/phi_development_queue.py
++++ tools/phi_development_queue.py
+@@ -36,7 +36,7 @@
+ 
+ def main():
+     p = argparse.ArgumentParser()
+-    p.add_argument('--core-job', default='phi_core_queue_v2')
++    p.add_argument('--core-job', default='phi_core_queue_observed_blocking_v8')
+     args = p.parse_args()
+     preserve_json('records/phi_selection_policy.json', POLICY)
+     while not Path('records/phi_core_ready.json').exists():
+@@ -57,7 +57,7 @@
+     phi_paths = {}
+     for architecture in ['L', 'X']:
+         for steps in [2048, 2560]:
+-            file = f'runs/phi_mix_O1_{architecture}_H2_core_s17/phi_{steps:04d}.pt'
++            file = f'runs/phi_mix_O1_{architecture}_H2_core_s17_observed_blocking_v8/phi_{steps:04d}.pt'
+             if not Path(file).exists():
+                 raise RuntimeError(f'Missing declared learning-curve snapshot {file}')
+             phi_paths[f'{architecture}_{steps}'] = file
+@@ -114,11 +114,11 @@
+     Path('records/phi_development_assessment.json').write_text(json.dumps(assessment, indent=2))
+     if late:
+         for architecture in ['L', 'X']:
+-            c = json.loads(Path(f'configs/phi_mix_O1_{architecture}_H2_core_s17.json').read_text())
++            c = json.loads(Path(f'configs/phi_mix_O1_{architecture}_H2_core_s17_observed_blocking_v8.json').read_text())
+             c.update(episode_K=c['episode_K'] + [16] * 64, start_episode=192,
+                      initial_phi=phi_paths[f'{architecture}_2560'], load_initial_meta_optimizer=True,
+                      purpose='single_matched_development_extension_64x16')
+-            result = train(f'phi_mix_O1_{architecture}_H2_extend3584_s17', c)
++            result = train(f'phi_mix_O1_{architecture}_H2_extend3584_s17_observed_blocking_v8', c)
+             phi_paths[f'{architecture}_3584'] = result['checkpoint']
+         for architecture in ['L', 'X']:
+             file = phi_paths[f'{architecture}_3584']

@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "python_files_parse": 5,
+  "queue_nodes": 18,
+  "queue_acyclic": true,
+  "cpu_math_groups_passed": 8,
+  "main_meta_inner_updates": 2560,
+  "phi_parameters_match_config": true,
+  "MUSA_tested": false,
+  "real_Qwen_tested": false
+}

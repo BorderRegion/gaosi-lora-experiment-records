@@ -1,0 +1,32 @@
+{
+  "recorded_at_utc": "2026-10-30T16:12:30.420280+00:00",
+  "remote": {
+    "remote_pinned_final_files_verified": 14,
+    "uploaded_or_equal_records": 23,
+    "documentation": {
+      "NEXT_STEPS.md": {
+        "before_sha256": "40c8d25d7fc9cc83cb882e6d896085cf59a7824496652cea803d624942ab56ca",
+        "after_sha256": "4a65132d915e5d33d161dc29378041272a7f53c5e02ef389f962a0f44a3bb5dd",
+        "history_preserved_independently": true
+      },
+      "REPORT.md": {
+        "before_sha256": "3843a655de88447eaea608b12fb38b314ec72e43daf6903e3240a1287320e44a",
+        "after_sha256": "6ac612d48ecd82e1f1ee6ee0c834c3e346b4c5e1a3b40d170bb964db436ae462",
+        "history_preserved_independently": true
+      }
+    }
+  },
+  "local": {
+    "NEXT_STEPS.md": {
+      "before_sha256": "6cd9c561c8fe72273ead2c1b83b52c978dbd613450f8348ce35fd34f78404042",
+      "after_sha256": "10970c5f70e312cd1a9f9afd0e60d80f5e681dc1e1dab9e5dece27a7520879e8",
+      "history_preserved_independently": true
+    },
+    "REPORT.md": {
+      "before_sha256": "8358a4ae0b0e555c9e48b26bc27f11e87fbf9a08af17c3444a42acdb50abd64d",
+      "after_sha256": "c70974e134fc588e7d027b7bb9957798ccf314239481bf9a59f58e3a327df3dc",
+      "history_preserved_independently": true
+    }
+  },
+  "training_modified_or_restarted": false
+}

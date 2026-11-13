@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "repo": "Salesforce/wikitext",
+  "revision": "b08601e04326c79dfdd32d625aee71d232d685c3",
+  "license": "cc-by-sa-3.0",
+  "sources": [
+    {
+      "file": "wikitext-2-raw-v1/train-00000-of-00001.parquet",
+      "sha256": "e83889baabc497075506f91975be5fac0d45c5290b6b20582c8cd1e853d0c9f7"
+    },
+    {
+      "file": "wikitext-2-raw-v1/validation-00000-of-00001.parquet",
+      "sha256": "204929b7ff9d6184953f867dedb860e40aa69c078fc1e54b3baaa8fb28511c4c"
+    },
+    {
+      "file": "wikitext-2-raw-v1/test-00000-of-00001.parquet",
+      "sha256": "5f1bea067869d04849c0f975a2b29c4ff47d867f484f5010ea5e861eab246d91"
+    }
+  ],
+  "pools": {
+    "inner": {
+      "documents": 183,
+      "sha256": "296bb5e07a99e864911c21b4b05845baba0ee7b65529799eb075d6ee2989e766"
+    },
+    "meta_query": {
+      "documents": 183,
+      "sha256": "5da7b7c1ba6a0ef066630d3e5d2d564e8daa0cc6d538a5692d6e9fae406a2b22"
+    },
+    "dev": {
+      "documents": 183,
+      "sha256": "7801dfc3ccc4a445342b1438a6755a7f1a2b7091761337d7603e7e237b29525d"
+    },
+    "final": {
+      "documents": 182,
+      "sha256": "f0bd2dff7c82d1e81b34f8b47471b7e76f56fb012519b321e8556c923df44826"
+    }
+  },
+  "split_unit": "whole_article_before_token_chunking",
+  "seed": 271828,
+  "unique_documents": 731,
+  "note": "Original corpus splits reshuffled into four new article-disjoint pools; no standard WikiText benchmark score is claimed."
+}

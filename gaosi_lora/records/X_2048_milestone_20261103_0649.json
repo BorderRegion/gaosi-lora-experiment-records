@@ -1,0 +1,50 @@
+{
+  "status": "SCHEDULED_2048_CHECKPOINT_PROVENANCE_VERIFIED_ONLY",
+  "recorded_at_utc": "2026-11-03T06:51:30.211544+00:00",
+  "run": "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8",
+  "observation": "records/pipeline_monitor_20261103_064922_utc",
+  "review": "records/pipeline_review_20261103_0649.json",
+  "review_sha256": "74efb2b74ed5b093a8a8293b9979b245e1e1ce6c6f1e278ece3972deb696d23b",
+  "checkpoint": {
+    "snapshot_path": "records/pipeline_monitor_20261103_064922_utc/snapshot/runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/phi_2048.pt",
+    "remote_artifact_path": "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/phi_2048.pt",
+    "sha256": "34e1c605e232805fb89cb494c5266d4de4910e3878be04a4c4cad28bfae9e2ab",
+    "bytes": 1032917,
+    "matched_source_archive_hash": true
+  },
+  "commit_event": {
+    "event": "episode_end",
+    "utc": "2026-11-03T06:37:52.160752+00:00",
+    "process_wall_seconds": 151391.52017235756,
+    "episode": 159,
+    "inner_updates": 2048,
+    "phi_grad_norm": 0.01891755862867239,
+    "compute_counters": {
+      "loss_forwards": 61072,
+      "loss_backwards": 60661,
+      "input_tokens": 30438792,
+      "supervised_tokens": 5855528,
+      "hessian_vector_products": 6803
+    },
+    "query_task": 0.049295924603939056,
+    "query_language": 2.084348440170288,
+    "query_keep": 0.04892738536000252,
+    "objective": 0.049295924603939056
+  },
+  "events_sha256": "8a9222630339b5e2834315a0323fe93a6c1bba302ffd569f5992c809be196bad",
+  "committed_episodes": 160,
+  "committed_inner_updates": 2048,
+  "planned_inner_updates": 2560,
+  "previous_goal_turn": "progress_scheduled_evidence_reviewed_synced_and_waiter_started",
+  "current_goal_turn": "verified_wait_followed_by_progress_scheduled_review_and_2048_checkpoint_provenance",
+  "training_modified_or_restarted": false,
+  "method_validated": false,
+  "downstream_promotion_allowed": false,
+  "full_goal_complete": false,
+  "limitations": [
+    "This milestone verifies the saved checkpoint bytes against the scheduled source hash and matches the 2048-update commit event.",
+    "This record does not independently load this checkpoint, recompute gradients, or measure development improvement.",
+    "Full X completion audit remains deferred until the actual terminal 192-episode/2560-update run."
+  ],
+  "next_action": "Continue X core, then audit completion and compare the saved 2048/2560 checkpoints on development data before applying the protocol extension rule."
+}

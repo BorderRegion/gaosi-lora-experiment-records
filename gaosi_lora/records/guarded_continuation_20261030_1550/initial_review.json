@@ -1,0 +1,104 @@
+{
+  "reviewed_at_utc": "2026-10-30T15:49:48.905454+00:00",
+  "previous_goal_turn": "progress",
+  "observer_live_identity": true,
+  "observer_state": {
+    "status": "WAITING_UNTIL_DUE_NO_REMOTE_CONNECTION_YET",
+    "pid": 202579,
+    "proc_start_ticks": "59350385",
+    "updated_at_utc": "2026-10-30T15:36:48.571172+00:00",
+    "production_modified_or_restarted": false,
+    "due_at_utc": "2026-10-30T16:06:42.794098+00:00",
+    "observations": 15,
+    "next_observation": "records/observed_blocking_core_monitor_20261030_160642_utc"
+  },
+  "new_observations": [
+    {
+      "observation": "records/observed_blocking_core_monitor_20261030_133642_utc",
+      "archive_sha256": "2383b97acce1e5277817647a0d60be454144e59bd349012a6a502425e09bd0a3",
+      "files": 42,
+      "episodes": 30,
+      "inner_updates": 240,
+      "maximum_raw_norm": 0.1474985467660515,
+      "checkpoint": {
+        "copied_artifact_sha256": "0bb195f8e000f07337c95b120e07985dda5152a8c5fba4a80821c4a367a86a53",
+        "next_episode": 30,
+        "inner_updates": 240,
+        "phi_finite": true,
+        "optimizer_finite": true,
+        "config_equal": true
+      },
+      "observed_at_utc": "2026-10-30T13:36:42.258535+00:00"
+    },
+    {
+      "observation": "records/observed_blocking_core_monitor_20261030_140642_utc",
+      "archive_sha256": "c4503e13e715d2bc07a870205bf03bf667d31631ec7ad5f7e57842bd51a1e79c",
+      "files": 42,
+      "episodes": 33,
+      "inner_updates": 264,
+      "maximum_raw_norm": 0.22966086724073495,
+      "checkpoint": {
+        "copied_artifact_sha256": "e36cf913aec1b4b0df182eff92202a8afd1b87c1d04f889b82bc9b559546e498",
+        "next_episode": 33,
+        "inner_updates": 264,
+        "phi_finite": true,
+        "optimizer_finite": true,
+        "config_equal": true
+      },
+      "observed_at_utc": "2026-10-30T14:06:42.375071+00:00"
+    },
+    {
+      "observation": "records/observed_blocking_core_monitor_20261030_143642_utc",
+      "archive_sha256": "fbcb5cdca0f48278c10a340710ed278fb6dd18c72481273e3ec39264e0707a8e",
+      "files": 42,
+      "episodes": 36,
+      "inner_updates": 288,
+      "maximum_raw_norm": 0.22966086724073495,
+      "checkpoint": {
+        "copied_artifact_sha256": "cbda3e2244458c510e4f8185a3e6f6693876e41c15975e5f3e71aa28c79b4276",
+        "next_episode": 36,
+        "inner_updates": 288,
+        "phi_finite": true,
+        "optimizer_finite": true,
+        "config_equal": true
+      },
+      "observed_at_utc": "2026-10-30T14:36:42.525146+00:00"
+    },
+    {
+      "observation": "records/observed_blocking_core_monitor_20261030_150642_utc",
+      "archive_sha256": "2ba7f5c2b7d4b3a3d7569f67650b65d782f3b11f520ebbda6aac88f8d68de26a",
+      "files": 42,
+      "episodes": 39,
+      "inner_updates": 312,
+      "maximum_raw_norm": 0.22966086724073495,
+      "checkpoint": {
+        "copied_artifact_sha256": "c1d7f697bae72b3934bd03f32b1dda13b42ea1819dc920b6922f4fc0d32dcaa8",
+        "next_episode": 39,
+        "inner_updates": 312,
+        "phi_finite": true,
+        "optimizer_finite": true,
+        "config_equal": true
+      },
+      "observed_at_utc": "2026-10-30T15:06:42.663489+00:00"
+    },
+    {
+      "observation": "records/observed_blocking_core_monitor_20261030_153642_utc",
+      "archive_sha256": "811ee58b6ed64723a6d48a2ffdb98e27a20b6fa8ad7cdd64b5d2b0f61994be20",
+      "files": 42,
+      "episodes": 42,
+      "inner_updates": 336,
+      "maximum_raw_norm": 0.22966086724073495,
+      "checkpoint": {
+        "copied_artifact_sha256": "07770100b14e1e84225a9f8bec78d99d0101ba0ee9a0c339e19291c5d644411a",
+        "next_episode": 42,
+        "inner_updates": 336,
+        "phi_finite": true,
+        "optimizer_finite": true,
+        "config_equal": true
+      },
+      "observed_at_utc": "2026-10-30T15:36:42.794098+00:00"
+    }
+  ],
+  "method_validated": false,
+  "training_modified_or_restarted": false
+}

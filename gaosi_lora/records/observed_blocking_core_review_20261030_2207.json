@@ -1,0 +1,57 @@
+{
+  "reviewed_at_utc": "2026-10-30T22:08:10.865011+00:00",
+  "previous_goal_turn": "verified_wait_and_new_training_evidence",
+  "current_goal_turn": "verified_wait_and_new_evidence_updates_current_L_estimate",
+  "observer_live_pid": 202579,
+  "observer_start_ticks": "59350385",
+  "observation": {
+    "observation": "records/observed_blocking_core_monitor_20261030_220644_utc",
+    "archive_sha256": "ff0b15e55ac65cbc7f999738dad15597ab6df68fe26244433eec7414d89e2804",
+    "verified_source_files": 43,
+    "job_status": "RUNNING",
+    "alerts": [],
+    "production_modified_or_restarted": false
+  },
+  "archive_independently_verified": true,
+  "independently_rehashed_files": 43,
+  "committed_episodes": 73,
+  "committed_inner_updates": 656,
+  "all_raw_gradients_finite": true,
+  "max_raw_norm": 0.5823351201809523,
+  "guard_errors": [],
+  "checkpoint": {
+    "copied_artifact_sha256": "8995d7d176d3f18d51d96fb75a0d7607d1122c2bc46f52e8c4c25bb960a361b0",
+    "next_episode": 73,
+    "inner_updates": 656,
+    "phi_finite": true,
+    "optimizer_finite": true,
+    "config_equal": true
+  },
+  "production_identity": {
+    "pid": 650716,
+    "state": "S",
+    "start_ticks": "62167024",
+    "matches": true,
+    "cmdline": "/usr/bin/python -u tools/train_observed_meta.py --manifest records/observed_blocking_core_20261030_0810/training_manifest.json ",
+    "launch_blocking_environment": [
+      "MUSA_LAUNCH_BLOCKING=1"
+    ]
+  },
+  "next_due_at_utc": "2026-10-30T22:36:45.072204+00:00",
+  "old_v7_failure_boundary": "v8 committed episode72 with finite raw norm5.1140756736993504e-05; different phi trajectory, no inference that old root cause is resolved.",
+  "timing": {
+    "completed_K16_sample": 9,
+    "mean_seconds": 976.7928162222222,
+    "remaining_episodes": 119,
+    "hours_at_mean": 32.288429202901234,
+    "working_range_hours": [
+      30,
+      40
+    ],
+    "scope": "Current L only; later NEW episodes may differ."
+  },
+  "method_validated": false,
+  "downstream_promotion_allowed": false,
+  "production_modified_or_restarted": false,
+  "full_goal": "incomplete; current L and subsequent full protocol execution/review remain"
+}

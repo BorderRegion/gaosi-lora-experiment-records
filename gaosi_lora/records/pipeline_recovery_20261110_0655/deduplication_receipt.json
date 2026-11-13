@@ -1,0 +1,17 @@
+{
+  "status": "IDENTICAL_IMMUTABLE_CAPTURE_FILES_HARDLINKED_WITH_ALL_PATHS_AND_BYTES_PRESERVED",
+  "recorded_at_utc": "2026-11-10T06:54:39.005201+00:00",
+  "eligible_candidates": 47639,
+  "replaced_duplicate_files": 4268,
+  "old_duplicate_allocated_bytes_reclaimed": 2147581952,
+  "available_before_bytes": 0,
+  "available_after_bytes": 2128805888,
+  "journal_sha256": "cce95aba45843f17f074bac3f4868a487b8ac8847b80844827d0a2ef35c03b23",
+  "source_sha256": "0ac07ca215a1fc360b20ed9912b809d266de0831408390039c544dc63b2dbbe2",
+  "scope": "Local immutable monitor snapshot files captured before 2026-11-10 only.",
+  "all_evidence_paths_and_file_bytes_preserved": true,
+  "original_training_artifacts_modified": false,
+  "remote_modified": false,
+  "method_validated": false,
+  "full_goal_complete": false
+}

@@ -1,0 +1,24 @@
+--- original/selective_statistics_queue.py
++++ tools/selective_statistics_queue.py
+@@ -3,7 +3,7 @@
+ from pathlib import Path
+ import sys
+ 
+-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
++sys.path.insert(0, str(Path.cwd()))
+ from gaosi.selective_statistics import POLICY
+ from organization_queue import wait_for
+ from phi_core_queue import run_job
+@@ -14,10 +14,10 @@
+     if json.loads(Path('checks/selective_statistics_cpu.json').read_text())['status'] != 'PASS':
+         raise RuntimeError('Selective paired-evidence/statistics checks must pass first')
+     preserve_json('records/selective_statistics_policy_v1.json', POLICY)
+-    wait_for('records/formal_recovery_ready_v2.json', 'formal_recovery_queue_v2')
++    wait_for('records/formal_recovery_ready_v2.json', 'formal_recovery_queue_recompute_v7')
+     for stage, label in [('primary', 'primary'), ('full', 'three_seed')]:
+         if stage == 'full':
+-            wait_for('records/confirmation_ready_v1.json', 'confirmation_queue_v1')
++            wait_for('records/confirmation_ready_v1.json', 'confirmation_queue_recompute_v7')
+         run_job(f'selective_statistics_{label}_v1',
+                 ['/usr/bin/python', '-u', 'tools/summarize_selective.py', '--stage', stage,
+                  '--out', f'analysis/selective_{label}_v1'], f'analysis/selective_{label}_v1/result.json')

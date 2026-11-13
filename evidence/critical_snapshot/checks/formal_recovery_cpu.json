@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "scope": "CPU random tiny fixtures on dev rows only; no final facts or MUSA effects",
+  "tests": {
+    "R100_plus_formal_endpoint_matches_independent_stock_Adam": "PASS",
+    "R100_minus_formal_endpoint_matches_independent_stock_Adam": "PASS",
+    "R25_plus_formal_endpoint_matches_independent_stock_Adam": "PASS",
+    "R25_minus_formal_endpoint_matches_independent_stock_Adam": "PASS",
+    "full_and_quarter_R_keep_identical_Dplus_Dminus_exposure_and_full_queries": "PASS",
+    "formal_phi_hash_mismatch_rejected": "PASS",
+    "references_check_freeze_before_reading_any_task_data": "PASS",
+    "disabled_adapter_matches_independent_zero_output_reference_with_F_R_language": "PASS"
+  }
+}

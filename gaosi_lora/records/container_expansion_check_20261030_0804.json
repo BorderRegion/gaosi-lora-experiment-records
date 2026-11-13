@@ -1,0 +1,50 @@
+{
+  "observed_at_utc": "2026-10-30T00:04:21.087542+00:00",
+  "hostname": "autodl-container-kaltlgmeta-f374ee08",
+  "pid1_start_local": "Thu Oct 29 16:36:15 2026",
+  "mount": "/dev/md0[/docker/volumes/autodl-container-kaltlgmeta-f374ee08-storage/_data] /root/autodl-tmp xfs",
+  "storage_GiB": {
+    "/root/autodl-tmp": {
+      "total": 1050.0,
+      "used": 66.52,
+      "free": 983.48
+    },
+    "/": {
+      "total": 30.0,
+      "used": 11.92,
+      "free": 18.08
+    }
+  },
+  "training_process": {
+    "pid": 344804,
+    "start_ticks": "58376943",
+    "state": "S",
+    "matches_previous_training": true,
+    "config": "configs/phi_mix_O1_L_H2_core_s17_recompute_v7.json"
+  },
+  "project_present": true,
+  "data_directory_present": true,
+  "assessment": "Data expansion remains mounted. Existing training process identity matches the prior observation. PID1 start is unchanged; no additional container restart observed. No training restart required.",
+  "scope": "Disk, directories and process identity only; no GPU/events/checkpoint observation before scheduled 00:09 UTC.",
+  "latest_training_snapshot": {
+    "observed_at_utc": "2026-10-29T23:38:59.683595+00:00",
+    "completed_episodes": 31,
+    "total_episodes": 192,
+    "inner_updates": 248,
+    "total_inner_updates": 2560,
+    "checkpoint_phi_and_optimizer_finite": true,
+    "unresolved_gradient_spike_episode": 7
+  },
+  "scheduled_check": {
+    "pid": 3958169,
+    "identity_verified_live": true,
+    "due_at_utc": "2026-10-30T00:09:00+00:00"
+  },
+  "training_restart_performed": false,
+  "model_files": {
+    "path": "/root/autodl-tmp/models/Qwen2.5-3B",
+    "config_present": true,
+    "safetensors_files": 2,
+    "checked_at_utc": "2026-10-30T00:05:07.215651+00:00"
+  }
+}

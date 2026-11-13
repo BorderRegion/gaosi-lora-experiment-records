@@ -1,0 +1,221 @@
+{
+  "status": "SECOND_RULE_WORLD_TWO_DOSES_COMPLETED_DESCRIPTIVE_REVIEW_ONLY",
+  "recorded_at_utc": "2026-11-05T14:59:03.085969+00:00",
+  "scope": "L-H2 phi2048, seed17, second development affine-integer rule world, q_apply0 and0.7, K64; first10 of60 base development cells complete and individually audited. This is one checkpoint group, not the full development selection or full protocol.",
+  "task_data": "data/synthetic/rules_integer_v1/dev_integer_world_001.jsonl",
+  "keep_data": "data/synthetic/dev_parent.jsonl",
+  "shared_config_fields_verified": [
+    "parent",
+    "phi",
+    "data",
+    "retain_data",
+    "data_seed",
+    "noise_seed",
+    "K",
+    "inner_lr",
+    "architecture",
+    "method"
+  ],
+  "clean_evaluation_identical_across_doses": true,
+  "rule_data_scope": {
+    "support_rows": 7,
+    "query_rows": 4,
+    "support_x": [
+      0,
+      1,
+      2,
+      4,
+      6,
+      8,
+      10
+    ],
+    "query_x": [
+      3,
+      5,
+      7,
+      9
+    ],
+    "support_and_query_x_disjoint": true,
+    "rule_in_this_world": "f(x)=2x",
+    "query_inputs_within_support_input_range": true
+  },
+  "metrics": {
+    "clean": {
+      "clean": {
+        "task": {
+          "candidate_correct": 1,
+          "strict_EM_correct": 2,
+          "query_count": 4,
+          "nll": 0.6623856371099298
+        },
+        "keep": {
+          "candidate_correct": 512,
+          "strict_EM_correct": 504,
+          "query_count": 512,
+          "nll": 0.023651785981122126
+        }
+      },
+      "initial": {
+        "task": {
+          "candidate_correct": 1,
+          "strict_EM_correct": 2,
+          "query_count": 4,
+          "nll": 0.6623856371099298
+        },
+        "keep": {
+          "candidate_correct": 512,
+          "strict_EM_correct": 504,
+          "query_count": 512,
+          "nll": 0.023651785981122126
+        }
+      },
+      "final": {
+        "task": {
+          "candidate_correct": 4,
+          "strict_EM_correct": 4,
+          "query_count": 4,
+          "nll": 3.305302695625042e-06
+        },
+        "keep": {
+          "candidate_correct": 511,
+          "strict_EM_correct": 501,
+          "query_count": 512,
+          "nll": 0.03242832528301138
+        }
+      }
+    },
+    "medium": {
+      "clean": {
+        "task": {
+          "candidate_correct": 1,
+          "strict_EM_correct": 2,
+          "query_count": 4,
+          "nll": 0.6623856371099298
+        },
+        "keep": {
+          "candidate_correct": 512,
+          "strict_EM_correct": 504,
+          "query_count": 512,
+          "nll": 0.023651785981122126
+        }
+      },
+      "initial": {
+        "task": {
+          "candidate_correct": 0,
+          "strict_EM_correct": 1,
+          "query_count": 4,
+          "nll": 1.0341072299263694
+        },
+        "keep": {
+          "candidate_correct": 364,
+          "strict_EM_correct": 362,
+          "query_count": 512,
+          "nll": 0.3426414310627744
+        }
+      },
+      "final": {
+        "task": {
+          "candidate_correct": 4,
+          "strict_EM_correct": 4,
+          "query_count": 4,
+          "nll": 4.248134416684479e-06
+        },
+        "keep": {
+          "candidate_correct": 500,
+          "strict_EM_correct": 482,
+          "query_count": 512,
+          "nll": 0.10344501086901187
+        }
+      }
+    }
+  },
+  "language_nll": {
+    "clean": {
+      "clean": 2.120082481864213,
+      "initial": 2.120082481864213,
+      "final": 2.12253830506613
+    },
+    "medium": {
+      "clean": 2.120082481864213,
+      "initial": 2.140740751632521,
+      "final": 2.116134187525066
+    }
+  },
+  "loss_changes": {
+    "clean": {
+      "task": {
+        "injected": 0.0,
+        "recovered": 0.6623823318072342,
+        "residual": -0.6623823318072342
+      },
+      "keep": {
+        "injected": 0.0,
+        "recovered": -0.008776539301889253,
+        "residual": 0.008776539301889253
+      },
+      "language": {
+        "injected": 0.0,
+        "recovered": -0.0024558232019171733,
+        "residual": 0.0024558232019171733
+      }
+    },
+    "medium": {
+      "task": {
+        "injected": 0.37172159281643957,
+        "recovered": 1.0341029817919527,
+        "residual": -0.6623813889755131
+      },
+      "keep": {
+        "injected": 0.3189896450816523,
+        "recovered": 0.23919642019376253,
+        "residual": 0.07979322488788974
+      },
+      "language": {
+        "injected": 0.0206582697683082,
+        "recovered": 0.02460656410745532,
+        "residual": -0.003948294339147118
+      }
+    }
+  },
+  "job_wall_seconds": {
+    "clean": 5997.862663507462,
+    "medium": 6070.521219491959
+  },
+  "medium_keep_final_minus_clean_reference_counts": {
+    "candidate_correct": -12,
+    "strict_EM_correct": -22
+  },
+  "medium_keep_final_minus_initial_counts": {
+    "candidate_correct": 136,
+    "strict_EM_correct": 120
+  },
+  "interpretation": "Both doses finish4/4 candidate and strictEM on four query inputs distinct from the seven support inputs, all within their input range. Under q0.7, task candidate improves0 to4 and strictEM1 to4; known keep candidate recovers364 to500 of512 and strictEM362 to482, remaining12 and22 below the clean parent respectively. In the undamaged run, keep ends511 candidate and501 strictEM. Medium keep NLL residual is+0.07979 nats, below the frozen0.1 penalty threshold, while language residual is-0.00395. Clearing that threshold does not mean complete retention: this cell has a measurable remaining keep deficit. Evidence supports learning and partial recovery in this small development world; it does not show a noise benefit, matched-method superiority, general rule induction or formal-set generalization.",
+  "evidence_sha256": {
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t4_clean_s17.json": "9a2eee617e208492408377a86383b8a243b487f9df268d909677cc2becc1f525",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t4_medium_s17.json": "eba88febdcb8c6729636fd40e2c031a29e8318c1f07c7bd6f400971efb716d72",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t4_clean_s17_evidence/snapshot/runs/phi_dev_L_2048_t4_clean_s17/config.json": "150ee48ee351ba9fcbb8dd689bb70b3524379f1a59cbf5c7e59de1c4f2990bab",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t4_medium_s17_evidence/snapshot/runs/phi_dev_L_2048_t4_medium_s17/config.json": "2d1437546eb5f20f61b898c2c1965da2cdea52f1bc158c91130e5ce383a8e754",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2048_t4_clean_s17.json": "111bcd39c7646d936fd1855b9599c453621989af21971a612c9dfe81a1279299",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2048_t4_medium_s17.json": "951a4c76fc4b494f10c5807d89ccd4c5fc2d110682f41f3c317058b6f0834506",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t4_medium_s17_evidence/snapshot/data/synthetic/rules_integer_v1/dev_integer_world_001.jsonl": "71844daf82a62c173509706198e703e0b7d7d6918c35a1e84928958602912290",
+    "records/pipeline_observer_20261104_1301/followup_20261105_1455.json": "bb467b16ff450c8656b83dd3c6261839da99c6df0752e86dec4767be789190b0"
+  },
+  "limitations": [
+    "CPU inspection of saved tensors and re-aggregation of saved predictions only; no model forward, tokenizer or derivative recomputation.",
+    "Language NLL is checked against the event ledger; no saved per-token language audit.",
+    "Model compute counters omit direct QA candidate/generation calls; they are not total evaluation FLOPs or total model forwards.",
+    "Frozen phi/base flags plus pinned source and file identities are provenance evidence, not an independent in-memory mutation trace.",
+    "No paired-method efficacy, held-out generalization, convergence or multi-seed conclusion from one completed development cell.",
+    "Only four query inputs in this rule world and one phi seed; all query inputs are interpolation within the support range.",
+    "Support/query separation is verified from saved data and pinned source, not an independent execution trace.",
+    "Keep-pool counts measure remaining errors but do not establish retention on all unmeasured tasks.",
+    "Signed NLL changes are preserved; an NLL threshold cannot replace candidate or strictEM retention measurements.",
+    "The clean/noise pair uses the same method; it is not an Adam comparison or a statistically replicated method comparison.",
+    "The first completed10-cell checkpoint group cannot select the winning architecture or establish convergence."
+  ],
+  "selection_policy_changed": false,
+  "scientific_receipt_generated": false,
+  "method_validated": false,
+  "full_goal_complete": false,
+  "training_modified_or_restarted": false
+}

@@ -1,0 +1,20 @@
+{
+  "status": "SSH_CONNECTION_RECURRED_AND_SUCCESSOR_EXITED_NO_TRAINING_RESTART",
+  "recorded_at_utc": "2026-11-09T05:12:27.689300+00:00",
+  "new_observer_identity_terminal": true,
+  "committed_successor_observations": 0,
+  "last_successful_remote_utc": "2026-11-09T05:07:29.663231+00:00",
+  "last_seen_training_run": "runs/phi_dev_paired_adam_t0_clean_s17",
+  "last_seen_recovery_step": 16,
+  "current_training_state": "UNVERIFIED_WHILE_SSH_UNAVAILABLE",
+  "local_failed_ssh_diagnostics": "Connection closed by endpoint port 12666; no proof of a training failure or container restart.",
+  "evidence_sha256": {
+    "records/pipeline_observer_20261109_0510/observer_state.json": "4f0cc87aa8d01a9c3f95cd95353af36740a45e35209578c79b1857ece7ec4c88",
+    "records/pipeline_observer_20261109_0510/stderr.log": "a1e354a7aceb3904b0295896069d6cbadf562d2bfe670607f369368a0c7fa7ab",
+    "records/observer_recovery_20261109_0510/incident_review.json": "cd4d082c6f584aa50332c59d183343eaec43f7af1d97c2172159f9fd1c4a11b0",
+    "records/scheduled_review_follower_20261109_0410/terminal_audit.json": "bc456b9574c92424c8125c5db4fca1e26010e63a262b5ffc0db2f1a63fdc6770"
+  },
+  "original_controllers_or_training_modified_or_restarted": false,
+  "method_validated": false,
+  "full_goal_complete": false
+}

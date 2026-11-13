@@ -1,0 +1,15 @@
+--- original/continual_queue.py
++++ tools/continual_queue.py
+@@ -98,9 +98,9 @@
+ 
+ def main():
+     parser = argparse.ArgumentParser()
+-    parser.add_argument('--organization-job', default='organization_queue_v1')
+-    parser.add_argument('--final-parent-job', default='final_parent_queue_v1')
+-    parser.add_argument('--reflow-job', default='reflow_queue_v1')
++    parser.add_argument('--organization-job', default='organization_queue_recompute_v7')
++    parser.add_argument('--final-parent-job', default='final_parent_queue_recompute_v7')
++    parser.add_argument('--reflow-job', default='reflow_queue_recompute_v7')
+     args = parser.parse_args()
+     preserve_json('records/continual_policy_v1.json', POLICY)
+     if json.loads(Path('checks/continual_v2_cpu.json').read_text())['status'] != 'PASS':

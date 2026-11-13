@@ -1,0 +1,33 @@
+## 2026-10-29 21:39 选择性恢复统计接入
+
+新增gaosi/selective_statistics.py、tools/summarize_selective.py及独立队列。
+records/selective_statistics_policy_v1.json预声明：O1属性请求，完整F64/R448 query在
+full/25% support R时均保持；phi-Adam在D+/D-分别比较，并比较各方法Dplus-Dminus，
+候选/EM分开、F/R分开，不给“正方向即成功”标签。known三个noise重复在实体内平均，
+外层按独立phi seed、内层共享实体抽样；2000次percentile bootstrap/seed7719。
+seed17三噪声描述、共同noise1729的seed17/seed29和43/三seed汇总分别保存。
+原始clean/noisy/final的F/R/语言、覆盖/更新成本导出；真正primary K与独立K64诊断严格分开。
+
+解析核完整trajectory/update/endpoint、phi文件hash、最终请求身份、F64/R448完整预测及指标
+复算、full448/quarter112支持覆盖、同initial SHA与R/language实际token计数，Dminus有F
+支持token即拒绝。base/drop同一测量，仅列一次共享参考，不虚构独立重复；parent-all/
+matched-retain-only需acquired、matched R、phi先冻结的父状态证据。全部R在该属性请求中
+是同实体其他属性；本数据没有混合段落，不把“same paragraph”列伪造为实验结果。
+F下降本身不能证明选择性成功、不能称不可变W0信息永久删除。
+
+checks/selective_statistics_cpu.json本地/远程10项PASS，全部明确为模拟F64/R448数据：
+24条primary、40条三seedprimary和8条独立K64诊断走真实解析/统计/导出；手算配对差、
+25%支持但完整R查询、noise不算训练种子、不同起点/曝光、Dminus偷入F token、缩查询池、
+错误K分类、缺失网格、base/drop别名不一致、phi篡改均覆盖。没有执行LLM或生成真实效果。
+远程selective_statistics_cpu_v1为PASS，4.06秒；检查SHA256
+781669637b897041d68b3f71c1d235008e655d3c555654b0d2da3c0a7b90dd1c。
+
+selective_statistics_queue_v1已启动，PID94912/start ticks55517547非Z存活；上游formal v2
+和confirmation PID/start ticks启动时核实存活。records/selective_statistics_start_20261029.json
+与records/selective_statistics_implementation_v1/存启动/源码hash。当前只等待正式选择性
+网格，真实统计尚未开始；不占训练卡。生产recover本轮未改，hash仍为
+955babb1fb4303e6b367ba848cf909a0d94442620d27a031e215730cf76f44c1。
+本轮无额外GPU轮询，最近21:14，下次仍约21:44；稳定阶段30分钟。此前主统计队列仍有
+其独立完成范围，本次不替代回流20/80、实体教2测6、持续/7B/诊断报告及最终审计。
+条件真实文本与16/32轮延长在有真实机制/流信号后判断，完整目标继续active。
+

@@ -1,0 +1,13 @@
+{
+  "out": "runs/diagnostics/L_episode72_repeat_recompute_v7_r1",
+  "device": "musa",
+  "source_config": "records/incident_20261030_1105_v7/snapshot/configs/phi_mix_O1_L_H2_core_s17_recompute_v7.json",
+  "source_config_sha256": "f70511613b15835c3eae3ea0fa86e937bb51bf3559301c600a4f9206fca414bc",
+  "episode": 72,
+  "initial_phi": "records/incident_20261030_1105_v7/snapshot/runs/phi_mix_O1_L_H2_core_s17_recompute_v7/latest.pt",
+  "initial_phi_sha256": "1c5cb6f62eb38261a3738c0481d20af867ba2bb7c44e511e2a28f6895a203297",
+  "epsilons": [],
+  "analytic_repeats": 2,
+  "formal_data_used": false,
+  "purpose": "Two same-process no-update replays of the failed known K16 episode; execution PASS is not numerical validation."
+}

@@ -1,0 +1,24 @@
+{
+  "launched_at_utc": "2026-10-30T01:21:23.540671+00:00",
+  "pid": 4034427,
+  "proc_start_ticks": "56900372",
+  "script": "/home/ubuntu/diff/gaosi_lora/tools/supervise_recompute_v7.py",
+  "script_sha256": "d2458b416778a6a90db1fa24257bd2ed1680eb4bffb50fb7b61d601e4f0b15ee",
+  "out": "/home/ubuntu/diff/gaosi_lora/records/supervisor_recompute_v7_20261030_012123_utc",
+  "log": "/home/ubuntu/diff/gaosi_lora/records/supervisor_recompute_v7_20261030_012123_utc.log",
+  "adopted_existing_scheduler_pid": 4021412,
+  "next_observation_due_utc": "2026-10-30T01:35:00+00:00",
+  "interval_minutes": 30,
+  "max_observations": 48,
+  "scope": "Record existing L training; stop recorder on alerts or L completion; no training modifications",
+  "remote_requests_during_launch": 0,
+  "state": {
+    "status": "ADOPTING_EXISTING_SCHEDULE_NO_REMOTE_REQUEST",
+    "pid": 4034427,
+    "proc_start_ticks": "56900372",
+    "updated_at_utc": "2026-10-30T01:21:23.480697+00:00",
+    "training_changes": false,
+    "prior_state": "/home/ubuntu/diff/gaosi_lora/records/scheduled_check_20261030_0935.json",
+    "next_observation_due_utc": "2026-10-30T01:35:00+00:00"
+  }
+}

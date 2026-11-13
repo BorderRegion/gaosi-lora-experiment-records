@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "recorded_at_utc": "2026-11-10T16:22:39.346240+00:00",
+  "scope": "isolated primary queue fixtures using production meta result schema and actual config sidecars",
+  "cases": [
+    {
+      "core_steps": 2560,
+      "simulated_new_stages": 6,
+      "completed_stage_results_reused": 2,
+      "preserved_completed_files": 6,
+      "all_five_phi_freezes_from_simulated_outputs": true,
+      "production_meta_result_schema_without_config": true,
+      "model_or_training_executed": false
+    },
+    {
+      "core_steps": 3584,
+      "simulated_new_stages": 6,
+      "completed_stage_results_reused": 2,
+      "preserved_completed_files": 6,
+      "all_five_phi_freezes_from_simulated_outputs": true,
+      "production_meta_result_schema_without_config": true,
+      "model_or_training_executed": false
+    },
+    {
+      "core_steps": 2560,
+      "corruption_rejected": "config",
+      "scope": "ISOLATED_SIMULATION_NO_TRAINING"
+    },
+    {
+      "core_steps": 2560,
+      "corruption_rejected": "checkpoint",
+      "scope": "ISOLATED_SIMULATION_NO_TRAINING"
+    }
+  ],
+  "source_sha256": {
+    "records/organization_clean_pairing_20261110_1620/organization_queue_corrected_v2.py": "7e3b37b630891150dd6f939dc21dc52c5d4024e962d50c38151aa80cfa6e5724",
+    "records/organization_clean_pairing_20261110_1620/prepare.py": "553995f2dbeb34a884f7cc88dfd791f9ee436efbb2f7083f681615a62132fc5a",
+    "records/organization_clean_pairing_20261110_1620/publish.py": "5c9aa355e3350a2c9c59e1c20b8724b39173a92a004c485907b383d95b78f449",
+    "records/organization_clean_pairing_20261110_1620/validate.py": "31124cda05b98a02a4189abb4928e9c942ce08821789387d94f12bcdae14f6cb"
+  },
+  "previous_candidate_preserved_sha256": "c2fbe946e27f1eb01da102229dcd3215332012c6edc7e78b8caa2a4a92af3db5",
+  "production_sources_sha256": {
+    "gaosi/meta.py": "f9cf49a2975791fa3466e6caaa31bb8312a20eec64244a4f33d205cf1607ca69",
+    "gaosi/runtime.py": "6d38d86b1985a4238abc00c7c960cc3a28dcd5eb11f07de15dd1ecf2edba4e86",
+    "tools/train_guarded_meta.py": "2ba1c7922b84efcf4adf9dbc669e2e6039f51797b8649810809d376b30da7d68",
+    "tools/guarded_pipeline.py": "86074a3cb14dbfa9d8a38496a61efeb0efec2a3653aecf0fb631320f6d72ac02",
+    "records/pipeline_observed_blocking_v8/tools/organization_queue.py": "ea06746497d5772d7fc2a462fe4020a64204b26b441efcca7f844cc0c7776b69"
+  },
+  "training_or_controller_modified": false,
+  "numerical_derivatives_or_efficacy_validated": false,
+  "full_goal_complete": false
+}

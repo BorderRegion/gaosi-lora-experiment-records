@@ -1,0 +1,24 @@
+{
+  "recorded_at_utc": "2026-11-03T17:51:41.349316+00:00",
+  "observation": "records/pipeline_monitor_20261103_175111_utc",
+  "result": {
+    "status": "WAITING_FOR_REVIEWED_ENDPOINTS_AND_EXISTING_H2_DEV",
+    "missing": [
+      "runs/phi_mix_O1_L_H1_commonwarm_s17_observed_blocking_v8/result.json",
+      "runs/phi_mix_O1_L_H1_commonwarm_s17_observed_blocking_v8/phi_2560.pt",
+      "records/pipeline_observed_blocking_v8/reviews/phi_mix_O1_L_H1_commonwarm_s17_observed_blocking_v8.json",
+      "runs/phi_dev_L_2560_t0_clean_s17/result.json",
+      "runs/phi_dev_L_2560_t0_medium_s17/result.json",
+      "runs/phi_dev_L_2560_t1_clean_s17/result.json",
+      "runs/phi_dev_L_2560_t1_medium_s17/result.json",
+      "runs/phi_dev_L_2560_t2_clean_s17/result.json",
+      "runs/phi_dev_L_2560_t2_medium_s17/result.json",
+      "runs/phi_dev_L_2560_t3_clean_s17/result.json",
+      "runs/phi_dev_L_2560_t3_medium_s17/result.json",
+      "runs/phi_dev_L_2560_t4_clean_s17/result.json",
+      "runs/phi_dev_L_2560_t4_medium_s17/result.json"
+    ],
+    "training_started_or_modified": false,
+    "method_validated": false
+  }
+}

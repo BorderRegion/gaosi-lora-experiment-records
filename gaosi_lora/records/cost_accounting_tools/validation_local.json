@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "scope": "CPU fixtures only; no actual cost measurement",
+  "tests": [
+    "thirty_seconds_queue_excluded_from_two_minute_wrapper",
+    "failed_run_cost_retained",
+    "stale_running_status_never_extended_to_now",
+    "waiting_only_and_missing_acquisition_not_device_time",
+    "ambiguous_repeated_acquisition_rejected",
+    "overlap_nested_and_separate_intervals_counted_once",
+    "file_aggregation_ignores_cpu_time_preserves_hashes_and_partial_log"
+  ],
+  "observed_at_utc": "2026-10-29T23:05:03.630152+00:00",
+  "source_sha256": {
+    "summarize_job_costs.py": "5fa6b6ccedddd34b7db2869cf01904da1445ef682eb0eba5fae45e8de9e75768",
+    "validate_job_costs.py": "51ff25eafe8aed37b3bbf92c337dc84ce0c242ce8d3d9f899f53b968b8098bee"
+  },
+  "remote_cpu_validation": {
+    "status": "PASS",
+    "matching_source_hashes": true,
+    "scope": "same seven CPU fixture cases only; no live training reads"
+  },
+  "inspection_source_sha256": "c89a508094edcca5900fd293dacc6fde2f1d26ad001fc4c9c815d725bf1dc6b9"
+}

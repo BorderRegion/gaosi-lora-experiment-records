@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "scope": "CPU-only temporary launch-preflight fixture",
+  "tests": [
+    "running_L_stops_launch_before_review_or_subprocess",
+    "PASS_L_requires_exact_completed_evidence_review",
+    "reviewed_clean_state_passes_preflight_without_starting",
+    "changed_numerical_source_rejected",
+    "old_downstream_results_existing_jobs_and_previous_launch_rejected",
+    "old_running_controller_blocks_new_pipeline"
+  ],
+  "real_training_started_or_modified": false,
+  "tested_source_sha256": {
+    "tools/start_observed_v8_pipeline.py": "84fc69fcfea752df709f3aa30d8100b7627431738658d5ee1137f53c4985c6d9",
+    "tools/validate_observed_v8_launch.py": "8216f7675e19eaf9874ed4fef2a3001d75c70017c5a6eb69766da8f7c3dcd07f",
+    "tools/guarded_pipeline.py": "86074a3cb14dbfa9d8a38496a61efeb0efec2a3653aecf0fb631320f6d72ac02"
+  }
+}

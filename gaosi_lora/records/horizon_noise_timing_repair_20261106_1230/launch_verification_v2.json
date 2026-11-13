@@ -1,0 +1,71 @@
+{
+  "status": "CONTINUATION_V2_LIVE_WITH_NEXT_DECLARED_H1_QUEUED_ORIGINAL_STATE_UNCHANGED",
+  "verified_at_utc": "2026-11-06T12:35:29.549251+00:00",
+  "controller": {
+    "name": "phi_horizon_effect_comparison_s17_noise_timing_v2",
+    "command": [
+      "/usr/bin/python",
+      "-u",
+      "records/horizon_effect_comparison_20261103_1005/compare_noise_timing_v2.py",
+      "run"
+    ],
+    "wrapper_pid": 577744,
+    "started_at_utc": "2026-11-06T12:33:34.029276+00:00",
+    "start_epoch": 1793968414.0292954,
+    "status": "RUNNING",
+    "child_pid": 577745,
+    "child_proc_start_ticks": "124248353"
+  },
+  "controller_identity": {
+    "pid": 577745,
+    "start_ticks": "124248353",
+    "cmdline": "/usr/bin/python -u records/horizon_effect_comparison_20261103_1005/compare_noise_timing_v2.py run ",
+    "blocking": [
+      "MUSA_LAUNCH_BLOCKING=1"
+    ]
+  },
+  "second_H1_job": {
+    "name": "phi_horizon_L_H1_2560_t0_medium_s17_v1",
+    "command": [
+      "/usr/bin/env",
+      "MUSA_LAUNCH_BLOCKING=1",
+      "/usr/bin/python",
+      "-u",
+      "-m",
+      "gaosi.recover",
+      "--config",
+      "configs/phi_horizon_L_H1_2560_t0_medium_s17_v1.json"
+    ],
+    "wrapper_pid": 577817,
+    "started_at_utc": "2026-11-06T12:33:46.537735+00:00",
+    "start_epoch": 1793968426.537756,
+    "status": "RUNNING",
+    "device_lock": {
+      "path": "/tmp/gaosi_musa_device0.lock",
+      "version": 1
+    },
+    "child_pid": 577818,
+    "child_proc_start_ticks": "124249604"
+  },
+  "second_H1_identity": {
+    "pid": 577818,
+    "start_ticks": "124249604",
+    "cmdline": "/usr/bin/python -u /root/autodl-tmp/gaosi_lora/tools/device_guard.py --job-name phi_horizon_L_H1_2560_t0_medium_s17_v1 --lock-path /tmp/gaosi_musa_device0.lock -- /usr/bin/env MUSA_LAUNCH_BLOCKING=1 /usr/bin/python -u -m gaosi.recover --config configs/phi_horizon_L_H1_2560_t0_medium_s17_v1.json ",
+    "blocking": [
+      "MUSA_LAUNCH_BLOCKING=1"
+    ]
+  },
+  "wrapper_holds_original_instance_lock_fds": [
+    "3"
+  ],
+  "original15_identity_counts": {
+    "RUNNING": 14,
+    "PASS": 1
+  },
+  "first_completed_H1_not_retried": true,
+  "numerical_source_files_sha256_verified": 25,
+  "device_lock_inode": 31148027670,
+  "launch_sha256": "9d5439ff3a6da27e0bad558123236efb1146d4d104a2647de57e9abb069a4816",
+  "method_validated": false,
+  "full_goal_complete": false
+}

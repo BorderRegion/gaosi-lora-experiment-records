@@ -1,0 +1,26 @@
+{
+  "name": "phi_mix_O1_X_specialize512_s17_observed_blocking_v8",
+  "command": [
+    "/usr/bin/env",
+    "MUSA_LAUNCH_BLOCKING=1",
+    "/usr/bin/python",
+    "-u",
+    "tools/train_guarded_meta.py",
+    "run",
+    "--manifest",
+    "records/pipeline_observed_blocking_v8/meta_entries/phi_mix_O1_X_specialize512_s17_observed_blocking_v8.json"
+  ],
+  "wrapper_pid": 68658,
+  "started_at_utc": "2026-11-10T00:37:02.344696+00:00",
+  "start_epoch": 1794271022.3447187,
+  "status": "PASS",
+  "device_lock": {
+    "path": "/tmp/gaosi_musa_device0.lock",
+    "version": 1
+  },
+  "child_pid": 68659,
+  "child_proc_start_ticks": "154509185",
+  "exit_code": 0,
+  "wall_seconds": 44237.745111227036,
+  "finished_at_utc": "2026-11-10T12:54:20.089839+00:00"
+}

@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "independent_phi_seeds": [
+    29,
+    43
+  ],
+  "start": "Fresh Phi initialization and fresh meta Adam for each mixed/clean rule, selected architecture only. Never initialize an independent seed from seed17 phi.",
+  "meta_order": "Permute the same meta worlds and paired meta parents with each independent seed; support/noise episode seeds also change. O4 history/current pairs stay attached.",
+  "training_budget": "Exactly the development-selected core2560 or single extension3584, plus512 organization updates. Clean O1 trained from scratch at the same total budget. No new rank/LR/q/K/architecture search.",
+  "second_organization": "After all sixteen eight-round pilots: O2/O3/O4 score=.5*(abs(clean phi minus clean Adam)+abs(noise phi minus noise Adam)), each contrast averages mean history and mean new-night mean(candidate,EM) over rounds1..8. Highest score; tie O2 then O3 then O4. Selection uses magnitude including negative results and is reported, not treated as confirmatory evidence.",
+  "continual": "O1 and selected second organization, clean/noise stock Adam and clean/noise own mixed phi, two new eight-round orders. Same first8 final fact worlds, disjoint original four probes, budgets and learning rates. Common rank16 probes at0/4/8 and inference measurements unchanged.",
+  "main_tasks": "Known final parent plus first4 final fact and first4 final rule worlds by ID, fixed before results.",
+  "main_methods": [
+    "standard_adam",
+    "paired_adam",
+    "factor_lr",
+    "phi_mix",
+    "phi_clean"
+  ],
+  "main_doses": "zero and frozen medium, actual frozen primary K, noise1729; all methods share damaged adapter bytes and independent support seed within each replicate.",
+  "selective": "Full and25%R, stock Adam/own mixed phi, Dplus/Dminus, medium/noise1729, actual primary K; complete selected-R endpoint coverage.",
+  "reflow": "Both frozen LRs, pure complete R for20/80 from each full/quarter-R primary Dminus Adam/phi endpoint, plus matched retain-only. Fixed entity request also repeats Adam/phi Dminus and two-of-eight teaching20/80 with matched retain-only.",
+  "parent_scope": "Existing meta parents, O4 history/current parents and final all/retain/entity parents are shared. These are independent phi training/support/order confirmations conditional on shared parents, not independent parent training or independent noise replicates.",
+  "data_permission": "Only meta parents/worlds and inner/meta-query language enter phi gradients. Shared final parents/outcomes never select initialization, training budget, rates, doses, stopping or structure. Only second-organization selection uses the explicitly exploratory pilot rule.",
+  "inference": "Aggregate by world/entity within each independent phi seed; do not count task/noise/round repeats as independent phi training. Retain seed17 pilot selection separately from seed29/43 confirmation.",
+  "formal_outcomes_select_training_settings": false
+}

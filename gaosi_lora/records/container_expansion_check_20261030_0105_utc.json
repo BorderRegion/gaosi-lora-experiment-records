@@ -1,0 +1,163 @@
+{
+  "observed_at_utc": "2026-10-30T01:04:31.744166+00:00",
+  "job": "phi_mix_O1_L_H2_core_s17_recompute_v7",
+  "job_status": "RUNNING",
+  "identity_live": true,
+  "pid": 344804,
+  "pid_start_ticks": "58376943",
+  "config_sha256": "f70511613b15835c3eae3ea0fa86e937bb51bf3559301c600a4f9206fca414bc",
+  "config_sha_matches_manifest": true,
+  "checkpoint_sha256": "b9558d899362f2fa79f8a40528befb7f7ce3b4734daf95f3ca9285be0e0f34b8",
+  "checkpoint_config_matches": true,
+  "checkpoint_phi_and_optimizer_finite": true,
+  "completed_episodes": 53,
+  "inner_updates": 424,
+  "optimizer_steps": [
+    53,
+    53,
+    53,
+    53,
+    53,
+    53
+  ],
+  "latest_episode_end": {
+    "event": "episode_end",
+    "utc": "2026-10-30T01:02:09.766990+00:00",
+    "process_wall_seconds": 12423.525568246841,
+    "episode": 52,
+    "inner_updates": 424,
+    "phi_grad_norm": 0.012634190658937903,
+    "compute_counters": {
+      "loss_forwards": 14294,
+      "loss_backwards": 14084,
+      "input_tokens": 7116566,
+      "supervised_tokens": 1423534,
+      "hessian_vector_products": 2122
+    },
+    "query_task": 0.03998461738228798,
+    "query_language": 1.2389838695526123,
+    "query_keep": 0.03998461738228798,
+    "objective": 0.03998461738228798
+  },
+  "last_event": {
+    "event": "inner",
+    "utc": "2026-10-30T01:04:26.472464+00:00",
+    "process_wall_seconds": 12560.231029748917,
+    "episode": 53,
+    "k": 8,
+    "ld": 0.03224372863769531,
+    "lr": 0.8615818023681641,
+    "task_tokens": 528,
+    "language_tokens": 1022,
+    "support_forwards": 18,
+    "keep_tokens": 528,
+    "keep_forwards": 8,
+    "step_seconds": 13.718118906021118,
+    "exact_window": true,
+    "cpu_rss_bytes": 8095211520,
+    "allocated_bytes": 17670976000,
+    "reserved_bytes": 34007416832,
+    "peak_allocated_bytes": 31309677056,
+    "peak_reserved_bytes": 34007416832
+  },
+  "large_preclip_norms": [
+    {
+      "episode": 7,
+      "norm": 2.107110211611566e+25
+    }
+  ],
+  "unparsed_event_lines": 0,
+  "controllers": {
+    "phi_core_queue_recompute_v7": {
+      "status": "RUNNING",
+      "identity_live": true,
+      "child_pid": 379869
+    },
+    "phi_development_queue_recompute_v7": {
+      "status": "RUNNING",
+      "identity_live": true,
+      "child_pid": 379871
+    },
+    "organization_queue_recompute_v7": {
+      "status": "RUNNING",
+      "identity_live": true,
+      "child_pid": 379873
+    },
+    "final_parent_queue_recompute_v7": {
+      "status": "RUNNING",
+      "identity_live": true,
+      "child_pid": 379875
+    },
+    "formal_recovery_queue_recompute_v7": {
+      "status": "RUNNING",
+      "identity_live": true,
+      "child_pid": 379877
+    },
+    "reflow_queue_recompute_v7": {
+      "status": "RUNNING",
+      "identity_live": true,
+      "child_pid": 379879
+    },
+    "continual_queue_recompute_v7": {
+      "status": "RUNNING",
+      "identity_live": true,
+      "child_pid": 379881
+    },
+    "seven_b_queue_recompute_v7": {
+      "status": "RUNNING",
+      "identity_live": true,
+      "child_pid": 379885
+    },
+    "horizon_queue_recompute_v7": {
+      "status": "RUNNING",
+      "identity_live": true,
+      "child_pid": 379887
+    },
+    "confirmation_queue_recompute_v7": {
+      "status": "RUNNING",
+      "identity_live": true,
+      "child_pid": 379889
+    },
+    "noise_controls_queue_recompute_v7": {
+      "status": "RUNNING",
+      "identity_live": true,
+      "child_pid": 379891
+    },
+    "recovery_statistics_queue_recompute_v7": {
+      "status": "RUNNING",
+      "identity_live": true,
+      "child_pid": 379893
+    },
+    "selective_statistics_queue_recompute_v7": {
+      "status": "RUNNING",
+      "identity_live": true,
+      "child_pid": 379895
+    },
+    "reflow_statistics_queue_recompute_v7": {
+      "status": "RUNNING",
+      "identity_live": true,
+      "child_pid": 379897
+    },
+    "continual_statistics_queue_recompute_v7": {
+      "status": "RUNNING",
+      "identity_live": true,
+      "child_pid": 379899
+    }
+  },
+  "storage_GiB": {
+    "/root/autodl-tmp": {
+      "free": 983.47,
+      "total": 1050
+    },
+    "/": {
+      "free": 18.08,
+      "total": 30
+    }
+  },
+  "mount": "/dev/md0[/docker/volumes/autodl-container-kaltlgmeta-f374ee08-storage/_data] /root/autodl-tmp xfs",
+  "pid1_start": "Thu Oct 29 16:36:15 2026",
+  "gpu_command": "/usr/bin/mthreads-gmi",
+  "gpu_returncode": 0,
+  "gpu_output": "Fri Oct 30 09:04:31 2026\n---------------------------------------------------------------------\n    mthreads-gmi:2.4.2           Driver Version:5.2.0-server\n---------------------------------------------------------------------\nID   Name                 |PCIe                |%GPU  Mem             \n     Device Type   Perf   |Pcie Lane Width     |Temp  MPC Capable     \n                                               |      ECC Mode        \n+-------------------------------------------------------------------+\n0    MTT S4000            |00000000:1a:00.0    |93%   33890MiB(49152MiB)\n     Physical      N/A    |16x(16x)            |56C   YES             \n                                               |      N/A             \n---------------------------------------------------------------------\n\n---------------------------------------------------------------------\nProcesses:\nID   PID           Process name                           GPU Memory\n                                                               Usage\n+-------------------------------------------------------------------+\n0    344804        /usr/bin/python                          33890MiB\n---------------------------------------------------------------------\n",
+  "numerical_scope": "Finite state and progress only; earlier gradient spike remains unresolved."
+}

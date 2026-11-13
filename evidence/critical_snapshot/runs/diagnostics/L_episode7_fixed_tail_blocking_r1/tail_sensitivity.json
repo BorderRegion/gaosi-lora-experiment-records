@@ -1,0 +1,206 @@
+{
+  "status": "SENSITIVITY_COMPLETE_REQUIRES_REVIEW",
+  "method_validated": false,
+  "prefix_and_all_boundary_state_fixed": true,
+  "phi_updates": 0,
+  "core_budget_credit": 0,
+  "raw_gradient_norm_fp64": 0.061408095366215255,
+  "tail_boundary_sha256": "fb5e609a6c890263d2c86643bb79ed3c5927a240abe2eba27574812ec8d3b6a0",
+  "analytic_terminal": {
+    "query_task": 0.027008866891264915,
+    "query_language": 2.4372153282165527,
+    "query_keep": 0.027008866891264915,
+    "objective": 0.027008866891264915
+  },
+  "analytic_tail_inner": [
+    {
+      "k": 7,
+      "ld": 0.05170612037181854,
+      "lr": 1.0387866497039795
+    },
+    {
+      "k": 8,
+      "ld": 0.014408503659069538,
+      "lr": 1.0356216430664062
+    }
+  ],
+  "measurements": [
+    {
+      "epsilon": 0.001,
+      "values": [
+        {
+          "sign": 1,
+          "terminal": {
+            "query_task": 0.027270440012216568,
+            "query_language": 2.4364657402038574,
+            "query_keep": 0.027270440012216568,
+            "objective": 0.027270440012216568
+          },
+          "tail_inner": [
+            {
+              "k": 7,
+              "ld": 0.05170612037181854,
+              "lr": 1.0387866497039795
+            },
+            {
+              "k": 8,
+              "ld": 0.015611432492733002,
+              "lr": 1.0359541177749634
+            }
+          ]
+        },
+        {
+          "sign": -1,
+          "terminal": {
+            "query_task": 0.0265278909355402,
+            "query_language": 2.437307357788086,
+            "query_keep": 0.0265278909355402,
+            "objective": 0.0265278909355402
+          },
+          "tail_inner": [
+            {
+              "k": 7,
+              "ld": 0.05170612037181854,
+              "lr": 1.0387866497039795
+            },
+            {
+              "k": 8,
+              "ld": 0.014259159564971924,
+              "lr": 1.035298228263855
+            }
+          ]
+        }
+      ],
+      "central_difference": 0.37127453833818436,
+      "analytic_directional": 0.061408095366215255,
+      "relative_discrepancy": 0.8346019211522654
+    },
+    {
+      "epsilon": 0.01,
+      "values": [
+        {
+          "sign": 1,
+          "terminal": {
+            "query_task": 0.02727237343788147,
+            "query_language": 2.436882734298706,
+            "query_keep": 0.02727237343788147,
+            "objective": 0.02727237343788147
+          },
+          "tail_inner": [
+            {
+              "k": 7,
+              "ld": 0.05170612037181854,
+              "lr": 1.0387866497039795
+            },
+            {
+              "k": 8,
+              "ld": 0.014756842516362667,
+              "lr": 1.0357710123062134
+            }
+          ]
+        },
+        {
+          "sign": -1,
+          "terminal": {
+            "query_task": 0.026804037392139435,
+            "query_language": 2.436936855316162,
+            "query_keep": 0.026804037392139435,
+            "objective": 0.026804037392139435
+          },
+          "tail_inner": [
+            {
+              "k": 7,
+              "ld": 0.05170612037181854,
+              "lr": 1.0387866497039795
+            },
+            {
+              "k": 8,
+              "ld": 0.015144944190979004,
+              "lr": 1.0355749130249023
+            }
+          ]
+        }
+      ],
+      "central_difference": 0.023416802287101746,
+      "analytic_directional": 0.061408095366215255,
+      "relative_discrepancy": 0.618669132343992
+    },
+    {
+      "epsilon": 0.1,
+      "values": [
+        {
+          "sign": 1,
+          "terminal": {
+            "query_task": 0.03427060693502426,
+            "query_language": 2.4360342025756836,
+            "query_keep": 0.03427060693502426,
+            "objective": 0.03427060693502426
+          },
+          "tail_inner": [
+            {
+              "k": 7,
+              "ld": 0.05170612037181854,
+              "lr": 1.0387866497039795
+            },
+            {
+              "k": 8,
+              "ld": 0.015537509694695473,
+              "lr": 1.0364068746566772
+            }
+          ]
+        },
+        {
+          "sign": -1,
+          "terminal": {
+            "query_task": 0.022408777847886086,
+            "query_language": 2.4369544982910156,
+            "query_keep": 0.022408777847886086,
+            "objective": 0.022408777847886086
+          },
+          "tail_inner": [
+            {
+              "k": 7,
+              "ld": 0.05170612037181854,
+              "lr": 1.0387866497039795
+            },
+            {
+              "k": 8,
+              "ld": 0.014995859935879707,
+              "lr": 1.036321759223938
+            }
+          ]
+        }
+      ],
+      "central_difference": 0.05930914543569088,
+      "analytic_directional": 0.061408095366215255,
+      "relative_discrepancy": 0.03418034573466269
+    }
+  ],
+  "limitations": [
+    "BF16 rounding prevents treating these differences as an FP64 proof.",
+    "A normal isolated replay does not validate previous giant gradients."
+  ],
+  "baseline_terminal": {
+    "query_task": 0.027008866891264915,
+    "query_language": 2.4372153282165527,
+    "query_keep": 0.027008866891264915,
+    "objective": 0.027008866891264915
+  },
+  "baseline_tail_inner": [
+    {
+      "k": 7,
+      "ld": 0.05170612037181854,
+      "lr": 1.0387866497039795
+    },
+    {
+      "k": 8,
+      "ld": 0.014408503659069538,
+      "lr": 1.0356216430664062
+    }
+  ],
+  "baseline_terminal_exactly_equal": true,
+  "baseline_inner_exactly_equal": true,
+  "boundary_unchanged": true,
+  "phi_unchanged": true,
+  "base_unchanged": true
+}

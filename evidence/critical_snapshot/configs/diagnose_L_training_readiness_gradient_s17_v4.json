@@ -1,0 +1,9 @@
+{
+  "out": "runs/diagnose_L_training_readiness_gradient_s17_v4",
+  "device": "musa",
+  "source_config": "configs/phi_L_real_episode_readiness_s17.json",
+  "source_config_sha256": "dedfe92961ffd2969a4b601b141583f51d4e77c5bfc11ac59a7e873a453896ea",
+  "purpose": "Capture raw and clipped gradients using original train() readiness; never promote diagnostic phi",
+  "formal_data_used": false,
+  "script_sha256": "fc211dff8b48a8e15a0e444ecac7ba84e7a99a3b53bb2e0ac77bd7637d64ed99"
+}

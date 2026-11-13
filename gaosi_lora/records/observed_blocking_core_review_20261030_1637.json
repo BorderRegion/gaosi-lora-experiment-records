@@ -1,0 +1,38 @@
+{
+  "reviewed_at_utc": "2026-10-30T16:38:04.532060+00:00",
+  "previous_goal_turn": "progress",
+  "current_goal_turn": "verified_wait_and_new_training_evidence",
+  "wait_handle": 68150,
+  "wait_remote_polls": 0,
+  "observer_live_pid": 202579,
+  "observer_start_ticks": "59350385",
+  "observation": {
+    "observation": "records/observed_blocking_core_monitor_20261030_163642_utc",
+    "archive_sha256": "d43f0490cd421e9934ea92cfa48f0b76bb84495f2123c02225a00e2c23d3d8b4",
+    "verified_source_files": 42,
+    "job_status": "RUNNING",
+    "alerts": [],
+    "production_modified_or_restarted": false
+  },
+  "archive_independently_verified": true,
+  "independently_rehashed_files": 42,
+  "committed_episodes": 48,
+  "committed_inner_updates": 384,
+  "fraction_of_current_L_budget": 0.15,
+  "all_raw_gradients_finite": true,
+  "max_raw_norm": 0.22966086724073495,
+  "guard_errors": [],
+  "checkpoint": {
+    "copied_artifact_sha256": "65ec89536255a56d9ed663f3d8c9aba4545ba7a6355f7a9cb381e4f5027bb528",
+    "next_episode": 48,
+    "inner_updates": 384,
+    "phi_finite": true,
+    "optimizer_finite": true,
+    "config_equal": true
+  },
+  "next_due_at_utc": "2026-10-30T17:06:43.060522+00:00",
+  "method_validated": false,
+  "downstream_promotion_allowed": false,
+  "production_modified_or_restarted": false,
+  "full_goal": "incomplete; L/X, comparisons, organizations, formal evaluation, continual, 7B and independent phi seeds still require execution/review"
+}

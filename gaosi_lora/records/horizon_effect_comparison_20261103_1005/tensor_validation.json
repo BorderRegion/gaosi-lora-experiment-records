@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "scope": "tiny_CPU_tensor_pairing_fixtures_only",
+  "checks": [
+    "accept_identical_CPU_initial_and_stream_pair",
+    "reject_changed_initial_noise_metadata",
+    "reject_changed_saved_stream_cursor",
+    "reject_changed_per_step_effective_tokens",
+    "reject_changed_initial_evaluation",
+    "tensor_digest_changes_with_adapter_bytes"
+  ],
+  "GPU_used": false,
+  "method_validated": false
+}

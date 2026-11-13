@@ -1,0 +1,139 @@
+{
+  "status": "SINGLE_DETACHED_FROZEN_HORIZON_COMPARISON_CONTROLLER_STARTED",
+  "launched_at_utc": "2026-11-06T08:00:21.515965+00:00",
+  "job": {
+    "name": "phi_horizon_effect_comparison_s17_v1",
+    "command": [
+      "/usr/bin/python",
+      "-u",
+      "records/horizon_effect_comparison_20261103_1005/compare.py",
+      "run"
+    ],
+    "wrapper_pid": 501760,
+    "started_at_utc": "2026-11-06T08:00:21.450502+00:00",
+    "start_epoch": 1793952021.450523,
+    "status": "RUNNING",
+    "child_pid": 501761,
+    "child_proc_start_ticks": "122609095"
+  },
+  "wrapper_identity": {
+    "pid": 501760,
+    "start_ticks": "122609091"
+  },
+  "controller_identity": {
+    "pid": 501761,
+    "start_ticks": "122609095"
+  },
+  "controller_instance_lock": "records/horizon_effect_comparison_20261103_1005/controller_instance.lock",
+  "instance_lock_inode": 30085088224,
+  "device_lock_inode": 31148027670,
+  "command": [
+    "/usr/bin/python",
+    "-u",
+    "tools/job.py",
+    "--name",
+    "phi_horizon_effect_comparison_s17_v1",
+    "--",
+    "/usr/bin/python",
+    "-u",
+    "records/horizon_effect_comparison_20261103_1005/compare.py",
+    "run"
+  ],
+  "readiness": {
+    "status": "READY_NOT_STARTED",
+    "pairs": 10,
+    "method_validated": false
+  },
+  "last_H2_cell_audit": "records/development_completion_20261104_2358/phi_dev_L_2560_t4_medium_s17.json",
+  "last_H2_cell_audit_sha256": "7a6c073389ac0ba3bffdecf472c3350a1316f4066a3b460993b452b652d195b1",
+  "frozen_inputs_sha256": "03613f730312227e91909a56c50ccc2b55240e353948ef28fa58b1cef06172cc",
+  "comparison_source_sha256": "0db6c3d8b589957f99d3ae21fb08c2504d199c5838f63124ffa2f56221b9d775",
+  "launcher_sha256": "f4bcfcdbacfced1725237e938160d6ebbc25d58338a24d8783020d11f9693ea0",
+  "original_15_controllers_unchanged": {
+    "phi_core_queue_observed_blocking_v8": {
+      "status": "PASS"
+    },
+    "phi_development_queue_observed_blocking_v8": {
+      "status": "RUNNING",
+      "pid": 761614,
+      "start_ticks": "80739105"
+    },
+    "organization_queue_observed_blocking_v8": {
+      "status": "RUNNING",
+      "pid": 761616,
+      "start_ticks": "80739115"
+    },
+    "final_parent_queue_observed_blocking_v8": {
+      "status": "RUNNING",
+      "pid": 761618,
+      "start_ticks": "80739125"
+    },
+    "formal_recovery_queue_observed_blocking_v8": {
+      "status": "RUNNING",
+      "pid": 761620,
+      "start_ticks": "80739135"
+    },
+    "reflow_queue_observed_blocking_v8": {
+      "status": "RUNNING",
+      "pid": 761624,
+      "start_ticks": "80739145"
+    },
+    "continual_queue_observed_blocking_v8": {
+      "status": "RUNNING",
+      "pid": 761626,
+      "start_ticks": "80739155"
+    },
+    "seven_b_queue_observed_blocking_v8": {
+      "status": "RUNNING",
+      "pid": 761628,
+      "start_ticks": "80739165"
+    },
+    "horizon_queue_observed_blocking_v8": {
+      "status": "RUNNING",
+      "pid": 761630,
+      "start_ticks": "80739175"
+    },
+    "confirmation_queue_observed_blocking_v8": {
+      "status": "RUNNING",
+      "pid": 761695,
+      "start_ticks": "80739193"
+    },
+    "noise_controls_queue_observed_blocking_v8": {
+      "status": "RUNNING",
+      "pid": 761697,
+      "start_ticks": "80739205"
+    },
+    "recovery_statistics_queue_observed_blocking_v8": {
+      "status": "RUNNING",
+      "pid": 761699,
+      "start_ticks": "80739216"
+    },
+    "selective_statistics_queue_observed_blocking_v8": {
+      "status": "RUNNING",
+      "pid": 761701,
+      "start_ticks": "80739226"
+    },
+    "reflow_statistics_queue_observed_blocking_v8": {
+      "status": "RUNNING",
+      "pid": 761703,
+      "start_ticks": "80739236"
+    },
+    "continual_statistics_queue_observed_blocking_v8": {
+      "status": "RUNNING",
+      "pid": 761705,
+      "start_ticks": "80739246"
+    }
+  },
+  "env_selected": {
+    "OMP_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "MUSA_LAUNCH_BLOCKING": "1"
+  },
+  "numerical_leaves_use_existing_guarded_pipeline_and_GPU_lock": true,
+  "controller_holds_GPU_lock": false,
+  "original_controllers_restarted": false,
+  "frozen_numerical_sources_modified": false,
+  "scientific_promotion_created": false,
+  "method_validated": false,
+  "full_goal_complete": false
+}

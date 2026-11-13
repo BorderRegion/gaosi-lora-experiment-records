@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "scope": "CPU random tiny Qwen only; no MUSA/acquisition/effect evidence",
+  "tests": {
+    "O4_parent_half_language_half_history_matches_independent_stock_Adam": "PASS",
+    "O4_parent_resume_preserves_retention_stream_reference_and_updates_bitwise": "PASS",
+    "O2_real_known_and_new_meta_episodes_exact_H2": "PASS",
+    "O3_real_known_and_new_meta_episodes_exact_H2": "PASS",
+    "O4_real_known_and_new_meta_episodes_exact_H2": "PASS",
+    "O4_unpaired_historical_base_is_rejected": "PASS",
+    "historical_FP32_master_not_mutated_by_parent_or_meta_training": "PASS"
+  }
+}

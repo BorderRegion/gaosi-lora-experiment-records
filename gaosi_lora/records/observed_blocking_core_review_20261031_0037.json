@@ -1,0 +1,46 @@
+{
+  "reviewed_at_utc": "2026-10-31T00:37:28.755495+00:00",
+  "previous_goal_turn": "verified_wait_and_new_training_evidence",
+  "current_goal_turn": "verified_wait_and_new_training_evidence",
+  "observer_live": true,
+  "observer_pid": 202579,
+  "observer_start_ticks": "59350385",
+  "observation": {
+    "observation": "records/observed_blocking_core_monitor_20261031_003645_utc",
+    "archive_sha256": "e64f48438e0a0520a188eef6fbd71e1a22ecb20b300e30708d9f0c9290953c7c",
+    "verified_source_files": 43,
+    "job_status": "RUNNING",
+    "alerts": [],
+    "production_modified_or_restarted": false
+  },
+  "archive_independently_verified": true,
+  "independently_rehashed_files": 43,
+  "committed_episodes": 83,
+  "committed_inner_updates": 816,
+  "all_raw_gradients_finite": true,
+  "max_raw_norm": 0.5823351201809523,
+  "guard_errors": [],
+  "checkpoint": {
+    "copied_artifact_sha256": "0ade2d690f85e18504de2c8eb41213518fe7752742500d7a5762a62551fa0d54",
+    "next_episode": 83,
+    "inner_updates": 816,
+    "phi_finite": true,
+    "optimizer_finite": true,
+    "config_equal": true
+  },
+  "production_identity": {
+    "pid": 650716,
+    "state": "S",
+    "start_ticks": "62167024",
+    "matches": true,
+    "cmdline": "/usr/bin/python -u tools/train_observed_meta.py --manifest records/observed_blocking_core_20261030_0810/training_manifest.json ",
+    "launch_blocking_environment": [
+      "MUSA_LAUNCH_BLOCKING=1"
+    ]
+  },
+  "next_due_at_utc": "2026-10-31T01:06:45.687393+00:00",
+  "method_validated": false,
+  "downstream_promotion_allowed": false,
+  "production_modified_or_restarted": false,
+  "full_goal": "incomplete; current L and subsequent full protocol execution/review remain"
+}

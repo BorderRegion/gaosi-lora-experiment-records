@@ -1,0 +1,159 @@
+{
+  "reviewed_at_utc": "2026-10-30T13:07:30.590814+00:00",
+  "status": "RUNNING_AND_OBSERVER_LIVE",
+  "archive_sha256": "fcb52866a66c9f8cea2ac7d2e665e8960955f0b7af333f1619073edf47980500",
+  "independently_verified_files": 42,
+  "observation": "records/observed_blocking_core_monitor_20261030_130642_utc",
+  "result": {
+    "observed_at_utc": "2026-10-30T13:06:42.155108+00:00",
+    "job": {
+      "name": "phi_mix_O1_L_H2_core_s17_observed_blocking_v8",
+      "command": [
+        "/usr/bin/env",
+        "MUSA_LAUNCH_BLOCKING=1",
+        "/usr/bin/python",
+        "-u",
+        "tools/train_observed_meta.py",
+        "--manifest",
+        "records/observed_blocking_core_20261030_0810/training_manifest.json"
+      ],
+      "wrapper_pid": 650715,
+      "started_at_utc": "2026-10-30T08:06:40.741418+00:00",
+      "start_epoch": 1793347600.741437,
+      "status": "RUNNING",
+      "device_lock": {
+        "path": "/tmp/gaosi_musa_device0.lock",
+        "version": 1
+      },
+      "child_pid": 650716,
+      "child_proc_start_ticks": "62167024"
+    },
+    "identity": {
+      "pid": 650716,
+      "state": "R",
+      "start_ticks": "62167024",
+      "matches": true,
+      "cmdline": "/usr/bin/python -u tools/train_observed_meta.py --manifest records/observed_blocking_core_20261030_0810/training_manifest.json ",
+      "launch_blocking_environment": [
+        "MUSA_LAUNCH_BLOCKING=1"
+      ]
+    },
+    "method_validated": false,
+    "training_restarted_or_modified_by_observer": false,
+    "storage_GiB": {
+      "/root/autodl-tmp": {
+        "total": 1050.0,
+        "free": 982.15
+      },
+      "/": {
+        "total": 30.0,
+        "free": 18.17
+      }
+    },
+    "events.jsonl": {
+      "count": 284,
+      "last": {
+        "event": "inner",
+        "utc": "2026-10-30T13:06:18.196514+00:00",
+        "process_wall_seconds": 17970.441591739655,
+        "episode": 28,
+        "k": 2,
+        "ld": 0.04158005118370056,
+        "lr": 0.8201623558998108,
+        "task_tokens": 564,
+        "language_tokens": 1022,
+        "support_forwards": 22,
+        "keep_tokens": 564,
+        "keep_forwards": 10,
+        "step_seconds": 46.63775300979614,
+        "exact_window": false,
+        "cpu_rss_bytes": 8094949376,
+        "allocated_bytes": 11152667136,
+        "reserved_bytes": 33990639616,
+        "peak_allocated_bytes": 31286270464,
+        "peak_reserved_bytes": 33990639616
+      }
+    },
+    "committed_episodes": 28,
+    "committed_inner_updates": 224,
+    "last_episode_end": {
+      "event": "episode_end",
+      "utc": "2026-10-30T13:04:22.414945+00:00",
+      "process_wall_seconds": 17854.660025835037,
+      "episode": 27,
+      "inner_updates": 224,
+      "phi_grad_norm": 3.535265540446284e-05,
+      "compute_counters": {
+        "loss_forwards": 7552,
+        "loss_backwards": 7440,
+        "input_tokens": 3760942,
+        "supervised_tokens": 752442,
+        "hessian_vector_products": 1120
+      },
+      "query_task": 9.421768481843174e-05,
+      "query_language": 2.321542263031006,
+      "query_keep": 9.421768481843174e-05,
+      "objective": 9.421768481843174e-05
+    },
+    "last_inner": {
+      "event": "inner",
+      "utc": "2026-10-30T13:06:18.196514+00:00",
+      "process_wall_seconds": 17970.441591739655,
+      "episode": 28,
+      "k": 2,
+      "ld": 0.04158005118370056,
+      "lr": 0.8201623558998108,
+      "task_tokens": 564,
+      "language_tokens": 1022,
+      "support_forwards": 22,
+      "keep_tokens": 564,
+      "keep_forwards": 10,
+      "step_seconds": 46.63775300979614,
+      "exact_window": false,
+      "cpu_rss_bytes": 8094949376,
+      "allocated_bytes": 11152667136,
+      "reserved_bytes": 33990639616,
+      "peak_allocated_bytes": 31286270464,
+      "peak_reserved_bytes": 33990639616
+    },
+    "raw_gradients.jsonl": {
+      "count": 28,
+      "last": {
+        "episode": 27,
+        "raw_all_finite": true,
+        "raw_norm_cpu_fp64": 3.535265540446284e-05,
+        "phi_unchanged_during_rollout": true,
+        "gradient_artifact": "/root/autodl-tmp/gaosi_lora/runs/phi_mix_O1_L_H2_core_s17_observed_blocking_v8/gradient_episode_027.pt",
+        "update_authorized_by_guard": true,
+        "clip_return": 3.535265540446284e-05,
+        "clipped_all_finite": true,
+        "artifact_sha256": "e931710063753bd287a5b0c577f1721022f549abedd75576a91a807e69c5e145"
+      }
+    },
+    "all_observed_raw_gradients_finite": true,
+    "maximum_observed_raw_norm": 0.10468263021227603,
+    "gradient_guard_errors": [],
+    "checkpoint": {
+      "copied_artifact_sha256": "ecaea423f331fe6daabf768dd8030110ad4d2b5df204a09e27c5556025a549e2",
+      "next_episode": 28,
+      "inner_updates": 224,
+      "phi_finite": true,
+      "optimizer_finite": true,
+      "config_equal": true
+    },
+    "snapshot_limitation": "Individual live files may reflect adjacent moments; copied checkpoint is inspected immutably."
+  },
+  "observer_state": {
+    "status": "WAITING_UNTIL_DUE_NO_REMOTE_CONNECTION_YET",
+    "pid": 202579,
+    "proc_start_ticks": "59350385",
+    "updated_at_utc": "2026-10-30T13:06:48.832130+00:00",
+    "production_modified_or_restarted": false,
+    "due_at_utc": "2026-10-30T13:36:42.155108+00:00",
+    "observations": 10,
+    "next_observation": "records/observed_blocking_core_monitor_20261030_133642_utc"
+  },
+  "method_validated": false,
+  "downstream_started": false,
+  "training_restarted_or_modified": false
+}

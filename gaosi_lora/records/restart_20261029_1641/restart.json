@@ -1,0 +1,55 @@
+{
+  "utc": "2026-10-29T08:43:25.032590+00:00",
+  "reason": "Container restart after user-expanded data disk",
+  "boot_id": "0f99d7c6-c419-42cc-a3dc-18fc7de07ff0",
+  "disks": {
+    "/root/autodl-tmp": {
+      "total": 1127428915200,
+      "used": 41247600640,
+      "free": 1086181314560
+    },
+    "/": {
+      "total": 32212254720,
+      "used": 12606574592,
+      "free": 19605680128
+    }
+  },
+  "interrupted_jobs": [
+    "phi_core_queue_v2",
+    "calibration_queue_v2",
+    "recovery_dev_medium_lr0.0003_s17"
+  ],
+  "checkpoint_step": 8,
+  "models_present": true,
+  "archive_symlinks": 16,
+  "broken_symlinks": [],
+  "patch": "Complete a saved but pending scheduled recovery evaluation before the next update",
+  "source_sha256": {
+    "recover.py": "137254bb3a154b0113c82b841a66e75343f3a333337a465a61101881a828bafa",
+    "validate_recovery.py": "f20b1f325184f4167ad45314a1dc892b812cd5df6319355b3cf409d6caaca8a1"
+  },
+  "restarted_at_utc": "2026-10-29T08:45:19.020800+00:00",
+  "validation": "checks/recovery_restart_boundary_cpu.json",
+  "new_jobs": [
+    {
+      "name": "calibration_queue_v3",
+      "wrapper_pid": 3899,
+      "command": [
+        "/usr/bin/python",
+        "-u",
+        "records/restart_20261029_1641/continue_calibration.py"
+      ]
+    },
+    {
+      "name": "phi_core_queue_v3",
+      "wrapper_pid": 3900,
+      "command": [
+        "/usr/bin/python",
+        "-u",
+        "tools/phi_core_queue.py",
+        "--calibration-job",
+        "calibration_queue_v3"
+      ]
+    }
+  ]
+}

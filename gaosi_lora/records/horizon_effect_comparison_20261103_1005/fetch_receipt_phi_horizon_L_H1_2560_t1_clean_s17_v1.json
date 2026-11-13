@@ -1,0 +1,27 @@
+{
+  "status": "COMPLETED_DEVELOPMENT_AUDIT_AND_PREDICTION_EVIDENCE_FETCHED_AND_INDEPENDENTLY_REHASHED",
+  "recorded_at_utc": "2026-11-06T19:56:54.121722+00:00",
+  "run": "runs/phi_horizon_L_H1_2560_t1_clean_s17_v1",
+  "audit": "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t1_clean_s17_v1.json",
+  "audit_sha256": "9760277950c90a8329bdf67ffd5ffd0f9b2bbb87276f61403509cd404f145e41",
+  "archive": {
+    "archive": "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t1_clean_s17_v1_evidence.tar.gz",
+    "sha256": "119af82dcd6f7c1e00b87abf49ca290490d509e5bb422c309c73a31b8c8f0164",
+    "manifest_sha256": "d404df31bba3f18eb41335e6c8f16d382820b8b0c4e8d84f04db5e68db8d330d",
+    "files": 79,
+    "tensor_files_remotely_only": 4
+  },
+  "fetch_script_sha256": "31dd6016e5d18c661afb65b650f4d68070f7d7b00246abb50989745fb9357b19",
+  "prediction_files": 12,
+  "prediction_rows": 3264,
+  "limitations": [
+    "CPU inspection of saved tensors and re-aggregation of saved predictions only; no model forward, tokenizer or derivative recomputation.",
+    "Language NLL is checked against the event ledger; no saved per-token language audit.",
+    "Model compute counters omit direct QA candidate/generation calls; they are not total evaluation FLOPs or total model forwards.",
+    "Frozen phi/base flags plus pinned source and file identities are provenance evidence, not an independent in-memory mutation trace.",
+    "No paired-method efficacy, held-out generalization, convergence or multi-seed conclusion from one completed development cell."
+  ],
+  "method_validated": false,
+  "full_goal_complete": false,
+  "training_modified_or_restarted": false
+}

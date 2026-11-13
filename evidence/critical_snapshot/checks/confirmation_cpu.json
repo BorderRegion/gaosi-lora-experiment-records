@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "scope": "Real random tiny CPU H2 seed/init/optimizer/resume checks plus explicitly simulated full scheduling; no production MUSA/3B or formal effect evidence",
+  "checks": {
+    "simulated_complete_two_seed_grid_2560_512_and_O4_paired": "PASS",
+    "simulated_true_K32_100_recoveries_16_reflows_8_continual_per_seed_2560": "PASS",
+    "simulated_complete_two_seed_grid_3584_512_and_O3_paired": "PASS",
+    "simulated_true_K32_100_recoveries_16_reflows_8_continual_per_seed_3584": "PASS",
+    "negative_pilot_effect_can_select_second_organization": "PASS",
+    "incomplete_duplicate_measurements_rejected_and_ties_prefer_O2": "PASS",
+    "dispatcher_completion_records_do_not_claim_overall_experiment_complete": "PASS",
+    "seed17_warm_start_changed_rates_budgets_and_unpaired_parents_rejected": "PASS",
+    "entry_config_and_input_bytes_are_frozen": "PASS",
+    "final_world_rows_rejected_even_with_redeclared_input_hashes": "PASS",
+    "K64_endpoint_cannot_replace_true_primary_K32_confirmation": "PASS",
+    "even_stock_Adam_validates_phi_freeze_before_opening_task_data": "PASS",
+    "only_confirmation_leaf_uses_existing_shared_device_lock": "PASS",
+    "real_two_seed_Qwen_H2_entries_initialize_distinct_phi_zero_heads_fresh_Adam": "PASS",
+    "real_first8_updates_checkpoint_config_contains_independent_seed_and_meta_order": "PASS",
+    "real_interrupted_confirmation_resume_matches_phi_optimizer_and_episode_bitwise": "PASS",
+    "meta_entry_never_reads_final_world_files": "PASS"
+  },
+  "count": 17
+}

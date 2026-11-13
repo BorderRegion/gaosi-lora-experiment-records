@@ -1,0 +1,1 @@
+{"status": "CPU_COMPARISON_COMPLETE_REQUIRES_SCIENTIFIC_REVIEW", "episodes": 8, "same_start_and_forwards": true, "all_raw_gradients_bitwise_equal": true, "output": "records/observed_blocking_core_review_20261030_1304/prefix_comparison.json", "method_validated": false}

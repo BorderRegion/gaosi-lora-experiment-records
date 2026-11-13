@@ -1,0 +1,162 @@
+{
+  "status": "PREPARED_NOT_STARTED",
+  "modules": [
+    "phi_core",
+    "phi_development",
+    "organization",
+    "final_parent",
+    "formal_recovery",
+    "reflow",
+    "continual",
+    "seven_b",
+    "horizon",
+    "confirmation",
+    "noise_controls",
+    "recovery_statistics",
+    "selective_statistics",
+    "reflow_statistics",
+    "continual_statistics"
+  ],
+  "adopted_L_job": "phi_mix_O1_L_H2_core_s17_recompute_v7",
+  "adopted_L_config_sha256": "f70511613b15835c3eae3ea0fa86e937bb51bf3559301c600a4f9206fca414bc",
+  "sources": {
+    "phi_core_queue.py": {
+      "original_sha256": "84074b386c30a5f6ef74ba4df4f9b47f6f422c915d771ab1794810d5dff2947a",
+      "continuation_sha256": "b95cfc8fd9a79d0dc47343c6f8e3940aa8b5a2e868b0afecf0167b1c4cc82a1e"
+    },
+    "phi_development_queue.py": {
+      "original_sha256": "d6d96a004de7094e62907cebb7795caf5748a2cb1d7a1814e5045459bb7325c2",
+      "continuation_sha256": "5c1cd0281239d343358703a91ae5b7ab874c510bbdbc48d774db55380ddc2170"
+    },
+    "organization_queue.py": {
+      "original_sha256": "8492b9ed64f5af22c0c40078a5e5d768d61b70e8aaa4963dc84e20e109204c65",
+      "continuation_sha256": "3c9550285635d6bfd1e1bbf2e3db117619473ffa3681adcb73f67f18c6dcd3bf"
+    },
+    "final_parent_queue.py": {
+      "original_sha256": "419fccc4e5bd7ee3c999e69ba9c70ff09d7eb4b790fd602157f4ffce81de0046",
+      "continuation_sha256": "efa8e8b093fc5113ff72d28d659a0c89e0c0974b823cba838abe59fc4bad5c91"
+    },
+    "formal_recovery_queue.py": {
+      "original_sha256": "78a42ed4a16891678d6eaef4e9d1f19e94a36b95b24301d066199ae158508994",
+      "continuation_sha256": "90f3e0f0a91ec418a1257bbac584c18fe2171d305ee375507e4b2c9b4bb03a36"
+    },
+    "reflow_queue.py": {
+      "original_sha256": "ac5ba8c1cb228bca34b4fa999b1805d617af7dfee39d45f2981b9b0934591bb2",
+      "continuation_sha256": "d2e516715627bee6c42bfd449ffe61c0a7d00a853a51f45b8898b7fdcee6ed22"
+    },
+    "continual_queue.py": {
+      "original_sha256": "e0193e801c52c54adc789754cf5c4d0f61cff5b03a6f636ce14a6d88534f8d13",
+      "continuation_sha256": "035e1432675c2f7797cb3819b8f692c9221a6eda8b08f3f2d84c75ad89dd6ce0"
+    },
+    "seven_b_queue.py": {
+      "original_sha256": "5785b8784aef008188fa4ff41756561a485a770bc197a21af61b766a1dc0da5d",
+      "continuation_sha256": "7c838743994ab3484c6a064f6949d17885529e48edc9147d8aa5d19699972337"
+    },
+    "horizon_queue.py": {
+      "original_sha256": "f871b3a44f083ecb130bf4cf91af765e055210cb2372d799f7c2a7af6a6f27c0",
+      "continuation_sha256": "68bfe82a97de6a7a42657df0ee5b84f3185a1c517d9d102befec2ae5c2755e53"
+    },
+    "confirmation_queue.py": {
+      "original_sha256": "d19d829e575b0218bd035ac8ea106c884df04517a944754f1204816879ed99df",
+      "continuation_sha256": "aed4acf25e7d9e208c13c389f27b467980875f47fc3fb381cf7483c938bccaf5"
+    },
+    "noise_controls_queue.py": {
+      "original_sha256": "279c98a85ba49714ff5ad9f5136af2e0df842d2a1d9491ab8be802cf16c323cc",
+      "continuation_sha256": "332bcff37b49a151696aa5bc49ecf7ccb29a5678ae5f3c4f4688fd5b2f15de3c"
+    },
+    "recovery_statistics_queue.py": {
+      "original_sha256": "eff24fc77ebd53b50ff6c8293e8c9c5275a132be40e6c28d79ef71f078b594d5",
+      "continuation_sha256": "7cdf55706fdd829e1a1195d0962584a60e014f315648bd891f891a7089e01249"
+    },
+    "selective_statistics_queue.py": {
+      "original_sha256": "85cb401452a9efed210bbf9e9590a4296174f1e33e55017d57233a00772d9dad",
+      "continuation_sha256": "8bd0d3610b6a5dde1ad6ff671a40133d4c7522a3d0616922bc45e594b2f15609"
+    },
+    "reflow_statistics_queue.py": {
+      "original_sha256": "ed103a9aaaaac89b71e031d995b339573ee03847d6ae28705b19e5d88ba17076",
+      "continuation_sha256": "1a0245848505ce6437019d5e691923aefec70ea551574d51dabc2638f51835aa"
+    },
+    "continual_statistics_queue.py": {
+      "original_sha256": "c0134fec8150a3a2605b0aa8cc1d2cf9daaf76507910e4011c53296b2b68e727",
+      "continuation_sha256": "8499853c072def5960ea8b6aba671fae5cc9e0f4cb9e1d3a79268bd1cb908b80"
+    },
+    "calibration_queue.py": {
+      "original_sha256": "2b105db1c110c154ad6f7e6e162a60de8371d17bf5cbb78fe87d4140b604f3e0",
+      "continuation_sha256": "2b105db1c110c154ad6f7e6e162a60de8371d17bf5cbb78fe87d4140b604f3e0"
+    },
+    "storage.py": {
+      "original_sha256": "e584e9d3dbe4d2027a5731ef49f63b8dcfd7381e7ec3a49470c6d9798ff87656",
+      "continuation_sha256": "e584e9d3dbe4d2027a5731ef49f63b8dcfd7381e7ec3a49470c6d9798ff87656"
+    }
+  },
+  "jobs": [
+    {
+      "module": "phi_core_queue",
+      "name": "phi_core_queue_recompute_v7"
+    },
+    {
+      "module": "phi_development_queue",
+      "name": "phi_development_queue_recompute_v7"
+    },
+    {
+      "module": "organization_queue",
+      "name": "organization_queue_recompute_v7"
+    },
+    {
+      "module": "final_parent_queue",
+      "name": "final_parent_queue_recompute_v7"
+    },
+    {
+      "module": "formal_recovery_queue",
+      "name": "formal_recovery_queue_recompute_v7"
+    },
+    {
+      "module": "reflow_queue",
+      "name": "reflow_queue_recompute_v7"
+    },
+    {
+      "module": "continual_queue",
+      "name": "continual_queue_recompute_v7"
+    },
+    {
+      "module": "seven_b_queue",
+      "name": "seven_b_queue_recompute_v7"
+    },
+    {
+      "module": "horizon_queue",
+      "name": "horizon_queue_recompute_v7"
+    },
+    {
+      "module": "confirmation_queue",
+      "name": "confirmation_queue_recompute_v7"
+    },
+    {
+      "module": "noise_controls_queue",
+      "name": "noise_controls_queue_recompute_v7"
+    },
+    {
+      "module": "recovery_statistics_queue",
+      "name": "recovery_statistics_queue_recompute_v7"
+    },
+    {
+      "module": "selective_statistics_queue",
+      "name": "selective_statistics_queue_recompute_v7"
+    },
+    {
+      "module": "reflow_statistics_queue",
+      "name": "reflow_statistics_queue_recompute_v7"
+    },
+    {
+      "module": "continual_statistics_queue",
+      "name": "continual_statistics_queue_recompute_v7"
+    }
+  ],
+  "no_duplicate_L": true,
+  "old_failed_paths_preserved": true,
+  "numerical_leaf_sources_modified": false,
+  "shared_helpers": [
+    "tools/job.py",
+    "tools/device_guard.py"
+  ],
+  "stable_manifest_paths_reused_only_when_no_prior_downstream_result_exists": true
+}

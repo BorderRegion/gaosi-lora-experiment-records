@@ -1,0 +1,135 @@
+{
+  "status": "RECORDED_CORE_INNER_LEDGER_CHECKS_PASS_ONLY",
+  "reviewed_at_utc": "2026-11-03T08:53:47.694949+00:00",
+  "source": "records/X_core_completion_preparation_20261103_0852/review_core_inner_ledger.py",
+  "source_sha256": "0b097f2b30c353ec147aa817b616c8c31cb1c6d946f686ae72adcbf46a92a0f2",
+  "observation": "records/pipeline_monitor_20261103_084944_utc",
+  "run": "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8",
+  "architecture": "X",
+  "require_complete": false,
+  "full_core_episode_ledger_present": false,
+  "input_sha256": {
+    "records/pipeline_monitor_20261103_084944_utc/snapshot/runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/config.json": "6d001aca619f34f5b6ea4be54e672980e56169c7edf2eaf30add36086ea1bcdd",
+    "records/pipeline_monitor_20261103_084944_utc/snapshot/runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/events.jsonl": "198bc5860bafb8e2aa1210638ab295de54e3b5da91beec3633f63b14b9de9937",
+    "records/pipeline_monitor_20261103_084944_utc/snapshot/runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/raw_gradients.jsonl": "05f45676ce9779629f923131ba9879ea8710bffee1066b9044f3d4f3fc2376f4",
+    "records/pipeline_monitor_20261103_084944_utc/archive_source_sha256.json": "2fe9dc04efabfdbb9a8b72db50e358309de768d3f217e967f7fe1b2e8c6751d9"
+  },
+  "source_files_rehashed": 86,
+  "completed_episodes_checked": 167,
+  "completed_inner_steps_checked": 2160,
+  "exact_window_flag_matches_last_two_steps_in_every_completed_episode": true,
+  "minimum_recorded_effective_tokens": {
+    "task_tokens": 512,
+    "language_tokens": 516,
+    "keep_tokens": 512
+  },
+  "groups": [
+    {
+      "K": 8,
+      "mode": "known",
+      "q_train": 0.0,
+      "count": 22,
+      "mean_episode_seconds": 655.6957893181818,
+      "median_raw_norm": 4.878019144716398e-05,
+      "min_raw_norm": 1.5259196440030753e-05,
+      "max_raw_norm": 0.00010058714997322425,
+      "median_objective": 0.00011445484415162355
+    },
+    {
+      "K": 8,
+      "mode": "known",
+      "q_train": 0.5,
+      "count": 21,
+      "mean_episode_seconds": 655.9787481904762,
+      "median_raw_norm": 0.035615251494953815,
+      "min_raw_norm": 0.0009023097263530804,
+      "max_raw_norm": 0.15420388685471983,
+      "median_objective": 0.0168195478618145
+    },
+    {
+      "K": 8,
+      "mode": "known",
+      "q_train": 0.7,
+      "count": 21,
+      "mean_episode_seconds": 654.1810588571428,
+      "median_raw_norm": 0.04123283750055488,
+      "min_raw_norm": 0.0019170214741478428,
+      "max_raw_norm": 0.13090263101129582,
+      "median_objective": 0.01641681231558323
+    },
+    {
+      "K": 16,
+      "mode": "known",
+      "q_train": 0.0,
+      "count": 17,
+      "mean_episode_seconds": 1049.4060101764705,
+      "median_raw_norm": 2.1750529601948847e-05,
+      "min_raw_norm": 9.289026276925714e-06,
+      "max_raw_norm": 0.00016682730103576287,
+      "median_objective": 0.00012055718980263919
+    },
+    {
+      "K": 16,
+      "mode": "known",
+      "q_train": 0.5,
+      "count": 18,
+      "mean_episode_seconds": 1060.6850974444444,
+      "median_raw_norm": 0.000631615065948539,
+      "min_raw_norm": 0.0001087933332408741,
+      "max_raw_norm": 0.0059751929175037,
+      "median_objective": 0.0016563498065806925
+    },
+    {
+      "K": 16,
+      "mode": "known",
+      "q_train": 0.7,
+      "count": 17,
+      "mean_episode_seconds": 1061.0179204705883,
+      "median_raw_norm": 0.0017428425047964658,
+      "min_raw_norm": 0.00024639241544030836,
+      "max_raw_norm": 0.008930790601359475,
+      "median_objective": 0.005697585176676512
+    },
+    {
+      "K": 16,
+      "mode": "new",
+      "q_train": 0.0,
+      "count": 17,
+      "mean_episode_seconds": 1133.4872007058823,
+      "median_raw_norm": 0.058752143685078834,
+      "min_raw_norm": 7.527963506575759e-08,
+      "max_raw_norm": 0.5486493067867867,
+      "median_objective": 0.0056790439411997795
+    },
+    {
+      "K": 16,
+      "mode": "new",
+      "q_train": 0.5,
+      "count": 17,
+      "mean_episode_seconds": 1142.9620535882352,
+      "median_raw_norm": 0.07463029604263235,
+      "min_raw_norm": 5.715810566445337e-06,
+      "max_raw_norm": 0.35309454305257376,
+      "median_objective": 0.009202757850289345
+    },
+    {
+      "K": 16,
+      "mode": "new",
+      "q_train": 0.7,
+      "count": 17,
+      "mean_episode_seconds": 1137.3620787058824,
+      "median_raw_norm": 0.09636744600965998,
+      "min_raw_norm": 8.981820185439986e-07,
+      "max_raw_norm": 0.542901398343944,
+      "median_objective": 0.021847838535904884
+    }
+  ],
+  "method_validated": false,
+  "downstream_promotion_allowed": false,
+  "limitations": [
+    "Checks recorded flags and tokens, not graph connectivity or derivatives.",
+    "Task routes and noise levels differ; these summaries do not establish convergence.",
+    "Only committed episodes are summarized; live files may reflect adjacent instants.",
+    "Even a full ledger needs job identity verification, tensor artifact audit, Adam replay and a separate scientific review."
+  ]
+}

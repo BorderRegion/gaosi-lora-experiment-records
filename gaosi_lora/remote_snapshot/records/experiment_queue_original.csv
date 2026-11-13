@@ -1,0 +1,19 @@
+﻿id,phase,work,depends_on,scope,output
+P00,env,MUSA tiny and real 3B/7B profile,,required,actual states and errors
+P01,data,Build synthetic facts/rules and four-way language split,,required,IDs and coverage; no model effects
+P02,capacity,5 ordinary-LoRA configurations × 2 dev tasks,P00;P01,required,"learning curves, rank/modules cost"
+P03,parents,Train nonzero meta/dev parent adapters,P02,required,known-before-noise and language quality; no final adapter training yet
+P04,noise,N-sub dose; N-factor/shrink paired diagnostic,P03,required,actual effective-weight and functional corruption
+P05,phi_L,O1 L: 64×8 + 128×16,P04,required,2560 inner steps; terminal loss
+P06,phi_X,O1 X: same full schedule,P04,required,2560 inner steps; full adapter coordinate residual
+P07,horizon,L alternate H1/H2 from common 512-step warm state,P05,backend_conditional,"2048 additional steps; H2 may be blocked, not faked"
+P08,organizations,Selected phi: 4 organizations × 64×8 specialization,P05;P06,required,2048 additional steps; O1 same opportunity
+P09,phi_clean,"O1 selected architecture, only q_train=0",P08,required,3072 inner steps by default; same total training opportunity
+P09B,final_parents,"After phi selection/freezing, train final all/retain-only adapters",P09,required,"same base, retain exposure matched; formal knowledge unseen by phi"
+P10,main_grid,Frozen mixed/clean phi and Adam noise/clean tests,P09;P09B,required,actual holdout Pareto and costs
+P11,selective,O1 same-noisy-state Adam/phi × D+/D- and relearning,P10,required,target/retain/language; base/drop-adapter reference
+P12,continual,4 organizations × 4 methods × 8-round sequences,P08,required,"16 initial trajectories, fixed replay, no task routing"
+P13,scale,7B frozen and 512-step local phi; continue if needed,P05;P06,required,"freeze/local separate, 512 not sufficient negative proof"
+P14,confirm,Key contrasts: 2 more independent seeds/orderings,P10;P11;P12,required,not repeat all dev grids
+P15,external,CLINC150 or fixed authorized real text task,P14,conditional,only most informative method family
+P16,limits,small full-base-noise + LoRA-repair boundary probe,P04,diagnostic,does not replace adapter-noise core

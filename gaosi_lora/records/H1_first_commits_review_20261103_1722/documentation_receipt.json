@@ -1,0 +1,20 @@
+{
+  "status": "H1_FIRST_COMMITS_DOCUMENTED_BOTH_HOSTS",
+  "recorded_at_utc": "2026-11-03T17:23:47.593140+00:00",
+  "review_receipt_sha256": "0426fd4b5b8e3839bd138b6f7dcb54615e5f05cdd420cb5251776436d0f829b9",
+  "note_sha256": "ecbf8d02dd4942116fc77dfc13c2e2bd6503c29fa7cf91825a3027d69b9d0f18",
+  "local_report": {
+    "before_sha256": "a91e7d031c3e9844cea42c78a6f9c5a815f0b5b9ef64eb86439a0f8bff4d76b5",
+    "after_sha256": "b4fe9bb73c7f5ddfc9b281d0f493405dea3499149a613eb632a4e74b984681ad",
+    "history_preserved": true
+  },
+  "remote_report": {
+    "path": "REPORT.md",
+    "before_sha256": "9628b388f78d4d6e26f337b74a5e430462b5a3bf138559dc9761b71fa6f2bf39",
+    "after_sha256": "82c84ce2415c42b31dec68588a205156dc69ef499011501b2f132b5081ee5475",
+    "history_preserved": true
+  },
+  "method_validated": false,
+  "training_modified_or_restarted": false,
+  "full_goal_complete": false
+}

@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "rows": 26552,
+  "files": 116,
+  "unique_sample_ids": 26552,
+  "parent_bindings_each": 512,
+  "formal_target_bindings": 64,
+  "formal_retain_bindings": 448,
+  "world_counts": {
+    "meta": 64,
+    "dev": 16,
+    "final": 32
+  },
+  "not_validated": "tokenizer difficulty, parent acquisition, LLM learning, language corpus, MUSA"
+}

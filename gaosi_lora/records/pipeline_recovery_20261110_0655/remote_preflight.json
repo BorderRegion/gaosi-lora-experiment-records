@@ -1,0 +1,56 @@
+{
+  "checked_at_utc": "2026-11-10T06:56:26.399066+00:00",
+  "active_processes": [
+    {
+      "name": "organization_queue_observed_blocking_v8",
+      "pid": 761616,
+      "start_ticks": "80739115",
+      "state": "S",
+      "wchan": "do_wait",
+      "blocking": [
+        "MUSA_LAUNCH_BLOCKING=1"
+      ],
+      "argv_sha256": "0ac1f136b034334f4a725f677618914a0b439a8f49fc34cd5c9820edca8b25e3"
+    },
+    {
+      "name": "phi_mix_O1_X_specialize512_s17_observed_blocking_v8",
+      "pid": 68659,
+      "start_ticks": "154509185",
+      "state": "S",
+      "wchan": "futex_wait_queue_me",
+      "blocking": [
+        "MUSA_LAUNCH_BLOCKING=1"
+      ],
+      "argv_sha256": "b0c41e2a3c42bef366f848e9f0f110ffbfe8fe1fd815e9a5373b7d889cc97d4f"
+    },
+    {
+      "name": "horizon_uniform_initial_gate_observed_blocking_v8",
+      "pid": 48797,
+      "start_ticks": "154082318",
+      "state": "S",
+      "wchan": "do_wait",
+      "blocking": [
+        "MUSA_LAUNCH_BLOCKING=1"
+      ],
+      "argv_sha256": "53667c907c871db77590d8369a8f9300c60f98dcf6e87b1a86e925bffd97b897"
+    },
+    {
+      "name": "horizon_known_K4_H2_uniform_s17_observed_blocking_v8",
+      "pid": 70260,
+      "start_ticks": "154541867",
+      "state": "S",
+      "wchan": "locks_lock_inode_wait",
+      "blocking": [
+        "MUSA_LAUNCH_BLOCKING=1"
+      ],
+      "argv_sha256": "a1843c302f35eee6ab4d34395c680ed05f5590ae28c33376123fbb247ec6b2fa"
+    }
+  ],
+  "gpu_lock_inode": 31148027670,
+  "remote_available_bytes": 927498784768,
+  "due_capture": "records/pipeline_monitor_20261110_065036_utc",
+  "due_capture_directory_exists": false,
+  "due_capture_archive_exists": false,
+  "training_or_controllers_modified": false,
+  "source_sha256": "eec74b2e9e2b23e353dee742daa07b3133835964ecd24db3e6c633493faa81e7"
+}

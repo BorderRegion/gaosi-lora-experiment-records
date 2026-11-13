@@ -1,0 +1,14 @@
+{
+  "status": "CPU_ARTIFACT_REPLAY_AND_ORGANIZATION_TENSOR_CHECKS_COMPLETED_REQUIRES_SCIENTIFIC_REVIEW",
+  "completed_at_utc": "2026-11-10T13:05:04.736222+00:00",
+  "run": "runs/phi_mix_O1_X_specialize512_s17_observed_blocking_v8",
+  "outputs_sha256": {
+    "records/O1_specialization_completion_20261110_1305/artifact_audit.json": "12173a742f12fa9e8aa9d6c7c04a22c49dc78290ebf202c391fb0f5dac86fdf1",
+    "records/O1_specialization_completion_20261110_1305/adam_replay.json": "45b9c22dafc44865322ada10a9234d8ced36915dee99e7ed793469d574169904",
+    "records/O1_specialization_completion_20261110_1305/tensor_review.json": "1676d6b7ac20019a0edc9cce20c7e4aee6b312bf39b5b7f9fc7e9f76d2f2d75f"
+  },
+  "training_modified_or_restarted": false,
+  "scientific_promotion_generated": false,
+  "method_validated": false,
+  "full_goal_complete": false
+}

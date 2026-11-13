@@ -1,0 +1,36 @@
+{
+  "status": "ALLOW_NEXT_PROTOCOL_STAGE_WITH_LIMITATIONS",
+  "run": "runs/phi_mix_O1_X_specialize512_s17_observed_blocking_v8",
+  "reviewer": "Codex /root",
+  "reviewed_at_utc": "2026-11-10T13:12:50.275090+00:00",
+  "rationale": "Complete guarded execution, saved finite gradients, independently replayed optimizer updates, inherited warm optimizer state and the complete 512-step input ledger support continuing the existing organization protocol under its original guards.",
+  "artifact_audit": "records/O1_specialization_completion_20261110_1305/artifact_audit.json",
+  "artifact_audit_sha256": "12173a742f12fa9e8aa9d6c7c04a22c49dc78290ebf202c391fb0f5dac86fdf1",
+  "scientific_evidence_sha256": {
+    "records/O1_specialization_completion_20261110_1305/artifact_audit.json": "12173a742f12fa9e8aa9d6c7c04a22c49dc78290ebf202c391fb0f5dac86fdf1",
+    "records/O1_specialization_completion_20261110_1305/adam_replay.json": "45b9c22dafc44865322ada10a9234d8ced36915dee99e7ed793469d574169904",
+    "records/O1_specialization_completion_20261110_1305/tensor_review.json": "1676d6b7ac20019a0edc9cce20c7e4aee6b312bf39b5b7f9fc7e9f76d2f2d75f",
+    "records/O1_specialization_completion_20261110_1305/execution_completed.json": "58bf8233af1674a80c41741fb39cf054f21c0b927e8b54df4cf2fc10b423e317",
+    "records/O1_specialization_completion_20261110_1305/pre_scientific_review_verification.json": "138716511a9567cebf6241471be4b95214ea2ac50a3c847c4b2dd3730cc9b034",
+    "records/O1_specialization_completion_20261110_1305/run_cpu_review.py": "1d0001a69e0ab4dbe0ec144c2bcb17e14d22289a4ae751866ae4c0622af1dae4",
+    "records/O1_specialization_completion_20261110_1305/publish_review.py": "545053d71ee086e265ef7f779f0fc8905321aa875dda23d2fe8b3765c60466ca",
+    "records/organization_completion_preparation_20261110_0603/inspect_completed_specialization.py": "120223d80e431505656cc51bb759ce77b63422c88e6f3ef13ce29db50eb4732e",
+    "records/horizon_uniform_numerics_20261109_2330/initial_saved_tensor_review.json": "ea798716c2134451c58695af415dc80d1a413a3839bd9bc5261d016d52cc2ab7",
+    "records/development_signal_review_20261110_0742/descriptive_comparison.json": "a66fc5fbdf96c1a86875126a692c0a7b4bc54f5654c5be9af6cd38dfdb8312f6",
+    "records/pipeline_observed_blocking_v8/reviews/phi_mix_O1_X_H2_core_s17_observed_blocking_v8.json": "fa1ad3314c1277a37288cb338eb5e633ded0a8d4f184af46df1ae54e1a396b42",
+    "records/O1_specialization_completion_20261110_1305/scientific_assessment.json": "e7d9a65795f05d9645fcbe8375da497bbe930cea04243ca84e29f15b2544fc20"
+  },
+  "limitations": [
+    "This judgment permits the next existing protocol stages only; O1 effectiveness and superiority to Adam have not been evaluated after specialization.",
+    "The completed seed17 development grid does not establish overall phi superiority. The language and isolated rule-retention signals are descriptive development observations.",
+    "CPU Adam replay consumes saved gradients and resets from each saved starting state. It does not independently recompute MUSA derivatives or an accumulated CPU trajectory.",
+    "The production H2 derivative covers the final two steps with the earlier boundary fixed. The original mixed-path horizon failure remains a failure.",
+    "The uniform-path H1/H2 gate passed for a newly declared common numerical trajectory. Full H4/H8 comparisons remain pending and cannot validate the production trajectory retroactively.",
+    "The frozen schedule couples known/new mode to parent parity; its route counts cannot establish a factorial causal effect.",
+    "Finite tensors, parameter movement and normal gradient scale do not establish efficacy or convergence. Old v7 failures and unresolved backend limitations remain recorded.",
+    "Preserve the original device lock, blocking environment, source/input pins, gradient guards, budgets and stopping rules. Each later completed meta run requires its own artifact audit, optimizer replay and scientific judgment."
+  ],
+  "scope": "Continue the existing organization controller into O2 and remaining declared experiments with separate review gates; no method or backend validation claim.",
+  "method_validated": false,
+  "full_goal_complete": false
+}

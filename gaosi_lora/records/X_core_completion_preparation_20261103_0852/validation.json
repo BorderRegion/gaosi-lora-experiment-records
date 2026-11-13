@@ -1,0 +1,57 @@
+{
+  "status": "LOCAL_ARCHIVE_REVIEW_HELPER_VALIDATION_PASS_ONLY",
+  "recorded_at_utc": "2026-11-03T08:54:32.133037+00:00",
+  "checks": [
+    {
+      "name": "complete_L_matches_previous_independent_review",
+      "status": "PASS",
+      "episodes": 192,
+      "inner_steps": 2560
+    },
+    {
+      "name": "actual_partial_X_rejected_for_completion",
+      "status": "PASS",
+      "reason": "Incomplete core: completion review requires 192 committed episodes"
+    },
+    {
+      "name": "missing_recorded_exact_tail_rejected",
+      "status": "PASS",
+      "reason": "Recorded exact window differs from last two steps",
+      "fixture_only": true
+    },
+    {
+      "name": "insufficient_route_tokens_rejected",
+      "status": "PASS",
+      "reason": "Insufficient recorded route tokens",
+      "fixture_only": true
+    },
+    {
+      "name": "uncommitted_gradient_ledger_mismatch_rejected",
+      "status": "PASS",
+      "reason": "Gradient ledger does not match committed episodes",
+      "fixture_only": true
+    },
+    {
+      "name": "source_tampering_rejected_before_ledger_review",
+      "status": "PASS",
+      "reason": "Source hash differs: records/core_ledger_fixture_oxxqdamo/snapshot/runs/phi_mix_O1_L_H2_core_s17_observed_blocking_v8/events.jsonl",
+      "fixture_only": true
+    }
+  ],
+  "source": "records/X_core_completion_preparation_20261103_0852/review_core_inner_ledger.py",
+  "source_sha256": "0b097f2b30c353ec147aa817b616c8c31cb1c6d946f686ae72adcbf46a92a0f2",
+  "previous_L_review": "records/observed_blocking_core_final_inner_review_20261101_1141.json",
+  "previous_L_review_sha256": "82874ab60cc90b90f6862b19c5fa90d9e96319775f1346b9aeb557231ae68d6f",
+  "evidence_sha256": {
+    "records/X_core_completion_preparation_20261103_0852/L_complete_ledger_validation.json": "bc2ad401d4ecbc29cc90b3afcbe74cea832ef2ae35d58b6bd413dd4b19b70cee",
+    "records/X_core_completion_preparation_20261103_0852/X_partial_ledger_validation.json": "38fb88a5de36eb01916a88a51fc1bf53e0519ddd347e952ca02f1272fd7d8da1"
+  },
+  "production_modified_or_restarted": false,
+  "additional_remote_training_telemetry_polled": false,
+  "method_validated": false,
+  "downstream_promotion_allowed": false,
+  "limitations": [
+    "Local archived evidence and modified local fixtures only; no training or model execution.",
+    "Validation does not replace the future completed X archive, terminal identity checks, tensor audit, saved-gradient Adam replay or a separate scientific assessment."
+  ]
+}

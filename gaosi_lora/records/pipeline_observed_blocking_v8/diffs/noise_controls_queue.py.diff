@@ -1,0 +1,38 @@
+--- original/noise_controls_queue.py
++++ tools/noise_controls_queue.py
+@@ -5,7 +5,7 @@
+ from pathlib import Path
+ import sys
+ 
+-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
++sys.path.insert(0, str(Path.cwd()))
+ from gaosi.scale import sha256, valid_freeze
+ from organization_queue import wait_for
+ from phi_core_queue import run_job
+@@ -97,7 +97,7 @@
+     preserve_json('records/noise_controls_policy_v1.json', POLICY)
+     if json.loads(Path('checks/noise_controls_cpu.json').read_text())['status'] != 'PASS':
+         raise RuntimeError('Noise-control entry/schedule checks must pass first')
+-    all_frozen = wait_for('records/all_phi_frozen.json', 'organization_queue_v1')
++    all_frozen = wait_for('records/all_phi_frozen.json', 'organization_queue_observed_blocking_v8')
+     freezes = {'mixed': all_frozen['manifests']['O1'], 'clean': all_frozen['manifests']['O1_clean']}
+     mix, clean = [valid_freeze(freezes[k]) for k in ['mixed', 'clean']]
+     calibration = json.loads(Path('records/calibration_frozen.json').read_text())
+@@ -134,7 +134,7 @@
+             if method.startswith('phi_'):
+                 f = clean if method == 'phi_clean' else mix
+                 c.update(method='phi', phi=f['phi'])
+-            result = entry(f'noise_control_{scheme}_{method}_K{K}_s17_v1', c, freezes,
++            result = entry(f'noise_control_{scheme}_{method}_K{K}_s17_observed_blocking_v8', c, freezes,
+                            ['records/calibration_frozen.json', 'records/noise_controls_policy_v1.json'])
+             initial.setdefault(scheme, str(Path(result['config']['out']) / 'initial.pt'))
+             outcomes.append(summary(result, method))
+@@ -147,7 +147,7 @@
+                  match_update_norms=normfile)
+         if method == 'phi_mix':
+             c.update(method='phi', phi=mix['phi'])
+-        result = entry(f'noise_control_{scheme}_{method}_fixednorm_K{K}_s17_v1', c, freezes,
++        result = entry(f'noise_control_{scheme}_{method}_fixednorm_K{K}_s17_observed_blocking_v8', c, freezes,
+                        ['records/calibration_frozen.json', 'records/noise_controls_policy_v1.json'])
+         outcomes.append(summary(result, method + '_fixednorm'))
+     preserve_json('records/noise_controls_ready_v1.json',

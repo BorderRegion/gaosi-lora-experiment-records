@@ -1,0 +1,643 @@
+{
+  "observed_at_utc": "2026-11-09T21:52:21.707450+00:00",
+  "jobs": [
+    {
+      "job": {
+        "name": "confirmation_queue_observed_blocking_v8",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "records/pipeline_observed_blocking_v8/tools/confirmation_queue.py"
+        ],
+        "wrapper_pid": 761694,
+        "started_at_utc": "2026-11-01T11:42:02.429803+00:00",
+        "start_epoch": 1793533322.42983,
+        "status": "RUNNING",
+        "child_pid": 761695,
+        "child_proc_start_ticks": "80739193"
+      },
+      "identity": {
+        "pid": 761695,
+        "start_ticks": "80739193",
+        "state": "S",
+        "matches": true,
+        "cmdline": "/usr/bin/python -u records/pipeline_observed_blocking_v8/tools/confirmation_queue.py "
+      }
+    },
+    {
+      "job": {
+        "name": "continual_queue_observed_blocking_v8",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "records/pipeline_observed_blocking_v8/tools/continual_queue.py"
+        ],
+        "wrapper_pid": 761625,
+        "started_at_utc": "2026-11-01T11:42:02.049054+00:00",
+        "start_epoch": 1793533322.049071,
+        "status": "RUNNING",
+        "child_pid": 761626,
+        "child_proc_start_ticks": "80739155"
+      },
+      "identity": {
+        "pid": 761626,
+        "start_ticks": "80739155",
+        "state": "S",
+        "matches": true,
+        "cmdline": "/usr/bin/python -u records/pipeline_observed_blocking_v8/tools/continual_queue.py "
+      }
+    },
+    {
+      "job": {
+        "name": "continual_statistics_queue_observed_blocking_v8",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "records/pipeline_observed_blocking_v8/tools/continual_statistics_queue.py"
+        ],
+        "wrapper_pid": 761704,
+        "started_at_utc": "2026-11-01T11:42:02.958263+00:00",
+        "start_epoch": 1793533322.958281,
+        "status": "RUNNING",
+        "child_pid": 761705,
+        "child_proc_start_ticks": "80739246"
+      },
+      "identity": {
+        "pid": 761705,
+        "start_ticks": "80739246",
+        "state": "S",
+        "matches": true,
+        "cmdline": "/usr/bin/python -u records/pipeline_observed_blocking_v8/tools/continual_statistics_queue.py "
+      }
+    },
+    {
+      "job": {
+        "name": "final_parent_queue_observed_blocking_v8",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "records/pipeline_observed_blocking_v8/tools/final_parent_queue.py"
+        ],
+        "wrapper_pid": 761617,
+        "started_at_utc": "2026-11-01T11:42:01.746336+00:00",
+        "start_epoch": 1793533321.7463531,
+        "status": "RUNNING",
+        "child_pid": 761618,
+        "child_proc_start_ticks": "80739125"
+      },
+      "identity": {
+        "pid": 761618,
+        "start_ticks": "80739125",
+        "state": "S",
+        "matches": true,
+        "cmdline": "/usr/bin/python -u records/pipeline_observed_blocking_v8/tools/final_parent_queue.py "
+      }
+    },
+    {
+      "job": {
+        "name": "formal_recovery_queue_observed_blocking_v8",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "records/pipeline_observed_blocking_v8/tools/formal_recovery_queue.py"
+        ],
+        "wrapper_pid": 761619,
+        "started_at_utc": "2026-11-01T11:42:01.847264+00:00",
+        "start_epoch": 1793533321.847282,
+        "status": "RUNNING",
+        "child_pid": 761620,
+        "child_proc_start_ticks": "80739135"
+      },
+      "identity": {
+        "pid": 761620,
+        "start_ticks": "80739135",
+        "state": "S",
+        "matches": true,
+        "cmdline": "/usr/bin/python -u records/pipeline_observed_blocking_v8/tools/formal_recovery_queue.py "
+      }
+    },
+    {
+      "job": {
+        "name": "horizon_known_K4_H1_s17_observed_blocking_v8",
+        "command": [
+          "/usr/bin/env",
+          "MUSA_LAUNCH_BLOCKING=1",
+          "/usr/bin/python",
+          "-u",
+          "-m",
+          "gaosi.horizon",
+          "--config",
+          "configs/horizon_known_K4_H1_s17_observed_blocking_v8.json"
+        ],
+        "wrapper_pid": 13355,
+        "started_at_utc": "2026-11-09T21:24:22.187427+00:00",
+        "start_epoch": 1794259462.1874473,
+        "status": "PASS",
+        "device_lock": {
+          "path": "/tmp/gaosi_musa_device0.lock",
+          "version": 1
+        },
+        "child_pid": 13356,
+        "child_proc_start_ticks": "153353169",
+        "exit_code": 0,
+        "wall_seconds": 322.42989802360535,
+        "finished_at_utc": "2026-11-09T21:29:44.617353+00:00"
+      },
+      "identity": null
+    },
+    {
+      "job": {
+        "name": "horizon_known_K4_H2_s17_observed_blocking_v8",
+        "command": [
+          "/usr/bin/env",
+          "MUSA_LAUNCH_BLOCKING=1",
+          "/usr/bin/python",
+          "-u",
+          "-m",
+          "gaosi.horizon",
+          "--config",
+          "configs/horizon_known_K4_H2_s17_observed_blocking_v8.json"
+        ],
+        "wrapper_pid": 15005,
+        "started_at_utc": "2026-11-09T21:29:44.664771+00:00",
+        "start_epoch": 1794259784.664788,
+        "status": "FAIL",
+        "device_lock": {
+          "path": "/tmp/gaosi_musa_device0.lock",
+          "version": 1
+        },
+        "child_pid": 15006,
+        "child_proc_start_ticks": "153385417",
+        "exit_code": 1,
+        "wall_seconds": 645.4920115470886,
+        "finished_at_utc": "2026-11-09T21:40:30.156808+00:00"
+      },
+      "identity": null
+    },
+    {
+      "job": {
+        "name": "horizon_queue_observed_blocking_v8",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "records/pipeline_observed_blocking_v8/tools/horizon_queue.py"
+        ],
+        "wrapper_pid": 761629,
+        "started_at_utc": "2026-11-01T11:42:02.251260+00:00",
+        "start_epoch": 1793533322.2512803,
+        "status": "FAIL",
+        "child_pid": 761630,
+        "child_proc_start_ticks": "80739175",
+        "exit_code": 1,
+        "wall_seconds": 727107.924189806,
+        "finished_at_utc": "2026-11-09T21:40:30.175480+00:00"
+      },
+      "identity": null
+    },
+    {
+      "job": {
+        "name": "noise_controls_queue_observed_blocking_v8",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "records/pipeline_observed_blocking_v8/tools/noise_controls_queue.py"
+        ],
+        "wrapper_pid": 761696,
+        "started_at_utc": "2026-11-01T11:42:02.554144+00:00",
+        "start_epoch": 1793533322.5541663,
+        "status": "RUNNING",
+        "child_pid": 761697,
+        "child_proc_start_ticks": "80739205"
+      },
+      "identity": {
+        "pid": 761697,
+        "start_ticks": "80739205",
+        "state": "S",
+        "matches": true,
+        "cmdline": "/usr/bin/python -u records/pipeline_observed_blocking_v8/tools/noise_controls_queue.py "
+      }
+    },
+    {
+      "job": {
+        "name": "o4_current_b_on_history_a_s17",
+        "command": [
+          "/usr/bin/env",
+          "MUSA_LAUNCH_BLOCKING=1",
+          "/usr/bin/python",
+          "-u",
+          "-m",
+          "gaosi.train",
+          "--config",
+          "configs/o4_current_b_on_history_a_s17.json"
+        ],
+        "wrapper_pid": 15713,
+        "started_at_utc": "2026-11-09T21:31:33.701900+00:00",
+        "start_epoch": 1794259893.7019172,
+        "status": "RUNNING",
+        "device_lock": {
+          "path": "/tmp/gaosi_musa_device0.lock",
+          "version": 1
+        },
+        "child_pid": 15714,
+        "child_proc_start_ticks": "153396320"
+      },
+      "identity": {
+        "pid": 15714,
+        "start_ticks": "153396320",
+        "state": "R",
+        "matches": true,
+        "cmdline": "/usr/bin/python -u -m gaosi.train --config configs/o4_current_b_on_history_a_s17.json "
+      }
+    },
+    {
+      "job": {
+        "name": "o4_historical_a_s17",
+        "command": [
+          "/usr/bin/env",
+          "MUSA_LAUNCH_BLOCKING=1",
+          "/usr/bin/python",
+          "-u",
+          "tools/build_o4_history.py",
+          "--parent",
+          "runs/parent_3b_meta_parent_a_r32_s17_extend512_v2/latest.pt",
+          "--out",
+          "runs/o4_historical_a_s17/master.pt"
+        ],
+        "wrapper_pid": 13420,
+        "started_at_utc": "2026-11-09T21:24:22.738300+00:00",
+        "start_epoch": 1794259462.7383223,
+        "status": "PASS",
+        "device_lock": {
+          "path": "/tmp/gaosi_musa_device0.lock",
+          "version": 1
+        },
+        "child_pid": 13421,
+        "child_proc_start_ticks": "153353224",
+        "exit_code": 0,
+        "wall_seconds": 430.91585779190063,
+        "finished_at_utc": "2026-11-09T21:31:33.654187+00:00"
+      },
+      "identity": null
+    },
+    {
+      "job": {
+        "name": "organization_queue_observed_blocking_v8",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "records/pipeline_observed_blocking_v8/tools/organization_queue.py"
+        ],
+        "wrapper_pid": 761615,
+        "started_at_utc": "2026-11-01T11:42:01.645616+00:00",
+        "start_epoch": 1793533321.6456344,
+        "status": "RUNNING",
+        "child_pid": 761616,
+        "child_proc_start_ticks": "80739115"
+      },
+      "identity": {
+        "pid": 761616,
+        "start_ticks": "80739115",
+        "state": "S",
+        "matches": true,
+        "cmdline": "/usr/bin/python -u records/pipeline_observed_blocking_v8/tools/organization_queue.py "
+      }
+    },
+    {
+      "job": {
+        "name": "phi_X_real_episode_readiness_s17_observed_blocking_v8",
+        "command": [
+          "/usr/bin/env",
+          "MUSA_LAUNCH_BLOCKING=1",
+          "/usr/bin/python",
+          "-u",
+          "tools/train_guarded_meta.py",
+          "run",
+          "--manifest",
+          "records/pipeline_observed_blocking_v8/meta_entries/phi_X_real_episode_readiness_s17_observed_blocking_v8.json"
+        ],
+        "wrapper_pid": 763941,
+        "started_at_utc": "2026-11-01T11:49:20.962995+00:00",
+        "start_epoch": 1793533760.9630165,
+        "status": "PASS",
+        "device_lock": {
+          "path": "/tmp/gaosi_musa_device0.lock",
+          "version": 1
+        },
+        "child_pid": 763942,
+        "child_proc_start_ticks": "80783046",
+        "exit_code": 0,
+        "wall_seconds": 909.0757381916046,
+        "finished_at_utc": "2026-11-01T12:04:30.038764+00:00"
+      },
+      "identity": null
+    },
+    {
+      "job": {
+        "name": "phi_core_queue_observed_blocking_v8",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "records/pipeline_observed_blocking_v8/tools/phi_core_queue.py"
+        ],
+        "wrapper_pid": 761611,
+        "started_at_utc": "2026-11-01T11:42:01.443991+00:00",
+        "start_epoch": 1793533321.4440114,
+        "status": "PASS",
+        "child_pid": 761612,
+        "child_proc_start_ticks": "80739094",
+        "exit_code": 0,
+        "wall_seconds": 294470.83398270607,
+        "finished_at_utc": "2026-11-04T21:29:52.278003+00:00"
+      },
+      "identity": null
+    },
+    {
+      "job": {
+        "name": "phi_dev_paired_adam_t4_medium_s17",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "-m",
+          "gaosi.recover",
+          "--config",
+          "configs/phi_dev_paired_adam_t4_medium_s17.json"
+        ],
+        "wrapper_pid": 983528,
+        "started_at_utc": "2026-11-09T19:42:16.866870+00:00",
+        "start_epoch": 1794253336.8668883,
+        "status": "PASS",
+        "device_lock": {
+          "path": "/tmp/gaosi_musa_device0.lock",
+          "version": 1
+        },
+        "child_pid": 983529,
+        "child_proc_start_ticks": "152740637",
+        "exit_code": 0,
+        "wall_seconds": 6101.809250831604,
+        "finished_at_utc": "2026-11-09T21:23:58.676146+00:00"
+      },
+      "identity": null
+    },
+    {
+      "job": {
+        "name": "phi_development_queue_observed_blocking_v8",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "records/pipeline_observed_blocking_v8/tools/phi_development_queue.py"
+        ],
+        "wrapper_pid": 761613,
+        "started_at_utc": "2026-11-01T11:42:01.544644+00:00",
+        "start_epoch": 1793533321.544663,
+        "status": "PASS",
+        "child_pid": 761614,
+        "child_proc_start_ticks": "80739105",
+        "exit_code": 0,
+        "wall_seconds": 726117.1504890919,
+        "finished_at_utc": "2026-11-09T21:23:58.695161+00:00"
+      },
+      "identity": null
+    },
+    {
+      "job": {
+        "name": "phi_mix_O1_L_H1_commonwarm_s17_observed_blocking_v8",
+        "command": [
+          "/usr/bin/env",
+          "MUSA_LAUNCH_BLOCKING=1",
+          "/usr/bin/python",
+          "-u",
+          "tools/train_guarded_meta.py",
+          "run",
+          "--manifest",
+          "records/pipeline_observed_blocking_v8/meta_entries/phi_mix_O1_L_H1_commonwarm_s17_observed_blocking_v8.json"
+        ],
+        "wrapper_pid": 972548,
+        "started_at_utc": "2026-11-03T16:39:29.520501+00:00",
+        "start_epoch": 1793723969.5205202,
+        "status": "PASS",
+        "device_lock": {
+          "path": "/tmp/gaosi_musa_device0.lock",
+          "version": 1
+        },
+        "child_pid": 972549,
+        "child_proc_start_ticks": "99803902",
+        "exit_code": 0,
+        "wall_seconds": 100220.9175632,
+        "finished_at_utc": "2026-11-04T20:29:50.438095+00:00"
+      },
+      "identity": null
+    },
+    {
+      "job": {
+        "name": "phi_mix_O1_L_H2_core_s17_observed_blocking_v8",
+        "command": [
+          "/usr/bin/env",
+          "MUSA_LAUNCH_BLOCKING=1",
+          "/usr/bin/python",
+          "-u",
+          "tools/train_observed_meta.py",
+          "--manifest",
+          "records/observed_blocking_core_20261030_0810/training_manifest.json"
+        ],
+        "wrapper_pid": 650715,
+        "started_at_utc": "2026-10-30T08:06:40.741418+00:00",
+        "start_epoch": 1793347600.741437,
+        "status": "PASS",
+        "device_lock": {
+          "path": "/tmp/gaosi_musa_device0.lock",
+          "version": 1
+        },
+        "child_pid": 650716,
+        "child_proc_start_ticks": "62167024",
+        "exit_code": 0,
+        "wall_seconds": 168874.35540890694,
+        "finished_at_utc": "2026-11-01T07:01:15.096861+00:00"
+      },
+      "identity": null
+    },
+    {
+      "job": {
+        "name": "phi_mix_O1_X_H2_core_s17_observed_blocking_v8",
+        "command": [
+          "/usr/bin/env",
+          "MUSA_LAUNCH_BLOCKING=1",
+          "/usr/bin/python",
+          "-u",
+          "tools/train_guarded_meta.py",
+          "run",
+          "--manifest",
+          "records/pipeline_observed_blocking_v8/meta_entries/phi_mix_O1_X_H2_core_s17_observed_blocking_v8.json"
+        ],
+        "wrapper_pid": 776883,
+        "started_at_utc": "2026-11-01T12:34:32.993973+00:00",
+        "start_epoch": 1793536472.993995,
+        "status": "PASS",
+        "device_lock": {
+          "path": "/tmp/gaosi_musa_device0.lock",
+          "version": 1
+        },
+        "child_pid": 776884,
+        "child_proc_start_ticks": "81054249",
+        "exit_code": 0,
+        "wall_seconds": 185693.10349178314,
+        "finished_at_utc": "2026-11-03T16:09:26.097496+00:00"
+      },
+      "identity": null
+    },
+    {
+      "job": {
+        "name": "profile_3b_X_H2_three_routes_learned_parent_observed_blocking_v8",
+        "command": [
+          "/usr/bin/env",
+          "MUSA_LAUNCH_BLOCKING=1",
+          "/usr/bin/python",
+          "-u",
+          "tools/profile_transition.py",
+          "--checkpoint",
+          "runs/parent_3b_dev_parent_r32_s17_extend512_v2/latest.pt",
+          "--out",
+          "checks/profile_3b_X_H2_three_routes_learned_parent_observed_blocking_v8.json",
+          "--seq",
+          "512",
+          "--effective-tokens",
+          "512",
+          "--architecture",
+          "X",
+          "--horizon",
+          "EXACT_H2_tail",
+          "--retain-facts"
+        ],
+        "wrapper_pid": 761621,
+        "started_at_utc": "2026-11-01T11:42:01.908133+00:00",
+        "start_epoch": 1793533321.9081497,
+        "status": "PASS",
+        "device_lock": {
+          "path": "/tmp/gaosi_musa_device0.lock",
+          "version": 1
+        },
+        "child_pid": 761622,
+        "child_proc_start_ticks": "80739141",
+        "exit_code": 0,
+        "wall_seconds": 437.5540039539337,
+        "finished_at_utc": "2026-11-01T11:49:19.462162+00:00"
+      },
+      "identity": null
+    },
+    {
+      "job": {
+        "name": "recovery_statistics_queue_observed_blocking_v8",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "records/pipeline_observed_blocking_v8/tools/recovery_statistics_queue.py"
+        ],
+        "wrapper_pid": 761698,
+        "started_at_utc": "2026-11-01T11:42:02.655009+00:00",
+        "start_epoch": 1793533322.655029,
+        "status": "RUNNING",
+        "child_pid": 761699,
+        "child_proc_start_ticks": "80739216"
+      },
+      "identity": {
+        "pid": 761699,
+        "start_ticks": "80739216",
+        "state": "S",
+        "matches": true,
+        "cmdline": "/usr/bin/python -u records/pipeline_observed_blocking_v8/tools/recovery_statistics_queue.py "
+      }
+    },
+    {
+      "job": {
+        "name": "reflow_queue_observed_blocking_v8",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "records/pipeline_observed_blocking_v8/tools/reflow_queue.py"
+        ],
+        "wrapper_pid": 761623,
+        "started_at_utc": "2026-11-01T11:42:01.948308+00:00",
+        "start_epoch": 1793533321.9483252,
+        "status": "RUNNING",
+        "child_pid": 761624,
+        "child_proc_start_ticks": "80739145"
+      },
+      "identity": {
+        "pid": 761624,
+        "start_ticks": "80739145",
+        "state": "S",
+        "matches": true,
+        "cmdline": "/usr/bin/python -u records/pipeline_observed_blocking_v8/tools/reflow_queue.py "
+      }
+    },
+    {
+      "job": {
+        "name": "reflow_statistics_queue_observed_blocking_v8",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "records/pipeline_observed_blocking_v8/tools/reflow_statistics_queue.py"
+        ],
+        "wrapper_pid": 761702,
+        "started_at_utc": "2026-11-01T11:42:02.857095+00:00",
+        "start_epoch": 1793533322.8571148,
+        "status": "RUNNING",
+        "child_pid": 761703,
+        "child_proc_start_ticks": "80739236"
+      },
+      "identity": {
+        "pid": 761703,
+        "start_ticks": "80739236",
+        "state": "S",
+        "matches": true,
+        "cmdline": "/usr/bin/python -u records/pipeline_observed_blocking_v8/tools/reflow_statistics_queue.py "
+      }
+    },
+    {
+      "job": {
+        "name": "selective_statistics_queue_observed_blocking_v8",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "records/pipeline_observed_blocking_v8/tools/selective_statistics_queue.py"
+        ],
+        "wrapper_pid": 761700,
+        "started_at_utc": "2026-11-01T11:42:02.755657+00:00",
+        "start_epoch": 1793533322.7556765,
+        "status": "RUNNING",
+        "child_pid": 761701,
+        "child_proc_start_ticks": "80739226"
+      },
+      "identity": {
+        "pid": 761701,
+        "start_ticks": "80739226",
+        "state": "S",
+        "matches": true,
+        "cmdline": "/usr/bin/python -u records/pipeline_observed_blocking_v8/tools/selective_statistics_queue.py "
+      }
+    },
+    {
+      "job": {
+        "name": "seven_b_queue_observed_blocking_v8",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "records/pipeline_observed_blocking_v8/tools/seven_b_queue.py"
+        ],
+        "wrapper_pid": 761627,
+        "started_at_utc": "2026-11-01T11:42:02.150035+00:00",
+        "start_epoch": 1793533322.1500566,
+        "status": "RUNNING",
+        "child_pid": 761628,
+        "child_proc_start_ticks": "80739165"
+      },
+      "identity": {
+        "pid": 761628,
+        "start_ticks": "80739165",
+        "state": "S",
+        "matches": true,
+        "cmdline": "/usr/bin/python -u records/pipeline_observed_blocking_v8/tools/seven_b_queue.py "
+      }
+    }
+  ],
+  "device_lock_inode": 31148027670
+}

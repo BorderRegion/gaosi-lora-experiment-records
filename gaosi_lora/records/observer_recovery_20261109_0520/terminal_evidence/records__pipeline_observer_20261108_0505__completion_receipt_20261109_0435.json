@@ -1,0 +1,49 @@
+{
+  "status": "SCHEDULED_TEXT_REVIEWS_AND_PAIR_PREFIXES_COMPLETED_NO_NUMERICAL_CHANGE",
+  "recorded_at_utc": "2026-11-09T04:36:09.510444+00:00",
+  "observation": "records/pipeline_monitor_20261109_043538_utc",
+  "previous_followup": "records/pipeline_observer_20261108_0505/followup_20261109_0405.json",
+  "evidence_sha256": {
+    "records/pipeline_review_20261109_0435.json": "0fca0e930d0f6b945b8d397347ce4eca2f39a36ee4ade21be0b3903432b051da",
+    "records/pipeline_observer_20261108_0505/progress_20261109_0435.json": "5fe9ed60af3cf45156ac5b3055c2a176e1764618d7e6c2a4d640afc8c5e0b4bb",
+    "records/pipeline_observer_20261108_0505/followup_20261109_0435.json": "0dd88cd53bb2682c40863a8068e7f79eae8e701f2fdc707267a17ce1768dea1f",
+    "records/horizon_effect_comparison_20261103_1005/prefix_pair_review_20261109_0435.json": "cc952631950a66d179633a9883a549b3e1d40226ddc96a4c10f589c9f455a170",
+    "records/development_monitor_20261109_043538_utc/review.json": "aa7354e68b93cfd475e97c30c8ff570c5e1351f30eb9b51db0b39dd069b8efc7",
+    "records/horizon_effect_monitor_20261109_043538_utc/review.json": "03b490391e4003d3972f536ab25fffa10f25f27ea61d1b4683f085fcb6db4474",
+    "records/pipeline_observer_20261108_0505/complete_scheduled_followup_v1.py": "fb9bc2f1c027a2e880024f2260a19d2bfe1fc155cc284ecc866d2c7d34abe82a"
+  },
+  "new_PASS_endpoints_requiring_saved_tensor_audit": {
+    "development": [],
+    "H1": []
+  },
+  "development_pass_jobs": 50,
+  "H1_pass_jobs": 10,
+  "development_running_checks": [
+    {
+      "run": "runs/phi_dev_paired_adam_t0_clean_s17",
+      "job_status": "RUNNING",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 8,
+      "evaluation_steps": [
+        0
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 523,
+        "language": 551,
+        "keep": 523
+      },
+      "last_recorded_task_binding_coverage": 512,
+      "task_binding_pool": 512,
+      "mean_recorded_step_seconds": 40.660718977451324,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    }
+  ],
+  "H1_running_checks": [],
+  "next_due_at_utc": "2026-11-09T05:05:39.268950+00:00",
+  "method_validated": false,
+  "full_goal_complete": false,
+  "training_modified_or_restarted": false
+}

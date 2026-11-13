@@ -1,0 +1,11 @@
+{
+  "pid": 87941,
+  "start_ticks": "58573466",
+  "script": "records/episode7_same_state_pair_20261030_0600/observe_same_state.py",
+  "script_sha256": "e8c33d6e8458a86f6daef8b2f1752543751809244a3de458231deb0cd72c50a2",
+  "due_at_utc": "2026-10-30T06:25:17+00:00",
+  "interval_minutes": 30,
+  "maximum_observations": 8,
+  "replaces_terminal_observer_pid": 4154412,
+  "remote_observation_script_compile_passed": true
+}

@@ -1,0 +1,18 @@
+{
+  "status": "H1_H2_EXECUTED_PENDING_INDEPENDENT_SAVED_TENSOR_REVIEW",
+  "jobs": [
+    {
+      "index": 0,
+      "job": "horizon_known_K4_H1_uniform_s17_observed_blocking_v8",
+      "result_sha256": "4c4c057c103804f25f3bed17aba06fe34a6ea53142ad1e7c13c82a730c49ae74"
+    },
+    {
+      "index": 1,
+      "job": "horizon_known_K4_H2_uniform_s17_observed_blocking_v8",
+      "result_sha256": "3185f5a7ffdbb0f8899005fd99619ef46b863970d0fa25195f3b316287f5cd59"
+    }
+  ],
+  "remaining_ten_launched": false,
+  "method_validated": false,
+  "full_goal_complete": false
+}

@@ -1,0 +1,44 @@
+{
+  "pid": 279008,
+  "proc_start_ticks": "158994932",
+  "started_at_utc": "2026-11-10T13:04:39.848889+00:00",
+  "commands": [
+    [
+      "/usr/bin/python",
+      "-u",
+      "tools/audit_observed_meta.py",
+      "--run",
+      "runs/phi_mix_O1_X_specialize512_s17_observed_blocking_v8",
+      "--out",
+      "records/O1_specialization_completion_20261110_1305/artifact_audit.json"
+    ],
+    [
+      "/usr/bin/python",
+      "-u",
+      "records/pipeline_observer_20261101_1143/replay_saved_adam.py",
+      "--audit",
+      "records/O1_specialization_completion_20261110_1305/artifact_audit.json",
+      "--out",
+      "records/O1_specialization_completion_20261110_1305/adam_replay.json"
+    ],
+    [
+      "/usr/bin/python",
+      "-u",
+      "records/organization_completion_preparation_20261110_0603/inspect_completed_specialization.py",
+      "--audit",
+      "records/O1_specialization_completion_20261110_1305/artifact_audit.json",
+      "--replay",
+      "records/O1_specialization_completion_20261110_1305/adam_replay.json",
+      "--out",
+      "records/O1_specialization_completion_20261110_1305/tensor_review.json"
+    ]
+  ],
+  "source_sha256": {
+    "tools/audit_observed_meta.py": "6583634debbdf7c77e1078d987e3ec37bf9c1f4e14cf07babc6fe59e9e8ca99b",
+    "records/pipeline_observer_20261101_1143/replay_saved_adam.py": "9eedbe61dc0f18e26462ed5ebe658cc491600079afd1a64e6a35b486d8df95a2",
+    "records/organization_completion_preparation_20261110_0603/inspect_completed_specialization.py": "120223d80e431505656cc51bb759ce77b63422c88e6f3ef13ce29db50eb4732e"
+  },
+  "driver_sha256": "1d0001a69e0ab4dbe0ec144c2bcb17e14d22289a4ae751866ae4c0622af1dae4",
+  "run": "runs/phi_mix_O1_X_specialize512_s17_observed_blocking_v8",
+  "training_modified_or_restarted": false
+}

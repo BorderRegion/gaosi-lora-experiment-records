@@ -1,0 +1,38 @@
+{
+  "observed_at_utc": "2026-11-10T06:53:40.963158+00:00",
+  "old_observer_state": {
+    "status": "WAITING_UNTIL_DUE_NO_REMOTE_CONNECTION_YET",
+    "pid": 1997583,
+    "proc_start_ticks": "153427248",
+    "updated_at_utc": "2026-11-10T06:23:27.503540+00:00",
+    "production_modified_or_restarted": false,
+    "observations": 16,
+    "due_at_utc": "2026-11-10T06:50:36.966081+00:00"
+  },
+  "old_observer_proc_absent": true,
+  "available_bytes": 0,
+  "free_bytes_including_reserved": 16777216,
+  "evidence": {
+    "records/pipeline_observer_20261110_0525/observer_state.json": {
+      "sha256": "97172887fbaa42baab700689226457849ad1f53eab5bee0462c603f59c02182e",
+      "bytes": 289
+    },
+    "records/pipeline_observer_20261110_0525/observer_state.tmp": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "records/pipeline_observer_20261110_0525/observer.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "records/pipeline_observer_20261110_0525/observer.stdout.txt": {
+      "sha256": "d2495af1f84f823805cdedf032b844c01cc02dfe5c56e5d1c5795f8709ef4974",
+      "bytes": 1327
+    },
+    "records/pipeline_observer_20261110_0525/observations.jsonl": {
+      "sha256": "df2e07571013969290e5644f96dcf11b4246baec0c3f431d70df69483b948862",
+      "bytes": 20298
+    }
+  },
+  "production_or_training_modified": false
+}

@@ -1,0 +1,28 @@
+{
+  "status": "PUBLISHED_H1_SCIENTIFIC_REVIEW_REMOTELY_VERIFIED_ALL_BOUND_EVIDENCE",
+  "recorded_at_utc": "2026-11-04T21:01:29.975708+00:00",
+  "remote_verification_checked_at_utc": "2026-11-04T21:00:53.517317+00:00",
+  "review_status": "ALLOW_NEXT_PROTOCOL_STAGE_WITH_LIMITATIONS",
+  "receipt": "records/pipeline_observed_blocking_v8/reviews/phi_mix_O1_L_H1_commonwarm_s17_observed_blocking_v8.json",
+  "receipt_sha256": "de515684d577ad949104e49eedca57f0ec356d43510ca6ae5fc9c228e01d88b4",
+  "verification": "tools/guarded_pipeline.py verify_review completed successfully on the remote host and rehashed both artifact and scientific evidence maps.",
+  "horizon_comparison_check": {
+    "status": "WAITING_FOR_REVIEWED_ENDPOINTS_AND_EXISTING_H2_DEV",
+    "missing": [
+      "runs/phi_dev_L_2560_t0_clean_s17/result.json",
+      "runs/phi_dev_L_2560_t0_medium_s17/result.json",
+      "runs/phi_dev_L_2560_t1_clean_s17/result.json",
+      "runs/phi_dev_L_2560_t1_medium_s17/result.json",
+      "runs/phi_dev_L_2560_t2_clean_s17/result.json",
+      "runs/phi_dev_L_2560_t2_medium_s17/result.json",
+      "runs/phi_dev_L_2560_t3_clean_s17/result.json",
+      "runs/phi_dev_L_2560_t3_medium_s17/result.json",
+      "runs/phi_dev_L_2560_t4_clean_s17/result.json",
+      "runs/phi_dev_L_2560_t4_medium_s17/result.json"
+    ],
+    "H1_endpoint_and_review_no_longer_missing": true
+  },
+  "training_modified_or_restarted": false,
+  "method_validated": false,
+  "full_goal_complete": false
+}

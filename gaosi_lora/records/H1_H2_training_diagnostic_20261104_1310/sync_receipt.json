@@ -1,0 +1,30 @@
+{
+  "status": "ARCHIVED_TRAINING_DIAGNOSTIC_SYNCED_SHA_VERIFIED",
+  "recorded_at_utc": "2026-11-04T13:12:10.468659+00:00",
+  "receipts": [
+    {
+      "status": "REVIEW_SYNCED_VERIFIED",
+      "path": "records/H1_H2_training_diagnostic_20261104_1310/README.md",
+      "sha256": "37b3a445d4419311a7cb8d1a550649a86a77d82591af7ad920d7924d03555654"
+    },
+    {
+      "status": "REVIEW_SYNCED_VERIFIED",
+      "path": "records/H1_H2_training_diagnostic_20261104_1310/diagnose.py",
+      "sha256": "8551713c9284463592bc3539b07941e8ad4753b1bfe73bd19d4edda3adc196cb"
+    },
+    {
+      "status": "REVIEW_SYNCED_VERIFIED",
+      "path": "records/H1_H2_training_diagnostic_20261104_1310/diagnostic.json",
+      "sha256": "bac121ece38e95050b8a8f8c0b0edcf65d9a8bb45b5911a8e292679d93aa4207"
+    },
+    {
+      "status": "REVIEW_SYNCED_VERIFIED",
+      "path": "records/H1_H2_training_diagnostic_20261104_1310/review.json",
+      "sha256": "e1e5afdfe7dcb5e6b08429685a1040784285d654a31ab0fc88b9945a2b04739b"
+    }
+  ],
+  "method_validated": false,
+  "downstream_promotion_allowed": false,
+  "training_modified_or_restarted": false,
+  "full_goal_complete": false
+}

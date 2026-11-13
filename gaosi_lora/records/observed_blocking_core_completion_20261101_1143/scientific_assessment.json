@@ -1,0 +1,82 @@
+{
+  "status": "EVIDENCE_REVIEW_SUPPORTS_LIMITED_PROTOCOL_CONTINUATION",
+  "reviewed_at_utc": "2026-11-01T11:41:25.932652+00:00",
+  "run": "runs/phi_mix_O1_L_H2_core_s17_observed_blocking_v8",
+  "previous_goal_turn": "verified_wait_and_new_training_evidence",
+  "current_goal_turn": "completed_run_artifact_and_numerical_review_then_protocol_continuation",
+  "completion": {
+    "job_exit_code": 0,
+    "finished_at_utc": "2026-11-01T07:01:15.096861+00:00",
+    "episodes": 192,
+    "inner_updates": 2560,
+    "wall_hours": 46.90954316914082,
+    "base_unchanged": true,
+    "final_checkpoint_sha256": "d72964706a7e673724cfd80c9d66fa259dfb8bc2707dd182295e19375801e380"
+  },
+  "artifact_findings": {
+    "audited_evidence_files": 451,
+    "all_raw_gradients_finite": true,
+    "maximum_raw_norm": 0.5823351201809523,
+    "gradient_clipping_triggered": false,
+    "episode_phi_fixed": true,
+    "input_and_numerical_source_pins_unchanged": true,
+    "completed_inner_steps_checked": 2560,
+    "recorded_exact_tail_flags_consistent": true,
+    "minimum_recorded_effective_tokens": {
+      "task_tokens": 512,
+      "language_tokens": 516,
+      "keep_tokens": 512
+    }
+  },
+  "optimizer_findings": {
+    "episodes_checked": 192,
+    "all_starting_phi_equal": true,
+    "all_optimizer_param_groups_equal": true,
+    "optimizer_states_all_equal": true,
+    "all_finite": true,
+    "maximum_phi_absolute_error": 1.4901161193847656e-08,
+    "maximum_phi_relative_l2_error": 8.777369198149701e-08,
+    "allclose_rtol_2em5_atol_1em8": true
+  },
+  "derivative_evidence_interpretation": [
+    "Tiny Qwen independent direct autograd tests compare H1/H2 and complete H4/H8 including all continuous states. FP64 reference finite differences support mathematical implementation, with separate upstream-precision AD checks.",
+    "Independent eight-episode blocking prefix reproduces starting phi, logged forwards and raw gradients exactly; this supports repeatability only.",
+    "Real 3B fixed-boundary H2-tail directional diagnostic has identical unperturbed forwards and analytic norm .061408095366215255. Central difference at epsilon .1 is .05930914543569088 (3.418% discrepancy). Smaller epsilon discrepancies are 83.46% and 61.87%; BF16 noise prevents a precise derivative claim.",
+    "The fresh full blocking L has no historic enormous or nonfinite gradients. All saved Adam states match CPU replay exactly; phi differences are at most 1.49e-8 absolute. These exclude the observed update-ledger failure class, not all backend defects."
+  ],
+  "judgment": "Combined mathematical, real-model scale/repeatability and complete fresh-run artifact evidence support continuing the planned guarded comparisons. This is a scientific judgment to continue experiments with limitations, not proof of MUSA derivative correctness, method efficacy or a root-cause fix.",
+  "next_stages": [
+    "X actual backend profile and guarded two-episode optimizer readiness; review before full X",
+    "Fresh full X, common-warm H1, development-only selection, then matched protocol stages with individual meta review"
+  ],
+  "limitations": [
+    "Old v7 episode72 failure and historical enormous gradients remain invalid/unresolved; never resume or promote their phi.",
+    "Blocking is a candidate mitigation; root cause is not established. New runs retain the original lock, immutable pins, blocking, raw-gradient evidence and preupdate guards.",
+    "H2 means the exact last two steps with a fixed earlier boundary, not the full K-step derivative.",
+    "BF16 real-model finite differences support coarse scale only and do not validate every production gradient.",
+    "Per-update CPU replay consumes saved gradients and resets from each saved state; it is not an independent derivative recomputation or a whole CPU trajectory.",
+    "No superiority, convergence, formal generalization, q_train benefit or full-protocol completion follows from training completion.",
+    "Every subsequent meta run requires its own artifact audit and scientific review. Formal knowledge is still excluded from phi training."
+  ],
+  "method_validated": false,
+  "full_protocol_complete": false,
+  "scientific_evidence_sha256": {
+    "records/observed_blocking_core_final_audit_20261101_1139.json": "9cbe5eb4ee6432817e0b0cfb7d3b0ebba3b318ca88cb92e3d700c091754f385c",
+    "records/observed_blocking_core_completion_20261101_1143/adam_replay.json": "cfd40f6ae10709d5e33a1365c6c6d3c00b11799e541e1861eb879079a63d379a",
+    "records/observed_blocking_core_completion_20261101_1143/replay_all_adam.py": "a87f5dfe6158ec9a3b509dc602a59e253ac8112b3a7ab72dbe05251542d9898c",
+    "records/observed_blocking_core_final_inner_review_20261101_1141.json": "82874ab60cc90b90f6862b19c5fa90d9e96319775f1346b9aeb557231ae68d6f",
+    "records/observed_blocking_core_20261030_0810/review_inner_ledger.py": "0beb769c010e86a0f3580ffc78811b3184552647cc1aee85430b19714326ef71",
+    "records/observed_blocking_core_monitor_20261101_070654_utc/result.json": "c88b18a5bfd1f1f1b7256676299b7b097d79d407f56f44243ae2b68726731168",
+    "records/observed_blocking_core_monitor_20261101_070654_utc/archive_source_sha256.json": "52fe7183bedd46e489e8dd190ce183b2037c5d67d9206758cfb3ca4882db888e",
+    "records/observed_blocking_core_monitor_20261101_070654_utc.tar.gz": "33d198072e69c5b4527bfce4a377d8425e33bcfe392f47f73c9563e0c40c2e6e",
+    "checks/horizon_cpu.json": "fb139574cfbf3943b8c9d129853c4b6888a4ca22eca88f2e0798449bdccc8fed",
+    "checks/horizon_upstream_cpu.json": "69324da9da4c0558643739fd384480eb4adc8f7047f1f86e485a94a218e651ee",
+    "checks/meta_rollout_horizon_regression_cpu.json": "3c80b3fb0d4ff064ee85df5bd2f9bae6dd351e5a8f0d0af4cc55a6ae710357ee",
+    "tools/validate_horizon.py": "5702672159ddb4320bbcd0bc954fe277eb7e08a75de50cebf91f81f42ca04fad",
+    "tools/validate_meta_rollout.py": "dc6efd5f22c40f9b1c2b4f958bb7306339f49b944dd5cecda4dfcac8b86d9c75",
+    "records/fixed_tail_monitor_20261030_075908_utc/agent_review.json": "00a94b817a5bb1f5361e98f664127fa7a5ec8aac7f398f1f17d262958019ac5d",
+    "records/fixed_tail_monitor_20261030_075908_utc/snapshot/runs/diagnostics/L_episode7_fixed_tail_blocking_r1/tail_sensitivity.json": "6ad238efafa7cae5a56eabd572af44d9055ddc6e1358a5ddebf53add1cf4be81",
+    "records/observed_blocking_core_review_20261030_1304/prefix_comparison.json": "a3a73bb9b23dfce2da21516a71596659d7add03433f55424b22a9a9410bc5680",
+    "records/observed_blocking_core_review_20261030_1304/prefix_agent_review.json": "cec1e0d728ec9aa2e7e665eeecde90c4391ab87192b263353129c5198d565adc"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "status": "PREVIOUS_UNEXECUTED_CANDIDATE_SCHEMA_BUG_REPRODUCED",
+  "utc": "2026-11-10T16:21:58.572887+00:00",
+  "error_type": "KeyError",
+  "missing_field": "config",
+  "fixture_only": true,
+  "training_or_controller_modified": false
+}

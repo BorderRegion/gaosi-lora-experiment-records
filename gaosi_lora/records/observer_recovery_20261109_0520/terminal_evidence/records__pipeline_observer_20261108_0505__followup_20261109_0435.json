@@ -1,0 +1,1304 @@
+{
+  "status": "SCHEDULED_DEVELOPMENT_PREFIX_PROVENANCE_AND_TOKEN_BUDGET_VERIFIED",
+  "recorded_at_utc": "2026-11-09T04:36:09.102885+00:00",
+  "observation": "records/pipeline_monitor_20261109_043538_utc",
+  "development_observation": "records/development_monitor_20261109_043538_utc",
+  "previous_followup": "records/pipeline_observer_20261108_0505/followup_20261109_0405.json",
+  "evidence_sha256": {
+    "records/pipeline_review_20261109_0435.json": "0fca0e930d0f6b945b8d397347ce4eca2f39a36ee4ade21be0b3903432b051da",
+    "records/pipeline_observer_20261108_0505/progress_20261109_0435.json": "5fe9ed60af3cf45156ac5b3055c2a176e1764618d7e6c2a4d640afc8c5e0b4bb",
+    "records/development_monitor_20261109_043538_utc/review.json": "aa7354e68b93cfd475e97c30c8ff570c5e1351f30eb9b51db0b39dd069b8efc7",
+    "records/development_monitor_20261109_043538_utc/archive_source_sha256.json": "9efeea7270c34cc8121f028180f6c25885d789749c18044cafc1d2f107dfedeb",
+    "records/pipeline_observer_20261108_0505/followup_20261109_0405.json": "a2bb291c991bc296d1133333a16e99ab249d96fdbf230e3065c6a3aab83982a2",
+    "records/development_monitor_20261104_2128/review_prefix_v4.py": "bfd883fc4f19feb760d33f0e7ed1610767a0cdec6e6334659514cbf50dd3190b"
+  },
+  "controller_count": 15,
+  "original_controllers_running": 14,
+  "original_controllers_passed": 1,
+  "development_pass_jobs": 50,
+  "development_running_jobs": 1,
+  "development_prefix_checks": [
+    {
+      "run": "runs/phi_dev_L_2048_t0_clean_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 513,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 512,
+      "task_binding_pool": 512,
+      "mean_recorded_step_seconds": 42.00570946931839,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_L_2048_t0_medium_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 513,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 512,
+      "task_binding_pool": 512,
+      "mean_recorded_step_seconds": 42.752632308751345,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_L_2048_t1_clean_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 512,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 32,
+      "task_binding_pool": 32,
+      "mean_recorded_step_seconds": 42.37150476127863,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_L_2048_t1_medium_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 512,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 32,
+      "task_binding_pool": 32,
+      "mean_recorded_step_seconds": 41.308325223624706,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_L_2048_t2_clean_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 512,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 32,
+      "task_binding_pool": 32,
+      "mean_recorded_step_seconds": 41.653324957937,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_L_2048_t2_medium_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 512,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 32,
+      "task_binding_pool": 32,
+      "mean_recorded_step_seconds": 41.576672464609146,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_L_2048_t3_clean_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 540,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 7,
+      "task_binding_pool": 7,
+      "mean_recorded_step_seconds": 54.45099728554487,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_L_2048_t3_medium_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 540,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 7,
+      "task_binding_pool": 7,
+      "mean_recorded_step_seconds": 55.968634098768234,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_L_2048_t4_clean_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 544,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 7,
+      "task_binding_pool": 7,
+      "mean_recorded_step_seconds": 52.371120631694794,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_L_2048_t4_medium_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 544,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 7,
+      "task_binding_pool": 7,
+      "mean_recorded_step_seconds": 52.36782915145159,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_L_2560_t0_clean_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 513,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 512,
+      "task_binding_pool": 512,
+      "mean_recorded_step_seconds": 40.25667942687869,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_L_2560_t0_medium_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 513,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 512,
+      "task_binding_pool": 512,
+      "mean_recorded_step_seconds": 41.51002411544323,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_L_2560_t1_clean_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 512,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 32,
+      "task_binding_pool": 32,
+      "mean_recorded_step_seconds": 42.249487332999706,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_L_2560_t1_medium_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 512,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 32,
+      "task_binding_pool": 32,
+      "mean_recorded_step_seconds": 42.032130267471075,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_L_2560_t2_clean_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 512,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 32,
+      "task_binding_pool": 32,
+      "mean_recorded_step_seconds": 41.83764600753784,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_L_2560_t2_medium_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 512,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 32,
+      "task_binding_pool": 32,
+      "mean_recorded_step_seconds": 41.865864869207144,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_L_2560_t3_clean_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 540,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 7,
+      "task_binding_pool": 7,
+      "mean_recorded_step_seconds": 55.480952840298414,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_L_2560_t3_medium_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 540,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 7,
+      "task_binding_pool": 7,
+      "mean_recorded_step_seconds": 55.093901731073856,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_L_2560_t4_clean_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 544,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 7,
+      "task_binding_pool": 7,
+      "mean_recorded_step_seconds": 51.70526422560215,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_L_2560_t4_medium_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 544,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 7,
+      "task_binding_pool": 7,
+      "mean_recorded_step_seconds": 52.026807717978954,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_X_2048_t0_clean_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 513,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 512,
+      "task_binding_pool": 512,
+      "mean_recorded_step_seconds": 43.68340040743351,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_X_2048_t0_medium_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 513,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 512,
+      "task_binding_pool": 512,
+      "mean_recorded_step_seconds": 44.45897941291332,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_X_2048_t1_clean_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 512,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 32,
+      "task_binding_pool": 32,
+      "mean_recorded_step_seconds": 45.306233663111925,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_X_2048_t1_medium_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 512,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 32,
+      "task_binding_pool": 32,
+      "mean_recorded_step_seconds": 45.22239104658365,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_X_2048_t2_clean_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 512,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 32,
+      "task_binding_pool": 32,
+      "mean_recorded_step_seconds": 45.55706926062703,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_X_2048_t2_medium_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 512,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 32,
+      "task_binding_pool": 32,
+      "mean_recorded_step_seconds": 45.93876676633954,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_X_2048_t3_clean_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 540,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 7,
+      "task_binding_pool": 7,
+      "mean_recorded_step_seconds": 58.702346943318844,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_X_2048_t3_medium_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 540,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 7,
+      "task_binding_pool": 7,
+      "mean_recorded_step_seconds": 58.718179523944855,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_X_2048_t4_clean_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 544,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 7,
+      "task_binding_pool": 7,
+      "mean_recorded_step_seconds": 56.3650592751801,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_X_2048_t4_medium_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 544,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 7,
+      "task_binding_pool": 7,
+      "mean_recorded_step_seconds": 56.85324718430638,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_X_2560_t0_clean_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 513,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 512,
+      "task_binding_pool": 512,
+      "mean_recorded_step_seconds": 44.98699952661991,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_X_2560_t0_medium_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 513,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 512,
+      "task_binding_pool": 512,
+      "mean_recorded_step_seconds": 44.78351864218712,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_X_2560_t1_clean_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 512,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 32,
+      "task_binding_pool": 32,
+      "mean_recorded_step_seconds": 45.63950068131089,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_X_2560_t1_medium_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 512,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 32,
+      "task_binding_pool": 32,
+      "mean_recorded_step_seconds": 45.75210350379348,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_X_2560_t2_clean_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 512,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 32,
+      "task_binding_pool": 32,
+      "mean_recorded_step_seconds": 45.819311540573835,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_X_2560_t2_medium_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 512,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 32,
+      "task_binding_pool": 32,
+      "mean_recorded_step_seconds": 45.80009673163295,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_X_2560_t3_clean_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 540,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 7,
+      "task_binding_pool": 7,
+      "mean_recorded_step_seconds": 59.06492722034454,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_X_2560_t3_medium_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 540,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 7,
+      "task_binding_pool": 7,
+      "mean_recorded_step_seconds": 58.10032714903355,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_X_2560_t4_clean_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 544,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 7,
+      "task_binding_pool": 7,
+      "mean_recorded_step_seconds": 55.17091991752386,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_X_2560_t4_medium_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 544,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 7,
+      "task_binding_pool": 7,
+      "mean_recorded_step_seconds": 55.763678167015314,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_paired_adam_t0_clean_s17",
+      "job_status": "RUNNING",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 8,
+      "evaluation_steps": [
+        0
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 523,
+        "language": 551,
+        "keep": 523
+      },
+      "last_recorded_task_binding_coverage": 512,
+      "task_binding_pool": 512,
+      "mean_recorded_step_seconds": 40.660718977451324,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_standard_adam_t0_clean_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 513,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 512,
+      "task_binding_pool": 512,
+      "mean_recorded_step_seconds": 30.62062642723322,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_standard_adam_t0_medium_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 513,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 512,
+      "task_binding_pool": 512,
+      "mean_recorded_step_seconds": 30.657430939376354,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_standard_adam_t1_clean_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 512,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 32,
+      "task_binding_pool": 32,
+      "mean_recorded_step_seconds": 31.589579734951258,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_standard_adam_t1_medium_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 512,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 32,
+      "task_binding_pool": 32,
+      "mean_recorded_step_seconds": 31.555995382368565,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_standard_adam_t2_clean_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 512,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 32,
+      "task_binding_pool": 32,
+      "mean_recorded_step_seconds": 30.82586257532239,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_standard_adam_t2_medium_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 512,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 32,
+      "task_binding_pool": 32,
+      "mean_recorded_step_seconds": 31.243655502796173,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_standard_adam_t3_clean_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 540,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 7,
+      "task_binding_pool": 7,
+      "mean_recorded_step_seconds": 44.3637480288744,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_standard_adam_t3_medium_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 540,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 7,
+      "task_binding_pool": 7,
+      "mean_recorded_step_seconds": 43.90504816547036,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_standard_adam_t4_clean_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 544,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 7,
+      "task_binding_pool": 7,
+      "mean_recorded_step_seconds": 41.65960120037198,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    },
+    {
+      "run": "runs/phi_dev_standard_adam_t4_medium_s17",
+      "job_status": "PASS",
+      "saved_source_files_matched_frozen_pipeline": 25,
+      "preserved_run_config_equal": true,
+      "development_plan_metadata_checked": true,
+      "recorded_recovery_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "initializing_without_event_log": false,
+      "minimum_effective_tokens": {
+        "task": 544,
+        "language": 551,
+        "keep": 513
+      },
+      "last_recorded_task_binding_coverage": 7,
+      "task_binding_pool": 7,
+      "mean_recorded_step_seconds": 40.69189316406846,
+      "tensor_commit_or_checkpoint_finiteness_audited": false
+    }
+  ],
+  "alerts": [],
+  "next_due_at_utc": "2026-11-09T05:05:39.268950+00:00",
+  "method_validated": false,
+  "full_goal_complete": false,
+  "training_modified_or_restarted": false,
+  "limitations": [
+    "Preserved text evidence only; no checkpoint, derivative, independently recomputed model output or efficacy audit.",
+    "A log step can precede its tensor checkpoint commit; no committed tensor step inferred.",
+    "Recorded step timing excludes full evaluation/loading costs; no full-protocol ETA inferred."
+  ],
+  "next_action": "Continue the existing 30-minute observer with development and launched H1 comparison supplements; audit new PASS endpoints only."
+}

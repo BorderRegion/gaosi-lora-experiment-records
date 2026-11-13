@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "scope": "Isolated K32 schedule plus real random tiny CPU K2 numerical/entry checks; not real3B/MUSA or trained-phi effect evidence",
+  "checks": {
+    "complete_18_arm_actual_primary_K32_and_within_scheme_same_initial_bytes": "PASS",
+    "diagnostic_retains_original_known_support_recipe_and_no_superiority_claim": "PASS",
+    "new_rates_doses_test_data_and_K64_substitution_rejected": "PASS",
+    "final_rows_rejected_even_with_updated_hashes": "PASS",
+    "Adam_validates_frozen_rules_before_opening_task_data": "PASS",
+    "complete_norm_sequence_required_and_only_MUSA_leaf_gets_device_lock": "PASS",
+    "reported_effective_weight_damage_equals_independent_dense_BA_difference_all_schemes": "PASS",
+    "real_18_tiny_CPU_trajectories_production_entry_recovery_frozen_phi_and_full_coverage": "PASS",
+    "real_phi_and_shrink_controls_match_stock_global_update_norm_each_step": "PASS",
+    "norm_matched_phi_next_feature_records_actual_scaled_and_rounded_update": "PASS",
+    "norm_matched_phi_resume_restores_parameters_moments_history_streams_bitwise": "PASS",
+    "real_initial_adapter_tensors_identical_within_each_scheme": "PASS"
+  },
+  "count": 12
+}

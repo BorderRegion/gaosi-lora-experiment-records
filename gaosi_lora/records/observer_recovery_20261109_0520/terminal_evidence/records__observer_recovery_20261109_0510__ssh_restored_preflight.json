@@ -1,0 +1,129 @@
+{
+  "recorded_at_utc": "2026-11-09T05:17:55.757482+00:00",
+  "status": "SSH_RESTORED_AND_ORIGINAL_CONTROLLERS_AND_TRAINING_IDENTITY_VERIFIED",
+  "controllers": [
+    {
+      "name": "phi_core_queue_observed_blocking_v8",
+      "status": "PASS",
+      "identity_matches": true
+    },
+    {
+      "name": "phi_development_queue_observed_blocking_v8",
+      "status": "RUNNING",
+      "identity_matches": true
+    },
+    {
+      "name": "organization_queue_observed_blocking_v8",
+      "status": "RUNNING",
+      "identity_matches": true
+    },
+    {
+      "name": "final_parent_queue_observed_blocking_v8",
+      "status": "RUNNING",
+      "identity_matches": true
+    },
+    {
+      "name": "formal_recovery_queue_observed_blocking_v8",
+      "status": "RUNNING",
+      "identity_matches": true
+    },
+    {
+      "name": "reflow_queue_observed_blocking_v8",
+      "status": "RUNNING",
+      "identity_matches": true
+    },
+    {
+      "name": "continual_queue_observed_blocking_v8",
+      "status": "RUNNING",
+      "identity_matches": true
+    },
+    {
+      "name": "seven_b_queue_observed_blocking_v8",
+      "status": "RUNNING",
+      "identity_matches": true
+    },
+    {
+      "name": "horizon_queue_observed_blocking_v8",
+      "status": "RUNNING",
+      "identity_matches": true
+    },
+    {
+      "name": "confirmation_queue_observed_blocking_v8",
+      "status": "RUNNING",
+      "identity_matches": true
+    },
+    {
+      "name": "noise_controls_queue_observed_blocking_v8",
+      "status": "RUNNING",
+      "identity_matches": true
+    },
+    {
+      "name": "recovery_statistics_queue_observed_blocking_v8",
+      "status": "RUNNING",
+      "identity_matches": true
+    },
+    {
+      "name": "selective_statistics_queue_observed_blocking_v8",
+      "status": "RUNNING",
+      "identity_matches": true
+    },
+    {
+      "name": "reflow_statistics_queue_observed_blocking_v8",
+      "status": "RUNNING",
+      "identity_matches": true
+    },
+    {
+      "name": "continual_statistics_queue_observed_blocking_v8",
+      "status": "RUNNING",
+      "identity_matches": true
+    }
+  ],
+  "running_development": [
+    {
+      "name": "phi_dev_paired_adam_t0_clean_s17",
+      "pid": 630310,
+      "start_ticks": "147098447",
+      "process_state": "S",
+      "last_event": {
+        "event": "recover",
+        "utc": "2026-11-09T05:17:36.508606+00:00",
+        "process_wall_seconds": 4535.0756096839905,
+        "step": 29,
+        "loss_D": 1.6787211279734038e-05,
+        "loss_language": 0.8005468249320984,
+        "route_tokens": {
+          "task": 523,
+          "language": 1022,
+          "keep": 523
+        },
+        "step_seconds": 39.202070474624634,
+        "coverage_slot": "task",
+        "coverage": 512,
+        "raw_update_norm": 0.530627429485321,
+        "update_norm": 0.530627429485321,
+        "update_norm_scale": 1.0,
+        "compute_counters": {
+          "loss_forwards": 588,
+          "loss_backwards": 552,
+          "input_tokens": 292922,
+          "supervised_tokens": 77014,
+          "hessian_vector_products": 0
+        },
+        "cpu_rss_bytes": 7793598464,
+        "allocated_bytes": 9679777792,
+        "reserved_bytes": 23540531200,
+        "peak_allocated_bytes": 15820392960,
+        "peak_reserved_bytes": 23540531200
+      }
+    }
+  ],
+  "failed_snapshot_outputs": {
+    "records/pipeline_monitor_20261109_050539_utc": false,
+    "records/pipeline_monitor_20261109_050539_utc.tar.gz": false,
+    "records/pipeline_monitor_20261109_050834_utc": false,
+    "records/pipeline_monitor_20261109_050834_utc.tar.gz": false
+  },
+  "device_lock_inode": 31148027670,
+  "training_modified_or_restarted": false,
+  "full_goal_complete": false
+}

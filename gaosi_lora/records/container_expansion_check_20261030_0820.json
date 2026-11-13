@@ -1,0 +1,31 @@
+{
+  "observed_at_utc": "2026-10-30T00:19:51.371305+00:00",
+  "scope": "User-requested disk, directory and process identity check; no new GPU/events/checkpoint telemetry",
+  "pid1_start": "Thu Oct 29 16:36:15 2026",
+  "data_mount": "/dev/md0[/docker/volumes/autodl-container-kaltlgmeta-f374ee08-storage/_data] /root/autodl-tmp xfs",
+  "storage_GiB": {
+    "/root/autodl-tmp": {
+      "total": 1050.0,
+      "free": 983.48
+    },
+    "/": {
+      "total": 30.0,
+      "free": 18.08
+    }
+  },
+  "project_present": true,
+  "data_directory_present": true,
+  "training_process": {
+    "pid": 344804,
+    "state": "S",
+    "start_ticks": "58376943",
+    "matches_previous_training": true
+  },
+  "scheduled_check": {
+    "pid": 3970034,
+    "identity_verified_live": true,
+    "due_at_utc": "2026-10-30T00:39:00+00:00"
+  },
+  "training_restart_performed": false,
+  "assessment": "Original training process remains live; data volume and project directory are present. No additional container restart since previous observation."
+}

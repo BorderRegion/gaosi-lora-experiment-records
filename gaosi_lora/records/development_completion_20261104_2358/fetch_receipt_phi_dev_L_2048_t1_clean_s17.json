@@ -1,0 +1,27 @@
+{
+  "status": "COMPLETED_DEVELOPMENT_AUDIT_AND_PREDICTION_EVIDENCE_FETCHED_AND_INDEPENDENTLY_REHASHED",
+  "recorded_at_utc": "2026-11-05T03:26:18.693111+00:00",
+  "run": "runs/phi_dev_L_2048_t1_clean_s17",
+  "audit": "records/development_completion_20261104_2358/phi_dev_L_2048_t1_clean_s17.json",
+  "audit_sha256": "5313d61a4d0ca308b62b78475f4cb89a6b8335816a1a83b7444707b6a7368de9",
+  "archive": {
+    "archive": "records/development_completion_20261104_2358/phi_dev_L_2048_t1_clean_s17_evidence.tar.gz",
+    "sha256": "e15259f52e1d51ab0d84e8cbd32d6d1c87fc44556c67e99ff473e9f94c378652",
+    "manifest_sha256": "6f79a4865248ae94ad259fb8db60d0de1a1ad4a8fc77d2a7c0779a3cc7ca3508",
+    "files": 75,
+    "tensor_files_remotely_only": 4
+  },
+  "fetch_script_sha256": "d390e02f87c9f32e838aaa20268dc6cb790d85c032e2a3916ab70b9cb45b8955",
+  "prediction_files": 12,
+  "prediction_rows": 3264,
+  "limitations": [
+    "CPU inspection of saved tensors and re-aggregation of saved predictions only; no model forward, tokenizer or derivative recomputation.",
+    "Language NLL is checked against the event ledger; no saved per-token language audit.",
+    "Model compute counters omit direct QA candidate/generation calls; they are not total evaluation FLOPs or total model forwards.",
+    "Frozen phi/base flags plus pinned source and file identities are provenance evidence, not an independent in-memory mutation trace.",
+    "No paired-method efficacy, held-out generalization, convergence or multi-seed conclusion from one completed development cell."
+  ],
+  "method_validated": false,
+  "full_goal_complete": false,
+  "training_modified_or_restarted": false
+}

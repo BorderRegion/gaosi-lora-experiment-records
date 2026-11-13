@@ -1,0 +1,11 @@
+{
+  "status": "EXISTING_ARCHIVE_RESUMED_AND_SOURCES_REHASHED",
+  "recorded_at_utc": "2026-11-10T05:28:46.695351+00:00",
+  "observation": "records/pipeline_monitor_20261110_052022_utc",
+  "archive_sha256": "e55949ebb8c18244c4b28428216b559b0e81df5ed688d9d858cdc7c891b2c4e1",
+  "archive_bytes": 6772783,
+  "preserved_prefix_bytes": 294912,
+  "verified_source_files": 163,
+  "collector_resubmitted": false,
+  "training_modified_or_restarted": false
+}

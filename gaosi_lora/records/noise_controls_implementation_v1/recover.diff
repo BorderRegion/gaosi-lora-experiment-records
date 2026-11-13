@@ -1,0 +1,23 @@
+--- records/noise_controls_implementation_v1/recover.py.before
++++ gaosi/recover.py
+@@ -22,7 +22,7 @@
+ from .model import AdapterModel, memory, synchronize
+ from .noise import canonical_noise, split_parent_single_to_dual
+ from .runtime import Run, atomic_save, restore_rng, rng_state, seed_all
+-from .transition import Phi, scalar_stats, zero_state, prepare, apply_prepared, detach_tree
++from .transition import Phi, scalar_stats, zero_state, prepare, apply_prepared, detach_tree, rms
+ 
+ 
+ def run_recovery(config, resume=False):
+@@ -266,6 +266,11 @@
+                     value.copy_(previous_parameters[name] + norm_scale * (value - previous_parameters[name]))
+             applied_update_norm = float(torch.stack([(parameters[name].detach() - previous_parameters[name]).square().sum()
+                                                      for name in parameters]).sum().sqrt().cpu())
++            # Phi's next continuous feature must describe the update actually
++            # applied after norm matching, including FP32 rounding.
++            for name, history in state['history'].items():
++                history['last_update'] = (rms(parameters[name].detach() - previous_parameters[name])
++                                          / (stats[name]['rms_floor'] + 1e-12))
+         del previous_parameters
+         state = detach_tree(state)
+         synchronize(config['device'])

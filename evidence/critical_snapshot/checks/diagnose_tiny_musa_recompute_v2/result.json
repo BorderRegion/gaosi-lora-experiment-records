@@ -1,0 +1,66 @@
+{
+  "status": "DIAGNOSTIC_COMPLETE",
+  "scope": "Random tiny MUSA operator comparison; not full-model training or effect",
+  "observations": [
+    {
+      "dtype": "torch.bfloat16",
+      "repeat": 0,
+      "finite": true,
+      "direct_objective": 13.548868179321289,
+      "recomputed_objective": 13.548761367797852,
+      "direct_norm": 0.0029996557099957314,
+      "recomputed_norm": 0.005629096089982397,
+      "relative_l2_difference": 0.9258672665619658
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "repeat": 1,
+      "finite": true,
+      "direct_objective": 13.548868179321289,
+      "recomputed_objective": 13.548761367797852,
+      "direct_norm": 0.0029996557099957314,
+      "recomputed_norm": 0.005629096089982397,
+      "relative_l2_difference": 0.9258672665619658
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "repeat": 2,
+      "finite": true,
+      "direct_objective": 13.548868179321289,
+      "recomputed_objective": 13.548761367797852,
+      "direct_norm": 0.0029996557099957314,
+      "recomputed_norm": 0.005629096089982397,
+      "relative_l2_difference": 0.9258672665619658
+    },
+    {
+      "dtype": "torch.float32",
+      "repeat": 0,
+      "finite": true,
+      "direct_objective": 13.548901557922363,
+      "recomputed_objective": 13.548900604248047,
+      "direct_norm": 0.006875996082251307,
+      "recomputed_norm": 0.00687586663970469,
+      "relative_l2_difference": 1.992291417419843e-05
+    },
+    {
+      "dtype": "torch.float32",
+      "repeat": 1,
+      "finite": true,
+      "direct_objective": 13.548901557922363,
+      "recomputed_objective": 13.548900604248047,
+      "direct_norm": 0.006875996082251307,
+      "recomputed_norm": 0.00687586663970469,
+      "relative_l2_difference": 1.992291417419843e-05
+    },
+    {
+      "dtype": "torch.float32",
+      "repeat": 2,
+      "finite": true,
+      "direct_objective": 13.548901557922363,
+      "recomputed_objective": 13.548900604248047,
+      "direct_norm": 0.006875996082251307,
+      "recomputed_norm": 0.00687586663970469,
+      "relative_l2_difference": 1.992291417419843e-05
+    }
+  ]
+}

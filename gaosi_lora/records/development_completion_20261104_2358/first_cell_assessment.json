@@ -1,0 +1,35 @@
+{
+  "status": "FIRST_COMPLETED_DEVELOPMENT_CELL_DESCRIPTIVE_REVIEW_ONLY",
+  "recorded_at_utc": "2026-11-05T00:01:26.611345+00:00",
+  "run": "runs/phi_dev_L_2048_t0_clean_s17",
+  "scope": "L-H2 phi2048, seed17, known dev task, q_apply0, K64; one of the 60 declared base development cells",
+  "initial_candidate_correct": 512,
+  "final_candidate_correct": 510,
+  "initial_strict_EM_correct": 504,
+  "final_strict_EM_correct": 506,
+  "query_count": 512,
+  "initial_dev_score": 0.9921875,
+  "final_dev_score": 0.9921875,
+  "final_minus_initial_dev_score": 0.0,
+  "language_residual_nats": 0.020154350358970063,
+  "task_residual_nats": -0.004434174903442216,
+  "task_and_keep_are_the_same_known_query_pool": true,
+  "job_wall_seconds": 7827.016048669815,
+  "interpretation": "Small mixed metric changes with unchanged declared score. This is a clean application cell, with no injected damage and no paired Adam result yet; it does not establish recovery benefit or method advantage.",
+  "evidence_sha256": {
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t0_clean_s17.json": "01546584f94766f18038c2fa7463e6a2f622e91818c781e38e1c9f1985426ba4",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2048_t0_clean_s17.json": "417e47f2bf5486d8349c4a626fab18673bacdcb9287f2b68fbf05dab732295af"
+  },
+  "limitations": [
+    "CPU inspection of saved tensors and re-aggregation of saved predictions only; no model forward, tokenizer or derivative recomputation.",
+    "Language NLL is checked against the event ledger; no saved per-token language audit.",
+    "Model compute counters omit direct QA candidate/generation calls; they are not total evaluation FLOPs or total model forwards.",
+    "Frozen phi/base flags plus pinned source and file identities are provenance evidence, not an independent in-memory mutation trace.",
+    "No paired-method efficacy, held-out generalization, convergence or multi-seed conclusion from one completed development cell.",
+    "Known task/keep metrics use the identical data pool; these are not two independent retention measurements."
+  ],
+  "selection_policy_changed": false,
+  "scientific_receipt_generated": false,
+  "method_validated": false,
+  "full_goal_complete": false
+}

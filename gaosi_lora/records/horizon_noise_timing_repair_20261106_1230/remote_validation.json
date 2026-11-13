@@ -1,0 +1,51 @@
+{
+  "status": "REAL_CPU_H1_H2_PAIR_AND_STRICT_GATE_VALIDATION_PASS",
+  "recorded_at_utc": "2026-11-06T12:32:16.510063+00:00",
+  "torch_threads": 2,
+  "pair_review": "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t0_clean_s17_v1_paired_review_v2.json",
+  "pair_review_sha256": "707f6a31fb93221b9990d2217ffd16cbe3b0736eafe2a44f375614ac08904149",
+  "all64_per_step_tokens_and_terminal_saved_stream_states_equal": true,
+  "shared_initial_adapter_tensor_digest": "7e2bc524d343f342bf281ca7e40dbb4f881566b219794e6675d11c4c64c7bf79",
+  "shared_initial_corruption_non_timing_fields_equal": true,
+  "real_completed_initial_and_clean_evaluations_equal": true,
+  "strict_comparison_mutations_rejected": [
+    "base_digest",
+    "initial",
+    "clean"
+  ],
+  "noise_timer_review": {
+    "all_non_timing_fields_exactly_equal": true,
+    "excluded_fields": [
+      "boundary_seconds"
+    ],
+    "left_boundary_seconds": 1.36177659034729,
+    "right_boundary_seconds": 1.3327867984771729
+  },
+  "measured_H1_wrapper_seconds_including_lock_wait": 14503.974383354187,
+  "measured_H1_last_event_process_seconds": 7613.93866109848,
+  "wrapper_minus_last_event_process_seconds_includes_lock_wait_and_startup": 6890.035722255707,
+  "core_endpoint_evidence_sha256": {
+    "records/jobs/phi_mix_O1_L_H2_core_s17_observed_blocking_v8.json": "26c45051ee9c5f5a7cb1d9351c27c465918547a406df6e94f1cf66492ab958d6",
+    "records/pipeline_observed_blocking_v8/reviews/phi_mix_O1_L_H2_core_s17_observed_blocking_v8.json": "1646013bb64b63fefe3bf79de0f7515796f0fed3926f274b906b824c424c23bb",
+    "runs/phi_mix_O1_L_H2_core_s17_observed_blocking_v8/result.json": "ef5739df00926ecfe510dd3dcbaa027ecd5fa37910acf45062dbf249f3454ac8",
+    "runs/phi_mix_O1_L_H2_core_s17_observed_blocking_v8/phi_2560.pt": "4e97db0e17ef8c2b59afc6a41aaf8eaad8349b0ba470f69c8209c9b41b305c03",
+    "records/jobs/phi_mix_O1_L_H1_commonwarm_s17_observed_blocking_v8.json": "1b6c450db9e1d55daeadb98e1121d2d1a53d5cb03835dee28098c99ac3c62a32",
+    "records/pipeline_observed_blocking_v8/reviews/phi_mix_O1_L_H1_commonwarm_s17_observed_blocking_v8.json": "de515684d577ad949104e49eedca57f0ec356d43510ca6ae5fc9c228e01d88b4",
+    "runs/phi_mix_O1_L_H1_commonwarm_s17_observed_blocking_v8/result.json": "f957da125e4d9bd520ec9b49c257f7ab61a357fd518507707bed11d7edf65fa9",
+    "runs/phi_mix_O1_L_H1_commonwarm_s17_observed_blocking_v8/phi_2560.pt": "669ebfa4f72dd5fee938863d0ef4b793312b5af2ee1229057876e6221fafae91",
+    "runs/phi_mix_O1_L_H2_core_s17_observed_blocking_v8/phi_0512.pt": "4998e1ef0596fd40f797bb208ff1ebc7374b422916dc4d7cfc8981f577b83b65"
+  },
+  "evidence_sha256": {
+    "records/horizon_effect_comparison_20261103_1005/compare_noise_timing_v2.py": "ef3208e1a8a173c864fd287dbd51a418037c096bc60b9c8391aff9bbc60bd37a",
+    "records/horizon_effect_comparison_20261103_1005/noise_metadata_v2.py": "c691ae268fd4ea48ca8b3836cb2a8db5ba9d2713eb467fcdd4de5eeca79b730a",
+    "records/horizon_effect_comparison_20261103_1005/audit_horizon_v2.py": "0137d80fd567504aaa2ab7485ef40ec02391cce0f0b716aaaa0a48bf6995b46b",
+    "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t0_clean_s17_v1.json": "2b37bf680a34cdb6d764aacdfc467e243e75f580734ec43e4eab361c6e5f332d",
+    "records/jobs/phi_horizon_effect_comparison_s17_v1.json": "cc90e2361c9cb7e9edae60a9d0e9d5727a10c7db9f524748471ce2381633fae6",
+    "records/logs/phi_horizon_effect_comparison_s17_v1.log": "0358e94ab9f9fdbdec2d2b48f2ece088842da6f495277a5d1412f0ad54227232",
+    "records/horizon_noise_timing_repair_20261106_1230/validate_v2_remote.py": "96a9de13ecc6f256a86c2aafa2f155d8bee188f8a30b7633da72b08d5a32c801"
+  },
+  "numerical_training_executed": false,
+  "continuation_started": false,
+  "method_validated": false,
+  "full_goal_complete": false
+}

@@ -1,0 +1,14 @@
+{
+  "status": "COMPLETE_REQUIRES_REVIEW",
+  "method_validated": false,
+  "downstream_promotion_allowed": false,
+  "formal_data_used": false,
+  "purpose": "Full fresh schedule under candidate synchronization mitigation",
+  "raw_norm_stop_before_update": 1000000.0,
+  "limitations": [
+    "Execution success requires separate numerical and scientific review.",
+    "The gradient threshold stops for review; gradients are never skipped or replaced."
+  ],
+  "episodes": 192,
+  "inner_updates": 2560
+}

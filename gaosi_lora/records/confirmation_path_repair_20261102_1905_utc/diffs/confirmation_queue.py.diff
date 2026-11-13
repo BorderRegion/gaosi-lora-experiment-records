@@ -1,0 +1,13 @@
+--- records/pipeline_observed_blocking_v8/tools/confirmation_queue.py
++++ candidate/confirmation_queue.py
+@@ -365,8 +365,8 @@
+     preserve_json('records/confirmation_ready_v1.json',
+                   {'status': 'TWO_INDEPENDENT_PHI_SEED_ORDER_CONFIRMATIONS_COMPLETE', 'policy': POLICY,
+                    'seeds': POLICY['independent_phi_seeds'], 'organization_selection': selection,
+-                   'recovery_records': [f'records/confirmation_recovery_ready_s{s}_v1.json' for s in [29, 43]],
+-                   'continual_records': [f'records/confirmation_continual_ready_s{s}_v1.json' for s in [29, 43]],
++                   'recovery_records': [f'records/confirmation_recovery_ready_s{s}_observed_blocking_v8.json' for s in [29, 43]],
++                   'continual_records': [f'records/confirmation_continual_ready_s{s}_observed_blocking_v8.json' for s in [29, 43]],
+                    'shared_parent_conditioning': True, 'independent_phi_training_seeds_including_primary': 3,
+                    'overall_experiment_completion': False})
+ 

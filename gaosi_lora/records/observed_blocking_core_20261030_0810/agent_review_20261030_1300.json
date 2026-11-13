@@ -1,0 +1,503 @@
+{
+  "reviewed_at_utc": "2026-10-30T12:59:53.010360+00:00",
+  "independently_rehashed_all_observations": true,
+  "method_validated": false,
+  "production_promoted": false,
+  "observations": [
+    {
+      "observed_at_utc": "2026-10-30T08:36:40.879119+00:00",
+      "committed_episodes": 2,
+      "committed_inner_updates": 16,
+      "maximum_observed_raw_norm": 0.06620782751435991,
+      "all_observed_raw_gradients_finite": true,
+      "checkpoint": {
+        "copied_artifact_sha256": "46c8f2eb8c3851cb4d01f6ea95fd0f502c742bba6a507c63f1656a9a35d9b65a",
+        "next_episode": 2,
+        "inner_updates": 16,
+        "phi_finite": true,
+        "optimizer_finite": true,
+        "config_equal": true
+      },
+      "gradient_guard_errors": [],
+      "storage_GiB": {
+        "/root/autodl-tmp": {
+          "total": 1050.0,
+          "free": 982.28
+        },
+        "/": {
+          "total": 30.0,
+          "free": 18.04
+        }
+      },
+      "observation": "records/observed_blocking_core_monitor_20261030_083640_utc",
+      "archive_sha256": "1b3e803ee20bd53c09c892152beaceac774b08bbd31280363c5df76aed43536a",
+      "verified_source_files": 42,
+      "job_status": "RUNNING",
+      "identity_matches": true,
+      "blocking_env": [
+        "MUSA_LAUNCH_BLOCKING=1"
+      ],
+      "last_inner": {
+        "event": "inner",
+        "utc": "2026-10-30T08:34:47.987637+00:00",
+        "process_wall_seconds": 1680.2327146530151,
+        "episode": 2,
+        "k": 8,
+        "ld": 0.04260672628879547,
+        "lr": 1.246324062347412,
+        "task_tokens": 524,
+        "language_tokens": 962,
+        "support_forwards": 18,
+        "keep_tokens": 524,
+        "keep_forwards": 8,
+        "step_seconds": 41.442840814590454,
+        "exact_window": true,
+        "cpu_rss_bytes": 8042065920,
+        "allocated_bytes": 17667540480,
+        "reserved_bytes": 33529266176,
+        "peak_allocated_bytes": 31252617216,
+        "peak_reserved_bytes": 33529266176
+      }
+    },
+    {
+      "observed_at_utc": "2026-10-30T09:06:40.975163+00:00",
+      "committed_episodes": 5,
+      "committed_inner_updates": 40,
+      "maximum_observed_raw_norm": 0.06620782751435991,
+      "all_observed_raw_gradients_finite": true,
+      "checkpoint": {
+        "copied_artifact_sha256": "aabf8963d585d8eb6bb0c3db810148c806306f9c509498ef262b49d8f6a9737d",
+        "next_episode": 5,
+        "inner_updates": 40,
+        "phi_finite": true,
+        "optimizer_finite": true,
+        "config_equal": true
+      },
+      "gradient_guard_errors": [],
+      "storage_GiB": {
+        "/root/autodl-tmp": {
+          "total": 1050.0,
+          "free": 982.27
+        },
+        "/": {
+          "total": 30.0,
+          "free": 18.17
+        }
+      },
+      "observation": "records/observed_blocking_core_monitor_20261030_090640_utc",
+      "archive_sha256": "9bb0b184b20ffa7112c1c4e1968b2cffab4f2f233808d70932b5e2251018f885",
+      "verified_source_files": 42,
+      "job_status": "RUNNING",
+      "identity_matches": true,
+      "blocking_env": [
+        "MUSA_LAUNCH_BLOCKING=1"
+      ],
+      "last_inner": {
+        "event": "inner",
+        "utc": "2026-10-30T09:06:26.957004+00:00",
+        "process_wall_seconds": 3579.2020847797394,
+        "episode": 5,
+        "k": 8,
+        "ld": 0.03717123344540596,
+        "lr": 1.3811508417129517,
+        "task_tokens": 513,
+        "language_tokens": 910,
+        "support_forwards": 18,
+        "keep_tokens": 513,
+        "keep_forwards": 8,
+        "step_seconds": 39.742228746414185,
+        "exact_window": true,
+        "cpu_rss_bytes": 8131522560,
+        "allocated_bytes": 17673636864,
+        "reserved_bytes": 33569112064,
+        "peak_allocated_bytes": 31270790656,
+        "peak_reserved_bytes": 33569112064
+      }
+    },
+    {
+      "observed_at_utc": "2026-10-30T09:36:41.198025+00:00",
+      "committed_episodes": 8,
+      "committed_inner_updates": 64,
+      "maximum_observed_raw_norm": 0.07456549571551227,
+      "all_observed_raw_gradients_finite": true,
+      "checkpoint": {
+        "copied_artifact_sha256": "4c323c61dde96fa678e6e08e7832f41505b6fec7415ce6ce62c8e4431961c04f",
+        "next_episode": 8,
+        "inner_updates": 64,
+        "phi_finite": true,
+        "optimizer_finite": true,
+        "config_equal": true
+      },
+      "gradient_guard_errors": [],
+      "storage_GiB": {
+        "/root/autodl-tmp": {
+          "total": 1050.0,
+          "free": 982.25
+        },
+        "/": {
+          "total": 30.0,
+          "free": 18.17
+        }
+      },
+      "observation": "records/observed_blocking_core_monitor_20261030_093640_utc",
+      "archive_sha256": "358af892a0482c28354ae8bbdd58626f64ffb43d48d0819dea1e33dea944feea",
+      "verified_source_files": 42,
+      "job_status": "RUNNING",
+      "identity_matches": true,
+      "blocking_env": [
+        "MUSA_LAUNCH_BLOCKING=1"
+      ],
+      "last_inner": {
+        "event": "inner",
+        "utc": "2026-10-30T09:35:57.574688+00:00",
+        "process_wall_seconds": 5349.819765329361,
+        "episode": 8,
+        "k": 5,
+        "ld": 0.13121142983436584,
+        "lr": 1.3781784772872925,
+        "task_tokens": 516,
+        "language_tokens": 1022,
+        "support_forwards": 18,
+        "keep_tokens": 516,
+        "keep_forwards": 8,
+        "step_seconds": 40.74867820739746,
+        "exact_window": false,
+        "cpu_rss_bytes": 8106500096,
+        "allocated_bytes": 11164077568,
+        "reserved_bytes": 33571209216,
+        "peak_allocated_bytes": 31273333760,
+        "peak_reserved_bytes": 33571209216
+      }
+    },
+    {
+      "observed_at_utc": "2026-10-30T10:06:41.350981+00:00",
+      "committed_episodes": 11,
+      "committed_inner_updates": 88,
+      "maximum_observed_raw_norm": 0.09771539604535447,
+      "all_observed_raw_gradients_finite": true,
+      "checkpoint": {
+        "copied_artifact_sha256": "c89db683d27f2d1e68324ac0a5e27fb1ac11fe48e819c32e7d81e8756ff5386a",
+        "next_episode": 11,
+        "inner_updates": 88,
+        "phi_finite": true,
+        "optimizer_finite": true,
+        "config_equal": true
+      },
+      "gradient_guard_errors": [],
+      "storage_GiB": {
+        "/root/autodl-tmp": {
+          "total": 1050.0,
+          "free": 982.24
+        },
+        "/": {
+          "total": 30.0,
+          "free": 18.04
+        }
+      },
+      "observation": "records/observed_blocking_core_monitor_20261030_100641_utc",
+      "archive_sha256": "82488c9f2b769f2af2726dda90a452cb5bcaecc50a7924ed3b863d1485757205",
+      "verified_source_files": 42,
+      "job_status": "RUNNING",
+      "identity_matches": true,
+      "blocking_env": [
+        "MUSA_LAUNCH_BLOCKING=1"
+      ],
+      "last_inner": {
+        "event": "inner",
+        "utc": "2026-10-30T10:06:24.554717+00:00",
+        "process_wall_seconds": 7176.799803495407,
+        "episode": 11,
+        "k": 3,
+        "ld": 0.343850702047348,
+        "lr": 1.2061798572540283,
+        "task_tokens": 563,
+        "language_tokens": 1022,
+        "support_forwards": 20,
+        "keep_tokens": 563,
+        "keep_forwards": 9,
+        "step_seconds": 43.7337806224823,
+        "exact_window": false,
+        "cpu_rss_bytes": 8110587904,
+        "allocated_bytes": 11138645504,
+        "reserved_bytes": 33812381696,
+        "peak_allocated_bytes": 31273333760,
+        "peak_reserved_bytes": 33812381696
+      }
+    },
+    {
+      "observed_at_utc": "2026-10-30T10:36:41.472622+00:00",
+      "committed_episodes": 14,
+      "committed_inner_updates": 112,
+      "maximum_observed_raw_norm": 0.09771539604535447,
+      "all_observed_raw_gradients_finite": true,
+      "checkpoint": {
+        "copied_artifact_sha256": "a93e159a894c24e790bb0c94ea87c8aa15ff65e012de328e593e279d3e302405",
+        "next_episode": 14,
+        "inner_updates": 112,
+        "phi_finite": true,
+        "optimizer_finite": true,
+        "config_equal": true
+      },
+      "gradient_guard_errors": [],
+      "storage_GiB": {
+        "/root/autodl-tmp": {
+          "total": 1050.0,
+          "free": 982.22
+        },
+        "/": {
+          "total": 30.0,
+          "free": 18.17
+        }
+      },
+      "observation": "records/observed_blocking_core_monitor_20261030_103641_utc",
+      "archive_sha256": "50dfe21598748bb028f7a3aaed4a8a126877404f921bb900c45bdfce9e9b3904",
+      "verified_source_files": 42,
+      "job_status": "RUNNING",
+      "identity_matches": true,
+      "blocking_env": [
+        "MUSA_LAUNCH_BLOCKING=1"
+      ],
+      "last_inner": {
+        "event": "inner",
+        "utc": "2026-10-30T10:31:31.273280+00:00",
+        "process_wall_seconds": 8683.518357276917,
+        "episode": 13,
+        "k": 8,
+        "ld": 0.022443696856498718,
+        "lr": 0.8984997272491455,
+        "task_tokens": 522,
+        "language_tokens": 890,
+        "support_forwards": 18,
+        "keep_tokens": 522,
+        "keep_forwards": 8,
+        "step_seconds": 41.20793628692627,
+        "exact_window": true,
+        "cpu_rss_bytes": 8109248512,
+        "allocated_bytes": 17662157824,
+        "reserved_bytes": 33812381696,
+        "peak_allocated_bytes": 31273333760,
+        "peak_reserved_bytes": 33812381696
+      }
+    },
+    {
+      "observed_at_utc": "2026-10-30T11:06:41.605952+00:00",
+      "committed_episodes": 16,
+      "committed_inner_updates": 128,
+      "maximum_observed_raw_norm": 0.10468263021227603,
+      "all_observed_raw_gradients_finite": true,
+      "checkpoint": {
+        "copied_artifact_sha256": "7fa6656f281bb86f954a47c414c01432ab256b3eefb0b78205755fbfa4c964a9",
+        "next_episode": 16,
+        "inner_updates": 128,
+        "phi_finite": true,
+        "optimizer_finite": true,
+        "config_equal": true
+      },
+      "gradient_guard_errors": [],
+      "storage_GiB": {
+        "/root/autodl-tmp": {
+          "total": 1050.0,
+          "free": 982.21
+        },
+        "/": {
+          "total": 30.0,
+          "free": 18.17
+        }
+      },
+      "observation": "records/observed_blocking_core_monitor_20261030_110641_utc",
+      "archive_sha256": "85806a574f7f31dc112b3be82e746cf9d8c91203408a15fb034a12d0323a3622",
+      "verified_source_files": 42,
+      "job_status": "RUNNING",
+      "identity_matches": true,
+      "blocking_env": [
+        "MUSA_LAUNCH_BLOCKING=1"
+      ],
+      "last_inner": {
+        "event": "inner",
+        "utc": "2026-10-30T11:03:28.604816+00:00",
+        "process_wall_seconds": 10600.849895715714,
+        "episode": 16,
+        "k": 8,
+        "ld": 0.015541590750217438,
+        "lr": 1.3867343664169312,
+        "task_tokens": 531,
+        "language_tokens": 1022,
+        "support_forwards": 18,
+        "keep_tokens": 531,
+        "keep_forwards": 8,
+        "step_seconds": 46.04718518257141,
+        "exact_window": true,
+        "cpu_rss_bytes": 8112246784,
+        "allocated_bytes": 17653944320,
+        "reserved_bytes": 33812381696,
+        "peak_allocated_bytes": 31285735424,
+        "peak_reserved_bytes": 33812381696
+      }
+    },
+    {
+      "observed_at_utc": "2026-10-30T11:36:41.720229+00:00",
+      "committed_episodes": 19,
+      "committed_inner_updates": 152,
+      "maximum_observed_raw_norm": 0.10468263021227603,
+      "all_observed_raw_gradients_finite": true,
+      "checkpoint": {
+        "copied_artifact_sha256": "0a5aebe2343f1432fd77ad39f75579039f31be81e1df77a348cf6534e1d34723",
+        "next_episode": 19,
+        "inner_updates": 152,
+        "phi_finite": true,
+        "optimizer_finite": true,
+        "config_equal": true
+      },
+      "gradient_guard_errors": [],
+      "storage_GiB": {
+        "/root/autodl-tmp": {
+          "total": 1050.0,
+          "free": 982.19
+        },
+        "/": {
+          "total": 30.0,
+          "free": 18.17
+        }
+      },
+      "observation": "records/observed_blocking_core_monitor_20261030_113641_utc",
+      "archive_sha256": "ad509f7f663731a29a3192e7ef7b6c8c2319c3f000f5fbc55cacfc1d94a16b67",
+      "verified_source_files": 42,
+      "job_status": "RUNNING",
+      "identity_matches": true,
+      "blocking_env": [
+        "MUSA_LAUNCH_BLOCKING=1"
+      ],
+      "last_inner": {
+        "event": "inner",
+        "utc": "2026-10-30T11:35:34.711661+00:00",
+        "process_wall_seconds": 12526.95674085617,
+        "episode": 19,
+        "k": 8,
+        "ld": 0.01815977320075035,
+        "lr": 0.9226526618003845,
+        "task_tokens": 528,
+        "language_tokens": 1022,
+        "support_forwards": 18,
+        "keep_tokens": 528,
+        "keep_forwards": 8,
+        "step_seconds": 47.1506552696228,
+        "exact_window": true,
+        "cpu_rss_bytes": 8113647616,
+        "allocated_bytes": 17641512960,
+        "reserved_bytes": 33812381696,
+        "peak_allocated_bytes": 31285735424,
+        "peak_reserved_bytes": 33812381696
+      }
+    },
+    {
+      "observed_at_utc": "2026-10-30T12:06:41.861221+00:00",
+      "committed_episodes": 22,
+      "committed_inner_updates": 176,
+      "maximum_observed_raw_norm": 0.10468263021227603,
+      "all_observed_raw_gradients_finite": true,
+      "checkpoint": {
+        "copied_artifact_sha256": "948559a9a2f6604157ed656828fe2b2f4b3ad4326351498f562778e65cce7155",
+        "next_episode": 22,
+        "inner_updates": 176,
+        "phi_finite": true,
+        "optimizer_finite": true,
+        "config_equal": true
+      },
+      "gradient_guard_errors": [],
+      "storage_GiB": {
+        "/root/autodl-tmp": {
+          "total": 1050.0,
+          "free": 982.18
+        },
+        "/": {
+          "total": 30.0,
+          "free": 18.17
+        }
+      },
+      "observation": "records/observed_blocking_core_monitor_20261030_120641_utc",
+      "archive_sha256": "758f66b4972f81e8d9bb95b046273fb79b05ff1b7690c680bca998efb36d1fb8",
+      "verified_source_files": 42,
+      "job_status": "RUNNING",
+      "identity_matches": true,
+      "blocking_env": [
+        "MUSA_LAUNCH_BLOCKING=1"
+      ],
+      "last_inner": {
+        "event": "inner",
+        "utc": "2026-10-30T12:06:17.728733+00:00",
+        "process_wall_seconds": 14369.973811864853,
+        "episode": 22,
+        "k": 7,
+        "ld": 0.053838834166526794,
+        "lr": 0.9157727360725403,
+        "task_tokens": 556,
+        "language_tokens": 1022,
+        "support_forwards": 22,
+        "keep_tokens": 556,
+        "keep_forwards": 10,
+        "step_seconds": 47.82642912864685,
+        "exact_window": true,
+        "cpu_rss_bytes": 8090435584,
+        "allocated_bytes": 13764839936,
+        "reserved_bytes": 33812381696,
+        "peak_allocated_bytes": 31286270464,
+        "peak_reserved_bytes": 33812381696
+      }
+    },
+    {
+      "observed_at_utc": "2026-10-30T12:36:42.027725+00:00",
+      "committed_episodes": 25,
+      "committed_inner_updates": 200,
+      "maximum_observed_raw_norm": 0.10468263021227603,
+      "all_observed_raw_gradients_finite": true,
+      "checkpoint": {
+        "copied_artifact_sha256": "814317fd2e223ce29b3b007f92aa250f9739ab06238053b1191c93c7d02ffdc9",
+        "next_episode": 25,
+        "inner_updates": 200,
+        "phi_finite": true,
+        "optimizer_finite": true,
+        "config_equal": true
+      },
+      "gradient_guard_errors": [],
+      "storage_GiB": {
+        "/root/autodl-tmp": {
+          "total": 1050.0,
+          "free": 982.17
+        },
+        "/": {
+          "total": 30.0,
+          "free": 18.17
+        }
+      },
+      "observation": "records/observed_blocking_core_monitor_20261030_123641_utc",
+      "archive_sha256": "1afba760f755804530cddc7b3f8834be8cd50e9e39fbffcf766dfcc99e8c8026",
+      "verified_source_files": 42,
+      "job_status": "RUNNING",
+      "identity_matches": true,
+      "blocking_env": [
+        "MUSA_LAUNCH_BLOCKING=1"
+      ],
+      "last_inner": {
+        "event": "inner",
+        "utc": "2026-10-30T12:36:07.207475+00:00",
+        "process_wall_seconds": 16159.452560424805,
+        "episode": 25,
+        "k": 4,
+        "ld": 0.019541921094059944,
+        "lr": 1.3253203630447388,
+        "task_tokens": 528,
+        "language_tokens": 1022,
+        "support_forwards": 18,
+        "keep_tokens": 528,
+        "keep_forwards": 8,
+        "step_seconds": 41.92139506340027,
+        "exact_window": false,
+        "cpu_rss_bytes": 8093560832,
+        "allocated_bytes": 11143700992,
+        "reserved_bytes": 33990639616,
+        "peak_allocated_bytes": 31286270464,
+        "peak_reserved_bytes": 33990639616
+      }
+    }
+  ]
+}

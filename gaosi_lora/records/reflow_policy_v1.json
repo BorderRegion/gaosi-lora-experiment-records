@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "rate_selection": "Top two distinct stock-Adam recovery rates on the existing dev medium-dose grid, evaluated at the frozen primary K; mean candidate/EM minus language residual above .2. Tie prefers lower rate. No formal or reflow outcomes select rates.",
+  "continuation": "Fresh stock Adam, CE(selected support) with mass1, clip norm1; no extra noise, QR, phi, language gradient, or F gradient in pure-R mode.",
+  "budgets": [
+    20,
+    80
+  ],
+  "pure_R": "Every primary-K full/quarter-R D-minus Adam/phi endpoint, three paired noise seeds, continues on the SAME COMPLETE R pool. One matched retain-only reference per rate, shared across origins, not independent noise replicates.",
+  "entity": "One fixed entity: lexicographically first entity in the final parent. Withhold all eight attributes; select two taught IDs by seed91 before seeing outcomes and evaluate the other six separately. This is a single entity diagnostic, not population evidence.",
+  "entity_parents": "New matched all/retain-only pair on the SAME final library; .5 entity-F + .5 other-R + .25 language versus zero F; same R/optimizer initialization/seed/budget, 256 each. All-parent entity-F also needs candidate>=.85 and strictEM>=.75 with all8 queries; both extend to512 once if either gate fails.",
+  "entity_recovery": "Medium q and true frozen primary K; Adam/phi D-minus on the same corrupted bytes; three noise seeds; full R.",
+  "entity_reteaching": "Only two taught support bindings; no six withheld labels or language gradients. Same 20/80 budget and frozen rates for phi-Dminus, Adam-Dminus and matched entity-retain-only.",
+  "evaluation": "F, all R, taught2/untaught6 where applicable, strict generation, candidate scores, abnormal output, language; checkpoints at20/80 on one80-step trajectory.",
+  "formal_data_used_for_policy_or_rates": false,
+  "not_completed_here": [
+    "continual organizations",
+    "7B phi transfer/local training",
+    "independent phi training confirmations",
+    "base-noise boundary",
+    "conditional real-text task"
+  ]
+}

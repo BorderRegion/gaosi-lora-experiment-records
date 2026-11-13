@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "scope": "CPU random tiny model, two-round fixtures only; not MUSA or eight-round results",
+  "tests": {
+    "O1_day_respects_its_trainable_set": "PASS",
+    "O1_night_matches_independent_stock_Adam": "PASS",
+    "O2_day_respects_its_trainable_set": "PASS",
+    "O2_night_matches_independent_stock_Adam": "PASS",
+    "O3_day_respects_its_trainable_set": "PASS",
+    "O3_night_matches_independent_stock_Adam": "PASS",
+    "O3_both_branches_change_during_noisy_night": "PASS",
+    "O4_day_respects_its_trainable_set": "PASS",
+    "O4_night_matches_independent_stock_Adam": "PASS",
+    "O1_two_round_runner_uses_only_current_and_past_bindings": "PASS",
+    "O2_two_round_runner_uses_only_current_and_past_bindings": "PASS",
+    "O3_two_round_runner_uses_only_current_and_past_bindings": "PASS",
+    "O4_two_round_runner_uses_only_current_and_past_bindings": "PASS",
+    "all_organizations_share_identical_replay_reservoirs": "PASS",
+    "O4_round_resume_preserves_FP32_master_and_reset_adapter_bitwise": "PASS"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "status": "REVISED_H1_LEDGER_TOOL_AND_STARTUP_REVIEW_SYNCED",
+  "recorded_at_utc": "2026-11-03T16:54:54.660563+00:00",
+  "files": [
+    {
+      "status": "REVIEW_SYNCED_VERIFIED",
+      "path": "records/H1_ledger_review_20261103_1652/README.md",
+      "sha256": "d403c56ed94aee56f6d4a4ff91b19f784cd030862acad979382a1c5d8f1b8f45"
+    },
+    {
+      "status": "REVIEW_SYNCED_VERIFIED",
+      "path": "records/H1_ledger_review_20261103_1652/review_commonwarm_ledger.py",
+      "sha256": "9d8099f10f49af7fe322734ffcc547752f5c7333d1797300fad0483b654fc8b3"
+    },
+    {
+      "status": "REVIEW_SYNCED_VERIFIED",
+      "path": "records/H1_ledger_review_20261103_1652/validate.py",
+      "sha256": "1b0642b390c664b2652d6be7d98d3def1e88f8344142544ae2b1e3162a75d141"
+    },
+    {
+      "status": "REVIEW_SYNCED_VERIFIED",
+      "path": "records/H1_ledger_review_20261103_1652/validation.json",
+      "sha256": "8fdcf85eabbad6d71a5685fa3cba608bf4bc09d1e81bfe85a56f94d5f6865699"
+    },
+    {
+      "status": "REVIEW_SYNCED_VERIFIED",
+      "path": "records/H1_ledger_review_20261103_1652/reproduction.json",
+      "sha256": "ccb800aa570475db11906073ccd9aa28cc546a136eeb0e4bcb15fb396b3fb072"
+    },
+    {
+      "status": "REVIEW_SYNCED_VERIFIED",
+      "path": "records/H1_ledger_review_20261103_1652/startup_review.json",
+      "sha256": "87c0a45e554b429de7543d869981a7c9c51468d77dab4d302638f2d4e33c671b"
+    },
+    {
+      "status": "REVIEW_SYNCED_VERIFIED",
+      "path": "records/H1_ledger_review_20261103_1652/manifest.json",
+      "sha256": "1ca8e201ae64620d4ac63eb74cdc09ac8294b285187b280d2a4cd84ab121f58f"
+    }
+  ],
+  "method_validated": false,
+  "training_modified_or_restarted": false
+}

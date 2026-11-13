@@ -1,0 +1,111 @@
+{
+  "status": "PASS",
+  "tests": {
+    "L_K4_H1_positive_query_direct_chain_and_all_state": "PASS",
+    "L_K4_H2_positive_query_direct_chain_and_all_state": "PASS",
+    "L_K4_H4_positive_query_direct_chain_and_all_state": "PASS",
+    "L_complete_H4_central_difference": "PASS",
+    "L_K8_H1_positive_query_direct_chain_and_all_state": "PASS",
+    "L_K8_H2_positive_query_direct_chain_and_all_state": "PASS",
+    "L_K8_H8_positive_query_direct_chain_and_all_state": "PASS",
+    "L_complete_H8_central_difference": "PASS",
+    "X_K4_H1_positive_query_direct_chain_and_all_state": "PASS",
+    "X_K4_H2_positive_query_direct_chain_and_all_state": "PASS",
+    "X_K4_H4_positive_query_direct_chain_and_all_state": "PASS",
+    "X_complete_H4_central_difference": "PASS",
+    "X_K8_H1_positive_query_direct_chain_and_all_state": "PASS",
+    "X_K8_H2_positive_query_direct_chain_and_all_state": "PASS",
+    "X_K8_H8_positive_query_direct_chain_and_all_state": "PASS",
+    "X_complete_H8_central_difference": "PASS",
+    "trained_nonzero_heads_unchanged_and_truncation_difference_detected": "PASS",
+    "declared_config_budget_and_data_rejected_after_freeze": "PASS",
+    "phi_bytes_and_development_world_permission_enforced": "PASS",
+    "same_MUSA_leaf_device_lock": "PASS",
+    "real_diagnostic_entry_files_three_routes_all_state_and_phi_base_freeze": "PASS",
+    "only_explicit_MUSA_limitations_are_classified_not_unknown_failures": "PASS"
+  },
+  "comparisons": [
+    {
+      "architecture": "L",
+      "K": 4,
+      "tail": 1,
+      "gradient_norm": 0.0003258287284040753,
+      "full_gradient_norm": 0.008809586319026421,
+      "relative_l2_error": 0.9720333766533523,
+      "cosine": 0.764066311407764,
+      "both_zero": false
+    },
+    {
+      "architecture": "L",
+      "K": 4,
+      "tail": 2,
+      "gradient_norm": 0.0007285069140447846,
+      "full_gradient_norm": 0.008809586319026421,
+      "relative_l2_error": 0.9378590357519289,
+      "cosine": 0.7694490408788682,
+      "both_zero": false
+    },
+    {
+      "architecture": "L",
+      "K": 8,
+      "tail": 1,
+      "gradient_norm": 7.01810291592408e-05,
+      "full_gradient_norm": 0.009491598389761277,
+      "relative_l2_error": 0.9939308835561164,
+      "cosine": 0.822020833603017,
+      "both_zero": false
+    },
+    {
+      "architecture": "L",
+      "K": 8,
+      "tail": 2,
+      "gradient_norm": 0.00019636888255984518,
+      "full_gradient_norm": 0.009491598389761277,
+      "relative_l2_error": 0.9830366274200104,
+      "cosine": 0.8233239121074759,
+      "both_zero": false
+    },
+    {
+      "architecture": "X",
+      "K": 4,
+      "tail": 1,
+      "gradient_norm": 0.0003620712722890739,
+      "full_gradient_norm": 0.009291112689446905,
+      "relative_l2_error": 0.9697566172871467,
+      "cosine": 0.7838248337858811,
+      "both_zero": false
+    },
+    {
+      "architecture": "X",
+      "K": 4,
+      "tail": 2,
+      "gradient_norm": 0.0008075832005258722,
+      "full_gradient_norm": 0.009291112689446905,
+      "relative_l2_error": 0.9328320967985887,
+      "cosine": 0.7902635365227886,
+      "both_zero": false
+    },
+    {
+      "architecture": "X",
+      "K": 8,
+      "tail": 1,
+      "gradient_norm": 7.686231021462073e-05,
+      "full_gradient_norm": 0.010058014522218231,
+      "relative_l2_error": 0.9935786934860442,
+      "cosine": 0.8413996270219283,
+      "both_zero": false
+    },
+    {
+      "architecture": "X",
+      "K": 8,
+      "tail": 2,
+      "gradient_norm": 0.00021835714950859859,
+      "full_gradient_norm": 0.010058014522218231,
+      "relative_l2_error": 0.9818594603357458,
+      "cosine": 0.8388693093347153,
+      "both_zero": false
+    }
+  ],
+  "reference_precision": "explicit FP64 norm/attention for mathematical finite differences",
+  "scope": "CPU random tiny Qwen; positive-query H4/H8 versus independent direct AD, plus finite differences only in FP64 reference. Not real MUSA feasibility or phi effectiveness."
+}

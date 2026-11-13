@@ -1,0 +1,14 @@
+{
+  "name": "organization_queue_observed_blocking_v8",
+  "command": [
+    "/usr/bin/python",
+    "-u",
+    "records/pipeline_observed_blocking_v8/tools/organization_queue.py"
+  ],
+  "wrapper_pid": 761615,
+  "started_at_utc": "2026-11-01T11:42:01.645616+00:00",
+  "start_epoch": 1793533321.6456344,
+  "status": "RUNNING",
+  "child_pid": 761616,
+  "child_proc_start_ticks": "80739115"
+}

@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-30T07:29:08.175812+00:00",
+  "pid1_ticks": "53704581",
+  "boot_id": "0f99d7c6-c419-42cc-a3dc-18fc7de07ff0",
+  "storage_GiB": {
+    "/root/autodl-tmp": {
+      "total": 1050.0,
+      "free": 983.18
+    },
+    "/": {
+      "total": 30.0,
+      "free": 18.17
+    }
+  },
+  "gpu_lock_inode": 31148027670,
+  "production_checkpoint_sha256": "1c5cb6f62eb38261a3738c0481d20af867ba2bb7c44e511e2a28f6895a203297",
+  "production_status": "FAIL",
+  "production_modified_or_restarted": false
+}

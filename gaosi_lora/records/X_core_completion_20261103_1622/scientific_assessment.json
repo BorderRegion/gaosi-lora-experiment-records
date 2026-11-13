@@ -1,0 +1,102 @@
+{
+  "status": "X_CORE_EVIDENCE_REVIEW_SUPPORTS_LIMITED_PROTOCOL_CONTINUATION",
+  "reviewed_at_utc": "2026-11-03T16:27:23.718299+00:00",
+  "run": "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8",
+  "previous_goal_turn": "progress_scheduled_runtime_evidence_reviewed_and_synced",
+  "current_goal_turn": "progress_complete_X_audit_replay_tensor_and_pairing_review",
+  "completion": {
+    "job_status": "PASS",
+    "job_exit_code": 0,
+    "started_at_utc": "2026-11-01T12:34:32.993973+00:00",
+    "finished_at_utc": "2026-11-03T16:09:26.097496+00:00",
+    "wall_hours": 51.58141763660643,
+    "episodes": 192,
+    "inner_updates": 2560,
+    "base_unchanged": true,
+    "final_checkpoint_sha256": "89bf92fe6e0cc794621685041267f57d648abeac1d0cca6f96195949f4d570fe",
+    "snapshot_512_2048_2560_present": true
+  },
+  "artifact_findings": {
+    "audited_files": 523,
+    "all_raw_gradients_finite": true,
+    "maximum_raw_norm": 0.5486493067867867,
+    "gradient_clipping_triggered": false,
+    "recorded_inner_steps_checked": 2560,
+    "minimum_recorded_effective_tokens": {
+      "task_tokens": 512,
+      "language_tokens": 516,
+      "keep_tokens": 512
+    },
+    "fresh_phi_and_optimizer": true,
+    "phi_fixed_within_episodes": true,
+    "phi_parameters": 83795,
+    "every_tensor_has_nonzero_saved_gradient": true,
+    "context_rows_gradient_active_episode_count": 191,
+    "L_X_metadata_pairing": "192 episodes and2560 recorded route budgets match; configs differ only in architecture/out"
+  },
+  "optimizer_findings": {
+    "episodes_checked": 192,
+    "initial_optimizer_step": 0.0,
+    "all_starting_phi_equal": true,
+    "all_optimizer_param_groups_equal": true,
+    "all_finite": true,
+    "allclose": true,
+    "maximum_phi_absolute_error": 1.4901161193847656e-08,
+    "maximum_phi_relative_l2_error": 3.533490243856762e-07,
+    "optimizer_states_all_equal": true,
+    "comparison_tolerance": {
+      "rtol": 2e-05,
+      "atol": 1e-08
+    }
+  },
+  "derivative_evidence_interpretation": [
+    "Existing CPU tiny X nonzero-head direct-chain H1/H2/full-H4/H8 and FP64-reference differences support mathematical plumbing within their stated scope.",
+    "Real3B X/H2 profile and readiness preceded fresh core; full core now executes K8/K16 and all three512-token routes without observed nonfinite raw gradients.",
+    "All saved parameter tensors and the16 context output rows receive nonzero gradients somewhere in the schedule. This is path activity evidence only.",
+    "Fresh full-run raw norms remain below1; no clipping mask explains the absence of historical huge gradients. Different task/noise/phi states prevent a causal norm comparison."
+  ],
+  "judgment": "Complete fresh X execution, finite saved-gradient scale, consistent tensor branches, matched L/X input budgets and per-update CPU Adam agreement support continuing the planned common-warm H1 and development comparisons under existing guards. This is a scoped judgment to continue experiments with explicit backend limitations; it does not validate the method or unresolved MUSA root cause.",
+  "next_stages": [
+    "Existing core controller trains L-H1 from the exact common512 phi+Adam checkpoint, adding2048 steps.",
+    "Individually audit/replay/review H1, then development-only L/X selection and the predeclared equal-budget H1/H2 effect comparison.",
+    "Continue matched clean, organization, formal/continual/7B, statistics and independent training seeds29/43 under the original full protocol."
+  ],
+  "limitations": [
+    "Old v7 nonfinite and enormous gradients remain invalid and their root cause unresolved; no failed or diagnostic phi is reused.",
+    "Blocking is a candidate mitigation, not an established root-cause fix; preserve original lock, immutable source/input pins and saved-gradient guards.",
+    "H2 differentiates the last two steps with an earlier fixed boundary; it is not the full K-step derivative.",
+    "CPU tiny direct-chain tests support the mathematical implementation. Real BF16 differences only support coarse scale; there is no X-specific real-model finite-difference proof.",
+    "Each CPU Adam replay resets from the corresponding saved state and consumes saved gradients; neither derivatives nor a complete independent CPU trajectory are recomputed.",
+    "Matching recorded L/X input and token metadata does not prove efficacy, convergence, equal wall time or all backend derivatives.",
+    "Single training seed17 with no completed development effect comparison; method superiority, q_train benefit, formal generalization and full-protocol completion remain unproven.",
+    "Every later meta run needs its own artifact audit, optimizer replay and scientific review before continuation."
+  ],
+  "method_validated": false,
+  "full_protocol_complete": false,
+  "scientific_evidence_sha256": {
+    "records/X_core_completion_20261103_1622/artifact_audit.json": "186b2af0299d4b08df26f24408057b20ee2957f68cc5a8fc5ce799123edb210d",
+    "records/X_core_completion_20261103_1622/adam_replay.json": "61e55a29cf56f741ceb97cf81cd1c6cb2fc221ad9986847845f913f2218c280e",
+    "records/X_core_completion_20261103_1622/tensor_review.json": "e8d26e23efe7081f2603b63c53ac65f19d261270b35f1ae9c706c3257a2bb069",
+    "records/X_core_completion_20261103_1622/inspect_saved_X.py": "866f156cd82ebc07b5e07b542eed40f5318f661c84781719ef675e13b3924fe2",
+    "records/X_core_completion_20261103_1622/L_X_pairing_review.json": "2e16906951f757d9bcddb8137561e5c2308e744ce366f5a2c4f52602136042e7",
+    "records/X_core_completion_20261103_1622/review_L_X_pairing.py": "16e8d057992b27c1d2d249345e6b1a98ee15ea9252480eb87a586b35d645d21e",
+    "records/X_core_completion_20261103_1622/controller_identity_before_review.json": "56fd9d94567cbd5f5a4bb8690552513d1d75705b54b6067fd108419c4ecdeb2c",
+    "records/X_core_complete_inner_review_20261103_1622.json": "8cc901c38d51861bba8c4018b81a735b6029c26eefe46ab6c4dc25e3f06f5c81",
+    "records/X_core_completion_preparation_20261103_0852/review_core_inner_ledger.py": "0b097f2b30c353ec147aa817b616c8c31cb1c6d946f686ae72adcbf46a92a0f2",
+    "records/pipeline_observer_20261101_1143/replay_saved_adam.py": "9eedbe61dc0f18e26462ed5ebe658cc491600079afd1a64e6a35b486d8df95a2",
+    "tools/audit_observed_meta.py": "6583634debbdf7c77e1078d987e3ec37bf9c1f4e14cf07babc6fe59e9e8ca99b",
+    "records/pipeline_monitor_20261103_162058_utc/snapshot/records/jobs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8.json": "9cdf66888cd8108ee6a2d09baae165a058b810917da81b7aa5f8783b16e351fc",
+    "records/pipeline_monitor_20261103_162058_utc/result.json": "8a2567371a918e37285e7d8ab4b0f5fa126d2c50a4a527f1a86f0ce3d44c7754",
+    "records/pipeline_monitor_20261103_162058_utc/archive_source_sha256.json": "505f3a6682591bf009c2ed9e3e530bc304fb8d79d45647a2ce6e0e271e08ee90",
+    "records/pipeline_monitor_20261103_162058_utc.tar.gz": "8a91ce62f6f0d2b5a81e0227e77d0996f0b6dfb11988dd011e5efcd6521da501",
+    "checks/horizon_cpu.json": "fb139574cfbf3943b8c9d129853c4b6888a4ca22eca88f2e0798449bdccc8fed",
+    "checks/horizon_upstream_cpu.json": "69324da9da4c0558643739fd384480eb4adc8f7047f1f86e485a94a218e651ee",
+    "checks/meta_rollout_horizon_regression_cpu.json": "3c80b3fb0d4ff064ee85df5bd2f9bae6dd351e5a8f0d0af4cc55a6ae710357ee",
+    "tools/validate_horizon.py": "5702672159ddb4320bbcd0bc954fe277eb7e08a75de50cebf91f81f42ca04fad",
+    "tools/validate_meta_rollout.py": "dc6efd5f22c40f9b1c2b4f958bb7306339f49b944dd5cecda4dfcac8b86d9c75",
+    "records/pipeline_observed_blocking_v8/reviews/phi_X_real_episode_readiness_s17_observed_blocking_v8.json": "93ee0d35c6f5df825f19d11ffdb1a82f91d33a0064737d482bf5f558972a0b1d",
+    "records/pipeline_observer_20261101_1143/X_readiness_scientific_assessment_20261101_1217.json": "d80539c4aa8f75ec5a3781cebca49b5e942aee8b42ffb85a6d1584cdc8c5458b",
+    "records/observed_blocking_core_completion_20261101_1143/scientific_assessment.json": "e529750f7008ff049e01d9e045462fa106273af770804fbaf90a0c9da3e47b23",
+    "records/pipeline_monitor_20261101_121231_utc/snapshot/checks/profile_3b_X_H2_three_routes_learned_parent_observed_blocking_v8.json": "ca82d8fd736c308d40b448cadfcbc79b66ade4a860cfd5f6b1c7c39f6cf447f1"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "episodes": 2,
+  "inner_updates": 4,
+  "base_unchanged": true,
+  "checkpoint": "runs/diagnose_L_training_sync_only_s17_v6/repeat_1/latest.pt",
+  "horizon": "EXACT_H2_tail",
+  "compute_counters": {
+    "loss_forwards": 308,
+    "loss_backwards": 308,
+    "input_tokens": 153554,
+    "supervised_tokens": 29750,
+    "hessian_vector_products": 88
+  },
+  "note": "Meta-training completion does not prove superiority; dev selection and frozen holdout tests remain required."
+}

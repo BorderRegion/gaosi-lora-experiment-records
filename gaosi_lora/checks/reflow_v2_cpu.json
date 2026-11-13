@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "scope": "Random tiny CPU/dev fixtures only, no MUSA reflow effect evidence",
+  "tests": {
+    "pureR_matches_independent_fresh_stock_Adam_and_exact_source_without_QR": "PASS",
+    "reteach_matches_independent_fresh_stock_Adam_and_exact_source_without_QR": "PASS",
+    "retain_matches_independent_fresh_stock_Adam_and_exact_source_without_QR": "PASS",
+    "pureR_excluded_F_support_and_queries_do_not_affect_updates_bitwise": "PASS",
+    "reteach_excluded_F_support_and_queries_do_not_affect_updates_bitwise": "PASS",
+    "restart_at_1_restores_state_bitwise_and_completes_pending_evaluation": "PASS",
+    "restart_at_2_restores_state_bitwise_and_completes_pending_evaluation": "PASS",
+    "phi_freeze_checked_before_task_or_parent_access": "PASS",
+    "undeclared_rate_rejected_before_data_access": "PASS",
+    "only_exact_two_of_eight_same_entity_request_is_accepted": "PASS",
+    "entity_acquisition_checks_all_eight_F_queries_separately_from_global_accuracy": "PASS",
+    "reflow_MUSA_leaf_uses_existing_device_mutex_CPU_does_not": "PASS",
+    "two_rates_chosen_only_from_dev_primary_K_with_declared_tie_rule": "PASS"
+  }
+}

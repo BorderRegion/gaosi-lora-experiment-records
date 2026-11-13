@@ -1,0 +1,8 @@
+{
+  "status": "OBSERVER_ERROR_REQUIRES_REVIEW_NO_TRAINING_RESTART",
+  "pid": 2464224,
+  "proc_start_ticks": "156222690",
+  "updated_at_utc": "2026-11-10T17:51:42.422692+00:00",
+  "production_modified_or_restarted": false,
+  "error": "AssertionError('Transport retries exhausted; preserve artifacts and inspect')"
+}

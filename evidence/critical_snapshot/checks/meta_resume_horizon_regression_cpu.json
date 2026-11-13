@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "scope": "CPU random tiny Qwen integration; no MUSA or effect claim",
+  "tests": {
+    "warm_branch_restores_phi_optimizer_episode_and_data_schedule_bitwise": "PASS",
+    "mismatched_warm_episode_rejected": "PASS",
+    "warm_branch_interrupted_resume_matches_uninterrupted_bitwise": "PASS",
+    "alternate_horizon_retains_shared_warm_meta_optimizer_steps": "PASS"
+  }
+}

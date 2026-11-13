@@ -1,0 +1,168 @@
+{
+  "reviewed_at_utc": "2026-10-31T01:07:53.952812+00:00",
+  "current_goal_turn": "verified_wait_and_new_training_evidence_plus_archived_cpu_update_replay",
+  "observer_live": true,
+  "observer_pid": 202579,
+  "observer_start_ticks": "59350385",
+  "observation": {
+    "observation": "records/observed_blocking_core_monitor_20261031_010645_utc",
+    "archive_sha256": "23dce24617f990fda3e4ba308654e3810645803bc225970eff2b5c6c346ed1bc",
+    "verified_source_files": 43,
+    "job_status": "RUNNING",
+    "alerts": [],
+    "production_modified_or_restarted": false
+  },
+  "archive_independently_verified": true,
+  "independently_rehashed_files": 43,
+  "committed_episodes": 85,
+  "committed_inner_updates": 848,
+  "current_L_inner_update_fraction": 0.33125,
+  "all_raw_gradient_ledger_rows_checked": 85,
+  "all_raw_gradients_recorded_finite": true,
+  "max_raw_norm": 0.5823351201809523,
+  "guard_errors": [],
+  "checkpoint": {
+    "copied_artifact_sha256": "e283e42d92adb1dc069f6287d8a3e0227068cd7d35a90a2c62feec6730d9bfeb",
+    "next_episode": 85,
+    "inner_updates": 848,
+    "phi_finite": true,
+    "optimizer_finite": true,
+    "config_equal": true
+  },
+  "production_identity": {
+    "pid": 650716,
+    "state": "R",
+    "start_ticks": "62167024",
+    "matches": true,
+    "cmdline": "/usr/bin/python -u tools/train_observed_meta.py --manifest records/observed_blocking_core_20261030_0810/training_manifest.json ",
+    "launch_blocking_environment": [
+      "MUSA_LAUNCH_BLOCKING=1"
+    ]
+  },
+  "K16_timing": {
+    "completed_episodes": 21,
+    "mean_seconds_per_episode": 949.2332456666667,
+    "remaining_episodes": 107,
+    "rough_remaining_hours_at_same_mean": 28.213321468425924,
+    "episodes": [
+      {
+        "episode": 64,
+        "mode": "known",
+        "seconds": 968.845445
+      },
+      {
+        "episode": 65,
+        "mode": "new",
+        "seconds": 949.909702
+      },
+      {
+        "episode": 66,
+        "mode": "known",
+        "seconds": 941.482295
+      },
+      {
+        "episode": 67,
+        "mode": "new",
+        "seconds": 950.407966
+      },
+      {
+        "episode": 68,
+        "mode": "known",
+        "seconds": 945.826865
+      },
+      {
+        "episode": 69,
+        "mode": "new",
+        "seconds": 966.799521
+      },
+      {
+        "episode": 70,
+        "mode": "known",
+        "seconds": 949.189531
+      },
+      {
+        "episode": 71,
+        "mode": "new",
+        "seconds": 967.092588
+      },
+      {
+        "episode": 72,
+        "mode": "known",
+        "seconds": 940.852727
+      },
+      {
+        "episode": 73,
+        "mode": "new",
+        "seconds": 954.252805
+      },
+      {
+        "episode": 74,
+        "mode": "known",
+        "seconds": 937.056756
+      },
+      {
+        "episode": 75,
+        "mode": "new",
+        "seconds": 949.140544
+      },
+      {
+        "episode": 76,
+        "mode": "known",
+        "seconds": 936.661832
+      },
+      {
+        "episode": 77,
+        "mode": "new",
+        "seconds": 925.62899
+      },
+      {
+        "episode": 78,
+        "mode": "known",
+        "seconds": 954.336506
+      },
+      {
+        "episode": 79,
+        "mode": "new",
+        "seconds": 954.338022
+      },
+      {
+        "episode": 80,
+        "mode": "known",
+        "seconds": 969.335092
+      },
+      {
+        "episode": 81,
+        "mode": "new",
+        "seconds": 949.043702
+      },
+      {
+        "episode": 82,
+        "mode": "known",
+        "seconds": 939.573393
+      },
+      {
+        "episode": 83,
+        "mode": "new",
+        "seconds": 944.025159
+      },
+      {
+        "episode": 84,
+        "mode": "known",
+        "seconds": 940.098718
+      }
+    ],
+    "limitation": "Timing varies by episode mode; not a full protocol ETA."
+  },
+  "archived_episode82_cpu_replay": {
+    "agent_review": "records/observed_optimizer_replay_20261031_0055/agent_review.json",
+    "agent_review_sha256": "4d0615513e008659a37f3f0d187033773c1f009a822675333e3eb7432b585028",
+    "all_adam_step_and_moments_tensor_equal": true,
+    "maximum_phi_absolute_error": 1.4901161193847656e-08,
+    "limitation": "One saved CPU versus MUSA update; does not establish derivative correctness."
+  },
+  "next_due_at_utc": "2026-10-31T01:36:45.791620+00:00",
+  "method_validated": false,
+  "downstream_promotion_allowed": false,
+  "production_modified_or_restarted": false,
+  "full_goal": "incomplete; current L and subsequent full protocol execution/review remain"
+}

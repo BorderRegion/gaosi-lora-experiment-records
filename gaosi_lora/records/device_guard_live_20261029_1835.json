@@ -1,0 +1,69 @@
+{
+  "utc": "2026-10-29T10:35:54.941380+00:00",
+  "lock_events": {
+    "parent_7b_dev_lr1e-4_s17_continue512_v1": [
+      {
+        "event": "waiting_device",
+        "utc": "2026-10-29T10:14:48.727983+00:00",
+        "job": "parent_7b_dev_lr1e-4_s17_continue512_v1",
+        "lock": "/tmp/gaosi_musa_device0.lock"
+      },
+      {
+        "event": "waiting_legacy_device_job",
+        "utc": "2026-10-29T10:14:48.731054+00:00",
+        "job": "parent_7b_dev_lr1e-4_s17_continue512_v1",
+        "legacy": [
+          "recovery_dev_paired_medium_s17"
+        ]
+      },
+      {
+        "event": "device_acquired",
+        "utc": "2026-10-29T10:27:51.656689+00:00",
+        "job": "parent_7b_dev_lr1e-4_s17_continue512_v1",
+        "lock": "/tmp/gaosi_musa_device0.lock"
+      }
+    ],
+    "recovery_dev_factor_medium_s17": [
+      {
+        "event": "waiting_device",
+        "utc": "2026-10-29T10:27:51.034188+00:00",
+        "job": "recovery_dev_factor_medium_s17",
+        "lock": "/tmp/gaosi_musa_device0.lock"
+      }
+    ],
+    "recovery_dev_paired_medium_s17": []
+  },
+  "jobs": {
+    "parent_7b_dev_lr1e-4_s17_continue512_v1": {
+      "status": "RUNNING",
+      "pid": 30268,
+      "live": true,
+      "device_lock": {
+        "path": "/tmp/gaosi_musa_device0.lock",
+        "version": 1
+      },
+      "ended_at_utc": null
+    },
+    "recovery_dev_factor_medium_s17": {
+      "status": "RUNNING",
+      "pid": 33886,
+      "live": true,
+      "device_lock": {
+        "path": "/tmp/gaosi_musa_device0.lock",
+        "version": 1
+      },
+      "ended_at_utc": null
+    },
+    "recovery_dev_paired_medium_s17": {
+      "status": "PASS",
+      "pid": 25676,
+      "live": false,
+      "device_lock": null,
+      "ended_at_utc": null
+    }
+  },
+  "kernel_device_locks": [
+    "10: FLOCK  ADVISORY  WRITE 30268 00:51:31148027670 0 EOF",
+    "10: -> FLOCK  ADVISORY  WRITE 33886 00:51:31148027670 0 EOF"
+  ]
+}

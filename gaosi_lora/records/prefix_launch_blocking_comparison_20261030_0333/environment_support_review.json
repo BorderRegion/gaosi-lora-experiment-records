@@ -1,0 +1,16 @@
+{
+  "scope": "Read-only inspection of installed source and shared objects; no additional GPU job",
+  "torch_musa_source": "/usr/local/lib/python3.10/dist-packages/torch_musa/csrc/core/MUSAMiscFunctions.cpp",
+  "source_interpretation": "get_musa_check_suffix reads MUSA_LAUNCH_BLOCKING to choose an error-message suffix. This source alone does not prove blocking implementation or runtime effectiveness.",
+  "shared_objects_scanned": 41,
+  "driver_shared_object_containing_variable_name": "/usr/lib/x86_64-linux-gnu/libmusa.so.5.2.0",
+  "additional_matching_shared_objects": [
+    "/usr/local/lib/python3.10/dist-packages/torch_musa/lib/libmusa_python.so",
+    "/usr/local/lib/python3.10/dist-packages/torch_musa/lib/libmusa_python.so.2",
+    "/usr/local/lib/python3.10/dist-packages/torch_musa/lib/libmusa_python.so.2.11.0",
+    "/usr/local/lib/python3.10/dist-packages/torch_musa/lib/libmusa_python.so.2.9.0",
+    "/usr/local/lib/python3.10/dist-packages/torch_musa/lib/libmusa_python.so.2.9.1"
+  ],
+  "interpretation": "Variable name is present in installed driver binary as well as torch_musa. The bounded experiment measures behavior; string presence and one slow step are not a proof of the numerical fix.",
+  "production_modified": false
+}

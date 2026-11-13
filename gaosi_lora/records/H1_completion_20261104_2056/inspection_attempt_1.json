@@ -1,0 +1,12 @@
+{
+  "status": "REVIEW_TOOL_COMPARISON_ERROR_NO_TENSOR_REVIEW_EMITTED",
+  "recorded_at_utc": "2026-11-04T20:58:03.254803+00:00",
+  "failed_source": "records/H1_completion_20261104_2056/inspect_saved_H1.py",
+  "failed_source_sha256": "dd5b5867ad9a4ef572e35d9b4d0c37707f7b1a6b0df11d269b6f626d5c7d7609",
+  "error": "Whole checkpoint recursive equality reached NumPy RNG arrays and raised ambiguous truth value.",
+  "correction": "Whole warm checkpoint byte equality remains required. v2 explicitly compares phi and meta-Adam tensors; does not recursively compare unrelated RNG arrays.",
+  "corrected_source": "records/H1_completion_20261104_2056/inspect_saved_H1_v2.py",
+  "corrected_source_sha256": "62e06b6f84968d322d1ba5a9a5471d116a0472933e745d69c2f9ffad240e0c2c",
+  "training_modified_or_restarted": false,
+  "method_validated": false
+}

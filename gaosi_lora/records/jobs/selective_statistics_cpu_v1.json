@@ -1,0 +1,17 @@
+{
+  "name": "selective_statistics_cpu_v1",
+  "command": [
+    "/usr/bin/python",
+    "-u",
+    "tools/validate_selective_statistics.py"
+  ],
+  "wrapper_pid": 94723,
+  "started_at_utc": "2026-10-29T13:37:49.186810+00:00",
+  "start_epoch": 1793281069.1868284,
+  "status": "PASS",
+  "child_pid": 94724,
+  "child_proc_start_ticks": "55513869",
+  "exit_code": 0,
+  "wall_seconds": 4.056333303451538,
+  "finished_at_utc": "2026-10-29T13:37:53.243168+00:00"
+}

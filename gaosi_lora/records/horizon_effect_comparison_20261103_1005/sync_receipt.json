@@ -1,0 +1,25 @@
+{
+  "status": "PREPARATION_SYNCED_AND_HASH_VERIFIED_NOT_EXECUTED",
+  "utc": "2026-11-03T10:09:43.255182+00:00",
+  "files_sha256": {
+    "records/horizon_effect_comparison_20261103_1005/README.md": "646e1d1e3b2677c6b16e15c5289eee77e1d2c3b560b7fc9f0c31345beb24ff6b",
+    "records/horizon_effect_comparison_20261103_1005/compare.py": "0db6c3d8b589957f99d3ae21fb08c2504d199c5838f63124ffa2f56221b9d775",
+    "records/horizon_effect_comparison_20261103_1005/declared_pairs.json": "42dc64a7b053f0caae8f030b1779b24ad669269f4fe5f34dd1f33698eccbc5c2",
+    "records/horizon_effect_comparison_20261103_1005/inputs.json": "03613f730312227e91909a56c50ccc2b55240e353948ef28fa58b1cef06172cc",
+    "records/horizon_effect_comparison_20261103_1005/policy.json": "1d51868f78137f1a7887aaa6ef9219c4b3a58d19f76979a92ce91e117dde865b",
+    "records/horizon_effect_comparison_20261103_1005/tensor_validation.json": "17595dd746926fcc9d765a3e1ce4ad3cb90307dde1842a2c3176a532e33b4e6c",
+    "records/horizon_effect_comparison_20261103_1005/validate.py": "2bf8942a90dde998f9661cff940dfcd5d95796b3cda1c68f2eb20baac20d833f",
+    "records/horizon_effect_comparison_20261103_1005/validate_tensor_pairing.py": "583ab829a91d5eced23750dab2733f5eb3b34decee18744f1f674cf1da18f365",
+    "records/horizon_effect_comparison_20261103_1005/validation.json": "1db53d6f89ebc3d551e5185609349f1619c7d2988e2c4392d0850b77711a4885"
+  },
+  "file_count": 9,
+  "validation_checks": 14,
+  "CPU_tensor_validation_checks": 6,
+  "policy_frozen_before_effect_outcomes": true,
+  "inputs_sha256": "03613f730312227e91909a56c50ccc2b55240e353948ef28fa58b1cef06172cc",
+  "next": "At the existing 30-minute review, after H1 independent completion review and all ten original L_2560 development runs exist, run compare.py check; then launch compare.py run once through tools/job.py. Never launch another original pipeline.",
+  "new_controller_started": false,
+  "numerical_source_or_existing_config_modified": false,
+  "method_validated": false,
+  "full_goal_complete": false
+}

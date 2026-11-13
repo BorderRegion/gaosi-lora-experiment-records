@@ -1,0 +1,10 @@
+## 2026-11-03 03:27（北京时间）：X 进度复核与确认种子统计路径修复
+
+北京时间11月3日03:17的既有半小时采样及其独立复核确认，phi_mix_O1_X_H2_core_s17_observed_blocking_v8已提交123/192个episode、1456/2560次inner更新（56.875%）。检查点phi及Adam有限、配置一致，123行已提交raw梯度均有限，最大norm=0.5486493067867867。15个控制器在该采样中存活，无告警。证据：records/pipeline_review_20261102_1917.json与records/pipeline_observer_20261101_1220/progress_20261102_1917.json；这里只重述已审定采样，不声称新增训练采集。
+
+确认种子控制器的manifest引用四个_v1就绪记录，而实际产出使用_observed_blocking_v8后缀。已在远端安装四个明确、相对路径的同seed兼容symlink，仅覆盖recovery/continual的seed29/43。全部路径在安装前均不存在；目标仍缺失时不代表完成，不搜索历史替代结果。原控制器已载入的源码无需重启；候选builder/controller仍隔离，生产源码未替换。
+
+修复已通过实际未修改的recovery、selective、reflow、continual四类完整网格统计入口测试（模拟数据、100次bootstrap），数值结果与无别名基准相同，仅按实际输入改变input_sha256来源账。缺目标和路径冲突测试通过。这是元数据与统计集成验证，不是训练效果证据。激活前后确认控制器身份、producer/builder源码及原GPU lock inode均保持。验证/激活/回读证据：records/confirmation_path_repair_20261102_1905_utc/alias_validation_remote.json、records/confirmation_path_repair_20261102_1905_utc/alias_activation.json、confirmation_path_repair_20261102_1905_utc/alias_readback.json。上述记录均已同步并核验SHA。
+
+完整L已完成审计与科学复核；X仍未完成，须等完整192轮/2560步后再做产物审计、Adam重放及独立科学复核。method_validated=false；运行稳定与统计路径可用不能证明效果优于Adam。共同warm H1、开发选择/匹配延长、四组织与clean、正式恢复/选择性/回流/持续、7B、统计、独立phi seeds29/43及协议条件追加继续保留。继续既有1800秒观察器，不新建训练或监控。本次只补充报告；以下保留本端完整历史。
+

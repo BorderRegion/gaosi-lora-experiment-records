@@ -1,0 +1,12 @@
+{"event": "support_hvp_trace", "call": 0, "batches": 10, "incoming": {"finite": true, "max_abs": 0.0055888015776872635}, "outgoing": {"finite": true, "max_abs": 1.3271496754896361e-06}}
+{"event": "support_hvp_trace", "call": 1, "batches": 2, "incoming": {"finite": true, "max_abs": 0.0055888015776872635}, "outgoing": {"finite": true, "max_abs": 9.643879820941947e-06}}
+{"event": "support_hvp_trace", "call": 2, "batches": 10, "incoming": {"finite": true, "max_abs": 0.04471041262149811}, "outgoing": {"finite": true, "max_abs": 1.0617197403917089e-05}}
+{"event": "support_hvp_trace", "call": 3, "batches": 10, "incoming": {"finite": true, "max_abs": 0.021626856178045273}, "outgoing": {"finite": true, "max_abs": 4.174820060143247e-05}}
+{"event": "support_hvp_trace", "call": 4, "batches": 2, "incoming": {"finite": true, "max_abs": 0.021626856178045273}, "outgoing": {"finite": true, "max_abs": 0.00031252880580723286}}
+{"event": "support_hvp_trace", "call": 5, "batches": 10, "incoming": {"finite": true, "max_abs": 0.17301484942436218}, "outgoing": {"finite": true, "max_abs": 0.005554580129683018}}
+{"event": "support_hvp_trace", "call": 6, "batches": 10, "incoming": {"finite": true, "max_abs": 0.2721048593521118}, "outgoing": {"finite": true, "max_abs": 0.023711493238806725}}
+{"event": "support_hvp_trace", "call": 7, "batches": 2, "incoming": {"finite": true, "max_abs": 0.2721048593521118}, "outgoing": {"finite": true, "max_abs": 0.004640366416424513}}
+{"event": "support_hvp_trace", "call": 8, "batches": 10, "incoming": {"finite": true, "max_abs": 2.201134443283081}, "outgoing": {"finite": true, "max_abs": 0.18844935297966003}}
+{"event": "support_hvp_trace", "call": 9, "batches": 10, "incoming": {"finite": true, "max_abs": 340.8398132324219}, "outgoing": {"finite": true, "max_abs": 3.5342509746551514}}
+{"event": "support_hvp_trace", "call": 10, "batches": 2, "incoming": {"finite": true, "max_abs": 340.8398132324219}, "outgoing": {"finite": true, "max_abs": 39.54198455810547}}
+{"event": "support_hvp_trace", "call": 11, "batches": 10, "incoming": {"finite": true, "max_abs": 2729.417236328125}, "outgoing": {"finite": true, "max_abs": 28.441469192504883}}

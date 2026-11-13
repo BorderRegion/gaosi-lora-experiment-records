@@ -1,0 +1,14 @@
+{
+  "name": "reflow_statistics_queue_recompute_v7",
+  "command": [
+    "/usr/bin/python",
+    "-u",
+    "/root/autodl-tmp/gaosi_lora/records/pipeline_recompute_v7/tools/reflow_statistics_queue.py"
+  ],
+  "wrapper_pid": 379896,
+  "started_at_utc": "2026-10-29T22:58:27.160234+00:00",
+  "start_epoch": 1793314707.1602511,
+  "status": "RUNNING",
+  "child_pid": 379897,
+  "child_proc_start_ticks": "58877666"
+}

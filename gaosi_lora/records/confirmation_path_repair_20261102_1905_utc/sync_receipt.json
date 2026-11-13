@@ -1,0 +1,18 @@
+{
+  "status": "ISOLATED_REPAIR_RECORDS_SYNCED_VERIFIED",
+  "sha256": {
+    "records/confirmation_path_repair_20261102_1905_utc/alias_validation_local.json": "faadcfa7c76490eb2e4105a8b3a7a80f463697297ad57e4cb770d9d00db130f0",
+    "records/confirmation_path_repair_20261102_1905_utc/candidate/build_observed_v8_pipeline.py": "c3e803e806897c8c2ca4bdc6e616b1b3e3c42a1baa18f9e41e2f7d60e2e09599",
+    "records/confirmation_path_repair_20261102_1905_utc/candidate/confirmation_queue.py": "b1d27d04fadfae1e56ff1f83357e87b0382705c388b7ab96c654fa6ae5f26545",
+    "records/confirmation_path_repair_20261102_1905_utc/candidate_manifest.json": "158b88a78d0b1a1fdc2e2c223f040a8afb5dcb78631faa7bb42681b745ec428c",
+    "records/confirmation_path_repair_20261102_1905_utc/diffs/build_observed_v8_pipeline.py.diff": "443f0188c3ad8694f625472e7f01afce7df0b22e51c5ed78254cfa0cc485fd91",
+    "records/confirmation_path_repair_20261102_1905_utc/diffs/confirmation_queue.py.diff": "05947c1b944447c8608b1b9137e2a71fd102f223b9967eeb325c15cc5f1f3e8b",
+    "records/confirmation_path_repair_20261102_1905_utc/install_aliases.py": "25080b76f5928f11ba6c3627956c72b7b47b34ba65e5485ccf7e6ef04cdc9737",
+    "records/confirmation_path_repair_20261102_1905_utc/original/build_observed_v8_pipeline.py": "87ff9e74c24b6b77d1d0bc84f1c5037951896415c012bc94ec899e78b04bf0e9",
+    "records/confirmation_path_repair_20261102_1905_utc/original/confirmation_queue.py": "bf82f5d4bc3e7aa23ccb0d719714f8eb795312e01a74616cf9dff4e15f1d67ba",
+    "records/confirmation_path_repair_20261102_1905_utc/prepare_candidate.py": "4d34022a948206422d0ece5ce0afd976c133d4e6e5daf760aa754d9ffc68f29f",
+    "records/confirmation_path_repair_20261102_1905_utc/validate_aliases.py": "8c10251bec39546fa0c85a224eb323a44d57d1e29bb216b069d0b86d32d2182f",
+    "records/confirmation_path_repair_20261102_1905_utc/validate_candidate.py": "48188824adf3b752fb34cc74b58b9edd1f845e6c50249ffc1e34d18faa89ee8f",
+    "records/confirmation_path_repair_20261102_1905_utc/validation.json": "614fd175d336af48ae3e29fdf51f1ae7352717e055184f325da85368fcead338"
+  }
+}

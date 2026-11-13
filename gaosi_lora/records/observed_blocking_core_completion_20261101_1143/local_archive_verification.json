@@ -1,0 +1,8 @@
+{
+  "archive_sha256_verified": true,
+  "archive": "records/observed_blocking_core_completion_20261101_1143/complete_L_run.tar.gz",
+  "archive_sha256": "3dd68e78925069112c682bffd8d82911adcdb18d4a4a2bd31bda85cb66412293",
+  "run_files_independently_rehashed": 420,
+  "all_archive_members_verified": true,
+  "archive_extracted_over_existing_files": false
+}

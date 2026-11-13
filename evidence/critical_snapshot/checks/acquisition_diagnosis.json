@@ -1,0 +1,44 @@
+{
+  "support_0": {
+    "n": 64,
+    "candidate_accuracy": 0.125,
+    "mean_margin": -1.2537170159630477,
+    "strict_EM": 0.125,
+    "abnormal_rate": 0.0
+  },
+  "support_1": {
+    "n": 64,
+    "candidate_accuracy": 0.125,
+    "mean_margin": -1.4570224098861217,
+    "strict_EM": 0.140625,
+    "abnormal_rate": 0.0
+  },
+  "support_2": {
+    "n": 64,
+    "candidate_accuracy": 0.140625,
+    "mean_margin": -1.3281220542266965,
+    "strict_EM": 0.125,
+    "abnormal_rate": 0.0
+  },
+  "support_3": {
+    "n": 64,
+    "candidate_accuracy": 0.109375,
+    "mean_margin": -1.5863584047183394,
+    "strict_EM": 0.109375,
+    "abnormal_rate": 0.0
+  },
+  "query_0": {
+    "n": 64,
+    "candidate_accuracy": 0.125,
+    "mean_margin": -1.4042214965447783,
+    "strict_EM": 0.140625,
+    "abnormal_rate": 0.0
+  },
+  "query_1": {
+    "n": 64,
+    "candidate_accuracy": 0.140625,
+    "mean_margin": -1.1407964518293738,
+    "strict_EM": 0.125,
+    "abnormal_rate": 0.0
+  }
+}

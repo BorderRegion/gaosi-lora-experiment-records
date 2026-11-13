@@ -1,0 +1,361 @@
+{
+  "version": "integer_affine_interpolation_v1",
+  "freeze": "records/rule_family_frozen.json",
+  "worlds": [
+    {
+      "world_id": "meta_integer_world_048",
+      "split": "meta",
+      "kind": "affine_integer",
+      "file": "rules_integer_v1/meta_integer_world_048.jsonl",
+      "sha256": "d2832687f4ee31e212fda9e1f2f8836ca47b6620b0f9bd6c5947b60e8579645b"
+    },
+    {
+      "world_id": "meta_integer_world_049",
+      "split": "meta",
+      "kind": "affine_integer",
+      "file": "rules_integer_v1/meta_integer_world_049.jsonl",
+      "sha256": "f1e60937ddd5eb92fe1d400e4b48d406501ff873e762d4830c9f68c049b13dca"
+    },
+    {
+      "world_id": "meta_integer_world_050",
+      "split": "meta",
+      "kind": "affine_integer",
+      "file": "rules_integer_v1/meta_integer_world_050.jsonl",
+      "sha256": "eb8240cbd6c67d46930f49920463e3c36aa9e5bf0722f996e5afc54ee55e9eb4"
+    },
+    {
+      "world_id": "meta_integer_world_051",
+      "split": "meta",
+      "kind": "affine_integer",
+      "file": "rules_integer_v1/meta_integer_world_051.jsonl",
+      "sha256": "3e1ef60fa8c50c056ff488f1f3d710daf9bb1e07c356e625219b325d8d78ec3f"
+    },
+    {
+      "world_id": "meta_integer_world_052",
+      "split": "meta",
+      "kind": "affine_integer",
+      "file": "rules_integer_v1/meta_integer_world_052.jsonl",
+      "sha256": "61e6280ea286f9f51f6deadaa3762120aa569e7d3bbb0db83213e38db6b189da"
+    },
+    {
+      "world_id": "meta_integer_world_053",
+      "split": "meta",
+      "kind": "affine_integer",
+      "file": "rules_integer_v1/meta_integer_world_053.jsonl",
+      "sha256": "98657473d6519489e3b9bc42235bd94e7048b4069e59929ab2e0a3575668e62f"
+    },
+    {
+      "world_id": "meta_integer_world_054",
+      "split": "meta",
+      "kind": "affine_integer",
+      "file": "rules_integer_v1/meta_integer_world_054.jsonl",
+      "sha256": "bacc543f0290d763a6ec0a650f4fb3fd9144f15a0207ac73a69bfa2c55346e76"
+    },
+    {
+      "world_id": "meta_integer_world_055",
+      "split": "meta",
+      "kind": "affine_integer",
+      "file": "rules_integer_v1/meta_integer_world_055.jsonl",
+      "sha256": "e58223854b4c7d1281f1b7b6d8ffe23ee8308491928c3e254f1a50168341a9a9"
+    },
+    {
+      "world_id": "meta_integer_world_056",
+      "split": "meta",
+      "kind": "affine_integer",
+      "file": "rules_integer_v1/meta_integer_world_056.jsonl",
+      "sha256": "bb6abcd8a06984a3941121346181dd70cf866902400a8798cd8c3804a1ddbfe8"
+    },
+    {
+      "world_id": "meta_integer_world_057",
+      "split": "meta",
+      "kind": "affine_integer",
+      "file": "rules_integer_v1/meta_integer_world_057.jsonl",
+      "sha256": "6d8742d6a688c4f19581493769b2503dbda4f622becacb33da698a3804fb7cf4"
+    },
+    {
+      "world_id": "meta_integer_world_058",
+      "split": "meta",
+      "kind": "affine_integer",
+      "file": "rules_integer_v1/meta_integer_world_058.jsonl",
+      "sha256": "dbaa5353681b9f9325c74dbaa09fdba6ae649a9317d1a341821a74471b39d7cb"
+    },
+    {
+      "world_id": "meta_integer_world_059",
+      "split": "meta",
+      "kind": "affine_integer",
+      "file": "rules_integer_v1/meta_integer_world_059.jsonl",
+      "sha256": "e8d6ba8249a54c047e5a578c0d8513d9bb8964169f660aa00ecb16d4e83b6269"
+    },
+    {
+      "world_id": "meta_integer_world_060",
+      "split": "meta",
+      "kind": "affine_integer",
+      "file": "rules_integer_v1/meta_integer_world_060.jsonl",
+      "sha256": "34bf9c9d1b0a219fa1c60fa2b947e89ba72fa1719e90ee48c79028957b1f9b73"
+    },
+    {
+      "world_id": "meta_integer_world_061",
+      "split": "meta",
+      "kind": "affine_integer",
+      "file": "rules_integer_v1/meta_integer_world_061.jsonl",
+      "sha256": "21071c41145e56a217f680ed424ddd51293277caf0454a6eac71adf884951d80"
+    },
+    {
+      "world_id": "meta_integer_world_062",
+      "split": "meta",
+      "kind": "affine_integer",
+      "file": "rules_integer_v1/meta_integer_world_062.jsonl",
+      "sha256": "30518853ea2a96108cbc5a3f2cf5f8aeda2c899035adbea24f1b8609bd7959f1"
+    },
+    {
+      "world_id": "meta_integer_world_063",
+      "split": "meta",
+      "kind": "affine_integer",
+      "file": "rules_integer_v1/meta_integer_world_063.jsonl",
+      "sha256": "a88b7172cf10e92ba86a33ee4f3f6afcbdb4aee799ef839a22cbe35b9394fb59"
+    },
+    {
+      "world_id": "final_integer_world_016",
+      "split": "final",
+      "kind": "affine_integer",
+      "file": "rules_integer_v1/final_integer_world_016.jsonl",
+      "sha256": "a5757453b53f1a43bdf369ec43718230259108d462a108056cabfa6a34d1c179"
+    },
+    {
+      "world_id": "final_integer_world_017",
+      "split": "final",
+      "kind": "affine_integer",
+      "file": "rules_integer_v1/final_integer_world_017.jsonl",
+      "sha256": "fc4f969837507afc0b20f6fbbaed170bd21408ba9f92b5272825aaa00a35ce73"
+    },
+    {
+      "world_id": "final_integer_world_018",
+      "split": "final",
+      "kind": "affine_integer",
+      "file": "rules_integer_v1/final_integer_world_018.jsonl",
+      "sha256": "2fcd304a6725290bd9cc943c5a9b6cb8268ea086a7237e490253bb7dbddf96d4"
+    },
+    {
+      "world_id": "final_integer_world_019",
+      "split": "final",
+      "kind": "affine_integer",
+      "file": "rules_integer_v1/final_integer_world_019.jsonl",
+      "sha256": "9a4517d785bc35d1632ed421139285a8642e6fb118b6a542337efee934904070"
+    },
+    {
+      "world_id": "final_integer_world_020",
+      "split": "final",
+      "kind": "affine_integer",
+      "file": "rules_integer_v1/final_integer_world_020.jsonl",
+      "sha256": "e132a89d6fa0f531b9514b4f846ab4467192b730e7da9c69f3e16df1c5d63ab0"
+    },
+    {
+      "world_id": "final_integer_world_021",
+      "split": "final",
+      "kind": "affine_integer",
+      "file": "rules_integer_v1/final_integer_world_021.jsonl",
+      "sha256": "b89ce3761b76470c70cc3f39809c57af9961f5cf0e742e27fdb140bea6f72b98"
+    },
+    {
+      "world_id": "final_integer_world_022",
+      "split": "final",
+      "kind": "affine_integer",
+      "file": "rules_integer_v1/final_integer_world_022.jsonl",
+      "sha256": "36b2b8f5093e818d734df7c6715bb8ffade25c243404b011476a4114f375516a"
+    },
+    {
+      "world_id": "final_integer_world_023",
+      "split": "final",
+      "kind": "affine_integer",
+      "file": "rules_integer_v1/final_integer_world_023.jsonl",
+      "sha256": "e2b3c602816cde302eca27f6f9f33ac9440b708178e07b3e6bb1af2ce1189d74"
+    },
+    {
+      "world_id": "final_integer_world_024",
+      "split": "final",
+      "kind": "affine_integer",
+      "file": "rules_integer_v1/final_integer_world_024.jsonl",
+      "sha256": "fe6bf4d35b891947dc6b85d299b524c8b8006e2605d22206dbb287ef64474cc1"
+    },
+    {
+      "world_id": "final_integer_world_025",
+      "split": "final",
+      "kind": "affine_integer",
+      "file": "rules_integer_v1/final_integer_world_025.jsonl",
+      "sha256": "64ff79e3f3b245d69567c49ad0e448afeb14652eb1d4402dc9d41845fd06a87a"
+    },
+    {
+      "world_id": "final_integer_world_026",
+      "split": "final",
+      "kind": "affine_integer",
+      "file": "rules_integer_v1/final_integer_world_026.jsonl",
+      "sha256": "d0cd3ea731c325db08595c7f6ec7946c9382d902d9206e41171a7bfdc7b5700b"
+    },
+    {
+      "world_id": "final_integer_world_027",
+      "split": "final",
+      "kind": "affine_integer",
+      "file": "rules_integer_v1/final_integer_world_027.jsonl",
+      "sha256": "9003ab4be500d6878ec412c8ec5710fcb1709705ccc92e9b376ae39a245d0185"
+    },
+    {
+      "world_id": "final_integer_world_028",
+      "split": "final",
+      "kind": "affine_integer",
+      "file": "rules_integer_v1/final_integer_world_028.jsonl",
+      "sha256": "3b45ab0ea8766706955f79674413ea73e62efcfaef9557a0af4d175777b43fcc"
+    },
+    {
+      "world_id": "final_integer_world_029",
+      "split": "final",
+      "kind": "affine_integer",
+      "file": "rules_integer_v1/final_integer_world_029.jsonl",
+      "sha256": "d0394c80ae7618b4ec0f2ac134bf9007e68c3354540cc6fabb97b2d2cd49039a"
+    },
+    {
+      "world_id": "final_integer_world_030",
+      "split": "final",
+      "kind": "affine_integer",
+      "file": "rules_integer_v1/final_integer_world_030.jsonl",
+      "sha256": "3f5e0f94daaeac2d2e78c7e89a795b91f88652357338abd98c18eb90bb82a557"
+    },
+    {
+      "world_id": "final_integer_world_031",
+      "split": "final",
+      "kind": "affine_integer",
+      "file": "rules_integer_v1/final_integer_world_031.jsonl",
+      "sha256": "b8ad7a293d9c778142283adabb08d5ee3a8f6959def2b85a9e0acf4cad4b2dc8"
+    }
+  ],
+  "oracles_offline_only": {
+    "meta_integer_world_048": {
+      "a": 1,
+      "b": 1
+    },
+    "meta_integer_world_049": {
+      "a": 1,
+      "b": 4
+    },
+    "meta_integer_world_050": {
+      "a": 1,
+      "b": 3
+    },
+    "meta_integer_world_051": {
+      "a": 1,
+      "b": 3
+    },
+    "meta_integer_world_052": {
+      "a": 1,
+      "b": 4
+    },
+    "meta_integer_world_053": {
+      "a": 2,
+      "b": 0
+    },
+    "meta_integer_world_054": {
+      "a": 2,
+      "b": 1
+    },
+    "meta_integer_world_055": {
+      "a": 2,
+      "b": 4
+    },
+    "meta_integer_world_056": {
+      "a": 1,
+      "b": 2
+    },
+    "meta_integer_world_057": {
+      "a": 2,
+      "b": 2
+    },
+    "meta_integer_world_058": {
+      "a": 2,
+      "b": 3
+    },
+    "meta_integer_world_059": {
+      "a": 1,
+      "b": 1
+    },
+    "meta_integer_world_060": {
+      "a": 2,
+      "b": 1
+    },
+    "meta_integer_world_061": {
+      "a": 1,
+      "b": 1
+    },
+    "meta_integer_world_062": {
+      "a": 2,
+      "b": 2
+    },
+    "meta_integer_world_063": {
+      "a": 2,
+      "b": 0
+    },
+    "final_integer_world_016": {
+      "a": 1,
+      "b": 4
+    },
+    "final_integer_world_017": {
+      "a": 2,
+      "b": 3
+    },
+    "final_integer_world_018": {
+      "a": 1,
+      "b": 3
+    },
+    "final_integer_world_019": {
+      "a": 1,
+      "b": 3
+    },
+    "final_integer_world_020": {
+      "a": 1,
+      "b": 1
+    },
+    "final_integer_world_021": {
+      "a": 1,
+      "b": 3
+    },
+    "final_integer_world_022": {
+      "a": 2,
+      "b": 2
+    },
+    "final_integer_world_023": {
+      "a": 2,
+      "b": 0
+    },
+    "final_integer_world_024": {
+      "a": 2,
+      "b": 2
+    },
+    "final_integer_world_025": {
+      "a": 2,
+      "b": 2
+    },
+    "final_integer_world_026": {
+      "a": 2,
+      "b": 1
+    },
+    "final_integer_world_027": {
+      "a": 2,
+      "b": 4
+    },
+    "final_integer_world_028": {
+      "a": 1,
+      "b": 1
+    },
+    "final_integer_world_029": {
+      "a": 2,
+      "b": 4
+    },
+    "final_integer_world_030": {
+      "a": 2,
+      "b": 1
+    },
+    "final_integer_world_031": {
+      "a": 1,
+      "b": 4
+    }
+  },
+  "original_hard_worlds_retained": true
+}

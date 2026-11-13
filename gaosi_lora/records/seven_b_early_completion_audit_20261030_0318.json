@@ -1,0 +1,185 @@
+{
+  "utc": "2026-10-29T19:19:48.147134+00:00",
+  "status": "RECORDED_7B_DEVELOPMENT_CONTROLS_COMPLETE",
+  "scope": "7B ordinary Adam development controls; not frozen phi transfer or 7B phi local training",
+  "runs": [
+    {
+      "run": "runs/recovery_7b_early_clean_standard_s17_v1",
+      "q_apply": 0.0,
+      "K_actual": 64,
+      "coverage": 512,
+      "K32": {
+        "event": "evaluation",
+        "utc": "2026-10-29T15:49:13.380395+00:00",
+        "process_wall_seconds": 1474.6310029029846,
+        "step": 32,
+        "metrics": {
+          "task": {
+            "n": 512,
+            "candidate_accuracy": 0.986328125,
+            "mean_margin": 7.049567194351106,
+            "nll": 0.017233382465337482,
+            "answer_tokens": 1288,
+            "strict_EM": 0.9921875,
+            "abnormal_rate": 0.0
+          },
+          "language": {
+            "nll": 1.9869948884924244,
+            "answer_tokens": 4463
+          }
+        },
+        "language_residual_nats": 0.0030927213884217597,
+        "coverage_slot": "task",
+        "coverage": 512,
+        "pool": 512
+      },
+      "K64": {
+        "event": "evaluation",
+        "utc": "2026-10-29T15:58:22.774667+00:00",
+        "process_wall_seconds": 2024.0252742767334,
+        "step": 64,
+        "metrics": {
+          "task": {
+            "n": 512,
+            "candidate_accuracy": 0.98828125,
+            "mean_margin": 10.654695683159115,
+            "nll": 0.01425736312463797,
+            "answer_tokens": 1288,
+            "strict_EM": 0.98828125,
+            "abnormal_rate": 0.0
+          },
+          "language": {
+            "nll": 1.9830099561944714,
+            "answer_tokens": 4463
+          }
+        },
+        "language_residual_nats": -0.000892210909531288,
+        "coverage_slot": "task",
+        "coverage": 512,
+        "pool": 512
+      },
+      "base_unchanged": true,
+      "language_delta_nll_K64": -0.000892210909531288
+    },
+    {
+      "run": "runs/recovery_7b_early_light_standard_s17_v1",
+      "q_apply": 0.5,
+      "K_actual": 64,
+      "coverage": 512,
+      "K32": {
+        "event": "evaluation",
+        "utc": "2026-10-29T17:23:42.287211+00:00",
+        "process_wall_seconds": 1466.2545747756958,
+        "step": 32,
+        "metrics": {
+          "task": {
+            "n": 512,
+            "candidate_accuracy": 1.0,
+            "mean_margin": 8.302986345210803,
+            "nll": 0.004199197498263206,
+            "answer_tokens": 1288,
+            "strict_EM": 0.998046875,
+            "abnormal_rate": 0.0
+          },
+          "language": {
+            "nll": 1.9835102897627375,
+            "answer_tokens": 4463
+          }
+        },
+        "language_residual_nats": -0.0003918773412652232,
+        "coverage_slot": "task",
+        "coverage": 512,
+        "pool": 512
+      },
+      "K64": {
+        "event": "evaluation",
+        "utc": "2026-10-29T17:32:57.121748+00:00",
+        "process_wall_seconds": 2021.0891106128693,
+        "step": 64,
+        "metrics": {
+          "task": {
+            "n": 512,
+            "candidate_accuracy": 1.0,
+            "mean_margin": 12.371910791335724,
+            "nll": 0.00013943730892581628,
+            "answer_tokens": 1288,
+            "strict_EM": 1.0,
+            "abnormal_rate": 0.0
+          },
+          "language": {
+            "nll": 1.978910936172463,
+            "answer_tokens": 4463
+          }
+        },
+        "language_residual_nats": -0.004991230931539636,
+        "coverage_slot": "task",
+        "coverage": 512,
+        "pool": 512
+      },
+      "base_unchanged": true,
+      "language_delta_nll_K64": -0.004991230931539636
+    },
+    {
+      "run": "runs/recovery_7b_early_medium_standard_s17_v1",
+      "q_apply": 0.7,
+      "K_actual": 64,
+      "coverage": 512,
+      "K32": {
+        "event": "evaluation",
+        "utc": "2026-10-29T18:59:42.211888+00:00",
+        "process_wall_seconds": 1472.0708231925964,
+        "step": 32,
+        "metrics": {
+          "task": {
+            "n": 512,
+            "candidate_accuracy": 0.99609375,
+            "mean_margin": 8.55918061947615,
+            "nll": 0.004802251180776732,
+            "answer_tokens": 1288,
+            "strict_EM": 0.99609375,
+            "abnormal_rate": 0.0
+          },
+          "language": {
+            "nll": 1.9873101481829367,
+            "answer_tokens": 4463
+          }
+        },
+        "language_residual_nats": 0.0034079810789340304,
+        "coverage_slot": "task",
+        "coverage": 512,
+        "pool": 512
+      },
+      "K64": {
+        "event": "evaluation",
+        "utc": "2026-10-29T19:08:53.868787+00:00",
+        "process_wall_seconds": 2023.7277238368988,
+        "step": 64,
+        "metrics": {
+          "task": {
+            "n": 512,
+            "candidate_accuracy": 1.0,
+            "mean_margin": 11.62313691909612,
+            "nll": 0.00019522960437596922,
+            "answer_tokens": 1288,
+            "strict_EM": 1.0,
+            "abnormal_rate": 0.0
+          },
+          "language": {
+            "nll": 1.9837991560945163,
+            "answer_tokens": 4463
+          }
+        },
+        "language_residual_nats": -0.00010301100948639785,
+        "coverage_slot": "task",
+        "coverage": 512,
+        "pool": 512
+      },
+      "base_unchanged": true,
+      "language_delta_nll_K64": -0.00010301100948639785
+    }
+  ],
+  "limitations": [
+    "Metrics and source are recorded-run evidence; evaluation was not independently rerun.",
+    "The completed L-readiness run still has a large finite preclip clean gradient under investigation."
+  ]
+}

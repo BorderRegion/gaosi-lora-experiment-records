@@ -1,0 +1,21 @@
+{
+  "raw_gradient": {
+    "elements": 78850,
+    "left_finite": true,
+    "right_finite": true,
+    "left_nonfinite_elements": 0,
+    "right_nonfinite_elements": 0,
+    "bitwise_equal": true,
+    "left_norm": 0.06140809536621527,
+    "right_norm": 0.06140809536621527,
+    "max_absolute_difference": 0.0,
+    "relative_l2_difference_to_left": 0.0,
+    "cosine": 0.9999999999999994
+  },
+  "terminal_equal": true,
+  "method_validated": false,
+  "evidence_sha256": {
+    "runs/diagnostics/L_episode7_fixed_tail_blocking_r1/tail_analytic.pt": "bacfeddd297e429bba2ce3262fc6070e7b09ed6e68f3b17f3e2e9db44cde8fd0",
+    "runs/diagnostics/L_episode7_same_state_blocking_r1/repeat_0.pt": "bb9958a837aedff706517ce43509638ba4ba8187c93c11471eb8d498b88bc39b"
+  }
+}

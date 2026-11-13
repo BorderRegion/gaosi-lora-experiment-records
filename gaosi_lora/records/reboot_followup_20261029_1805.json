@@ -1,0 +1,38 @@
+{
+  "utc": "2026-10-29T10:05:42.095558+00:00",
+  "reason": "User requested a brief post-expansion container-restart check",
+  "boot_id": "0f99d7c6-c419-42cc-a3dc-18fc7de07ff0",
+  "data_disk_GiB": 1050.0,
+  "data_disk_free_GiB": 1008.23,
+  "system_disk_free_GiB": 18.25,
+  "device": "MTT S4000",
+  "musa_available": true,
+  "torch": "2.11.0.post1",
+  "models_present": [
+    "Qwen2.5-3B",
+    "Qwen2.5-7B"
+  ],
+  "valid_parent_checkpoints": 3,
+  "archive_directories": 16,
+  "archive_symlinks_in_runs": 16,
+  "broken_archive_symlinks": [],
+  "running_leaf_job": "recovery_dev_paired_medium_s17",
+  "light_recovery_completed_steps": 64,
+  "light_candidate_accuracy": 0.99609375,
+  "light_strict_EM": 0.990234375,
+  "live_dispatchers": [
+    "calibration_queue_v3",
+    "phi_core_queue_v3",
+    "phi_development_queue_v1",
+    "organization_queue_v1",
+    "final_parent_queue_v1"
+  ],
+  "calibration_frozen": false,
+  "phi_frozen": false,
+  "formal_phi_training_started": false,
+  "recovery_restart_boundary_cpu": "12 PASS",
+  "scratch_probes_cpu": "4 PASS",
+  "supervision_interval_minutes": 30,
+  "next_regular_check_beijing": "2026-10-29 18:35",
+  "note": "No new training was launched and no normal running job was interrupted during this follow-up."
+}

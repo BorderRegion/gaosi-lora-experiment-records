@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-29T12:37:19.898750+00:00",
+  "wrapper_pid": 75727,
+  "job": "horizon_queue_v1",
+  "expected_wait": "records/phi_architecture_selected.json",
+  "checks": [
+    "checks/horizon_cpu.json",
+    "checks/horizon_upstream_cpu.json"
+  ],
+  "real_3b_diagnostic_complete": false,
+  "verified_utc": "2026-10-29T12:38:20.752878+00:00",
+  "child_pid": 75728,
+  "start_ticks": "55150943",
+  "live": true
+}

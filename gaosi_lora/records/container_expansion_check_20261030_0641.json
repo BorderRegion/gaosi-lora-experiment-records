@@ -1,0 +1,93 @@
+{
+  "observed_at_utc": "2026-10-29T22:41:02.616974+00:00",
+  "job": "phi_mix_O1_L_H2_core_s17_recompute_v7",
+  "job_status": "RUNNING",
+  "pid": 344804,
+  "pid_start_ticks": "58376943",
+  "identity_live": true,
+  "config_sha256": "f70511613b15835c3eae3ea0fa86e937bb51bf3559301c600a4f9206fca414bc",
+  "checkpoint_keys": [
+    "phi",
+    "meta_optimizer",
+    "rng",
+    "next_episode",
+    "inner_updates",
+    "base_revision",
+    "base_digest",
+    "config",
+    "data_cursor",
+    "inner_state_policy"
+  ],
+  "checkpoint_finite": true,
+  "checkpoint_bytes": 968309,
+  "checkpoint_utc": "2026-10-29T22:37:53.218577+00:00",
+  "completed_episodes": 16,
+  "latest_episode_end": {
+    "event": "episode_end",
+    "utc": "2026-10-29T22:37:53.213107+00:00",
+    "process_wall_seconds": 3766.971680879593,
+    "episode": 15,
+    "inner_updates": 128,
+    "phi_grad_norm": 0.000042654344745571786,
+    "compute_counters": {
+      "loss_forwards": 4316,
+      "loss_backwards": 4254,
+      "input_tokens": 2148856,
+      "supervised_tokens": 429354,
+      "hessian_vector_products": 642
+    },
+    "query_task": 0.00011159740097355098,
+    "query_language": 2.0470733642578125,
+    "query_keep": 0.00011159740097355098,
+    "objective": 0.00011159740097355098
+  },
+  "last_event": {
+    "event": "inner",
+    "utc": "2026-10-29T22:40:10.588250+00:00",
+    "process_wall_seconds": 3904.346819162369,
+    "episode": 16,
+    "k": 8,
+    "ld": 0.029741378501057625,
+    "lr": 1.3918659687042236,
+    "task_tokens": 531,
+    "language_tokens": 1022,
+    "support_forwards": 18,
+    "keep_tokens": 531,
+    "keep_forwards": 8,
+    "step_seconds": 13.759315967559814,
+    "exact_window": true,
+    "cpu_rss_bytes": 8109068288,
+    "allocated_bytes": 17653944320,
+    "reserved_bytes": 33812381696,
+    "peak_allocated_bytes": 31285735424,
+    "peak_reserved_bytes": 33812381696
+  },
+  "large_preclip_norms": [
+    {
+      "episode": 7,
+      "norm": 2.107110211611566e+25
+    }
+  ],
+  "errors": [],
+  "model_files_present": true,
+  "data_present": true,
+  "observed_at_local": "2026-10-30T06:41:02+08:00",
+  "container_pid1_started_local": "2026-10-29T16:36:15+08:00",
+  "storage": {
+    "mount": "/root/autodl-tmp",
+    "device": "/dev/md0",
+    "size_display": "1.1T",
+    "available_display": "984G",
+    "available_gib": 983.49
+  },
+  "gpu": {
+    "name": "MTT S4000",
+    "utilization_percent": 95,
+    "memory_used_mib": 33675,
+    "memory_total_mib": 49152,
+    "temperature_celsius": 55,
+    "observed_at_local": "2026-10-30T06:40:44+08:00"
+  },
+  "assessment": "Expansion is mounted; model/data/config and finite checkpoint are present. Training PID/start-time matches and events are advancing. No evidence of a new container restart since PID1 start. Episode 7 gradient spike remains a numerical concern; no repeat through episode 15. Downstream queues exited after the earlier failed run and still need rebuilding; this check does not certify the full pipeline.",
+  "next_check_local": "2026-10-30T07:09:00+08:00"
+}

@@ -1,0 +1,39 @@
+{
+  "status": "H1_EVIDENCE_AND_LIMITED_SCIENTIFIC_RECEIPT_SYNCED",
+  "recorded_at_utc": "2026-11-04T21:00:26.236325+00:00",
+  "receipts": [
+    {
+      "status": "REVIEW_SYNCED_VERIFIED",
+      "path": "records/H1_completion_20261104_2056/finalize_review.py",
+      "sha256": "051eb544218b12790cb9561e9454776f568ba73f51ff9b89e4377e06242c7936"
+    },
+    {
+      "status": "REVIEW_SYNCED_VERIFIED",
+      "path": "records/H1_completion_20261104_2056/fetch_completion_evidence.py",
+      "sha256": "a9b655f11d426461961742855b5e6ced2822c4fe2d46f5a0b35d38d40d103390"
+    },
+    {
+      "status": "REVIEW_SYNCED_VERIFIED",
+      "path": "records/H1_completion_20261104_2056/fetch_receipt.json",
+      "sha256": "9db1bff8a5c71b27ba059fa667590de5b9a7079746c492b9537f8f7941187605"
+    },
+    {
+      "status": "REVIEW_SYNCED_VERIFIED",
+      "path": "records/H1_complete_inner_review_20261104_2056.json",
+      "sha256": "8e2970906260145479a6d9ea1c2862284350c7a91cae3c3cbc28ab332b9030f8"
+    },
+    {
+      "status": "REVIEW_SYNCED_VERIFIED",
+      "path": "records/H1_completion_20261104_2056/scientific_assessment.json",
+      "sha256": "5315e3e16da2e30e21ede12c83cc9246e357a2c0dedb04a636cd58d6314e2787"
+    },
+    {
+      "status": "REVIEW_SYNCED_VERIFIED",
+      "path": "records/pipeline_observed_blocking_v8/reviews/phi_mix_O1_L_H1_commonwarm_s17_observed_blocking_v8.json",
+      "sha256": "de515684d577ad949104e49eedca57f0ec356d43510ca6ae5fc9c228e01d88b4"
+    }
+  ],
+  "training_restarted": false,
+  "method_validated": false,
+  "full_goal_complete": false
+}

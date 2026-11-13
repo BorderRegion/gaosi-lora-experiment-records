@@ -1,0 +1,114 @@
+{
+  "status": "FIRST_CLEAN_H1_H2_ENDPOINT_DESCRIPTIVE_COMPARISON_NO_EFFICACY_PROMOTION",
+  "recorded_at_utc": "2026-11-06T12:40:19.600541+00:00",
+  "H1": {
+    "task": {
+      "n": 512,
+      "candidate_accuracy": 1.0,
+      "mean_margin": 11.245633260811097,
+      "nll": 0.01673928569622889,
+      "answer_tokens": 1288,
+      "strict_EM": 0.98828125,
+      "abnormal_rate": 0.0
+    },
+    "keep": {
+      "n": 512,
+      "candidate_accuracy": 1.0,
+      "mean_margin": 11.245633260811097,
+      "nll": 0.01673928569622889,
+      "answer_tokens": 1288,
+      "strict_EM": 0.98828125,
+      "abnormal_rate": 0.0
+    },
+    "language": {
+      "nll": 2.1340869011271035,
+      "answer_tokens": 4463
+    }
+  },
+  "H2": {
+    "task": {
+      "n": 512,
+      "candidate_accuracy": 0.998046875,
+      "mean_margin": 11.24423985609594,
+      "nll": 0.016017792729135494,
+      "answer_tokens": 1288,
+      "strict_EM": 0.98828125,
+      "abnormal_rate": 0.0
+    },
+    "keep": {
+      "n": 512,
+      "candidate_accuracy": 0.998046875,
+      "mean_margin": 11.24423985609594,
+      "nll": 0.016017792729135494,
+      "answer_tokens": 1288,
+      "strict_EM": 0.98828125,
+      "abnormal_rate": 0.0
+    },
+    "language": {
+      "nll": 2.138567423649548,
+      "answer_tokens": 4463
+    }
+  },
+  "clean_parent": {
+    "task": {
+      "n": 512,
+      "candidate_accuracy": 1.0,
+      "mean_margin": 10.186212864077874,
+      "nll": 0.023651785981122126,
+      "answer_tokens": 1288,
+      "strict_EM": 0.984375,
+      "abnormal_rate": 0.0
+    },
+    "keep": {
+      "n": 512,
+      "candidate_accuracy": 1.0,
+      "mean_margin": 10.186212864077874,
+      "nll": 0.023651785981122126,
+      "answer_tokens": 1288,
+      "strict_EM": 0.984375,
+      "abnormal_rate": 0.0
+    },
+    "language": {
+      "nll": 2.120082481864213,
+      "answer_tokens": 4463
+    }
+  },
+  "recovery_steps": 64,
+  "H1_minus_H2": {
+    "candidate_correct_out_of_512": 1,
+    "strict_correct_out_of_512": 0,
+    "task_nll": 0.0007214929670933956,
+    "language_nll": -0.004480522522444463
+  },
+  "H1_prediction_files_audited": 12,
+  "H1_saved_prediction_rows_reaggregated": 6144,
+  "H1_wrapper_seconds_including_lock_wait": 14503.974383354187,
+  "H1_last_event_process_seconds": 7613.93866109848,
+  "task_and_keep_are_same_512_queries": true,
+  "injected_noise": 0.0,
+  "interpretation": "One extra H1 candidate answer; equal strict answers; H1 task NLL slightly higher and language NLL lower. Mixed single-cell differences do not establish a horizon or method advantage.",
+  "evidence_sha256": {
+    "records/horizon_effect_monitor_20261106_122545_utc/archive_source_sha256.json": "5491f971d35233454faa5c1b9368977af3b453f40de1524c2cd044314f9a3489",
+    "records/horizon_effect_monitor_20261106_122545_utc/result.json": "c6a8f0c8a88d3fc0c0df79228306d2ce0827aa61240199266c53d4c398f6c38d",
+    "records/horizon_effect_monitor_20261106_122545_utc.tar.gz": "701c6cbf344dafd5cbc89d6716f95f274ae2e5922e2b1c978dc38b56a4a7964e",
+    "records/horizon_effect_monitor_20261106_122545_utc/snapshot/records/jobs/phi_horizon_effect_comparison_s17_v1.json": "cc90e2361c9cb7e9edae60a9d0e9d5727a10c7db9f524748471ce2381633fae6",
+    "records/horizon_effect_monitor_20261106_122545_utc/snapshot/records/logs/phi_horizon_effect_comparison_s17_v1.log": "0358e94ab9f9fdbdec2d2b48f2ece088842da6f495277a5d1412f0ad54227232",
+    "records/horizon_noise_timing_repair_20261106_1230/preparation.json": "d8f3ba31999519af914eb6798e076bee31700f5425bf4c6a6df80646de7d2f95",
+    "records/horizon_noise_timing_repair_20261106_1230/remote_validation.json": "f1e973cb3e262d6dac9d38faa2ee12272438c87b83e0312c2ff431a6ef70f437",
+    "records/horizon_noise_timing_repair_20261106_1230/launch_continuation_v2.json": "9d5439ff3a6da27e0bad558123236efb1146d4d104a2647de57e9abb069a4816",
+    "records/horizon_noise_timing_repair_20261106_1230/launch_verification_v2.json": "8a719d078ea0223cae15abfbc6fdb6aa94dfaea86546ddb7d2bdc893d2e76b47",
+    "records/horizon_effect_comparison_20261103_1005/runtime_deployment_v2.json": "ccbeea7d09ef3d6fbc481bb5b1ed6922641266b951e6fc09a41fd02cb6555fc7",
+    "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t0_clean_s17_v1.json": "2b37bf680a34cdb6d764aacdfc467e243e75f580734ec43e4eab361c6e5f332d",
+    "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t0_clean_s17_v1_paired_review_v2.json": "707f6a31fb93221b9990d2217ffd16cbe3b0736eafe2a44f375614ac08904149",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t0_clean_s17.json": "0296fd3695b886874b772dec1f0298538c82789bc08e1f986e52f537739bc54c",
+    "records/horizon_noise_timing_repair_20261106_1230/review_preserved_alert.py": "8d7221f5994c3cb1f7fc7ca0215f30651ca5b257585e1d87cbbb13a97abd706f"
+  },
+  "method_validated": false,
+  "scientific_promotion_allowed": false,
+  "full_goal_complete": false,
+  "limitations": [
+    "Single task, dose and seed; no noise recovery claim from this zero-noise cell.",
+    "CPU saved-tensor audit and saved-prediction aggregation only; no independent forward, tokenizer, derivative or per-token language recomputation.",
+    "Wrapper wall includes lock waiting; it is not independent GPU cost."
+  ]
+}

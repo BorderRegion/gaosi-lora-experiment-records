@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "episodes": 192,
+  "inner_updates": 2560,
+  "base_unchanged": true,
+  "checkpoint": "runs/phi_mix_O1_L_H1_commonwarm_s17_observed_blocking_v8/latest.pt",
+  "horizon": "H1",
+  "compute_counters": {
+    "loss_forwards": 52075,
+    "loss_backwards": 46269,
+    "input_tokens": 25973719,
+    "supervised_tokens": 4995278,
+    "hessian_vector_products": 0
+  },
+  "note": "Meta-training completion does not prove superiority; dev selection and frozen holdout tests remain required."
+}

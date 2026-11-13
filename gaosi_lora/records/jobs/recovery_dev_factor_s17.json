@@ -1,0 +1,24 @@
+{
+  "name": "recovery_dev_factor_s17",
+  "command": [
+    "/usr/bin/python",
+    "-u",
+    "-m",
+    "gaosi.recover",
+    "--config",
+    "configs/recovery_dev_factor_s17.json"
+  ],
+  "wrapper_pid": 85207,
+  "started_at_utc": "2026-10-29T13:07:33.513011+00:00",
+  "start_epoch": 1793279253.5130332,
+  "status": "PASS",
+  "device_lock": {
+    "path": "/tmp/gaosi_musa_device0.lock",
+    "version": 1
+  },
+  "child_pid": 85208,
+  "child_proc_start_ticks": "55332301",
+  "exit_code": 0,
+  "wall_seconds": 3256.4976341724396,
+  "finished_at_utc": "2026-10-29T14:01:50.010675+00:00"
+}

@@ -1,0 +1,9 @@
+{
+  "status": "SCOPED_KNOWN_K4_CPU_SAVED_ARTIFACT_REVIEW_STARTED_ONCE",
+  "at_utc": "2026-11-10T14:19:45.132678+00:00",
+  "pid": 300747,
+  "proc_start_ticks": "159445463",
+  "source_sha256": "9d6735e9c1447924b43d1527b1276053c56561c599190ce8746485eda6df9f3e",
+  "production_training_modified_or_restarted": false,
+  "replay_submitted": false
+}

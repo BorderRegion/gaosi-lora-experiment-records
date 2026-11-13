@@ -1,0 +1,88 @@
+{
+  "status": "REPLACEMENT_OBSERVER_FIRST_CAPTURE_REVIEWED_AFTER_EVIDENCE_PRESERVING_LOCAL_DISK_RECOVERY",
+  "recorded_at_utc": "2026-11-10T07:02:03.682014+00:00",
+  "observer": {
+    "pid": 2076759,
+    "start_ticks": "153964363",
+    "state": "S"
+  },
+  "ssh_processes": {
+    "identity": {
+      "pid": 896141,
+      "start_ticks": "146063673",
+      "state": "S"
+    },
+    "master_identity": {
+      "pid": 2024222,
+      "start_ticks": "153592466",
+      "state": "S"
+    }
+  },
+  "remote": {
+    "checked_at_utc": "2026-11-10T07:02:03.632312+00:00",
+    "reference_files_rehashed": 21,
+    "compressed_journal_restores_original_bytes": true,
+    "active_processes": [
+      {
+        "name": "organization_queue_observed_blocking_v8",
+        "pid": 761616,
+        "start_ticks": "80739115",
+        "state": "S",
+        "wchan": "do_wait"
+      },
+      {
+        "name": "phi_mix_O1_X_specialize512_s17_observed_blocking_v8",
+        "pid": 68659,
+        "start_ticks": "154509185",
+        "state": "R",
+        "wchan": "0"
+      },
+      {
+        "name": "horizon_uniform_initial_gate_observed_blocking_v8",
+        "pid": 48797,
+        "start_ticks": "154082318",
+        "state": "S",
+        "wchan": "do_wait"
+      },
+      {
+        "name": "horizon_known_K4_H2_uniform_s17_observed_blocking_v8",
+        "pid": 70260,
+        "start_ticks": "154541867",
+        "state": "S",
+        "wchan": "locks_lock_inode_wait"
+      }
+    ],
+    "device_lock_inode": 31148027670
+  },
+  "evidence_sha256": {
+    "records/pipeline_observer_20261110_0655/collect_snapshot.py": "80329e6a2ec0cc86304c579a79e6a357d715dee542a9bf6e4c85fdd6eff05815",
+    "records/pipeline_observer_20261110_0655/observe.py": "60f4ce000e8271001fa2215cb0a183c5f00c94fa8f1888d380e61089e1ee8372",
+    "records/pipeline_observer_20261110_0655/review_meta_progress.py": "c745c4c5e8f00b101d0a04eaf9b95b671bf9f237d6f3f84f37335b7e8006f74f",
+    "records/pipeline_observer_20261110_0655/review_observation.py": "e97fcb66a56f4cc5be7f5671afd4f8d00601985de607876e5c4b25bef0a0c4d6",
+    "records/pipeline_observer_20261110_0655/wait_next_observation.py": "d344ea69ee260f30a56caff3ad3e1cae88b788c6bc241e5ab1e60e6f6d13e081",
+    "records/pipeline_recovery_20261110_0655/launch_observer.py": "baf40a06574b15609894c85ecaf9c5492015b288cd82fed22f714db46e17abcc",
+    "records/pipeline_recovery_20261110_0655/remote_preflight.py": "eec74b2e9e2b23e353dee742daa07b3133835964ecd24db3e6c633493faa81e7",
+    "records/pipeline_recovery_20261110_0525/archive_transport.py": "e1515c622f24eae7a0f2bb798a3475612fb1e4b336a6764f45b5b7c3a16f1788",
+    "records/pipeline_recovery_20261110_0655/before.json": "a699052d4c5472e56216caab601aaf52b9353ae8c4429133b0783bafc3031e4c",
+    "records/pipeline_recovery_20261110_0655/deduplication_receipt.json": "b731b9dc9b1ba637018a6f7973adfbb77773e09aa9cff67074e632a404d582b1",
+    "records/pipeline_recovery_20261110_0655/deduplication_verification.json": "8dcdd3b2a30c5e68d58d671b693696e7f223771e9220376aa672fe708114adbd",
+    "records/pipeline_recovery_20261110_0655/deduplication.jsonl.gz": "d34eb41df8b6d5c6bf6605ad62570935268ca9022046970e7cc85179f5cb01ed",
+    "records/pipeline_recovery_20261110_0655/recovery_receipt.json": "e8fd74a84667fd5636d4362218e847c90a9a712cadffda16cc2dffbbc28716b3",
+    "records/pipeline_recovery_20261110_0655/remote_preflight.json": "46e00202579ea36bcc08a3c513732422f4f55b3fcda54dd95c83df324a4730fe",
+    "records/pipeline_recovery_20261110_0655/launch_intent.json": "ca184931bca8e508df777762aa39319f498b189d0370272c9f754c3f2850099f",
+    "records/pipeline_recovery_20261110_0655/child_identity.json": "b4665bcb3f2196bc851cb59b3f9356f638e55c6b9a721caa34bfb8f018907924",
+    "records/pipeline_observer_20261110_0655/launch.json": "c09d4726f8aef407738c942e265635df2bf5c075844e954e81c336fea3e7f2ba",
+    "records/pipeline_observer_20261110_0655/start_receipt.json": "9c4807a7fa441ce89b9f9639784cb29a3eb39a7d75d0f73165ab6811604881f0",
+    "records/pipeline_observer_20261110_0655/observation_verification_20261110_0650.json": "4772b35479f35ca06c60d6d8906d5a9d5d2eb15a94a761424e7f5c733190243b",
+    "records/pipeline_observer_20261110_0655/meta_progress_20261110_0650.json": "01d8fa7152820b3088bdefa440e9b1ce301b9e3b1150b39402f8f361ed432aff",
+    "records/pipeline_recovery_20261110_0655/verify_recovery.py": "7d9e6c9d1a421c1d4103be9a7a8e346c969af9bcb9cd10d0b5e72b20dc1eb268"
+  },
+  "local_available_bytes": 2095734784,
+  "preserved_old_observer_state_and_logs_rehashed": true,
+  "snapshot_source_files_independently_rehashed": 163,
+  "committed_inner_steps": 256,
+  "new_observer_headroom_guard_minimum_bytes": 134217728,
+  "training_or_original_controllers_modified_or_restarted": false,
+  "method_validated": false,
+  "full_goal_complete": false
+}

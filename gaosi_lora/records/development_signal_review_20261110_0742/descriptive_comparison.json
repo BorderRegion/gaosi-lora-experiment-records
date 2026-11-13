@@ -1,0 +1,169 @@
+{
+  "status": "SELECTED_DEVELOPMENT_CHECKPOINT_DESCRIPTIVE_SIGNALS_RECORDED",
+  "recorded_at_utc": "2026-11-10T07:40:40.104365+00:00",
+  "selected_checkpoint_label": "X_2560",
+  "conditions_per_method": 10,
+  "comparisons": {
+    "standard_adam": {
+      "phi_minus_baseline_score": -0.0017903645833332593,
+      "phi_NLL_residual_comparison_counts": {
+        "language": {
+          "lower": 10,
+          "equal": 0,
+          "higher": 0
+        },
+        "keep": {
+          "lower": 1,
+          "equal": 0,
+          "higher": 9
+        }
+      }
+    },
+    "paired_adam": {
+      "phi_minus_baseline_score": -0.0007955654834029824,
+      "phi_NLL_residual_comparison_counts": {
+        "language": {
+          "lower": 10,
+          "equal": 0,
+          "higher": 0
+        },
+        "keep": {
+          "lower": 1,
+          "equal": 0,
+          "higher": 9
+        }
+      }
+    }
+  },
+  "local_retention_example": {
+    "config": {
+      "data": "data/synthetic/rules_integer_v1/dev_integer_world_001.jsonl",
+      "parent": "runs/parent_3b_dev_parent_r32_s17_extend512_v2/latest.pt",
+      "inner_lr": 0.0003,
+      "q_apply": 0.0,
+      "K": 64,
+      "data_seed": 17,
+      "noise_seed": 1729
+    },
+    "clean": {
+      "task": {
+        "n": 4,
+        "candidate_accuracy": 0.25,
+        "mean_margin": -0.40641655027866364,
+        "nll": 0.6623856371099298,
+        "answer_tokens": 11,
+        "strict_EM": 0.5,
+        "abnormal_rate": 0.0
+      },
+      "keep": {
+        "n": 512,
+        "candidate_accuracy": 1.0,
+        "mean_margin": 10.186212864077874,
+        "nll": 0.023651785981122126,
+        "answer_tokens": 1288,
+        "strict_EM": 0.984375,
+        "abnormal_rate": 0.0
+      },
+      "language": {
+        "nll": 2.120082481864213,
+        "answer_tokens": 4463
+      }
+    },
+    "final": {
+      "X_2560": {
+        "task": {
+          "n": 4,
+          "candidate_accuracy": 1.0,
+          "mean_margin": 16.843891382223866,
+          "nll": 7.802766374838526e-07,
+          "answer_tokens": 11,
+          "strict_EM": 1.0,
+          "abnormal_rate": 0.0
+        },
+        "keep": {
+          "n": 512,
+          "candidate_accuracy": 1.0,
+          "mean_margin": 10.172413275736742,
+          "nll": 0.036320269599692694,
+          "answer_tokens": 1288,
+          "strict_EM": 0.98046875,
+          "abnormal_rate": 0.0
+        },
+        "language": {
+          "nll": 2.1189161987548286,
+          "answer_tokens": 4463
+        }
+      },
+      "standard_adam": {
+        "task": {
+          "n": 4,
+          "candidate_accuracy": 1.0,
+          "mean_margin": 18.46875166893009,
+          "nll": 8.669765220888208e-08,
+          "answer_tokens": 11,
+          "strict_EM": 1.0,
+          "abnormal_rate": 0.0
+        },
+        "keep": {
+          "n": 512,
+          "candidate_accuracy": 0.990234375,
+          "mean_margin": 8.242822618564517,
+          "nll": 0.10972617357229486,
+          "answer_tokens": 1288,
+          "strict_EM": 0.966796875,
+          "abnormal_rate": 0.0
+        },
+        "language": {
+          "nll": 2.1314310438024497,
+          "answer_tokens": 4463
+        }
+      },
+      "paired_adam": {
+        "task": {
+          "n": 4,
+          "candidate_accuracy": 1.0,
+          "mean_margin": 18.90625268220903,
+          "nll": 6.502324367829715e-08,
+          "answer_tokens": 11,
+          "strict_EM": 1.0,
+          "abnormal_rate": 0.0
+        },
+        "keep": {
+          "n": 512,
+          "candidate_accuracy": 0.986328125,
+          "mean_margin": 7.995274747266783,
+          "nll": 0.12387062518028495,
+          "answer_tokens": 1288,
+          "strict_EM": 0.955078125,
+          "abnormal_rate": 0.0
+        },
+        "language": {
+          "nll": 2.132457722870726,
+          "answer_tokens": 4463
+        }
+      }
+    }
+  },
+  "interpretation": "Language NLL residual is lower in all ten conditions; keep NLL residual is lower in one and higher in nine. Neither composite comparison favors phi.",
+  "evidence_sha256": {
+    "records/development_aggregate_review_20261109_2058/assessment_verification.json": "a3c814c81ddc7b3fdd33641132c2b8dc1a9b6b6f0c04949071e3c226f2052218",
+    "records/development_signal_review_20261110_0742/review.py": "9099c2792c715672d92f0812d8efbd0b3e5474f8a7f91d5a61723f0b5ff70c7f",
+    "records/development_completion_20261104_2358/phi_dev_X_2560_t4_clean_s17_evidence/manifest.json": "87d096ce6bcd9b467b86074c7a8039b7ead89516f138c91eca3809cb36acb52c",
+    "records/development_completion_20261104_2358/phi_dev_X_2560_t4_clean_s17_evidence/snapshot/runs/phi_dev_X_2560_t4_clean_s17/result.json": "ade05265a8908313780e46caa58b2ea93965fbe28b25e76733e537a3f28d9695",
+    "records/development_completion_20261104_2358/phi_dev_standard_adam_t4_clean_s17_evidence/manifest.json": "508e30dc93f5ca8e5cfca52b833359f20de5ab796a659fb192f8f42f3a619fbe",
+    "records/development_completion_20261104_2358/phi_dev_standard_adam_t4_clean_s17_evidence/snapshot/runs/phi_dev_standard_adam_t4_clean_s17/result.json": "7122d62c7515f0120b17eda90ad13663620a7c191803cf62c13f71bb8c90d028",
+    "records/development_completion_20261104_2358/phi_dev_paired_adam_t4_clean_s17_evidence/manifest.json": "ca4e777985b20567b5767c5142a0f4e4392c79e240255c21cebfb893df49ca44",
+    "records/development_completion_20261104_2358/phi_dev_paired_adam_t4_clean_s17_evidence/snapshot/runs/phi_dev_paired_adam_t4_clean_s17/result.json": "c29fafa47d7c58004015989f958dc277b356c5e15efdbff5fba93ec94ac10336"
+  },
+  "limitations": [
+    "One phi training seed, development data only; conditions are not ten independent training replicates.",
+    "Descriptive signs do not establish statistical significance, causal mechanisms, or generalization.",
+    "The rule example has only four task queries within the support range.",
+    "Saved predictions and language event metrics are reused; no fresh model forward or per-token language audit.",
+    "This comparison concerns the core checkpoint before organization specialization, not the pending organization result."
+  ],
+  "training_modified_or_restarted": false,
+  "scientific_promotion_generated": false,
+  "method_validated": false,
+  "full_goal_complete": false
+}

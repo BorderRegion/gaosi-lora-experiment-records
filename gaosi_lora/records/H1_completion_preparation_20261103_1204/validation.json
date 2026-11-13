@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "fixture": "Archived L-H2 logs transformed to synthetic H1 metadata/flags; no actual H1 execution or correctness evidence.",
+  "checks": [
+    "synthetic_H1_shape_accepts_128_additional_episodes_and_2048_steps",
+    "reject_incomplete_H1_completion",
+    "reject_changed_seed",
+    "reject_missing_shared_Adam_state_declaration",
+    "reject_missing_gradient_row",
+    "reject_changed_task",
+    "reject_changed_dose",
+    "reject_insufficient_or_unmatched_route_tokens",
+    "reject_unexpected_H2_exact_flag",
+    "reject_changed_cumulative_budget",
+    "reject_nonfinite_objective",
+    "reject_unauthorized_gradient_update",
+    "partial_H1_explicitly_remains_incomplete"
+  ],
+  "reference_archive": "records/observed_blocking_core_monitor_20261101_070654_utc",
+  "reference_manifest_sha256": "52fe7183bedd46e489e8dd190ce183b2037c5d67d9206758cfb3ca4882db888e",
+  "source_sha256": "35a06b6eb0831ff7468faf60b3e0ca0b12a90cd29763dcc40dcb7eddb31e3777",
+  "training_modified_or_started": false,
+  "method_validated": false
+}

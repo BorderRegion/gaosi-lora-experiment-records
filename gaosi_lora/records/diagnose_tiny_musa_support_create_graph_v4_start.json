@@ -1,0 +1,29 @@
+{
+  "name": "diagnose_tiny_musa_support_create_graph_v4",
+  "purpose": "Random tiny MUSA H2 comparison with temporary create_graph=True support forward; not production training",
+  "formal_data_used": false,
+  "script_sha256": "4dfcb45f7af7daf49339818609c6653e734c5197fca3e9c493bd73b8f0bbf77d",
+  "source_snapshot": "records/incident_20261030_0418/diagnose_musa_recompute_v3.py",
+  "device_lock": "/tmp/gaosi_musa_device0.lock",
+  "wrapper_pid": 320302,
+  "wrapper_start_ticks": "58183809",
+  "command": [
+    "/usr/bin/python",
+    "-u",
+    "tools/job.py",
+    "--name",
+    "diagnose_tiny_musa_support_create_graph_v4",
+    "--musa-lock",
+    "/tmp/gaosi_musa_device0.lock",
+    "--",
+    "/usr/bin/python",
+    "-u",
+    "tools/diagnose_musa_recompute.py",
+    "--support-forward-create-graph",
+    "--repeats",
+    "2",
+    "--out",
+    "checks/diagnose_tiny_musa_support_create_graph_v4"
+  ],
+  "started_at_utc": "2026-10-29T21:02:48.589889+00:00"
+}

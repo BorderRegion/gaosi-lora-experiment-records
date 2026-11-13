@@ -1,0 +1,48 @@
+{
+  "utc": "2026-10-29T14:06:09.013017+00:00",
+  "job": {
+    "name": "continual_statistics_queue_v1",
+    "command": [
+      "/usr/bin/python",
+      "-u",
+      "tools/continual_statistics_queue.py"
+    ],
+    "wrapper_pid": 104145,
+    "started_at_utc": "2026-10-29T14:06:08.948263+00:00",
+    "start_epoch": 1793282768.948286,
+    "status": "RUNNING",
+    "child_pid": 104146,
+    "child_proc_start_ticks": "55683845"
+  },
+  "process_identity_live": true,
+  "stage": "WAITING_FOR_COMPLETE_SIXTEEN_EIGHT_ROUND_PILOTS",
+  "upstream_jobs": [
+    "continual_queue_v1",
+    "confirmation_queue_v1"
+  ],
+  "upstream_process_identities_verified_at_start": true,
+  "cpu_checks": {
+    "continual_statistics_cpu": {
+      "status": "PASS",
+      "count": 12,
+      "sha256": "1e8cd3b5cfe66be08c88b894612c78762ea63366447d919075f2f447e2163edb",
+      "scope": "Simulated512-parent/8x32-stream/4x32-probe records only; no model or effect evidence"
+    },
+    "continual_cost_metadata_cpu": {
+      "status": "PASS",
+      "count": 21,
+      "sha256": "6118631ca43a98b815f397c48b3f4416e61272e2d012b88b88b6378d3c3b8a33",
+      "scope": "CPU random tiny model, two-round fixtures only; not MUSA or eight-round results"
+    }
+  },
+  "source_hashes": {
+    "tools/summarize_continual.py": "d658512be63379a2714120d196729523f0c2dd3591bd280641aaeafc25b573c3",
+    "tools/continual_statistics_queue.py": "c0134fec8150a3a2605b0aa8cc1d2cf9daaf76507910e4011c53296b2b68e727",
+    "tools/validate_continual_statistics.py": "451c442c2f840ed6bc4f5f03e207c984837a96dc1121fc8aaa9ef9dd39170246"
+  },
+  "continual_source_sha256": "a1c82f3bccb9208979cb1babbdb31f5e6c91ffd5f1fd083a78c25d8671e5a9a2",
+  "policy": "records/continual_statistics_policy_v1.json",
+  "actual_formal_statistics_started": false,
+  "overall_experiment_complete": false,
+  "recover_sha256": "955babb1fb4303e6b367ba848cf909a0d94442620d27a031e215730cf76f44c1"
+}

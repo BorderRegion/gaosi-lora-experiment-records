@@ -1,0 +1,39 @@
+{
+  "utc": "2026-10-29T13:02:35.080456+00:00",
+  "job": {
+    "name": "confirmation_queue_v1",
+    "command": [
+      "/usr/bin/python",
+      "-u",
+      "tools/confirmation_queue.py"
+    ],
+    "wrapper_pid": 83679,
+    "started_at_utc": "2026-10-29T13:02:00.697377+00:00",
+    "start_epoch": 1793278920.6973982,
+    "status": "RUNNING",
+    "child_pid": 83680,
+    "child_proc_start_ticks": "55299020"
+  },
+  "process_identity_live": true,
+  "upstream_job": "continual_queue_v1",
+  "upstream_process_identity_live": true,
+  "stage": "WAITING_FOR_SIXTEEN_EIGHT_ROUND_PILOTS",
+  "cpu_check": {
+    "status": "PASS",
+    "count": 17,
+    "scope": "Real random tiny CPU H2 seed/init/optimizer/resume checks plus explicitly simulated full scheduling; no production MUSA/3B or formal effect evidence",
+    "sha256": "5d68d97b9d0b014e88a4a374dd50f7b273ee2c3674f21f79c02fe825865a1927"
+  },
+  "source_hashes": {
+    "gaosi/confirmation.py": "3a2401539bfe2c8d7bebe111b9c4b105f9217f7cde3f2efef0b4c378a2c953c7",
+    "tools/confirmation_queue.py": "d19d829e575b0218bd035ac8ea106c884df04517a944754f1204816879ed99df",
+    "tools/validate_confirmation.py": "6708fe57f5bb9486554f2704ae05836bdcc6fb4da7a7d1c4549e093f4c00c2bc",
+    "tools/device_guard.py": "6f00f894b372cdcfa4235d64a197436aada4091a8e276e1841317d2f60f8a5e5",
+    "checks/confirmation_cpu.json": "5d68d97b9d0b014e88a4a374dd50f7b273ee2c3674f21f79c02fe825865a1927"
+  },
+  "production_numerical_sources_unchanged": true,
+  "policy": "records/confirmation_policy_v1.json",
+  "actual_independent_phi_training_started": false,
+  "shared_parent_conditioning": true,
+  "overall_experiment_complete": false
+}

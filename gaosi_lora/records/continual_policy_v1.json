@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "organizations": [
+    "O1",
+    "O2",
+    "O3",
+    "O4"
+  ],
+  "methods": [
+    "clean_Adam",
+    "noise_Adam",
+    "clean_phi",
+    "noise_phi"
+  ],
+  "pilot": "O1 stock Adam clean/noise, first two dev fact worlds sorted by ID; schedules 32/16 then64/32 then128/64 if previous schedule is insufficient. All formal arms use the same dev-selected schedule.",
+  "pilot_adequacy": "Both doses: mean day new-task candidate>=.85 and strictEM>=.75; mean night new-task candidate/EM no more than .10 below day. At maximum budget proceed with an explicit adequacy-limited warning, no sufficient-training claim.",
+  "day_lr": "Frozen ordinary-capacity LR; never select on formal performance",
+  "night_lr": "Frozen recovery LR; never inflate Adam LR to induce forgetting",
+  "rounds": 8,
+  "new_bindings_per_round": 32,
+  "replay_capacity": 128,
+  "world_order": "First eight final fact worlds sorted by ID, shuffled by seed17",
+  "probe_worlds": "Last four final fact worlds sorted by ID, disjoint from the eight stream worlds",
+  "probes": "Rounds0/4/8, common extra rank16, four worlds, 1/4/16 steps; original W0 uses the same probes once as a shared reference.",
+  "cost": "Same fixed parent query prompt: two warmups/five measured prefill forwards, adapter enabled/disabled on same underlying base; actual checkpoint and adapter bytes, merge count and cumulative-rank bound.",
+  "O4": "Persistent FP32 base master; initial parent merged before round0, nonzero day adapter perturbed/recovered before merge/reset at each later boundary.",
+  "seed": 17,
+  "replay_seed": 912,
+  "probe_seed": 37,
+  "starting_parent": "Shared verified final all-parent, after all phi freezing; independent known library from stream/probes",
+  "independent_phi_training_seeds": 1,
+  "scope": "Sixteen eight-round pilot trajectories. Two further training seeds/orders for key comparisons remain required."
+}

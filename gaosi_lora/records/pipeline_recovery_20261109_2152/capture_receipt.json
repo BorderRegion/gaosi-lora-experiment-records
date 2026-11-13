@@ -1,0 +1,12 @@
+{
+  "status": "READ_ONLY_ALERT_AND_CURRENT_RUNTIME_EVIDENCE_PRESERVED",
+  "recorded_at_utc": "2026-11-09T21:52:21.921545+00:00",
+  "observed_at_utc": "2026-11-09T21:52:21.707450+00:00",
+  "files": 116,
+  "source_sha256": "c66dcbb3b0e7276e008ce8d0c9110014445fd230998cc10bf5d047747bbc4f5c",
+  "manifest_sha256": "695dd39f4110ea7d4a7f197b808e9312c593393dea6688be44e4cb79b574469f",
+  "runtime_sha256": "023b1b17d4cac985a93f7298827b49556a0cde4e37a49f6ba0df8499cab82cb7",
+  "training_modified_or_restarted": false,
+  "method_validated": false,
+  "full_goal_complete": false
+}

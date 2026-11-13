@@ -1,0 +1,12 @@
+{
+  "recorded_at_utc": "2026-11-08T14:38:47.608682+00:00",
+  "status": "DESCRIPTIVE_REVIEW_LEGACY_FETCH_RECEIPT_COMPATIBILITY_CORRECTED",
+  "first_source": "records/development_completion_20261104_2358/review_adam_endpoint_v1.py",
+  "first_source_sha256": "4ade83ba3b8d64a052899aa2a24be159811bf1052a790cd7906f70bf8294194c",
+  "failure": "KeyError manifest_sha256 when reading an older phi fetch receipt; no assessment written, no training changed",
+  "replacement_source": "records/development_completion_20261104_2358/review_adam_endpoint_v2.py",
+  "replacement_source_sha256": "fee4cdc3d6635e8a1618551dca45c5878d15e276c4a7acf1561aedc828f0437f",
+  "resolution": "Check manifest digest when recorded; always hash manifest into new assessment and rehash every manifest-listed local file and remote tensor file.",
+  "training_modified_or_restarted": false,
+  "method_validated": false
+}

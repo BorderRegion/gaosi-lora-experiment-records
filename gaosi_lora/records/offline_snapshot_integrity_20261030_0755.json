@@ -1,0 +1,95 @@
+{
+  "scope": "Offline verification of the previously captured 07:39 UTC+8 snapshot only; no remote inspection.",
+  "sha256_matches": true,
+  "files": [
+    {
+      "file": "records/training_monitor_20261030_0739/checkpoint.pt",
+      "matches": true
+    },
+    {
+      "file": "records/training_monitor_20261030_0739/config.json",
+      "matches": true
+    },
+    {
+      "file": "records/training_monitor_20261030_0739/events.jsonl",
+      "matches": true
+    },
+    {
+      "file": "records/training_monitor_20261030_0739/job.json",
+      "matches": true
+    },
+    {
+      "file": "records/training_monitor_20261030_0739/job.log",
+      "matches": true
+    },
+    {
+      "file": "records/training_monitor_20261030_0739/result.json",
+      "matches": true
+    },
+    {
+      "file": "records/job_costs_20261030_0739/jobs.csv",
+      "matches": true
+    },
+    {
+      "file": "records/job_costs_20261030_0739/result.json",
+      "matches": true
+    },
+    {
+      "file": "tools/inspect_recompute_v7.py",
+      "matches": true
+    },
+    {
+      "file": "tools/summarize_job_costs.py",
+      "matches": true
+    },
+    {
+      "file": "tools/validate_job_costs.py",
+      "matches": true
+    },
+    {
+      "file": "records/cost_accounting_tools_validation_20261030_0705.json",
+      "matches": true
+    }
+  ],
+  "complete_episode_ids_contiguous": true,
+  "episode_end_updates_match_schedule": true,
+  "snapshot_progress_matches_events": true,
+  "completed_episodes": 31,
+  "inner_updates": 248,
+  "large_preclip_gradient_rows": [
+    {
+      "episode": 7,
+      "q_train": 0.5,
+      "mode": "known",
+      "K": 8,
+      "gradient_norm": 2.107110211611566e+25,
+      "objective": 0.024723485112190247,
+      "inner_updates": 64
+    }
+  ],
+  "norm_ranges_by_q": {
+    "0.0": {
+      "episodes": 11,
+      "min": 1.4779840543068672e-05,
+      "max": 1.1706611282668702,
+      "large_norm_episodes": []
+    },
+    "0.5": {
+      "episodes": 10,
+      "min": 0.026693290240674877,
+      "max": 2.107110211611566e+25,
+      "large_norm_episodes": [
+        7
+      ]
+    },
+    "0.7": {
+      "episodes": 10,
+      "min": 0.013201188088027683,
+      "max": 0.10824086850575436,
+      "large_norm_episodes": []
+    }
+  },
+  "interpretation": "A large preclip norm is an unresolved numerical risk. Dose association and finite checkpoints do not establish cause, gradient correctness, or efficacy.",
+  "next_remote_check_not_before_utc": "2026-10-30T00:09:00Z",
+  "audited_at_utc": "2026-10-29T23:52:40.567401+00:00"
+}

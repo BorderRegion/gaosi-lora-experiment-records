@@ -1,0 +1,13 @@
+{
+  "status": "VERSIONED_REVIEW_SOURCE_PREPARED_NOT_EXECUTED",
+  "recorded_at_utc": "2026-11-09T21:22:24.503291+00:00",
+  "source": "records/development_aggregate_review_20261109_2058/review_v2.py",
+  "source_sha256": "48142c0ef22e3ebead48237d2ba1f17656748b9182aa9e37f1568a75af73acd0",
+  "original_source": "records/development_aggregate_review_20261109_2058/review.py",
+  "original_source_sha256": "a6cb067ad240854b0c519008d3ef94029ca0a21581cb8e1fc950decab10e630e",
+  "change": "Version 2 permits archive-root audit.json while confining snapshot files. Original deployed source retained byte-for-byte; transport correctly refused overwrite.",
+  "syntax": "PASS",
+  "aggregate_computed": false,
+  "training_modified_or_restarted": false,
+  "full_goal_complete": false
+}

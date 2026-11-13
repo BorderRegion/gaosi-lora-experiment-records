@@ -1,0 +1,17 @@
+{
+  "name": "recovery_statistics_cpu_v1",
+  "command": [
+    "/usr/bin/python",
+    "-u",
+    "tools/validate_recovery_statistics.py"
+  ],
+  "wrapper_pid": 92259,
+  "started_at_utc": "2026-10-29T13:29:30.679678+00:00",
+  "start_epoch": 1793280570.6796963,
+  "status": "PASS",
+  "child_pid": 92260,
+  "child_proc_start_ticks": "55464018",
+  "exit_code": 0,
+  "wall_seconds": 10.458790063858032,
+  "finished_at_utc": "2026-10-29T13:29:41.138492+00:00"
+}

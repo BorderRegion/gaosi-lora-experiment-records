@@ -1,0 +1,14 @@
+{
+  "name": "selective_statistics_queue_recompute_v7",
+  "command": [
+    "/usr/bin/python",
+    "-u",
+    "/root/autodl-tmp/gaosi_lora/records/pipeline_recompute_v7/tools/selective_statistics_queue.py"
+  ],
+  "wrapper_pid": 379894,
+  "started_at_utc": "2026-10-29T22:58:27.059815+00:00",
+  "start_epoch": 1793314707.0598328,
+  "status": "RUNNING",
+  "child_pid": 379895,
+  "child_proc_start_ticks": "58877656"
+}

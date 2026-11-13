@@ -1,0 +1,14 @@
+{
+  "status": "ALIAS_CONTRACT_PASS",
+  "validated_at_utc": "2026-11-02T19:11:02.168186+00:00",
+  "checks": [
+    "Actual original producer main resolves all four manifest references; aliases never imply premature or retained completion.",
+    "Existing historical files, stale symlinks and existing targets reject before any alias creation."
+  ],
+  "simulated_metadata_and_statistics_only": true,
+  "real_training_or_effect_claimed": false,
+  "source_sha256": {
+    "validate_aliases.py": "8c10251bec39546fa0c85a224eb323a44d57d1e29bb216b069d0b86d32d2182f",
+    "install_aliases.py": "25080b76f5928f11ba6c3627956c72b7b47b34ba65e5485ccf7e6ef04cdc9737"
+  }
+}

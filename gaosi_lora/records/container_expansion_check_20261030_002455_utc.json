@@ -1,0 +1,29 @@
+{
+  "observed_at_utc": "2026-10-30T00:24:59.848719+00:00",
+  "data_storage_GiB": {
+    "free": 983.48,
+    "total": 1050.0
+  },
+  "pid1_start": "Thu Oct 29 16:36:15 2026",
+  "same_pid1_start_as_previous": true,
+  "training_process": {
+    "pid": 344804,
+    "identity_live": true,
+    "same_process_as_previous": true
+  },
+  "completed_episodes": 43,
+  "inner_updates": 344,
+  "checkpoint_phi_and_optimizer_finite": true,
+  "checkpoint_config_matches": true,
+  "config_sha_matches_manifest": true,
+  "controllers_live": 15,
+  "controllers_total": 15,
+  "gpu_output": "Fri Oct 30 08:24:59 2026\n---------------------------------------------------------------------\n    mthreads-gmi:2.4.2           Driver Version:5.2.0-server\n---------------------------------------------------------------------\nID   Name                 |PCIe                |%GPU  Mem             \n     Device Type   Perf   |Pcie Lane Width     |Temp  MPC Capable     \n                                               |      ECC Mode        \n+-------------------------------------------------------------------+\n0    MTT S4000            |00000000:1a:00.0    |74%   33874MiB(49152MiB)\n     Physical      N/A    |16x(16x)            |55C   YES             \n                                               |      N/A             \n---------------------------------------------------------------------\n\n---------------------------------------------------------------------\nProcesses:\nID   PID           Process name                           GPU Memory\n                                                               Usage\n+-------------------------------------------------------------------+\n0    344804        /usr/bin/python                          33874MiB\n---------------------------------------------------------------------\n",
+  "scheduled_check": {
+    "due_at_utc": "2026-10-30T00:39:00+00:00",
+    "identity_verified_live": true
+  },
+  "training_restart_performed": false,
+  "full_observation": "records/training_monitor_expansion_20261030_002455_utc/result.json",
+  "assessment": "Expanded data volume is mounted. Original training process continues; checkpoint tensors are finite and controller identities are live. Earlier gradient spike remains recorded; this is an infrastructure and liveness check."
+}

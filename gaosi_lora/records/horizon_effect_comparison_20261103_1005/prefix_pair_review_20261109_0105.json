@@ -1,0 +1,272 @@
+{
+  "status": "PRESERVED_H1_H2_PREFIX_TEXT_PAIRING_CHECKED_NO_EFFICACY_CLAIM",
+  "reviewed_at_utc": "2026-11-09T01:05:45.973223+00:00",
+  "observation": "records/horizon_effect_monitor_20261109_010538_utc",
+  "checks": [
+    {
+      "run": "runs/phi_horizon_L_H1_2560_t0_clean_s17_v1",
+      "job_status": "PASS",
+      "recorded_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "source_files_verified": 25,
+      "declared_initial_adapter_path_matched": true,
+      "clean_evaluation_matches_H2": true,
+      "initial_evaluation_matches_H2": true,
+      "per_step_token_coverage_and_recorded_compute_counters_match_H2_prefix": true,
+      "minimum_effective_tokens": {
+        "task": 513,
+        "language": 551,
+        "keep": 513
+      },
+      "terminal_streams_or_initial_tensor_equality_independently_audited": false
+    },
+    {
+      "run": "runs/phi_horizon_L_H1_2560_t0_medium_s17_v1",
+      "job_status": "PASS",
+      "recorded_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "source_files_verified": 25,
+      "declared_initial_adapter_path_matched": true,
+      "clean_evaluation_matches_H2": true,
+      "initial_evaluation_matches_H2": true,
+      "per_step_token_coverage_and_recorded_compute_counters_match_H2_prefix": true,
+      "minimum_effective_tokens": {
+        "task": 513,
+        "language": 551,
+        "keep": 513
+      },
+      "terminal_streams_or_initial_tensor_equality_independently_audited": false
+    },
+    {
+      "run": "runs/phi_horizon_L_H1_2560_t1_clean_s17_v1",
+      "job_status": "PASS",
+      "recorded_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "source_files_verified": 25,
+      "declared_initial_adapter_path_matched": true,
+      "clean_evaluation_matches_H2": true,
+      "initial_evaluation_matches_H2": true,
+      "per_step_token_coverage_and_recorded_compute_counters_match_H2_prefix": true,
+      "minimum_effective_tokens": {
+        "task": 512,
+        "language": 551,
+        "keep": 513
+      },
+      "terminal_streams_or_initial_tensor_equality_independently_audited": false
+    },
+    {
+      "run": "runs/phi_horizon_L_H1_2560_t1_medium_s17_v1",
+      "job_status": "PASS",
+      "recorded_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "source_files_verified": 25,
+      "declared_initial_adapter_path_matched": true,
+      "clean_evaluation_matches_H2": true,
+      "initial_evaluation_matches_H2": true,
+      "per_step_token_coverage_and_recorded_compute_counters_match_H2_prefix": true,
+      "minimum_effective_tokens": {
+        "task": 512,
+        "language": 551,
+        "keep": 513
+      },
+      "terminal_streams_or_initial_tensor_equality_independently_audited": false
+    },
+    {
+      "run": "runs/phi_horizon_L_H1_2560_t2_clean_s17_v1",
+      "job_status": "PASS",
+      "recorded_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "source_files_verified": 25,
+      "declared_initial_adapter_path_matched": true,
+      "clean_evaluation_matches_H2": true,
+      "initial_evaluation_matches_H2": true,
+      "per_step_token_coverage_and_recorded_compute_counters_match_H2_prefix": true,
+      "minimum_effective_tokens": {
+        "task": 512,
+        "language": 551,
+        "keep": 513
+      },
+      "terminal_streams_or_initial_tensor_equality_independently_audited": false
+    },
+    {
+      "run": "runs/phi_horizon_L_H1_2560_t2_medium_s17_v1",
+      "job_status": "PASS",
+      "recorded_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "source_files_verified": 25,
+      "declared_initial_adapter_path_matched": true,
+      "clean_evaluation_matches_H2": true,
+      "initial_evaluation_matches_H2": true,
+      "per_step_token_coverage_and_recorded_compute_counters_match_H2_prefix": true,
+      "minimum_effective_tokens": {
+        "task": 512,
+        "language": 551,
+        "keep": 513
+      },
+      "terminal_streams_or_initial_tensor_equality_independently_audited": false
+    },
+    {
+      "run": "runs/phi_horizon_L_H1_2560_t3_clean_s17_v1",
+      "job_status": "PASS",
+      "recorded_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "source_files_verified": 25,
+      "declared_initial_adapter_path_matched": true,
+      "clean_evaluation_matches_H2": true,
+      "initial_evaluation_matches_H2": true,
+      "per_step_token_coverage_and_recorded_compute_counters_match_H2_prefix": true,
+      "minimum_effective_tokens": {
+        "task": 540,
+        "language": 551,
+        "keep": 513
+      },
+      "terminal_streams_or_initial_tensor_equality_independently_audited": false
+    },
+    {
+      "run": "runs/phi_horizon_L_H1_2560_t3_medium_s17_v1",
+      "job_status": "PASS",
+      "recorded_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "source_files_verified": 25,
+      "declared_initial_adapter_path_matched": true,
+      "clean_evaluation_matches_H2": true,
+      "initial_evaluation_matches_H2": true,
+      "per_step_token_coverage_and_recorded_compute_counters_match_H2_prefix": true,
+      "minimum_effective_tokens": {
+        "task": 540,
+        "language": 551,
+        "keep": 513
+      },
+      "terminal_streams_or_initial_tensor_equality_independently_audited": false
+    },
+    {
+      "run": "runs/phi_horizon_L_H1_2560_t4_clean_s17_v1",
+      "job_status": "PASS",
+      "recorded_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "source_files_verified": 25,
+      "declared_initial_adapter_path_matched": true,
+      "clean_evaluation_matches_H2": true,
+      "initial_evaluation_matches_H2": true,
+      "per_step_token_coverage_and_recorded_compute_counters_match_H2_prefix": true,
+      "minimum_effective_tokens": {
+        "task": 544,
+        "language": 551,
+        "keep": 513
+      },
+      "terminal_streams_or_initial_tensor_equality_independently_audited": false
+    },
+    {
+      "run": "runs/phi_horizon_L_H1_2560_t4_medium_s17_v1",
+      "job_status": "PASS",
+      "recorded_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "source_files_verified": 25,
+      "declared_initial_adapter_path_matched": true,
+      "clean_evaluation_matches_H2": true,
+      "initial_evaluation_matches_H2": true,
+      "per_step_token_coverage_and_recorded_compute_counters_match_H2_prefix": true,
+      "minimum_effective_tokens": {
+        "task": 544,
+        "language": 551,
+        "keep": 513
+      },
+      "terminal_streams_or_initial_tensor_equality_independently_audited": false
+    }
+  ],
+  "evidence_sha256": {
+    "records/horizon_effect_monitor_20261109_010538_utc/review.json": "03809415f7dffa1741fc03c48219c6af6aba6800413660cfc991a9417f7815b3",
+    "records/horizon_effect_monitor_20261109_010538_utc/archive_source_sha256.json": "28527f031a0b73e76e8c79243f3062a13c8a6293e4e5b05f4cf7ad8e6b78729b",
+    "records/horizon_effect_monitor_20261109_010538_utc/snapshot/records/horizon_effect_comparison_20261103_1005/declared_pairs.json": "42dc64a7b053f0caae8f030b1779b24ad669269f4fe5f34dd1f33698eccbc5c2",
+    "records/horizon_effect_comparison_20261103_1005/review_runtime_pairs_v1.py": "ecb75855ef5831b17c1d2986d83dd67e9c555db6cb536aa30b898e71f836401f",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t0_clean_s17_evidence/audit.json": "0296fd3695b886874b772dec1f0298538c82789bc08e1f986e52f537739bc54c",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t0_clean_s17_evidence/manifest.json": "a07e800e678a493e27d2b68749be25d34382eb1b4dec24b84c523c95058c684b",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t0_medium_s17_evidence/audit.json": "d5b3a8ae8c4ece5bfe267ef4d5ed9c411ee6e2df737e28000719fc993d8395cb",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t0_medium_s17_evidence/manifest.json": "d68e7f07dae2f69eb49992cbce758d2b664400429553425bebb8a6e4a6e744a2",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t1_clean_s17_evidence/audit.json": "d1c25c2a3bd439c096c25b8d5f51f22c9819bb7e745c32fb3ff98bfa0fe2696f",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t1_clean_s17_evidence/manifest.json": "418971c1c32edafcf085e1d166e3515f585891df7c73d48b120bc49e02ea2306",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t1_medium_s17_evidence/audit.json": "32e967c450d09c553c7bb91606296e516b96992aa88a54b09797faac62559f7a",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t1_medium_s17_evidence/manifest.json": "071ca54d8ecb5d07b83282d4685c999319d0e97021f073addd916b96f1c600a2",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t2_clean_s17_evidence/audit.json": "5d9f586e142a1d18a2120906a93d747b4371dc2f4553844d47a4ee98d289f5a2",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t2_clean_s17_evidence/manifest.json": "ea835e5208916b29d4332b9d2defe972a00fdf4539291bff36cbd4c2d4e34071",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t2_medium_s17_evidence/audit.json": "ca52a99b1f4dfa1c2faf8f57cc9ff48b7533df63c965f9ddeae736ba335ac938",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t2_medium_s17_evidence/manifest.json": "1b836e6bb705f1bbd067a95a7dd93589f601f5c9fffacdb5574ec4e60db123af",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t3_clean_s17_evidence/audit.json": "b6ae4951568470ebf32bb10fa9a693d21cd9a6ef326d4ecf112c93426d0368d6",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t3_clean_s17_evidence/manifest.json": "b087d0178455f9f599bd20d75ab40a52b378c32022f8bd75d86ba094a815ea3b",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t3_medium_s17_evidence/audit.json": "b27c79c1397d4b9f7192ce743edf2f7c619c0ca1d5b37d822d0f8ee1a7a3f752",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t3_medium_s17_evidence/manifest.json": "ea7e50de418b5b943edb9546f29944c3a42f634541460f76af4743c26c372cc9",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t4_clean_s17_evidence/audit.json": "01dc10129f69cfff840b1a203c456b56906c3fd0d67e8e2e8170b0181416b395",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t4_clean_s17_evidence/manifest.json": "931b38b0064cd0fee85a41ae21caf54ca5c7de94779f4fbabec94c6ac4386304",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t4_medium_s17_evidence/audit.json": "7a6c073389ac0ba3bffdecf472c3350a1316f4066a3b460993b452b652d195b1",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t4_medium_s17_evidence/manifest.json": "81a91213d7aebc4a0b67fa66a3e5912585fb24f6388fcf73d4afbe4bc91aecb2"
+  },
+  "limitations": [
+    "Saved text prefixes only; no checkpoint, stream-state tensor or derivative audit.",
+    "Equal recorded tokens/counters/coverage do not independently prove identical sampled examples or in-memory streams.",
+    "Recorded counters omit direct QA calls and are not full-model FLOPs.",
+    "No method selection, efficacy inference or training modification."
+  ],
+  "method_validated": false,
+  "full_goal_complete": false,
+  "training_modified_or_restarted": false
+}

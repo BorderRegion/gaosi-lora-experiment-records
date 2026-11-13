@@ -1,0 +1,13 @@
+{
+  "returncode": 0,
+  "command": [
+    "/usr/bin/python",
+    "-u",
+    "records/pipeline_observer_20261101_1143/replay_saved_adam.py",
+    "--audit",
+    "records/O1_specialization_completion_20261110_1305/artifact_audit.json",
+    "--out",
+    "records/O1_specialization_completion_20261110_1305/adam_replay.json"
+  ],
+  "log_sha256": "203b30bbefcf0e95c48f75737d1de8374ad4b31d26cc86bdcc6755858a008157"
+}

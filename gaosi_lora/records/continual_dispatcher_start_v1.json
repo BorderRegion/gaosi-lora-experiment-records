@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-29T11:43:19.326407+00:00",
+  "job": "continual_queue_v1",
+  "status": "RUNNING",
+  "live": true,
+  "checks": {
+    "continual_v2_cpu": 17,
+    "continual_schedule_cpu": 8,
+    "continual_data_isolation_cpu": 5
+  },
+  "phi_all_frozen": false,
+  "formal_continual_started": false,
+  "prerequisites": "all frozen phi, development pilot budget, final parents and reflow block complete"
+}

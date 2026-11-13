@@ -1,0 +1,27 @@
+{
+  "status": "HISTORICAL_PARTIAL_CAPTURE_RESULT_RECORDED_LOCALLY_REMOTE_PUBLICATION_PENDING",
+  "recorded_at_utc": "2026-11-10T18:20:11.868902+00:00",
+  "note": "## \u6062\u590d01:45\u5386\u53f2\u91c7\u96c6\u6458\u8981\uff08\u5f52\u6863\u5c1a\u672a\u5b8c\u6574\uff09\n\n\u4ece\u539fSSH\u5df2\u8ba4\u8bc1\u4f20\u8f93manifest\u5bf9\u5e94\u768421\u5757\u5df2\u6821\u9a8c\u4e0b\u8f7d\u524d\u7f00\u4e2d\uff0c\u6210\u529f\u8bfb\u51fa\u5b8c\u6574result.json\u6210\u5458\uff0c\u53e6\u5b58`records/pipeline_recovery_20261110_1755/partial_capture_result.json`\uff0c\u672a\u5199\u5165\u5c1a\u5f85\u5b8c\u6574\u89e3\u5305\u7684\u6b63\u5f0f\u91c7\u6837\u76ee\u5f55\u3002\u91c7\u96c6\u65f6\u95f4\u4e3a2026-11-10 17:45:45 UTC\uff08\u5317\u4eac\u65f6\u95f411\u670811\u65e501:45\uff09\uff1bcollector\u8bb0\u5f55O2\u4e3aRUNNING\u300127\u4e2a\u5b8c\u6574episode\u3001216/512\u6b65\uff0842.1875%\uff09\uff0ccheckpoint next_episode27/inner_updates216\uff0cphi\u4e0eAdam\u6709\u9650\u4e14\u914d\u7f6e\u4e00\u81f4\uff0c\u5f53\u65f6\u6ca1\u6709\u65b0\u589e\u672a\u89e3\u91ca\u544a\u8b66\u6216\u5f85\u79d1\u5b66\u5ba1\u9605meta\u3002\n\n\u8be5\u6458\u8981\u7684\u4e0b\u8f7d\u524d\u7f00\u5df2\u9010\u5757\u91cd\u6838\uff0c\u4f46\u6574\u4efd\u5f52\u6863\u3001187\u4efd\u6e90\u6587\u4ef6\u3001\u4e8b\u4ef6\u9884\u7b97\u548ccheckpoint\u5f20\u91cf\u5c1a\u672a\u5b8c\u6210\u72ec\u7acb\u5ba1\u9605\uff0c\u56e0\u6b64216\u6b65\u662f\u5386\u53f2collector\u62a5\u544a\uff0c\u5b8c\u6574\u72ec\u7acb\u6838\u9a8c\u7684\u8fb9\u754c\u4ecd\u4e3a01:15\u7684192\u6b65\u3002\u6ca1\u6709\u636e\u6b64\u786e\u8ba4\u5f53\u524d\u8fdc\u7aef\u5b58\u6d3b\u6216\u65b9\u6cd5\u6548\u679c\u3002\u8bc1\u636e\u4e0e\u8303\u56f4\u89c1`records/pipeline_recovery_20261110_1755/partial_capture_review.json`\u3002SSH\u4ecd\u5728\u91cd\u8fde\uff0c\u8fdc\u7aef\u6587\u6863\u5f85\u8fde\u63a5\u6062\u590d\u540e\u8865\u8bb0\uff1bmethod_validated=false\uff0cfull_goal_complete=false\u3002\n\n",
+  "evidence_sha256": {
+    "records/pipeline_recovery_20261110_1755/partial_capture_review.json": "c2c6cbdf4432e05e7f3430e156a617eb2b9ff1c70cf0e89c571fc62c91c9defc",
+    "records/pipeline_recovery_20261110_1755/partial_capture_result.json": "64432199c9aacdf70a795b52d68824ae1915138bdc4be6599e92380903f5194c"
+  },
+  "local_documents": {
+    "REPORT.md": {
+      "before_sha256": "b4d7908edca6e99ffd19b0525f7ee5e64e452c9b859bc9c6db076cc854d705af",
+      "after_sha256": "102d1067e363920653223e5fc6ff27c7534151d0396f3c70465968e60b2fcfcf",
+      "prior_bytes_preserved_as_suffix": true
+    },
+    "NEXT_STEPS.md": {
+      "before_sha256": "520175cf06b8895fa16a1c81715bdf8802cee87c2c21aeb2979eadaaf0b9fee9",
+      "after_sha256": "fffdbc9641c0a97f5d95d7917a85f0b88121ad92ddb42a11181246dab8d8b099",
+      "prior_bytes_preserved_as_suffix": true
+    }
+  },
+  "remote_documentation_updated": false,
+  "training_modified_or_restarted": false,
+  "whole_archive_verified": false,
+  "current_remote_liveness_verified": false,
+  "method_validated": false,
+  "full_goal_complete": false
+}

@@ -1,0 +1,8 @@
+{
+  "archive": "records/incident_20261030_0418_sync_v6.tar.gz",
+  "file_count": 26,
+  "sha256": "63ca58006fbb19d7ef4ef82473ebe42463db85c805220f229b16ddb6a4d61159",
+  "bytes": 4106088,
+  "v6_wall_seconds": 678.6575083732605,
+  "v6_status": "PASS"
+}

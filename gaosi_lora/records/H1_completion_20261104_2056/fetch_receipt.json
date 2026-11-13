@@ -1,0 +1,11 @@
+{
+  "status": "COMPLETED_H1_EVIDENCE_FETCHED_HASH_VERIFIED",
+  "fetched_at_utc": "2026-11-04T20:58:52.035997+00:00",
+  "files_sha256": {
+    "artifact_audit.json": "60fad262657bd05e01bb8174a1d9d7cbe11eb5ac2b3911ec2d630ef0065a858b",
+    "adam_replay.json": "37dffbd45d0154ba7d248b360e7e3b92d6acbba821820db6de9d9db0f1232352",
+    "tensor_review.json": "aef3892d1f9c5a212edfa66153bee46cf5591ab5b1337e5d50bb9f7109dd5aa0",
+    "controller_identity_before_review.json": "4636080be1131739222a0e12f68d5e8363c7476d122682a5893feb295f80c3e7"
+  },
+  "training_modified_or_restarted": false
+}

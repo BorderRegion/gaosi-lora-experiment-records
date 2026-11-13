@@ -1,0 +1,17 @@
+{
+  "reviewed_at_utc": "2026-10-30T13:06:10.923380+00:00",
+  "status": "RUNNING_PREFIX_REVIEWED",
+  "completed_episode_prefix": 8,
+  "all_eight_start_phi_and_raw_gradients_byte_equal_to_prior_blocking_prefix": true,
+  "all_eight_logged_forward_values_equal": true,
+  "all_nine_monitor_archives_and_378_source_files_independently_rehashed": true,
+  "prefix_comparison_sha256": "a3a73bb9b23dfce2da21516a71596659d7add03433f55424b22a9a9410bc5680",
+  "comparison_tool_sha256": "038699fd76da333b1f9ec55d091baeb730e75ecad4e9cde929d35c967ee56c97",
+  "method_validated": false,
+  "downstream_promotion_allowed": false,
+  "new_downstream_controllers_started": 0,
+  "current_training_restarted_or_modified": false,
+  "cpu_comparison_only": true,
+  "remote_training_observation_added_by_this_comparison": false,
+  "next_scheduled_observation_utc": "2026-10-30T13:06:42.027725+00:00"
+}

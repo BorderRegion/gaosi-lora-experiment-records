@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "prerequisites": "All 3B phi frozen and successful early 7B acquisition/ordinary recovery; no 3B superiority condition.",
+  "formal_worlds": "First four facts and first four integer-affine rules sorted by world_id, all final split.",
+  "development_worlds": "Known dev library and first two facts / first two rules, equal known/fact/rule weight.",
+  "transfer_methods": [
+    "standard_adam",
+    "paired_adam",
+    "phi_mix",
+    "phi_clean"
+  ],
+  "q_apply": [
+    "zero",
+    "3b_medium"
+  ],
+  "dose_scope": "Transferred development doses, not matched functional corruption across model sizes.",
+  "primary_K": "Actual 3B-development-frozen horizon, same for every frozen/local comparison.",
+  "seeds": {
+    "data": 17,
+    "noise": 1729,
+    "meta": 17
+  },
+  "meta_parents": "Independent meta-A and meta-B 7B ordinary LoRA parents, LR1e-4 from early development, 256 then a matched continuation to 512 if either gate fails.",
+  "local_initialization": "Corresponding frozen 3B O1 mixed and clean phi, including its meta-optimizer; matching 7B schedules.",
+  "local_budget": "Both 64x8=512, then both +128x16=2560 regardless of formal outcomes. Evaluate 512, 2048 and 2560 on development only.",
+  "local_extension": "If either mixed/clean improves development score by >.01 from 2048 to 2560, extend BOTH once by 64x16 to3584. No final-result stopping or tuning.",
+  "local_score": "Equal known/fact/rule group mean of (candidate+strictEM)/2 minus keep/language residual over .1 nats; doses equal.",
+  "backend": "Try real 7B three-support exact H2 at512. Only documented OOM or missing higher-order operator permits H1 with a recorded scope limitation; unknown failures stop for diagnosis.",
+  "pairing": "One saved canonical noisy adapter per dose reused byte-for-byte by every world/method/local stage.",
+  "formal_language": "final split; dev results use dev language; inner and meta-query stay disjoint.",
+  "claim": "One independent phi training seed and one 8-world scale pilot. Budget completion alone is not proof of convergence.",
+  "formal_data_can_select_settings": false
+}

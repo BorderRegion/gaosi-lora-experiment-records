@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "scope": "CPU persistent FP32 O4 math check, not a continual-learning result",
+  "merges": 16,
+  "rank_bound": 64,
+  "working_rounding_record": {
+    "merge_seconds": 0.00012230873107910156,
+    "merge_count": 16,
+    "cumulative_rank_upper_bound": 64,
+    "working_BF16_rounding_sq": 1.5482638673347537e-06,
+    "FP32_master_sq": 2.5266220569610596,
+    "adapter_reset": true,
+    "KV_cache_discarded": true
+  }
+}

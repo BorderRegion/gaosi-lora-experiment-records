@@ -1,0 +1,13 @@
+{
+  "status": "REVIEW_SOURCE_REVISED_BEFORE_ANY_AGGREGATE_EXECUTION",
+  "recorded_at_utc": "2026-11-09T21:22:06.882399+00:00",
+  "source": "records/development_aggregate_review_20261109_2058/review.py",
+  "source_sha256": "48142c0ef22e3ebead48237d2ba1f17656748b9182aa9e37f1568a75af73acd0",
+  "preserved_previous_source": "records/development_aggregate_review_20261109_2058/review_pre_manifest_fix.py",
+  "previous_sha256": "a6cb067ad240854b0c519008d3ef94029ca0a21581cb8e1fc950decab10e630e",
+  "change": "Permit the separately preserved audit.json at the evidence archive root, alongside snapshot files; all paths still confined to the expected evidence directory.",
+  "syntax": "PASS",
+  "aggregate_computed": false,
+  "training_modified_or_restarted": false,
+  "full_goal_complete": false
+}

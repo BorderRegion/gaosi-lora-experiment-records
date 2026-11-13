@@ -1,0 +1,198 @@
+{
+  "utc": "2026-10-29T19:19:20.015222+00:00",
+  "scope": "CPU inspection of completed real MUSA readiness checkpoint and recorded training events; no new GPU experiment",
+  "checkpoint": "runs/phi_L_real_episode_readiness_s17/latest.pt",
+  "next_episode": 2,
+  "inner_updates": 4,
+  "phi_all_finite": true,
+  "phi_tensors": {
+    "net.0.weight": {
+      "finite": true,
+      "norm": 9.27357330652622,
+      "max_abs": 0.144532710313797
+    },
+    "net.0.bias": {
+      "finite": true,
+      "norm": 1.378174344449905,
+      "max_abs": 0.14354705810546875
+    },
+    "net.2.weight": {
+      "finite": true,
+      "norm": 9.253341340641587,
+      "max_abs": 0.06272204220294952
+    },
+    "net.2.bias": {
+      "finite": true,
+      "norm": 0.5748011596901602,
+      "max_abs": 0.0624367780983448
+    },
+    "net.4.weight": {
+      "finite": true,
+      "norm": 0.010330126529468795,
+      "max_abs": 0.0005945190787315369
+    },
+    "net.4.bias": {
+      "finite": true,
+      "norm": 0.00068592004903065,
+      "max_abs": 0.0005299678887240589
+    }
+  },
+  "optimizer_state": [
+    {
+      "parameter": 0,
+      "step": 2.0,
+      "exp_avg_finite": true,
+      "exp_avg_sq_finite": true,
+      "exp_avg_norm": 0.0001866218658172151,
+      "exp_avg_sq_max": 1.81786773134629e-11
+    },
+    {
+      "parameter": 1,
+      "step": 2.0,
+      "exp_avg_finite": true,
+      "exp_avg_sq_finite": true,
+      "exp_avg_norm": 5.324770236324389e-05,
+      "exp_avg_sq_max": 1.81786773134629e-11
+    },
+    {
+      "parameter": 2,
+      "step": 2.0,
+      "exp_avg_finite": true,
+      "exp_avg_sq_finite": true,
+      "exp_avg_norm": 0.0003626960657432236,
+      "exp_avg_sq_max": 8.861656200509493e-12
+    },
+    {
+      "parameter": 3,
+      "step": 2.0,
+      "exp_avg_finite": true,
+      "exp_avg_sq_finite": true,
+      "exp_avg_norm": 0.000135665070527875,
+      "exp_avg_sq_max": 2.375706922852494e-11
+    },
+    {
+      "parameter": 4,
+      "step": 2.0,
+      "exp_avg_finite": true,
+      "exp_avg_sq_finite": true,
+      "exp_avg_norm": 0.0784717092339966,
+      "exp_avg_sq_max": 2.4381146431551315e-05
+    },
+    {
+      "parameter": 5,
+      "step": 2.0,
+      "exp_avg_finite": true,
+      "exp_avg_sq_finite": true,
+      "exp_avg_norm": 0.08735329307257955,
+      "exp_avg_sq_max": 0.0006125951185822487
+    }
+  ],
+  "parent_factor_scale_check": [
+    {
+      "checkpoint": "runs/parent_3b_meta_parent_a_r32_s17_extend512_v2/latest.pt",
+      "factor_count": 504,
+      "smallest_rms": [
+        {
+          "name": "llm.model.layers.1.mlp.up_proj.branches.single.B",
+          "rms": 0.0019149235460960182,
+          "max_abs": 0.02311721071600914,
+          "finite": true,
+          "zero_elements": 0,
+          "elements": 352256
+        },
+        {
+          "name": "llm.model.layers.2.mlp.gate_proj.branches.single.B",
+          "rms": 0.0020940322605159174,
+          "max_abs": 0.019599677994847298,
+          "finite": true,
+          "zero_elements": 0,
+          "elements": 352256
+        },
+        {
+          "name": "llm.model.layers.1.mlp.gate_proj.branches.single.B",
+          "rms": 0.002114251592311439,
+          "max_abs": 0.022075189277529716,
+          "finite": true,
+          "zero_elements": 0,
+          "elements": 352256
+        },
+        {
+          "name": "llm.model.layers.2.mlp.up_proj.branches.single.B",
+          "rms": 0.0022679561935957547,
+          "max_abs": 0.02249278873205185,
+          "finite": true,
+          "zero_elements": 0,
+          "elements": 352256
+        },
+        {
+          "name": "llm.model.layers.2.mlp.down_proj.branches.single.B",
+          "rms": 0.002514621114295048,
+          "max_abs": 0.012995791621506214,
+          "finite": true,
+          "zero_elements": 0,
+          "elements": 65536
+        }
+      ],
+      "entirely_zero_factors": [],
+      "all_finite": true
+    },
+    {
+      "checkpoint": "runs/parent_3b_meta_parent_b_r32_s17_extend512_v2/latest.pt",
+      "factor_count": 504,
+      "smallest_rms": [
+        {
+          "name": "llm.model.layers.1.mlp.up_proj.branches.single.B",
+          "rms": 0.0023335204984522755,
+          "max_abs": 0.017971230670809746,
+          "finite": true,
+          "zero_elements": 0,
+          "elements": 352256
+        },
+        {
+          "name": "llm.model.layers.2.mlp.down_proj.branches.single.B",
+          "rms": 0.0025093944791475015,
+          "max_abs": 0.01187679823487997,
+          "finite": true,
+          "zero_elements": 0,
+          "elements": 65536
+        },
+        {
+          "name": "llm.model.layers.2.mlp.up_proj.branches.single.B",
+          "rms": 0.00264191179003584,
+          "max_abs": 0.026385022327303886,
+          "finite": true,
+          "zero_elements": 0,
+          "elements": 352256
+        },
+        {
+          "name": "llm.model.layers.34.mlp.down_proj.branches.single.B",
+          "rms": 0.0026603743464031038,
+          "max_abs": 0.011128874495625496,
+          "finite": true,
+          "zero_elements": 0,
+          "elements": 65536
+        },
+        {
+          "name": "llm.model.layers.31.mlp.down_proj.branches.single.B",
+          "rms": 0.002685564552068291,
+          "max_abs": 0.010764282196760178,
+          "finite": true,
+          "zero_elements": 0,
+          "elements": 65536
+        }
+      ],
+      "entirely_zero_factors": [],
+      "all_finite": true
+    }
+  ],
+  "core_episode_ends_as_observed": [],
+  "observed_readiness_large_raw_gradient_norm": 155220218740736.0,
+  "clip_norm_in_source": 1.0,
+  "numerical_issue_status": "UNRESOLVED_LARGE_FINITE_RAW_GRADIENT; checkpoints inspected for finiteness only; no gradient correctness claim",
+  "resume_tested": false,
+  "limitations": [
+    "Saved optimizer step counters and nonzero heads confirm update state was saved, not that learned phi improves recovery.",
+    "A large finite preclip gradient remains a numerical observation to track; clipping is not a proof of correct gradient or stability.",
+    "No actual interruption/resumption was performed."
+  ]
+}

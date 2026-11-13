@@ -1,0 +1,32 @@
+{
+  "out": "runs/phi_dev_paired_adam_t2_medium_s17",
+  "freeze_manifest": "records/phi_recovery_development_plan.json",
+  "phase": "phi_development",
+  "data_seed": 17,
+  "noise_seed": 1729,
+  "parent": "runs/parent_3b_dev_parent_r32_s17_extend512_v2/latest.pt",
+  "device": "musa",
+  "q_apply": 0.7,
+  "noise_scheme": "subspace",
+  "architecture": "L",
+  "method": "paired_adam",
+  "data": "data/synthetic/dev_world_001.jsonl",
+  "target_ids": [],
+  "task_layout": "all",
+  "retain_subset_fraction": 1.0,
+  "subset_seed": 91,
+  "D": "plus",
+  "retain_data": "data/synthetic/dev_parent.jsonl",
+  "language_eval": "data/language/dev.jsonl",
+  "language_eval_tokens": 4096,
+  "inner_lr": 0.0003,
+  "effective_tokens": 512,
+  "retain_weight": 0.25,
+  "K": 64,
+  "eval_steps": [
+    8,
+    16,
+    32,
+    64
+  ]
+}

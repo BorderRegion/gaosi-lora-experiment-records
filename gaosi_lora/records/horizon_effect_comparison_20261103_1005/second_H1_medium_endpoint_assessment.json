@@ -1,0 +1,228 @@
+{
+  "status": "SECOND_H1_MEDIUM_NOISE_MATCHED_ENDPOINT_DESCRIPTIVE_REVIEW_NO_HORIZON_SELECTION",
+  "recorded_at_utc": "2026-11-06T16:28:26.900751+00:00",
+  "scope": "Known task, q0.7, seed17, K64; two of ten additional H1 cells now audited.",
+  "metrics": {
+    "H1": {
+      "clean": {
+        "task": {
+          "n": 512,
+          "candidate_accuracy": 1.0,
+          "mean_margin": 10.186212864077874,
+          "nll": 0.023651785981122126,
+          "answer_tokens": 1288,
+          "strict_EM": 0.984375,
+          "abnormal_rate": 0.0
+        },
+        "keep": {
+          "n": 512,
+          "candidate_accuracy": 1.0,
+          "mean_margin": 10.186212864077874,
+          "nll": 0.023651785981122126,
+          "answer_tokens": 1288,
+          "strict_EM": 0.984375,
+          "abnormal_rate": 0.0
+        },
+        "language": {
+          "nll": 2.120082481864213,
+          "answer_tokens": 4463
+        }
+      },
+      "initial": {
+        "task": {
+          "n": 512,
+          "candidate_accuracy": 0.7109375,
+          "mean_margin": 1.517247106036848,
+          "nll": 0.3426414310627744,
+          "answer_tokens": 1288,
+          "strict_EM": 0.70703125,
+          "abnormal_rate": 0.0
+        },
+        "keep": {
+          "n": 512,
+          "candidate_accuracy": 0.7109375,
+          "mean_margin": 1.517247106036848,
+          "nll": 0.3426414310627744,
+          "answer_tokens": 1288,
+          "strict_EM": 0.70703125,
+          "abnormal_rate": 0.0
+        },
+        "language": {
+          "nll": 2.140740751632521,
+          "answer_tokens": 4463
+        }
+      },
+      "final": {
+        "task": {
+          "n": 512,
+          "candidate_accuracy": 1.0,
+          "mean_margin": 9.169697751044579,
+          "nll": 0.06211560210814984,
+          "answer_tokens": 1288,
+          "strict_EM": 0.9765625,
+          "abnormal_rate": 0.0
+        },
+        "keep": {
+          "n": 512,
+          "candidate_accuracy": 1.0,
+          "mean_margin": 9.169697751044579,
+          "nll": 0.06211560210814984,
+          "answer_tokens": 1288,
+          "strict_EM": 0.9765625,
+          "abnormal_rate": 0.0
+        },
+        "language": {
+          "nll": 2.115775769771334,
+          "answer_tokens": 4463
+        }
+      }
+    },
+    "H2": {
+      "clean": {
+        "task": {
+          "n": 512,
+          "candidate_accuracy": 1.0,
+          "mean_margin": 10.186212864077874,
+          "nll": 0.023651785981122126,
+          "answer_tokens": 1288,
+          "strict_EM": 0.984375,
+          "abnormal_rate": 0.0
+        },
+        "keep": {
+          "n": 512,
+          "candidate_accuracy": 1.0,
+          "mean_margin": 10.186212864077874,
+          "nll": 0.023651785981122126,
+          "answer_tokens": 1288,
+          "strict_EM": 0.984375,
+          "abnormal_rate": 0.0
+        },
+        "language": {
+          "nll": 2.120082481864213,
+          "answer_tokens": 4463
+        }
+      },
+      "initial": {
+        "task": {
+          "n": 512,
+          "candidate_accuracy": 0.7109375,
+          "mean_margin": 1.517247106036848,
+          "nll": 0.3426414310627744,
+          "answer_tokens": 1288,
+          "strict_EM": 0.70703125,
+          "abnormal_rate": 0.0
+        },
+        "keep": {
+          "n": 512,
+          "candidate_accuracy": 0.7109375,
+          "mean_margin": 1.517247106036848,
+          "nll": 0.3426414310627744,
+          "answer_tokens": 1288,
+          "strict_EM": 0.70703125,
+          "abnormal_rate": 0.0
+        },
+        "language": {
+          "nll": 2.140740751632521,
+          "answer_tokens": 4463
+        }
+      },
+      "final": {
+        "task": {
+          "n": 512,
+          "candidate_accuracy": 0.990234375,
+          "mean_margin": 9.310052715434566,
+          "nll": 0.06749915890835728,
+          "answer_tokens": 1288,
+          "strict_EM": 0.97265625,
+          "abnormal_rate": 0.0
+        },
+        "keep": {
+          "n": 512,
+          "candidate_accuracy": 0.990234375,
+          "mean_margin": 9.310052715434566,
+          "nll": 0.06749915890835728,
+          "answer_tokens": 1288,
+          "strict_EM": 0.97265625,
+          "abnormal_rate": 0.0
+        },
+        "language": {
+          "nll": 2.117195805919937,
+          "answer_tokens": 4463
+        }
+      }
+    }
+  },
+  "H1_minus_H2": {
+    "candidate_correct_out_of_512": 5,
+    "strict_correct_out_of_512": 2,
+    "task_nll": -0.00538355680020744,
+    "language_nll": -0.0014200361486031987
+  },
+  "config_differences_verified": [
+    "freeze_manifest",
+    "initial_adapter",
+    "out",
+    "phi"
+  ],
+  "task_and_keep_are_same_512_queries": true,
+  "non_tensor_files_rehashed": {
+    "H1": 78,
+    "H2": 74
+  },
+  "unique_remote_tensor_files_sha256_reverified": 6,
+  "remote_reverification": {
+    "status": "PAIRED_SAVED_TENSOR_FILES_AND_V2_PAIR_REPORT_SHA256_REVERIFIED",
+    "sha256": {
+      "runs/parent_3b_dev_parent_r32_s17_extend512_v2/latest.pt": "1fa4765c5c5d478f8dd0d7089ab6fbecd2f85190cc8d0a875aa1498da6ffc66f",
+      "runs/phi_dev_L_2560_t0_medium_s17/initial.pt": "e521c2c1d88ca9cc26694d280738cb5b41c9ef4101dce0c43870f08797df351d",
+      "runs/phi_horizon_L_H1_2560_t0_medium_s17_v1/latest.pt": "08756160cbf02663df3ae61b1affcc083e754cfa40c1e3abe34c96931086560c",
+      "runs/phi_mix_O1_L_H1_commonwarm_s17_observed_blocking_v8/phi_2560.pt": "669ebfa4f72dd5fee938863d0ef4b793312b5af2ee1229057876e6221fafae91",
+      "runs/phi_dev_L_2560_t0_medium_s17/latest.pt": "80cb2835ffd9439d4a36956eebe7568e3962b7d6804054f878713eb37a34765b",
+      "runs/phi_mix_O1_L_H2_core_s17_observed_blocking_v8/phi_2560.pt": "4e97db0e17ef8c2b59afc6a41aaf8eaad8349b0ba470f69c8209c9b41b305c03",
+      "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t0_medium_s17_v1_paired_review_v2.json": "ec44888ceca40501ef392662792095cddc04f8bafa062fc8182c0b7f0f740177"
+    }
+  },
+  "last_event_process_seconds": {
+    "H1": 7761.833582878113,
+    "H2": 7696.075178146362
+  },
+  "wrapper_wall_seconds_including_possible_lock_wait": {
+    "H1": 13815.604716300964,
+    "H2": 7714.773886442184
+  },
+  "noise_timing_review": {
+    "all_non_timing_fields_exactly_equal": true,
+    "excluded_fields": [
+      "boundary_seconds"
+    ],
+    "left_boundary_seconds": 1.3146536350250244,
+    "right_boundary_seconds": 1.382131576538086
+  },
+  "interpretation": "From the same saved corrupted initial evaluation364/362, H1 reaches512/500 versus H2 at507/498, against clean512/504. H1 has five more candidate and two more strict answers, lower task and language NLL in this one cell. This supports recovery; the matched medium cell currently favors H1, so it does not establish a benefit from H2. One known task and one seed cannot justify horizon selection or superiority to Adam.",
+  "limitations": [
+    "CPU inspection of saved tensors and re-aggregation of saved predictions only; no model forward, tokenizer or derivative recomputation.",
+    "Language NLL is checked against the event ledger; no saved per-token language audit.",
+    "Model compute counters omit direct QA candidate/generation calls; they are not total evaluation FLOPs or total model forwards.",
+    "Frozen phi/base flags plus pinned source and file identities are provenance evidence, not an independent in-memory mutation trace.",
+    "No paired-method efficacy, held-out generalization, convergence or multi-seed conclusion from one completed development cell.",
+    "Only known-task clean and medium H1 endpoints exist; the other eight declared pairs remain incomplete.",
+    "Task and keep are duplicate query pools; no independent two-task recovery claim.",
+    "Wrapper time includes lock wait and is not additive independent GPU cost."
+  ],
+  "evidence_sha256": {
+    "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t0_medium_s17_v1.json": "b0c84cd588ca4161636e6503829b38d7a28437efc1b45f7569c0bdcd9002cad8",
+    "records/horizon_effect_comparison_20261103_1005/fetch_receipt_phi_horizon_L_H1_2560_t0_medium_s17_v1.json": "7222a9dabf07d13c29c1c23f03ffe86209e1edc0145562723993ab457deeb9a3",
+    "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t0_medium_s17_v1_evidence/manifest.json": "c2e4a8e7ddbbf1bdb84ce28a56c7a2bee2b3008b53863233f4774445197dc170",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t0_medium_s17.json": "d5b3a8ae8c4ece5bfe267ef4d5ed9c411ee6e2df737e28000719fc993d8395cb",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2560_t0_medium_s17.json": "5c687f3955311644521703bafd8c817ac469923331b0e9c89abf69a5c3672983",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t0_medium_s17_evidence/manifest.json": "d68e7f07dae2f69eb49992cbce758d2b664400429553425bebb8a6e4a6e744a2",
+    "records/horizon_effect_monitor_20261106_162547_utc/snapshot/records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t0_medium_s17_v1_paired_review_v2.json": "ec44888ceca40501ef392662792095cddc04f8bafa062fc8182c0b7f0f740177",
+    "records/horizon_effect_monitor_20261106_162547_utc/review.json": "b49a533ad563a67bebfe8f29e04f2be7df3b53daaa5e798e3cb6bd59669e3aba",
+    "records/horizon_effect_comparison_20261103_1005/review_second_H1_20261107.py": "dbf4db8d2341d1c5f3266a366e545f24f0f3ca741407c9677fa1e1b64c910c11"
+  },
+  "selection_policy_changed": false,
+  "method_validated": false,
+  "scientific_promotion_allowed": false,
+  "full_goal_complete": false,
+  "training_modified_or_restarted": false
+}

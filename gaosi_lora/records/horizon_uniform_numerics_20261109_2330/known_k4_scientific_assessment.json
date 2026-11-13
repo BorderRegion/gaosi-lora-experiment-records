@@ -1,0 +1,35 @@
+{
+  "status": "SCOPED_KNOWN_K4_TRUNCATION_RESULT_ASSESSED_NO_EFFICACY_PROMOTION",
+  "at_utc": "2026-11-10T14:22:30.010848+00:00",
+  "scope": "One fixed known-task development trajectory on the new uniform recomputed numerical path, K4, seed17.",
+  "saved_full_four_step_derivative_available": true,
+  "endpoint_state_tensor_count_each": 5548,
+  "endpoint_max_absolute_difference": 0.0,
+  "H1_relative_to_H4": {
+    "gradient_norm": 0.0916966910174969,
+    "full_gradient_norm": 0.18405010006347544,
+    "relative_l2_error": 0.5220437977804231,
+    "cosine": 0.9791832529684725,
+    "both_zero": false
+  },
+  "H2_relative_to_H4": {
+    "gradient_norm": 0.07743692308801305,
+    "full_gradient_norm": 0.18405010006347544,
+    "relative_l2_error": 0.6114676989339244,
+    "cosine": 0.9544270017550759,
+    "both_zero": false
+  },
+  "interpretation": "At this fixed endpoint H2 is farther from the saved full H4 gradient than H1 in both relative L2 and cosine; neither truncated gradient matches the full gradient. This does not rank training efficacy or justify changing the frozen architecture or production horizon.",
+  "next_action": "Keep the original finite twelve-replay plan and pending nine jobs; complete its final saved-artifact review after actual execution. Continue the original organization/control experiments and independent seeds without adding a new horizon grid.",
+  "original_mixed_path_failure_revalidated": false,
+  "real_model_derivative_independently_recomputed": false,
+  "production_training_modified": false,
+  "scientific_promotion_generated": false,
+  "method_validated": false,
+  "full_goal_complete": false,
+  "evidence_sha256": {
+    "records/horizon_uniform_numerics_20261109_2330/known_k4_saved_tensor_review.json": "fbe17463ac4ae77e961c22be2c7f774e17a3fb64fca1c109c3a323c041f8d182",
+    "records/horizon_uniform_numerics_20261109_2330/known_k4_review_fetch_receipt.json": "84f6b14c651d8d0ae08a9c123f71ed09d9f5d2931452f8927e5f4283e9416cfa",
+    "records/horizon_uniform_numerics_20261109_2330/audit_known_k4.py": "9d6735e9c1447924b43d1527b1276053c56561c599190ce8746485eda6df9f3e"
+  }
+}

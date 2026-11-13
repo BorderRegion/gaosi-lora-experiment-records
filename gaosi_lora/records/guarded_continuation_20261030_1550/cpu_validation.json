@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "scope": "CPU tiny random Qwen and failure fixtures only",
+  "method_validated": false,
+  "MUSA_training_launched": false,
+  "tests": [
+    "huge_stops_before_optimizer_update_and_restores_hooks",
+    "nonfinite_stops_before_optimizer_update_and_restores_hooks",
+    "missing_stops_before_optimizer_update_and_restores_hooks",
+    "mutated_phi_stops_before_optimizer_update_and_restores_hooks",
+    "clip_nonfinite_stops_before_optimizer_update_and_restores_hooks",
+    "rollout_failure_stops_before_optimizer_update_and_restores_hooks",
+    "scale_original_validation_retained",
+    "confirmation_original_validation_retained",
+    "fresh_L_H1_phi_and_adam_state_byte_equal_to_original_trainer",
+    "partial_commonwarm_H1_phi_and_adam_state_byte_equal_to_original_trainer",
+    "partial_commonwarm_H2_phi_and_adam_state_byte_equal_to_original_trainer",
+    "extension_absolute_episode3_phi_and_adam_state_byte_equal_to_original_trainer",
+    "reset_index_adaptation_O1_phi_and_adam_state_byte_equal_to_original_trainer",
+    "reset_index_adaptation_O2_phi_and_adam_state_byte_equal_to_original_trainer",
+    "reset_index_adaptation_O3_phi_and_adam_state_byte_equal_to_original_trainer",
+    "fresh_X_H2_phi_and_adam_state_byte_equal_to_original_trainer",
+    "mismatched_warm_boundary_rejected"
+  ],
+  "limitations": [
+    "O4 historical master and full scale/confirmation entry semantics use their existing validators.",
+    "CPU equality does not establish MUSA numerical correctness."
+  ]
+}

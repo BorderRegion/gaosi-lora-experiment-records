@@ -1,0 +1,13 @@
+{
+  "status": "REMOTE_FROZEN_SOURCE_IDENTITY_VERIFIED_AT_SCHEDULED_REVIEW",
+  "recorded_at_utc": "2026-11-05T22:56:34.211916+00:00",
+  "remote_source": "records/pipeline_observed_blocking_v8/tools/confirmation_queue.py",
+  "sha256": "bf82f5d4bc3e7aa23ccb0d719714f8eb795312e01a74616cf9dff4e15f1d67ba",
+  "static_review": "records/confirmation_path_review_20261105_2230/static_review.json",
+  "static_review_sha256": "e7687e5958de1b95cab74f5eb7ea0dfeba6cfb3fe52e3050cfe8c4ae48504325",
+  "production_sources_modified": false,
+  "controllers_modified_or_restarted": false,
+  "completion_markers_created": false,
+  "aliases_created": false,
+  "full_goal_complete": false
+}

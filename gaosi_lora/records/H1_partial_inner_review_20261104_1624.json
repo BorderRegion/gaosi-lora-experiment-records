@@ -1,0 +1,44 @@
+{
+  "status": "RECORDED_COMMONWARM_H1_LEDGER_CHECKS_PASS_ONLY",
+  "reviewed_at_utc": "2026-11-04T16:25:07.036589+00:00",
+  "source": "records/H1_ledger_review_20261103_1652/review_commonwarm_ledger.py",
+  "source_sha256": "9d8099f10f49af7fe322734ffcc547752f5c7333d1797300fad0483b654fc8b3",
+  "observation": "/home/ubuntu/diff/gaosi_lora/records/pipeline_monitor_20261104_162447_utc",
+  "reference": "records/observed_blocking_core_monitor_20261101_070654_utc",
+  "require_complete": false,
+  "source_files_rehashed": 139,
+  "input_sha256": {
+    "records/pipeline_monitor_20261104_162447_utc/snapshot/runs/phi_mix_O1_L_H1_commonwarm_s17_observed_blocking_v8/config.json": "b3d08fc97334dbc3bfd8f77d1c2e83c290fdfafecf7d17f09959406fdc5ef4e1",
+    "records/pipeline_monitor_20261104_162447_utc/snapshot/runs/phi_mix_O1_L_H1_commonwarm_s17_observed_blocking_v8/events.jsonl": "b03d86a45b3daee0154b02abcbc4d8530337cd138ab9e2b3c23d15b790939c0f",
+    "records/pipeline_monitor_20261104_162447_utc/snapshot/runs/phi_mix_O1_L_H1_commonwarm_s17_observed_blocking_v8/raw_gradients.jsonl": "6f8925b4b0665cc33152e071812cac662d23d131e83f738fbd92d49801d173d9",
+    "records/pipeline_monitor_20261104_162447_utc/archive_source_sha256.json": "97ba7c1bb665ff92266e76ed01f30a48e52d02ee623dc7482ce973f13b35a427",
+    "records/observed_blocking_core_monitor_20261101_070654_utc/snapshot/runs/phi_mix_O1_L_H2_core_s17_observed_blocking_v8/config.json": "5cc9a94a6b803c595d7d2b2fa1cb6a1b466539ca5c049227a651a50e3d2b40ec",
+    "records/observed_blocking_core_monitor_20261101_070654_utc/snapshot/runs/phi_mix_O1_L_H2_core_s17_observed_blocking_v8/events.jsonl": "cbf5b045408ad93b37cfd73ee6e5fd8639fc180a4756f085b4cdc7094f2518de",
+    "records/observed_blocking_core_monitor_20261101_070654_utc/snapshot/runs/phi_mix_O1_L_H2_core_s17_observed_blocking_v8/raw_gradients.jsonl": "480d060aa506993ec5bf9da91b3a1255fd9d7376c123a209dede6209eefd8c4c",
+    "records/observed_blocking_core_monitor_20261101_070654_utc/archive_source_sha256.json": "52fe7183bedd46e489e8dd190ce183b2037c5d67d9206758cfb3ca4882db888e"
+  },
+  "completed_additional_episodes": 108,
+  "completed_additional_inner_steps": 1728,
+  "common_warm_inner_steps": 512,
+  "cumulative_inner_steps": 2240,
+  "full_commonwarm_H1_ledger_present": false,
+  "recorded_task_noise_and_route_budgets_match_H2": true,
+  "noise_timing_field_excluded_from_pairing": "boundary_seconds",
+  "all_H1_exact_window_flags_false_as_expected_for_terminal_replay": true,
+  "mean_episode_seconds": 763.7884682037037,
+  "maximum_raw_norm": 0.4863133747121091,
+  "minimum_recorded_route_tokens": {
+    "task_tokens": 512,
+    "language_tokens": 516,
+    "keep_tokens": 512
+  },
+  "method_validated": false,
+  "downstream_promotion_allowed": false,
+  "limitations": [
+    "Recorded metadata and token counts are compared; batches, graphs and derivatives are not recomputed.",
+    "H1 terminal replay is inferred from pinned code/config; false exact_window flags alone do not establish derivative correctness.",
+    "Common phi and optimizer tensor bytes require complete artifact audit and saved-gradient Adam replay.",
+    "Live snapshot files may reflect adjacent instants; incomplete commits require a later scheduled archive.",
+    "No scientific review receipt or method-efficacy conclusion is created."
+  ]
+}

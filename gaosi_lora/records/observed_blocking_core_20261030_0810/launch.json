@@ -1,0 +1,68 @@
+{
+  "utc": "2026-10-30T08:06:40.804754+00:00",
+  "status": "FRESH_FULL_L_SCHEDULE_UNDER_CANDIDATE_MITIGATION",
+  "job": "phi_mix_O1_L_H2_core_s17_observed_blocking_v8",
+  "command": [
+    "/usr/bin/python",
+    "-u",
+    "tools/job.py",
+    "--name",
+    "phi_mix_O1_L_H2_core_s17_observed_blocking_v8",
+    "--musa-lock",
+    "/tmp/gaosi_musa_device0.lock",
+    "--",
+    "/usr/bin/env",
+    "MUSA_LAUNCH_BLOCKING=1",
+    "/usr/bin/python",
+    "-u",
+    "tools/train_observed_meta.py",
+    "--manifest",
+    "records/observed_blocking_core_20261030_0810/training_manifest.json"
+  ],
+  "job_state": {
+    "name": "phi_mix_O1_L_H2_core_s17_observed_blocking_v8",
+    "command": [
+      "/usr/bin/env",
+      "MUSA_LAUNCH_BLOCKING=1",
+      "/usr/bin/python",
+      "-u",
+      "tools/train_observed_meta.py",
+      "--manifest",
+      "records/observed_blocking_core_20261030_0810/training_manifest.json"
+    ],
+    "wrapper_pid": 650715,
+    "started_at_utc": "2026-10-30T08:06:40.741418+00:00",
+    "start_epoch": 1793347600.741437,
+    "status": "RUNNING",
+    "device_lock": {
+      "path": "/tmp/gaosi_musa_device0.lock",
+      "version": 1
+    },
+    "child_pid": 650716,
+    "child_proc_start_ticks": "62167024"
+  },
+  "child_identity_matches": true,
+  "wrapper_pid": 650715,
+  "wrapper_start_ticks": "62167020",
+  "manifest_sha256": "cbdf0881f85c5db30bbace91f3de5d059a7bab057055e559dfeafdfa451e7019",
+  "validation": {
+    "status": "VALIDATED_NOT_EXECUTED",
+    "episodes": 192,
+    "inner_updates": 2560,
+    "fresh_phi": true,
+    "method_validated": false
+  },
+  "device_lock_inode": 31148027670,
+  "fresh_phi": true,
+  "previous_failed_checkpoint_reused": false,
+  "all_old_results_preserved": true,
+  "no_downstream_launched": true,
+  "method_validated": false,
+  "downstream_promotion_allowed": false,
+  "full_goal_complete": false,
+  "estimated_L_runtime_hours": [
+    40,
+    60
+  ],
+  "estimated_full_protocol_runtime": "Not reliable until numerical path and downstream runtime are established."
+}

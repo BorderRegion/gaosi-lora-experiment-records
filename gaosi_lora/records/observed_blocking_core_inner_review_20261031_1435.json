@@ -1,0 +1,130 @@
+{
+  "status": "RECORDED_INNER_LEDGER_CHECKS_PASS_ONLY",
+  "reviewed_at_utc": "2026-10-31T14:34:10.230598+00:00",
+  "source": "records/observed_blocking_core_20261030_0810/review_inner_ledger.py",
+  "source_sha256": "0beb769c010e86a0f3580ffc78811b3184552647cc1aee85430b19714326ef71",
+  "observation": "records/observed_blocking_core_monitor_20261031_140649_utc",
+  "input_sha256": {
+    "records/observed_blocking_core_monitor_20261031_140649_utc/snapshot/runs/phi_mix_O1_L_H2_core_s17_observed_blocking_v8/config.json": "5cc9a94a6b803c595d7d2b2fa1cb6a1b466539ca5c049227a651a50e3d2b40ec",
+    "records/observed_blocking_core_monitor_20261031_140649_utc/snapshot/runs/phi_mix_O1_L_H2_core_s17_observed_blocking_v8/events.jsonl": "fc5a86a7f9be2b13acbc6589e2e3295552a565a511cc79c5eaee5041dc477268",
+    "records/observed_blocking_core_monitor_20261031_140649_utc/snapshot/runs/phi_mix_O1_L_H2_core_s17_observed_blocking_v8/raw_gradients.jsonl": "0e5e014d4385c71cb1a50dfc75af12f8a264d827562bd343c6c026082d28107d",
+    "records/observed_blocking_core_monitor_20261031_140649_utc/archive_source_sha256.json": "01580124c3a9f37dfcbe9ab2a87ce315cd1d838cb3f3609921a40cf38c466625"
+  },
+  "source_files_rehashed": 43,
+  "completed_episodes_checked": 129,
+  "completed_inner_steps_checked": 1552,
+  "exact_window_flag_matches_last_two_steps_in_every_completed_episode": true,
+  "minimum_recorded_effective_tokens": {
+    "task_tokens": 512,
+    "language_tokens": 516,
+    "keep_tokens": 512
+  },
+  "groups": [
+    {
+      "K": 8,
+      "mode": "known",
+      "q_train": 0.0,
+      "count": 22,
+      "mean_episode_seconds": 609.0573981818181,
+      "median_raw_norm": 4.0819139152340004e-05,
+      "min_raw_norm": 1.528648804462009e-05,
+      "max_raw_norm": 9.813503122128407e-05,
+      "median_objective": 0.00011064783393521793
+    },
+    {
+      "K": 8,
+      "mode": "known",
+      "q_train": 0.5,
+      "count": 21,
+      "mean_episode_seconds": 612.3712684285714,
+      "median_raw_norm": 0.0277261827291289,
+      "min_raw_norm": 0.002373791605177245,
+      "max_raw_norm": 0.22966086724073495,
+      "median_objective": 0.015452425926923752
+    },
+    {
+      "K": 8,
+      "mode": "known",
+      "q_train": 0.7,
+      "count": 21,
+      "mean_episode_seconds": 611.7339160476191,
+      "median_raw_norm": 0.034215120180218835,
+      "min_raw_norm": 0.002280693974005638,
+      "max_raw_norm": 0.11979637376772051,
+      "median_objective": 0.017554238438606262
+    },
+    {
+      "K": 16,
+      "mode": "known",
+      "q_train": 0.0,
+      "count": 11,
+      "mean_episode_seconds": 951.6932368181818,
+      "median_raw_norm": 1.1497706523304256e-05,
+      "min_raw_norm": 4.627029909386178e-06,
+      "max_raw_norm": 0.00011652853827964206,
+      "median_objective": 0.00011200994777027518
+    },
+    {
+      "K": 16,
+      "mode": "known",
+      "q_train": 0.5,
+      "count": 11,
+      "mean_episode_seconds": 948.561807,
+      "median_raw_norm": 0.0003801063958245219,
+      "min_raw_norm": 4.762709909246364e-05,
+      "max_raw_norm": 0.0018518364668283077,
+      "median_objective": 0.0014131118077784777
+    },
+    {
+      "K": 16,
+      "mode": "known",
+      "q_train": 0.7,
+      "count": 11,
+      "mean_episode_seconds": 946.1455814545454,
+      "median_raw_norm": 0.0013709022339248905,
+      "min_raw_norm": 0.000125134956818008,
+      "max_raw_norm": 0.0033148268517323187,
+      "median_objective": 0.005646131467074156
+    },
+    {
+      "K": 16,
+      "mode": "new",
+      "q_train": 0.0,
+      "count": 10,
+      "mean_episode_seconds": 1069.5023875,
+      "median_raw_norm": 0.018772738707751986,
+      "min_raw_norm": 3.233108539786406e-08,
+      "max_raw_norm": 0.5529931291135208,
+      "median_objective": 0.0033305215183645487
+    },
+    {
+      "K": 16,
+      "mode": "new",
+      "q_train": 0.5,
+      "count": 11,
+      "mean_episode_seconds": 1080.2431981818181,
+      "median_raw_norm": 0.051439721714178065,
+      "min_raw_norm": 4.545643910986812e-06,
+      "max_raw_norm": 0.5823351201809523,
+      "median_objective": 0.011446329765021801
+    },
+    {
+      "K": 16,
+      "mode": "new",
+      "q_train": 0.7,
+      "count": 11,
+      "mean_episode_seconds": 1060.3322651818182,
+      "median_raw_norm": 0.26561929470804624,
+      "min_raw_norm": 1.077388813542202e-06,
+      "max_raw_norm": 0.5415884329454607,
+      "median_objective": 0.09268755465745926
+    }
+  ],
+  "method_validated": false,
+  "downstream_promotion_allowed": false,
+  "limitations": [
+    "Checks recorded flags and token counts, not actual graph connectivity or derivatives.",
+    "Task routes and noise levels differ; these summaries do not establish convergence.",
+    "Only completed episodes are included; this is not a final run audit."
+  ]
+}

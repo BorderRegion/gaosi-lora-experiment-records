@@ -1,0 +1,134 @@
+{
+  "status": "DETACHED_COMPARISON_CONTROLLER_AND_FIRST_LOCK_WAITING_LEAF_VERIFIED",
+  "recorded_at_utc": "2026-11-06T08:01:45.489360+00:00",
+  "controller": {
+    "name": "phi_horizon_effect_comparison_s17_v1",
+    "command": [
+      "/usr/bin/python",
+      "-u",
+      "records/horizon_effect_comparison_20261103_1005/compare.py",
+      "run"
+    ],
+    "wrapper_pid": 501760,
+    "started_at_utc": "2026-11-06T08:00:21.450502+00:00",
+    "start_epoch": 1793952021.450523,
+    "status": "RUNNING",
+    "child_pid": 501761,
+    "child_proc_start_ticks": "122609095"
+  },
+  "controller_identity": {
+    "pid": 501761,
+    "start_ticks": "122609095",
+    "matches": true,
+    "cmdline": "/usr/bin/python -u records/horizon_effect_comparison_20261103_1005/compare.py run ",
+    "blocking": [
+      "MUSA_LAUNCH_BLOCKING=1"
+    ]
+  },
+  "leaves": [
+    {
+      "job": {
+        "name": "phi_horizon_L_H1_2560_t0_clean_s17_v1",
+        "command": [
+          "/usr/bin/env",
+          "MUSA_LAUNCH_BLOCKING=1",
+          "/usr/bin/python",
+          "-u",
+          "-m",
+          "gaosi.recover",
+          "--config",
+          "configs/phi_horizon_L_H1_2560_t0_clean_s17_v1.json"
+        ],
+        "wrapper_pid": 501788,
+        "started_at_utc": "2026-11-06T08:00:29.055839+00:00",
+        "start_epoch": 1793952029.0558586,
+        "status": "RUNNING",
+        "device_lock": {
+          "path": "/tmp/gaosi_musa_device0.lock",
+          "version": 1
+        },
+        "child_pid": 501789,
+        "child_proc_start_ticks": "122609856"
+      },
+      "config": {
+        "phase": "phi_development",
+        "data_seed": 17,
+        "noise_seed": 1729,
+        "parent": "runs/parent_3b_dev_parent_r32_s17_extend512_v2/latest.pt",
+        "device": "musa",
+        "q_apply": 0.0,
+        "noise_scheme": "subspace",
+        "architecture": "L",
+        "method": "phi",
+        "data": "data/synthetic/dev_parent.jsonl",
+        "target_ids": [],
+        "task_layout": "all",
+        "retain_subset_fraction": 1.0,
+        "subset_seed": 91,
+        "D": "plus",
+        "retain_data": "data/synthetic/dev_parent.jsonl",
+        "language_eval": "data/language/dev.jsonl",
+        "language_eval_tokens": 4096,
+        "inner_lr": 0.0003,
+        "effective_tokens": 512,
+        "retain_weight": 0.25,
+        "K": 64,
+        "eval_steps": [
+          8,
+          16,
+          32,
+          64
+        ],
+        "out": "runs/phi_horizon_L_H1_2560_t0_clean_s17_v1",
+        "phi": "runs/phi_mix_O1_L_H1_commonwarm_s17_observed_blocking_v8/phi_2560.pt",
+        "freeze_manifest": "records/horizon_effect_comparison_20261103_1005/plan.json",
+        "initial_adapter": "runs/phi_dev_L_2560_t0_clean_s17/initial.pt"
+      },
+      "identity": {
+        "pid": 501789,
+        "start_ticks": "122609856",
+        "matches": true,
+        "cmdline": "/usr/bin/python -u /root/autodl-tmp/gaosi_lora/tools/device_guard.py --job-name phi_horizon_L_H1_2560_t0_clean_s17_v1 --lock-path /tmp/gaosi_musa_device0.lock -- /usr/bin/env MUSA_LAUNCH_BLOCKING=1 /usr/bin/python -u -m gaosi.recover --config configs/phi_horizon_L_H1_2560_t0_clean_s17_v1.json ",
+        "blocking": [
+          "MUSA_LAUNCH_BLOCKING=1"
+        ]
+      },
+      "preserved_log_tail": "{\"event\": \"waiting_device\", \"utc\": \"2026-11-06T08:00:29.086302+00:00\", \"job\": \"phi_horizon_L_H1_2560_t0_clean_s17_v1\", \"lock\": \"/tmp/gaosi_musa_device0.lock\"}\n"
+    }
+  ],
+  "first_X_job": {
+    "name": "phi_dev_X_2048_t0_clean_s17",
+    "command": [
+      "/usr/bin/python",
+      "-u",
+      "-m",
+      "gaosi.recover",
+      "--config",
+      "configs/phi_dev_X_2048_t0_clean_s17.json"
+    ],
+    "wrapper_pid": 497447,
+    "started_at_utc": "2026-11-06T07:45:30.787490+00:00",
+    "start_epoch": 1793951130.78751,
+    "status": "RUNNING",
+    "device_lock": {
+      "path": "/tmp/gaosi_musa_device0.lock",
+      "version": 1
+    },
+    "child_pid": 497448,
+    "child_proc_start_ticks": "122520029"
+  },
+  "first_X_identity": {
+    "pid": 497448,
+    "start_ticks": "122520029",
+    "matches": true,
+    "cmdline": "/usr/bin/python -u -m gaosi.recover --config configs/phi_dev_X_2048_t0_clean_s17.json ",
+    "blocking": [
+      "MUSA_LAUNCH_BLOCKING=1"
+    ]
+  },
+  "plan_sha256": "fa2257997d4fc1410aa831e0eeb750748bf59674f9e80e188f62d69557b49030",
+  "launch_receipt_sha256": "e2299b0674014e84c652d76d1b4ec449b14275e4289ae64866ee4c561829c498",
+  "comparison_not_complete": true,
+  "no_existing_job_restarted": true,
+  "full_goal_complete": false
+}

@@ -1,0 +1,83 @@
+{
+  "observed_at_utc": "2026-10-29T22:58:50.875644+00:00",
+  "status": "PASS",
+  "scope": "dispatcher startup verification only; no GPU/checkpoint/event telemetry",
+  "controllers": {
+    "phi_core_queue_recompute_v7": {
+      "status": "RUNNING",
+      "identity_live": true,
+      "log_tail": ""
+    },
+    "phi_development_queue_recompute_v7": {
+      "status": "RUNNING",
+      "identity_live": true,
+      "log_tail": ""
+    },
+    "organization_queue_recompute_v7": {
+      "status": "RUNNING",
+      "identity_live": true,
+      "log_tail": ""
+    },
+    "final_parent_queue_recompute_v7": {
+      "status": "RUNNING",
+      "identity_live": true,
+      "log_tail": ""
+    },
+    "formal_recovery_queue_recompute_v7": {
+      "status": "RUNNING",
+      "identity_live": true,
+      "log_tail": ""
+    },
+    "reflow_queue_recompute_v7": {
+      "status": "RUNNING",
+      "identity_live": true,
+      "log_tail": ""
+    },
+    "continual_queue_recompute_v7": {
+      "status": "RUNNING",
+      "identity_live": true,
+      "log_tail": ""
+    },
+    "seven_b_queue_recompute_v7": {
+      "status": "RUNNING",
+      "identity_live": true,
+      "log_tail": ""
+    },
+    "horizon_queue_recompute_v7": {
+      "status": "RUNNING",
+      "identity_live": true,
+      "log_tail": ""
+    },
+    "confirmation_queue_recompute_v7": {
+      "status": "RUNNING",
+      "identity_live": true,
+      "log_tail": ""
+    },
+    "noise_controls_queue_recompute_v7": {
+      "status": "RUNNING",
+      "identity_live": true,
+      "log_tail": ""
+    },
+    "recovery_statistics_queue_recompute_v7": {
+      "status": "RUNNING",
+      "identity_live": true,
+      "log_tail": ""
+    },
+    "selective_statistics_queue_recompute_v7": {
+      "status": "RUNNING",
+      "identity_live": true,
+      "log_tail": ""
+    },
+    "reflow_statistics_queue_recompute_v7": {
+      "status": "RUNNING",
+      "identity_live": true,
+      "log_tail": ""
+    },
+    "continual_statistics_queue_recompute_v7": {
+      "status": "RUNNING",
+      "identity_live": true,
+      "log_tail": ""
+    }
+  },
+  "downstream_artifacts_present": []
+}

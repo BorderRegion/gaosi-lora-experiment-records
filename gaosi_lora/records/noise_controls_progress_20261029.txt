@@ -1,0 +1,43 @@
+## 2026-10-29 21:18 扩盘简查及冻结规则噪声对照接入
+
+21:14的简查证据为records/container_restart_check_20261029_2114.json
+（SHA256 b5a7d6236e7ee772667a1b916016a43728b32af85115e59f02ebc2bb27c8e1c1）。
+PID1仍16:36:15启动；16个注册运行任务PID/start ticks均有效、非Z；数据盘1050GiB，
+空闲999.50GiB，系统盘18.25GiB。四个有效父checkpoint和所有3B/7B模型分片大小与
+前次记录相符，16个归档链接无断链，运行日志末100行无异常匹配。本次未完整重算模型
+哈希或反序列化checkpoint。uniform64步已PASS，完整512 query candidate100%、EM99.21875%；
+factor ratio4/LR3e-5已到step2，PID76873唯一占卡。观察瞬间2%利用率不作为停滞证据；
+21:13:53仍有恢复事件。未重启训练、未重复启动；本次覆盖原21:16检查，下次约21:44，
+此后稳定训练每30分钟。calibration仍未冻结，phi正式训练尚未开始，完整目标保持active。
+
+补充gaosi/noise_controls.py、tools/noise_controls_queue.py及独立验证，
+records/noise_controls_policy_v1.json预声明在all_phi_frozen后，只用同一个有效开发父、
+O1 mixed/clean冻结phi、medium剂量、冻结LR及真正primary K；subspace/factor/uniform/shrink
+四分布各standard Adam/paired Adam/mix phi/clean phi共16组。同分布共用initial张量字节、
+data17/noise1729及support流；known支持仍是task CE+.25 language CE。再做mix phi/subspace
+及Adam/shrink两组逐步global adapter update norm匹配，参考同K stock Adam/subspace，合18组。
+报告实际有效BA损伤与能量、clean/noisy/endpoint完整指标及曲线/成本/norm误差；factor同数值
+剂量不等实际损伤。它是单开发父/单噪声种子的冻结规则分布迁移描述，不能据此称Gaussian
+独特性或某分布优越，也没有factor本地训练phi。没有用这些结果回调训练设置。
+
+本次确有生产recover.py数值代码修正：仅match_update_norms路径，缩放参数后按真实缩放及
+FP32舍入后的delta重记history.last_update，避免phi下一步特征仍描述原未缩放delta。
+新SHA256为955babb1fb4303e6b367ba848cf909a0d94442620d27a031e215730cf76f44c1；
+旧源码与diff和前后hash在records/noise_controls_implementation_v1/。未启用norm控制的
+恢复分支代码未改；已运行的旧factor/uniform进程未因改文件而重启。不能继续沿用旧的
+“生产recover未修改”描述。
+
+checks/noise_controls_cpu.json为12项PASS：隔离完整18组K32调度、冻结设置/数据权限和
+设备锁；真实随机tiny Qwen经生产entry/recover运行18组K2，核同分布initial张量逐字节、
+独立dense BA损伤、逐步norm、phi下步实际delta特征以及中断续训参数/moments/history/
+streams逐字节。失败v1为测试误读配对组自身initial路径，改用声明的共享initial引用后v2通过，
+失败日志保留。原tools/validate_recovery.py的12项真实CPU tiny回归也全部PASS，job
+recovery_norm_history_regression_cpu_v1，84.10秒，覆盖stock/paired/选择性/续训/norm。
+这些CPU检查不是实际3B或已学phi的效果证据。
+
+noise_controls_queue_v1已启动，PID88812/start ticks55389839，非Z、上游organization_queue_v1
+身份存活；records/noise_controls_start_20261029.json保存证据。当前等待全部phi冻结，
+18组真实冻结phi对照尚未执行。该dispatcher不占卡，叶子复用原设备FLOCK且未unlink锁。
+本轮没有额外常规训练轮询；所有实际phi、正式恢复/回流/持续/7B与条件文本、最终统计
+仍需按协议完成，不能把接队列或CPU通过记作全实验完成。
+

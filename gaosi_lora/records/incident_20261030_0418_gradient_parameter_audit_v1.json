@@ -1,0 +1,136 @@
+{
+  "v4_episode1": [
+    {
+      "name": "net.0.weight",
+      "shape": [
+        256,
+        48
+      ],
+      "finite": true,
+      "norm": 5.414404681721395e+33,
+      "max_abs": 4.4134767481218784e+32,
+      "nonzero": 10496
+    },
+    {
+      "name": "net.0.bias",
+      "shape": [
+        256
+      ],
+      "finite": true,
+      "norm": 1.5153211555593698e+33,
+      "max_abs": 4.3726579964640166e+32,
+      "nonzero": 256
+    },
+    {
+      "name": "net.2.weight",
+      "shape": [
+        256,
+        256
+      ],
+      "finite": true,
+      "norm": 1.0065452824126587e+34,
+      "max_abs": 1.7724941539366758e+32,
+      "nonzero": 65536
+    },
+    {
+      "name": "net.2.bias",
+      "shape": [
+        256
+      ],
+      "finite": true,
+      "norm": 3.709227089104092e+33,
+      "max_abs": 3.1021819915242495e+32,
+      "nonzero": 256
+    },
+    {
+      "name": "net.4.weight",
+      "shape": [
+        2,
+        256
+      ],
+      "finite": true,
+      "norm": 9.966963295652385e+35,
+      "max_abs": 1.6467025913916463e+35,
+      "nonzero": 512
+    },
+    {
+      "name": "net.4.bias",
+      "shape": [
+        2
+      ],
+      "finite": true,
+      "norm": 1.098015040036806e+36,
+      "max_abs": 8.221016794060872e+35,
+      "nonzero": 2
+    }
+  ],
+  "v5_episode1": [
+    {
+      "name": "net.0.weight",
+      "shape": [
+        256,
+        48
+      ],
+      "finite": true,
+      "norm": 0.010358904977491772,
+      "max_abs": 0.0009374015498906374,
+      "nonzero": 10496
+    },
+    {
+      "name": "net.0.bias",
+      "shape": [
+        256
+      ],
+      "finite": true,
+      "norm": 0.002980389364459325,
+      "max_abs": 0.0009204516536556184,
+      "nonzero": 256
+    },
+    {
+      "name": "net.2.weight",
+      "shape": [
+        256,
+        256
+      ],
+      "finite": true,
+      "norm": 0.019565343197568464,
+      "max_abs": 0.0003707020077854395,
+      "nonzero": 65536
+    },
+    {
+      "name": "net.2.bias",
+      "shape": [
+        256
+      ],
+      "finite": true,
+      "norm": 0.007346313173983851,
+      "max_abs": 0.000606439309194684,
+      "nonzero": 256
+    },
+    {
+      "name": "net.4.weight",
+      "shape": [
+        2,
+        256
+      ],
+      "finite": true,
+      "norm": 2.2684927645869575,
+      "max_abs": 0.4489020109176636,
+      "nonzero": 512
+    },
+    {
+      "name": "net.4.bias",
+      "shape": [
+        2
+      ],
+      "finite": true,
+      "norm": 2.4970703169525104,
+      "max_abs": 2.409111499786377,
+      "nonzero": 2
+    }
+  ],
+  "episode0_v4_vs_v5": {
+    "relative_l2": 1.7734655934603047e-05,
+    "max_abs": 1.2951204553246498e-09
+  }
+}

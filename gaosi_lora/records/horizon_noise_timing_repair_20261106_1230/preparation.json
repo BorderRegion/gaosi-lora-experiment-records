@@ -1,0 +1,96 @@
+{
+  "status": "V2_POSTPROCESSING_NOISE_TIMER_CORRECTION_PREPARED_AND_JSON_MUTATION_CHECKED",
+  "recorded_at_utc": "2026-11-06T12:29:02.865503+00:00",
+  "failed_predecessor": {
+    "name": "phi_horizon_effect_comparison_s17_v1",
+    "command": [
+      "/usr/bin/python",
+      "-u",
+      "records/horizon_effect_comparison_20261103_1005/compare.py",
+      "run"
+    ],
+    "wrapper_pid": 501760,
+    "started_at_utc": "2026-11-06T08:00:21.450502+00:00",
+    "start_epoch": 1793952021.450523,
+    "status": "FAIL",
+    "child_pid": 501761,
+    "child_proc_start_ticks": "122609095",
+    "exit_code": 1,
+    "wall_seconds": 14514.536902666092,
+    "finished_at_utc": "2026-11-06T12:02:15.987432+00:00"
+  },
+  "completed_numerical_job": {
+    "name": "phi_horizon_L_H1_2560_t0_clean_s17_v1",
+    "command": [
+      "/usr/bin/env",
+      "MUSA_LAUNCH_BLOCKING=1",
+      "/usr/bin/python",
+      "-u",
+      "-m",
+      "gaosi.recover",
+      "--config",
+      "configs/phi_horizon_L_H1_2560_t0_clean_s17_v1.json"
+    ],
+    "wrapper_pid": 501788,
+    "started_at_utc": "2026-11-06T08:00:29.055839+00:00",
+    "start_epoch": 1793952029.0558586,
+    "status": "PASS",
+    "device_lock": {
+      "path": "/tmp/gaosi_musa_device0.lock",
+      "version": 1
+    },
+    "child_pid": 501789,
+    "child_proc_start_ticks": "122609856",
+    "exit_code": 0,
+    "wall_seconds": 14503.974383354187,
+    "finished_at_utc": "2026-11-06T12:02:13.030249+00:00"
+  },
+  "diagnosis": {
+    "all_non_timing_fields_exactly_equal": true,
+    "excluded_fields": [
+      "boundary_seconds"
+    ],
+    "left_boundary_seconds": 1.3327867984771729,
+    "right_boundary_seconds": 1.36177659034729
+  },
+  "actual_different_noise_fields": [
+    "boundary_seconds"
+  ],
+  "validation": {
+    "actual_pair_accepted": true,
+    "mutations_rejected": [
+      "q",
+      "scheme",
+      "noise_seed",
+      "QR_device",
+      "factors",
+      "composed_clean_squared_raw",
+      "composed_noisy_squared_raw",
+      "composed_damage_squared_raw",
+      "composed_relative_damage",
+      "missing_clock",
+      "nonfinite_clock",
+      "negative_clock",
+      "bool_clock"
+    ]
+  },
+  "correction": "Only nonnegative finite boundary_seconds timing is excluded from exact matching. Parent, every other noise field, terminal streams, per-step tokens and initial/clean metrics remain strict. All old evidence and code retained; numerical recovery is not repeated.",
+  "evidence_sha256": {
+    "records/horizon_effect_monitor_20261106_122545_utc/snapshot/runs/phi_horizon_L_H1_2560_t0_clean_s17_v1/result.json": "4676d08e937b6744081ea68a4b0ac7bacc33c9b561bb9f33b3b45e0c5a5efef6",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t0_clean_s17_evidence/snapshot/runs/phi_dev_L_2560_t0_clean_s17/result.json": "879754b94781ec421357724ba41877485ae8aab06c69369fe5b8483b83c85866",
+    "records/horizon_effect_comparison_20261103_1005/compare.py": "0db6c3d8b589957f99d3ae21fb08c2504d199c5838f63124ffa2f56221b9d775",
+    "records/horizon_effect_comparison_20261103_1005/audit_horizon_v1.py": "d375dfe293eebcf98059f8f7e47a28d319a3fcb107eec0399bca761bbc3a8a7f",
+    "records/horizon_effect_comparison_20261103_1005/noise_metadata_v2.py": "c691ae268fd4ea48ca8b3836cb2a8db5ba9d2713eb467fcdd4de5eeca79b730a",
+    "records/horizon_effect_comparison_20261103_1005/compare_noise_timing_v2.py": "ef3208e1a8a173c864fd287dbd51a418037c096bc60b9c8391aff9bbc60bd37a",
+    "records/horizon_effect_comparison_20261103_1005/audit_horizon_v2.py": "0137d80fd567504aaa2ab7485ef40ec02391cce0f0b716aaaa0a48bf6995b46b",
+    "records/horizon_effect_comparison_20261103_1005/fetch_horizon_audit_v2.py": "31dd6016e5d18c661afb65b650f4d68070f7d7b00246abb50989745fb9357b19",
+    "records/horizon_effect_monitor_20261106_122545_utc/result.json": "c6a8f0c8a88d3fc0c0df79228306d2ce0827aa61240199266c53d4c398f6c38d",
+    "records/horizon_noise_timing_repair_20261106_1230/prepare_v2.py": "5985f636c87bd7949d856b898c5841f9f78dba677f9055ba077647623eeaa98c"
+  },
+  "real_torch_validation_pending": true,
+  "continuation_started": false,
+  "production_numerical_sources_modified": false,
+  "original_controllers_restarted": false,
+  "method_validated": false,
+  "full_goal_complete": false
+}

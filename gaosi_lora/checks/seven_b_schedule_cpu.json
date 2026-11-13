@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "scope": "Random CPU models of widths8/12 and renamed dev fixtures only; not real7B or phi effects",
+  "tests": {
+    "fixtures_use_different_transformer_and_adapter_tensor_widths": "PASS",
+    "scale_CLI_ordinary_recovery_matches_independent_stock_Adam": "PASS",
+    "frozen_L_on_wider_model_matches_paired_Adam_bitwise_and_phi_unchanged": "PASS",
+    "frozen_X_on_wider_model_matches_paired_Adam_bitwise_and_phi_unchanged": "PASS",
+    "actual_horizon_LR_dose_parent_method_and_stream_seed_are_frozen": "PASS",
+    "data_byte_changes_are_rejected_before_model_loading": "PASS",
+    "even_Adam_validates_trained_phi_before_attempting_task_access": "PASS",
+    "cross_width_local_exact_H2_uses_known_new_and_three_support_routes_with_source_optimizer": "PASS",
+    "final_world_metadata_is_present_but_its_missing_file_is_never_opened_by_local_training": "PASS",
+    "local_budget_extension_continues_meta_optimizer_and_episode_order": "PASS",
+    "scale_CLI_interrupted_meta_resume_matches_uninterrupted_bitwise": "PASS",
+    "development_rows_cannot_be_relabelled_as_meta_by_a_filename": "PASS",
+    "eight_formal_worlds_have_fixed_four_fact_four_rule_selection": "PASS",
+    "parent_meta_dev_worlds_are_disjoint_and_missing_query_bindings_rejected": "PASS",
+    "late_extension_is_development_only_with_equal_family_weight_and_matched_clean_mix_budget": "PASS",
+    "only_documented_memory_or_higher_order_backend_failures_allow_H1_fallback": "PASS",
+    "scale_recovery_and_meta_share_existing_MUSA_mutex": "PASS",
+    "full_dispatcher_keeps_all_128_pilot_arms_and_true_frozen_horizon": "PASS",
+    "either_parent_gate_failure_extends_both_7B_meta_parents_with_matching_coverage": "PASS",
+    "matched_512_2560_3584_schedule_preserves_episode_boundaries_and_one_initial_per_dose": "PASS"
+  }
+}

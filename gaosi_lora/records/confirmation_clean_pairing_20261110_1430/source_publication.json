@@ -1,0 +1,24 @@
+{
+  "status": "VERSIONED_SOURCES_PUBLISHED_NO_TRAINING_INSPECTION",
+  "sources": {
+    "records/confirmation_clean_pairing_20261110_1430/confirmation_queue_corrected.py": "8df44d6263dcc3b91757f2872e92c76cf188839591ad2aa054a108eb457633cb",
+    "records/confirmation_clean_pairing_20261110_1430/confirmation_queue_corrected.py.diff": "8042636048c238314f6df533239f9cee6b4a832b835bf709f334d55d7d103dd7",
+    "records/confirmation_clean_pairing_20261110_1430/confirmation_runner_corrected.py": "9aab8c4d793989cecec6a3404121a3d105f02abc6f64108b85ee74c7ecccc256",
+    "records/confirmation_clean_pairing_20261110_1430/confirmation_runner_corrected.py.diff": "f21a8bb9076e830a2fdd8c61f582e53511453c74dd94e82c274e098f874fefe6",
+    "records/confirmation_clean_pairing_20261110_1430/guarded_pipeline_corrected.py": "721e1b2dd44672a0c7c0db9c7dbde4cbbee9f42f8463199adfb6ee985825e919",
+    "records/confirmation_clean_pairing_20261110_1430/guarded_pipeline_corrected.py.diff": "6882aa3e96867f3d3ecd3fe224fa114f9d6bb4c0ab3a0d51e2b149dddb34c41e",
+    "records/confirmation_clean_pairing_20261110_1430/preparation.json": "8b88be1dacb40ae6f88febf09683538c445652b1e006ee957f59edde6dd5f62e",
+    "records/confirmation_clean_pairing_20261110_1430/prepare.py": "dd73c2318e1c8d6a31d9e81475f04826045cd15ba855632a06189f5ef2538ace",
+    "records/confirmation_clean_pairing_20261110_1430/publish.py": "068200fc653ec9b854d9ad683bce5a78e7d2a8a54c7d15b8e85c017c8b5dacf6",
+    "records/confirmation_clean_pairing_20261110_1430/train_guarded_confirmation_paired.py": "a50932d6ed767e22e994bf103708d5e7680f47fd1c9393707c77c8126d39fa5a",
+    "records/confirmation_clean_pairing_20261110_1430/validate.py": "1a9931bc67c7da7891c5c92a9444acb2acc45a7c68cfaa0214bb625e8e24bea1",
+    "records/confirmation_clean_pairing_20261110_1430/validation_local.json": "da45e02568d559f1fdb1d83f4bc7938b47450b1018c02853fdd673208315cf63"
+  },
+  "originals": {
+    "gaosi/confirmation.py": "3a2401539bfe2c8d7bebe111b9c4b105f9217f7cde3f2efef0b4c378a2c953c7",
+    "tools/guarded_pipeline.py": "86074a3cb14dbfa9d8a38496a61efeb0efec2a3653aecf0fb631320f6d72ac02",
+    "tools/train_guarded_meta.py": "2ba1c7922b84efcf4adf9dbc669e2e6039f51797b8649810809d376b30da7d68",
+    "records/pipeline_observed_blocking_v8/tools/confirmation_queue.py": "bf82f5d4bc3e7aa23ccb0d719714f8eb795312e01a74616cf9dff4e15f1d67ba",
+    "gaosi/meta.py": "f9cf49a2975791fa3466e6caaa31bb8312a20eec64244a4f33d205cf1607ca69"
+  }
+}

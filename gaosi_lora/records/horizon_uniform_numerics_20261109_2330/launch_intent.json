@@ -1,0 +1,30 @@
+{
+  "status": "UNIFORM_SUPPORT_INITIAL_H1_H2_ONLY_LAUNCH_INTENT",
+  "recorded_at_utc": "2026-11-09T23:25:53.246835+00:00",
+  "name": "horizon_uniform_initial_gate_observed_blocking_v8",
+  "command": [
+    "/usr/bin/env",
+    "MUSA_LAUNCH_BLOCKING=1",
+    "/usr/bin/python",
+    "-u",
+    "tools/job.py",
+    "--name",
+    "horizon_uniform_initial_gate_observed_blocking_v8",
+    "--",
+    "/usr/bin/python",
+    "-u",
+    "records/horizon_uniform_numerics_20261109_2330/initial_gate.py"
+  ],
+  "evidence_sha256": {
+    "records/horizon_uniform_numerics_20261109_2330/run.py": "d483ac70a70fee21ac81ba23f75542f78c817c5ae245f745057dc80feb4c2292",
+    "records/horizon_uniform_numerics_20261109_2330/plan.json": "a765bd67ea24776836cced76346699663d396696e2db234288503ed5589e64c6",
+    "records/horizon_uniform_numerics_20261109_2330/initial_gate.py": "02ee6585a5e65dd445e9c4f03cf2e4b09bf1da74d07923ed9745830933a1349f",
+    "records/horizon_uniform_numerics_20261109_2330/audit_probe.py": "9124727c3b40abab7693b5c9e323ef2d7dfaa3acc499a271f9a5ba63df55a4d6",
+    "records/horizon_uniform_numerics_20261109_2330/validate_cpu.py": "7cd7d56f885725e81166cb8455f73fe1d450882b51f8af7a068aa5aebb79b5d8",
+    "records/horizon_uniform_numerics_20261109_2330/probe_tensor_audit.json": "62816c78793953322b650e8a42e0d5490e95f70f7f47f7d20d2a458c950e42a1",
+    "records/horizon_uniform_numerics_20261109_2330/uniform_direct_chain_cpu.json": "fb139574cfbf3943b8c9d129853c4b6888a4ca22eca88f2e0798449bdccc8fed"
+  },
+  "original_failed_jobs_restarted": false,
+  "production_training_modified": false,
+  "full_goal_complete": false
+}

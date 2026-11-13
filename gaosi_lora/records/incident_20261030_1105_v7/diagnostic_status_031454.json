@@ -1,0 +1,23 @@
+{
+  "observed_at_utc": "2026-10-30T03:14:54.462363+00:00",
+  "jobs": {
+    "diagnose_L_episode72_repeat_recompute_v7_r1": {
+      "job_status": "RUNNING",
+      "pid": 503977,
+      "start_ticks": "60375008",
+      "identity_live": true,
+      "last_log_lines": [
+        "{\"event\": \"analytic_inner\", \"utc\": \"2026-10-30T03:14:29.482071+00:00\", \"process_wall_seconds\": 288.72787046432495, \"k\": 16, \"ld\": 3.294291309430264e-05, \"lr\": 0.9012651443481445, \"task_tokens\": 564, \"language_tokens\": 1022, \"support_forwards\": 22, \"keep_tokens\": 564, \"keep_forwards\": 10, \"step_seconds\": 16.709925413131714, \"exact_window\": true, \"cpu_rss_bytes\": 6526521344, \"allocated_bytes\": 16923037184, \"reserved_bytes\": 32608616448, \"peak_allocated_bytes\": 30514942976, \"peak_reserved_bytes\": 32608616448}"
+      ]
+    },
+    "diagnose_L_episode7_traced_reconstruction_v7_r1": {
+      "job_status": "RUNNING",
+      "pid": 507402,
+      "start_ticks": "60399598",
+      "identity_live": true,
+      "last_log_lines": [
+        "{\"event\": \"waiting_device\", \"utc\": \"2026-10-30T03:12:06.512511+00:00\", \"job\": \"diagnose_L_episode7_traced_reconstruction_v7_r1\", \"lock\": \"/tmp/gaosi_musa_device0.lock\"}"
+      ]
+    }
+  }
+}

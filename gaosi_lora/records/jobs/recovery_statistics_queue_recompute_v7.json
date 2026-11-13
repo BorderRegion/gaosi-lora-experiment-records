@@ -1,0 +1,14 @@
+{
+  "name": "recovery_statistics_queue_recompute_v7",
+  "command": [
+    "/usr/bin/python",
+    "-u",
+    "/root/autodl-tmp/gaosi_lora/records/pipeline_recompute_v7/tools/recovery_statistics_queue.py"
+  ],
+  "wrapper_pid": 379892,
+  "started_at_utc": "2026-10-29T22:58:26.958867+00:00",
+  "start_epoch": 1793314706.9588828,
+  "status": "RUNNING",
+  "child_pid": 379893,
+  "child_proc_start_ticks": "58877646"
+}

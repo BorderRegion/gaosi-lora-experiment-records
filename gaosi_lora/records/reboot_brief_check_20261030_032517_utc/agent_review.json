@@ -1,0 +1,41 @@
+{
+  "reviewed_at_utc": "2026-10-30T03:26:53.293750+00:00",
+  "episode": 72,
+  "production_inner_records": 16,
+  "replay_inner_records": 32,
+  "two_replay_sequences": true,
+  "replay_0_matches_production_forward_values": true,
+  "replay_1_matches_production_forward_values": true,
+  "repeats": [
+    {
+      "repeat": 0,
+      "all_finite": true,
+      "nonfinite_elements": 0,
+      "norm": 0.00012996075843828468,
+      "terminal": {
+        "query_task": 0.00019492782303132117,
+        "query_language": 1.8863513469696045,
+        "query_keep": 0.00019492782303132117,
+        "objective": 0.00019492782303132117
+      }
+    },
+    {
+      "repeat": 1,
+      "all_finite": true,
+      "nonfinite_elements": 0,
+      "norm": 0.00012996075597936118,
+      "terminal": {
+        "query_task": 0.00019492782303132117,
+        "query_language": 1.8863513469696045,
+        "query_keep": 0.00019492782303132117,
+        "objective": 0.00019492782303132117
+      },
+      "bitwise_equal": false,
+      "max_absolute_difference": 5.4569682106375694e-12,
+      "relative_l2_difference": 1.315936000950517e-07
+    }
+  ],
+  "production_raw_failed_gradient_available": false,
+  "scientific_status": "NOT_VALIDATED_OR_FIXED: isolated identical-input episodes returned finite gradients while production failed. Does not diagnose root cause or validate prior giant-gradient updates.",
+  "production_modified_or_restarted": false
+}

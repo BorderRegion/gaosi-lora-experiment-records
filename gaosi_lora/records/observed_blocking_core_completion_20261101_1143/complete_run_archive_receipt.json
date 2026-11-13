@@ -1,0 +1,9 @@
+{
+  "archive": "records/observed_blocking_core_completion_20261101_1143/complete_L_run.tar.gz",
+  "sha256": "3dd68e78925069112c682bffd8d82911adcdb18d4a4a2bd31bda85cb66412293",
+  "bytes": 339174384,
+  "run_files": 420,
+  "manifest": "records/observed_blocking_core_completion_20261101_1143/complete_run_manifest.json",
+  "manifest_sha256": "5f991295bc5ec929ce3dc601849fa71a14eb685494f94343dcd7532f2e063761",
+  "run_modified": false
+}

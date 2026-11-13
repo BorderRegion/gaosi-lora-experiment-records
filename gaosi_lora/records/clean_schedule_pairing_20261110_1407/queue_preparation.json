@@ -1,0 +1,33 @@
+{
+  "status": "PAIRED_CLEAN_TWO_STAGE_QUEUE_PREPARED_NOT_SUBMITTED",
+  "recorded_at_utc": "2026-11-10T14:10:49.497797+00:00",
+  "evidence_sha256": {
+    "records/pipeline_observed_blocking_v8/tools/organization_queue.py": "ea06746497d5772d7fc2a462fe4020a64204b26b441efcca7f844cc0c7776b69",
+    "records/clean_schedule_pairing_20261110_1407/organization_queue_corrected.py": "c2fbe946e27f1eb01da102229dcd3215332012c6edc7e78b8caa2a4a92af3db5",
+    "records/clean_schedule_pairing_20261110_1407/organization_queue_corrected.diff": "c27bbc09f5e3e74e26116b498c4d9b6ddc82b390a1fd15fe7e3cfe0cc5287bd8",
+    "records/clean_schedule_pairing_20261110_1407/review_schedule.py": "0566f48b3af7b79b6e6b4079e6a011ef7e6092098b0de01604587d42b36aa8ce",
+    "records/clean_schedule_pairing_20261110_1407/review.json": "f6ef06e62a5fc95352aaeb25a9e47af0fa27f79301d94b504e56ea154e502513",
+    "records/clean_schedule_pairing_20261110_1407/prepared_clean_core_config.json": "c537b3b2668c280cf3080f3b832f505a907609fd66f32b157e73a7d8d23b970f",
+    "records/clean_schedule_pairing_20261110_1407/prepared_clean_specialization_config.json": "4af1a42013dffad38bcb5b90ce4963e7915e369eb84cd97c448f9c6ceb2cc65c"
+  },
+  "syntax_compilation_passed": true,
+  "preserves_original_mixed_organization_training": true,
+  "core_updates": 2560,
+  "specialization_updates": 512,
+  "total_updates": 3072,
+  "clean_core_optimizer_step_expected": 192,
+  "clean_final_optimizer_step_expected": 256,
+  "requires_before_execution": [
+    "Wait for an actually completed meta leaf and its normal independent audits.",
+    "Verify no active numerical leaf is being stopped; perform a single evidence-recorded controller handoff.",
+    "Preserve the old controller job/state/log and maintain all downstream wait identities/statuses without a false FAIL window.",
+    "Use the staged queue, not a second unpaired clean control.",
+    "Add independently matched two-stage clean routing to the later confirmation path before it is submitted.",
+    "Review actual clean core and specialization outputs separately before freezing."
+  ],
+  "not_required": "No change to the production numerical trainer or its source hashes is needed.",
+  "training_submitted": false,
+  "production_source_modified": false,
+  "current_training_or_controller_restarted": false,
+  "full_goal_complete": false
+}

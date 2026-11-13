@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "scope": "One O1 development parent; no final data or training updates to phi.",
+  "methods": [
+    "standard_adam",
+    "paired_adam",
+    "phi_mix",
+    "phi_clean"
+  ],
+  "schemes": [
+    "subspace",
+    "factor",
+    "uniform",
+    "shrink"
+  ],
+  "dose": "Frozen medium q; factor p uses that numerical value only and is not an equal functional/effective-weight dose.",
+  "pairing": "Same parent, primary K, LR, data/noise seed, support streams. Within each scheme all methods use the same initial adapter bytes; schemes intentionally differ.",
+  "support": "Known recovery uses task CE + .25*inner-language CE, same as the ordinary recovery dose calibration and formal known-parent branch.",
+  "update_norm_control": "At the same primary K, rescale phi_mix/subspace and standard_Adam/shrink each step to the corresponding standard_Adam/subspace global adapter update norm. Phi next-step last_update features use the actual scaled/rounded update; this controls magnitude only, not direction.",
+  "report": "Full clean/noisy/endpoint candidate, strict EM, NLL, abnormal output; actual composed relative effective-weight damage and clean/noisy energy; injected/recovered/residual task and language losses; curves, time, memory, compute and norm matching error.",
+  "interpretation": "Factor/uniform are transfers of subspace-trained phi. Same numerical dose is not damage matching; single developer parent/noise seed is descriptive, cannot establish Gaussian uniqueness or distribution superiority. No locally retrained factor-phi claim.",
+  "changes_training_or_formal_settings": false,
+  "formal_data_used": false
+}

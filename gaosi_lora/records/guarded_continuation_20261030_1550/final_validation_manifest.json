@@ -1,0 +1,46 @@
+{
+  "recorded_at_utc": "2026-10-30T16:10:32.269811+00:00",
+  "status": "PREPARED_VALIDATED_NOT_STARTED_PENDING_COMPLETED_L_REVIEW",
+  "file_sha256": {
+    "tools/train_guarded_meta.py": "2ba1c7922b84efcf4adf9dbc669e2e6039f51797b8649810809d376b30da7d68",
+    "tools/validate_guarded_meta.py": "8fa8a17db63efca7ce5a92bfa8358ca1dfa55360ec2891a60a7c807284e42e22",
+    "tools/audit_observed_meta.py": "6583634debbdf7c77e1078d987e3ec37bf9c1f4e14cf07babc6fe59e9e8ca99b",
+    "tools/guarded_pipeline.py": "86074a3cb14dbfa9d8a38496a61efeb0efec2a3653aecf0fb631320f6d72ac02",
+    "tools/build_observed_v8_pipeline.py": "87ff9e74c24b6b77d1d0bc84f1c5037951896415c012bc94ec899e78b04bf0e9",
+    "tools/validate_guarded_pipeline.py": "8c3034f2f97caa9d3f80d4c171b549ff821eb1e3729784dec9c901b9a2e8fc78",
+    "tools/start_observed_v8_pipeline.py": "84fc69fcfea752df709f3aa30d8100b7627431738658d5ee1137f53c4985c6d9",
+    "tools/validate_observed_v8_launch.py": "8216f7675e19eaf9874ed4fef2a3001d75c70017c5a6eb69766da8f7c3dcd07f",
+    "records/pipeline_observed_blocking_v8/build_manifest.json": "a0c591237a330376c5068a8773e52cc29673812465184ba42bedc00d290ca05f",
+    "records/pipeline_observed_blocking_v8/validation.json": "6161f4fa2b85048a683fe6ee95a169b1a859b239fd7d77328ffee1928dfe8f65",
+    "records/pipeline_observed_blocking_v8/launch_validation.json": "0b4391a445b182e6d447b67e95b72cce840f32e24e665cc65650060ccf2d0816",
+    "records/guarded_continuation_20261030_1550/cpu_validation_final.json": "2de2e944dc3535fd1d1e9c6918d2a96739113a961f1984de35a7554f8f1d7a1d",
+    "records/guarded_continuation_20261030_1550/X_readiness_preparation_manifest.json": "e34fce6fd61257e5bb5a08baa8a1c2a59d84775d31f8421c35d90ccf601140ec",
+    "configs/phi_X_real_episode_readiness_s17_observed_blocking_v8.json": "bab1585e29053bda16659b8a9eba8a0b71da699fdc404386949825158c970b73"
+  },
+  "validation_statuses": {
+    "records/pipeline_observed_blocking_v8/validation.json": "PASS",
+    "records/pipeline_observed_blocking_v8/launch_validation.json": "PASS",
+    "records/guarded_continuation_20261030_1550/cpu_validation_final.json": "PASS"
+  },
+  "counts": {
+    "guarded_cpu_checks": 19,
+    "pipeline_checks": 19,
+    "launch_preflight_checks": 6,
+    "controllers": 15,
+    "X_readiness_pinned_files": 103
+  },
+  "latest_observation": {
+    "observation": "records/observed_blocking_core_monitor_20261030_160642_utc",
+    "archive_sha256": "2d63eb0926c374d79bb0726877d27e29779b9068b7db4aff03798b0a974017ed",
+    "verified_source_files": 42,
+    "job_status": "RUNNING",
+    "alerts": [],
+    "production_modified_or_restarted": false
+  },
+  "observation_archive_independently_rehashed": true,
+  "pinned_build_inputs_verified": true,
+  "method_validated": false,
+  "downstream_promotion_allowed": false,
+  "training_modified_or_restarted": false,
+  "remaining": "Complete L; audit saved artifacts and review numerical/scientific eligibility before any downstream launch. Full protocol remains incomplete."
+}

@@ -1,0 +1,13 @@
+{
+  "status": "TERMINAL_OR_ALERT_REQUIRES_AGENT_REVIEW",
+  "pid": 202579,
+  "proc_start_ticks": "59350385",
+  "updated_at_utc": "2026-11-01T07:07:00.924739+00:00",
+  "production_modified_or_restarted": false,
+  "observations": 94,
+  "observation": "records/observed_blocking_core_monitor_20261101_070654_utc",
+  "archive_sha256": "33d198072e69c5b4527bfce4a377d8425e33bcfe392f47f73c9563e0c40c2e6e",
+  "verified_source_files": 49,
+  "job_status": "PASS",
+  "alerts": []
+}

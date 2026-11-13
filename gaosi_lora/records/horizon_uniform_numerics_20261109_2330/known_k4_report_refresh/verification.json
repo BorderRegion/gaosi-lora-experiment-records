@@ -1,0 +1,36 @@
+{
+  "status": "KNOWN_K4_GRADIENT_DIAGNOSTIC_AND_O2_PROGRESS_RECORDED_BOTH_HOSTS",
+  "at_utc": "2026-11-10T14:22:30.813007+00:00",
+  "local": {
+    "REPORT.md": {
+      "before_sha256": "f1b655b656473e9148be1ddeebc772e9134c51a7b6c29efb08707f1d6c669374",
+      "after_sha256": "17ec51b14a3884aa16cae6437eb0badd121ea5fe7deaf5d20ca465af37489a08",
+      "history_preserved": true
+    },
+    "NEXT_STEPS.md": {
+      "before_sha256": "92fc85c30e6be305786daf75bdf12794d38b440a20984aa4e37c8b3a422d04bb",
+      "after_sha256": "6eda68ef3f9ebed3b179e4596c60178f68928c2ddf51fb9db8409e83a002ca74",
+      "history_preserved": true
+    }
+  },
+  "remote": {
+    "REPORT.md": {
+      "before_sha256": "d0fb1f3841e0b27e6e28acd002cc8f9963b3daff430a9f4ae3a6a3281cae72e9",
+      "after_sha256": "34df3d7111df356419b4f7d4d4671b83989f414fc017fce33aa9e7d4c38749fe",
+      "history_preserved": true
+    },
+    "NEXT_STEPS.md": {
+      "before_sha256": "33220704b7322c41fba2d92ee302f6787f28c926fdf29b35e627044818078980",
+      "after_sha256": "ed641638ec22bc3cd4a0e08746e430c7d009c0d525528dac7dd831b535c64089",
+      "history_preserved": true
+    }
+  },
+  "evidence_sha256": {
+    "records/horizon_uniform_numerics_20261109_2330/known_k4_scientific_assessment.json": "0e091b723b0db89b35f6215edfd6183fa7126db587d90d524c9577ca124869f3",
+    "records/pipeline_observer_20261110_1315/observation_verification_20261110_1415.json": "b45a9274e3ab4029a6904d46640032d5fea9cf8dbae3041d9056620d2e9faad3",
+    "records/pipeline_observer_20261110_1315/meta_progress_20261110_1415.json": "a6d58be25e8dd050a07b1d245b5364b5ccb7232b3f816befc12f58feae7a9657"
+  },
+  "production_modified_or_restarted": false,
+  "method_validated": false,
+  "full_goal_complete": false
+}

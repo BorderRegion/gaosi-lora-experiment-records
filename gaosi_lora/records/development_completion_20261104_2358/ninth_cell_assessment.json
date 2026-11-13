@@ -1,0 +1,120 @@
+{
+  "status": "NINTH_COMPLETED_DEVELOPMENT_CELL_SECOND_RULE_WORLD_DESCRIPTIVE_REVIEW_ONLY",
+  "recorded_at_utc": "2026-11-05T13:28:27.972954+00:00",
+  "run": "runs/phi_dev_L_2048_t4_clean_s17",
+  "scope": "L-H2 phi2048, seed17, second development affine-integer rule world, q_apply0, K64;9 of60 base development cells complete.",
+  "task_data": "data/synthetic/rules_integer_v1/dev_integer_world_001.jsonl",
+  "keep_data": "data/synthetic/dev_parent.jsonl",
+  "task_and_keep_are_the_same_query_pool": false,
+  "rule_data_scope": {
+    "support_rows": 7,
+    "query_rows": 4,
+    "support_x": [
+      0,
+      1,
+      2,
+      4,
+      6,
+      8,
+      10
+    ],
+    "query_x": [
+      3,
+      5,
+      7,
+      9
+    ],
+    "support_and_query_x_disjoint": true,
+    "rule_in_this_world": "f(x)=2x",
+    "query_inputs_within_support_input_range": true
+  },
+  "metrics": {
+    "clean": {
+      "task": {
+        "candidate_correct": 1,
+        "strict_EM_correct": 2,
+        "query_count": 4,
+        "nll": 0.6623856371099298
+      },
+      "keep": {
+        "candidate_correct": 512,
+        "strict_EM_correct": 504,
+        "query_count": 512,
+        "nll": 0.023651785981122126
+      }
+    },
+    "initial": {
+      "task": {
+        "candidate_correct": 1,
+        "strict_EM_correct": 2,
+        "query_count": 4,
+        "nll": 0.6623856371099298
+      },
+      "keep": {
+        "candidate_correct": 512,
+        "strict_EM_correct": 504,
+        "query_count": 512,
+        "nll": 0.023651785981122126
+      }
+    },
+    "final": {
+      "task": {
+        "candidate_correct": 4,
+        "strict_EM_correct": 4,
+        "query_count": 4,
+        "nll": 3.305302695625042e-06
+      },
+      "keep": {
+        "candidate_correct": 511,
+        "strict_EM_correct": 501,
+        "query_count": 512,
+        "nll": 0.03242832528301138
+      }
+    }
+  },
+  "loss_changes": {
+    "task": {
+      "injected": 0.0,
+      "recovered": 0.6623823318072342,
+      "residual": -0.6623823318072342
+    },
+    "keep": {
+      "injected": 0.0,
+      "recovered": -0.008776539301889253,
+      "residual": 0.008776539301889253
+    },
+    "language": {
+      "injected": 0.0,
+      "recovered": -0.0024558232019171733,
+      "residual": 0.0024558232019171733
+    }
+  },
+  "job_wall_seconds": 5997.862663507462,
+  "interpretation": "The undamaged adapter improves candidate accuracy1/4 to4/4 and strictEM2/4 to4/4 on four query inputs distinct from seven support inputs in a second development rule world f(x)=2x. Known keep candidate changes512 to511 and strictEM504 to501 of512. Keep NLL rises0.00878 and language NLL rises0.00246 nats, both below the declared0.1 penalty thresholds. This is a small within-world interpolation result; no matched Adam, general affine-rule induction, formal-set generalization or multi-seed conclusion is available.",
+  "evidence_sha256": {
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t4_clean_s17.json": "9a2eee617e208492408377a86383b8a243b487f9df268d909677cc2becc1f525",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t4_clean_s17_evidence/snapshot/runs/phi_dev_L_2048_t4_clean_s17/config.json": "150ee48ee351ba9fcbb8dd689bb70b3524379f1a59cbf5c7e59de1c4f2990bab",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t4_clean_s17_evidence/snapshot/data/synthetic/rules_integer_v1/dev_integer_world_001.jsonl": "71844daf82a62c173509706198e703e0b7d7d6918c35a1e84928958602912290",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t4_clean_s17_evidence/snapshot/runs/phi_dev_L_2048_t4_clean_s17/source/recover.py": "955babb1fb4303e6b367ba848cf909a0d94442620d27a031e215730cf76f44c1",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2048_t4_clean_s17.json": "111bcd39c7646d936fd1855b9599c453621989af21971a612c9dfe81a1279299",
+    "records/pipeline_observer_20261104_1301/followup_20261105_1325.json": "446a35765d444f6566c77374e0dcf22e48d9e29625d4ebe1cd2b526d0e3c01d2"
+  },
+  "limitations": [
+    "CPU inspection of saved tensors and re-aggregation of saved predictions only; no model forward, tokenizer or derivative recomputation.",
+    "Language NLL is checked against the event ledger; no saved per-token language audit.",
+    "Model compute counters omit direct QA candidate/generation calls; they are not total evaluation FLOPs or total model forwards.",
+    "Frozen phi/base flags plus pinned source and file identities are provenance evidence, not an independent in-memory mutation trace.",
+    "No paired-method efficacy, held-out generalization, convergence or multi-seed conclusion from one completed development cell.",
+    "Only four query inputs in one development rule world and one phi seed.",
+    "All four query inputs lie within the support input range; this does not test extrapolation.",
+    "Support/query separation is verified from saved data and pinned source, not an independent execution trace.",
+    "No injected-damage recovery result or matched Adam result yet for this rule world.",
+    "Success on f(x)=2x does not establish induction across arbitrary affine rules.",
+    "Keep-pool measurements do not establish retention on all unmeasured tasks."
+  ],
+  "selection_policy_changed": false,
+  "scientific_receipt_generated": false,
+  "method_validated": false,
+  "full_goal_complete": false,
+  "training_modified_or_restarted": false
+}

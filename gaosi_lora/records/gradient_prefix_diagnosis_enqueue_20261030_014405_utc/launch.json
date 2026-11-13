@@ -1,0 +1,75 @@
+{
+  "status": "QUEUED_WAITING_EXISTING_DEVICE_LOCK",
+  "observed_at_utc": "2026-10-30T01:44:05.543673+00:00",
+  "job": "diagnose_core_prefix_v7_raw_gradient_r1",
+  "state": {
+    "name": "diagnose_core_prefix_v7_raw_gradient_r1",
+    "command": [
+      "/usr/bin/python",
+      "-u",
+      "tools/diagnose_prefix_gradient.py",
+      "--config",
+      "configs/diagnose_core_prefix_v7_raw_gradient.json",
+      "--execute"
+    ],
+    "wrapper_pid": 465264,
+    "started_at_utc": "2026-10-30T01:44:05.478175+00:00",
+    "start_epoch": 1793324645.4781954,
+    "status": "RUNNING",
+    "device_lock": {
+      "path": "/tmp/gaosi_musa_device0.lock",
+      "version": 1
+    },
+    "child_pid": 465265,
+    "child_proc_start_ticks": "59871498"
+  },
+  "wrapper_proc_start_ticks": "59871494",
+  "child_identity_live": true,
+  "child_command": "/usr/bin/python -u /root/autodl-tmp/gaosi_lora/tools/device_guard.py --job-name diagnose_core_prefix_v7_raw_gradient_r1 --lock-path /tmp/gaosi_musa_device0.lock -- /usr/bin/python -u tools/diagnose_prefix_gradient.py --config configs/diagnose_core_prefix_v7_raw_gradient.json --execute ",
+  "launch_command": [
+    "/usr/bin/python",
+    "-u",
+    "tools/job.py",
+    "--name",
+    "diagnose_core_prefix_v7_raw_gradient_r1",
+    "--musa-lock",
+    "/tmp/gaosi_musa_device0.lock",
+    "--",
+    "/usr/bin/python",
+    "-u",
+    "tools/diagnose_prefix_gradient.py",
+    "--config",
+    "configs/diagnose_core_prefix_v7_raw_gradient.json",
+    "--execute"
+  ],
+  "validation": {
+    "status": "VALIDATED_NOT_EXECUTED",
+    "inner_updates_max": 64,
+    "output": "runs/diagnostics/core_prefix_v7_raw_gradient_r1",
+    "torch_imported": false
+  },
+  "source_sha256": {
+    "tools/diagnose_prefix_gradient.py": "bde1f51a883987c37aee9b185f26890bfb31e38bb8844fee161db3771477540a",
+    "configs/diagnose_core_prefix_v7_raw_gradient.json": "826345d146610f066464ea5657c4ded113e2628d29311562f9144d2f7554c280"
+  },
+  "device_lock_inode": 31148027670,
+  "device_lock_holder_before": [
+    "12: FLOCK  ADVISORY  WRITE 344804 00:51:31148027670 0 EOF"
+  ],
+  "device_lock_holder_after": [
+    "12: FLOCK  ADVISORY  WRITE 344804 00:51:31148027670 0 EOF"
+  ],
+  "log": "{\"event\": \"waiting_device\", \"utc\": \"2026-10-30T01:44:05.508941+00:00\", \"job\": \"diagnose_core_prefix_v7_raw_gradient_r1\", \"lock\": \"/tmp/gaosi_musa_device0.lock\"}\n",
+  "diagnostic_gpu_started": false,
+  "production_training_started_stopped_resumed_or_modified": false,
+  "diagnostic_inner_updates_max": 64,
+  "core_budget_credit": 0,
+  "formal_data_used": false,
+  "cost_estimate": "About 30 minutes after production releases GPU; instrumentation can add overhead.",
+  "limitations": [
+    "New instrumented reconstruction, not exact replay of historical episode7.",
+    "CPU copies and synchronization can affect reproducibility.",
+    "Execution success does not establish numerical validity or efficacy."
+  ],
+  "recorder_schedule_changed": false
+}

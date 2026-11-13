@@ -1,0 +1,14 @@
+{
+  "name": "selective_statistics_queue_v1",
+  "command": [
+    "/usr/bin/python",
+    "-u",
+    "tools/selective_statistics_queue.py"
+  ],
+  "wrapper_pid": 94911,
+  "started_at_utc": "2026-10-29T13:38:25.972097+00:00",
+  "start_epoch": 1793281105.9721174,
+  "status": "RUNNING",
+  "child_pid": 94912,
+  "child_proc_start_ticks": "55517547"
+}

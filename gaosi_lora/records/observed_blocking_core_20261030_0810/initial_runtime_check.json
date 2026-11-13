@@ -1,0 +1,34 @@
+{
+  "utc": "2026-10-30T08:09:43.841508+00:00",
+  "status": "RUNNING",
+  "identity_matches": true,
+  "state": "R",
+  "child_pid": 650716,
+  "child_start_ticks": "62167024",
+  "launch_blocking_environment": [
+    "MUSA_LAUNCH_BLOCKING=1"
+  ],
+  "lock_inode": 31148027670,
+  "last_event": {
+    "event": "inner",
+    "utc": "2026-10-30T08:09:09.941498+00:00",
+    "process_wall_seconds": 142.18658328056335,
+    "episode": 0,
+    "k": 2,
+    "ld": 7.424320210702717e-05,
+    "lr": 1.031442403793335,
+    "task_tokens": 554,
+    "language_tokens": 1022,
+    "support_forwards": 22,
+    "keep_tokens": 554,
+    "keep_forwards": 10,
+    "step_seconds": 45.695767641067505,
+    "exact_window": false,
+    "cpu_rss_bytes": 7082512384,
+    "allocated_bytes": 10416636416,
+    "reserved_bytes": 16793993216,
+    "peak_allocated_bytes": 16062450688,
+    "peak_reserved_bytes": 16793993216
+  },
+  "gpu": "Fri Oct 30 16:09:43 2026\n---------------------------------------------------------------------\n    mthreads-gmi:2.4.2           Driver Version:5.2.0-server\n---------------------------------------------------------------------\nID   Name                 |PCIe                |%GPU  Mem             \n     Device Type   Perf   |Pcie Lane Width     |Temp  MPC Capable     \n                                               |      ECC Mode        \n+-------------------------------------------------------------------+\n0    MTT S4000            |00000000:1a:00.0    |26%   16906MiB(49152MiB)\n     Physical      N/A    |16x(16x)            |52C   YES             \n                                               |      N/A             \n---------------------------------------------------------------------\n\n---------------------------------------------------------------------\nProcesses:\nID   PID           Process name                           GPU Memory\n                                                               Usage\n+-------------------------------------------------------------------+\n0    650716        /usr/bin/python                          16906MiB\n---------------------------------------------------------------------\n"
+}

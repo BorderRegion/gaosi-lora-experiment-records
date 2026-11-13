@@ -1,0 +1,59 @@
+[
+  {
+    "repeat": 0,
+    "all_finite": true,
+    "nonfinite_elements": 0,
+    "norm": 0.06140810383010183,
+    "terminal": {
+      "query_task": 0.027008866891264915,
+      "query_language": 2.4372153282165527,
+      "query_keep": 0.027008866891264915,
+      "objective": 0.027008866891264915
+    }
+  },
+  {
+    "repeat": 1,
+    "all_finite": true,
+    "nonfinite_elements": 0,
+    "norm": 0.06140819779885941,
+    "terminal": {
+      "query_task": 0.027008866891264915,
+      "query_language": 2.4372153282165527,
+      "query_keep": 0.027008866891264915,
+      "objective": 0.027008866891264915
+    },
+    "bitwise_equal": false,
+    "max_absolute_difference": 4.842877388000488e-08,
+    "relative_l2_difference": 1.6309607488571582e-06
+  },
+  {
+    "repeat": 2,
+    "all_finite": true,
+    "nonfinite_elements": 0,
+    "norm": 0.06142932755636706,
+    "terminal": {
+      "query_task": 0.027008866891264915,
+      "query_language": 2.4372153282165527,
+      "query_keep": 0.027008866891264915,
+      "objective": 0.027008866891264915
+    },
+    "bitwise_equal": false,
+    "max_absolute_difference": 1.636520028114319e-05,
+    "relative_l2_difference": 0.0003582698447549136
+  },
+  {
+    "repeat": 3,
+    "all_finite": true,
+    "nonfinite_elements": 0,
+    "norm": 0.061405237402160535,
+    "terminal": {
+      "query_task": 0.027008866891264915,
+      "query_language": 2.4372153282165527,
+      "query_keep": 0.027008866891264915,
+      "objective": 0.027008866891264915
+    },
+    "bitwise_equal": false,
+    "max_absolute_difference": 2.0973384380340576e-06,
+    "relative_l2_difference": 4.6771935501275366e-05
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "status": "BOTH_REPORT_HISTORIES_PRESERVED_INACTIVE_HANDOFF_PREPARATION_RECORDED",
+  "recorded_at_utc": "2026-11-10T16:38:42.535983+00:00",
+  "remote_references_rehashed": 14,
+  "documents": {
+    "REPORT.md": {
+      "local_sha256": "5ddbc0361bad2e6680549a9f252bee9e3fb4fd067606058390944210791adb48",
+      "remote_sha256": "1098c27fa672dfa3fa34d2408c177985e8ef4160e2297ba850b419d364d65889"
+    },
+    "NEXT_STEPS.md": {
+      "local_sha256": "422c23687dbf5fdf74ad3d53bd2122310c888cd5c2c066ac63c08f1e667ad1d2",
+      "remote_sha256": "32e8ce2ab5a70f4974033a4cc388cca63322c075d3dc99cae20a827b13469ef5"
+    }
+  },
+  "production_handoff_activated": false,
+  "numerical_training_modified": false,
+  "method_validated": false,
+  "full_goal_complete": false
+}

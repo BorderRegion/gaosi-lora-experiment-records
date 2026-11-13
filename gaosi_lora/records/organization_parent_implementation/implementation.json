@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-29T08:53:44.174722+00:00",
+  "purpose": "O4 parent retention and explicit historical-base pairing",
+  "validation_job": "organization_parents_cpu",
+  "wrapper_pid": 6414,
+  "sha256": {
+    "train.py": "9798842059d449fc3e9b7f86d1d9a7ae24125659b62234bcd8da5ec4fe9fef83",
+    "meta.py": "18ef365b65e8d35760ba2a601ab264e633afb582b9ba967630d602de25e3edc8",
+    "validate_organization_parents.py": "be8b7999ac9c0e586a85c6cede0b6ed6e8c770c024af7edb5ff3f822ccb8fb07"
+  }
+}

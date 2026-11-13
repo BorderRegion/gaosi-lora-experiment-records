@@ -1,0 +1,9 @@
+{
+  "out": "runs/diagnose_L_training_recompute_v7",
+  "device": "musa",
+  "source_config": "configs/phi_L_real_episode_readiness_s17.json",
+  "source_config_sha256": "dedfe92961ffd2969a4b601b141583f51d4e77c5bfc11ac59a7e873a453896ea",
+  "training_repeats": 2,
+  "purpose": "Two original L readiness runs on production create_graph-preserving support recomputation, HVP synchronization, and FP64-stable phi clip; diagnose only",
+  "formal_data_used": false
+}

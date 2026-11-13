@@ -1,0 +1,40 @@
+{
+  "utc": "2026-10-29T13:54:06.830878+00:00",
+  "job": {
+    "name": "reflow_statistics_queue_v1",
+    "command": [
+      "/usr/bin/python",
+      "-u",
+      "tools/reflow_statistics_queue.py"
+    ],
+    "wrapper_pid": 99299,
+    "started_at_utc": "2026-10-29T13:54:06.766281+00:00",
+    "start_epoch": 1793282046.7663007,
+    "status": "RUNNING",
+    "child_pid": 99300,
+    "child_proc_start_ticks": "55611627"
+  },
+  "process_identity_live": true,
+  "stage": "WAITING_FOR_COMPLETE_REFLOW_AND_FIXED_ENTITY_GRID",
+  "upstream_jobs": [
+    "reflow_queue_v1",
+    "confirmation_queue_v1"
+  ],
+  "upstream_process_identities_verified_at_start": true,
+  "cpu_check": {
+    "status": "PASS",
+    "count": 12,
+    "scope": "Pure CPU simulated continuation evidence; no model or learned-effect evidence",
+    "sha256": "c8fe40793ca12f4cd69b46d7466ca875abe5a24ec6e3f27e279ba82488bbf3ac"
+  },
+  "source_hashes": {
+    "gaosi/reflow_statistics.py": "2e44abfd727670d46449ef03a1a14599e1aab3b77ce64d0b1e4da08e57e53aa1",
+    "tools/summarize_reflow.py": "5014aff0e750df53f89804deee9ac6b7513c760566f18a52d93c0862a2dc77f4",
+    "tools/reflow_statistics_queue.py": "ed103a9aaaaac89b71e031d995b339573ee03847d6ae28705b19e5d88ba17076",
+    "tools/validate_reflow_statistics.py": "bfdd6f34707df91298de7ac212cd1453f73189577d0590acd708e427947f33fc"
+  },
+  "policy": "records/reflow_statistics_policy_v1.json",
+  "actual_formal_statistics_started": false,
+  "overall_experiment_complete": false,
+  "recover_sha256": "955babb1fb4303e6b367ba848cf909a0d94442620d27a031e215730cf76f44c1"
+}

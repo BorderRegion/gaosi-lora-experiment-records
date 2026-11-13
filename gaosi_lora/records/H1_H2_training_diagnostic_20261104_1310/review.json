@@ -1,0 +1,21 @@
+{
+  "status": "TRAINING_DIAGNOSTIC_REVIEWED_WITHOUT_EFFICACY_OR_PROMOTION_CLAIM",
+  "reviewed_at_utc": "2026-11-04T13:11:49.785431+00:00",
+  "paired_training_episodes": 92,
+  "independent_manual_group_aggregation_agrees": true,
+  "findings": [
+    "H2 has lower mean objective in both known and new training groups.",
+    "NEW paired median and per-episode lower-loss counts point toward H1; a few large losses dominate means.",
+    "Early first-episode support losses match, but terminal execution values are not identical."
+  ],
+  "scientific_interpretation": "Mixed partial training evidence; held-out endpoint efficacy and Adam comparison still required.",
+  "files_sha256": {
+    "records/H1_H2_training_diagnostic_20261104_1310/README.md": "37b3a445d4419311a7cb8d1a550649a86a77d82591af7ad920d7924d03555654",
+    "records/H1_H2_training_diagnostic_20261104_1310/diagnose.py": "8551713c9284463592bc3539b07941e8ad4753b1bfe73bd19d4edda3adc196cb",
+    "records/H1_H2_training_diagnostic_20261104_1310/diagnostic.json": "bac121ece38e95050b8a8f8c0b0edcf65d9a8bb45b5911a8e292679d93aa4207"
+  },
+  "method_validated": false,
+  "downstream_promotion_allowed": false,
+  "training_modified_or_restarted": false,
+  "full_goal_complete": false
+}

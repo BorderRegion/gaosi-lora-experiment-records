@@ -1,0 +1,14 @@
+{
+  "name": "continual_statistics_queue_recompute_v7",
+  "command": [
+    "/usr/bin/python",
+    "-u",
+    "/root/autodl-tmp/gaosi_lora/records/pipeline_recompute_v7/tools/continual_statistics_queue.py"
+  ],
+  "wrapper_pid": 379898,
+  "started_at_utc": "2026-10-29T22:58:27.261044+00:00",
+  "start_epoch": 1793314707.2610612,
+  "status": "RUNNING",
+  "child_pid": 379899,
+  "child_proc_start_ticks": "58877676"
+}

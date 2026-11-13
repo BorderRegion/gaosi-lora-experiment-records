@@ -1,0 +1,18 @@
+{
+  "status": "BOTH_DOCUMENTATION_HISTORIES_PRESERVED_AND_PAIRING_PREPARATION_RECORDED",
+  "recorded_at_utc": "2026-11-10T14:36:47.953847+00:00",
+  "remote_reference_files_rehashed": 15,
+  "documents": {
+    "REPORT.md": {
+      "local_sha256": "112bc060ddd363acc38e826356831b353e20c91004f017f2b9fa755fa6e73918",
+      "remote_sha256": "3237832b1c7308184518c64ec9846e5937cd7467e1a11837cd478673a4fa9d85"
+    },
+    "NEXT_STEPS.md": {
+      "local_sha256": "d7a625974b024bc3782404925ec2eeffd57f7f1fb3d239cab7b4852016723f9d",
+      "remote_sha256": "93cbf295dbe783b89c0789a82f85744967443c5881ea3770ef461a00e4c90a85"
+    }
+  },
+  "training_or_controller_modified": false,
+  "method_validated": false,
+  "full_goal_complete": false
+}

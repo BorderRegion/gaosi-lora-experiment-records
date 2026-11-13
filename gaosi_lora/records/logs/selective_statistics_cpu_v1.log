@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "scope": "Pure CPU read-only statistics with simulated F64/R448 grids; no model or effect evidence",
+  "tests": {
+    "simulated_primary24_three_seed40_and_separate8_K64_exact_paired_effects": "PASS",
+    "quarter_R_support_keeps_full448_R_and64_F_query_denominators": "PASS",
+    "references_shared_without_extra_replicates_and_all_metrics_exported": "PASS",
+    "noise_not_training_seed_and_seed17_separate_from_confirmations": "PASS",
+    "same_initial_bytes_and_R_language_exposure_pairing_required": "PASS",
+    "Dminus_target_support_tokens_rejected": "PASS",
+    "query_pool_shrinkage_cannot_hide_forgetting": "PASS",
+    "primary_K_classification_and_complete_grid_enforced": "PASS",
+    "base_drop_alias_mismatch_rejected": "PASS",
+    "frozen_phi_bytes_verified_before_statistics": "PASS"
+  },
+  "count": 10
+}

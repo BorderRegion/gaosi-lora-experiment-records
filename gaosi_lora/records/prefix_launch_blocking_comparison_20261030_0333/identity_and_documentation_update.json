@@ -1,0 +1,65 @@
+{
+  "observed_at_utc": "2026-10-30T03:37:34.647558+00:00",
+  "production_modified": false,
+  "jobs": {
+    "diagnose_core_prefix_v7_launch_blocking_r1": {
+      "job": {
+        "name": "diagnose_core_prefix_v7_launch_blocking_r1",
+        "command": [
+          "/usr/bin/env",
+          "MUSA_LAUNCH_BLOCKING=1",
+          "/usr/bin/python",
+          "-u",
+          "tools/diagnose_prefix_gradient.py",
+          "--config",
+          "configs/diagnose_core_prefix_v7_launch_blocking_r1.json",
+          "--execute"
+        ],
+        "wrapper_pid": 522975,
+        "started_at_utc": "2026-10-30T03:32:05.003889+00:00",
+        "start_epoch": 1793331125.0039074,
+        "status": "RUNNING",
+        "device_lock": {
+          "path": "/tmp/gaosi_musa_device0.lock",
+          "version": 1
+        },
+        "child_pid": 522977,
+        "child_proc_start_ticks": "60519450"
+      },
+      "identity_live": true,
+      "cmdline": "/usr/bin/python -u tools/diagnose_prefix_gradient.py --config configs/diagnose_core_prefix_v7_launch_blocking_r1.json --execute "
+    },
+    "diagnose_core_prefix_v7_async_control_r2": {
+      "job": {
+        "name": "diagnose_core_prefix_v7_async_control_r2",
+        "command": [
+          "/usr/bin/env",
+          "-u",
+          "MUSA_LAUNCH_BLOCKING",
+          "/usr/bin/python",
+          "-u",
+          "tools/diagnose_prefix_gradient.py",
+          "--config",
+          "configs/diagnose_core_prefix_v7_async_control_r2.json",
+          "--execute"
+        ],
+        "wrapper_pid": 523002,
+        "started_at_utc": "2026-10-30T03:32:05.104971+00:00",
+        "start_epoch": 1793331125.1049902,
+        "status": "RUNNING",
+        "device_lock": {
+          "path": "/tmp/gaosi_musa_device0.lock",
+          "version": 1
+        },
+        "child_pid": 523003,
+        "child_proc_start_ticks": "60519461"
+      },
+      "identity_live": true,
+      "cmdline": "/usr/bin/python -u /root/autodl-tmp/gaosi_lora/tools/device_guard.py --job-name diagnose_core_prefix_v7_async_control_r2 --lock-path /tmp/gaosi_musa_device0.lock -- /usr/bin/env -u MUSA_LAUNCH_BLOCKING /usr/bin/python -u tools/diagnose_prefix_gradient.py --config configs/diagnose_core_prefix_v7_async_control_r2.json --execute "
+    }
+  },
+  "documentation": {
+    "NEXT_STEPS.md": "856faef84c880d95aecb313ea1787410ce0791004cf6eb3c552f44d9eea45e2f",
+    "REPORT.md": "11f52a1b0b6cd7ee752234c4f0f72527e161ec215a7e5a1fc78e539a7daec627"
+  }
+}

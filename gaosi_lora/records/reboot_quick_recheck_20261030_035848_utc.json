@@ -1,0 +1,120 @@
+{
+  "utc": "2026-10-30T03:58:48.599239+00:00",
+  "pid1": {
+    "pid": 1,
+    "start_ticks": "53704581",
+    "matches": true,
+    "state": "S"
+  },
+  "boot_id": "0f99d7c6-c419-42cc-a3dc-18fc7de07ff0",
+  "disks": {
+    "/root/autodl-tmp": {
+      "total_GiB": 1050.0,
+      "free_GiB": 983.39
+    },
+    "/": {
+      "total_GiB": 30.0,
+      "free_GiB": 18.18
+    }
+  },
+  "jobs": {
+    "core_prefix_v7_launch_blocking_r1": {
+      "status": "RUNNING",
+      "identity": {
+        "pid": 522977,
+        "start_ticks": "60519450",
+        "matches": true,
+        "state": "R"
+      },
+      "events.jsonl": {
+        "count": 28,
+        "last": {
+          "event": "inner",
+          "utc": "2026-10-30T03:58:46.644666+00:00",
+          "process_wall_seconds": 1595.2845466136932,
+          "episode": 2,
+          "k": 6,
+          "ld": 0.04242335259914398,
+          "lr": 0.8452965617179871,
+          "task_tokens": 553,
+          "language_tokens": 989,
+          "support_forwards": 22,
+          "keep_tokens": 553,
+          "keep_forwards": 10,
+          "step_seconds": 47.505959033966064,
+          "exact_window": false,
+          "cpu_rss_bytes": 8160907264,
+          "allocated_bytes": 11133954560,
+          "reserved_bytes": 33529266176,
+          "peak_allocated_bytes": 31252617216,
+          "peak_reserved_bytes": 33529266176
+        }
+      },
+      "gradient_observations.jsonl": {
+        "count": 2,
+        "last": {
+          "episode": 1,
+          "all_raw_gradients_finite": true,
+          "raw_norm_cpu_fp64": 0.06620782751435991,
+          "parameters": {
+            "net.0.weight": {
+              "gradient_present": true,
+              "all_finite": true,
+              "norm_fp64": 0.00015509967790554313,
+              "max_abs": 1.229243935085833e-05
+            },
+            "net.0.bias": {
+              "gradient_present": true,
+              "all_finite": true,
+              "norm_fp64": 4.319189345630593e-05,
+              "max_abs": 1.229243935085833e-05
+            },
+            "net.2.weight": {
+              "gradient_present": true,
+              "all_finite": true,
+              "norm_fp64": 0.00028160408147456426,
+              "max_abs": 4.567509222397348e-06
+            },
+            "net.2.bias": {
+              "gradient_present": true,
+              "all_finite": true,
+              "norm_fp64": 0.00010068800336519992,
+              "max_abs": 8.657772013975773e-06
+            },
+            "net.4.weight": {
+              "gradient_present": true,
+              "all_finite": true,
+              "norm_fp64": 0.0450824788775818,
+              "max_abs": 0.010192153044044971
+            },
+            "net.4.bias": {
+              "gradient_present": true,
+              "all_finite": true,
+              "norm_fp64": 0.04848640182609091,
+              "max_abs": 0.048192642629146576
+            }
+          },
+          "clip_return": 0.06620782751435991,
+          "all_clipped_gradients_finite": true,
+          "clipped_norm_cpu_fp64": 0.06620782751435991
+        }
+      }
+    },
+    "core_prefix_v7_async_control_r2": {
+      "status": "RUNNING",
+      "identity": {
+        "pid": 523003,
+        "start_ticks": "60519461",
+        "matches": true,
+        "state": "S"
+      }
+    }
+  },
+  "training_modified": false,
+  "lock_inode": 31148027670,
+  "production_checkpoint_sha256": "1c5cb6f62eb38261a3738c0481d20af867ba2bb7c44e511e2a28f6895a203297",
+  "production_checkpoint_matches": true,
+  "production_status": "FAIL",
+  "gpu_exit": 0,
+  "gpu_text": "Fri Oct 30 11:58:48 2026\n---------------------------------------------------------------------\n    mthreads-gmi:2.4.2           Driver Version:5.2.0-server\n---------------------------------------------------------------------\nID   Name                 |PCIe                |%GPU  Mem             \n     Device Type   Perf   |Pcie Lane Width     |Temp  MPC Capable     \n                                               |      ECC Mode        \n+-------------------------------------------------------------------+\n0    MTT S4000            |00000000:1a:00.0    |24%   33369MiB(49152MiB)\n     Physical      N/A    |16x(16x)            |53C   YES             \n                                               |      N/A             \n---------------------------------------------------------------------\n\n---------------------------------------------------------------------\nProcesses:\nID   PID           Process name                           GPU Memory\n                                                               Usage\n+-------------------------------------------------------------------+\n0    522977        /usr/bin/python                          33369MiB\n---------------------------------------------------------------------\n"
+}

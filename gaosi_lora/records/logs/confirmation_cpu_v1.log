@@ -1,0 +1,13 @@
+mate not installed
+Traceback (most recent call last):
+  File "/root/autodl-tmp/gaosi_lora/tools/validate_confirmation.py", line 460, in <module>
+    main()
+  File "/root/autodl-tmp/gaosi_lora/tools/validate_confirmation.py", line 326, in main
+    queue.main()
+  File "/root/autodl-tmp/gaosi_lora/tools/confirmation_queue.py", line 362, in main
+    evaluate_seed(seed, freezes, ready, original, factor, entity, rates)
+  File "/root/autodl-tmp/gaosi_lora/tools/confirmation_queue.py", line 305, in evaluate_seed
+    preserve_json(f'records/confirmation_recovery_ready_s{seed}_v1.json',
+  File "/root/autodl-tmp/gaosi_lora/tools/phi_development_queue.py", line 33, in preserve_json
+    raise ValueError(f'Existing declaration differs: {path}')
+ValueError: Existing declaration differs: records/confirmation_recovery_ready_s29_v1.json

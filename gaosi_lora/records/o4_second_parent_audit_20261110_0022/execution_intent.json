@@ -1,0 +1,8 @@
+{
+  "status": "SECOND_O4_PARENT_CPU_AUDIT_SUBMITTED_ONCE",
+  "recorded_at_utc": "2026-11-10T00:51:02.255422+00:00",
+  "source_sha256": "ed203ff1cc83d687ebbb7411b93f022f26d57f5b19c52a4b674b8304e84c050e",
+  "run": "runs/o4_current_a_on_history_b_s17",
+  "observation": "records/pipeline_monitor_20261110_004944_utc",
+  "training_modified_or_restarted": false
+}

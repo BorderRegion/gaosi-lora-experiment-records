@@ -1,0 +1,76 @@
+{
+  "active_jobs": [
+    {
+      "name": "organization_queue_observed_blocking_v8",
+      "status": "RUNNING",
+      "pid": 761616,
+      "ticks": "80739115",
+      "wchan": "do_wait"
+    },
+    {
+      "name": "phi_mix_O1_X_specialize512_s17_observed_blocking_v8",
+      "status": "RUNNING",
+      "pid": 68659,
+      "ticks": "154509185",
+      "wchan": "futex_wait_queue_me"
+    },
+    {
+      "name": "horizon_uniform_initial_gate_observed_blocking_v8",
+      "status": "RUNNING",
+      "pid": 48797,
+      "ticks": "154082318",
+      "wchan": "do_wait"
+    },
+    {
+      "name": "horizon_known_K4_H2_uniform_s17_observed_blocking_v8",
+      "status": "RUNNING",
+      "pid": 70260,
+      "ticks": "154541867",
+      "wchan": "locks_lock_inode_wait"
+    }
+  ],
+  "archive_bytes": 6772783,
+  "archive_sha256": "e55949ebb8c18244c4b28428216b559b0e81df5ed688d9d858cdc7c891b2c4e1",
+  "snapshot_observed_at_utc": "2026-11-10T05:20:27.366441+00:00",
+  "unresolved_alerts": [],
+  "pending_scientific_reviews": [],
+  "meta_runs": [
+    {
+      "run": "runs/phi_mix_O1_X_specialize512_s17_observed_blocking_v8",
+      "job_status": "RUNNING",
+      "committed_gradient_rows": 24,
+      "maximum_raw_norm": 0.5865973652681521,
+      "committed_episodes": 24,
+      "committed_inner_updates": 192,
+      "last_inner": {
+        "event": "inner",
+        "utc": "2026-11-10T05:20:04.922250+00:00",
+        "process_wall_seconds": 16647.868173360825,
+        "episode": 24,
+        "k": 3,
+        "ld": 8.540256385458633e-05,
+        "lr": 1.0782793760299683,
+        "task_tokens": 568,
+        "language_tokens": 913,
+        "support_forwards": 20,
+        "keep_tokens": 568,
+        "keep_forwards": 9,
+        "step_seconds": 44.236915826797485,
+        "exact_window": false,
+        "cpu_rss_bytes": 8201670656,
+        "allocated_bytes": 11155186688,
+        "reserved_bytes": 34173091840,
+        "peak_allocated_bytes": 31281271808,
+        "peak_reserved_bytes": 34173091840
+      },
+      "checkpoint": {
+        "sha256": "5df789a53b61e5ef2a11207d2e72502c1634382fb1c0c6c38e4b8060a8360cdb",
+        "next_episode": 24,
+        "inner_updates": 192,
+        "phi_finite": true,
+        "optimizer_finite": true,
+        "config_equal": true
+      }
+    }
+  ]
+}

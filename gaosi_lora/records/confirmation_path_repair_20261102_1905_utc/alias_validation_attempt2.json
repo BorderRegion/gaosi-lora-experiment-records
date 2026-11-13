@@ -1,0 +1,6 @@
+{
+  "status": "VALIDATION_HARNESS_PROVENANCE_NAME_REJECTED",
+  "recorded_at_utc": "2026-11-02T19:15:15.950530+00:00",
+  "failure": "AssertionError: ['input_sha256']",
+  "reason": "Existing summarizers name their provenance ledger input_sha256. The next harness permits only that exact key to change and verifies every changed provenance hash. No live aliases or production sources were changed."
+}

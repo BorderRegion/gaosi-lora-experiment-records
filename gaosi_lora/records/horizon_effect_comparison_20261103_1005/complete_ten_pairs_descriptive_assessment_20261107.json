@@ -1,0 +1,583 @@
+{
+  "status": "ALL_TEN_COMMON_WARM_HORIZON_PAIRS_AUDITED_AND_FROZEN_SCORE_AGGREGATES_RECOMPUTED",
+  "recorded_at_utc": "2026-11-07T18:59:39.629498+00:00",
+  "scope": "L H1/H2 common 512-step warm state and matched cumulative 2560 updates, seed17; development only.",
+  "completed_H1_saved_tensor_audits": 10,
+  "paired_reused_H2_saved_tensor_audits": 10,
+  "per_pair_final_summary": [
+    {
+      "task_index": 0,
+      "group": "known",
+      "dose": "clean",
+      "H2_minus_H1_score": -0.0009765625,
+      "counts": {
+        "H1": {
+          "task": {
+            "candidate_correct": 512,
+            "strict_EM_correct": 506,
+            "n": 512
+          },
+          "keep": {
+            "candidate_correct": 512,
+            "strict_EM_correct": 506,
+            "n": 512
+          }
+        },
+        "H2": {
+          "task": {
+            "candidate_correct": 511,
+            "strict_EM_correct": 506,
+            "n": 512
+          },
+          "keep": {
+            "candidate_correct": 511,
+            "strict_EM_correct": 506,
+            "n": 512
+          }
+        }
+      },
+      "H2_minus_H1_nll": {
+        "task": -0.0007214929670933956,
+        "keep": -0.0007214929670933956,
+        "language": 0.004480522522444463
+      }
+    },
+    {
+      "task_index": 0,
+      "group": "known",
+      "dose": "medium",
+      "H2_minus_H1_score": -0.0068359375,
+      "counts": {
+        "H1": {
+          "task": {
+            "candidate_correct": 512,
+            "strict_EM_correct": 500,
+            "n": 512
+          },
+          "keep": {
+            "candidate_correct": 512,
+            "strict_EM_correct": 500,
+            "n": 512
+          }
+        },
+        "H2": {
+          "task": {
+            "candidate_correct": 507,
+            "strict_EM_correct": 498,
+            "n": 512
+          },
+          "keep": {
+            "candidate_correct": 507,
+            "strict_EM_correct": 498,
+            "n": 512
+          }
+        }
+      },
+      "H2_minus_H1_nll": {
+        "task": 0.00538355680020744,
+        "keep": 0.00538355680020744,
+        "language": 0.0014200361486031987
+      }
+    },
+    {
+      "task_index": 1,
+      "group": "fact",
+      "dose": "clean",
+      "H2_minus_H1_score": 0.0,
+      "counts": {
+        "H1": {
+          "task": {
+            "candidate_correct": 32,
+            "strict_EM_correct": 32,
+            "n": 32
+          },
+          "keep": {
+            "candidate_correct": 511,
+            "strict_EM_correct": 505,
+            "n": 512
+          }
+        },
+        "H2": {
+          "task": {
+            "candidate_correct": 32,
+            "strict_EM_correct": 32,
+            "n": 32
+          },
+          "keep": {
+            "candidate_correct": 510,
+            "strict_EM_correct": 505,
+            "n": 512
+          }
+        }
+      },
+      "H2_minus_H1_nll": {
+        "task": -0.0003885723748910889,
+        "keep": 0.0015442126839302697,
+        "language": 0.0005568753917093439
+      }
+    },
+    {
+      "task_index": 1,
+      "group": "fact",
+      "dose": "medium",
+      "H2_minus_H1_score": 0.0,
+      "counts": {
+        "H1": {
+          "task": {
+            "candidate_correct": 32,
+            "strict_EM_correct": 32,
+            "n": 32
+          },
+          "keep": {
+            "candidate_correct": 497,
+            "strict_EM_correct": 488,
+            "n": 512
+          }
+        },
+        "H2": {
+          "task": {
+            "candidate_correct": 32,
+            "strict_EM_correct": 32,
+            "n": 32
+          },
+          "keep": {
+            "candidate_correct": 502,
+            "strict_EM_correct": 492,
+            "n": 512
+          }
+        }
+      },
+      "H2_minus_H1_nll": {
+        "task": -6.0831524484226246e-05,
+        "keep": -0.010614459009116978,
+        "language": 0.0013840122391708398
+      }
+    },
+    {
+      "task_index": 2,
+      "group": "fact",
+      "dose": "clean",
+      "H2_minus_H1_score": 0.0,
+      "counts": {
+        "H1": {
+          "task": {
+            "candidate_correct": 32,
+            "strict_EM_correct": 32,
+            "n": 32
+          },
+          "keep": {
+            "candidate_correct": 511,
+            "strict_EM_correct": 504,
+            "n": 512
+          }
+        },
+        "H2": {
+          "task": {
+            "candidate_correct": 32,
+            "strict_EM_correct": 32,
+            "n": 32
+          },
+          "keep": {
+            "candidate_correct": 511,
+            "strict_EM_correct": 504,
+            "n": 512
+          }
+        }
+      },
+      "H2_minus_H1_nll": {
+        "task": -3.469717967555912e-05,
+        "keep": -0.0030554548539334717,
+        "language": 0.0018604421412602434
+      }
+    },
+    {
+      "task_index": 2,
+      "group": "fact",
+      "dose": "medium",
+      "H2_minus_H1_score": 0.0,
+      "counts": {
+        "H1": {
+          "task": {
+            "candidate_correct": 32,
+            "strict_EM_correct": 32,
+            "n": 32
+          },
+          "keep": {
+            "candidate_correct": 511,
+            "strict_EM_correct": 503,
+            "n": 512
+          }
+        },
+        "H2": {
+          "task": {
+            "candidate_correct": 32,
+            "strict_EM_correct": 32,
+            "n": 32
+          },
+          "keep": {
+            "candidate_correct": 506,
+            "strict_EM_correct": 496,
+            "n": 512
+          }
+        }
+      },
+      "H2_minus_H1_nll": {
+        "task": 0.0001382143807113895,
+        "keep": 0.01464842173270204,
+        "language": 0.000508230442480162
+      }
+    },
+    {
+      "task_index": 3,
+      "group": "rule",
+      "dose": "clean",
+      "H2_minus_H1_score": 0.0,
+      "counts": {
+        "H1": {
+          "task": {
+            "candidate_correct": 4,
+            "strict_EM_correct": 4,
+            "n": 4
+          },
+          "keep": {
+            "candidate_correct": 511,
+            "strict_EM_correct": 503,
+            "n": 512
+          }
+        },
+        "H2": {
+          "task": {
+            "candidate_correct": 4,
+            "strict_EM_correct": 4,
+            "n": 4
+          },
+          "keep": {
+            "candidate_correct": 512,
+            "strict_EM_correct": 506,
+            "n": 512
+          }
+        }
+      },
+      "H2_minus_H1_nll": {
+        "task": 1.4901168299275014e-08,
+        "keep": -0.005312153222041096,
+        "language": 0.0013243312555766273
+      }
+    },
+    {
+      "task_index": 3,
+      "group": "rule",
+      "dose": "medium",
+      "H2_minus_H1_score": 0.0,
+      "counts": {
+        "H1": {
+          "task": {
+            "candidate_correct": 4,
+            "strict_EM_correct": 4,
+            "n": 4
+          },
+          "keep": {
+            "candidate_correct": 509,
+            "strict_EM_correct": 507,
+            "n": 512
+          }
+        },
+        "H2": {
+          "task": {
+            "candidate_correct": 4,
+            "strict_EM_correct": 4,
+            "n": 4
+          },
+          "keep": {
+            "candidate_correct": 509,
+            "strict_EM_correct": 507,
+            "n": 512
+          }
+        }
+      },
+      "H2_minus_H1_nll": {
+        "task": 5.960460924825384e-08,
+        "keep": -0.0001220359870182583,
+        "language": 0.0012732749559032364
+      }
+    },
+    {
+      "task_index": 4,
+      "group": "rule",
+      "dose": "clean",
+      "H2_minus_H1_score": 0.0,
+      "counts": {
+        "H1": {
+          "task": {
+            "candidate_correct": 4,
+            "strict_EM_correct": 4,
+            "n": 4
+          },
+          "keep": {
+            "candidate_correct": 511,
+            "strict_EM_correct": 501,
+            "n": 512
+          }
+        },
+        "H2": {
+          "task": {
+            "candidate_correct": 4,
+            "strict_EM_correct": 4,
+            "n": 4
+          },
+          "keep": {
+            "candidate_correct": 511,
+            "strict_EM_correct": 502,
+            "n": 512
+          }
+        }
+      },
+      "H2_minus_H1_nll": {
+        "task": -1.159547330396229e-06,
+        "keep": -0.0037396277020128044,
+        "language": 0.0015845286213118648
+      }
+    },
+    {
+      "task_index": 4,
+      "group": "rule",
+      "dose": "medium",
+      "H2_minus_H1_score": 0.0,
+      "counts": {
+        "H1": {
+          "task": {
+            "candidate_correct": 4,
+            "strict_EM_correct": 4,
+            "n": 4
+          },
+          "keep": {
+            "candidate_correct": 502,
+            "strict_EM_correct": 492,
+            "n": 512
+          }
+        },
+        "H2": {
+          "task": {
+            "candidate_correct": 4,
+            "strict_EM_correct": 4,
+            "n": 4
+          },
+          "keep": {
+            "candidate_correct": 496,
+            "strict_EM_correct": 478,
+            "n": 512
+          }
+        }
+      },
+      "H2_minus_H1_nll": {
+        "task": 3.023522982526959e-06,
+        "keep": 0.05157688688476986,
+        "language": 0.0014132998488074477
+      }
+    }
+  ],
+  "recomputed_aggregates": [
+    {
+      "step": 0,
+      "group_H2_minus_H1": {
+        "known": 0.0,
+        "fact": 0.0,
+        "rule": 0.0
+      },
+      "equal_group_H2_minus_H1": 0.0
+    },
+    {
+      "step": 8,
+      "group_H2_minus_H1": {
+        "known": -0.001953125,
+        "fact": 0.0016469635027799023,
+        "rule": 0.0
+      },
+      "equal_group_H2_minus_H1": -0.00010205383240669923
+    },
+    {
+      "step": 16,
+      "group_H2_minus_H1": {
+        "known": 0.005859375,
+        "fact": 0.014124067402338875,
+        "rule": 0.0
+      },
+      "equal_group_H2_minus_H1": 0.006661147467446292
+    },
+    {
+      "step": 32,
+      "group_H2_minus_H1": {
+        "known": 0.00390625,
+        "fact": -0.003792294394289658,
+        "rule": 0.0
+      },
+      "equal_group_H2_minus_H1": 3.7985201903447306e-05
+    },
+    {
+      "step": 64,
+      "group_H2_minus_H1": {
+        "known": -0.00390625,
+        "fact": 0.0,
+        "rule": 0.0
+      },
+      "equal_group_H2_minus_H1": -0.0013020833333333333
+    }
+  ],
+  "final_score_pair_directions": {
+    "H2_higher": 0,
+    "H1_higher": 2,
+    "ties": 8
+  },
+  "remote_json_reverification": {
+    "status": "REMOTE_COMPARISON_PAIR_AND_AUDIT_JSON_SHA256_REVERIFIED",
+    "files": 34
+  },
+  "remote_json_sha256": {
+    "records/horizon_effect_comparison_20261103_1005/comparison_v2.json": "a282745ceaa7bbd8f933e83d623030b265e26a1dd33f2812f13555d34159cc0d",
+    "records/horizon_effect_comparison_20261103_1005/declared_pairs.json": "42dc64a7b053f0caae8f030b1779b24ad669269f4fe5f34dd1f33698eccbc5c2",
+    "records/horizon_effect_comparison_20261103_1005/policy.json": "1d51868f78137f1a7887aaa6ef9219c4b3a58d19f76979a92ce91e117dde865b",
+    "records/horizon_effect_comparison_20261103_1005/inputs.json": "03613f730312227e91909a56c50ccc2b55240e353948ef28fa58b1cef06172cc",
+    "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t0_clean_s17_v1_paired_review_v2.json": "707f6a31fb93221b9990d2217ffd16cbe3b0736eafe2a44f375614ac08904149",
+    "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t0_clean_s17_v1.json": "2b37bf680a34cdb6d764aacdfc467e243e75f580734ec43e4eab361c6e5f332d",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t0_clean_s17.json": "0296fd3695b886874b772dec1f0298538c82789bc08e1f986e52f537739bc54c",
+    "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t0_medium_s17_v1_paired_review_v2.json": "ec44888ceca40501ef392662792095cddc04f8bafa062fc8182c0b7f0f740177",
+    "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t0_medium_s17_v1.json": "b0c84cd588ca4161636e6503829b38d7a28437efc1b45f7569c0bdcd9002cad8",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t0_medium_s17.json": "d5b3a8ae8c4ece5bfe267ef4d5ed9c411ee6e2df737e28000719fc993d8395cb",
+    "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t1_clean_s17_v1_paired_review_v2.json": "a76bfc8ac6b572b76a9098d77f4b66c09efb95f58a23d2fcde70343aa184a8fb",
+    "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t1_clean_s17_v1.json": "9760277950c90a8329bdf67ffd5ffd0f9b2bbb87276f61403509cd404f145e41",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t1_clean_s17.json": "d1c25c2a3bd439c096c25b8d5f51f22c9819bb7e745c32fb3ff98bfa0fe2696f",
+    "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t1_medium_s17_v1_paired_review_v2.json": "a82fdb3916f97f2478d956676abf26584910522f74efe5962a2ae2a70db79b45",
+    "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t1_medium_s17_v1.json": "2527295857bc5f4597ac1fd497dbb10f172ec6dcf257a286c8dcd31b3293bec2",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t1_medium_s17.json": "32e967c450d09c553c7bb91606296e516b96992aa88a54b09797faac62559f7a",
+    "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t2_clean_s17_v1_paired_review_v2.json": "349d251ae87589837ba559adac88514b38541b1f2fea5c44b5b6d0e1b34b54d6",
+    "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t2_clean_s17_v1.json": "b2433c25a0e3ff177050a027c9f9b1a553dc2209f1a2e346c9cab497db8fbcba",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t2_clean_s17.json": "5d9f586e142a1d18a2120906a93d747b4371dc2f4553844d47a4ee98d289f5a2",
+    "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t2_medium_s17_v1_paired_review_v2.json": "bccf96c63184482a6489e7ebe690b9fc0eba7bb5e6fe15d9f127a055cf053571",
+    "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t2_medium_s17_v1.json": "fc03f5644b323607d506ae7d9e0bec5eaaed29cdbc67f9de58945381987dd172",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t2_medium_s17.json": "ca52a99b1f4dfa1c2faf8f57cc9ff48b7533df63c965f9ddeae736ba335ac938",
+    "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t3_clean_s17_v1_paired_review_v2.json": "7e2b34da7573a5c10729384122890c13ac331b9315484e4c3fd0d9d350843b8d",
+    "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t3_clean_s17_v1.json": "9c3c56992c8e167b4212cf519f4c3cc4aba537abfa233e5b65149da329a53f5e",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t3_clean_s17.json": "b6ae4951568470ebf32bb10fa9a693d21cd9a6ef326d4ecf112c93426d0368d6",
+    "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t3_medium_s17_v1_paired_review_v2.json": "bb9c6b790b64843c92299db76c21e1e8c97addd028aad08a427bce32e325f05a",
+    "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t3_medium_s17_v1.json": "f5a122a74d8e2b76b74c5cdddf862dd6f8b47c52cb448a0522a60700a8cd7751",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t3_medium_s17.json": "b27c79c1397d4b9f7192ce743edf2f7c619c0ca1d5b37d822d0f8ee1a7a3f752",
+    "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t4_clean_s17_v1_paired_review_v2.json": "b715bb88467ee67f373eba7cf84dd832060c984631b26b8f45645047c79db91f",
+    "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t4_clean_s17_v1.json": "fd88e4990384b6aa5817e7ac5b81a3434f3b636de16b6dc576ef92b5dbed5b44",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t4_clean_s17.json": "01dc10129f69cfff840b1a203c456b56906c3fd0d67e8e2e8170b0181416b395",
+    "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t4_medium_s17_v1_paired_review_v2.json": "55f400afc26dba9fcf8473ad3a7b40ea4569ff48b1c2ca51e7ae930ef5853810",
+    "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t4_medium_s17_v1.json": "48755218585f8aeab873dd7b27a04cefcefef21f54e6cc9ebb99d1903d829c63",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t4_medium_s17.json": "7a6c073389ac0ba3bffdecf472c3350a1316f4066a3b460993b452b652d195b1"
+  },
+  "saved_training_cost_not_independently_recomputed": {
+    "shared_warm_512": {
+      "loss_forwards": 17256,
+      "loss_backwards": 17002,
+      "input_tokens": 8589006,
+      "supervised_tokens": 1717510,
+      "hessian_vector_products": 2562
+    },
+    "H2_additional_2048": {
+      "loss_forwards": 57658,
+      "loss_backwards": 57435,
+      "input_tokens": 28751041,
+      "supervised_tokens": 5517803,
+      "hessian_vector_products": 5583
+    },
+    "H1_additional_2048": {
+      "loss_forwards": 52075,
+      "loss_backwards": 46269,
+      "input_tokens": 25973719,
+      "supervised_tokens": 4995278,
+      "hessian_vector_products": 0
+    },
+    "H2_full_2560": {
+      "loss_forwards": 74914,
+      "loss_backwards": 74437,
+      "input_tokens": 37340047,
+      "supervised_tokens": 7235313,
+      "hessian_vector_products": 8145
+    },
+    "wrapper_wall_seconds": {
+      "H2": 168874.35540890694,
+      "H1": 100220.9175632
+    },
+    "wall_time_note": "H2 wrapper includes warm; H1 wrapper excludes warm. Wrapper time also includes lock waiting and audits, not pure compute."
+  },
+  "interpretation": "At K64, frozen equal-group/equal-dose H2-minus-H1 score is -0.0013020833, slightly favoring H1 (about0.1302 percentage points of score). Known=-0.00390625, fact=0 and rule=0; two pair scores favor H1 and eight tie. Intermediate aggregate deltas change sign: step8=-0.00010205, step16=+0.00666115, step32=+0.00003799. This gives no stable H2 advantage in this one-seed development supplement. Score saturation hides retention differences: all eight fact/rule endpoint scores are1, while keep-answer counts and NLLs differ in both directions. The last medium doubling-rule pair favors H1 by6 candidate and14 strictEM keep answers, yet H1 still loses10/12 relative to the clean parent. Report the small aggregate difference alongside actual retention; do not interpret a saturated score as complete recovery or use this supplement to change frozen architecture/formal selection.",
+  "limitations": [
+    "One training seed and a small development sample; no confirmatory significance claim.",
+    "Equal inner updates; H2 costs more derivative compute. Training costs include the H2 common warm only once.",
+    "Exact initial/clean metric equality is a strict gate; any mismatch requires inspection, never relaxed silently.",
+    "H2 differentiates the last two steps at a fixed earlier boundary; not the whole episode.",
+    "This supplement never alters the existing architecture or formal phi selection.",
+    "V2 explicitly excludes only the boundary_seconds wall-clock timer from exact noise metadata matching; all other fields, streams, tokens and initial/clean metrics remain strict.",
+    "Only one phi seed and five tasks; paired cells are not independent training-seed replicates. No confirmatory statistical or matched-Adam superiority claim.",
+    "Known task and keep use the same query pool; fact/rule use distinct pools. Arithmetic worlds have only four interpolation queries each.",
+    "Saved prediction/tensor audits do not independently recompute model outputs, tokenization, derivatives or per-token language NLL.",
+    "Training cost counters are preserved from the controller report, omit direct QA calls and are not total FLOPs. Wrapper times include lock waits; the common warm is shared.",
+    "Saved initial evaluation equality and the declared shared adapter path do not independently verify initial adapter equality tensor by tensor."
+  ],
+  "evidence_sha256": {
+    "records/horizon_effect_monitor_20261107_185554_utc/snapshot/records/horizon_effect_comparison_20261103_1005/comparison_v2.json": "a282745ceaa7bbd8f933e83d623030b265e26a1dd33f2812f13555d34159cc0d",
+    "records/horizon_effect_monitor_20261107_185554_utc/snapshot/records/horizon_effect_comparison_20261103_1005/declared_pairs.json": "42dc64a7b053f0caae8f030b1779b24ad669269f4fe5f34dd1f33698eccbc5c2",
+    "records/horizon_effect_monitor_20261107_185554_utc/snapshot/records/horizon_effect_comparison_20261103_1005/policy.json": "1d51868f78137f1a7887aaa6ef9219c4b3a58d19f76979a92ce91e117dde865b",
+    "records/horizon_effect_monitor_20261107_185554_utc/snapshot/records/horizon_effect_comparison_20261103_1005/inputs.json": "03613f730312227e91909a56c50ccc2b55240e353948ef28fa58b1cef06172cc",
+    "records/horizon_effect_monitor_20261107_185554_utc/snapshot/records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t0_clean_s17_v1_paired_review_v2.json": "707f6a31fb93221b9990d2217ffd16cbe3b0736eafe2a44f375614ac08904149",
+    "records/horizon_effect_comparison_20261103_1005/fetch_receipt_phi_horizon_L_H1_2560_t0_clean_s17_v1.json": "8285b888298610fa040a79f25a71407511ca7192d08fca015f1648078a4fc999",
+    "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t0_clean_s17_v1.json": "2b37bf680a34cdb6d764aacdfc467e243e75f580734ec43e4eab361c6e5f332d",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2560_t0_clean_s17.json": "4b58a5c25d4229ef125db1eb482b53e3dcd5d4c3398d599678c2521841ffc4d0",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t0_clean_s17.json": "0296fd3695b886874b772dec1f0298538c82789bc08e1f986e52f537739bc54c",
+    "records/horizon_effect_monitor_20261107_185554_utc/snapshot/records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t0_medium_s17_v1_paired_review_v2.json": "ec44888ceca40501ef392662792095cddc04f8bafa062fc8182c0b7f0f740177",
+    "records/horizon_effect_comparison_20261103_1005/fetch_receipt_phi_horizon_L_H1_2560_t0_medium_s17_v1.json": "7222a9dabf07d13c29c1c23f03ffe86209e1edc0145562723993ab457deeb9a3",
+    "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t0_medium_s17_v1.json": "b0c84cd588ca4161636e6503829b38d7a28437efc1b45f7569c0bdcd9002cad8",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2560_t0_medium_s17.json": "5c687f3955311644521703bafd8c817ac469923331b0e9c89abf69a5c3672983",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t0_medium_s17.json": "d5b3a8ae8c4ece5bfe267ef4d5ed9c411ee6e2df737e28000719fc993d8395cb",
+    "records/horizon_effect_monitor_20261107_185554_utc/snapshot/records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t1_clean_s17_v1_paired_review_v2.json": "a76bfc8ac6b572b76a9098d77f4b66c09efb95f58a23d2fcde70343aa184a8fb",
+    "records/horizon_effect_comparison_20261103_1005/fetch_receipt_phi_horizon_L_H1_2560_t1_clean_s17_v1.json": "856f84f9f4aeea2fdb17d2c1ad44dfa26baf470e130e330d0f25620d942ee13d",
+    "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t1_clean_s17_v1.json": "9760277950c90a8329bdf67ffd5ffd0f9b2bbb87276f61403509cd404f145e41",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2560_t1_clean_s17.json": "0184c5b3d2ee979ab0e689dbad83079cad9958f18accd9e4344e14a651276ad5",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t1_clean_s17.json": "d1c25c2a3bd439c096c25b8d5f51f22c9819bb7e745c32fb3ff98bfa0fe2696f",
+    "records/horizon_effect_monitor_20261107_185554_utc/snapshot/records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t1_medium_s17_v1_paired_review_v2.json": "a82fdb3916f97f2478d956676abf26584910522f74efe5962a2ae2a70db79b45",
+    "records/horizon_effect_comparison_20261103_1005/fetch_receipt_phi_horizon_L_H1_2560_t1_medium_s17_v1.json": "8bb3e4375eb13863e72177d3e150d7e05d9743c3d83a6b379cae758e020c2099",
+    "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t1_medium_s17_v1.json": "2527295857bc5f4597ac1fd497dbb10f172ec6dcf257a286c8dcd31b3293bec2",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2560_t1_medium_s17.json": "6e5335b6c0b9aaf9a125d03726af19f431a73326726e376437117d2f4460de87",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t1_medium_s17.json": "32e967c450d09c553c7bb91606296e516b96992aa88a54b09797faac62559f7a",
+    "records/horizon_effect_monitor_20261107_185554_utc/snapshot/records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t2_clean_s17_v1_paired_review_v2.json": "349d251ae87589837ba559adac88514b38541b1f2fea5c44b5b6d0e1b34b54d6",
+    "records/horizon_effect_comparison_20261103_1005/fetch_receipt_phi_horizon_L_H1_2560_t2_clean_s17_v1.json": "95323fb1c38dc989d7eee1a410bf47c6f0c59d695a2c6e96eb7a1314a6efb529",
+    "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t2_clean_s17_v1.json": "b2433c25a0e3ff177050a027c9f9b1a553dc2209f1a2e346c9cab497db8fbcba",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2560_t2_clean_s17.json": "f0d0ed16292489b544e4612f1c81235d37437b1f469df8b0b1a7d11e797e2089",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t2_clean_s17.json": "5d9f586e142a1d18a2120906a93d747b4371dc2f4553844d47a4ee98d289f5a2",
+    "records/horizon_effect_monitor_20261107_185554_utc/snapshot/records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t2_medium_s17_v1_paired_review_v2.json": "bccf96c63184482a6489e7ebe690b9fc0eba7bb5e6fe15d9f127a055cf053571",
+    "records/horizon_effect_comparison_20261103_1005/fetch_receipt_phi_horizon_L_H1_2560_t2_medium_s17_v1.json": "f3c291f667c4d1f5a5d6c40b29e79344692145007c469bfb5026f42f68e6a64d",
+    "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t2_medium_s17_v1.json": "fc03f5644b323607d506ae7d9e0bec5eaaed29cdbc67f9de58945381987dd172",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2560_t2_medium_s17.json": "832fa4a5597daa3fc258c9213857387fbaf64cbd3774fdd59a6fa2d5006d6441",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t2_medium_s17.json": "ca52a99b1f4dfa1c2faf8f57cc9ff48b7533df63c965f9ddeae736ba335ac938",
+    "records/horizon_effect_monitor_20261107_185554_utc/snapshot/records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t3_clean_s17_v1_paired_review_v2.json": "7e2b34da7573a5c10729384122890c13ac331b9315484e4c3fd0d9d350843b8d",
+    "records/horizon_effect_comparison_20261103_1005/fetch_receipt_phi_horizon_L_H1_2560_t3_clean_s17_v1.json": "67a9892f3a7ea3daff70aed506a59887f282fc9e0151f541dbe42201249b59f2",
+    "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t3_clean_s17_v1.json": "9c3c56992c8e167b4212cf519f4c3cc4aba537abfa233e5b65149da329a53f5e",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2560_t3_clean_s17.json": "362793917eaea5ac9e105a85bb63f8e26743ccb97a12a5c4bf74e6d4355d4ff7",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t3_clean_s17.json": "b6ae4951568470ebf32bb10fa9a693d21cd9a6ef326d4ecf112c93426d0368d6",
+    "records/horizon_effect_monitor_20261107_185554_utc/snapshot/records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t3_medium_s17_v1_paired_review_v2.json": "bb9c6b790b64843c92299db76c21e1e8c97addd028aad08a427bce32e325f05a",
+    "records/horizon_effect_comparison_20261103_1005/fetch_receipt_phi_horizon_L_H1_2560_t3_medium_s17_v1.json": "ca43adde0cba08c49df745d5d09e2690e01896f03a674bd928852f1ada5f8e88",
+    "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t3_medium_s17_v1.json": "f5a122a74d8e2b76b74c5cdddf862dd6f8b47c52cb448a0522a60700a8cd7751",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2560_t3_medium_s17.json": "0dbd725d54376c2f2ec3753c5ba29fc0ec6e50ebe2f4f139988f9eb84d56b7fd",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t3_medium_s17.json": "b27c79c1397d4b9f7192ce743edf2f7c619c0ca1d5b37d822d0f8ee1a7a3f752",
+    "records/horizon_effect_monitor_20261107_185554_utc/snapshot/records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t4_clean_s17_v1_paired_review_v2.json": "b715bb88467ee67f373eba7cf84dd832060c984631b26b8f45645047c79db91f",
+    "records/horizon_effect_comparison_20261103_1005/fetch_receipt_phi_horizon_L_H1_2560_t4_clean_s17_v1.json": "948a88d6f1e71fbc963e9206371d2542aa49f5044166cb613e42ee84777f759d",
+    "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t4_clean_s17_v1.json": "fd88e4990384b6aa5817e7ac5b81a3434f3b636de16b6dc576ef92b5dbed5b44",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2560_t4_clean_s17.json": "7701f7ce3595812adc3d05860b0d122a585fcf4a4cb31620ca54c81358219b71",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t4_clean_s17.json": "01dc10129f69cfff840b1a203c456b56906c3fd0d67e8e2e8170b0181416b395",
+    "records/horizon_effect_monitor_20261107_185554_utc/snapshot/records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t4_medium_s17_v1_paired_review_v2.json": "55f400afc26dba9fcf8473ad3a7b40ea4569ff48b1c2ca51e7ae930ef5853810",
+    "records/horizon_effect_comparison_20261103_1005/fetch_receipt_phi_horizon_L_H1_2560_t4_medium_s17_v1.json": "7bbb30cb00c1b79a671af982d8b2694159cbbee74b666ca63929c0aa558c26b0",
+    "records/horizon_effect_comparison_20261103_1005/phi_horizon_L_H1_2560_t4_medium_s17_v1.json": "48755218585f8aeab873dd7b27a04cefcefef21f54e6cc9ebb99d1903d829c63",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2560_t4_medium_s17.json": "9840c88a902b1e1a5247813d5232fa68ec92ef5bf0a17a847bcf593f9fda3ce6",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t4_medium_s17.json": "7a6c073389ac0ba3bffdecf472c3350a1316f4066a3b460993b452b652d195b1",
+    "records/horizon_effect_comparison_20261103_1005/review_complete_ten_pairs_20261107.py": "610500d0fbd571cbd1c9e3c938b2db13162c18eadd4f28840c4d73da5f67081e"
+  },
+  "selection_policy_changed": false,
+  "horizon_selected": false,
+  "method_validated": false,
+  "scientific_promotion_allowed": false,
+  "full_goal_complete": false,
+  "training_modified_or_restarted": false
+}

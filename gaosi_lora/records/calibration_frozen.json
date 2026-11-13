@@ -1,0 +1,34 @@
+{
+  "status": "CALIBRATION_FROZEN",
+  "q_light": 0.5,
+  "q_medium": 0.7,
+  "recovery_lr": 0.0003,
+  "capacity_lr": 0.0003,
+  "rank": 32,
+  "targets": "all7",
+  "scale": 1.0,
+  "recovery_K": 32,
+  "factor_ba_ratio": 16.0,
+  "stopping_rule_frozen": true,
+  "ordinary_recovery_validated": true,
+  "development_parent": "runs/parent_3b_dev_parent_r32_s17_extend512_v2/latest.pt",
+  "development_plan": "records/recovery_development_plan.json",
+  "world_manifest": "data/synthetic/rules_integer_v1/active_manifest.json",
+  "trials": {
+    "3e-05": "runs/recovery_dev_medium_lr3e-05_s17",
+    "0.0001": "runs/recovery_dev_medium_lr0.0001_s17",
+    "0.0003": "runs/recovery_dev_medium_lr0.0003_s17"
+  },
+  "controls": {
+    "clean": "runs/recovery_dev_clean_lr0.0003_s17",
+    "light": "runs/recovery_dev_light_lr0.0003_s17",
+    "paired_medium": "runs/recovery_dev_paired_medium_s17",
+    "factor_medium": "runs/recovery_dev_factor_medium_s17",
+    "shrink": "runs/recovery_dev_shrink_s17",
+    "uniform": "runs/recovery_dev_uniform_s17",
+    "factor": "runs/recovery_dev_factor_s17",
+    "fixed_update_norm_shrink": "runs/recovery_dev_shrink_fixednorm_s17"
+  },
+  "formal_data_used": false,
+  "next": "Real three-route H2 and endpoint meta-optimizer profile before full phi schedules; this is not phi freezing."
+}

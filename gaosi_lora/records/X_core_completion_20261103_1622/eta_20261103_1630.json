@@ -1,0 +1,31 @@
+{
+  "recorded_at_utc": "2026-11-03T16:33:18.347060+00:00",
+  "source": "records/observed_blocking_core_monitor_20261101_070654_utc/snapshot/runs/phi_mix_O1_L_H2_core_s17_observed_blocking_v8/events.jsonl",
+  "source_sha256": "cbf5b045408ad93b37cfd73ee6e5fd8639fc180a4756f085b4cdc7094f2518de",
+  "reference_scope": "L-H2 episodes64..191,128x16=2048 additional updates",
+  "reference_elapsed_hours": 34.7898326706224,
+  "reference_median_episode_seconds": 948.4159444570541,
+  "H1_stage_rough_hours": [
+    30,
+    40
+  ],
+  "H1_speed_measured": false,
+  "H1_start_evidence": "NOT_STARTED_AWAITING_EXISTING_CONTROLLER_POLL",
+  "H1_start_evidence_at_utc": "2026-11-03T16:29:05.440003+00:00",
+  "assumptions": [
+    "Existing controller starts common-warm H1; no interruption or new invalidity.",
+    "H1 elapsed time is extrapolated from paired L-H2, not directly measured H1."
+  ],
+  "full_protocol_estimate": "Several weeks as a low-confidence scheduling scale, not a measured completion forecast.",
+  "full_protocol_remaining": [
+    "H1 and development comparisons/conditional matched extension",
+    "Four organization adaptations and matched clean phi",
+    "Formal recovery/selective/reflow/continual comparisons",
+    "7B mixed/clean local training and transfer",
+    "Independent phi seeds29/43 and statistics",
+    "Conditional protocol follow-ups"
+  ],
+  "method_validated": false,
+  "full_goal_complete": false,
+  "additional_remote_training_telemetry_polled": false
+}

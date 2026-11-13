@@ -1,0 +1,14 @@
+{
+  "out": "runs/diagnose_L_clean_K2_gradient_s17_v2",
+  "device": "musa",
+  "source_config": "configs/phi_L_real_episode_readiness_s17.json",
+  "source_config_sha256": "dedfe92961ffd2969a4b601b141583f51d4e77c5bfc11ac59a7e873a453896ea",
+  "epsilons": [
+    0.001,
+    0.01,
+    0.1
+  ],
+  "purpose": "Clean K2 real backend gradient sensitivity after moving statistics to CPU; no phi update",
+  "formal_data_used": false,
+  "script_sha256": "57722f9f08dac73de7cceb1799a721fbc782d1b68fe9a6dbef6ceeb93c959a82"
+}

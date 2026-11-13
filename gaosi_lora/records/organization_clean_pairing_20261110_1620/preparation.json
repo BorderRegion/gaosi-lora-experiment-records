@@ -1,0 +1,11 @@
+{
+  "status": "UNEXECUTED_PRIMARY_QUEUE_SCHEMA_CORRECTION_PREPARED",
+  "recorded_at_utc": "2026-11-10T16:20:20.733436+00:00",
+  "issue": "Production gaosi.meta result has no config field; v1 assumed one when recording paired clean stages.",
+  "source_sha256": "c2fbe946e27f1eb01da102229dcd3215332012c6edc7e78b8caa2a4a92af3db5",
+  "corrected_sha256": "7e3b37b630891150dd6f939dc21dc52c5d4024e962d50c38151aa80cfa6e5724",
+  "original_numerical_sources_modified": false,
+  "training_or_controller_modified": false,
+  "method_validated": false,
+  "full_goal_complete": false
+}

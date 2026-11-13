@@ -1,0 +1,17 @@
+{
+  "name": "reflow_statistics_cpu_v1",
+  "command": [
+    "/usr/bin/python",
+    "-u",
+    "tools/validate_reflow_statistics.py"
+  ],
+  "wrapper_pid": 98862,
+  "started_at_utc": "2026-10-29T13:52:37.541164+00:00",
+  "start_epoch": 1793281957.5411818,
+  "status": "PASS",
+  "child_pid": 98863,
+  "child_proc_start_ticks": "55602704",
+  "exit_code": 0,
+  "wall_seconds": 28.66580557823181,
+  "finished_at_utc": "2026-10-29T13:53:06.206993+00:00"
+}

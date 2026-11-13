@@ -1,0 +1,20 @@
+--- original/noise_controls_queue.py
++++ tools/noise_controls_queue.py
+@@ -5,7 +5,7 @@
+ from pathlib import Path
+ import sys
+ 
+-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
++sys.path.insert(0, str(Path.cwd()))
+ from gaosi.scale import sha256, valid_freeze
+ from organization_queue import wait_for
+ from phi_core_queue import run_job
+@@ -97,7 +97,7 @@
+     preserve_json('records/noise_controls_policy_v1.json', POLICY)
+     if json.loads(Path('checks/noise_controls_cpu.json').read_text())['status'] != 'PASS':
+         raise RuntimeError('Noise-control entry/schedule checks must pass first')
+-    all_frozen = wait_for('records/all_phi_frozen.json', 'organization_queue_v1')
++    all_frozen = wait_for('records/all_phi_frozen.json', 'organization_queue_recompute_v7')
+     freezes = {'mixed': all_frozen['manifests']['O1'], 'clean': all_frozen['manifests']['O1_clean']}
+     mix, clean = [valid_freeze(freezes[k]) for k in ['mixed', 'clean']]
+     calibration = json.loads(Path('records/calibration_frozen.json').read_text())

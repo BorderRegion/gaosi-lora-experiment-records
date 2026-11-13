@@ -1,0 +1,23 @@
+{
+  "observed_at_local": "2026-10-30T05:20:38+08:00",
+  "remote_host": "autodl-container-kaltlgmeta-f374ee08",
+  "scope": "Read-only post-expansion environment and active readiness check",
+  "project_directory": "/root/autodl-tmp/gaosi_lora",
+  "data_volume": {
+    "mount": "/root/autodl-tmp",
+    "source": "/dev/md0",
+    "filesystem": "xfs",
+    "size": "1 TiB",
+    "used": "about 67 GiB",
+    "available": "about 983.5 GiB"
+  },
+  "job": {
+    "name": "diagnose_L_training_recompute_v7",
+    "status": "RUNNING",
+    "wrapper_pid": 331675,
+    "child_pid": 331676,
+    "started_at_utc": "2026-10-29T21:17:37.371876+00:00",
+    "purpose": "Two real 3B L readiness repetitions; diagnostic only, no formal data"
+  },
+  "note": "SSH, project volume mount, job working directory, and registered job record were readable. No training command was started or stopped."
+}

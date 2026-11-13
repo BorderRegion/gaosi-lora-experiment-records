@@ -1,0 +1,22 @@
+{
+  "status": "TERMINAL_OBSERVER_TRANSPORT_FAILURE_CAPTURE_RECOVERED_WITHOUT_RECOLLECTION",
+  "recorded_at_utc": "2026-11-10T05:28:58.271527+00:00",
+  "previous_goal_turn": "progress_scheduled_capture_rehashed_and_verified_wait",
+  "current_goal_turn": "progress_resume_immutable_capture_and_replace_terminal_observer",
+  "old_observer_pid": 1620545,
+  "old_observer_start_ticks": "150866375",
+  "old_observer_authoritatively_terminal": true,
+  "observation": "records/pipeline_monitor_20261110_052022_utc",
+  "archive_sha256": "e55949ebb8c18244c4b28428216b559b0e81df5ed688d9d858cdc7c891b2c4e1",
+  "source_files_rehashed": 163,
+  "original_partial_archive_preserved": "records/pipeline_recovery_20261110_0525/archive_transfer/partial_before_resume.tar.gz",
+  "collector_resubmitted": false,
+  "predecessor_observations_modified": false,
+  "new_ledger_contains_13_existing_and_one_recovered_capture": true,
+  "preflight": "records/pipeline_recovery_20261110_0525/preflight.json",
+  "preflight_sha256": "7390753f8270397578840e6799612c97a905e69234fbf11b991bf6fd75bb68c7",
+  "transfer_receipt_sha256": "5062f1987fb4535c174d1bf48cbc4db7e0606b3f4a59231e94ea3d52c4ae4f00",
+  "training_or_original_controllers_modified_or_restarted": false,
+  "method_validated": false,
+  "full_goal_complete": false
+}

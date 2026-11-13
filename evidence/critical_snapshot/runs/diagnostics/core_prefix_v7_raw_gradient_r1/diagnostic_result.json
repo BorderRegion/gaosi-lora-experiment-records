@@ -1,0 +1,13 @@
+{
+  "status": "EXECUTED_REQUIRES_SCIENTIFIC_REVIEW",
+  "method_validated": false,
+  "formal_data_used": false,
+  "production_modified": false,
+  "diagnostic_inner_updates_max": 64,
+  "limitations": [
+    "Instrumented reconstruction, not the historical trajectory.",
+    "CPU copies introduce synchronization and can change backend behavior.",
+    "Execution success does not establish gradient correctness."
+  ],
+  "finished_at_utc": "2026-10-30T03:09:32.211521+00:00"
+}

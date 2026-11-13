@@ -1,0 +1,118 @@
+{
+  "version": "integer_affine_interpolation_v1",
+  "phase": "development_pilot",
+  "reason": "Original mod11 worlds fit support but fail disjoint x queries at three-LR screen; simplify arithmetic and remove extrapolation before phi training.",
+  "seed": 314159,
+  "splits_generated": [
+    "dev"
+  ],
+  "meta_final_generated": false,
+  "a_values": [
+    1,
+    2
+  ],
+  "b_values": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "support_x": [
+    0,
+    1,
+    2,
+    4,
+    6,
+    8,
+    10
+  ],
+  "query_x": [
+    3,
+    5,
+    7,
+    9
+  ],
+  "ordinary_budget": {
+    "steps": 128,
+    "lr": 0.0003
+  },
+  "query_selection": "All predefined dev query examples. No final results used.",
+  "worlds": [
+    {
+      "world_id": "dev_integer_world_000",
+      "file": "dev_integer_world_000.jsonl",
+      "sha256": "5ce527b91b07df51cc12fafaf7be0b0292ae28aaf32a1d0ad73f3fd1c17fc846"
+    },
+    {
+      "world_id": "dev_integer_world_001",
+      "file": "dev_integer_world_001.jsonl",
+      "sha256": "71844daf82a62c173509706198e703e0b7d7d6918c35a1e84928958602912290"
+    },
+    {
+      "world_id": "dev_integer_world_002",
+      "file": "dev_integer_world_002.jsonl",
+      "sha256": "238bf520b1e2352f8afe89859f825d71b771bfe10d0593fd7fbe39aedc3fcc35"
+    },
+    {
+      "world_id": "dev_integer_world_003",
+      "file": "dev_integer_world_003.jsonl",
+      "sha256": "f22f78573735af6e03652c267f395cef627b2d1696e6ca0fbddeab8528ff10b5"
+    },
+    {
+      "world_id": "dev_integer_world_004",
+      "file": "dev_integer_world_004.jsonl",
+      "sha256": "1de829b94422b6cf79b068e5f5c70bc0748788edba29da90eaef62315ad6f52e"
+    },
+    {
+      "world_id": "dev_integer_world_005",
+      "file": "dev_integer_world_005.jsonl",
+      "sha256": "ec478f84540402bbc94b94cb0c31fb607ae4548189581e73f9396f666d09838a"
+    },
+    {
+      "world_id": "dev_integer_world_006",
+      "file": "dev_integer_world_006.jsonl",
+      "sha256": "f0eeca10fce8cde99fbb7885d00bab0110bdfc22cb37a06b75bb98069516127b"
+    },
+    {
+      "world_id": "dev_integer_world_007",
+      "file": "dev_integer_world_007.jsonl",
+      "sha256": "b4234d6bc226e6a3b8fc3f552ee55d21517ecdcc70169ab7eac996dbcb38f6a8"
+    }
+  ],
+  "oracles_offline_only": {
+    "dev_integer_world_000": {
+      "a": 1,
+      "b": 0
+    },
+    "dev_integer_world_001": {
+      "a": 2,
+      "b": 0
+    },
+    "dev_integer_world_002": {
+      "a": 2,
+      "b": 2
+    },
+    "dev_integer_world_003": {
+      "a": 1,
+      "b": 2
+    },
+    "dev_integer_world_004": {
+      "a": 2,
+      "b": 2
+    },
+    "dev_integer_world_005": {
+      "a": 1,
+      "b": 2
+    },
+    "dev_integer_world_006": {
+      "a": 1,
+      "b": 0
+    },
+    "dev_integer_world_007": {
+      "a": 1,
+      "b": 0
+    }
+  },
+  "combined_sha256": "a40d8efb53bc9a918973f3b7d0fe7e1587abdfdfc2fd038c299b03091a998ea1"
+}

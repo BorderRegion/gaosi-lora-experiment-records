@@ -1,0 +1,14 @@
+{
+  "name": "organization_queue_recompute_v7",
+  "command": [
+    "/usr/bin/python",
+    "-u",
+    "/root/autodl-tmp/gaosi_lora/records/pipeline_recompute_v7/tools/organization_queue.py"
+  ],
+  "wrapper_pid": 379872,
+  "started_at_utc": "2026-10-29T22:58:26.053368+00:00",
+  "start_epoch": 1793314706.0533855,
+  "status": "RUNNING",
+  "child_pid": 379873,
+  "child_proc_start_ticks": "58877555"
+}

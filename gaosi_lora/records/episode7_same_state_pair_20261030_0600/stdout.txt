@@ -1,0 +1,132 @@
+{
+  "created_at_utc": "2026-10-30T05:59:16.280868+00:00",
+  "status": "TWO_BOUNDED_DIAGNOSTICS_LAUNCHED_SAME_DEVICE_LOCK",
+  "experiment": "Four repeated no-update reconstructed episode7 analytic replays per process, async then blocking, same pinned starting phi/RNG/streams",
+  "production_modified_or_restarted": false,
+  "formal_data_used": false,
+  "core_budget_credit": 0,
+  "diagnostic_inner_updates_max": 64,
+  "diagnostic_meta_updates_max": 0,
+  "device_lock_inode": 31148027670,
+  "jobs": [
+    {
+      "job": "diagnose_L_episode7_same_state_async_r1",
+      "config": "configs/diagnose_L_episode7_same_state_async_r1.json",
+      "config_sha256": "531c4a5830a7f6f8fea42db58378c0ce10f1c8f15b320770b12787e6a52ce366",
+      "MUSA_LAUNCH_BLOCKING": null,
+      "validation": {
+        "status": "VALIDATED_NOT_EXECUTED",
+        "episode": 7,
+        "output": "/root/autodl-tmp/gaosi_lora/runs/diagnostics/L_episode7_same_state_async_r1",
+        "phi_updates": 0
+      },
+      "command": [
+        "/usr/bin/python",
+        "-u",
+        "tools/job.py",
+        "--name",
+        "diagnose_L_episode7_same_state_async_r1",
+        "--musa-lock",
+        "/tmp/gaosi_musa_device0.lock",
+        "--",
+        "/usr/bin/env",
+        "-u",
+        "MUSA_LAUNCH_BLOCKING",
+        "/usr/bin/python",
+        "-u",
+        "tools/diagnose_repeat_gradient.py",
+        "--config",
+        "configs/diagnose_L_episode7_same_state_async_r1.json"
+      ],
+      "wrapper_pid": 585691,
+      "wrapper_start_ticks": "61402578",
+      "job_state": {
+        "name": "diagnose_L_episode7_same_state_async_r1",
+        "command": [
+          "/usr/bin/env",
+          "-u",
+          "MUSA_LAUNCH_BLOCKING",
+          "/usr/bin/python",
+          "-u",
+          "tools/diagnose_repeat_gradient.py",
+          "--config",
+          "configs/diagnose_L_episode7_same_state_async_r1.json"
+        ],
+        "wrapper_pid": 585691,
+        "started_at_utc": "2026-10-30T05:59:16.317681+00:00",
+        "start_epoch": 1793339956.317701,
+        "status": "RUNNING",
+        "device_lock": {
+          "path": "/tmp/gaosi_musa_device0.lock",
+          "version": 1
+        },
+        "child_pid": 585692,
+        "child_proc_start_ticks": "61402582"
+      },
+      "identity_live": true,
+      "observed_child_launch_blocking": [],
+      "log_tail": "{\"event\": \"waiting_device\", \"utc\": \"2026-10-30T05:59:16.348752+00:00\", \"job\": \"diagnose_L_episode7_same_state_async_r1\", \"lock\": \"/tmp/gaosi_musa_device0.lock\"}\n{\"event\": \"device_acquired\", \"utc\": \"2026-10-30T05:59:16.354519+00:00\", \"job\": \"diagnose_L_episode7_same_state_async_r1\", \"lock\": \"/tmp/gaosi_musa_device0.lock\"}\n"
+    },
+    {
+      "job": "diagnose_L_episode7_same_state_blocking_r1",
+      "config": "configs/diagnose_L_episode7_same_state_blocking_r1.json",
+      "config_sha256": "fbc5dd6022a978bb2d110376e052573964457de232e2b1987dae587271be5e27",
+      "MUSA_LAUNCH_BLOCKING": "1",
+      "validation": {
+        "status": "VALIDATED_NOT_EXECUTED",
+        "episode": 7,
+        "output": "/root/autodl-tmp/gaosi_lora/runs/diagnostics/L_episode7_same_state_blocking_r1",
+        "phi_updates": 0
+      },
+      "command": [
+        "/usr/bin/python",
+        "-u",
+        "tools/job.py",
+        "--name",
+        "diagnose_L_episode7_same_state_blocking_r1",
+        "--musa-lock",
+        "/tmp/gaosi_musa_device0.lock",
+        "--",
+        "/usr/bin/env",
+        "MUSA_LAUNCH_BLOCKING=1",
+        "/usr/bin/python",
+        "-u",
+        "tools/diagnose_repeat_gradient.py",
+        "--config",
+        "configs/diagnose_L_episode7_same_state_blocking_r1.json"
+      ],
+      "wrapper_pid": 585693,
+      "wrapper_start_ticks": "61402588",
+      "job_state": {
+        "name": "diagnose_L_episode7_same_state_blocking_r1",
+        "command": [
+          "/usr/bin/env",
+          "MUSA_LAUNCH_BLOCKING=1",
+          "/usr/bin/python",
+          "-u",
+          "tools/diagnose_repeat_gradient.py",
+          "--config",
+          "configs/diagnose_L_episode7_same_state_blocking_r1.json"
+        ],
+        "wrapper_pid": 585693,
+        "started_at_utc": "2026-10-30T05:59:16.419084+00:00",
+        "start_epoch": 1793339956.419102,
+        "status": "RUNNING",
+        "device_lock": {
+          "path": "/tmp/gaosi_musa_device0.lock",
+          "version": 1
+        },
+        "child_pid": 585694,
+        "child_proc_start_ticks": "61402592"
+      },
+      "identity_live": true,
+      "observed_child_launch_blocking": [],
+      "log_tail": "{\"event\": \"waiting_device\", \"utc\": \"2026-10-30T05:59:16.450015+00:00\", \"job\": \"diagnose_L_episode7_same_state_blocking_r1\", \"lock\": \"/tmp/gaosi_musa_device0.lock\"}\n"
+    }
+  ],
+  "limitations": [
+    "Same starting phi is restored from the same preserved prefix checkpoint; compare actual tensor bytes and all logged forward records before same-state conclusions.",
+    "No finite-gradient or exit-code result alone validates H2.",
+    "Environment setting is recognized by installed backend source; runtime efficacy still to be measured."
+  ]
+}

@@ -1,0 +1,1 @@
+{"status": "COMPLETED_ORGANIZATION_SPECIALIZATION_LEDGER_AND_WARM_ENDPOINT_TENSORS_INSPECTED", "run": "runs/phi_mix_O1_X_specialize512_s17_observed_blocking_v8", "organization": "O1", "episodes_checked": 64, "inner_steps_checked": 512, "phi_parameters": 83795, "initial_optimizer_step": 192, "final_optimizer_step": 256, "phi_change_l2_from_common_core": 2.5282665156208837}

@@ -1,0 +1,64 @@
+{
+  "reviewed_at_utc": "2026-10-31T04:07:10.968191+00:00",
+  "previous_goal_turn": "verified_wait_and_new_training_evidence",
+  "current_goal_turn": "verified_wait_and_new_training_evidence",
+  "reviewer_source": "records/observed_blocking_core_20261030_0810/review_snapshot.py",
+  "reviewer_source_sha256": "1ff458035bbb2a7607dd51eb0a3a8b808017caa7ab9907e79bc230645f41a5ff",
+  "observer_live": true,
+  "observer_pid": 202579,
+  "observer_start_ticks": "59350385",
+  "observation": {
+    "observation": "records/observed_blocking_core_monitor_20261031_040646_utc",
+    "archive_sha256": "56a17e5d15fd4ad4dda7d5a1ee3e5e46a44cd24369163281051b677c226a88ac",
+    "verified_source_files": 43,
+    "job_status": "RUNNING",
+    "alerts": [],
+    "production_modified_or_restarted": false
+  },
+  "archive_independently_verified": true,
+  "independently_rehashed_files": 43,
+  "committed_episodes": 96,
+  "committed_inner_updates": 1024,
+  "current_L_inner_update_fraction": 0.4,
+  "all_raw_gradient_ledger_rows_checked": 96,
+  "all_raw_gradients_recorded_finite": true,
+  "available_gradient_artifact_hashes_checked": 2,
+  "max_raw_norm": 0.5823351201809523,
+  "guard_errors": [],
+  "checkpoint": {
+    "copied_artifact_sha256": "6ddd78b9d8548d94e7ae6f40595a1f1cb69a77fca36b0bf14daf4d22d1a021e6",
+    "next_episode": 96,
+    "inner_updates": 1024,
+    "phi_finite": true,
+    "optimizer_finite": true,
+    "config_equal": true
+  },
+  "production_identity": {
+    "pid": 650716,
+    "state": "R",
+    "start_ticks": "62167024",
+    "matches": true,
+    "cmdline": "/usr/bin/python -u tools/train_observed_meta.py --manifest records/observed_blocking_core_20261030_0810/training_manifest.json ",
+    "launch_blocking_environment": [
+      "MUSA_LAUNCH_BLOCKING=1"
+    ]
+  },
+  "K16_timing": {
+    "completed_episodes": 32,
+    "mean_seconds_per_episode": 949.35696259375,
+    "remaining_episodes": 96,
+    "rough_remaining_hours_at_same_mean": 25.31618566916667,
+    "limitation": "Timing varies by episode mode; not a full protocol ETA."
+  },
+  "next_due_at_utc": "2026-10-31T04:36:46.511302+00:00",
+  "method_validated": false,
+  "downstream_promotion_allowed": false,
+  "production_modified_or_restarted": false,
+  "additional_training_telemetry_polled": false,
+  "limitations": [
+    "Checkpoint tensor finiteness comes from the scheduled CPU inspection.",
+    "Local checks verify hashes and ledgers, not H2 derivatives.",
+    "Active files may reflect adjacent moments; this is not an atomic run snapshot."
+  ],
+  "full_goal": "incomplete; current L and subsequent full protocol execution/review remain"
+}

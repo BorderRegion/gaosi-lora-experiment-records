@@ -1,0 +1,17 @@
+{
+  "name": "recovery_dev_medium_lr0.0003_s17",
+  "command": [
+    "/usr/bin/python",
+    "-u",
+    "-m",
+    "gaosi.recover",
+    "--config",
+    "configs/recovery_dev_medium_lr0.0003_s17.json"
+  ],
+  "wrapper_pid": 498691,
+  "started_at_utc": "2026-10-29T08:26:53.279385+00:00",
+  "start_epoch": 1793262413.2794085,
+  "status": "RUNNING",
+  "child_pid": 498692,
+  "child_proc_start_ticks": "53648278"
+}

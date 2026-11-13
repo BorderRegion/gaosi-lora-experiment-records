@@ -1,0 +1,11 @@
+--- original/reflow_queue.py
++++ tools/reflow_queue.py
+@@ -140,7 +140,7 @@
+ def main():
+     parser = argparse.ArgumentParser()
+     parser.add_argument('--calibration-job', default='calibration_queue_v3')
+-    parser.add_argument('--formal-job', default='formal_recovery_queue_v2')
++    parser.add_argument('--formal-job', default='formal_recovery_queue_recompute_v7')
+     args = parser.parse_args()
+     preserve_json('records/reflow_policy_v1.json', POLICY)
+     if json.loads(Path('checks/reflow_v2_cpu.json').read_text())['status'] != 'PASS':

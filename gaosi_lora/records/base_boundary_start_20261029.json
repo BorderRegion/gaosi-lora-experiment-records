@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-29T12:18:03.689755+00:00",
+  "job": "base_boundary_queue_v1",
+  "wrapper_pid": 68030,
+  "check_count": 11,
+  "source_sha256": {
+    "gaosi/base_boundary.py": "4266d288301c610dd3cacd1569c49a46c8da33463c3ec0f8a92f7429a09752cd",
+    "tools/base_boundary_queue.py": "5f2e42930a619c7ab455519059daf5c3a9d20089311121cb10dcef6480beea6e",
+    "tools/validate_base_boundary.py": "48dcc099c3dad99d302ce39e0637231de9cee8488a297b64b1fcc98c557f66b2",
+    "tools/device_guard.py": "3addff6a06a7804437786f0480c77c7b850ec0b36a4010a5e456a65d50415299",
+    "gaosi/recover.py": "137254bb3a154b0113c82b841a66e75343f3a333337a465a61101881a828bafa"
+  },
+  "waiting_for": "development calibration",
+  "real_3b_boundary_complete": false,
+  "child_pid": 68031,
+  "child_proc_start_ticks": "55035323",
+  "verified_live_in": "records/supervision_20261029_2018.json"
+}

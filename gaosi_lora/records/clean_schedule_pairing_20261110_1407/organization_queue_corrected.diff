@@ -1,0 +1,49 @@
+--- records/pipeline_observed_blocking_v8/tools/organization_queue.py
++++ records/clean_schedule_pairing_20261110_1407/organization_queue_corrected.py
+@@ -10,6 +10,12 @@
+ import json
+ from pathlib import Path
+ import time
++
++# This separately versioned queue uses unchanged production leaf implementations.
++# It must be started only after an explicit idle-boundary controller handoff.
++import sys
++sys.path.insert(0, str((Path.cwd() / 'tools').resolve()))
++sys.path.insert(0, str((Path.cwd() / 'records/pipeline_observed_blocking_v8/tools').resolve()))
+ 
+ from phi_core_queue import run_job, train
+ from phi_development_queue import preserve_json
+@@ -133,11 +139,30 @@
+                           historical_bases=[r['master'] for r in histories],
+                           historical_data=[r['historical_bindings'] for r in histories])
+         endpoints[organization] = train(f'phi_mix_{organization}_{architecture}_specialize512_s17_observed_blocking_v8', config)
++    # Match both mixed stages, including its specialization episode/stream
++    # restart, while inheriting the clean core's actual phi and Adam state.
++    clean_core = copy.deepcopy(core)
++    clean_core.update(episode_K=core_schedule, q_cycle=[0.],
++                      purpose='O1_clean_core_matched_non_noise_schedule')
++    clean_core_result = train(
++        f'phi_clean_O1_{architecture}_core_paired_s17_observed_blocking_v8', clean_core)
++    assert clean_core_result['inner_updates'] == plan['core_inner_steps']
+     clean = copy.deepcopy(core)
+-    clean.update(episode_K=core_schedule + [8] * 64, q_cycle=[0.],
+-                 purpose='O1_clean_matched_full_core_plus_specialization_budget')
++    clean.update(episode_K=[8] * 64, known_warm_episodes=0, q_cycle=[0.],
++                 initial_phi=clean_core_result['checkpoint'], load_initial_meta_optimizer=True,
++                 purpose='O1_clean_specialization_matched_non_noise_schedule')
+     clean_result = train(f'phi_clean_O1_{architecture}_matched_s17_observed_blocking_v8', clean)
+-    assert clean_result['inner_updates'] == plan['total_O1_mix_clean_inner_steps']
++    assert clean_result['inner_updates'] == 512
++    assert clean_core_result['inner_updates'] + clean_result['inner_updates'] == plan['total_O1_mix_clean_inner_steps']
++    preserve_json('records/clean_training_stage_pairing_v1.json', {
++        'status': 'TWO_ACTUAL_CLEAN_STAGES_COMPLETED_AND_REVIEWED',
++        'core': clean_core_result['config']['out'], 'specialization': clean_result['config']['out'],
++        'core_inner_steps': clean_core_result['inner_updates'],
++        'specialization_inner_steps': clean_result['inner_updates'],
++        'total_training_inner_steps': plan['total_O1_mix_clean_inner_steps'],
++        'optimizer_inherited': True, 'specialization_schedule_restarts_at_episode': 0,
++        'q_cycle': [0.], 'formal_data_used': False,
++        'limitation': 'Routing and budget pairing do not establish efficacy or validate derivatives.'})
+     manifests = {}
+     for key, result in list(endpoints.items()) + [('O1_clean', clean_result)]:
+         checkpoint = result['checkpoint']

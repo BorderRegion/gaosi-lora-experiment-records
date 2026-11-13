@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/diff/gaosi_lora/records/pipeline_observer_20261110_1315/observe.py", line 126, in <module>
+    main()
+  File "/home/ubuntu/diff/gaosi_lora/records/pipeline_observer_20261110_1315/observe.py", line 109, in main
+    result, count, digest = capture_once(relative, index)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/diff/gaosi_lora/records/pipeline_observer_20261110_1315/observe.py", line 81, in capture_once
+    result, count = module.fetch(relative, info['sha256'], RECORD / ('transfer_' + str(index)))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/diff/gaosi_lora/records/pipeline_recovery_20261110_0525/archive_transport.py", line 59, in fetch
+    data = transport.remote(code, {'relative': relative, **chunk}, timeout=90)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/diff/gaosi_lora/records/scheduled_review_resilience_20261109_0925/complete_resilient_review.py", line 51, in remote
+    assert attempt < attempts, 'Transport retries exhausted; preserve artifacts and inspect'
+           ^^^^^^^^^^^^^^^^^^
+AssertionError: Transport retries exhausted; preserve artifacts and inspect

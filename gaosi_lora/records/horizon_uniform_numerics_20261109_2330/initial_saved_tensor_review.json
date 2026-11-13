@@ -1,0 +1,90 @@
+{
+  "status": "UNIFORM_H1_H2_SAVED_ENDPOINT_GATE_INDEPENDENTLY_PASSED",
+  "recorded_at_utc": "2026-11-10T13:06:03.117057+00:00",
+  "runs": [
+    {
+      "run": "runs/horizon_known_K4_H1_uniform_s17_observed_blocking_v8",
+      "tail": 1,
+      "gradient_norm": 0.0916966910174969,
+      "endpoint_sha256": "8d3a1102e06d0f46ada00931c16a2e263ff22b672e1e4f1c9c0878f76c3579e8",
+      "terminal": {
+        "query_task": 0.12828794121742249,
+        "query_language": 2.181528329849243,
+        "query_keep": 0.12828794121742249,
+        "objective": 0.13953474164009094
+      },
+      "support_mode_calls": {
+        "detached_prefix_or_H1": 12,
+        "exact_tail": 0
+      }
+    },
+    {
+      "run": "runs/horizon_known_K4_H2_uniform_s17_observed_blocking_v8",
+      "tail": 2,
+      "gradient_norm": 0.07743692308801305,
+      "endpoint_sha256": "8d3a1102e06d0f46ada00931c16a2e263ff22b672e1e4f1c9c0878f76c3579e8",
+      "terminal": {
+        "query_task": 0.12828794121742249,
+        "query_language": 2.181528329849243,
+        "query_keep": 0.12828794121742249,
+        "objective": 0.13953474164009094
+      },
+      "support_mode_calls": {
+        "detached_prefix_or_H1": 6,
+        "exact_tail": 6
+      }
+    }
+  ],
+  "full_state_and_sample_flow_comparison": {
+    "tensor_count": 5548,
+    "max_absolute_difference": 0.0,
+    "relative_l2_difference": 0.0,
+    "atol": 1e-06,
+    "rtol": 1e-05
+  },
+  "H1_gradient_relative_to_H2": {
+    "gradient_norm": 0.0916966910174969,
+    "full_gradient_norm": 0.07743692308801305,
+    "relative_l2_error": 0.30287300881164986,
+    "cosine": 0.9755849606822855,
+    "both_zero": false
+  },
+  "evidence_sha256": {
+    "gaosi/horizon.py": "f31ccc7834ce05d1a391941e2da33aeedd1a7d9a0f573cea4900d34706ad9cfa",
+    "gaosi/meta.py": "f9cf49a2975791fa3466e6caaa31bb8312a20eec64244a4f33d205cf1607ca69",
+    "gaosi/recompute.py": "04f0fe1119f03657647f23cac7d35e9c903cfeb5f05f0f8637d019002167528e",
+    "gaosi/transition.py": "5afa7bc2c61b6e81a6f024026c02fe29761a11e8b65925aabafd525e57ead477",
+    "records/horizon_uniform_numerics_20261109_2330/audit_initial.py": "fbf537c3630b48f669510db45f8182462e83eb24a27ebee2e85c62fa79ad2567",
+    "records/horizon_uniform_numerics_20261109_2330/initial_gate_completed.json": "26ab72699b9a10e7486e147d1697b2cd706dc796d7d8b0baed3544eae71d6c7b",
+    "records/horizon_uniform_numerics_20261109_2330/launch_receipt.json": "ed61e2a81420374e2914a4929b08413d122415bb25fb2187848c3138df2314b1",
+    "records/horizon_uniform_numerics_20261109_2330/plan.json": "a765bd67ea24776836cced76346699663d396696e2db234288503ed5589e64c6",
+    "records/horizon_uniform_numerics_20261109_2330/probe_tensor_audit.json": "62816c78793953322b650e8a42e0d5490e95f70f7f47f7d20d2a458c950e42a1",
+    "records/horizon_uniform_numerics_20261109_2330/run.py": "d483ac70a70fee21ac81ba23f75542f78c817c5ae245f745057dc80feb4c2292",
+    "records/horizon_uniform_numerics_20261109_2330/uniform_direct_chain_cpu.json": "fb139574cfbf3943b8c9d129853c4b6888a4ca22eca88f2e0798449bdccc8fed",
+    "records/jobs/horizon_known_K4_H1_uniform_s17_observed_blocking_v8.json": "11f65e617dd146809c5f8a484144b5511ab1c63ef24f70d7afb04465dfa660a4",
+    "records/jobs/horizon_known_K4_H2_uniform_s17_observed_blocking_v8.json": "647c8c74677db6f0c514998079f04c9e0ca010edb1d2f6ba0199714c63a032ba",
+    "records/jobs/horizon_uniform_initial_gate_observed_blocking_v8.json": "aed26ae6a2b7e56f3a4f68a2c17a4c52962a13b2709986b70b36814c54b9fc8a",
+    "records/logs/horizon_known_K4_H1_uniform_s17_observed_blocking_v8.log": "cf383306e7b940e69372ff54f3248c373b68a34cc6060f6aa1ed3e8fafea72ee",
+    "records/logs/horizon_known_K4_H2_uniform_s17_observed_blocking_v8.log": "f93a32775ed74a9fb5e48453113362907d717021189752424b5d5bd670a236d0",
+    "runs/horizon_known_K4_H1_uniform_s17_observed_blocking_v8/config.json": "d91cc98f835006a7dd4cb5d04d99a8597ccd47daa955fd01c6a19d17400b713d",
+    "runs/horizon_known_K4_H1_uniform_s17_observed_blocking_v8/endpoint.pt": "b0cde16898478eb6122e879c0d55dccea9dfc13a3f9e695d794ea3f9c077c0b5",
+    "runs/horizon_known_K4_H1_uniform_s17_observed_blocking_v8/events.jsonl": "be5283797453e673d77e01bcc2994decbb7327f9c39ea568c62e22562e11849e",
+    "runs/horizon_known_K4_H1_uniform_s17_observed_blocking_v8/gradient.pt": "28ea5288f7ab4207b8042690553f45984b95c2571bbb9f626f606d8eade48f72",
+    "runs/horizon_known_K4_H1_uniform_s17_observed_blocking_v8/result.json": "4c4c057c103804f25f3bed17aba06fe34a6ea53142ad1e7c13c82a730c49ae74",
+    "runs/horizon_known_K4_H2_uniform_s17_observed_blocking_v8/config.json": "5e5ade8766b0b4866c4bfa8531526fcdecd8706a666082c3b3fe140b72a6d1f7",
+    "runs/horizon_known_K4_H2_uniform_s17_observed_blocking_v8/endpoint.pt": "b0cde16898478eb6122e879c0d55dccea9dfc13a3f9e695d794ea3f9c077c0b5",
+    "runs/horizon_known_K4_H2_uniform_s17_observed_blocking_v8/events.jsonl": "272e5ee99e937f0037c1f4a2fc5908aacf68cec59ee06f9ed92c094e0082889b",
+    "runs/horizon_known_K4_H2_uniform_s17_observed_blocking_v8/gradient.pt": "35153f569d7a159af3a783a4fb067cc16136d40c03b80a6dc5f76c3adff994db",
+    "runs/horizon_known_K4_H2_uniform_s17_observed_blocking_v8/result.json": "3185f5a7ffdbb0f8899005fd99619ef46b863970d0fa25195f3b316287f5cd59"
+  },
+  "remaining_ten_permitted_by_this_gate": true,
+  "remaining_ten_launched": false,
+  "production_training_modified": false,
+  "method_validated": false,
+  "full_goal_complete": false,
+  "limitations": [
+    "Strict equality applies to the new common recomputed-forward trajectory, not the original failed mixed-path replay.",
+    "CPU saved-state inspection and earlier tiny direct-AD checks do not independently recompute a real-model derivative.",
+    "H1 versus H2 gradient difference does not quantify error relative to full H4 until that derivative completes."
+  ]
+}

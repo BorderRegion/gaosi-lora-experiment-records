@@ -1,0 +1,47 @@
+{
+  "recorded_at_utc": "2026-11-09T22:20:45.176422+00:00",
+  "job": {
+    "name": "horizon_support_modes_K4_boundary3_s17_observed_blocking_v8",
+    "command": [
+      "/usr/bin/env",
+      "MUSA_LAUNCH_BLOCKING=1",
+      "/usr/bin/python",
+      "-u",
+      "records/horizon_numerical_diagnosis_20261109_2200/probe.py",
+      "--config",
+      "configs/horizon_known_K4_H2_s17_observed_blocking_v8.json",
+      "--out",
+      "runs/horizon_support_modes_K4_boundary3_s17_observed_blocking_v8"
+    ],
+    "wrapper_pid": 23286,
+    "started_at_utc": "2026-11-09T21:57:15.021608+00:00",
+    "start_epoch": 1794261435.0216255,
+    "status": "RUNNING",
+    "device_lock": {
+      "path": "/tmp/gaosi_musa_device0.lock",
+      "version": 1
+    },
+    "child_pid": 23289,
+    "child_proc_start_ticks": "153550452"
+  },
+  "guard_argv_matches_exact_expected": true,
+  "guard_source_sha256": "b1068dc78b14c3e9dc55547d6d2050e3a0899a5d42407c82b8db56cdd4760bcf",
+  "blocking_environment_in_guard": [],
+  "last_log_event": {
+    "event": "waiting_device",
+    "utc": "2026-11-09T21:57:15.058212+00:00",
+    "job": "horizon_support_modes_K4_boundary3_s17_observed_blocking_v8",
+    "lock": "/tmp/gaosi_musa_device0.lock"
+  },
+  "lock_inode": 31148027670,
+  "matching_lock_fds": [
+    "3"
+  ],
+  "wchan": "locks_lock_inode_wait",
+  "training_output_absent": true,
+  "source_sha256": {
+    "tools/job.py": "92ff3b837b26b968033ad851372e8b7a935d8bac83c1ccbf6d8ebe0735288951",
+    "tools/device_guard.py": "b1068dc78b14c3e9dc55547d6d2050e3a0899a5d42407c82b8db56cdd4760bcf",
+    "records/horizon_numerical_diagnosis_20261109_2200/probe.py": "014b5cf644b513c1d8746ca4d0ee149f77c721de27ac1c486f3a40ae233868a7"
+  }
+}

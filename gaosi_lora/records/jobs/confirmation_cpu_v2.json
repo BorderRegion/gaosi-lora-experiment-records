@@ -1,0 +1,17 @@
+{
+  "name": "confirmation_cpu_v2",
+  "command": [
+    "/usr/bin/python",
+    "-u",
+    "tools/validate_confirmation.py"
+  ],
+  "wrapper_pid": 81593,
+  "started_at_utc": "2026-10-29T12:57:08.858169+00:00",
+  "start_epoch": 1793278628.858189,
+  "status": "FAIL",
+  "child_pid": 81594,
+  "child_proc_start_ticks": "55269836",
+  "exit_code": 1,
+  "wall_seconds": 10.000348329544067,
+  "finished_at_utc": "2026-10-29T12:57:18.858543+00:00"
+}

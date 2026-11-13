@@ -1,0 +1,381 @@
+{
+  "status": "COMPLETED_DEVELOPMENT_SAVED_EVIDENCE_AUDITED",
+  "reviewed_at_utc": "2026-11-05T03:26:06.839271+00:00",
+  "run": "runs/phi_dev_L_2048_t1_clean_s17",
+  "job_status": "PASS",
+  "job_wall_seconds": 5529.257810592651,
+  "method": "phi",
+  "q_apply": 0.0,
+  "completed_recovery_steps": 64,
+  "evaluation_steps": [
+    0,
+    8,
+    16,
+    32,
+    64
+  ],
+  "checkpoint_step": 64,
+  "checkpoint_parameters_and_inner_state_finite": true,
+  "input_phi": {
+    "sha256": "524dca70a61125fbc65274d04f319aff71f4cdc889812f09e9888814ffdb0c85",
+    "input_phi_tensors_finite": true
+  },
+  "source_files_verified": 25,
+  "minimum_effective_tokens": {
+    "task": 512,
+    "language": 551,
+    "keep": 513
+  },
+  "prediction_reviews": [
+    {
+      "file": "runs/phi_dev_L_2048_t1_clean_s17/clean_task.jsonl",
+      "rows": 32,
+      "metrics_recomputed_from_saved_predictions": {
+        "n": 32,
+        "answer_tokens": 87,
+        "candidate_accuracy": 0.0625,
+        "strict_EM": 0.0625,
+        "abnormal_rate": 0.0,
+        "mean_margin": -12.056658257697222,
+        "nll": 4.5763552036068145
+      }
+    },
+    {
+      "file": "runs/phi_dev_L_2048_t1_clean_s17/eval_0000_task.jsonl",
+      "rows": 32,
+      "metrics_recomputed_from_saved_predictions": {
+        "n": 32,
+        "answer_tokens": 87,
+        "candidate_accuracy": 0.0625,
+        "strict_EM": 0.0625,
+        "abnormal_rate": 0.0,
+        "mean_margin": -12.056658257697222,
+        "nll": 4.5763552036068145
+      }
+    },
+    {
+      "file": "runs/phi_dev_L_2048_t1_clean_s17/eval_0008_task.jsonl",
+      "rows": 32,
+      "metrics_recomputed_from_saved_predictions": {
+        "n": 32,
+        "answer_tokens": 87,
+        "candidate_accuracy": 0.9375,
+        "strict_EM": 0.9375,
+        "abnormal_rate": 0.0,
+        "mean_margin": 2.105615067288454,
+        "nll": 0.14123350484885447
+      }
+    },
+    {
+      "file": "runs/phi_dev_L_2048_t1_clean_s17/eval_0016_task.jsonl",
+      "rows": 32,
+      "metrics_recomputed_from_saved_predictions": {
+        "n": 32,
+        "answer_tokens": 87,
+        "candidate_accuracy": 1.0,
+        "strict_EM": 1.0,
+        "abnormal_rate": 0.0,
+        "mean_margin": 5.945482875983316,
+        "nll": 0.019932990163533237
+      }
+    },
+    {
+      "file": "runs/phi_dev_L_2048_t1_clean_s17/eval_0032_task.jsonl",
+      "rows": 32,
+      "metrics_recomputed_from_saved_predictions": {
+        "n": 32,
+        "answer_tokens": 87,
+        "candidate_accuracy": 0.96875,
+        "strict_EM": 1.0,
+        "abnormal_rate": 0.0,
+        "mean_margin": 8.414210509667953,
+        "nll": 0.013336894782508447
+      }
+    },
+    {
+      "file": "runs/phi_dev_L_2048_t1_clean_s17/eval_0064_task.jsonl",
+      "rows": 32,
+      "metrics_recomputed_from_saved_predictions": {
+        "n": 32,
+        "answer_tokens": 87,
+        "candidate_accuracy": 1.0,
+        "strict_EM": 1.0,
+        "abnormal_rate": 0.0,
+        "mean_margin": 9.894656408175223,
+        "nll": 0.002580759317247246
+      }
+    },
+    {
+      "file": "runs/phi_dev_L_2048_t1_clean_s17/clean_keep.jsonl",
+      "rows": 512,
+      "metrics_recomputed_from_saved_predictions": {
+        "n": 512,
+        "answer_tokens": 1288,
+        "candidate_accuracy": 1.0,
+        "strict_EM": 0.984375,
+        "abnormal_rate": 0.0,
+        "mean_margin": 10.186212864077874,
+        "nll": 0.023651785981122126
+      }
+    },
+    {
+      "file": "runs/phi_dev_L_2048_t1_clean_s17/eval_0000_keep.jsonl",
+      "rows": 512,
+      "metrics_recomputed_from_saved_predictions": {
+        "n": 512,
+        "answer_tokens": 1288,
+        "candidate_accuracy": 1.0,
+        "strict_EM": 0.984375,
+        "abnormal_rate": 0.0,
+        "mean_margin": 10.186212864077874,
+        "nll": 0.023651785981122126
+      }
+    },
+    {
+      "file": "runs/phi_dev_L_2048_t1_clean_s17/eval_0008_keep.jsonl",
+      "rows": 512,
+      "metrics_recomputed_from_saved_predictions": {
+        "n": 512,
+        "answer_tokens": 1288,
+        "candidate_accuracy": 0.97265625,
+        "strict_EM": 0.96484375,
+        "abnormal_rate": 0.0,
+        "mean_margin": 6.986658885053232,
+        "nll": 0.05628194949882768
+      }
+    },
+    {
+      "file": "runs/phi_dev_L_2048_t1_clean_s17/eval_0016_keep.jsonl",
+      "rows": 512,
+      "metrics_recomputed_from_saved_predictions": {
+        "n": 512,
+        "answer_tokens": 1288,
+        "candidate_accuracy": 0.98046875,
+        "strict_EM": 0.962890625,
+        "abnormal_rate": 0.0,
+        "mean_margin": 7.890243845594696,
+        "nll": 0.05155990840180567
+      }
+    },
+    {
+      "file": "runs/phi_dev_L_2048_t1_clean_s17/eval_0032_keep.jsonl",
+      "rows": 512,
+      "metrics_recomputed_from_saved_predictions": {
+        "n": 512,
+        "answer_tokens": 1288,
+        "candidate_accuracy": 0.99609375,
+        "strict_EM": 0.984375,
+        "abnormal_rate": 0.0,
+        "mean_margin": 8.65372852146169,
+        "nll": 0.036747401833312446
+      }
+    },
+    {
+      "file": "runs/phi_dev_L_2048_t1_clean_s17/eval_0064_keep.jsonl",
+      "rows": 512,
+      "metrics_recomputed_from_saved_predictions": {
+        "n": 512,
+        "answer_tokens": 1288,
+        "candidate_accuracy": 0.998046875,
+        "strict_EM": 0.990234375,
+        "abnormal_rate": 0.0,
+        "mean_margin": 9.27620170930617,
+        "nll": 0.024255031516713044
+      }
+    }
+  ],
+  "clean": {
+    "task": {
+      "n": 32,
+      "candidate_accuracy": 0.0625,
+      "mean_margin": -12.056658257697222,
+      "nll": 4.5763552036068145,
+      "answer_tokens": 87,
+      "strict_EM": 0.0625,
+      "abnormal_rate": 0.0
+    },
+    "keep": {
+      "n": 512,
+      "candidate_accuracy": 1.0,
+      "mean_margin": 10.186212864077874,
+      "nll": 0.023651785981122126,
+      "answer_tokens": 1288,
+      "strict_EM": 0.984375,
+      "abnormal_rate": 0.0
+    },
+    "language": {
+      "nll": 2.120082481864213,
+      "answer_tokens": 4463
+    }
+  },
+  "initial": {
+    "task": {
+      "n": 32,
+      "candidate_accuracy": 0.0625,
+      "mean_margin": -12.056658257697222,
+      "nll": 4.5763552036068145,
+      "answer_tokens": 87,
+      "strict_EM": 0.0625,
+      "abnormal_rate": 0.0
+    },
+    "keep": {
+      "n": 512,
+      "candidate_accuracy": 1.0,
+      "mean_margin": 10.186212864077874,
+      "nll": 0.023651785981122126,
+      "answer_tokens": 1288,
+      "strict_EM": 0.984375,
+      "abnormal_rate": 0.0
+    },
+    "language": {
+      "nll": 2.120082481864213,
+      "answer_tokens": 4463
+    }
+  },
+  "final": {
+    "task": {
+      "n": 32,
+      "candidate_accuracy": 1.0,
+      "mean_margin": 9.894656408175223,
+      "nll": 0.002580759317247246,
+      "answer_tokens": 87,
+      "strict_EM": 1.0,
+      "abnormal_rate": 0.0
+    },
+    "keep": {
+      "n": 512,
+      "candidate_accuracy": 0.998046875,
+      "mean_margin": 9.27620170930617,
+      "nll": 0.024255031516713044,
+      "answer_tokens": 1288,
+      "strict_EM": 0.990234375,
+      "abnormal_rate": 0.0
+    },
+    "language": {
+      "nll": 2.121990009190762,
+      "answer_tokens": 4463
+    }
+  },
+  "loss_changes": {
+    "task": {
+      "injected": 0.0,
+      "recovered": 4.573774444289567,
+      "residual": -4.573774444289567
+    },
+    "keep": {
+      "injected": 0.0,
+      "recovered": -0.0006032455355909176,
+      "residual": 0.0006032455355909176
+    },
+    "language": {
+      "injected": 0.0,
+      "recovered": -0.0019075273265491965,
+      "residual": 0.0019075273265491965
+    }
+  },
+  "coverage": 32,
+  "pool": 32,
+  "keep_coverage": {
+    "covered": 512,
+    "pool": 512
+  },
+  "final_language_evaluation_counter_delta": {
+    "loss_forwards": 9,
+    "loss_backwards": 0,
+    "input_tokens": 4472,
+    "supervised_tokens": 4463,
+    "hessian_vector_products": 0
+  },
+  "mean_recovery_step_seconds": 42.37150476127863,
+  "evidence_sha256": {
+    "configs/phi_dev_L_2048_t1_clean_s17.json": "00f8ce5cc0af948f30a3c26a73e9d9d0c9eb7d57882757506535efea7c041ad6",
+    "data/synthetic/dev_parent.jsonl": "7d4353f9b9a8f1f74c182b503c01d7fb2181836aa464e8d17e1bb3282db25d11",
+    "data/synthetic/dev_world_000.jsonl": "6e15f7323edf55df5b18378756b88a67cd2c650928e2909cd1a050d99ec28722",
+    "gaosi/__init__.py": "9d3e2a1719ce3b931437f026866daf29ce59e45288f1b54217530e5b0ec996fd",
+    "gaosi/base_boundary.py": "4266d288301c610dd3cacd1569c49a46c8da33463c3ec0f8a92f7429a09752cd",
+    "gaosi/capacity_reference.py": "fc552a0cab3a82b117413db71405421b7d5a7d26caac913e773d6bf166d6a9b8",
+    "gaosi/confirmation.py": "3a2401539bfe2c8d7bebe111b9c4b105f9217f7cde3f2efef0b4c378a2c953c7",
+    "gaosi/continual.py": "a1c82f3bccb9208979cb1babbdb31f5e6c91ffd5f1fd083a78c25d8671e5a9a2",
+    "gaosi/data.py": "047c72038c39e39152115f44e0eea588f07ba324bb78cf06d004ba0137788204",
+    "gaosi/evaluate.py": "4186749bcb0b7b60f31fa1d42cb6337daa620534a23d29b34f9038cb06b498c0",
+    "gaosi/gradients.py": "9282db16226b7d2ee027713bf19296bbb27329cd4cdbd29ac6b635012c874315",
+    "gaosi/horizon.py": "f31ccc7834ce05d1a391941e2da33aeedd1a7d9a0f573cea4900d34706ad9cfa",
+    "gaosi/merge.py": "a6b27379d61d18d7e4c349cc026ba59fa359293d3bb53b8a1598aff22c345667",
+    "gaosi/meta.py": "f9cf49a2975791fa3466e6caaa31bb8312a20eec64244a4f33d205cf1607ca69",
+    "gaosi/model.py": "1b673f51cdfeaf4e95b0ed0570896ac2067ad983319850c0eda0ffa06084717d",
+    "gaosi/noise.py": "6b80e499c95cef06d91e2c7725702765ea82dec8a4f5dcbb3ae2b5a55059879c",
+    "gaosi/noise_controls.py": "43425dd30dd5542089efb63742ed730adb84664d1f4242701fefa74af4deaf02",
+    "gaosi/recompute.py": "04f0fe1119f03657647f23cac7d35e9c903cfeb5f05f0f8637d019002167528e",
+    "gaosi/recover.py": "955babb1fb4303e6b367ba848cf909a0d94442620d27a031e215730cf76f44c1",
+    "gaosi/recovery_statistics.py": "1286a9e2ef9d26166069916de40b85424ce33ec8c2677f59c965ea7b4a2d5690",
+    "gaosi/references.py": "5b29673953e87c8fa6b1eae3483f57cef3e3cbf8c2a3b226220020daf79f05cf",
+    "gaosi/reflow.py": "13a9f03c5549e9b74eb309a3479ece65b9243fcdc5ff2b901f9523d8a94df8a7",
+    "gaosi/reflow_statistics.py": "2e44abfd727670d46449ef03a1a14599e1aab3b77ce64d0b1e4da08e57e53aa1",
+    "gaosi/runtime.py": "6d38d86b1985a4238abc00c7c960cc3a28dcd5eb11f07de15dd1ecf2edba4e86",
+    "gaosi/scale.py": "75fc477b6ed2b2cf06d921141d315dedff4b3ebdcf9388eb453c2e52ddebb396",
+    "gaosi/selective_statistics.py": "bb31c2e2fbe2bde2118d11fee79da96ebdd9f4d326bc823ede56d2ecd8a78f4f",
+    "gaosi/train.py": "5becea49674f3d535094690e7b16185d60d03aed98c60c18122b563e475470dd",
+    "gaosi/transition.py": "5afa7bc2c61b6e81a6f024026c02fe29761a11e8b65925aabafd525e57ead477",
+    "records/development_completion_20261104_2358/audit_v2.py": "09626714d0840ab23bdacd3fa2c42f736287c07ae2d6b3aa29105bfab33d861e",
+    "records/jobs/phi_dev_L_2048_t1_clean_s17.json": "5017baa4fff58c6053cf19c0fb991af7276ecd15f76100e78362af66768e4000",
+    "records/phi_recovery_development_plan.json": "44271497e70ea2c6e7fc15744332c8f900ad4a54b616668fb82a1906fc540112",
+    "records/pipeline_observed_blocking_v8/build_manifest.json": "a0c591237a330376c5068a8773e52cc29673812465184ba42bedc00d290ca05f",
+    "runs/parent_3b_dev_parent_r32_s17_extend512_v2/latest.pt": "1fa4765c5c5d478f8dd0d7089ab6fbecd2f85190cc8d0a875aa1498da6ffc66f",
+    "runs/parent_3b_dev_parent_r32_s17_extend512_v2/result.json": "c7d3e6e1904aa7d30efebe912c5ac7dcf323fed4c7d1d332e725e1fc6aacb3af",
+    "runs/phi_dev_L_2048_t1_clean_s17/clean_keep.jsonl": "8eb6b7fab627458bb1617e855f88f1ffffb23383939737809fc738a94b81a8bc",
+    "runs/phi_dev_L_2048_t1_clean_s17/clean_task.jsonl": "c07c1b363e6c15712b1c5a1c5aed5b2315eab1f27ba7e8ea83255b108a282d87",
+    "runs/phi_dev_L_2048_t1_clean_s17/config.json": "00f8ce5cc0af948f30a3c26a73e9d9d0c9eb7d57882757506535efea7c041ad6",
+    "runs/phi_dev_L_2048_t1_clean_s17/eval_0000_keep.jsonl": "8eb6b7fab627458bb1617e855f88f1ffffb23383939737809fc738a94b81a8bc",
+    "runs/phi_dev_L_2048_t1_clean_s17/eval_0000_task.jsonl": "c07c1b363e6c15712b1c5a1c5aed5b2315eab1f27ba7e8ea83255b108a282d87",
+    "runs/phi_dev_L_2048_t1_clean_s17/eval_0008_keep.jsonl": "26b0b2fbe49e8077b6161bf279201123cb8aab2995d32797496e45428f949588",
+    "runs/phi_dev_L_2048_t1_clean_s17/eval_0008_task.jsonl": "330aa9a99b96137eadeb6f242037e2a9d02c5883f72fad2f08b19ec13e962697",
+    "runs/phi_dev_L_2048_t1_clean_s17/eval_0016_keep.jsonl": "9cb7c223b790945fda9b2a765aac8fc43e54261e8bcdf898a71d5abfc0d3b1da",
+    "runs/phi_dev_L_2048_t1_clean_s17/eval_0016_task.jsonl": "3fe3ff21f6cda781c8007c46195712e7171c07e34199f38c1ea1e51f7e0622e5",
+    "runs/phi_dev_L_2048_t1_clean_s17/eval_0032_keep.jsonl": "f5da8898af621208b27b42507b49330c40bdd945b72cb4dc494e4504f91e3e03",
+    "runs/phi_dev_L_2048_t1_clean_s17/eval_0032_task.jsonl": "12e3722e98e021dc164bfd61bd307b3ebc83cf142c98b59be3aa86339909979c",
+    "runs/phi_dev_L_2048_t1_clean_s17/eval_0064_keep.jsonl": "b121cf2ebb8bfc1655a5355eb64bda3b1da31c31af40a34562f0cf060da6506d",
+    "runs/phi_dev_L_2048_t1_clean_s17/eval_0064_task.jsonl": "c2a13cc82ca8c633736f8089391cd196c912772e08a157a898da52a5680e5d66",
+    "runs/phi_dev_L_2048_t1_clean_s17/events.jsonl": "3b8f090ba7939e3e58355bea5dec1f29a5a79eb2d414750ebb8000913402246b",
+    "runs/phi_dev_L_2048_t1_clean_s17/initial.pt": "4d2e15d99c79e47de2d3fa04584aaf0b1e6a3ea93e03cb28a9bc506fab5091be",
+    "runs/phi_dev_L_2048_t1_clean_s17/latest.pt": "28d51209015b7fa4f063e0302b7b27e5cffb5ee2ce3c99fbfc21a759e4486adb",
+    "runs/phi_dev_L_2048_t1_clean_s17/result.json": "60e811de266446f967b8c60b17bdfd1630e6f5b498f87fe41acc758cad12abbf",
+    "runs/phi_dev_L_2048_t1_clean_s17/source/__init__.py": "9d3e2a1719ce3b931437f026866daf29ce59e45288f1b54217530e5b0ec996fd",
+    "runs/phi_dev_L_2048_t1_clean_s17/source/base_boundary.py": "4266d288301c610dd3cacd1569c49a46c8da33463c3ec0f8a92f7429a09752cd",
+    "runs/phi_dev_L_2048_t1_clean_s17/source/capacity_reference.py": "fc552a0cab3a82b117413db71405421b7d5a7d26caac913e773d6bf166d6a9b8",
+    "runs/phi_dev_L_2048_t1_clean_s17/source/confirmation.py": "3a2401539bfe2c8d7bebe111b9c4b105f9217f7cde3f2efef0b4c378a2c953c7",
+    "runs/phi_dev_L_2048_t1_clean_s17/source/continual.py": "a1c82f3bccb9208979cb1babbdb31f5e6c91ffd5f1fd083a78c25d8671e5a9a2",
+    "runs/phi_dev_L_2048_t1_clean_s17/source/data.py": "047c72038c39e39152115f44e0eea588f07ba324bb78cf06d004ba0137788204",
+    "runs/phi_dev_L_2048_t1_clean_s17/source/evaluate.py": "4186749bcb0b7b60f31fa1d42cb6337daa620534a23d29b34f9038cb06b498c0",
+    "runs/phi_dev_L_2048_t1_clean_s17/source/gradients.py": "9282db16226b7d2ee027713bf19296bbb27329cd4cdbd29ac6b635012c874315",
+    "runs/phi_dev_L_2048_t1_clean_s17/source/horizon.py": "f31ccc7834ce05d1a391941e2da33aeedd1a7d9a0f573cea4900d34706ad9cfa",
+    "runs/phi_dev_L_2048_t1_clean_s17/source/merge.py": "a6b27379d61d18d7e4c349cc026ba59fa359293d3bb53b8a1598aff22c345667",
+    "runs/phi_dev_L_2048_t1_clean_s17/source/meta.py": "f9cf49a2975791fa3466e6caaa31bb8312a20eec64244a4f33d205cf1607ca69",
+    "runs/phi_dev_L_2048_t1_clean_s17/source/model.py": "1b673f51cdfeaf4e95b0ed0570896ac2067ad983319850c0eda0ffa06084717d",
+    "runs/phi_dev_L_2048_t1_clean_s17/source/noise.py": "6b80e499c95cef06d91e2c7725702765ea82dec8a4f5dcbb3ae2b5a55059879c",
+    "runs/phi_dev_L_2048_t1_clean_s17/source/noise_controls.py": "43425dd30dd5542089efb63742ed730adb84664d1f4242701fefa74af4deaf02",
+    "runs/phi_dev_L_2048_t1_clean_s17/source/recompute.py": "04f0fe1119f03657647f23cac7d35e9c903cfeb5f05f0f8637d019002167528e",
+    "runs/phi_dev_L_2048_t1_clean_s17/source/recover.py": "955babb1fb4303e6b367ba848cf909a0d94442620d27a031e215730cf76f44c1",
+    "runs/phi_dev_L_2048_t1_clean_s17/source/recovery_statistics.py": "1286a9e2ef9d26166069916de40b85424ce33ec8c2677f59c965ea7b4a2d5690",
+    "runs/phi_dev_L_2048_t1_clean_s17/source/references.py": "5b29673953e87c8fa6b1eae3483f57cef3e3cbf8c2a3b226220020daf79f05cf",
+    "runs/phi_dev_L_2048_t1_clean_s17/source/reflow.py": "13a9f03c5549e9b74eb309a3479ece65b9243fcdc5ff2b901f9523d8a94df8a7",
+    "runs/phi_dev_L_2048_t1_clean_s17/source/reflow_statistics.py": "2e44abfd727670d46449ef03a1a14599e1aab3b77ce64d0b1e4da08e57e53aa1",
+    "runs/phi_dev_L_2048_t1_clean_s17/source/runtime.py": "6d38d86b1985a4238abc00c7c960cc3a28dcd5eb11f07de15dd1ecf2edba4e86",
+    "runs/phi_dev_L_2048_t1_clean_s17/source/scale.py": "75fc477b6ed2b2cf06d921141d315dedff4b3ebdcf9388eb453c2e52ddebb396",
+    "runs/phi_dev_L_2048_t1_clean_s17/source/selective_statistics.py": "bb31c2e2fbe2bde2118d11fee79da96ebdd9f4d326bc823ede56d2ecd8a78f4f",
+    "runs/phi_dev_L_2048_t1_clean_s17/source/train.py": "5becea49674f3d535094690e7b16185d60d03aed98c60c18122b563e475470dd",
+    "runs/phi_dev_L_2048_t1_clean_s17/source/transition.py": "5afa7bc2c61b6e81a6f024026c02fe29761a11e8b65925aabafd525e57ead477",
+    "runs/phi_dev_L_2048_t1_clean_s17/source_sha256.json": "23c137925a55b2f2d31ade48b2d5f32f58f4e329c13752ba0e9f6f0cf17a7b92",
+    "runs/phi_mix_O1_L_H2_core_s17_observed_blocking_v8/phi_2048.pt": "524dca70a61125fbc65274d04f319aff71f4cdc889812f09e9888814ffdb0c85"
+  },
+  "method_validated": false,
+  "scientific_promotion_allowed": false,
+  "full_goal_complete": false,
+  "training_modified_or_restarted": false,
+  "limitations": [
+    "CPU inspection of saved tensors and re-aggregation of saved predictions only; no model forward, tokenizer or derivative recomputation.",
+    "Language NLL is checked against the event ledger; no saved per-token language audit.",
+    "Model compute counters omit direct QA candidate/generation calls; they are not total evaluation FLOPs or total model forwards.",
+    "Frozen phi/base flags plus pinned source and file identities are provenance evidence, not an independent in-memory mutation trace.",
+    "No paired-method efficacy, held-out generalization, convergence or multi-seed conclusion from one completed development cell."
+  ]
+}

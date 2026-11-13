@@ -1,0 +1,32 @@
+--- original/horizon_queue.py
++++ tools/horizon_queue.py
+@@ -3,7 +3,7 @@
+ from pathlib import Path
+ import sys
+ 
+-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
++sys.path.insert(0, str(Path.cwd()))
+ from gaosi.horizon import gradient_comparison
+ from gaosi.scale import sha256
+ from organization_queue import wait_for
+@@ -34,7 +34,7 @@
+     for path in ['checks/horizon_cpu.json', 'checks/horizon_upstream_cpu.json']:
+         if json.loads(Path(path).read_text())['status'] != 'PASS':
+             raise RuntimeError('Independent H4/H8 derivative checks must pass')
+-    selected = wait_for('records/phi_architecture_selected.json', 'phi_development_queue_v1')
++    selected = wait_for('records/phi_architecture_selected.json', 'phi_development_queue_observed_blocking_v8')
+     calibration = json.loads(Path('records/calibration_frozen.json').read_text())
+     if calibration['formal_data_used'] or not calibration['ordinary_recovery_validated']:
+         raise ValueError('Horizon requires development-only valid calibration')
+@@ -48,9 +48,9 @@
+     configs = []
+     for task, data in tasks:
+         for K in [4, 8]:
+-            reference = f'runs/horizon_{task}_K{K}_H1_s17_v1/endpoint.pt'
++            reference = f'runs/horizon_{task}_K{K}_H1_s17_observed_blocking_v8/endpoint.pt'
+             for tail in [1, 2, K]:
+-                c = {'horizon_manifest': planfile, 'out': f'runs/horizon_{task}_K{K}_H{tail}_s17_v1',
++                c = {'horizon_manifest': planfile, 'out': f'runs/horizon_{task}_K{K}_H{tail}_s17_observed_blocking_v8',
+                      'data': data, 'retain_data': parent['config']['data'],
+                      'language_support': 'data/language/inner.jsonl',
+                      'language_query': 'data/language/dev.jsonl',

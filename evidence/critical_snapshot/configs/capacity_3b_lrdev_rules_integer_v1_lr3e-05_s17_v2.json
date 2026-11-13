@@ -1,0 +1,33 @@
+{
+  "out": "runs/capacity_3b_lrdev_rules_integer_v1_lr3e-05_s17_v2",
+  "model": "/root/autodl-tmp/models/Qwen2.5-3B",
+  "base_revision": "3aab1f1954e9cc14eb9509a215f9e5ca08227a9b",
+  "rank": 32,
+  "targets": "all7",
+  "organization": "O1",
+  "scale": 1.0,
+  "device": "musa",
+  "data": "data/synthetic/rules_integer_v1/dev_combined.jsonl",
+  "language_inner": "data/language/inner.jsonl",
+  "language_dev": "data/language/dev.jsonl",
+  "seq": 512,
+  "microbatch": 1,
+  "effective_tokens": 512,
+  "retain_weight": 0.25,
+  "lr": 3e-05,
+  "ba_ratio": 1.0,
+  "seed": 17,
+  "steps": 128,
+  "eval_steps": [
+    16,
+    64,
+    128
+  ],
+  "eval_limit": 64,
+  "generate": true,
+  "language_eval_tokens": 2048,
+  "save_every": 16,
+  "gradient_checkpointing": false,
+  "purpose": "development_capacity_screen_not_final_evidence",
+  "sampler_version": 2
+}

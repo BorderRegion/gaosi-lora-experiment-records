@@ -1,0 +1,14 @@
+{
+  "name": "final_parent_queue_recompute_v7",
+  "command": [
+    "/usr/bin/python",
+    "-u",
+    "/root/autodl-tmp/gaosi_lora/records/pipeline_recompute_v7/tools/final_parent_queue.py"
+  ],
+  "wrapper_pid": 379874,
+  "started_at_utc": "2026-10-29T22:58:26.153945+00:00",
+  "start_epoch": 1793314706.1539626,
+  "status": "RUNNING",
+  "child_pid": 379875,
+  "child_proc_start_ticks": "58877565"
+}

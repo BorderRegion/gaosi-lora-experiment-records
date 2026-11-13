@@ -1,0 +1,68 @@
+{
+  "status": "PARTIAL_ARCHIVE_COMPLETE_RESULT_MEMBER_RECOVERED_FROM_VERIFIED_PREFIX_ONLY",
+  "recorded_at_utc": "2026-11-10T18:19:37.223807+00:00",
+  "observation": "records/pipeline_monitor_20261110_174541_utc",
+  "captured_at_utc": "2026-11-10T17:45:45.617915+00:00",
+  "partial_archive_sha256": "e2e1b55a6b86e69c4af0e5d9a608c9ce6921fd4b27cab82006a3367d6b3a85d5",
+  "partial_archive_bytes": 5505024,
+  "expected_full_archive_sha256": "6444d8666cbd14f2f202724d038eb63656bf5c53bae6f11f7d5ed91c3bd3a064",
+  "expected_full_archive_bytes": 6882237,
+  "verified_complete_chunks": 21,
+  "transport_manifest_sha256": "49500bcadb97582810943e827f12812ed9b5ac141ff0c7e3d09ce503c70bf8f5",
+  "prior_outage_note_sha256": "6013a71910085749ece1697118a0c4ea8988bbff37ea01870eca396792ebd560",
+  "result_member": "records/pipeline_recovery_20261110_1755/partial_capture_result.json",
+  "result_member_sha256": "64432199c9aacdf70a795b52d68824ae1915138bdc4be6599e92380903f5194c",
+  "meta_runs": [
+    {
+      "run": "runs/phi_mix_O2_X_specialize512_s17_observed_blocking_v8",
+      "job_status": "RUNNING",
+      "committed_gradient_rows": 27,
+      "maximum_raw_norm": 0.5908657616782603,
+      "committed_episodes": 27,
+      "committed_inner_updates": 216,
+      "last_inner": {
+        "event": "inner",
+        "utc": "2026-11-10T17:42:22.921401+00:00",
+        "process_wall_seconds": 15387.851952314377,
+        "episode": 27,
+        "k": 8,
+        "ld": 0.004226336721330881,
+        "lr": 0.9675964713096619,
+        "task_tokens": 560,
+        "language_tokens": 1022,
+        "support_forwards": 20,
+        "keep_tokens": 531,
+        "keep_forwards": 8,
+        "step_seconds": 37.74122953414917,
+        "exact_window": true,
+        "cpu_rss_bytes": 8072925184,
+        "allocated_bytes": 13339022848,
+        "reserved_bytes": 26262634496,
+        "peak_allocated_bytes": 24210311680,
+        "peak_reserved_bytes": 26262634496
+      },
+      "checkpoint": {
+        "sha256": "4221b607e6e66fd29b4eb3c68f2a7d5b21d6db9e83b268406bd62983e22a6996",
+        "next_episode": 27,
+        "inner_updates": 216,
+        "phi_finite": true,
+        "optimizer_finite": true,
+        "config_equal": true
+      }
+    }
+  ],
+  "unresolved_alerts_in_capture": [],
+  "pending_scientific_reviews_in_capture": [],
+  "whole_archive_verified": false,
+  "snapshot_source_files_independently_rehashed": false,
+  "current_remote_liveness_verified": false,
+  "collector_resubmitted": false,
+  "training_modified_or_restarted": false,
+  "method_validated": false,
+  "full_goal_complete": false,
+  "limitations": [
+    "Only the complete result.json member from the originally authenticated chunk manifest is recovered. The full archive and snapshot source manifest remain unavailable.",
+    "Collector progress and finite flags are reported as of the capture time; no checkpoint tensors or event budgets have been independently reaudited.",
+    "No current remote process identity or scientific efficacy conclusion follows from this recovered historical capture."
+  ]
+}

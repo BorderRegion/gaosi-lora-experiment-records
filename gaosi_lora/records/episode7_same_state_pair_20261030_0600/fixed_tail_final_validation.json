@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-30T07:27:58.596984+00:00",
+  "result": {
+    "status": "PASS",
+    "scope": "Smooth CPU FP64 fixture, not MUSA correctness",
+    "results": [
+      {
+        "K": 2,
+        "prefix_steps_fixed": 0,
+        "relative_discrepancies": [
+          2.104864919051029e-08,
+          3.519444944437425e-06,
+          0.00038857882287944307
+        ]
+      },
+      {
+        "K": 4,
+        "prefix_steps_fixed": 2,
+        "relative_discrepancies": [
+          2.2558308506827903e-08,
+          9.968765848012302e-07,
+          6.348479920706516e-05
+        ]
+      }
+    ]
+  },
+  "local_hashes": {
+    "tools/diagnose_fixed_tail_gradient.py": "f38d19b1a81af56ba1e26235a4245ed30dd0eb84bdf29e434e653c550006d1b8",
+    "tools/validate_fixed_tail_gradient.py": "00333d8a0c3261c76dbff50dd0ce05ccf6d014e510ca3448cdfd8a3832e57243"
+  },
+  "production_modified": false
+}

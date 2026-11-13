@@ -1,0 +1,58 @@
+{
+  "status": "RETIRED_OBSERVERS_AND_FOLLOWER_FINAL_EVIDENCE_PRESERVED_WITHOUT_CHANGING_ORIGINAL_PATHS",
+  "files": {
+    "records/pipeline_observer_20261108_0505/observer_state.json": {
+      "preserved_copy": "records/observer_recovery_20261109_0520/terminal_evidence/records__pipeline_observer_20261108_0505__observer_state.json",
+      "sha256": "7cee9733fd3d4dd82e609ebf5835dd0a96fb1ce5cdcd87f5f81e91a3c6ea75ab"
+    },
+    "records/pipeline_observer_20261108_0505/observations.jsonl": {
+      "preserved_copy": "records/observer_recovery_20261109_0520/terminal_evidence/records__pipeline_observer_20261108_0505__observations.jsonl",
+      "sha256": "82f9b40c481eccc84a39f5f5f37c5d42a184db01b155f40090f89aaa24a4fbc0"
+    },
+    "records/pipeline_observer_20261108_0505/stderr.log": {
+      "preserved_copy": "records/observer_recovery_20261109_0520/terminal_evidence/records__pipeline_observer_20261108_0505__stderr.log",
+      "sha256": "a3165f418023a22287f16ea289aa3c6b5452c878a0b6788b5dcdf4ecfdf49702"
+    },
+    "records/scheduled_review_follower_20261109_0410/state.json": {
+      "preserved_copy": "records/observer_recovery_20261109_0520/terminal_evidence/records__scheduled_review_follower_20261109_0410__state.json",
+      "sha256": "685afddc9b79f0106989cb2f07679a72af0799882db165e55d315fadd5dac037"
+    },
+    "records/scheduled_review_follower_20261109_0410/completed.jsonl": {
+      "preserved_copy": "records/observer_recovery_20261109_0520/terminal_evidence/records__scheduled_review_follower_20261109_0410__completed.jsonl",
+      "sha256": "ec44021a542e0e38918f3a6b0e447eacff8f6574c8c979553dbe4f8c956351a5"
+    },
+    "records/pipeline_observer_20261108_0505/completion_receipt_20261109_0435.json": {
+      "preserved_copy": "records/observer_recovery_20261109_0520/terminal_evidence/records__pipeline_observer_20261108_0505__completion_receipt_20261109_0435.json",
+      "sha256": "efe872f9d32f47ca4c00431ebb28cdbb3ef5a9866aaad611bb60ec9f5541fb77"
+    },
+    "records/pipeline_observer_20261108_0505/followup_20261109_0435.json": {
+      "preserved_copy": "records/observer_recovery_20261109_0520/terminal_evidence/records__pipeline_observer_20261108_0505__followup_20261109_0435.json",
+      "sha256": "0dd88cd53bb2682c40863a8068e7f79eae8e701f2fdc707267a17ce1768dea1f"
+    },
+    "records/pipeline_observer_20261109_0510/observer_state.json": {
+      "preserved_copy": "records/observer_recovery_20261109_0520/terminal_evidence/records__pipeline_observer_20261109_0510__observer_state.json",
+      "sha256": "4f0cc87aa8d01a9c3f95cd95353af36740a45e35209578c79b1857ece7ec4c88"
+    },
+    "records/pipeline_observer_20261109_0510/stderr.log": {
+      "preserved_copy": "records/observer_recovery_20261109_0520/terminal_evidence/records__pipeline_observer_20261109_0510__stderr.log",
+      "sha256": "a1e354a7aceb3904b0295896069d6cbadf562d2bfe670607f369368a0c7fa7ab"
+    },
+    "records/observer_recovery_20261109_0510/connection_recurrence.json": {
+      "preserved_copy": "records/observer_recovery_20261109_0520/terminal_evidence/records__observer_recovery_20261109_0510__connection_recurrence.json",
+      "sha256": "246fe593012266dc51b59e48c8f2fe5062baf6047a1c6a5fa7495649a3699c11"
+    },
+    "records/observer_recovery_20261109_0510/ssh_banner_probe.jsonl": {
+      "preserved_copy": "records/observer_recovery_20261109_0520/terminal_evidence/records__observer_recovery_20261109_0510__ssh_banner_probe.jsonl",
+      "sha256": "d8e09d1852726023a5b32c7fedfc33ae58e68114ef188a88164c1a2dc0ce81c6"
+    },
+    "records/observer_recovery_20261109_0510/ssh_master_retry.jsonl": {
+      "preserved_copy": "records/observer_recovery_20261109_0520/terminal_evidence/records__observer_recovery_20261109_0510__ssh_master_retry.jsonl",
+      "sha256": "ad07cd561c2d2aa510a505d5e093ab37f4e9b25f9f5340ebee004879875b75fa"
+    },
+    "records/observer_recovery_20261109_0510/ssh_restored_preflight.json": {
+      "preserved_copy": "records/observer_recovery_20261109_0520/terminal_evidence/records__observer_recovery_20261109_0510__ssh_restored_preflight.json",
+      "sha256": "1babb940919cb2afeee7196686a7abf148689b1dbc898643f8974c68f80e18df"
+    }
+  },
+  "training_modified_or_restarted": false
+}

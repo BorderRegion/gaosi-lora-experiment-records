@@ -1,0 +1,26 @@
+{
+  "status": "COMPLETED_REPLAY_CPU_REVIEW_SOURCE_PREPARED_NOT_EXECUTED",
+  "recorded_at_utc": "2026-11-10T02:58:45.046878+00:00",
+  "source_sha256": {
+    "records/horizon_uniform_numerics_20261109_2330/audit_completed.py": "bd077590f06571af4bea1df1db93f5555df3c39d966b9a22600948ff125b2c5d"
+  },
+  "local_syntax_parsed": true,
+  "remote": {
+    "syntax_parsed": true,
+    "source_bytes_verified": 1,
+    "audit_executed": false
+  },
+  "review_requires_all_twelve_terminal_results_and_bound_initial_saved_tensor_gate": true,
+  "original_endpoint_tolerances": {
+    "atol": 1e-06,
+    "rtol": 1e-05
+  },
+  "unavailable_full_derivatives_count_as_unavailable": true,
+  "production_numerical_sources_modified": false,
+  "jobs_started": false,
+  "method_validated": false,
+  "full_goal_complete": false,
+  "limitations": [
+    "Preparation parses and verifies source bytes only; no completed replay result or tensor is reviewed by this receipt."
+  ]
+}

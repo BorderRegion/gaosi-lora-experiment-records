@@ -1,0 +1,12 @@
+{
+  "out": "runs/diagnose_L_training_sync_only_s17_v6",
+  "device": "musa",
+  "source_config": "configs/phi_L_real_episode_readiness_s17.json",
+  "source_config_sha256": "dedfe92961ffd2969a4b601b141583f51d4e77c5bfc11ac59a7e873a453896ea",
+  "hvp_sync_only": true,
+  "training_repeats": 2,
+  "script_sha256": "b071402990757acd1d03e7d62e7ffd77595ddca74c80e025f99005fba96084f9",
+  "trace_script_sha256": "080f2c3469e69ae916cce5db773ce64fec202f97cfe59deec1652437213f51e5",
+  "purpose": "Two original readiness repeats with device barriers around HVP only; no per-HVP tensor statistics or math/precision change",
+  "formal_data_used": false
+}

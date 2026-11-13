@@ -1,0 +1,22 @@
+{
+  "status": "UNIFORM_INITIAL_H1_H2_CONTROLLER_LAUNCHED_AND_VERIFIED_LIVE",
+  "recorded_at_utc": "2026-11-09T23:25:53.745913+00:00",
+  "job": {
+    "name": "horizon_uniform_initial_gate_observed_blocking_v8",
+    "command": [
+      "/usr/bin/python",
+      "-u",
+      "records/horizon_uniform_numerics_20261109_2330/initial_gate.py"
+    ],
+    "wrapper_pid": 48796,
+    "started_at_utc": "2026-11-09T23:25:53.682034+00:00",
+    "start_epoch": 1794266753.6820536,
+    "status": "RUNNING",
+    "child_pid": 48797,
+    "child_proc_start_ticks": "154082318"
+  },
+  "separate_leaf_jobs_use_original_lock": true,
+  "remaining_ten_launched": false,
+  "production_training_modified": false,
+  "full_goal_complete": false
+}

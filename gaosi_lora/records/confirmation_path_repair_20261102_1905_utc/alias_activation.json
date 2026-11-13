@@ -1,0 +1,35 @@
+{
+  "status": "FOUR_EXPLICIT_METADATA_ALIASES_INSTALLED",
+  "activated_at_utc": "2026-11-02T19:20:16.914927+00:00",
+  "aliases_relative_to_project": {
+    "records/confirmation_recovery_ready_s29_v1.json": "confirmation_recovery_ready_s29_observed_blocking_v8.json",
+    "records/confirmation_recovery_ready_s43_v1.json": "confirmation_recovery_ready_s43_observed_blocking_v8.json",
+    "records/confirmation_continual_ready_s29_v1.json": "confirmation_continual_ready_s29_observed_blocking_v8.json",
+    "records/confirmation_continual_ready_s43_v1.json": "confirmation_continual_ready_s43_observed_blocking_v8.json"
+  },
+  "job": {
+    "name": "confirmation_queue_observed_blocking_v8",
+    "command": [
+      "/usr/bin/python",
+      "-u",
+      "records/pipeline_observed_blocking_v8/tools/confirmation_queue.py"
+    ],
+    "wrapper_pid": 761694,
+    "started_at_utc": "2026-11-01T11:42:02.429803+00:00",
+    "start_epoch": 1793533322.42983,
+    "status": "RUNNING",
+    "child_pid": 761695,
+    "child_proc_start_ticks": "80739193"
+  },
+  "producer_sha256": "bf82f5d4bc3e7aa23ccb0d719714f8eb795312e01a74616cf9dff4e15f1d67ba",
+  "build_manifest_sha256": "a0c591237a330376c5068a8773e52cc29673812465184ba42bedc00d290ca05f",
+  "producer_live_and_dormant_before_pilot": true,
+  "original_gpu_lock_inode_verified": true,
+  "validation_sha256": "8c220bea88bc138223d6d213e0362ff94f973d1bc6ab35743826e5e1f219c2b4",
+  "installer_sha256": "79244c94e8701fa6fa1447ef3d4f4a338eb7af58e2e7691f500726c9e67a21ef",
+  "sources_modified": false,
+  "training_or_controllers_restarted": false,
+  "historical_evidence_overwritten": false,
+  "completion_claimed": false,
+  "interpretation": "Each alias resolves only after the original controller writes its exact same-seed v8 record. No alternative file search or historical-result fallback."
+}

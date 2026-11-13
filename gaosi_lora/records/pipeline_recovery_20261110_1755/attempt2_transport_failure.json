@@ -1,0 +1,12 @@
+{
+  "status": "READ_ONLY_PREFLIGHT_TRANSPORT_RETRIES_EXHAUSTED",
+  "recorded_at_utc": "2026-11-10T17:58:07.039281+00:00",
+  "source_sha256": "cff043454bc47cd2c561883f81c949a46931b5d3498e44fb98d84bae3666c3df",
+  "preflight_written": false,
+  "archive_resume_invoked": false,
+  "collector_resubmitted": false,
+  "training_modified_or_restarted": false,
+  "transport_maintainer_pid": 896141,
+  "transport_maintainer_start_ticks": "146063673",
+  "observed_transport_failure": "Connection reset by peer before key exchange"
+}

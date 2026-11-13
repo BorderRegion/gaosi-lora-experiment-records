@@ -1,0 +1,32 @@
+{
+  "status": "ACTIVATION_READ_BACK_VERIFIED",
+  "verified_at_utc": "2026-11-02T19:20:34.264155+00:00",
+  "aliases": [
+    {
+      "path": "records/confirmation_recovery_ready_s29_v1.json",
+      "target": "confirmation_recovery_ready_s29_observed_blocking_v8.json",
+      "target_absent": true
+    },
+    {
+      "path": "records/confirmation_recovery_ready_s43_v1.json",
+      "target": "confirmation_recovery_ready_s43_observed_blocking_v8.json",
+      "target_absent": true
+    },
+    {
+      "path": "records/confirmation_continual_ready_s29_v1.json",
+      "target": "confirmation_continual_ready_s29_observed_blocking_v8.json",
+      "target_absent": true
+    },
+    {
+      "path": "records/confirmation_continual_ready_s43_v1.json",
+      "target": "confirmation_continual_ready_s43_observed_blocking_v8.json",
+      "target_absent": true
+    }
+  ],
+  "producer_identity_unchanged": true,
+  "producer_and_builder_sources_unchanged": true,
+  "original_gpu_lock_inode_verified": true,
+  "activation_sha256": "3468420f1a6867266ed3ae5ef95a40a6136c36ef7d1f365f188164a39a4cb96d",
+  "validation_sha256": "8c220bea88bc138223d6d213e0362ff94f973d1bc6ab35743826e5e1f219c2b4",
+  "no_completion_claimed": true
+}

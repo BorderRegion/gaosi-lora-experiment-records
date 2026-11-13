@@ -1,0 +1,31 @@
+{
+  "status": "RECORDED_L_X_CORE_INPUT_AND_ROUTE_BUDGETS_MATCH",
+  "reviewed_at_utc": "2026-11-03T16:25:03.232685+00:00",
+  "config_differences": {
+    "architecture": [
+      "L",
+      "X"
+    ],
+    "out": [
+      "runs/phi_mix_O1_L_H2_core_s17_observed_blocking_v8",
+      "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8"
+    ]
+  },
+  "matched_episodes": 192,
+  "matched_inner_steps": 2560,
+  "noise_metadata_matches_except_measured_boundary_seconds": true,
+  "evidence_sha256": {
+    "records/X_core_completion_20261103_1622/review_L_X_pairing.py": "16e8d057992b27c1d2d249345e6b1a98ee15ea9252480eb87a586b35d645d21e",
+    "records/observed_blocking_core_monitor_20261101_070654_utc/archive_source_sha256.json": "52fe7183bedd46e489e8dd190ce183b2037c5d67d9206758cfb3ca4882db888e",
+    "records/observed_blocking_core_monitor_20261101_070654_utc/snapshot/runs/phi_mix_O1_L_H2_core_s17_observed_blocking_v8/config.json": "5cc9a94a6b803c595d7d2b2fa1cb6a1b466539ca5c049227a651a50e3d2b40ec",
+    "records/observed_blocking_core_monitor_20261101_070654_utc/snapshot/runs/phi_mix_O1_L_H2_core_s17_observed_blocking_v8/events.jsonl": "cbf5b045408ad93b37cfd73ee6e5fd8639fc180a4756f085b4cdc7094f2518de",
+    "records/pipeline_monitor_20261103_162058_utc/archive_source_sha256.json": "505f3a6682591bf009c2ed9e3e530bc304fb8d79d45647a2ce6e0e271e08ee90",
+    "records/pipeline_monitor_20261103_162058_utc/snapshot/runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/config.json": "6d001aca619f34f5b6ea4be54e672980e56169c7edf2eaf30add36086ea1bcdd",
+    "records/pipeline_monitor_20261103_162058_utc/snapshot/runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/events.jsonl": "bf0eee8431a544d98a32ed2d855be9dfde9041d0af82a8143353a0081d532395"
+  },
+  "method_validated": false,
+  "limitations": [
+    "Recorded input and token metadata match; no model derivative is recomputed.",
+    "This does not compare recovery performance or establish convergence."
+  ]
+}

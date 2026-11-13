@@ -1,0 +1,676 @@
+{
+  "utc": "2026-10-29T16:19:21.956697+00:00",
+  "supervision": {
+    "utc": "2026-10-29T16:18:34.534530+00:00",
+    "jobs": [
+      {
+        "job": "base_boundary_queue_v1",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 68031,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "tools/base_boundary_queue.py"
+        ]
+      },
+      {
+        "job": "base_boundary_zero_Adam64_s17_v1",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 130024,
+        "process_state": "R",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "-m",
+          "gaosi.base_boundary",
+          "--config",
+          "configs/base_boundary_zero_Adam64_s17_v1.json"
+        ]
+      },
+      {
+        "job": "confirmation_queue_v1",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 83680,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "tools/confirmation_queue.py"
+        ]
+      },
+      {
+        "job": "continual_queue_v1",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 57128,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "tools/continual_queue.py"
+        ]
+      },
+      {
+        "job": "continual_statistics_queue_v1",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 104146,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "tools/continual_statistics_queue.py"
+        ]
+      },
+      {
+        "job": "factor_recovery_queue_v1",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 45773,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "tools/factor_recovery_queue.py"
+        ]
+      },
+      {
+        "job": "final_parent_queue_v1",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 18882,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "tools/final_parent_queue.py",
+          "--organization-job",
+          "organization_queue_v1"
+        ]
+      },
+      {
+        "job": "formal_recovery_queue_v2",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 47495,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "tools/formal_recovery_queue.py",
+          "--final-parent-job",
+          "final_parent_queue_v1",
+          "--factor-job",
+          "factor_recovery_queue_v1"
+        ]
+      },
+      {
+        "job": "horizon_queue_v1",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 75728,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "tools/horizon_queue.py"
+        ]
+      },
+      {
+        "job": "noise_controls_queue_v1",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 88812,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "tools/noise_controls_queue.py"
+        ]
+      },
+      {
+        "job": "organization_queue_v1",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 7370,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "tools/organization_queue.py",
+          "--development-job",
+          "phi_development_queue_v1"
+        ]
+      },
+      {
+        "job": "phi_core_queue_v3",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 3902,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "tools/phi_core_queue.py",
+          "--calibration-job",
+          "calibration_queue_v3"
+        ]
+      },
+      {
+        "job": "phi_development_queue_v1",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 5211,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "tools/phi_development_queue.py",
+          "--core-job",
+          "phi_core_queue_v3"
+        ]
+      },
+      {
+        "job": "profile_3b_X_H2_three_routes_learned_parent",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 162253,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "tools/profile_transition.py",
+          "--checkpoint",
+          "runs/parent_3b_dev_parent_r32_s17_extend512_v2/latest.pt",
+          "--out",
+          "checks/profile_3b_X_H2_three_routes_learned_parent.json",
+          "--seq",
+          "512",
+          "--effective-tokens",
+          "512",
+          "--architecture",
+          "X",
+          "--horizon",
+          "EXACT_H2_tail",
+          "--retain-facts"
+        ]
+      },
+      {
+        "job": "recovery_7b_early_light_standard_s17_v1",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 161029,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "-m",
+          "gaosi.recover",
+          "--config",
+          "configs/recovery_7b_early_light_standard_s17_v1.json"
+        ]
+      },
+      {
+        "job": "recovery_dev_factor_ratio16_lr3e-05_s17_v1",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 144402,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "-m",
+          "gaosi.recover",
+          "--config",
+          "configs/recovery_dev_factor_ratio16_lr3e-05_s17_v1.json"
+        ]
+      },
+      {
+        "job": "recovery_statistics_queue_v1",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 92496,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "tools/recovery_statistics_queue.py"
+        ]
+      },
+      {
+        "job": "reflow_queue_v1",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 52783,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "tools/reflow_queue.py"
+        ]
+      },
+      {
+        "job": "reflow_statistics_queue_v1",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 99300,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "tools/reflow_statistics_queue.py"
+        ]
+      },
+      {
+        "job": "selective_statistics_queue_v1",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 94912,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "tools/selective_statistics_queue.py"
+        ]
+      },
+      {
+        "job": "seven_b_early_queue_v1",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 30266,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "tools/seven_b_early_queue.py"
+        ]
+      },
+      {
+        "job": "seven_b_scale_queue_v1",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 64131,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "tools/seven_b_queue.py"
+        ]
+      }
+    ],
+    "recent_runs": [
+      {
+        "run": "runs/base_boundary_zero_Adam64_s17_v1",
+        "last": {
+          "event": "recover",
+          "utc": "2026-10-29T16:15:54.981965+00:00",
+          "process_wall_seconds": 856.0525975227356,
+          "step": 16,
+          "loss_D": 3.261227539042011e-05,
+          "loss_language": 1.7750256061553955,
+          "route_tokens": {
+            "task": 532,
+            "language": 985
+          },
+          "step_seconds": 7.432648658752441,
+          "coverage_slot": "task",
+          "coverage": 512,
+          "raw_update_norm": 0.6557331681251526,
+          "update_norm": 0.6557331681251526,
+          "update_norm_scale": 1.0,
+          "compute_counters": {
+            "loss_forwards": 205,
+            "loss_backwards": 169,
+            "input_tokens": 101389,
+            "supervised_tokens": 41431,
+            "hessian_vector_products": 0
+          },
+          "cpu_rss_bytes": 7838322688,
+          "allocated_bytes": 8925402624,
+          "reserved_bytes": 17882415104,
+          "peak_allocated_bytes": 15064872448,
+          "peak_reserved_bytes": 17882415104
+        },
+        "last_evaluation": {
+          "event": "evaluation",
+          "utc": "2026-10-29T16:14:47.498456+00:00",
+          "process_wall_seconds": 788.5691025257111,
+          "step": 8,
+          "metrics": {
+            "task": {
+              "n": 512,
+              "candidate_accuracy": 1.0,
+              "mean_margin": 10.384852849347403,
+              "nll": 0.028729202517856767,
+              "answer_tokens": 1288,
+              "strict_EM": 0.982421875,
+              "abnormal_rate": 0.0
+            },
+            "language": {
+              "nll": 2.132588546959349,
+              "answer_tokens": 4463
+            }
+          },
+          "language_residual_nats": 0.012506065095136076,
+          "coverage_slot": "task",
+          "coverage": 512,
+          "pool": 512
+        },
+        "checkpoint_mtime_utc": "2026-10-29T16:15:56.578961+00:00"
+      },
+      {
+        "run": "runs/recovery_7b_early_clean_standard_s17_v1",
+        "last": {
+          "event": "evaluation",
+          "utc": "2026-10-29T15:58:22.774667+00:00",
+          "process_wall_seconds": 2024.0252742767334,
+          "step": 64,
+          "metrics": {
+            "task": {
+              "n": 512,
+              "candidate_accuracy": 0.98828125,
+              "mean_margin": 10.654695683159115,
+              "nll": 0.01425736312463797,
+              "answer_tokens": 1288,
+              "strict_EM": 0.98828125,
+              "abnormal_rate": 0.0
+            },
+            "language": {
+              "nll": 1.9830099561944714,
+              "answer_tokens": 4463
+            }
+          },
+          "language_residual_nats": -0.000892210909531288,
+          "coverage_slot": "task",
+          "coverage": 512,
+          "pool": 512
+        },
+        "last_evaluation": {
+          "event": "evaluation",
+          "utc": "2026-10-29T15:58:22.774667+00:00",
+          "process_wall_seconds": 2024.0252742767334,
+          "step": 64,
+          "metrics": {
+            "task": {
+              "n": 512,
+              "candidate_accuracy": 0.98828125,
+              "mean_margin": 10.654695683159115,
+              "nll": 0.01425736312463797,
+              "answer_tokens": 1288,
+              "strict_EM": 0.98828125,
+              "abnormal_rate": 0.0
+            },
+            "language": {
+              "nll": 1.9830099561944714,
+              "answer_tokens": 4463
+            }
+          },
+          "language_residual_nats": -0.000892210909531288,
+          "coverage_slot": "task",
+          "coverage": 512,
+          "pool": 512
+        },
+        "checkpoint_mtime_utc": "2026-10-29T15:54:49.350118+00:00"
+      },
+      {
+        "run": "runs/recovery_dev_factor_ratio4_lr0.0003_s17_v1",
+        "last": {
+          "event": "evaluation",
+          "utc": "2026-10-29T15:24:21.065118+00:00",
+          "process_wall_seconds": 1675.0047044754028,
+          "step": 64,
+          "metrics": {
+            "task": {
+              "n": 512,
+              "candidate_accuracy": 1.0,
+              "mean_margin": 10.532031504884957,
+              "nll": 0.00027192861373411215,
+              "answer_tokens": 1288,
+              "strict_EM": 1.0,
+              "abnormal_rate": 0.0
+            },
+            "language": {
+              "nll": 2.16881060797939,
+              "answer_tokens": 4463
+            }
+          },
+          "language_residual_nats": 0.04872812611517707,
+          "coverage_slot": "task",
+          "coverage": 512,
+          "pool": 512
+        },
+        "last_evaluation": {
+          "event": "evaluation",
+          "utc": "2026-10-29T15:24:21.065118+00:00",
+          "process_wall_seconds": 1675.0047044754028,
+          "step": 64,
+          "metrics": {
+            "task": {
+              "n": 512,
+              "candidate_accuracy": 1.0,
+              "mean_margin": 10.532031504884957,
+              "nll": 0.00027192861373411215,
+              "answer_tokens": 1288,
+              "strict_EM": 1.0,
+              "abnormal_rate": 0.0
+            },
+            "language": {
+              "nll": 2.16881060797939,
+              "answer_tokens": 4463
+            }
+          },
+          "language_residual_nats": 0.04872812611517707,
+          "coverage_slot": "task",
+          "coverage": 512,
+          "pool": 512
+        },
+        "checkpoint_mtime_utc": "2026-10-29T15:21:41.459169+00:00"
+      }
+    ],
+    "queue": {
+      "utc": "2026-10-29T05:57:59.297986+00:00",
+      "event": "DEVELOPMENT_AND_PARENTS_COMPLETE",
+      "note": "Noise calibration and production H1/H2 profile are next; phi core is not marked complete."
+    },
+    "storage": {
+      "/root/autodl-tmp": {
+        "free_bytes": 1063972986880,
+        "total_bytes": 1127428915200
+      },
+      "/": {
+        "free_bytes": 19558744064,
+        "total_bytes": 32212254720
+      }
+    }
+  },
+  "device_observation": {
+    "local_time": "2026-10-30T00:18:34+08:00",
+    "source": "mthreads-gmi 2.4.2, driver 5.2.0-server",
+    "utilization_percent": 92,
+    "memory_used_MiB": 22553,
+    "memory_total_MiB": 49152,
+    "temperature_C": 55,
+    "processes": [
+      {
+        "pid": 130024,
+        "name": "/usr/bin/python",
+        "memory_MiB": 22553
+      }
+    ]
+  },
+  "new_completed_L_H2_profile": {
+    "status": "PASS",
+    "scope": "real MUSA production transition readiness, not learned denoising effect",
+    "command": {
+      "checkpoint": "runs/parent_3b_dev_parent_r32_s17_extend512_v2/latest.pt",
+      "out": "checks/profile_3b_L_H2_three_routes_learned_parent.json",
+      "seq": 512,
+      "effective_tokens": 512,
+      "architecture": "L",
+      "horizon": "EXACT_H2_tail",
+      "retain_facts": true
+    },
+    "model": {
+      "path": "/root/autodl-tmp/models/Qwen2.5-3B",
+      "rank": 32,
+      "targets": "all7",
+      "organization": "O1",
+      "adapter_parameters": 59867136,
+      "trainable_parameters": 59867136,
+      "base_dtype": "torch.bfloat16",
+      "adapter_dtypes": [
+        "torch.float32"
+      ],
+      "attention": "eager",
+      "use_cache": false,
+      "actual_device": "musa:0"
+    },
+    "seconds": 126.56597352027893,
+    "terminal": {
+      "query_task": 0.014620757661759853,
+      "query_language": 1.7084317207336426,
+      "query_keep": 0.014620757661759853,
+      "objective": 0.014620757661759853
+    },
+    "phi_gradient_norm": 0.0023461024927011577,
+    "memory": {
+      "cpu_rss_bytes": 7090741248,
+      "allocated_bytes": 7486640640,
+      "reserved_bytes": 31371296768,
+      "peak_allocated_bytes": 28951309824,
+      "peak_reserved_bytes": 31371296768
+    },
+    "inner_steps": 2,
+    "compute_counters": {
+      "loss_forwards": 146,
+      "loss_backwards": 142,
+      "input_tokens": 72904,
+      "supervised_tokens": 14764,
+      "hessian_vector_products": 40
+    },
+    "full_state_components": [
+      "adapter",
+      "mD",
+      "mR",
+      "v",
+      "loss_ema",
+      "gradient_cosine_ema",
+      "update_ema",
+      "previous_loss",
+      "last_relative_update"
+    ],
+    "noise_summary": {
+      "q": 0.03,
+      "scheme": "subspace",
+      "noise_seed": 17,
+      "QR_device": "cpu",
+      "boundary_seconds": 1.2975306510925293,
+      "composed_clean_squared_raw": 484.33353375540327,
+      "composed_noisy_squared_raw": 484.3615064559641,
+      "composed_damage_squared_raw": 14.643388623833673,
+      "composed_relative_damage": 0.17387955679236253
+    }
+  },
+  "profile_source_sha256": {
+    "tools/profile_transition.py": "3ae2489f09fb98f2180de0a68370e3fc965594b26e871c95151dd31f837a1bdb",
+    "gaosi/transition.py": "5afa7bc2c61b6e81a6f024026c02fe29761a11e8b65925aabafd525e57ead477",
+    "gaosi/recompute.py": "6a35ded53ea214d616619924d0fdd80a3a4ae92d167afe48239c16e004e55343"
+  },
+  "completed_7b_clean": {
+    "config": {
+      "out": "runs/recovery_7b_early_clean_standard_s17_v1",
+      "freeze_manifest": "records/seven_b_early_recovery_plan_v1.json",
+      "phase": "development",
+      "data_seed": 17,
+      "noise_seed": 1729,
+      "parent": "runs/parent_7b_dev_lr1e-4_s17_continue512_v1/latest.pt",
+      "device": "musa",
+      "q_apply": 0.0,
+      "noise_scheme": "subspace",
+      "architecture": "L",
+      "method": "standard_adam",
+      "data": "data/synthetic/dev_parent.jsonl",
+      "target_ids": [],
+      "task_layout": "all",
+      "retain_subset_fraction": 1.0,
+      "subset_seed": 91,
+      "D": "plus",
+      "language_eval": "data/language/dev.jsonl",
+      "language_eval_tokens": 4096,
+      "inner_lr": 0.0003,
+      "effective_tokens": 512,
+      "retain_weight": 0.25,
+      "K": 64,
+      "eval_steps": [
+        8,
+        16,
+        32,
+        64
+      ]
+    },
+    "final": {
+      "task": {
+        "n": 512,
+        "candidate_accuracy": 0.98828125,
+        "mean_margin": 10.654695683159115,
+        "nll": 0.01425736312463797,
+        "answer_tokens": 1288,
+        "strict_EM": 0.98828125,
+        "abnormal_rate": 0.0
+      },
+      "language": {
+        "nll": 1.9830099561944714,
+        "answer_tokens": 4463
+      }
+    },
+    "clean": {
+      "task": {
+        "n": 512,
+        "candidate_accuracy": 0.998046875,
+        "mean_margin": 9.328124355228603,
+        "nll": 0.002528090957534999,
+        "answer_tokens": 1288,
+        "strict_EM": 0.998046875,
+        "abnormal_rate": 0.0
+      },
+      "language": {
+        "nll": 1.9839021671040027,
+        "answer_tokens": 4463
+      }
+    },
+    "base_unchanged": true,
+    "recover_steps": 64,
+    "coverage": 512,
+    "language_delta_nll": -0.000892210909531288
+  },
+  "process_identity_checks": [
+    {
+      "job": "phi_core_queue_v3",
+      "pid": 3902,
+      "start_ticks": "53758856",
+      "live_identity_matches": true,
+      "state": "S"
+    },
+    {
+      "job": "profile_3b_X_H2_three_routes_learned_parent",
+      "pid": 162253,
+      "start_ticks": "56376154",
+      "live_identity_matches": true,
+      "state": "S"
+    },
+    {
+      "job": "base_boundary_zero_Adam64_s17_v1",
+      "pid": 130024,
+      "start_ticks": "55987271",
+      "live_identity_matches": true,
+      "state": "R"
+    }
+  ],
+  "phi_primary_training_started": false,
+  "next_regular_check_local": "2026-10-30T00:48:00+08:00",
+  "limitations": "L profile is a two-step real MUSA backend probe at q=.03 and inner_lr=1e-4; keep and task use the same known parent facts. It is not calibrated-dose training, an optimizer update readiness run, or an effectiveness result. 7B clean is a development ordinary-optimizer control. No checkpoint weights were independently re-evaluated in this audit."
+}

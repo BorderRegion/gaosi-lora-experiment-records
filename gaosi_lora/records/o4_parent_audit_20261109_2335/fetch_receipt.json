@@ -1,0 +1,16 @@
+{
+  "status": "O4_PARENT_AUDIT_ARCHIVE_FETCHED_AND_NON_TENSORS_INDEPENDENTLY_REHASHED",
+  "recorded_at_utc": "2026-11-09T23:27:25.243856+00:00",
+  "archive_sha256": "e3a279386f2c714fd57f880832bf75e783d214f3dec88a5f6117a3f5a86b8b7d",
+  "audit_sha256": "d8f662cab8b29b1452db304a2e514ab072f73d696ab40f7e8378c3048ae55bed",
+  "non_tensor_evidence_verified": 52,
+  "tensor_paths_retained_remote": [
+    "runs/o4_current_b_on_history_a_s17/latest.pt",
+    "runs/o4_historical_a_s17/master.pt",
+    "runs/o4_historical_b_s17/master.pt"
+  ],
+  "prediction_files": 8,
+  "prediction_rows": 4096,
+  "method_validated": false,
+  "full_goal_complete": false
+}

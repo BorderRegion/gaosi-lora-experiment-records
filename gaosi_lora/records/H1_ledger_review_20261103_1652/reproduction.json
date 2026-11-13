@@ -1,0 +1,36 @@
+{
+  "status": "OLD_OFFLINE_CHECKER_FALSE_REJECTION_REPRODUCED",
+  "recorded_at_utc": "2026-11-03T16:52:48.481287+00:00",
+  "fixture": "Synthetic complete H1-shaped logs from archived L-H2, with actual first H1 noise metadata; not an actual complete H1 run.",
+  "old_error": "Different H1/H2 task, parent, dose or corruption metadata",
+  "old_tool_sha256": "35a06b6eb0831ff7468faf60b3e0ca0b12a90cd29763dcc40dcb7eddb31e3777",
+  "actual_H1_events": "records/pipeline_monitor_20261103_165102_utc/snapshot/runs/phi_mix_O1_L_H1_commonwarm_s17_observed_blocking_v8/events.jsonl",
+  "actual_H1_events_sha256": "bfc4501909301144d4734dad3ed4f5406de04b18bb3d0d542e59b755b26d7153",
+  "H1_noise": {
+    "q": 0.5,
+    "scheme": "subspace",
+    "noise_seed": 1700064,
+    "QR_device": "cpu",
+    "boundary_seconds": 1.3259797096252441,
+    "composed_clean_squared_raw": 438.92731018671304,
+    "composed_noisy_squared_raw": 438.82125371750834,
+    "composed_damage_squared_raw": 257.09584991991295,
+    "composed_relative_damage": 0.7653343947548025
+  },
+  "H2_noise": {
+    "q": 0.5,
+    "scheme": "subspace",
+    "noise_seed": 1700064,
+    "QR_device": "cpu",
+    "boundary_seconds": 1.658177375793457,
+    "composed_clean_squared_raw": 438.92731018671304,
+    "composed_noisy_squared_raw": 438.82125371750834,
+    "composed_damage_squared_raw": 257.09584991991295,
+    "composed_relative_damage": 0.7653343947548025
+  },
+  "differing_noise_fields": [
+    "boundary_seconds"
+  ],
+  "training_modified_or_started": false,
+  "method_validated": false
+}

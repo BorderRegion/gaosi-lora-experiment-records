@@ -1,0 +1,26 @@
+{
+  "utc": "2026-10-30T06:01:13.100060+00:00",
+  "comparison_hashes": {
+    "records/prefix_launch_blocking_comparison_20261030_0333/pair_comparison.json": "9037374a3841a06a7b1e76f6f05e8883e6eb30737f5f524dc11c4a731a7ee9c9",
+    "records/prefix_launch_blocking_comparison_20261030_0333/reference_vs_blocking.json": "f53fabb853741c3985b134caf4581847e384178afddafeb043d1f17b56c17435",
+    "records/prefix_launch_blocking_comparison_20261030_0333/reference_vs_async.json": "29af21d99a2c54b096b13e7ec94913ddc4323e418d2101e891558c91fed9e3bb"
+  },
+  "jobs": {
+    "L_episode7_same_state_async_r1": {
+      "pid": 585692,
+      "start_ticks": "61402582",
+      "cmdline": "/usr/bin/python -u tools/diagnose_repeat_gradient.py --config configs/diagnose_L_episode7_same_state_async_r1.json ",
+      "environment": []
+    },
+    "L_episode7_same_state_blocking_r1": {
+      "pid": 585694,
+      "start_ticks": "61402592",
+      "cmdline": "/usr/bin/python -u /root/autodl-tmp/gaosi_lora/tools/device_guard.py --job-name diagnose_L_episode7_same_state_blocking_r1 --lock-path /tmp/gaosi_musa_device0.lock -- /usr/bin/env MUSA_LAUNCH_BLOCKING=1 /usr/bin/python -u tools/diagnose_repeat_gradient.py --config configs/diagnose_L_episode7_same_state_blocking_r1.json ",
+      "environment": []
+    }
+  },
+  "lock_inode": 31148027670,
+  "production_source_unchanged": true,
+  "NEXT_STEPS.md_sha256": "3801fd140bb3a46916498ba266fcfbcbc55c9761ea943e6d39cf1419a1444f03",
+  "REPORT.md_sha256": "20a429d2fbec81aab322beb96fe742d2713ca390d68af705b80a98fd386ce08d"
+}

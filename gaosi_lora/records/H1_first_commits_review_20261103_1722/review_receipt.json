@@ -1,0 +1,39 @@
+{
+  "status": "FIRST_H1_COMMITS_PARTIAL_LEDGER_AND_ARCHIVED_CLOCKS_REVIEWED",
+  "recorded_at_utc": "2026-11-03T17:23:47.174369+00:00",
+  "previous_goal_turn": "progress_H1_startup_and_offline_checker_correction_documented",
+  "current_goal_turn": "verified_wait_then_progress_first_H1_commits_and_optimizer_clock_evidence",
+  "evidence_sha256": {
+    "records/H1_partial_inner_review_20261103_1721.json": "17d8a2a15abb81237f426cb4503d9a4b0687f0fc8dec15f832253406ec9eb643",
+    "records/pipeline_review_20261103_1721.json": "a80e2669a684dfe0275e59287b2a86b5dbe63d8a670a0f696a729759165c4032",
+    "records/pipeline_observer_20261101_1220/progress_20261103_1721.json": "ff587f512cbb4b575b1371da6451233501aef46c0883750b9eadfab685351b9f",
+    "records/H1_first_commits_review_20261103_1722/inspect_archived_optimizer.py": "3ac64f26827331c7b7a149f11befe3efb590e664d5873a3231b93df6133d53bb",
+    "records/H1_first_commits_review_20261103_1722/optimizer_clock_review.json": "812940134dfc9e779af332dde8e4294511b48f717b01ade339e7f813e666a2f2",
+    "records/H1_first_commits_review_20261103_1722/optimizer_inspection_command.log": "6665995517749700d611f283dff7949fd317d3f5acacf6e6696eedc7ad5c70b5",
+    "records/H1_first_commits_review_20261103_1722/horizon_comparison_check.json": "a8f4a66b99a9a6576ab14042ea657aff562faa6e29ff8af5455f575a75d78812"
+  },
+  "observation": "records/pipeline_monitor_20261103_172107_utc",
+  "archive_sha256": "a21c8074866a9a9049a97fdcdec042f648a26008eee7a1f7a8f9e59b8590a429",
+  "H1_additional_episodes_completed": 3,
+  "H1_additional_episodes_total": 128,
+  "H1_additional_inner_steps_completed": 48,
+  "H1_additional_inner_steps_total": 2048,
+  "cumulative_inner_steps_including_shared_warm": 560,
+  "Adam_checkpoint_steps_observed": [
+    64,
+    66,
+    67
+  ],
+  "maximum_recorded_raw_norm": 0.196767914821646,
+  "controller_count": 15,
+  "alerts": [],
+  "horizon_effect_comparison": "WAITING_FOR_REVIEWED_ENDPOINTS_AND_EXISTING_H2_DEV",
+  "next_due_at_utc": "2026-11-03T17:51:11.313924+00:00",
+  "training_modified_or_restarted": false,
+  "method_validated": false,
+  "full_goal_complete": false,
+  "limitations": [
+    "Partial input ledger/finite tensor/optimizer clock checks do not replace complete audit, saved-gradient Adam replay or scientific review.",
+    "No recovery efficacy comparison or method validation is available."
+  ]
+}

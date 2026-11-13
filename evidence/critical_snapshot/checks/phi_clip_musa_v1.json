@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "device": "musa",
+  "tests": {
+    "known_3_4_direction_scale_1.0": "PASS",
+    "known_3_4_direction_scale_1e+30": "PASS",
+    "known_3_4_direction_scale_8.5070586659632215e+37": "PASS",
+    "below_threshold_unchanged": "PASS",
+    "nonfinite_rejected_before_mutation": "PASS",
+    "captured_real_gradient_direction_and_unit_norm": "PASS"
+  },
+  "captured": {
+    "raw_norm": 1.4829657060088282e+36,
+    "clipped_norm": 1.0000000080094258
+  },
+  "scope": "Outer clipping arithmetic only; does not validate oversized H2 gradients"
+}

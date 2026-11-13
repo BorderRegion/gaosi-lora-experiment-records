@@ -1,0 +1,8 @@
+{
+  "status": "LOCAL_PREFLIGHT_ARGUMENT_ENCODING_FAILURE_BEFORE_REMOTE_INVOCATION",
+  "error": "ValueError: embedded null byte",
+  "source_sha256": "a6806acebed1fabd8e9a69d5f13487f9c7cf1b2cf881f5b586afe05badda4aba",
+  "remote_invocation_occurred": false,
+  "archive_resume_invoked": false,
+  "training_modified": false
+}

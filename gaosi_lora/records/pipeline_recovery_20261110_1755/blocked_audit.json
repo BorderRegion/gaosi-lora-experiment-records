@@ -1,0 +1,73 @@
+{
+  "status": "THREE_CONSECUTIVE_GOAL_TURNS_SAME_REMOTE_TRANSPORT_BLOCKER_VERIFIED",
+  "recorded_at_utc": "2026-11-10T18:29:24.867132+00:00",
+  "previous_goal_turn_classification": "progress_historical_result_recovery_and_versioned_recovery_preparation",
+  "blocking_condition": "AutoDL SSH gateway resets connection before key exchange; no authenticated remote session is available.",
+  "consecutive_goal_turns_with_same_condition": 3,
+  "turns": [
+    {
+      "scope": "initial_observer_transport_failure_and_recovery_preparation",
+      "evidence": "records/pipeline_recovery_20261110_1755/outage_local_note.json"
+    },
+    {
+      "scope": "partial_historical_capture_result_recovered_while_same_gateway_outage_continued",
+      "evidence": "records/pipeline_recovery_20261110_1755/preparation_verification.json"
+    },
+    {
+      "scope": "current_fresh_maintainer_attempt_38_same_gateway_failure",
+      "evidence": "records/scheduled_review_recovery_20261109_0855/ssh_attempt_38.log"
+    }
+  ],
+  "evidence_sha256": {
+    "records/pipeline_recovery_20261110_1755/outage_local_note.json": "6013a71910085749ece1697118a0c4ea8988bbff37ea01870eca396792ebd560",
+    "records/pipeline_recovery_20261110_1755/partial_capture_review.json": "c2c6cbdf4432e05e7f3430e156a617eb2b9ff1c70cf0e89c571fc62c91c9defc",
+    "records/pipeline_recovery_20261110_1755/partial_capture_local_note.json": "51f865ad3541f7efd2ec54dd6a6d55bde5d03193a580468d64cce8261ad10884",
+    "records/pipeline_recovery_20261110_1755/preparation_verification.json": "78bd3527e50bef9396b91d6f0c7afea280dbd16ef1f814d92505d0edf605ee4e",
+    "records/scheduled_review_recovery_20261109_0855/ssh_attempt_38.log": "1115bdf3340eafbc0f9880a1cc6829f60461efe0de8ee72a682fc6385b308239"
+  },
+  "transport_state": {
+    "status": "SSH_RETRY_BACKOFF_LOCAL_ONLY",
+    "recorded_at_utc": "2026-11-10T18:28:16.607207+00:00",
+    "identity": {
+      "pid": 896141,
+      "start_ticks": "146063673",
+      "state": "R"
+    },
+    "training_modified_or_restarted": false,
+    "full_goal_complete": false,
+    "attempt": 38,
+    "exit_code": 255,
+    "consecutive_failures": 13,
+    "retry_after_seconds": 300,
+    "log": "ssh_attempt_38.log"
+  },
+  "transport_maintainer_identity_verified_live": {
+    "pid": 896141,
+    "start_ticks": "146063673",
+    "state": "R"
+  },
+  "control_socket_absent": true,
+  "latest_fresh_gateway_failure_exit_code": 255,
+  "latest_historical_collector_progress": {
+    "capture_utc": "2026-11-10T17:45:45.617915+00:00",
+    "committed_steps": 216,
+    "budget": 512,
+    "whole_archive_independently_verified": false
+  },
+  "last_fully_independently_reviewed_steps": 192,
+  "full_protocol_remaining": true,
+  "full_protocol_complete": false,
+  "next_experimental_actions_require_remote_access": true,
+  "independent_recovery_preparation_complete_within_local_scope": true,
+  "unblock_conditions": [
+    "Existing authenticated SSH connection becomes available again.",
+    "User confirms changed AutoDL connection address/port or restores the instance/gateway."
+  ],
+  "optional_user_console_status_question_pending": true,
+  "collector_resubmitted": false,
+  "training_or_original_controllers_modified_or_restarted": false,
+  "new_observer_started": false,
+  "remote_documentation_publication_pending": true,
+  "method_validated": false,
+  "full_goal_complete": false
+}

@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "purpose": "Development-only common-warm L H1 versus L H2 training-horizon effect; separate from architecture selection and fixed-state derivative diagnostics.",
+  "architecture": "L",
+  "common_warm_inner_updates": 512,
+  "cumulative_inner_updates_each": 2560,
+  "additional_inner_updates_each": 2048,
+  "world_selection": "Known dev parent, then first two fact and first two affine_integer dev worlds sorted by world_id, matching the existing development queue.",
+  "doses": ["clean", "medium"],
+  "K": 64,
+  "eval_steps": [8, 16, 32, 64],
+  "data_seed": 17,
+  "noise_seed": 1729,
+  "reuse": "Only the ten declared L_2560 development runs, after complete config/source/input/phi validation. H1 explicitly uses each H2 saved initial adapter; compare final stream states and every route-token count.",
+  "score": "At each declared step: 0.5*(candidate_accuracy+strict_EM), minus language and keep NLL residual above 0.1 nats. Equal weights for known/fact/rule groups and doses. Report H2 minus H1.",
+  "report": "Preserve all per-step metrics, paired deltas, recovery costs, endpoint evidence and training costs. No significance claim from one training seed, no change to frozen architecture-selection policy.",
+  "gate": "Both endpoints need their own complete artifact audit and independent scientific review receipt before recovery. Same L-H2 phi_0512 and optimizer warm state; same subsequent schedule, seeds, parent/data inputs and cumulative 2560 budget. Never compare H1_2560 with H2_3584.",
+  "formal_data_used": false,
+  "method_validated": false
+}

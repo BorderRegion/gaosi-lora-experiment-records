@@ -1,0 +1,8 @@
+{
+  "status": "OBSERVER_ERROR_REQUIRES_REVIEW_NO_TRAINING_RESTART",
+  "pid": 1620545,
+  "proc_start_ticks": "150866375",
+  "updated_at_utc": "2026-11-10T05:21:00.720220+00:00",
+  "production_modified_or_restarted": false,
+  "error": "CalledProcessError(255, ['ssh', '-S', '/tmp/gaosi_autodl_12666_reboot.sock', '-p', '12666', '-o', 'BatchMode=yes', '-o', 'ConnectTimeout=20', 'root@training.example.invalid', 'cat /root/autodl-tmp/gaosi_lora/records/pipeline_monitor_20261110_052022_utc.tar.gz'])"
+}

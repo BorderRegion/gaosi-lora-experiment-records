@@ -1,0 +1,65 @@
+{
+  "cases": [
+    {
+      "case": "success",
+      "exit_status_propagated": "PASS",
+      "interrupted_switch_recovered": false,
+      "logical_dependency_resolved": true,
+      "model_or_training_executed": false,
+      "old_evidence_preserved": true,
+      "queue_invocations": 1
+    },
+    {
+      "case": "before_alias",
+      "exit_status_propagated": "PASS",
+      "interrupted_switch_recovered": true,
+      "logical_dependency_resolved": true,
+      "model_or_training_executed": false,
+      "old_evidence_preserved": true,
+      "queue_invocations": 1
+    },
+    {
+      "case": "after_alias",
+      "exit_status_propagated": "PASS",
+      "interrupted_switch_recovered": true,
+      "logical_dependency_resolved": true,
+      "model_or_training_executed": false,
+      "old_evidence_preserved": true,
+      "queue_invocations": 1
+    },
+    {
+      "case": "queue_failure",
+      "exit_status_propagated": "FAIL",
+      "interrupted_switch_recovered": false,
+      "logical_dependency_resolved": true,
+      "model_or_training_executed": false,
+      "old_evidence_preserved": true,
+      "queue_invocations": 1
+    },
+    {
+      "case": "wrong_ticks",
+      "rejected_before_any_signal_or_launch": true
+    },
+    {
+      "case": "unreleased_boundary",
+      "rejected_before_any_signal_or_launch": true
+    }
+  ],
+  "full_goal_complete": false,
+  "method_validated": false,
+  "production_handoff_activated": false,
+  "production_plan_created": false,
+  "production_reference_sha256": {
+    "records/pipeline_observed_blocking_v8/tools/organization_queue.py": "ea06746497d5772d7fc2a462fe4020a64204b26b441efcca7f844cc0c7776b69",
+    "tools/device_guard.py": "b1068dc78b14c3e9dc55547d6d2050e3a0899a5d42407c82b8db56cdd4760bcf",
+    "tools/job.py": "92ff3b837b26b968033ad851372e8b7a935d8bac83c1ccbf6d8ebe0735288951"
+  },
+  "recorded_at_utc": "2026-11-10T16:33:18.508506+00:00",
+  "requires_before_production": "Actual completed-leaf audit and pinned boundary plan, monitor identity adapter and explicit observer handoff",
+  "scope": "real isolated Linux processes and unmodified production job wrapper; no model or training",
+  "source_sha256": {
+    "records/controller_handoff_preparation_20261110_1630/handoff.py": "6ca3c01ff2c241845d46bf3b5754f8504a1dd489fa8d4342a868e5aebb2e0d1b",
+    "records/controller_handoff_preparation_20261110_1630/validate.py": "1299c694f39d842d193d835e151cb27a4f92af0e97ce75e2e34f07b6db4535b5"
+  },
+  "status": "PASS"
+}

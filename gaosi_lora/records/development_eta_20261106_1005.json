@@ -1,0 +1,120 @@
+{
+  "status": "CONDITIONAL_BASE_AND_LAUNCHED_H1_SHARED_DEVICE_COST_EXTRAPOLATION_NOT_FULL_PROTOCOL_ETA",
+  "recorded_at_utc": "2026-11-06T10:04:00.014524+00:00",
+  "completed_base_cells": 21,
+  "declared_base_cells": 60,
+  "remaining_base_cells": 39,
+  "additional_H1_completed": 0,
+  "additional_H1_remaining_including_running": 10,
+  "observed_architecture_cell_counts": {
+    "L": 20,
+    "X": 1,
+    "standard_adam": 0,
+    "paired_adam": 0
+  },
+  "task_cost_estimates": {
+    "0": {
+      "completed_cells": 5,
+      "remaining_base_cells": 7,
+      "remaining_additional_H1_cells": 2,
+      "mean_observed_wall_seconds": 7758.160677242279,
+      "remaining_base_seconds_proxy": 54307.12474069595,
+      "additional_H1_seconds_proxy": 15516.321354484558
+    },
+    "1": {
+      "completed_cells": 4,
+      "remaining_base_cells": 8,
+      "remaining_additional_H1_cells": 2,
+      "mean_observed_wall_seconds": 5451.679212808609,
+      "remaining_base_seconds_proxy": 43613.43370246887,
+      "additional_H1_seconds_proxy": 10903.358425617218
+    },
+    "2": {
+      "completed_cells": 4,
+      "remaining_base_cells": 8,
+      "remaining_additional_H1_cells": 2,
+      "mean_observed_wall_seconds": 5408.083371758461,
+      "remaining_base_seconds_proxy": 43264.66697406769,
+      "additional_H1_seconds_proxy": 10816.166743516922
+    },
+    "3": {
+      "completed_cells": 4,
+      "remaining_base_cells": 8,
+      "remaining_additional_H1_cells": 2,
+      "mean_observed_wall_seconds": 6207.6778420209885,
+      "remaining_base_seconds_proxy": 49661.42273616791,
+      "additional_H1_seconds_proxy": 12415.355684041977
+    },
+    "4": {
+      "completed_cells": 4,
+      "remaining_base_cells": 8,
+      "remaining_additional_H1_cells": 2,
+      "mean_observed_wall_seconds": 6011.332310557365,
+      "remaining_base_seconds_proxy": 48090.65848445892,
+      "additional_H1_seconds_proxy": 12022.66462111473
+    }
+  },
+  "base_remaining_serial_work_days_proxy": 2.7654780860863353,
+  "additional_H1_serial_work_days_proxy": 0.7138179031108265,
+  "combined_shared_device_remaining_days_proxy": 3.479295989197162,
+  "communicated_base_only_rough_days": [
+    3,
+    4
+  ],
+  "communicated_base_and_additional_H1_rough_days": [
+    4,
+    5
+  ],
+  "assumptions": [
+    "Existing base and added H1 queues serialize on the original single device lock; H1 work is included in the combined wall-clock estimate.",
+    "Unmeasured X/Adam/H1 tasks cost approximately the corresponding observed task mean; only one X cell and no Adam/H1 endpoints are measured.",
+    "Running or waiting cells are counted at full estimated active cost; no partial-step credit or elapsed queue wait is subtracted.",
+    "No interruption, retries, conditionally triggered training extension or additional GPU workloads."
+  ],
+  "limitations": [
+    "This is arithmetic from20 L and1 X cells, not a validated cross-method ETA, upper bound or completion promise.",
+    "First X known clean cell took7772.08 seconds, similar to its L match7827.02 seconds; one pair cannot calibrate all tasks.",
+    "Future multi-controller job wall times can include device-lock wait and must not be summed as active GPU costs without accounting for queue wait.",
+    "The4-5 day range covers the39 remaining base cells plus10 additional H1 cells only.",
+    "Conditional development/core extensions and all subsequent full-protocol stages are excluded."
+  ],
+  "prior_estimate": "records/development_eta_20261106_0632.json",
+  "full_protocol_eta": null,
+  "full_protocol_remaining_scope": [
+    "development selection and conditional matched extension",
+    "organization specialization and matched phi_clean",
+    "formal recovery, selective recovery, reflow and continual experiments",
+    "7B experiments and matched local budgets",
+    "independent phi seeds29/43, statistical analysis and conditional protocol additions"
+  ],
+  "evidence_sha256": {
+    "records/development_eta_20261106_0632.json": "917490de04495415b9a6cd66205d11b57bf27be726a8648e369d8839e72d0065",
+    "records/horizon_effect_comparison_20261103_1005/declared_pairs.json": "42dc64a7b053f0caae8f030b1779b24ad669269f4fe5f34dd1f33698eccbc5c2",
+    "records/horizon_effect_monitor_20261106_095544_utc/result.json": "2ffdd7168bac36b285b659d495d3344997814e6d941c12c6b3fb05059402aa70",
+    "records/development_completion_20261104_2358/twenty_first_cell_and_first_X_L_endpoint_assessment.json": "4d0523c99020d42a9cc233ed188eface00929f9e947fed01fe4935e9214de24d",
+    "records/development_completion_20261104_2358/review_first_X_20261106.py": "f304eadf94bc1d9d043f33b7ffa713f2b3336932af9b9bf44356ea8ad96fc7f6",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t0_clean_s17.json": "01546584f94766f18038c2fa7463e6a2f622e91818c781e38e1c9f1985426ba4",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t0_medium_s17.json": "a0fba54f09871edbdb1bb4e507d280fb56b8130ce900f3f9247bd84f3116582e",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t1_clean_s17.json": "5313d61a4d0ca308b62b78475f4cb89a6b8335816a1a83b7444707b6a7368de9",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t1_medium_s17.json": "679649781fc4de2b4f6ff01894ae632cebacdde4e02dfc1ed5d9adc2a960b7d7",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t2_clean_s17.json": "df05576367a58704d37379a6ac22ce3edc2472e02e9915ef1051804099ffb5ce",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t2_medium_s17.json": "9f0d8dfa7cb3a6dca7c286f997c488a9a175d7990d558bbeefb476abf64a5434",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t3_clean_s17.json": "ded804b448440eaaf276142c98ef883a294c6b3d7d615f9580425e9a3a07de59",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t3_medium_s17.json": "59233801fb5bffc2b42a12559cda32818140ffda29b07a0edb660c7d46619bf9",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t4_clean_s17.json": "9a2eee617e208492408377a86383b8a243b487f9df268d909677cc2becc1f525",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t4_medium_s17.json": "eba88febdcb8c6729636fd40e2c031a29e8318c1f07c7bd6f400971efb716d72",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t0_clean_s17.json": "0296fd3695b886874b772dec1f0298538c82789bc08e1f986e52f537739bc54c",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t0_medium_s17.json": "d5b3a8ae8c4ece5bfe267ef4d5ed9c411ee6e2df737e28000719fc993d8395cb",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t1_clean_s17.json": "d1c25c2a3bd439c096c25b8d5f51f22c9819bb7e745c32fb3ff98bfa0fe2696f",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t1_medium_s17.json": "32e967c450d09c553c7bb91606296e516b96992aa88a54b09797faac62559f7a",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t2_clean_s17.json": "5d9f586e142a1d18a2120906a93d747b4371dc2f4553844d47a4ee98d289f5a2",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t2_medium_s17.json": "ca52a99b1f4dfa1c2faf8f57cc9ff48b7533df63c965f9ddeae736ba335ac938",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t3_clean_s17.json": "b6ae4951568470ebf32bb10fa9a693d21cd9a6ef326d4ecf112c93426d0368d6",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t3_medium_s17.json": "b27c79c1397d4b9f7192ce743edf2f7c619c0ca1d5b37d822d0f8ee1a7a3f752",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t4_clean_s17.json": "01dc10129f69cfff840b1a203c456b56906c3fd0d67e8e2e8170b0181416b395",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t4_medium_s17.json": "7a6c073389ac0ba3bffdecf472c3350a1316f4066a3b460993b452b652d195b1",
+    "records/development_completion_20261104_2358/phi_dev_X_2048_t0_clean_s17.json": "6224723e50bf1eda5ca1cab8a7e0d2980af3030559d2718d67679985c5fd9b45"
+  },
+  "full_goal_complete": false,
+  "training_modified_or_restarted": false
+}

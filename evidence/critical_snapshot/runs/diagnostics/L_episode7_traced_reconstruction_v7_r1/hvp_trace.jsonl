@@ -1,0 +1,6 @@
+{"event": "support_hvp_trace", "call": 0, "batches": 8, "incoming": {"finite": true, "max_abs": 0.0009968816302716732}, "outgoing": {"finite": true, "max_abs": 0.0047098929062485695}}
+{"event": "support_hvp_trace", "call": 1, "batches": 2, "incoming": {"finite": true, "max_abs": 0.0009968816302716732}, "outgoing": {"finite": true, "max_abs": 0.0003066312347073108}}
+{"event": "support_hvp_trace", "call": 2, "batches": 8, "incoming": {"finite": true, "max_abs": 0.008062793873250484}, "outgoing": {"finite": true, "max_abs": 0.039323724806308746}}
+{"event": "support_hvp_trace", "call": 3, "batches": 10, "incoming": {"finite": true, "max_abs": 0.002007934032008052}, "outgoing": {"finite": true, "max_abs": 0.006587553303688765}}
+{"event": "support_hvp_trace", "call": 4, "batches": 2, "incoming": {"finite": true, "max_abs": 0.002007934032008052}, "outgoing": {"finite": true, "max_abs": 0.001340008806437254}}
+{"event": "support_hvp_trace", "call": 5, "batches": 10, "incoming": {"finite": true, "max_abs": 0.016184095293283463}, "outgoing": {"finite": true, "max_abs": 0.0533408485352993}}

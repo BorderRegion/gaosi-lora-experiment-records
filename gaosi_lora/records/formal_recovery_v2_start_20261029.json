@@ -1,0 +1,61 @@
+{
+  "utc": "2026-10-29T11:13:44.537134+00:00",
+  "jobs": {
+    "formal_recovery_queue_v2": {
+      "name": "formal_recovery_queue_v2",
+      "command": [
+        "/usr/bin/python",
+        "-u",
+        "tools/formal_recovery_queue.py",
+        "--final-parent-job",
+        "final_parent_queue_v1",
+        "--factor-job",
+        "factor_recovery_queue_v1"
+      ],
+      "wrapper_pid": 47494,
+      "started_at_utc": "2026-10-29T11:13:15.346142+00:00",
+      "start_epoch": 1793272395.3461611,
+      "status": "RUNNING",
+      "child_pid": 47495,
+      "child_proc_start_ticks": "54646485",
+      "live": true
+    },
+    "factor_recovery_queue_v1": {
+      "name": "factor_recovery_queue_v1",
+      "command": [
+        "/usr/bin/python",
+        "-u",
+        "tools/factor_recovery_queue.py"
+      ],
+      "wrapper_pid": 45772,
+      "started_at_utc": "2026-10-29T11:08:17.433671+00:00",
+      "start_epoch": 1793272097.4336898,
+      "status": "RUNNING",
+      "child_pid": 45773,
+      "child_proc_start_ticks": "54616693",
+      "live": true
+    },
+    "seven_b_early_queue_v1": {
+      "name": "seven_b_early_queue_v1",
+      "command": [
+        "/usr/bin/python",
+        "-u",
+        "tools/seven_b_early_queue.py"
+      ],
+      "wrapper_pid": 30265,
+      "started_at_utc": "2026-10-29T10:14:48.624282+00:00",
+      "start_epoch": 1793268888.6243007,
+      "status": "RUNNING",
+      "child_pid": 30266,
+      "child_proc_start_ticks": "54295812",
+      "live": true
+    }
+  },
+  "all_phi_frozen": false,
+  "formal_configs": 0,
+  "formal_recovery_queue_v2_tail": [],
+  "factor_recovery_queue_v1_tail": [],
+  "seven_b_early_queue_v1_tail": [
+    "{\"event\": \"seven_b_parent_acquired\", \"checkpoint\": \"runs/parent_7b_dev_lr1e-4_s17_continue512_v1/latest.pt\", \"evaluation\": {\"event\": \"evaluation\", \"utc\": \"2026-10-29T10:50:25.822318+00:00\", \"process_wall_seconds\": 1347.5737011432648, \"step\": 256, \"n\": 512, \"candidate_accuracy\": 1.0, \"mean_margin\": 9.320308487293573, \"nll\": 0.0021725982282166513, \"answer_tokens\": 1288, \"strict_EM\": 1.0, \"abnormal_rate\": 0.0, \"language\": {\"nll\": 2.011827564239502, \"answer_tokens\": 2555}}}"
+  ]
+}

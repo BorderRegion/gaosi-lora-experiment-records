@@ -1,0 +1,15 @@
+--- original/continual_statistics_queue.py
++++ tools/continual_statistics_queue.py
+@@ -13,10 +13,10 @@
+         if json.loads(Path(file).read_text())['status'] != 'PASS':
+             raise RuntimeError('Continual summary and actual stage-cost checks must pass')
+     preserve_json('records/continual_statistics_policy_v1.json', POLICY)
+-    wait_for('records/continual_pilot_ready_v1.json', 'continual_queue_v1')
++    wait_for('records/continual_pilot_ready_v1.json', 'continual_queue_recompute_v7')
+     for stage, label in [('primary', 'primary'), ('full', 'three_seed')]:
+         if stage == 'full':
+-            wait_for('records/confirmation_ready_v1.json', 'confirmation_queue_v1')
++            wait_for('records/confirmation_ready_v1.json', 'confirmation_queue_recompute_v7')
+         out = f'analysis/continual_{label}_v1'
+         run_job(f'continual_statistics_{label}_v1',
+                 ['/usr/bin/python', '-u', 'tools/summarize_continual.py', '--stage', stage, '--out', out],

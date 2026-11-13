@@ -1,0 +1,6 @@
+{
+  "device": "musa",
+  "script_sha256": "dc9276f20dc2ab87de6cc219c852318aeca875a643a250d13b4dd7274630066b",
+  "repeats": 1,
+  "purpose": "Compare identical adapter inputs and each support gradient before tracing H2 mismatch"
+}

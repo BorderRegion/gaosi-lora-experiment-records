@@ -1,0 +1,206 @@
+{
+  "status": "KNOWN_K4_UNIFORM_H1_H2_H4_SAVED_ARTIFACTS_REVIEWED_ON_CPU",
+  "recorded_at_utc": "2026-11-10T14:20:11.946660+00:00",
+  "rows": [
+    {
+      "index": 0,
+      "run": "runs/horizon_known_K4_H1_uniform_s17_observed_blocking_v8",
+      "tail": 1,
+      "K": 4,
+      "diagnostic_status": "COMPLETE",
+      "derivative_obtained": true,
+      "gradient_norm": 0.0916966910174969,
+      "terminal": {
+        "query_task": 0.12828794121742249,
+        "query_language": 2.181528329849243,
+        "query_keep": 0.12828794121742249,
+        "objective": 0.13953474164009094
+      },
+      "endpoint_sha256": "8d3a1102e06d0f46ada00931c16a2e263ff22b672e1e4f1c9c0878f76c3579e8",
+      "rollout_seconds": 249.17092967033386,
+      "memory": {
+        "cpu_rss_bytes": 7584714752,
+        "allocated_bytes": 7726151168,
+        "reserved_bytes": 28626124800,
+        "peak_allocated_bytes": 27594283008,
+        "peak_reserved_bytes": 28626124800
+      },
+      "support_mode_calls": {
+        "detached_prefix_or_H1": 12,
+        "exact_tail": 0
+      }
+    },
+    {
+      "index": 1,
+      "run": "runs/horizon_known_K4_H2_uniform_s17_observed_blocking_v8",
+      "tail": 2,
+      "K": 4,
+      "diagnostic_status": "COMPLETE",
+      "derivative_obtained": true,
+      "full_state_and_sample_flow_comparison_to_H1": {
+        "tensor_count": 5548,
+        "max_absolute_difference": 0.0,
+        "relative_l2_difference": 0.0,
+        "atol": 1e-06,
+        "rtol": 1e-05
+      },
+      "gradient_norm": 0.07743692308801305,
+      "terminal": {
+        "query_task": 0.12828794121742249,
+        "query_language": 2.181528329849243,
+        "query_keep": 0.12828794121742249,
+        "objective": 0.13953474164009094
+      },
+      "endpoint_sha256": "8d3a1102e06d0f46ada00931c16a2e263ff22b672e1e4f1c9c0878f76c3579e8",
+      "rollout_seconds": 470.5093641281128,
+      "memory": {
+        "cpu_rss_bytes": 8877043712,
+        "allocated_bytes": 7726151168,
+        "reserved_bytes": 33403437056,
+        "peak_allocated_bytes": 29887474688,
+        "peak_reserved_bytes": 33403437056
+      },
+      "support_mode_calls": {
+        "detached_prefix_or_H1": 6,
+        "exact_tail": 6
+      }
+    },
+    {
+      "index": 2,
+      "run": "runs/horizon_known_K4_H4_uniform_s17_observed_blocking_v8",
+      "tail": 4,
+      "K": 4,
+      "diagnostic_status": "COMPLETE",
+      "derivative_obtained": true,
+      "full_state_and_sample_flow_comparison_to_H1": {
+        "tensor_count": 5548,
+        "max_absolute_difference": 0.0,
+        "relative_l2_difference": 0.0,
+        "atol": 1e-06,
+        "rtol": 1e-05
+      },
+      "gradient_norm": 0.18405010006347544,
+      "terminal": {
+        "query_task": 0.12828794121742249,
+        "query_language": 2.181528329849243,
+        "query_keep": 0.12828794121742249,
+        "objective": 0.13953474164009094
+      },
+      "endpoint_sha256": "8d3a1102e06d0f46ada00931c16a2e263ff22b672e1e4f1c9c0878f76c3579e8",
+      "rollout_seconds": 712.3851327896118,
+      "memory": {
+        "cpu_rss_bytes": 9213726720,
+        "allocated_bytes": 7773861376,
+        "reserved_bytes": 43578818560,
+        "peak_allocated_bytes": 39840738816,
+        "peak_reserved_bytes": 43578818560
+      },
+      "support_mode_calls": {
+        "detached_prefix_or_H1": 0,
+        "exact_tail": 12
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "data": "data/synthetic/dev_parent.jsonl",
+      "K": 4,
+      "full_derivative_available": true,
+      "H1_and_H2_relative_to_full": {
+        "1": {
+          "gradient_norm": 0.0916966910174969,
+          "full_gradient_norm": 0.18405010006347544,
+          "relative_l2_error": 0.5220437977804231,
+          "cosine": 0.9791832529684725,
+          "both_zero": false
+        },
+        "2": {
+          "gradient_norm": 0.07743692308801305,
+          "full_gradient_norm": 0.18405010006347544,
+          "relative_l2_error": 0.6114676989339244,
+          "cosine": 0.9544270017550759,
+          "both_zero": false
+        }
+      },
+      "H1_relative_to_H2_not_full_error": {
+        "gradient_norm": 0.0916966910174969,
+        "full_gradient_norm": 0.07743692308801305,
+        "relative_l2_error": 0.30287300881164986,
+        "cosine": 0.9755849606822855,
+        "both_zero": false
+      }
+    }
+  ],
+  "phi_parameter_count": 83795,
+  "scope": "Only indices 0, 1, 2; remaining nine runs are not audited here.",
+  "final_twelve_replay_review_completed": false,
+  "all_derivatives_obtained_in_this_group": true,
+  "evidence_sha256": {
+    "records/horizon_uniform_numerics_20261109_2330/plan.json": "a765bd67ea24776836cced76346699663d396696e2db234288503ed5589e64c6",
+    "gaosi/horizon.py": "f31ccc7834ce05d1a391941e2da33aeedd1a7d9a0f573cea4900d34706ad9cfa",
+    "gaosi/meta.py": "f9cf49a2975791fa3466e6caaa31bb8312a20eec64244a4f33d205cf1607ca69",
+    "gaosi/recompute.py": "04f0fe1119f03657647f23cac7d35e9c903cfeb5f05f0f8637d019002167528e",
+    "gaosi/transition.py": "5afa7bc2c61b6e81a6f024026c02fe29761a11e8b65925aabafd525e57ead477",
+    "records/horizon_uniform_numerics_20261109_2330/run.py": "d483ac70a70fee21ac81ba23f75542f78c817c5ae245f745057dc80feb4c2292",
+    "records/horizon_plan_v1.json": "b1315bc951b54e1c5fa4743d79eb3d9ac70c648c3e498a40b9433985b947daf0",
+    "records/phi_architecture_selected.json": "167bddcdbef99f8244bf3acd9f6c8f81192857a6b116558354ef60b45d3704b5",
+    "records/calibration_frozen.json": "da6d7c6e0efc6807430fc2f8a848c53126e105481dd0b8d84f6e6af819a11dc3",
+    "runs/parent_3b_dev_parent_r32_s17_extend512_v2/latest.pt": "1fa4765c5c5d478f8dd0d7089ab6fbecd2f85190cc8d0a875aa1498da6ffc66f",
+    "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/phi_2560.pt": "0d14d7b8882dcd55ca3edb3284405569ed3aec343746e0900381e577b263641b",
+    "data/synthetic/dev_parent.jsonl": "7d4353f9b9a8f1f74c182b503c01d7fb2181836aa464e8d17e1bb3282db25d11",
+    "data/synthetic/dev_world_000.jsonl": "6e15f7323edf55df5b18378756b88a67cd2c650928e2909cd1a050d99ec28722",
+    "data/language/inner.jsonl": "296bb5e07a99e864911c21b4b05845baba0ee7b65529799eb075d6ee2989e766",
+    "data/language/dev.jsonl": "7801dfc3ccc4a445342b1438a6755a7f1a2b7091761337d7603e7e237b29525d",
+    "data/synthetic/rules_integer_v1/active_manifest.json": "1460e5bc26adc01e41bb111d451afa8660bf7bd90d89cefbc90ab0b9ec09088e",
+    "records/horizon_uniform_numerics_20261109_2330/initial_saved_tensor_review.json": "ea798716c2134451c58695af415dc80d1a413a3839bd9bc5261d016d52cc2ab7",
+    "records/horizon_uniform_numerics_20261109_2330/audit_initial.py": "fbf537c3630b48f669510db45f8182462e83eb24a27ebee2e85c62fa79ad2567",
+    "records/horizon_uniform_numerics_20261109_2330/initial_gate_completed.json": "26ab72699b9a10e7486e147d1697b2cd706dc796d7d8b0baed3544eae71d6c7b",
+    "records/horizon_uniform_numerics_20261109_2330/launch_receipt.json": "ed61e2a81420374e2914a4929b08413d122415bb25fb2187848c3138df2314b1",
+    "records/horizon_uniform_numerics_20261109_2330/probe_tensor_audit.json": "62816c78793953322b650e8a42e0d5490e95f70f7f47f7d20d2a458c950e42a1",
+    "records/horizon_uniform_numerics_20261109_2330/uniform_direct_chain_cpu.json": "fb139574cfbf3943b8c9d129853c4b6888a4ca22eca88f2e0798449bdccc8fed",
+    "records/jobs/horizon_known_K4_H1_uniform_s17_observed_blocking_v8.json": "11f65e617dd146809c5f8a484144b5511ab1c63ef24f70d7afb04465dfa660a4",
+    "records/jobs/horizon_known_K4_H2_uniform_s17_observed_blocking_v8.json": "647c8c74677db6f0c514998079f04c9e0ca010edb1d2f6ba0199714c63a032ba",
+    "records/jobs/horizon_uniform_initial_gate_observed_blocking_v8.json": "aed26ae6a2b7e56f3a4f68a2c17a4c52962a13b2709986b70b36814c54b9fc8a",
+    "records/logs/horizon_known_K4_H1_uniform_s17_observed_blocking_v8.log": "cf383306e7b940e69372ff54f3248c373b68a34cc6060f6aa1ed3e8fafea72ee",
+    "records/logs/horizon_known_K4_H2_uniform_s17_observed_blocking_v8.log": "f93a32775ed74a9fb5e48453113362907d717021189752424b5d5bd670a236d0",
+    "runs/horizon_known_K4_H1_uniform_s17_observed_blocking_v8/config.json": "d91cc98f835006a7dd4cb5d04d99a8597ccd47daa955fd01c6a19d17400b713d",
+    "runs/horizon_known_K4_H1_uniform_s17_observed_blocking_v8/endpoint.pt": "b0cde16898478eb6122e879c0d55dccea9dfc13a3f9e695d794ea3f9c077c0b5",
+    "runs/horizon_known_K4_H1_uniform_s17_observed_blocking_v8/events.jsonl": "be5283797453e673d77e01bcc2994decbb7327f9c39ea568c62e22562e11849e",
+    "runs/horizon_known_K4_H1_uniform_s17_observed_blocking_v8/gradient.pt": "28ea5288f7ab4207b8042690553f45984b95c2571bbb9f626f606d8eade48f72",
+    "runs/horizon_known_K4_H1_uniform_s17_observed_blocking_v8/result.json": "4c4c057c103804f25f3bed17aba06fe34a6ea53142ad1e7c13c82a730c49ae74",
+    "runs/horizon_known_K4_H2_uniform_s17_observed_blocking_v8/config.json": "5e5ade8766b0b4866c4bfa8531526fcdecd8706a666082c3b3fe140b72a6d1f7",
+    "runs/horizon_known_K4_H2_uniform_s17_observed_blocking_v8/endpoint.pt": "b0cde16898478eb6122e879c0d55dccea9dfc13a3f9e695d794ea3f9c077c0b5",
+    "runs/horizon_known_K4_H2_uniform_s17_observed_blocking_v8/events.jsonl": "272e5ee99e937f0037c1f4a2fc5908aacf68cec59ee06f9ed92c094e0082889b",
+    "runs/horizon_known_K4_H2_uniform_s17_observed_blocking_v8/gradient.pt": "35153f569d7a159af3a783a4fb067cc16136d40c03b80a6dc5f76c3adff994db",
+    "runs/horizon_known_K4_H2_uniform_s17_observed_blocking_v8/result.json": "3185f5a7ffdbb0f8899005fd99619ef46b863970d0fa25195f3b316287f5cd59",
+    "records/horizon_uniform_numerics_20261109_2330/remaining_queue_started.json": "6ab5871f0cf2a89b56302a752a0ba1717c0c05849e36fa84bb443a6c6f635399",
+    "records/horizon_uniform_numerics_20261109_2330/remaining_queue.py": "e1db643e0d81b5da1859af19165777f3c50ce796478a9dfc2589e42896fb95db",
+    "records/horizon_uniform_numerics_20261109_2330/remaining_index_2.json": "0a5833951a921e4d1dbda631b893349ca0ce6a4715a1a134310dfaca5a151aa9",
+    "runs/horizon_known_K4_H4_uniform_s17_observed_blocking_v8/result.json": "ce3e0f65c29511efce31d207106b0d4a4989956afe69026829ac2b03455def7d",
+    "records/jobs/horizon_known_K4_H4_uniform_s17_observed_blocking_v8.json": "f355a3ac1a910835d64e9831607b76643818a32e3ccfc06a81f4d9ba7701f25e",
+    "records/pipeline_recovery_20261109_2152/incident_review.json": "07699a398c6462bb4a37da80bd33b2c62ad1ec9ed1771cd7ebb960c9970bdbe2",
+    "records/jobs/horizon_known_K4_H2_s17_observed_blocking_v8.json": "ba611cd8089f17cfb3a86f213ec774f3b1477792a29a297bb07a46c09a9a948b",
+    "records/logs/horizon_known_K4_H2_s17_observed_blocking_v8.log": "5cc1bb1e81952870bebfb6f159ad34bf3fea4b424dff067f2da478600dcce255",
+    "runs/horizon_known_K4_H2_s17_observed_blocking_v8/result.json": "c1b2671361898c67021da7f81debb46f752bd38150736dd2e950e5c91e1be646",
+    "configs/horizon_known_K4_H2_s17_observed_blocking_v8.json": "aec765af2ec00697cca1421b582e569e01772686c8b7be1579a1884386ef02d1",
+    "records/jobs/horizon_queue_observed_blocking_v8.json": "c4ffa2e127c5181e275e1f93770f580202cb494c9c8eac2e582ae84104ca285d",
+    "records/logs/horizon_queue_observed_blocking_v8.log": "5761a6c8128132ab1254988b38d2cf3bb9e36eb8c37a31a4ac676531462015f2",
+    "records/logs/horizon_known_K4_H4_uniform_s17_observed_blocking_v8.log": "96cca5ed8f3a830f7c757df9a28ce212a4dd16a3dca1270a00248381695b1060",
+    "runs/horizon_known_K4_H4_uniform_s17_observed_blocking_v8/config.json": "5e3542572d96024ae42157fb0376ad8ae04a5b31d19796524f1860db92fcdafd",
+    "runs/horizon_known_K4_H4_uniform_s17_observed_blocking_v8/events.jsonl": "500f42569a1e2babdd19ac6274d488c13dfa933726d8879974dc987f8ed1194a",
+    "runs/horizon_known_K4_H4_uniform_s17_observed_blocking_v8/endpoint.pt": "b0cde16898478eb6122e879c0d55dccea9dfc13a3f9e695d794ea3f9c077c0b5",
+    "runs/horizon_known_K4_H4_uniform_s17_observed_blocking_v8/gradient.pt": "81addb96855e35913a189a3657671a69c817a810faaaf70621551287b2f3580c",
+    "records/horizon_uniform_numerics_20261109_2330/audit_known_k4.py": "9d6735e9c1447924b43d1527b1276053c56561c599190ce8746485eda6df9f3e"
+  },
+  "original_failed_diagnostic_bytes_unchanged": true,
+  "method_validated": false,
+  "production_training_modified": false,
+  "downstream_promotion_allowed": false,
+  "full_goal_complete": false,
+  "limitations": [
+    "Saved states and gradients are audited on CPU; no real-model derivative is independently recomputed.",
+    "Unavailable full H4/H8 derivatives leave the associated truncation error unmeasured.",
+    "The uniform recomputed-forward path differs from the original failed mixed numerical path.",
+    "A few fixed development queries do not establish comparative learning or recovery efficacy."
+  ]
+}

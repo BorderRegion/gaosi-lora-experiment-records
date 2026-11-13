@@ -1,0 +1,11 @@
+{
+  "config": "configs/diagnose_L_episode7_fixed_tail_blocking_r1.json",
+  "config_sha256": "7a4a28d0d32d500bb09cfc3c29260ce72f1cf15d6159827a5de7c99037054d9b",
+  "validation": {
+    "status": "VALIDATED_NOT_EXECUTED",
+    "phi_updates": 0,
+    "tail_steps": 2,
+    "numeric_tail_evaluations": 7
+  },
+  "runtime_launched": false
+}

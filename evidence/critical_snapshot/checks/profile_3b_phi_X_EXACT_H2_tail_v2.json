@@ -1,0 +1,29 @@
+{
+  "status": "FAIL",
+  "scope": "real MUSA production transition readiness, not learned denoising effect",
+  "command": {
+    "checkpoint": "runs/capacity_3b_all7_r32_lr1e-4_s17_v2/latest.pt",
+    "out": "checks/profile_3b_phi_X_EXACT_H2_tail_v2.json",
+    "seq": 128,
+    "effective_tokens": 32,
+    "architecture": "X",
+    "horizon": "EXACT_H2_tail"
+  },
+  "model": {
+    "path": "/root/autodl-tmp/models/Qwen2.5-3B",
+    "rank": 32,
+    "targets": "all7",
+    "organization": "O1",
+    "adapter_parameters": 59867136,
+    "trainable_parameters": 59867136,
+    "base_dtype": "torch.bfloat16",
+    "adapter_dtypes": [
+      "torch.float32"
+    ],
+    "attention": "eager",
+    "use_cache": false,
+    "actual_device": "musa:0"
+  },
+  "error": "OutOfMemoryError('MUSA out of memory. Tried to allocate 2.00 MiB. GPU 0 has a total capacity of 47.90 GiB of which 225.03 MiB is free. Of the allocated memory 42.40 GiB is allocated by PyTorch, and 1.31 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_MUSA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)')",
+  "traceback": "Traceback (most recent call last):\n  File \"/root/autodl-tmp/gaosi_lora/tools/profile_transition.py\", line 59, in main\n    parameters, state, diag = rollout(model, parameters, zero_state(parameters), phi,\n  File \"/root/autodl-tmp/gaosi_lora/gaosi/meta.py\", line 79, in rollout\n    parameters, state = apply_prepared(prepared, phi, eta, diag['step'], chunk)\n  File \"/root/autodl-tmp/gaosi_lora/gaosi/transition.py\", line 186, in apply_prepared\n    pieces = [factor_delta(item, phi, eta, begin, min(begin + chunk, item['w'].numel()))\n  File \"/root/autodl-tmp/gaosi_lora/gaosi/transition.py\", line 186, in <listcomp>\n    pieces = [factor_delta(item, phi, eta, begin, min(begin + chunk, item['w'].numel()))\n  File \"/root/autodl-tmp/gaosi_lora/gaosi/transition.py\", line 177, in factor_delta\n    e = phi.coordinate(coordinate_inputs(item, first, last), context)\n  File \"/root/autodl-tmp/gaosi_lora/gaosi/transition.py\", line 53, in coordinate\n    return torch.tanh(self.coord(torch.cat((local, context.expand(local.shape[0], -1)), -1))).squeeze(-1)\ntorch.OutOfMemoryError: MUSA out of memory. Tried to allocate 2.00 MiB. GPU 0 has a total capacity of 47.90 GiB of which 225.03 MiB is free. Of the allocated memory 42.40 GiB is allocated by PyTorch, and 1.31 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_MUSA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)\n"
+}

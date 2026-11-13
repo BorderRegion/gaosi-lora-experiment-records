@@ -1,0 +1,46 @@
+{
+  "recorded_at_utc": "2026-11-01T11:45:38.669021+00:00",
+  "goal_turn_classification": "progress",
+  "full_goal_complete": false,
+  "completed_L": {
+    "episodes": 192,
+    "inner_updates": 2560,
+    "artifact_audit_pass": true,
+    "all_192_saved_adam_updates_reviewed": true
+  },
+  "scientific_judgment": "Limited next-stage continuation supported; numerical limitations and historical failure remain explicit.",
+  "new_controllers_started_once": 15,
+  "initial_runtime_identity_verified": true,
+  "full_L_archive_local_and_remote_sha_verified": true,
+  "archive_files_independently_verified": 420,
+  "observer_live_verified": true,
+  "observer": {
+    "pid": 2930339,
+    "proc_start_ticks": "77913891",
+    "due_at_utc": "2026-11-01T12:12:31.425392+00:00"
+  },
+  "pending_scope": "X readiness and full X; common-warm H1; development selection/extensions; four organizations/matched clean; final parents/recovery/selective/reflow/continual; 7B/statistics/independent phi seeds and conditional followups.",
+  "file_sha256": {
+    "records/observed_blocking_core_completion_20261101_1143/adam_replay.json": "cfd40f6ae10709d5e33a1365c6c6d3c00b11799e541e1861eb879079a63d379a",
+    "records/observed_blocking_core_completion_20261101_1143/complete_L_run.tar.gz": "3dd68e78925069112c682bffd8d82911adcdb18d4a4a2bd31bda85cb66412293",
+    "records/observed_blocking_core_completion_20261101_1143/complete_run_archive_receipt.json": "096ed9a81a1f67370f26bb0c33f328fbfe810970d71ba4882ce25ca63ff9a030",
+    "records/observed_blocking_core_completion_20261101_1143/complete_run_manifest.json": "5f991295bc5ec929ce3dc601849fa71a14eb685494f94343dcd7532f2e063761",
+    "records/observed_blocking_core_completion_20261101_1143/documentation_local_update.json": "dcc903a55399898e0c01881abc31019eeeba140cb103e2f4f35cd63760bcc61d",
+    "records/observed_blocking_core_completion_20261101_1143/documentation_note.md": "f1d152b3c0a73b905a2f3f42cdd29899f3144224587102f4fc6178cb164e52bc",
+    "records/observed_blocking_core_completion_20261101_1143/documentation_remote_update.json": "fc7a844873208080d1099684d2a60240c06061851ea402eafeedf19d90e71b7d",
+    "records/observed_blocking_core_completion_20261101_1143/initial_pipeline_runtime.json": "ec3b9c56b439a1c49d555c2f51a6c668142c7d5404833b95ec21ec54f1b54112",
+    "records/observed_blocking_core_completion_20261101_1143/launch_stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "records/observed_blocking_core_completion_20261101_1143/launch_stdout.json": "b73b10348cad6423b1bfdc9598aba75e3b960bebe27461193939b87c568d0d48",
+    "records/observed_blocking_core_completion_20261101_1143/local_archive_verification.json": "bf14d7c086ff105c51fa68a1c83b57ff7d20262d3aab912846e962fcb38b9a75",
+    "records/observed_blocking_core_completion_20261101_1143/replay_all_adam.py": "a87f5dfe6158ec9a3b509dc602a59e253ac8112b3a7ab72dbe05251542d9898c",
+    "records/observed_blocking_core_completion_20261101_1143/scientific_assessment.json": "e529750f7008ff049e01d9e045462fa106273af770804fbaf90a0c9da3e47b23",
+    "records/observed_blocking_core_final_audit_20261101_1139.json": "9cbe5eb4ee6432817e0b0cfb7d3b0ebba3b318ca88cb92e3d700c091754f385c",
+    "records/observed_blocking_core_final_inner_review_20261101_1141.json": "82874ab60cc90b90f6862b19c5fa90d9e96319775f1346b9aeb557231ae68d6f",
+    "records/pipeline_observed_blocking_v8/launch.json": "bf6fd9c044e77a22f5e4c533012311c116ef282308cb2d8599e1209a274a7d16",
+    "records/pipeline_observed_blocking_v8/reviews/phi_mix_O1_L_H2_core_s17_observed_blocking_v8.json": "1646013bb64b63fefe3bf79de0f7515796f0fed3926f274b906b824c424c23bb",
+    "records/pipeline_observer_20261101_1143/collect_snapshot.py": "4cdf2a65b8e80ecf8cbf689a50161e8de1ac9441cca32f558c26fe2cd1f254f2",
+    "records/pipeline_observer_20261101_1143/launch.json": "7669cc5038b61ad5b696cd51989ecd83ea9a633ef878cd3ba145ae3f14d65e21",
+    "records/pipeline_observer_20261101_1143/launch_process.json": "0bf48f18a1b3159d1ce78ac8f00facd8d942a4225e01122d9da267d9110a3dbf",
+    "records/pipeline_observer_20261101_1143/observe.py": "ebd599f6c6ca93ecc91951b4f71dba4606d4d94f43aab38bd698ee53303f2098"
+  }
+}

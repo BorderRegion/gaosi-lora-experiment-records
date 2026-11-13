@@ -1,0 +1,155 @@
+{
+  "status": "SECOND_FACT_WORLD_TWO_DOSES_COMPLETED_DESCRIPTIVE_REVIEW_ONLY",
+  "recorded_at_utc": "2026-11-05T08:00:21.669148+00:00",
+  "scope": "L-H2 phi2048, seed17, second development fact world, q_apply0 and0.7, K64;6 of60 base cells complete overall.",
+  "task_data": "data/synthetic/dev_world_001.jsonl",
+  "keep_data": "data/synthetic/dev_parent.jsonl",
+  "shared_config_fields_verified": [
+    "parent",
+    "phi",
+    "data",
+    "retain_data",
+    "data_seed",
+    "noise_seed",
+    "K",
+    "inner_lr",
+    "architecture",
+    "method"
+  ],
+  "clean_evaluation_identical_across_doses": true,
+  "metrics": {
+    "clean": {
+      "clean": {
+        "task": {
+          "candidate_correct": 9,
+          "strict_EM_correct": 9,
+          "query_count": 32,
+          "nll": 2.734144884739128
+        },
+        "keep": {
+          "candidate_correct": 512,
+          "strict_EM_correct": 504,
+          "query_count": 512,
+          "nll": 0.023651785981122126
+        }
+      },
+      "initial": {
+        "task": {
+          "candidate_correct": 9,
+          "strict_EM_correct": 9,
+          "query_count": 32,
+          "nll": 2.734144884739128
+        },
+        "keep": {
+          "candidate_correct": 512,
+          "strict_EM_correct": 504,
+          "query_count": 512,
+          "nll": 0.023651785981122126
+        }
+      },
+      "final": {
+        "task": {
+          "candidate_correct": 32,
+          "strict_EM_correct": 32,
+          "query_count": 32,
+          "nll": 9.976958480739012e-05
+        },
+        "keep": {
+          "candidate_correct": 511,
+          "strict_EM_correct": 503,
+          "query_count": 512,
+          "nll": 0.03187944808059318
+        }
+      }
+    },
+    "medium": {
+      "clean": {
+        "task": {
+          "candidate_correct": 9,
+          "strict_EM_correct": 9,
+          "query_count": 32,
+          "nll": 2.734144884739128
+        },
+        "keep": {
+          "candidate_correct": 512,
+          "strict_EM_correct": 504,
+          "query_count": 512,
+          "nll": 0.023651785981122126
+        }
+      },
+      "initial": {
+        "task": {
+          "candidate_correct": 6,
+          "strict_EM_correct": 6,
+          "query_count": 32,
+          "nll": 1.4099602545129841
+        },
+        "keep": {
+          "candidate_correct": 364,
+          "strict_EM_correct": 362,
+          "query_count": 512,
+          "nll": 0.3426414310627744
+        }
+      },
+      "final": {
+        "task": {
+          "candidate_correct": 32,
+          "strict_EM_correct": 32,
+          "query_count": 32,
+          "nll": 0.00017115750829518596
+        },
+        "keep": {
+          "candidate_correct": 508,
+          "strict_EM_correct": 504,
+          "query_count": 512,
+          "nll": 0.028486742867409695
+        }
+      }
+    }
+  },
+  "medium_loss_changes": {
+    "task": {
+      "injected": -1.3241846302261437,
+      "recovered": 1.409789097004689,
+      "residual": -2.7339737272308327
+    },
+    "keep": {
+      "injected": 0.3189896450816523,
+      "recovered": 0.3141546881953647,
+      "residual": 0.004834956886287569
+    },
+    "language": {
+      "injected": 0.0206582697683082,
+      "recovered": 0.023048820769121736,
+      "residual": -0.0023905510008135344
+    }
+  },
+  "job_wall_seconds": {
+    "clean": 5392.07329249382,
+    "medium": 5380.669301509857
+  },
+  "interpretation": "Both doses acquire32/32 development fact queries. Under q0.7, known keep candidate correct recovers364 to508 of512, below clean512; strictEM recovers362 to504, equal to its clean504 count. The new task starts9/32 clean and6/32 after noise, while its NLL decreases2.7341 to1.4100: noise has mixed effects across metrics, and signed injected NLL is not clipped. These cells support within-world acquisition and known-task recovery; no matched Adam, superiority or held-out generalization conclusion is available.",
+  "evidence_sha256": {
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t2_clean_s17.json": "df05576367a58704d37379a6ac22ce3edc2472e02e9915ef1051804099ffb5ce",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t2_medium_s17.json": "9f0d8dfa7cb3a6dca7c286f997c488a9a175d7990d558bbeefb476abf64a5434",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2048_t2_clean_s17.json": "2fe295779e3d8e0f8903298afcc39af601af10f21a432ff53c1d842566596b7b",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2048_t2_medium_s17.json": "4d5458e2922899cb9ffc72b9f8cd7f24b3170aef5278d7c747a4e39e4d42f28d",
+    "records/pipeline_observer_20261104_1301/followup_20261105_0755.json": "8cfd65c661c2e5f5539c7a29ba6c83a8a7903b96ce01b19d1f3542cd360f9324"
+  },
+  "limitations": [
+    "CPU inspection of saved tensors and re-aggregation of saved predictions only; no model forward, tokenizer or derivative recomputation.",
+    "Language NLL is checked against the event ledger; no saved per-token language audit.",
+    "Model compute counters omit direct QA candidate/generation calls; they are not total evaluation FLOPs or total model forwards.",
+    "Frozen phi/base flags plus pinned source and file identities are provenance evidence, not an independent in-memory mutation trace.",
+    "No paired-method efficacy, held-out generalization, convergence or multi-seed conclusion from one completed development cell.",
+    "Only32 task queries in a second small development fact world; no formal-set or independent phi-seed evidence.",
+    "Noise lowers new-task NLL despite decreasing candidate/strictEM counts9 to6; all task metrics cannot be described as damaged.",
+    "Keep pool is distinct from new fact queries, but does not establish retention on unmeasured tasks.",
+    "Equal strictEM totals need not imply correctness of the same individual queries."
+  ],
+  "selection_policy_changed": false,
+  "scientific_receipt_generated": false,
+  "method_validated": false,
+  "full_goal_complete": false,
+  "training_modified_or_restarted": false
+}

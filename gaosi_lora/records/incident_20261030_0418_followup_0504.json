@@ -1,0 +1,123 @@
+{
+  "checked_at_utc": "2026-10-29T21:03:39.405353+00:00",
+  "checked_at_shanghai": "2026-10-30T05:03:39.405353+08:00",
+  "scope": "Container expansion follow-up; readonly filesystem, process, and saved diagnostic checks",
+  "filesystems": {
+    "/": {
+      "total_bytes": 32212254720,
+      "available_bytes": 19498975232
+    },
+    "/root/autodl-tmp": {
+      "total_bytes": 1127428915200,
+      "available_bytes": 1056030957568
+    }
+  },
+  "device_lock": {
+    "path": "/tmp/gaosi_musa_device0.lock",
+    "inode": 31148027670
+  },
+  "processes": {
+    "1": {
+      "state": "S",
+      "start_ticks": "53704581",
+      "command": "bash /init/boot/boot.sh "
+    },
+    "318665": {
+      "state": "S",
+      "start_ticks": "58171455",
+      "command": "/usr/bin/python -u tools/job.py --name diagnose_L_training_sync_only_s17_v6 --musa-lock /tmp/gaosi_musa_device0.lock -- /usr/bin/python -u tools/diagnose_training_gradient.py --config configs/diagnose_L_training_sync_only_s17_v6.json "
+    },
+    "318666": {
+      "state": "S",
+      "start_ticks": "58171458",
+      "command": "/usr/bin/python -u tools/diagnose_training_gradient.py --config configs/diagnose_L_training_sync_only_s17_v6.json "
+    },
+    "320302": {
+      "state": "S",
+      "start_ticks": "58183809",
+      "command": "/usr/bin/python -u tools/job.py --name diagnose_tiny_musa_support_create_graph_v4 --musa-lock /tmp/gaosi_musa_device0.lock -- /usr/bin/python -u tools/diagnose_musa_recompute.py --support-forward-create-graph --repeats 2 --out checks/diagnose_tiny_musa_support_create_graph_v4 "
+    }
+  },
+  "jobs": {
+    "diagnose_L_training_hvp_trace_s17_v5": {
+      "name": "diagnose_L_training_hvp_trace_s17_v5",
+      "command": [
+        "/usr/bin/python",
+        "-u",
+        "tools/diagnose_training_gradient.py",
+        "--config",
+        "configs/diagnose_L_training_hvp_trace_s17_v5.json"
+      ],
+      "wrapper_pid": 310715,
+      "started_at_utc": "2026-10-29T20:50:46.535356+00:00",
+      "start_epoch": 1793307046.5353727,
+      "status": "PASS",
+      "device_lock": {
+        "path": "/tmp/gaosi_musa_device0.lock",
+        "version": 1
+      },
+      "child_pid": 310717,
+      "child_proc_start_ticks": "58111604",
+      "exit_code": 0,
+      "wall_seconds": 393.6155288219452,
+      "finished_at_utc": "2026-10-29T20:57:20.150909+00:00"
+    },
+    "diagnose_L_training_sync_only_s17_v6": {
+      "name": "diagnose_L_training_sync_only_s17_v6",
+      "command": [
+        "/usr/bin/python",
+        "-u",
+        "tools/diagnose_training_gradient.py",
+        "--config",
+        "configs/diagnose_L_training_sync_only_s17_v6.json"
+      ],
+      "wrapper_pid": 318665,
+      "started_at_utc": "2026-10-29T21:00:45.082318+00:00",
+      "start_epoch": 1793307645.0823398,
+      "status": "RUNNING",
+      "device_lock": {
+        "path": "/tmp/gaosi_musa_device0.lock",
+        "version": 1
+      },
+      "child_pid": 318666,
+      "child_proc_start_ticks": "58171458"
+    },
+    "diagnose_tiny_musa_support_create_graph_v4": {
+      "name": "diagnose_tiny_musa_support_create_graph_v4",
+      "command": [
+        "/usr/bin/python",
+        "-u",
+        "tools/diagnose_musa_recompute.py",
+        "--support-forward-create-graph",
+        "--repeats",
+        "2",
+        "--out",
+        "checks/diagnose_tiny_musa_support_create_graph_v4"
+      ],
+      "wrapper_pid": 320302,
+      "started_at_utc": "2026-10-29T21:02:48.625665+00:00",
+      "start_epoch": 1793307768.6256838,
+      "status": "RUNNING",
+      "device_lock": {
+        "path": "/tmp/gaosi_musa_device0.lock",
+        "version": 1
+      },
+      "child_pid": 320303,
+      "child_proc_start_ticks": "58183813"
+    }
+  },
+  "training": {
+    "production_running": false,
+    "last_saved_episode": 13,
+    "last_saved_inner_updates": 104,
+    "main_budget_inner_updates": 2560,
+    "failure": "Nonfinite phi gradient; v4 reproduced finite elements with FP32 norm overflow",
+    "resumed": false
+  },
+  "production_source_sha256": {
+    "meta.py": "889620c74a9599c0e3bceaf330f3bea7134d36babdf0e5bc351d7c40a7d1d98b",
+    "transition.py": "5afa7bc2c61b6e81a6f024026c02fe29761a11e8b65925aabafd525e57ead477",
+    "recompute.py": "6a35ded53ea214d616619924d0fdd80a3a4ae92d167afe48239c16e004e55343"
+  },
+  "v6_observations": {}
+}

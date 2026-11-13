@@ -1,0 +1,49 @@
+## 2026-10-29 22:06 持续学习统计与实际成本记录
+
+新增tools/summarize_continual.py及独立统计队列。预声明读取16条四组织/四方法8轮先导，
+以及O1+按原定绝对效应大小规则选出的第二组织的seed29/43确认，共32条轨迹；重算第二
+组织选择并明确探索性，不把先导选择当确认。seed17、29/43、三seed合并分别报告。每轮
+原始history、父库、已见流、当前day/night、语言及成本导出；不同seed的前期world顺序
+不同，早期曲线只逐seed保留，不把round当独立样本或给混任务的跨seed前期实体区间。
+
+第8轮分别比较父库、完整8world流、每world从首次night习得到第8轮的保留变化，按实际
+world ID对齐，再world/实体与外层独立phi/order seed分层bootstrap，2000次/analysis7719。
+四个预声明配对：clean phi-Adam、noise phi-Adam、phi noise-clean、Adam noise-clean。
+完整raw query/答案/指标复算、完整512父库+8x32流、4x32不相交probe、真实128容量
+priority reservoir且无未来绑定、昼夜完整更新序列/全部支持覆盖、相同实际token曝光、
+冻结phi/data/rank/dose/rate/预算、O4九次合并/reset/rounding与累计rank上界均核。
+
+共同额外rank16在round0/4/8、4world、1/4/16步核原始全query并按world/实体聚合；同
+probe seed/支持/LR，和一次共享W0参考比较。W0不按round或组织复制成独立实验。这是
+共同新adapter的后续可学性，不称原adapter剩余容量。单phi/三个phi的区间仅描述固定
+任务、共享父状态与phi/support/order变动，不自动给优越或无限持续学习结论。
+
+核成本时发现O3的day_start原来在切换可训练阶段前记录，可能把前一night的两支参数量
+误报为day可训练量。现先set_stage(day)再记，并增加night_start。昼夜callback补实时
+CPU RSS/MUSA分配与峰值显存。没有改变day/night更新公式；运行中的其他训练不重启。
+旧源码/diff/新hash存records/continual_cost_metadata_v1/。新continual.py SHA256为
+a1c82f3bccb9208979cb1babbdb31f5e6c91ffd5f1fd083a78c25d8671e5a9a2。
+
+远程continual_cost_metadata_cpu_v1在随机tiny CPU模型通过21项回归，110.66秒，四组织
+实际阶段参数量、逐步RSS、独立stock Adam、真实两轮/共享reservoir、O4中断恢复后的
+FP32母本和adapter逐位一致、推理/RNG隔离均核。不是MUSA或8轮效果。独立输出
+checks/continual_cost_metadata_cpu.json，旧检查结果保留；SHA256
+6118631ca43a98b815f397c48b3f4416e61272e2d012b88b88b6378d3c3b8a33。
+
+统计本地/远程12项PASS，显式模拟512父库/8x32流/4x32probe，共16主seed及32完整轨迹，
+手算终点与习得后保留变化、跨顺序按world配对、token曝光、未来replay、重复round、缩小
+查询分母、probe身份、第二组织重算、网格缺失/重复及phi篡改均核，完整JSON/CSV导出。
+远程continual_statistics_cpu_v1真实PASS，34.37秒；check SHA256
+1e8cd3b5cfe66be08c88b894612c78762ea63366447d919075f2f447e2163edb。
+模拟数据不是训练或有效性证据。
+
+continual_statistics_queue_v1已启动，PID104146/start ticks55683845非Z身份匹配；启动时
+continual_queue_v1与confirmation_queue_v1身份有效。records/continual_statistics_start_
+20261029.json与implementation快照存证。真实汇总仍等16条先导，再等两个独立seed。
+本轮无额外GPU监督；最近21:42，下一次约22:12，稳定阶段每30分钟。生产recover未改。
+
+上一goal turn已完成回流汇总实现/验证/接队列/备份，属实际progress；本轮补成本记录、
+持续学习/共同probe汇总、真实验证及接队列，同属progress。真实phi、正式恢复/回流/
+持续/7B与最终统计仍待完成；7B/噪声/H4-H8/边界报告、条件真实文本与16/32轮判断、
+最终逐项协议审计尚未完成。完整目标继续active，不以准备工作替代真实实验。
+

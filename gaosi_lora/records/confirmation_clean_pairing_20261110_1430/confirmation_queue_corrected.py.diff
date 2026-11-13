@@ -1,0 +1,63 @@
+--- records/pipeline_observed_blocking_v8/tools/confirmation_queue.py
++++ records/confirmation_clean_pairing_20261110_1430/confirmation_queue_corrected.py
+@@ -7,9 +7,12 @@
+ import sys
+ 
+ sys.path.insert(0, str(Path.cwd()))
++sys.path.insert(0, str(Path.cwd() / 'tools'))
++sys.path.insert(0, str(Path.cwd() / 'records/pipeline_observed_blocking_v8/tools'))
++sys.path.insert(0, str(Path(__file__).resolve().parent))
+ from gaosi.scale import sha256
+ from organization_queue import wait_for
+-from phi_core_queue import run_job
++from guarded_pipeline_corrected import run_job
+ from phi_development_queue import preserve_json
+ 
+ 
+@@ -97,7 +100,7 @@
+                             'data_sha256': {p: sha256(p) for p in sorted(set(data))}})
+     path = f'configs/{name}.json'
+     preserve_json(path, c)
+-    result = run_job(name, ['/usr/bin/python', '-u', '-m', 'gaosi.confirmation', '--config', path],
++    result = run_job(name, ['/usr/bin/python', '-u', '-m', ('records.confirmation_clean_pairing_20261110_1430.confirmation_runner_corrected' if action == 'meta' else 'gaosi.confirmation'), '--config', path],
+                      Path(c['out']) / 'result.json')
+     saved_config = result.get('config')
+     if saved_config is None and action == 'meta':
+@@ -161,13 +164,31 @@
+         if adapted['inner_updates'] != 512:
+             raise ValueError('Independent organization specialization has wrong budget')
+         freezes[org] = make_freeze(seed, org, 'mixed', adapted['checkpoint'], original, selected)
+-    clean = copy.deepcopy(core)
+-    clean.update(episode_K=schedule + [8] * 64, q_cycle=[0.],
+-                 confirmation_stage='clean_full_from_zero', purpose='independent_clean_matched_from_zero')
++    clean_core = copy.deepcopy(core)
++    clean_core.update(q_cycle=[0.], confirmation_stage='clean_core_from_zero',
++                      purpose='independent_clean_core_matched_non_noise_schedule')
++    clean_core_result = entry(f'confirm_phi_clean_O1_{architecture}_core_paired_s{seed}_observed_blocking_v8',
++                              clean_core, 'meta', seed, upstream + clean_core['parents'], data, [])
++    if clean_core_result['inner_updates'] != selected['core_inner_steps']:
++        raise ValueError('Independent clean core budget differs from mixed core')
++    clean = copy.deepcopy(clean_core)
++    clean.update(episode_K=[8] * 64, known_warm_episodes=0,
++                 initial_phi=clean_core_result['checkpoint'], load_initial_meta_optimizer=True,
++                 confirmation_stage='clean_organization_specialization',
++                 purpose='independent_clean_specialization_matched_non_noise_schedule')
+     clean_result = entry(f'confirm_phi_clean_O1_{architecture}_matched_s{seed}_observed_blocking_v8', clean, 'meta', seed,
+-                         upstream + clean['parents'], data, [])
+-    if clean_result['inner_updates'] != sum(schedule) + 512:
+-        raise ValueError('Independent clean budget differs from mixed core plus specialization')
++                         upstream + clean['parents'] + [clean_core_result['checkpoint']], data, [])
++    if clean_result['inner_updates'] != 512:
++        raise ValueError('Independent clean specialization budget differs from mixed specialization')
++    preserve_json(f'records/confirmation_clean_stage_pairing_s{seed}_v1.json', {
++        'status': 'TWO_ACTUAL_CLEAN_STAGES_COMPLETED_AND_REVIEWED', 'seed': seed,
++        'core_checkpoint': clean_core_result['checkpoint'],
++        'specialization_checkpoint': clean_result['checkpoint'],
++        'core_inner_steps': clean_core_result['inner_updates'],
++        'specialization_inner_steps': clean_result['inner_updates'],
++        'total_inner_steps': clean_core_result['inner_updates'] + clean_result['inner_updates'],
++        'optimizer_inherited': True, 'specialization_episode_index_restarts_at': 0,
++        'formal_data_used': False, 'method_validated': False})
+     freezes['O1_clean'] = make_freeze(seed, 'O1', 'clean', clean_result['checkpoint'], original, selected)
+     preserve_json(f'records/confirmation_phi_frozen_s{seed}_observed_blocking_v8.json',
+                   {'status': 'INDEPENDENT_PHI_FROZEN', 'seed': seed, 'manifests': freezes,

@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "scope": "CPU math/data checks only, not effect evidence",
+  "tests": {
+    "masked_CE_and_gradient_match_stock_Qwen": "PASS",
+    "independent_packed_loss_and_gradient_equal_isolated_samples": "PASS",
+    "common_scratch_add_train_remove_preserves_native_adapter": "PASS",
+    "O3_canonical_split_equivalence": "PASS",
+    "O3_composed_q0_equivalence": "PASS",
+    "paired_noise_byte_identity": "PASS",
+    "target_retain_partition": "PASS",
+    "language_document_disjointness": "PASS"
+  },
+  "article_counts": {
+    "inner": 183,
+    "meta_query": 183,
+    "dev": 183,
+    "final": 182
+  }
+}

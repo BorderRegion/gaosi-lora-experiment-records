@@ -1,0 +1,14 @@
+{
+  "name": "confirmation_queue_v1",
+  "command": [
+    "/usr/bin/python",
+    "-u",
+    "tools/confirmation_queue.py"
+  ],
+  "wrapper_pid": 83679,
+  "started_at_utc": "2026-10-29T13:02:00.697377+00:00",
+  "start_epoch": 1793278920.6973982,
+  "status": "RUNNING",
+  "child_pid": 83680,
+  "child_proc_start_ticks": "55299020"
+}

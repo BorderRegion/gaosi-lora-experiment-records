@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "device": "cpu",
+  "tests": {
+    "known_3_4_direction_scale_1.0": "PASS",
+    "known_3_4_direction_scale_1e+30": "PASS",
+    "known_3_4_direction_scale_8.5070586659632215e+37": "PASS",
+    "below_threshold_unchanged": "PASS",
+    "nonfinite_rejected_before_mutation": "PASS"
+  },
+  "captured": null,
+  "scope": "Outer clipping arithmetic only; does not validate oversized H2 gradients"
+}

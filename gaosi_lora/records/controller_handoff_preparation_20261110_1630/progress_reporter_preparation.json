@@ -1,0 +1,8 @@
+{
+  "status": "DOCUMENTATION_REPORTER_VERSIONED_FOR_CURRENT_CLEAN_CANDIDATES",
+  "original_source": "records/pipeline_observer_20261110_1315/record_progress_note.py",
+  "original_sha256": "46f97fdbdc27873669a74470ba090cdfe2a02d13286b539029a5df1be33e3173",
+  "versioned_source": "records/controller_handoff_preparation_20261110_1630/record_progress_note_v2.py",
+  "versioned_sha256": "a1c72c84ca813bd1aca9960e88e47e8a31e33fa47901ad2265febdff954c5b79",
+  "changes": "Use the existing observer evidence and output paths; cite primary v2 and inactive handoff preparation. No training or observer source changed."
+}

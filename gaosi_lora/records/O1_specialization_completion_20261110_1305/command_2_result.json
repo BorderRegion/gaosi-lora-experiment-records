@@ -1,0 +1,15 @@
+{
+  "returncode": 0,
+  "command": [
+    "/usr/bin/python",
+    "-u",
+    "records/organization_completion_preparation_20261110_0603/inspect_completed_specialization.py",
+    "--audit",
+    "records/O1_specialization_completion_20261110_1305/artifact_audit.json",
+    "--replay",
+    "records/O1_specialization_completion_20261110_1305/adam_replay.json",
+    "--out",
+    "records/O1_specialization_completion_20261110_1305/tensor_review.json"
+  ],
+  "log_sha256": "1ddfbd7cf64620710afef0ab5e1b0515348fe895267aaeef347b1a508b47eff3"
+}

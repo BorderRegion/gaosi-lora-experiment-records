@@ -1,0 +1,93 @@
+{
+  "status": "FIFTH_COMPLETED_DEVELOPMENT_CELL_NEW_FACT_LEARNING_DESCRIPTIVE_REVIEW_ONLY",
+  "recorded_at_utc": "2026-11-05T06:27:38.230070+00:00",
+  "run": "runs/phi_dev_L_2048_t2_clean_s17",
+  "scope": "L-H2 phi2048, seed17, second development fact world, q_apply0, K64;5 of60 base development cells complete.",
+  "task_data": "data/synthetic/dev_world_001.jsonl",
+  "keep_data": "data/synthetic/dev_parent.jsonl",
+  "task_and_keep_are_the_same_query_pool": false,
+  "metrics": {
+    "clean": {
+      "task": {
+        "candidate_correct": 9,
+        "strict_EM_correct": 9,
+        "query_count": 32,
+        "nll": 2.734144884739128
+      },
+      "keep": {
+        "candidate_correct": 512,
+        "strict_EM_correct": 504,
+        "query_count": 512,
+        "nll": 0.023651785981122126
+      }
+    },
+    "initial": {
+      "task": {
+        "candidate_correct": 9,
+        "strict_EM_correct": 9,
+        "query_count": 32,
+        "nll": 2.734144884739128
+      },
+      "keep": {
+        "candidate_correct": 512,
+        "strict_EM_correct": 504,
+        "query_count": 512,
+        "nll": 0.023651785981122126
+      }
+    },
+    "final": {
+      "task": {
+        "candidate_correct": 32,
+        "strict_EM_correct": 32,
+        "query_count": 32,
+        "nll": 9.976958480739012e-05
+      },
+      "keep": {
+        "candidate_correct": 511,
+        "strict_EM_correct": 503,
+        "query_count": 512,
+        "nll": 0.03187944808059318
+      }
+    }
+  },
+  "loss_changes": {
+    "task": {
+      "injected": 0.0,
+      "recovered": 2.7340451151543204,
+      "residual": -2.7340451151543204
+    },
+    "keep": {
+      "injected": 0.0,
+      "recovered": -0.008227662099471057,
+      "residual": 0.008227662099471057
+    },
+    "language": {
+      "injected": 0.0,
+      "recovered": -0.0017544144930230487,
+      "residual": 0.0017544144930230487
+    }
+  },
+  "job_wall_seconds": 5392.07329249382,
+  "interpretation": "The undamaged adapter learns32 development fact queries, from9 to32 candidate/strictEM correct. Known keep candidate correct changes512 to511 and strictEM504 to503 of512. Keep/language NLL increases remain below declared penalty thresholds. This is acquisition on a small development world; it does not establish superiority over Adam or formal-set generalization.",
+  "evidence_sha256": {
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t2_clean_s17.json": "df05576367a58704d37379a6ac22ce3edc2472e02e9915ef1051804099ffb5ce",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t2_clean_s17_evidence/snapshot/runs/phi_dev_L_2048_t2_clean_s17/config.json": "42484e22cd612cf98e0d15b7bbde12590d9aaefd7861f70f0a5ae3e3fe80d25c",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2048_t2_clean_s17.json": "2fe295779e3d8e0f8903298afcc39af601af10f21a432ff53c1d842566596b7b",
+    "records/pipeline_observer_20261104_1301/followup_20261105_0625.json": "6a283e8ea8f4185d2d2b5d5e83d01ebca6f628f6df8161b5a54048930e21e592"
+  },
+  "limitations": [
+    "CPU inspection of saved tensors and re-aggregation of saved predictions only; no model forward, tokenizer or derivative recomputation.",
+    "Language NLL is checked against the event ledger; no saved per-token language audit.",
+    "Model compute counters omit direct QA candidate/generation calls; they are not total evaluation FLOPs or total model forwards.",
+    "Frozen phi/base flags plus pinned source and file identities are provenance evidence, not an independent in-memory mutation trace.",
+    "No paired-method efficacy, held-out generalization, convergence or multi-seed conclusion from one completed development cell.",
+    "Only32 task queries in one development world, q0 and seed17.",
+    "No injected-damage recovery result or matched Adam result for this cell.",
+    "Distinct keep pool does not establish retention across all unmeasured tasks."
+  ],
+  "selection_policy_changed": false,
+  "scientific_receipt_generated": false,
+  "method_validated": false,
+  "full_goal_complete": false,
+  "training_modified_or_restarted": false
+}

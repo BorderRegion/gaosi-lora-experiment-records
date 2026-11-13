@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "scope": "CPU-only simulated scheduler behavior; no training/effect evidence",
+  "controller_imports": 15,
+  "tests": [
+    "running_exact_job_waits_without_launch",
+    "failed_job_rejected",
+    "stale_pid_rejected",
+    "changed_config_rejected",
+    "matching_finite_complete_result_adopted",
+    "nonfinite_checkpoint_rejected",
+    "calibrated_core_template_exactly_matches_adopted_L",
+    "no_duplicate_L_profile_readiness_or_core",
+    "H1_uses_v7_common_512"
+  ]
+}

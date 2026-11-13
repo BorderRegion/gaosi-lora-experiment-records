@@ -1,0 +1,47 @@
+--- original/reflow_queue.py
++++ tools/reflow_queue.py
+@@ -98,7 +98,7 @@
+         c = dict(template, parent_mode=mode)
+         if mode == 'retain_only':
+             c['query_data'] = str(retainfile)
+-        outcomes[mode] = fit_parent(f'parent_3b_entity_{mode}_matched_s17_v1', c)
++        outcomes[mode] = fit_parent(f'parent_3b_entity_{mode}_matched_s17_observed_blocking_v8_v1', c)
+     target_gate = {}
+ 
+     def acquired():
+@@ -113,7 +113,7 @@
+         for mode, previous in list(outcomes.items()):
+             c = dict(previous['config'], steps=512, continue_from=previous['checkpoint'],
+                      eval_steps=[512], purpose='single_matched_entity_parent_extension')
+-            outcomes[mode] = fit_parent(f'parent_3b_entity_{mode}_matched_extend512_s17_v1', c)
++            outcomes[mode] = fit_parent(f'parent_3b_entity_{mode}_matched_extend512_s17_observed_blocking_v8', c)
+     if (not acquired() or not all(result['base_unchanged'] for result in outcomes.values())
+             or outcomes['all']['fact_stream'] != outcomes['retain_only']['fact_stream']
+             or outcomes['all']['config']['steps'] != outcomes['retain_only']['config']['steps']):
+@@ -140,7 +140,7 @@
+ def main():
+     parser = argparse.ArgumentParser()
+     parser.add_argument('--calibration-job', default='calibration_queue_v3')
+-    parser.add_argument('--formal-job', default='formal_recovery_queue_v2')
++    parser.add_argument('--formal-job', default='formal_recovery_queue_observed_blocking_v8')
+     args = parser.parse_args()
+     preserve_json('records/reflow_policy_v1.json', POLICY)
+     if json.loads(Path('checks/reflow_v2_cpu.json').read_text())['status'] != 'PASS':
+@@ -177,7 +177,7 @@
+ 
+     def continue_source(label, config, metadata):
+         for rate in rates['lrs']:
+-            name = f'reflow_{label}_lr{rate:g}_s17_v1'
++            name = f'reflow_{label}_lr{rate:g}_s17_observed_blocking_v8'
+             result = execute(name, dict(config, inner_lr=rate), 'gaosi.reflow')
+             events = [json.loads(line) for line in (Path(result['config']['out']) / 'events.jsonl').read_text().splitlines()]
+             curves = {str(event['step']): event['metrics'] for event in events
+@@ -227,7 +227,7 @@
+                 c['initial_adapter'] = initial
+             if method == 'phi':
+                 c['phi'] = frozen['phi']
+-            name = f'entity_Dminus_{method}_n{seed}_K{frozen["recovery_K"]}_s17_v1'
++            name = f'entity_Dminus_{method}_n{seed}_K{frozen["recovery_K"]}_s17_observed_blocking_v8'
+             result = execute(name, c)
+             if initial is None:
+                 initial = str(Path(result['config']['out']) / 'initial.pt')

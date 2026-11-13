@@ -1,0 +1,11 @@
+{
+  "out": "runs/diagnose_L_training_hvp_trace_s17_v5",
+  "device": "musa",
+  "source_config": "configs/phi_L_real_episode_readiness_s17.json",
+  "source_config_sha256": "dedfe92961ffd2969a4b601b141583f51d4e77c5bfc11ac59a7e873a453896ea",
+  "hvp_trace": true,
+  "trace_script_sha256": "b219990723b7d69b138faf1bd2c50b8dd6ad3f37e8c34fdbbc0e07564842f0fa",
+  "purpose": "Trace unchanged original HVP and capture excessive adjoints; diagnostic readiness only",
+  "formal_data_used": false,
+  "script_sha256": "4cb6979f0d48b16d6ea704512698cc86cc582b28afbd0db21ffdc27ac0dd6ca8"
+}

@@ -1,0 +1,46 @@
+{
+  "status": "H1_STARTUP_AND_OFFLINE_CHECKER_CORRECTION_DOCUMENTED_BOTH_HOSTS",
+  "recorded_at_utc": "2026-11-03T16:54:55.069471+00:00",
+  "previous_goal_turn": "progress_X_completion_documentation_and_eta_synced",
+  "current_goal_turn": "verified_wait_then_progress_H1_startup_and_offline_checker_fix",
+  "note_sha256": "1dea3d218386f72af65027d4c72044687f99ecfea9532411e131c4c1e27f8ff2",
+  "local_documents": [
+    {
+      "path": "REPORT.md",
+      "before_sha256": "0732e43d7ada469028b1dc47e4da02f36f8b43d765ac403eacd534a21a7a1528",
+      "after_sha256": "a91e7d031c3e9844cea42c78a6f9c5a815f0b5b9ef64eb86439a0f8bff4d76b5",
+      "backup": "records/H1_ledger_review_20261103_1652/documentation_before/local/REPORT.md",
+      "history_preserved": true
+    },
+    {
+      "path": "NEXT_STEPS.md",
+      "before_sha256": "e1f9609f202578770ffd9d1bc0ed64efd69308b5effdab461bbbb5c1e1bbfd5a",
+      "after_sha256": "4d353559c559851d5debf68705861e60d7407a6e47e4760d522e261d1a70a4ae",
+      "backup": "records/H1_ledger_review_20261103_1652/documentation_before/local/NEXT_STEPS.md",
+      "history_preserved": true
+    }
+  ],
+  "remote_documents": [
+    {
+      "path": "REPORT.md",
+      "before_sha256": "7d41ee81f50a6c61d4c689e39ccc7b2586c2d5676576360f49374aac2bf3e9fd",
+      "after_sha256": "9628b388f78d4d6e26f337b74a5e430462b5a3bf138559dc9761b71fa6f2bf39",
+      "backup": "records/H1_ledger_review_20261103_1652/documentation_before/remote/REPORT.md",
+      "history_preserved": true
+    },
+    {
+      "path": "NEXT_STEPS.md",
+      "before_sha256": "b7f45ae77264872501c3bab1510f45850121492408a1d5868b9b22f4974bce22",
+      "after_sha256": "3abef852c0a2f9641b6f3dd8ddb9afc4b20327c36291d103de43a130129efc6e",
+      "backup": "records/H1_ledger_review_20261103_1652/documentation_before/remote/NEXT_STEPS.md",
+      "history_preserved": true
+    }
+  ],
+  "startup_review_sha256": "87c0a45e554b429de7543d869981a7c9c51468d77dab4d302638f2d4e33c671b",
+  "validation_sha256": "8fdcf85eabbad6d71a5685fa3cba608bf4bc09d1e81bfe85a56f94d5f6865699",
+  "sync_receipt_sha256": "9b57a672f79295e565070c9a948942be5097a16ee116843f1a5eb7136a50291c",
+  "method_validated": false,
+  "training_modified_or_restarted": false,
+  "additional_remote_training_telemetry_polled": false,
+  "full_goal_complete": false
+}

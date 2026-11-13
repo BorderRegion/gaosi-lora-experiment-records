@@ -1,0 +1,33 @@
+{
+  "status": "COMPLETED_ORGANIZATION_REVIEW_SOURCE_PREPARED_NOT_EXECUTED",
+  "recorded_at_utc": "2026-11-10T06:09:21.969541+00:00",
+  "source_and_dependencies_sha256": {
+    "records/organization_completion_preparation_20261110_0603/inspect_completed_specialization.py": "120223d80e431505656cc51bb759ce77b63422c88e6f3ef13ce29db50eb4732e",
+    "tools/audit_observed_meta.py": "6583634debbdf7c77e1078d987e3ec37bf9c1f4e14cf07babc6fe59e9e8ca99b",
+    "records/pipeline_observer_20261101_1143/replay_saved_adam.py": "9eedbe61dc0f18e26462ed5ebe658cc491600079afd1a64e6a35b486d8df95a2"
+  },
+  "local_source_syntax_parsed": true,
+  "remote": {
+    "syntax_parsed": true,
+    "source_and_dependency_bytes_verified": 3,
+    "completed_review_executed": false
+  },
+  "requires_completed_512_step_organization_artifact_audit_and_CPU_Adam_replay": true,
+  "intended_organizations": [
+    "O1",
+    "O2",
+    "O3",
+    "O4"
+  ],
+  "frozen_two_parent_known_new_parity_coupling_remains_a_limitation": true,
+  "production_numerical_sources_modified": false,
+  "jobs_started": false,
+  "scientific_assessment_written": false,
+  "downstream_promotion_allowed": false,
+  "method_validated": false,
+  "full_goal_complete": false,
+  "limitations": [
+    "Source inspection, syntax parsing and byte verification do not execute a completed review or validate saved tensors or derivatives.",
+    "A separate scientific assessment and bound review receipt remain necessary for downstream progression."
+  ]
+}

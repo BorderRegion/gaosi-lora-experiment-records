@@ -1,0 +1,102 @@
+{
+  "status": "DIAGNOSTIC_COMPLETE",
+  "scope": "Random tiny MUSA operator comparison; not full-model training or effect",
+  "observations": [
+    {
+      "dtype": "torch.bfloat16",
+      "repeat": 0,
+      "finite": true,
+      "direct_objective": 13.548868179321289,
+      "recomputed_objective": 13.548761367797852,
+      "direct_norm": 0.0029996557099957314,
+      "recomputed_norm": 0.005629096089982397,
+      "support_stages": [
+        {
+          "route_call": 0,
+          "input_max_difference": 0.0,
+          "loss_difference": 0.0,
+          "gradient_relative_l2_difference": 0.0034275574114163284
+        },
+        {
+          "route_call": 1,
+          "input_max_difference": 0.0,
+          "loss_difference": 0.0,
+          "gradient_relative_l2_difference": 0.0031164581571123313
+        },
+        {
+          "route_call": 2,
+          "input_max_difference": 0.0,
+          "loss_difference": 0.0,
+          "gradient_relative_l2_difference": 0.0035582224603809714
+        },
+        {
+          "route_call": 3,
+          "input_max_difference": 0.003561459481716156,
+          "loss_difference": 8.869171142578125e-05,
+          "gradient_relative_l2_difference": 0.004744953187587559
+        },
+        {
+          "route_call": 4,
+          "input_max_difference": 0.003561459481716156,
+          "loss_difference": 0.000179290771484375,
+          "gradient_relative_l2_difference": 0.005959831212305332
+        },
+        {
+          "route_call": 5,
+          "input_max_difference": 0.003561459481716156,
+          "loss_difference": -3.4809112548828125e-05,
+          "gradient_relative_l2_difference": 0.006315625581114849
+        }
+      ],
+      "relative_l2_difference": 0.9258672665619658
+    },
+    {
+      "dtype": "torch.float32",
+      "repeat": 0,
+      "finite": true,
+      "direct_objective": 13.548901557922363,
+      "recomputed_objective": 13.548900604248047,
+      "direct_norm": 0.006875996082251307,
+      "recomputed_norm": 0.00687586663970469,
+      "support_stages": [
+        {
+          "route_call": 0,
+          "input_max_difference": 0.0,
+          "loss_difference": 0.0,
+          "gradient_relative_l2_difference": 6.282982644776814e-08
+        },
+        {
+          "route_call": 1,
+          "input_max_difference": 0.0,
+          "loss_difference": 0.0,
+          "gradient_relative_l2_difference": 4.468808164862298e-08
+        },
+        {
+          "route_call": 2,
+          "input_max_difference": 0.0,
+          "loss_difference": 0.0,
+          "gradient_relative_l2_difference": 5.544314516601051e-08
+        },
+        {
+          "route_call": 3,
+          "input_max_difference": 2.942979335784912e-07,
+          "loss_difference": 0.0,
+          "gradient_relative_l2_difference": 1.339949453779416e-07
+        },
+        {
+          "route_call": 4,
+          "input_max_difference": 2.942979335784912e-07,
+          "loss_difference": 0.0,
+          "gradient_relative_l2_difference": 1.7953319203719537e-07
+        },
+        {
+          "route_call": 5,
+          "input_max_difference": 2.942979335784912e-07,
+          "loss_difference": 0.0,
+          "gradient_relative_l2_difference": 1.56959845395195e-07
+        }
+      ],
+      "relative_l2_difference": 1.992291417419843e-05
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "status": "PRESERVED_H1_H2_PREFIX_TEXT_PAIRING_CHECKED_NO_EFFICACY_CLAIM",
+  "reviewed_at_utc": "2026-11-06T15:56:29.571139+00:00",
+  "observation": "records/horizon_effect_monitor_20261106_155547_utc",
+  "checks": [
+    {
+      "run": "runs/phi_horizon_L_H1_2560_t0_clean_s17_v1",
+      "job_status": "PASS",
+      "recorded_steps": 64,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ],
+      "source_files_verified": 25,
+      "declared_initial_adapter_path_matched": true,
+      "clean_evaluation_matches_H2": true,
+      "initial_evaluation_matches_H2": true,
+      "per_step_token_coverage_and_recorded_compute_counters_match_H2_prefix": true,
+      "minimum_effective_tokens": {
+        "task": 513,
+        "language": 551,
+        "keep": 513
+      },
+      "terminal_streams_or_initial_tensor_equality_independently_audited": false
+    },
+    {
+      "run": "runs/phi_horizon_L_H1_2560_t0_medium_s17_v1",
+      "job_status": "RUNNING",
+      "recorded_steps": 44,
+      "evaluation_steps": [
+        0,
+        8,
+        16,
+        32
+      ],
+      "source_files_verified": 25,
+      "declared_initial_adapter_path_matched": true,
+      "clean_evaluation_matches_H2": true,
+      "initial_evaluation_matches_H2": true,
+      "per_step_token_coverage_and_recorded_compute_counters_match_H2_prefix": true,
+      "minimum_effective_tokens": {
+        "task": 516,
+        "language": 551,
+        "keep": 516
+      },
+      "terminal_streams_or_initial_tensor_equality_independently_audited": false
+    }
+  ],
+  "evidence_sha256": {
+    "records/horizon_effect_monitor_20261106_155547_utc/review.json": "c381f9095f4d71b985e58558bb9b4eae371445e4f3f5c8674a8cba807f3a54a0",
+    "records/horizon_effect_monitor_20261106_155547_utc/archive_source_sha256.json": "316d17ffc0cb25b716479b845448867863dd28ce220da0e5c14fe2fdd352f5d2",
+    "records/horizon_effect_monitor_20261106_155547_utc/snapshot/records/horizon_effect_comparison_20261103_1005/declared_pairs.json": "42dc64a7b053f0caae8f030b1779b24ad669269f4fe5f34dd1f33698eccbc5c2",
+    "records/horizon_effect_comparison_20261103_1005/review_runtime_pairs_v1.py": "ecb75855ef5831b17c1d2986d83dd67e9c555db6cb536aa30b898e71f836401f",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t0_clean_s17_evidence/audit.json": "0296fd3695b886874b772dec1f0298538c82789bc08e1f986e52f537739bc54c",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t0_clean_s17_evidence/manifest.json": "a07e800e678a493e27d2b68749be25d34382eb1b4dec24b84c523c95058c684b",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t0_medium_s17_evidence/audit.json": "d5b3a8ae8c4ece5bfe267ef4d5ed9c411ee6e2df737e28000719fc993d8395cb",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t0_medium_s17_evidence/manifest.json": "d68e7f07dae2f69eb49992cbce758d2b664400429553425bebb8a6e4a6e744a2"
+  },
+  "limitations": [
+    "Saved text prefixes only; no checkpoint, stream-state tensor or derivative audit.",
+    "Equal recorded tokens/counters/coverage do not independently prove identical sampled examples or in-memory streams.",
+    "Recorded counters omit direct QA calls and are not full-model FLOPs.",
+    "No method selection, efficacy inference or training modification."
+  ],
+  "method_validated": false,
+  "full_goal_complete": false,
+  "training_modified_or_restarted": false
+}

@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "episodes": 8,
+  "inner_updates": 64,
+  "base_unchanged": true,
+  "checkpoint": "/root/autodl-tmp/gaosi_lora/runs/diagnostics/core_prefix_v7_raw_gradient_r1/repeat_0/latest.pt",
+  "horizon": "EXACT_H2_tail",
+  "compute_counters": {
+    "loss_forwards": 2156,
+    "loss_backwards": 2124,
+    "input_tokens": 1073764,
+    "supervised_tokens": 214704,
+    "hessian_vector_products": 320
+  },
+  "note": "Meta-training completion does not prove superiority; dev selection and frozen holdout tests remain required."
+}

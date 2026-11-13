@@ -1,0 +1,40 @@
+{
+  "utc": "2026-10-29T13:39:02.895174+00:00",
+  "job": {
+    "name": "selective_statistics_queue_v1",
+    "command": [
+      "/usr/bin/python",
+      "-u",
+      "tools/selective_statistics_queue.py"
+    ],
+    "wrapper_pid": 94911,
+    "started_at_utc": "2026-10-29T13:38:25.972097+00:00",
+    "start_epoch": 1793281105.9721174,
+    "status": "RUNNING",
+    "child_pid": 94912,
+    "child_proc_start_ticks": "55517547"
+  },
+  "process_identity_live": true,
+  "stage": "WAITING_FOR_COMPLETE_FORMAL_SELECTIVE_GRID",
+  "upstream_jobs": [
+    "formal_recovery_queue_v2",
+    "confirmation_queue_v1"
+  ],
+  "upstream_process_identities_verified_at_start": true,
+  "cpu_check": {
+    "status": "PASS",
+    "count": 10,
+    "scope": "Pure CPU read-only statistics with simulated F64/R448 grids; no model or effect evidence",
+    "sha256": "781669637b897041d68b3f71c1d235008e655d3c555654b0d2da3c0a7b90dd1c"
+  },
+  "source_hashes": {
+    "gaosi/selective_statistics.py": "bb31c2e2fbe2bde2118d11fee79da96ebdd9f4d326bc823ede56d2ecd8a78f4f",
+    "tools/summarize_selective.py": "6619cfb5ace8eab6edf3d7d2bf3b24829d5c80cd6c1630531b049a171d8e2d4e",
+    "tools/selective_statistics_queue.py": "85cb401452a9efed210bbf9e9590a4296174f1e33e55017d57233a00772d9dad",
+    "tools/validate_selective_statistics.py": "a7b38daa3c1b19f4c247d9d9467ced6080d310f7dcd7539641ac9a6e250aa868"
+  },
+  "policy": "records/selective_statistics_policy_v1.json",
+  "actual_formal_statistics_started": false,
+  "overall_experiment_complete": false,
+  "recover_sha256": "955babb1fb4303e6b367ba848cf909a0d94442620d27a031e215730cf76f44c1"
+}

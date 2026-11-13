@@ -1,0 +1,44 @@
+{
+  "status": "PENDING_CLEAN_PAIRING_ISSUE_AND_UNEXECUTED_FIX_SYNCED_BOTH_HOSTS",
+  "recorded_at_utc": "2026-11-10T14:11:52.007775+00:00",
+  "local_docs": {
+    "REPORT.md": {
+      "before_sha256": "0116ba74f4a2d32d0f0f3a3376166a490a1bd985bb8f62b7c3c97d9e1eb7d26a",
+      "after_sha256": "f1b655b656473e9148be1ddeebc772e9134c51a7b6c29efb08707f1d6c669374",
+      "history_preserved": true
+    },
+    "NEXT_STEPS.md": {
+      "before_sha256": "594c1d25901f26ba23585cb69e865d9f5ae9a2131c1e5925a2b13cd2e81f0f9a",
+      "after_sha256": "92fc85c30e6be305786daf75bdf12794d38b440a20984aa4e37c8b3a422d04bb",
+      "history_preserved": true
+    }
+  },
+  "remote": {
+    "immutable_records_verified": {
+      "records/clean_schedule_pairing_20261110_1407/prepared_clean_core_config.json": "c537b3b2668c280cf3080f3b832f505a907609fd66f32b157e73a7d8d23b970f",
+      "records/clean_schedule_pairing_20261110_1407/review.json": "f6ef06e62a5fc95352aaeb25a9e47af0fa27f79301d94b504e56ea154e502513",
+      "records/clean_schedule_pairing_20261110_1407/prepared_clean_specialization_config.json": "4af1a42013dffad38bcb5b90ce4963e7915e369eb84cd97c448f9c6ceb2cc65c",
+      "records/clean_schedule_pairing_20261110_1407/review_schedule.py": "0566f48b3af7b79b6e6b4079e6a011ef7e6092098b0de01604587d42b36aa8ce",
+      "records/clean_schedule_pairing_20261110_1407/organization_queue_corrected.diff": "c27bbc09f5e3e74e26116b498c4d9b6ddc82b390a1fd15fe7e3cfe0cc5287bd8",
+      "records/clean_schedule_pairing_20261110_1407/queue_preparation.json": "3df853c6ad5e4186d501417ad1611c77893b8ea09840af47609cfd22965e5c07",
+      "records/clean_schedule_pairing_20261110_1407/organization_queue_corrected.py": "c2fbe946e27f1eb01da102229dcd3215332012c6edc7e78b8caa2a4a92af3db5"
+    },
+    "docs": {
+      "REPORT.md": {
+        "before_sha256": "3174483c61106f338be304f2dc36a97f7d489f81477062e98395876d8c008634",
+        "after_sha256": "d0fb1f3841e0b27e6e28acd002cc8f9963b3daff430a9f4ae3a6a3281cae72e9",
+        "history_preserved": true
+      },
+      "NEXT_STEPS.md": {
+        "before_sha256": "9cfe17217125f4389fb93664759b397ff9761fc503ce860f72d3d049ae0cd607",
+        "after_sha256": "33220704b7322c41fba2d92ee302f6787f28c926fdf29b35e627044818078980",
+        "history_preserved": true
+      }
+    },
+    "training_read_or_modified": false
+  },
+  "current_training_modified_or_restarted": false,
+  "correction_submitted": false,
+  "requires_idle_boundary_handoff_before_clean": true,
+  "full_goal_complete": false
+}

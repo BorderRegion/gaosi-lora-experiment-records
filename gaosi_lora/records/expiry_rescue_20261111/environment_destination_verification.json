@@ -1,0 +1,7 @@
+{
+  "status": "ENVIRONMENT_ARCHIVE_AND_TOKENIZER_CONFIG_BYTES_SHA256_VERIFIED_ON_BACKUP_HOST",
+  "archive_sha256": "63c68de816004483c53252fa9d2ce25150ee4198b425041d1610d5cf0e9fa0f6",
+  "metadata_files_verified": 17,
+  "external_files_inventoried": 89,
+  "public_binary_weights_copied": false
+}

@@ -1,0 +1,56 @@
+{
+  "reviewed_at_utc": "2026-10-31T01:39:21.189271+00:00",
+  "previous_goal_turn": "progress_with_new_training_evidence_and_archived_CPU_Adam_replay",
+  "current_goal_turn": "verified_wait_and_new_training_evidence",
+  "observer_live": true,
+  "observer_pid": 202579,
+  "observer_start_ticks": "59350385",
+  "observation": {
+    "observation": "records/observed_blocking_core_monitor_20261031_013645_utc",
+    "archive_sha256": "c3a7aa197f66b0ec3d319d419da18d067ba45ae06ce55b517bd3eda2eaa08161",
+    "verified_source_files": 43,
+    "job_status": "RUNNING",
+    "alerts": [],
+    "production_modified_or_restarted": false
+  },
+  "archive_independently_verified": true,
+  "independently_rehashed_files": 43,
+  "committed_episodes": 87,
+  "committed_inner_updates": 880,
+  "current_L_inner_update_fraction": 0.34375,
+  "all_raw_gradient_ledger_rows_checked": 87,
+  "all_raw_gradients_recorded_finite": true,
+  "max_raw_norm": 0.5823351201809523,
+  "guard_errors": [],
+  "checkpoint": {
+    "copied_artifact_sha256": "96eccd1086dbb1fb70be8e6c90f3b0b1216320a62aacc00d38b0f9f65677ef3c",
+    "next_episode": 87,
+    "inner_updates": 880,
+    "phi_finite": true,
+    "optimizer_finite": true,
+    "config_equal": true
+  },
+  "production_identity": {
+    "pid": 650716,
+    "state": "R",
+    "start_ticks": "62167024",
+    "matches": true,
+    "cmdline": "/usr/bin/python -u tools/train_observed_meta.py --manifest records/observed_blocking_core_20261030_0810/training_manifest.json ",
+    "launch_blocking_environment": [
+      "MUSA_LAUNCH_BLOCKING=1"
+    ]
+  },
+  "K16_timing": {
+    "completed_episodes": 23,
+    "mean_seconds_per_episode": 948.3615193913043,
+    "remaining_episodes": 105,
+    "rough_remaining_hours_at_same_mean": 27.66054431557971,
+    "limitation": "Timing varies by episode mode; not a full protocol ETA."
+  },
+  "next_due_at_utc": "2026-10-31T02:06:45.923544+00:00",
+  "method_validated": false,
+  "downstream_promotion_allowed": false,
+  "production_modified_or_restarted": false,
+  "additional_training_telemetry_polled": false,
+  "full_goal": "incomplete; current L and subsequent full protocol execution/review remain"
+}

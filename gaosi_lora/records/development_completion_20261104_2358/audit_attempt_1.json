@@ -1,0 +1,18 @@
+{
+  "status": "ISOLATED_AUDIT_ATTEMPT_1_FAILED_BEFORE_OUTPUT",
+  "recorded_at_utc": "2026-11-04T23:59:44.913411+00:00",
+  "source_sha256": "413413707c18853521124e389034f5e1ed92a85f6a00a0361eaf79da1cf71c33",
+  "error": "AssertionError: final recovery step counters != final result counters",
+  "cause": "Final language evaluation adds forward/input/supervised counts after recover step64 is logged. Original audit incorrectly assumed identical counters.",
+  "evidence_from_preserved_snapshot": {
+    "loss_forwards_delta": 9,
+    "loss_backwards_delta": 0,
+    "input_tokens_delta": 4472,
+    "supervised_tokens_delta": 4463,
+    "hessian_vector_products_delta": 0,
+    "final_language_answer_tokens": 4463
+  },
+  "correction": "Separate immutable audit_v2.py checks nonnegative deltas, unchanged backward/HVP counts and final language supervised-token delta; original audit preserved.",
+  "training_modified_or_restarted": false,
+  "method_validated": false
+}

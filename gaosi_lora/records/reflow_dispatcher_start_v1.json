@@ -1,0 +1,11 @@
+{
+  "job": "reflow_queue_v1",
+  "status": "RUNNING",
+  "live": true,
+  "tests_passed": 13,
+  "calibration_frozen": false,
+  "formal_ready": false,
+  "phi_formal_training_complete": false,
+  "formal_reflow_started": false,
+  "shared_device_mutex": true
+}

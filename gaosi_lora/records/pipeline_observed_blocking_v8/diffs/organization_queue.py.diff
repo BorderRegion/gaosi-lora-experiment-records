@@ -1,0 +1,34 @@
+--- original/organization_queue.py
++++ tools/organization_queue.py
+@@ -94,7 +94,7 @@
+ 
+ def main():
+     p = argparse.ArgumentParser()
+-    p.add_argument('--development-job', default='phi_development_queue_v1')
++    p.add_argument('--development-job', default='phi_development_queue_observed_blocking_v8')
+     args = p.parse_args()
+     preserve_json('records/organization_training_policy.json', POLICY)
+     check = json.loads(Path('checks/organization_parents_cpu.json').read_text())
+@@ -107,7 +107,7 @@
+                       if 'meta_parent_' in r['config']['data']], key=lambda r: r['config']['data'])
+     assert len(parents) == 2 and all(r['acquisition_gate_passed'] for r in parents)
+     architecture = selected['architecture']
+-    core = json.loads(Path(f'configs/phi_mix_O1_{architecture}_H2_core_s17.json').read_text())
++    core = json.loads(Path(f'configs/phi_mix_O1_{architecture}_H2_core_s17_observed_blocking_v8.json').read_text())
+     core_schedule = core['episode_K'][:]
+     if selected['core_inner_steps'] == 3584:
+         core_schedule += [16] * 64
+@@ -132,11 +132,11 @@
+                           parent_data=[r['config']['data'] for r in current_parents],
+                           historical_bases=[r['master'] for r in histories],
+                           historical_data=[r['historical_bindings'] for r in histories])
+-        endpoints[organization] = train(f'phi_mix_{organization}_{architecture}_specialize512_s17', config)
++        endpoints[organization] = train(f'phi_mix_{organization}_{architecture}_specialize512_s17_observed_blocking_v8', config)
+     clean = copy.deepcopy(core)
+     clean.update(episode_K=core_schedule + [8] * 64, q_cycle=[0.],
+                  purpose='O1_clean_matched_full_core_plus_specialization_budget')
+-    clean_result = train(f'phi_clean_O1_{architecture}_matched_s17', clean)
++    clean_result = train(f'phi_clean_O1_{architecture}_matched_s17_observed_blocking_v8', clean)
+     assert clean_result['inner_updates'] == plan['total_O1_mix_clean_inner_steps']
+     manifests = {}
+     for key, result in list(endpoints.items()) + [('O1_clean', clean_result)]:

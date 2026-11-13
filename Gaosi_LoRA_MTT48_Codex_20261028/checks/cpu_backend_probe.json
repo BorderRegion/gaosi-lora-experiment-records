@@ -1,0 +1,35 @@
+{
+  "device": "cpu",
+  "torch": "2.10.0+cpu",
+  "tests": {
+    "native_adapter_backward": {
+      "status": "PASS",
+      "seconds": 0.03592508200000566,
+      "details": {
+        "loss": 13.226554870605469,
+        "base_grad": null
+      }
+    },
+    "toy_moment_h2": {
+      "status": "PASS",
+      "seconds": 0.014046701000040684,
+      "details": {
+        "phi_grad_norm": 0.002710997825488448,
+        "note": "toy WITH moments; no real transformer yet"
+      }
+    },
+    "bf16_matmul_backward": {
+      "status": "PASS",
+      "seconds": 0.003194257000018297,
+      "details": {
+        "loss": 10.425355911254883
+      }
+    },
+    "real_qwen": {
+      "status": "NOT_RUN",
+      "reason": "no local --model supplied"
+    }
+  },
+  "device_name": "CPU; not MUSA verification",
+  "scope": "compatibility probe, not scientific effect evidence"
+}

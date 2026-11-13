@@ -1,0 +1,82 @@
+{
+  "status": "UPDATED_BASE_DEVELOPMENT_SAME_TASK_COST_EXTRAPOLATION_NOT_FULL_PROTOCOL_ETA",
+  "recorded_at_utc": "2026-11-05T20:58:48.944501+00:00",
+  "completed_base_cells": 13,
+  "declared_base_cells": 60,
+  "remaining_base_cells_including_running": 47,
+  "task_cost_estimates": {
+    "0": {
+      "completed_cells": 4,
+      "remaining_cells": 8,
+      "mean_completed_wall_seconds": 7754.679620265961,
+      "remaining_seconds_at_same_task_cost": 62037.436962127686
+    },
+    "1": {
+      "completed_cells": 3,
+      "remaining_cells": 9,
+      "mean_completed_wall_seconds": 5451.689944028854,
+      "remaining_seconds_at_same_task_cost": 49065.20949625969
+    },
+    "2": {
+      "completed_cells": 2,
+      "remaining_cells": 10,
+      "mean_completed_wall_seconds": 5386.371297001839,
+      "remaining_seconds_at_same_task_cost": 53863.71297001839
+    },
+    "3": {
+      "completed_cells": 2,
+      "remaining_cells": 10,
+      "mean_completed_wall_seconds": 6218.922186255455,
+      "remaining_seconds_at_same_task_cost": 62189.22186255455
+    },
+    "4": {
+      "completed_cells": 2,
+      "remaining_cells": 10,
+      "mean_completed_wall_seconds": 6034.19194149971,
+      "remaining_seconds_at_same_task_cost": 60341.9194149971
+    }
+  },
+  "extrapolated_remaining_days_if_other_arms_match_observed_L_cost": 3.3275173692819147,
+  "communicated_conditional_rough_range_days": [
+    3,
+    4
+  ],
+  "assumptions": [
+    "Single-device sequential frozen queue.",
+    "Each unmeasured X or Adam task has approximately the corresponding observed L task wall time.",
+    "The full cost of the running cell is included; no partial checkpoint progress is subtracted.",
+    "No interruption, retry, conditional extension or other-device contention."
+  ],
+  "limitations": [
+    "All13 measured cells are L; X and both Adam arms remain unmeasured. The3-4 day figure is conditional arithmetic, not a validated cross-method ETA, upper bound or completion promise.",
+    "Compared with the prior5-6 day known-only estimate, measured fact and rule cells cost less. Prior ETA is preserved unchanged.",
+    "Excludes10 additional H1 comparison cells, any conditional matched core/development extension, and all later protocol stages."
+  ],
+  "prior_estimate": "records/development_eta_20261105_0200.json",
+  "full_protocol_eta": null,
+  "full_protocol_remaining_scope": [
+    "development selection and conditional matched extension",
+    "organization specialization and matched phi_clean",
+    "formal recovery, selective recovery, reflow and continual experiments",
+    "7B experiments and matched local budgets",
+    "independent phi seeds29/43, statistical analysis and conditional protocol additions"
+  ],
+  "evidence_sha256": {
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t0_clean_s17.json": "01546584f94766f18038c2fa7463e6a2f622e91818c781e38e1c9f1985426ba4",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t0_medium_s17.json": "a0fba54f09871edbdb1bb4e507d280fb56b8130ce900f3f9247bd84f3116582e",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t1_clean_s17.json": "5313d61a4d0ca308b62b78475f4cb89a6b8335816a1a83b7444707b6a7368de9",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t1_medium_s17.json": "679649781fc4de2b4f6ff01894ae632cebacdde4e02dfc1ed5d9adc2a960b7d7",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t2_clean_s17.json": "df05576367a58704d37379a6ac22ce3edc2472e02e9915ef1051804099ffb5ce",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t2_medium_s17.json": "9f0d8dfa7cb3a6dca7c286f997c488a9a175d7990d558bbeefb476abf64a5434",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t3_clean_s17.json": "ded804b448440eaaf276142c98ef883a294c6b3d7d615f9580425e9a3a07de59",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t3_medium_s17.json": "59233801fb5bffc2b42a12559cda32818140ffda29b07a0edb660c7d46619bf9",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t4_clean_s17.json": "9a2eee617e208492408377a86383b8a243b487f9df268d909677cc2becc1f525",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t4_medium_s17.json": "eba88febdcb8c6729636fd40e2c031a29e8318c1f07c7bd6f400971efb716d72",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t0_clean_s17.json": "0296fd3695b886874b772dec1f0298538c82789bc08e1f986e52f537739bc54c",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t0_medium_s17.json": "d5b3a8ae8c4ece5bfe267ef4d5ed9c411ee6e2df737e28000719fc993d8395cb",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t1_clean_s17.json": "d1c25c2a3bd439c096c25b8d5f51f22c9819bb7e745c32fb3ff98bfa0fe2696f",
+    "records/pipeline_observed_blocking_v8/tools/phi_development_queue.py": "a6a9a393235972a8cfc4f3faa6c3aa96f762185e7b8d875018eb513b7d784978"
+  },
+  "full_goal_complete": false,
+  "training_modified_or_restarted": false
+}

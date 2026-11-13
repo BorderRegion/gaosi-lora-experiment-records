@@ -1,0 +1,36 @@
+{
+  "device": "musa",
+  "torch": "2.11.0.post1",
+  "tests": {
+    "native_adapter_backward": {
+      "status": "PASS",
+      "seconds": 3.300947246956639,
+      "details": {
+        "loss": 15.693946838378906,
+        "base_grad": null
+      }
+    },
+    "toy_moment_h2": {
+      "status": "PASS",
+      "seconds": 1.0629156029899605,
+      "details": {
+        "phi_grad_norm": 0.002438250230625272,
+        "note": "toy WITH moments; no real transformer yet"
+      }
+    },
+    "bf16_matmul_backward": {
+      "status": "PASS",
+      "seconds": 0.429893788008485,
+      "details": {
+        "loss": 7.307792663574219
+      }
+    },
+    "real_qwen": {
+      "status": "NOT_RUN",
+      "reason": "no local --model supplied"
+    }
+  },
+  "torch_musa": "2.11.0.post1+b431668",
+  "device_name": "MTT S4000",
+  "scope": "compatibility probe, not scientific effect evidence"
+}

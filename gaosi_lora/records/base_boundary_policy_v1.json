@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "purpose": "Small full-base-noise + LoRA repair diagnostic; not adapter-noise core or a phi training objective.",
+  "data": "3B development parent and its full512 query library, inner support language and dev evaluation language only.",
+  "base_q": [
+    0.0,
+    0.0001
+  ],
+  "definition": "Every unique floating pretrained parameter: sqrt(1-q)*W + sqrt(q)*RMS(W)*Z in FP32 then one BF16 working-copy rounding; per-parameter independent CPU generator.",
+  "base_scope": "Embeddings, head, linears, norms and biases included; tied storage once. Zero-RMS parameters stay zero; adapter and non-parameter buffers unchanged.",
+  "base_noise_seed": 2701,
+  "chunk_elements": 1048576,
+  "adapter": "Same canonical learned nonzero development adapter in both groups, q_apply=0, standard library Adam; no phi and no added adapter noise.",
+  "repair_lr": "Existing development-frozen recovery_lr; never tuned against this diagnostic.",
+  "budget": "One64-step standard Adam trajectory per dose, evaluate0/8/16/32/64. Its frozen primary-K state is a valid budget endpoint because stock Adam does not use K-dependent phi features.",
+  "metrics": "Complete known512 candidate/strict EM/abnormal and dev language; pristine baseline, corrupted initial, repair curve; injected/recovered/residual relative to pristine W0+parent.",
+  "precision": "Report actual base damage after BF16 rounding separately from intended FP32 perturbation.",
+  "files": "Only loaded memory is perturbed; pretrained model files are never written. Checkpoints contain adapter/optimizer and deterministic corruption settings, not a second full model.",
+  "interpretation": "Low-rank compensation feasibility at one declared small dose and budget. Undetectable initial damage or a failed repair does not decide the main hypothesis.",
+  "formal_data_used": false
+}

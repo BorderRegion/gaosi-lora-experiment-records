@@ -1,0 +1,15 @@
+{
+  "out": "runs/diagnose_L_episode13_repeat_s17_v3",
+  "device": "musa",
+  "source_config": "configs/phi_mix_O1_L_H2_core_s17.json",
+  "source_config_sha256": "f0a39df47331a74a73152cfe65b6f12e3c361b33831f34a0b3612db9ec176075",
+  "episode": 13,
+  "initial_phi": "records/incident_20261030_0418/core_pre_failure.pt",
+  "initial_phi_sha256": "3f06dad66774c684b5ded838a5acf41a3cf311a1962ed1169dbe73a6826f4cba",
+  "epsilons": [],
+  "purpose": "Two exact input/phi/RNG/stream repeats in one real MUSA process; diagnose non-reproduced gradient failure; no phi update",
+  "formal_data_used": false,
+  "script_sha256": "57722f9f08dac73de7cceb1799a721fbc782d1b68fe9a6dbef6ceeb93c959a82",
+  "analytic_repeats": 2,
+  "wrapper_script_sha256": "d6e056e8d71183091c0a37b1af84aa5e56eef735a3b485eb95d3bf812463a35c"
+}

@@ -1,0 +1,13 @@
+{
+  "status": "CANDIDATE_RECEIPT_EVIDENCE_REHASHED_NOT_YET_PUBLISHED",
+  "at_utc": "2026-11-03T16:27:58.788209+00:00",
+  "run": "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8",
+  "candidate_sha256": "fa1ad3314c1277a37288cb338eb5e633ded0a8d4f184af46df1ae54e1a396b42",
+  "audit_evidence_files": 523,
+  "scientific_evidence_files": 25,
+  "nested_tensor_and_pairing_evidence_rehashed": true,
+  "terminal_job_matches_archive": true,
+  "lock_inode": 31148027670,
+  "method_validated": false,
+  "training_modified_or_restarted": false
+}

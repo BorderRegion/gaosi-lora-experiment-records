@@ -1,0 +1,5 @@
+{
+  "status": "VALIDATION_HARNESS_DRAW_COUNT_REJECTED_BEFORE_STATISTICS",
+  "reason": "Existing estimator requires at least100 bootstrap draws; initial fixture requested20. No live source or alias was modified.",
+  "next_validation": "validate_aliases_v2.py uses100 draws, preserving the first script."
+}

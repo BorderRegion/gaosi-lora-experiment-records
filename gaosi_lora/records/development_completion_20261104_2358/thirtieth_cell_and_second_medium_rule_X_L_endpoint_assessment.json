@@ -1,0 +1,287 @@
+{
+  "status": "THIRTIETH_DEVELOPMENT_CELL_AND_SECOND_MEDIUM_RULE_X_L_ENDPOINT_DESCRIPTIVE_REVIEW_ONLY",
+  "recorded_at_utc": "2026-11-07T17:29:38.998943+00:00",
+  "scope": "Tenth X2048 cell, second rule task, medium q=0.7, seed17, K64; 30/60 base cells complete.",
+  "runs": {
+    "L": "runs/phi_dev_L_2048_t4_medium_s17",
+    "X": "runs/phi_dev_X_2048_t4_medium_s17"
+  },
+  "task_and_keep_are_the_same_query_pool": false,
+  "distinct_rule_task_and_fact_keep_pools_verified": {
+    "L": {
+      "task_kind": "affine_integer",
+      "rule": "f(x)=2x",
+      "task_support_rows": 7,
+      "task_query_rows": 4,
+      "support_inputs": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "query_inputs": [
+        3,
+        5,
+        7,
+        9
+      ],
+      "support_and_query_inputs_disjoint": true,
+      "query_inputs_within_support_range": true,
+      "task_and_keep_sample_ids_and_worlds_disjoint": true,
+      "keep_fact_bindings": 512,
+      "task_evaluation_queries": 4,
+      "keep_evaluation_queries": 512,
+      "prediction_files": 12,
+      "prediction_rows": 3096
+    },
+    "X": {
+      "task_kind": "affine_integer",
+      "rule": "f(x)=2x",
+      "task_support_rows": 7,
+      "task_query_rows": 4,
+      "support_inputs": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "query_inputs": [
+        3,
+        5,
+        7,
+        9
+      ],
+      "support_and_query_inputs_disjoint": true,
+      "query_inputs_within_support_range": true,
+      "task_and_keep_sample_ids_and_worlds_disjoint": true,
+      "keep_fact_bindings": 512,
+      "task_evaluation_queries": 4,
+      "keep_evaluation_queries": 512,
+      "prediction_files": 12,
+      "prediction_rows": 3096
+    }
+  },
+  "config_differences_verified": [
+    "architecture",
+    "out",
+    "phi"
+  ],
+  "clean_and_initial_evaluations_identical_between_architectures": true,
+  "metrics_by_architecture": {
+    "L": {
+      "clean": {
+        "task": {
+          "candidate_correct": 1,
+          "strict_EM_correct": 2,
+          "query_count": 4,
+          "nll": 0.6623856371099298
+        },
+        "keep": {
+          "candidate_correct": 512,
+          "strict_EM_correct": 504,
+          "query_count": 512,
+          "nll": 0.023651785981122126
+        }
+      },
+      "initial": {
+        "task": {
+          "candidate_correct": 0,
+          "strict_EM_correct": 1,
+          "query_count": 4,
+          "nll": 1.0341072299263694
+        },
+        "keep": {
+          "candidate_correct": 364,
+          "strict_EM_correct": 362,
+          "query_count": 512,
+          "nll": 0.3426414310627744
+        }
+      },
+      "final": {
+        "task": {
+          "candidate_correct": 4,
+          "strict_EM_correct": 4,
+          "query_count": 4,
+          "nll": 4.248134416684479e-06
+        },
+        "keep": {
+          "candidate_correct": 500,
+          "strict_EM_correct": 482,
+          "query_count": 512,
+          "nll": 0.10344501086901187
+        }
+      }
+    },
+    "X": {
+      "clean": {
+        "task": {
+          "candidate_correct": 1,
+          "strict_EM_correct": 2,
+          "query_count": 4,
+          "nll": 0.6623856371099298
+        },
+        "keep": {
+          "candidate_correct": 512,
+          "strict_EM_correct": 504,
+          "query_count": 512,
+          "nll": 0.023651785981122126
+        }
+      },
+      "initial": {
+        "task": {
+          "candidate_correct": 0,
+          "strict_EM_correct": 1,
+          "query_count": 4,
+          "nll": 1.0341072299263694
+        },
+        "keep": {
+          "candidate_correct": 364,
+          "strict_EM_correct": 362,
+          "query_count": 512,
+          "nll": 0.3426414310627744
+        }
+      },
+      "final": {
+        "task": {
+          "candidate_correct": 4,
+          "strict_EM_correct": 4,
+          "query_count": 4,
+          "nll": 6.719058247158087e-07
+        },
+        "keep": {
+          "candidate_correct": 498,
+          "strict_EM_correct": 482,
+          "query_count": 512,
+          "nll": 0.11580078352343633
+        }
+      }
+    }
+  },
+  "language_nll_by_architecture": {
+    "L": {
+      "clean": 2.120082481864213,
+      "initial": 2.140740751632521,
+      "final": 2.116134187525066
+    },
+    "X": {
+      "clean": 2.120082481864213,
+      "initial": 2.140740751632521,
+      "final": 2.1168567351688057
+    }
+  },
+  "final_X_minus_L": {
+    "task": {
+      "candidate_correct": 0,
+      "strict_EM_correct": 0,
+      "nll": -3.5762285919686705e-06
+    },
+    "keep": {
+      "candidate_correct": -2,
+      "strict_EM_correct": 0,
+      "nll": 0.01235577265442446
+    },
+    "language_nll": 0.0007225476437398015
+  },
+  "loss_changes_by_architecture": {
+    "L": {
+      "task": {
+        "injected": 0.37172159281643957,
+        "recovered": 1.0341029817919527,
+        "residual": -0.6623813889755131
+      },
+      "keep": {
+        "injected": 0.3189896450816523,
+        "recovered": 0.23919642019376253,
+        "residual": 0.07979322488788974
+      },
+      "language": {
+        "injected": 0.0206582697683082,
+        "recovered": 0.02460656410745532,
+        "residual": -0.003948294339147118
+      }
+    },
+    "X": {
+      "task": {
+        "injected": 0.37172159281643957,
+        "recovered": 1.0341065580205446,
+        "residual": -0.6623849652041051
+      },
+      "keep": {
+        "injected": 0.3189896450816523,
+        "recovered": 0.22684064753933808,
+        "residual": 0.0921489975423142
+      },
+      "language": {
+        "injected": 0.0206582697683082,
+        "recovered": 0.02388401646371552,
+        "residual": -0.0032257466954073166
+      }
+    }
+  },
+  "wrapper_wall_seconds_including_possible_lock_wait": {
+    "L": 6070.521219491959,
+    "X": 12355.410785198212
+  },
+  "last_event_process_wall_seconds": {
+    "L": 6054.759095907211,
+    "X": 6343.2985932827
+  },
+  "pair_evidence_reverification": {
+    "non_tensor_files_per_cell": {
+      "L": 75,
+      "X": 75
+    },
+    "remote_unique_tensor_files_sha256_reverified": {
+      "status": "REMOTE_PAIRED_TENSOR_FILE_SHA256_REVERIFIED",
+      "files": 7,
+      "sha256": {
+        "runs/parent_3b_dev_parent_r32_s17_extend512_v2/latest.pt": "1fa4765c5c5d478f8dd0d7089ab6fbecd2f85190cc8d0a875aa1498da6ffc66f",
+        "runs/phi_dev_L_2048_t4_medium_s17/initial.pt": "b400e9623fb81ee8ecd8c8c92716960e3a6bca579df39f04e62afa34c1c6d82c",
+        "runs/phi_dev_L_2048_t4_medium_s17/latest.pt": "970ea6f756e1b7cdca9dc5cfee112fcf68c62620f84983ae612064612edf6902",
+        "runs/phi_mix_O1_L_H2_core_s17_observed_blocking_v8/phi_2048.pt": "524dca70a61125fbc65274d04f319aff71f4cdc889812f09e9888814ffdb0c85",
+        "runs/phi_dev_X_2048_t4_medium_s17/initial.pt": "97933cd68fedfc86eeb275234818ecfd1662563606239fc8278f01784e84e675",
+        "runs/phi_dev_X_2048_t4_medium_s17/latest.pt": "5c8170a275c0e11f673943bffc415b54eedf0da6e92f25f8d742e6d473cc4255",
+        "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/phi_2048.pt": "34e1c605e232805fb89cb494c5266d4de4910e3878be04a4c4cad28bfae9e2ab"
+      }
+    }
+  },
+  "interpretation": "Both learn four held-out input queries for the doubling rule from0/4 candidate and1/4 strictEM after noise to4/4 on both metrics. Known keep recovers from364/362 to498/482 for X and500/482 for L, against clean parent512/504. X remains14 candidate and22 strictEM answers below the parent, while L remains12/22 below. X has lower task NLL by3.57623e-6 but higher keep NLL by0.01235577 and higher language NLL by0.00072255. X keep residual NLL is+0.09214900 and language residual-0.00322575, below frozen0.1 penalty thresholds; the keep residual is near that threshold and the remaining answer deficit is material. Noise raises task NLL from0.662386 to1.034107, reduces candidate from1/4 to0/4 and strictEM from2/4 to1/4; signed injected task loss is+0.371722. The task already required new learning from incomplete parent performance, and the endpoint exceeds the clean parent; do not frame it as pure recovery alone. Keep is measurably damaged and partially restored, with retention favoring L in this cell. Query inputs are disjoint from support inputs but inside their range, only four queries are evaluated and the rule is simple doubling, so general rule induction or extrapolation is not established. All ten X2048 cells are complete but X2560 and matched Adam groups are incomplete; no aggregate architecture selection, noise benefit, matched-method superiority or independent-seed conclusion follows.",
+  "limitations": [
+    "CPU inspection of saved tensors and re-aggregation of saved predictions only; no model forward, tokenizer or derivative recomputation.",
+    "Language NLL is checked against the event ledger; no saved per-token language audit.",
+    "Model compute counters omit direct QA candidate/generation calls; they are not total evaluation FLOPs or total model forwards.",
+    "Frozen phi/base flags plus pinned source and file identities are provenance evidence, not an independent in-memory mutation trace.",
+    "No paired-method efficacy, held-out generalization, convergence or multi-seed conclusion from one completed development cell.",
+    "Only ten completed X2048 cells, five development tasks and one phi seed; this rule world has four interpolation queries and the frozen architecture/dose/task grid remains incomplete.",
+    "Matching configurations and saved initial evaluations do not independently establish tensor-by-tensor equality of initial adapters.",
+    "No architecture selection or conditional extension before completion of the frozen grid."
+  ],
+  "evidence_sha256": {
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t4_medium_s17.json": "eba88febdcb8c6729636fd40e2c031a29e8318c1f07c7bd6f400971efb716d72",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2048_t4_medium_s17.json": "951a4c76fc4b494f10c5807d89ccd4c5fc2d110682f41f3c317058b6f0834506",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t4_medium_s17_evidence/manifest.json": "5e0093e19dd146ae4fb958c604cce593448a25cb2020dac853f1e8a559939011",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t4_medium_s17_evidence/snapshot/runs/phi_dev_L_2048_t4_medium_s17/config.json": "2d1437546eb5f20f61b898c2c1965da2cdea52f1bc158c91130e5ce383a8e754",
+    "records/development_completion_20261104_2358/phi_dev_X_2048_t4_medium_s17.json": "133e735a5eb72c3a4dffa3242a0505af0f88760064d1e256260321c2d6418a6f",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_X_2048_t4_medium_s17.json": "8459f798edba8ce5619aa7ad43afb26893d2438b81d9c4e7803669bdd4071aa3",
+    "records/development_completion_20261104_2358/phi_dev_X_2048_t4_medium_s17_evidence/manifest.json": "f6931226f08197e47bcb0a045d4a1e4a76151859de8e355e3edce281eda6d441",
+    "records/development_completion_20261104_2358/phi_dev_X_2048_t4_medium_s17_evidence/snapshot/runs/phi_dev_X_2048_t4_medium_s17/config.json": "e9392358be3eabc23f70c6417cabe95814642a4a00c602484a2e06328c56aab1",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t4_medium_s17_evidence/snapshot/data/synthetic/rules_integer_v1/dev_integer_world_001.jsonl": "71844daf82a62c173509706198e703e0b7d7d6918c35a1e84928958602912290",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t4_medium_s17_evidence/snapshot/data/synthetic/dev_parent.jsonl": "7d4353f9b9a8f1f74c182b503c01d7fb2181836aa464e8d17e1bb3282db25d11",
+    "records/development_completion_20261104_2358/phi_dev_X_2048_t4_medium_s17_evidence/snapshot/data/synthetic/rules_integer_v1/dev_integer_world_001.jsonl": "71844daf82a62c173509706198e703e0b7d7d6918c35a1e84928958602912290",
+    "records/development_completion_20261104_2358/phi_dev_X_2048_t4_medium_s17_evidence/snapshot/data/synthetic/dev_parent.jsonl": "7d4353f9b9a8f1f74c182b503c01d7fb2181836aa464e8d17e1bb3282db25d11",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t4_medium_s17_evidence/snapshot/runs/phi_dev_L_2048_t4_medium_s17/events.jsonl": "16481083935710690379b89d95f1aab2a0dadd1d80ab453ddf7cb49ff0a973da",
+    "records/development_completion_20261104_2358/phi_dev_X_2048_t4_medium_s17_evidence/snapshot/runs/phi_dev_X_2048_t4_medium_s17/events.jsonl": "09058e87ed39ee55915ae1ac6f3941cb1bab1f9d3fe83be5d3646ee235e76852",
+    "records/development_completion_20261104_2358/review_tenth_X_20261107.py": "27273b2f2b99011eefe3c324f0b4ea6ae377b0c2450f138d9fc84d8cfd27c3ee"
+  },
+  "selection_policy_changed": false,
+  "scientific_receipt_generated": false,
+  "method_validated": false,
+  "full_goal_complete": false,
+  "training_modified_or_restarted": false
+}

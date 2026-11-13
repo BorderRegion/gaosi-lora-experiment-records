@@ -1,0 +1,58 @@
+{
+  "status": "LOCAL_COMPLETION_PROCEDURE_PREPARED_ONLY",
+  "recorded_at_utc": "2026-11-02T17:51:01.763522+00:00",
+  "run": "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8",
+  "last_reviewed_observation": "records/pipeline_monitor_20261102_174710_utc",
+  "last_committed_episodes": 118,
+  "last_committed_inner_updates": 1376,
+  "protocol": "/home/ubuntu/diff/Gaosi_LoRA_MTT48_Codex_20261028/EXPERIMENT_PROTOCOL.md",
+  "protocol_sha256": "d5f97deb34905bc20e16a545ea35fad9c425374d5ea3dbeedf8ba33b77669804",
+  "sources_sha256": {
+    "tools/audit_observed_meta.py": "6583634debbdf7c77e1078d987e3ec37bf9c1f4e14cf07babc6fe59e9e8ca99b",
+    "records/pipeline_observer_20261101_1143/replay_saved_adam.py": "9eedbe61dc0f18e26462ed5ebe658cc491600079afd1a64e6a35b486d8df95a2",
+    "records/observed_blocking_core_20261030_0810/review_inner_ledger.py": "0beb769c010e86a0f3580ffc78811b3184552647cc1aee85430b19714326ef71"
+  },
+  "existing_helper_validation_records_rehashed": [
+    {
+      "path": "records/pipeline_observer_20261101_1143/L_replay_helper_validation.json",
+      "sha256": "bdd402b88ec30218bd6c92b3be7db5ac51dc200fece27da3f24232c574f95ef3",
+      "architecture": "L",
+      "episodes_checked": 192,
+      "allclose": true
+    },
+    {
+      "path": "records/pipeline_observer_20261101_1143/X_readiness_adam_replay_20261101_1214.json",
+      "sha256": "8e503d6eb8e684bc8c896506c1f98135ec168a1bcf83cf27449a3d984d05473d",
+      "architecture": "X",
+      "episodes_checked": 2,
+      "allclose": true
+    }
+  ],
+  "terminal_evidence_required": [
+    "Scheduled observation identifies this exact training job as terminal with matching process identity; waiter expiry alone is not terminal.",
+    "Require result.json and observed_training_result.json confirming full 192 episodes, 2560 updates and the intended X/H2 config before auditing.",
+    "Preserve and hash all saved gradients, per-episode checkpoints, numerical sources, pinned inputs, final checkpoint and learning-curve checkpoints."
+  ],
+  "commands_after_verified_completion": [
+    "/usr/bin/python tools/audit_observed_meta.py --run runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8 --out records/X_core_completion_<UTC>/artifact_audit.json",
+    "/usr/bin/python records/pipeline_observer_20261101_1143/replay_saved_adam.py --audit records/X_core_completion_<UTC>/artifact_audit.json --out records/X_core_completion_<UTC>/adam_replay.json"
+  ],
+  "subsequent_review_required": [
+    "Inspect audit coverage and exact budget; independently verify saved-gradient norms, clipping, phi frozen during each episode and checkpoints.",
+    "Review all saved CPU Adam replay rows, step counts, finiteness and differences at preset rtol=2e-5/atol=1e-8; explicitly distinguish per-update replay from gradient recomputation.",
+    "Review the complete inner ledger for ordered K steps, last-two exact-window flags, effective tokens and finite terminal objectives.",
+    "Perform a separate scientific assessment against mathematical/real-model evidence and recorded limitations before deciding whether to bind a run-specific review receipt.",
+    "Only an explicitly justified bound receipt may release the existing controllers; runtime observations never grant approval.",
+    "Continue the complete protocol after X: shared warm H1 comparison, development selection/matched extensions, organization adaptations and clean control, formal recovery/selective/reflow/continual, 7B, statistics and independent phi seeds 29/43, plus protocol-conditioned extensions."
+  ],
+  "execution_notes": [
+    "Run CPU audit/replay in the existing remote environment; local default Python has no torch. No environment or driver changes are required.",
+    "Do not run the completion audit on this incomplete training run.",
+    "Use new record paths and exclusive writes; preserve historical evidence and the original GPU lock."
+  ],
+  "training_modified_or_restarted": false,
+  "remote_training_checks_added": 0,
+  "method_validated": false,
+  "downstream_promotion_allowed": false,
+  "full_goal_complete": false
+}

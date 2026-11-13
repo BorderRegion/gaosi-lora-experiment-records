@@ -1,0 +1,20 @@
+{
+  "status": "KNOWN_K4_CPU_REVIEW_FETCHED_AND_REFERENCED_REMOTE_BYTES_REHASHED",
+  "at_utc": "2026-11-10T14:21:21.232713+00:00",
+  "evidence_files_rehashed_remotely": 55,
+  "copied_sha256": {
+    "known_k4_saved_tensor_review.json": "fbe17463ac4ae77e961c22be2c7f774e17a3fb64fca1c109c3a323c041f8d182",
+    "known_k4_cpu_launch_receipt.json": "a84118ff38b3c3d77448802f3300a59625696d03cb8692b31cf5dc28f151abfd",
+    "known_k4_cpu_review.log": "63e13552aa7b95edcbe1d2e92677463aeb9035629c067047f5f3f562e6089625",
+    "known_k4_cpu_remote_launch_intent.json": "f63a6e5fc19b66217c04fc4f1e1afd07e0b8faf43242a9ba2cc53387cb49a18a"
+  },
+  "indices": [
+    0,
+    1,
+    2
+  ],
+  "production_modified": false,
+  "replay_started": false,
+  "method_validated": false,
+  "full_goal_complete": false
+}

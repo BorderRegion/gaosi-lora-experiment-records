@@ -1,0 +1,26 @@
+{
+  "utc": "2026-10-29T12:05:16.006847+00:00",
+  "job": "seven_b_scale_queue_v1",
+  "wrapper_pid": 64130,
+  "checks": {
+    "file": "checks/seven_b_schedule_cpu.json",
+    "status": "PASS",
+    "count": 20
+  },
+  "source_sha256": {
+    "gaosi/scale.py": "75fc477b6ed2b2cf06d921141d315dedff4b3ebdcf9388eb453c2e52ddebb396",
+    "tools/seven_b_queue.py": "5785b8784aef008188fa4ff41756561a485a770bc197a21af61b766a1dc0da5d",
+    "tools/validate_seven_b_schedule.py": "96382f69fcfd923d0fe016866165b0ed7cf7b2f7aae46871ff993e2e9d3ee829",
+    "tools/device_guard.py": "173dc20d90dc38353f3a8985098d21edaa173978f79f4b1745879d933879cf64"
+  },
+  "recover_py_sha256": "137254bb3a154b0113c82b841a66e75343f3a333337a465a61101881a828bafa",
+  "all_phi_frozen_present": false,
+  "seven_b_early_ready_present": false,
+  "scope": "Preparation and CPU integration only; no real7B phi-scale result yet",
+  "verified_utc": "2026-10-29T12:06:11.708674+00:00",
+  "child_pid": 64131,
+  "child_proc_start_ticks": "54958554",
+  "process_state": "S",
+  "actual_pid_identity_live": true,
+  "waiting_for": "all_phi_frozen then early7B ordinary recovery"
+}

@@ -1,0 +1,13 @@
+{
+  "status": "PREPARED_NOT_EXECUTED_ON_H1",
+  "files_sha256": {
+    "records/H1_completion_preparation_20261103_1204/README.md": "e8e2b8f376688ad5f9520ddd3fe870149a43f653d912be3552f1bf7dcb6bc6ab",
+    "records/H1_completion_preparation_20261103_1204/review_commonwarm_ledger.py": "35a06b6eb0831ff7468faf60b3e0ca0b12a90cd29763dcc40dcb7eddb31e3777",
+    "records/H1_completion_preparation_20261103_1204/validate.py": "8374dfd8d00c7337e0380af8ed7a1c00db06d58a008e2ecb92a243431ba6fbdf",
+    "records/H1_completion_preparation_20261103_1204/validation.json": "2d6769eeef368ed4092a1c7ba4ec43574cccbd2ca876d0d2729de73e20143de9"
+  },
+  "validation_checks": 13,
+  "real_H1_evidence_present": false,
+  "numerical_source_or_running_configuration_modified": false,
+  "method_validated": false
+}

@@ -1,0 +1,154 @@
+{
+  "status": "FIRST_FACT_WORLD_TWO_DOSES_COMPLETED_DESCRIPTIVE_REVIEW_ONLY",
+  "recorded_at_utc": "2026-11-05T04:57:26.761100+00:00",
+  "scope": "L-H2 phi2048, seed17, first development fact world, q_apply0 and0.7, K64;4 of60 base cells complete overall.",
+  "task_data": "data/synthetic/dev_world_000.jsonl",
+  "keep_data": "data/synthetic/dev_parent.jsonl",
+  "shared_config_fields_verified": [
+    "parent",
+    "phi",
+    "data",
+    "retain_data",
+    "data_seed",
+    "noise_seed",
+    "K",
+    "inner_lr",
+    "architecture",
+    "method"
+  ],
+  "clean_evaluation_identical_across_doses": true,
+  "metrics": {
+    "clean": {
+      "clean": {
+        "task": {
+          "candidate_correct": 2,
+          "strict_EM_correct": 2,
+          "query_count": 32,
+          "nll": 4.5763552036068145
+        },
+        "keep": {
+          "candidate_correct": 512,
+          "strict_EM_correct": 504,
+          "query_count": 512,
+          "nll": 0.023651785981122126
+        }
+      },
+      "initial": {
+        "task": {
+          "candidate_correct": 2,
+          "strict_EM_correct": 2,
+          "query_count": 32,
+          "nll": 4.5763552036068145
+        },
+        "keep": {
+          "candidate_correct": 512,
+          "strict_EM_correct": 504,
+          "query_count": 512,
+          "nll": 0.023651785981122126
+        }
+      },
+      "final": {
+        "task": {
+          "candidate_correct": 32,
+          "strict_EM_correct": 32,
+          "query_count": 32,
+          "nll": 0.002580759317247246
+        },
+        "keep": {
+          "candidate_correct": 511,
+          "strict_EM_correct": 507,
+          "query_count": 512,
+          "nll": 0.024255031516713044
+        }
+      }
+    },
+    "medium": {
+      "clean": {
+        "task": {
+          "candidate_correct": 2,
+          "strict_EM_correct": 2,
+          "query_count": 32,
+          "nll": 4.5763552036068145
+        },
+        "keep": {
+          "candidate_correct": 512,
+          "strict_EM_correct": 504,
+          "query_count": 512,
+          "nll": 0.023651785981122126
+        }
+      },
+      "initial": {
+        "task": {
+          "candidate_correct": 2,
+          "strict_EM_correct": 2,
+          "query_count": 32,
+          "nll": 1.8772495008748153
+        },
+        "keep": {
+          "candidate_correct": 364,
+          "strict_EM_correct": 362,
+          "query_count": 512,
+          "nll": 0.3426414310627744
+        }
+      },
+      "final": {
+        "task": {
+          "candidate_correct": 32,
+          "strict_EM_correct": 32,
+          "query_count": 32,
+          "nll": 0.00029123947543907314
+        },
+        "keep": {
+          "candidate_correct": 501,
+          "strict_EM_correct": 491,
+          "query_count": 512,
+          "nll": 0.06756741650994981
+        }
+      }
+    }
+  },
+  "medium_loss_changes": {
+    "task": {
+      "injected": -2.699105702731999,
+      "recovered": 1.8769582613993763,
+      "residual": -4.576063964131375
+    },
+    "keep": {
+      "injected": 0.3189896450816523,
+      "recovered": 0.2750740145528246,
+      "residual": 0.04391563052882769
+    },
+    "language": {
+      "injected": 0.0206582697683082,
+      "recovered": 0.023581831438669987,
+      "residual": -0.002923561670361785
+    }
+  },
+  "job_wall_seconds": {
+    "clean": 5529.257810592651,
+    "medium": 5348.336197137833
+  },
+  "interpretation": "Both doses acquire32/32 fact queries. Under q0.7, known keep candidate correct recovers364 to501 of512, below its clean512; strictEM recovers362 to491, below its clean504. New-task NLL was already improved by noise before recovery, so it cannot be described as task damage repaired. The q0 and q0.7 cells support within-world acquisition and partial known-task recovery; no paired Adam result, superiority or generalization conclusion is available.",
+  "evidence_sha256": {
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t1_medium_s17.json": "679649781fc4de2b4f6ff01894ae632cebacdde4e02dfc1ed5d9adc2a960b7d7",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t1_clean_s17.json": "5313d61a4d0ca308b62b78475f4cb89a6b8335816a1a83b7444707b6a7368de9",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2048_t1_medium_s17.json": "f53fc53ed91419d95b1dd71ddaf606fdb273429df3458fbe6c81006b541bf90f",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2048_t1_clean_s17.json": "5ed86f1cd17163ffddd2df992238e2e191ce314051b46e89685187fd42364e46",
+    "records/pipeline_observer_20261104_1301/followup_20261105_0455.json": "98bc24607a991786f4052ef6e3d1b0ce492329230bdbf6d6b7271d3f017fabfc"
+  },
+  "limitations": [
+    "CPU inspection of saved tensors and re-aggregation of saved predictions only; no model forward, tokenizer or derivative recomputation.",
+    "Language NLL is checked against the event ledger; no saved per-token language audit.",
+    "Model compute counters omit direct QA candidate/generation calls; they are not total evaluation FLOPs or total model forwards.",
+    "Frozen phi/base flags plus pinned source and file identities are provenance evidence, not an independent in-memory mutation trace.",
+    "No paired-method efficacy, held-out generalization, convergence or multi-seed conclusion from one completed development cell.",
+    "Task has32 queries in one development fact world; this is not cross-world or formal-set evidence.",
+    "Noise lowered the new-task NLL from4.5764 to1.8772 at step0; injected loss is signed and not clipped.",
+    "Known keep pool is distinct from the new fact queries, but only this keep pool has been measured."
+  ],
+  "selection_policy_changed": false,
+  "scientific_receipt_generated": false,
+  "method_validated": false,
+  "full_goal_complete": false,
+  "training_modified_or_restarted": false
+}

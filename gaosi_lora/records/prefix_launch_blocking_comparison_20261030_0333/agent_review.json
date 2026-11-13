@@ -1,0 +1,17 @@
+{
+  "reviewed_at_utc": "2026-10-30T03:37:34.666921+00:00",
+  "status": "BOUNDED_DIAGNOSTIC_COMPARISON_RUNNING_NOT_SCIENTIFICALLY_VALIDATED",
+  "recorder_identity_live": true,
+  "recorder": {
+    "status": "WAITING_UNTIL_DUE_NO_REMOTE_CONNECTION_YET",
+    "pid": 4154412,
+    "proc_start_ticks": "57710112",
+    "due_at_utc": "2026-10-30T03:55:17+00:00",
+    "observation_state": "records/scheduled_diagnostic_pair_20261030_035517_utc.json",
+    "observations": 0,
+    "production_modified_or_restarted": false
+  },
+  "next_required_action": "Compare both prefixes raw element finite flags, FP64 norms/directions and trajectories; collect terminal evidence; do not restart production merely on PASS.",
+  "full_goal_complete": false,
+  "core_budget_credit": 0
+}

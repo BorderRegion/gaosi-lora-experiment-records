@@ -1,0 +1,243 @@
+{
+  "status": "TWENTY_FIFTH_DEVELOPMENT_CELL_AND_SECOND_CLEAN_FACT_X_L_ENDPOINT_DESCRIPTIVE_REVIEW_ONLY",
+  "recorded_at_utc": "2026-11-07T00:29:20.090992+00:00",
+  "scope": "Fifth X2048 cell, second fact task, clean q=0, seed17, K64; 25/60 base cells complete.",
+  "runs": {
+    "L": "runs/phi_dev_L_2048_t2_clean_s17",
+    "X": "runs/phi_dev_X_2048_t2_clean_s17"
+  },
+  "task_and_keep_are_the_same_query_pool": false,
+  "distinct_fact_pools_verified": {
+    "L": {
+      "task_bindings": 32,
+      "keep_bindings": 512,
+      "fact_ids_and_sample_ids_disjoint": true,
+      "task_evaluation_queries": 32,
+      "keep_evaluation_queries": 512
+    },
+    "X": {
+      "task_bindings": 32,
+      "keep_bindings": 512,
+      "fact_ids_and_sample_ids_disjoint": true,
+      "task_evaluation_queries": 32,
+      "keep_evaluation_queries": 512
+    }
+  },
+  "config_differences_verified": [
+    "architecture",
+    "out",
+    "phi"
+  ],
+  "clean_and_initial_evaluations_identical_between_architectures": true,
+  "metrics_by_architecture": {
+    "L": {
+      "clean": {
+        "task": {
+          "candidate_correct": 9,
+          "strict_EM_correct": 9,
+          "query_count": 32,
+          "nll": 2.734144884739128
+        },
+        "keep": {
+          "candidate_correct": 512,
+          "strict_EM_correct": 504,
+          "query_count": 512,
+          "nll": 0.023651785981122126
+        }
+      },
+      "initial": {
+        "task": {
+          "candidate_correct": 9,
+          "strict_EM_correct": 9,
+          "query_count": 32,
+          "nll": 2.734144884739128
+        },
+        "keep": {
+          "candidate_correct": 512,
+          "strict_EM_correct": 504,
+          "query_count": 512,
+          "nll": 0.023651785981122126
+        }
+      },
+      "final": {
+        "task": {
+          "candidate_correct": 32,
+          "strict_EM_correct": 32,
+          "query_count": 32,
+          "nll": 9.976958480739012e-05
+        },
+        "keep": {
+          "candidate_correct": 511,
+          "strict_EM_correct": 503,
+          "query_count": 512,
+          "nll": 0.03187944808059318
+        }
+      }
+    },
+    "X": {
+      "clean": {
+        "task": {
+          "candidate_correct": 9,
+          "strict_EM_correct": 9,
+          "query_count": 32,
+          "nll": 2.734144884739128
+        },
+        "keep": {
+          "candidate_correct": 512,
+          "strict_EM_correct": 504,
+          "query_count": 512,
+          "nll": 0.023651785981122126
+        }
+      },
+      "initial": {
+        "task": {
+          "candidate_correct": 9,
+          "strict_EM_correct": 9,
+          "query_count": 32,
+          "nll": 2.734144884739128
+        },
+        "keep": {
+          "candidate_correct": 512,
+          "strict_EM_correct": 504,
+          "query_count": 512,
+          "nll": 0.023651785981122126
+        }
+      },
+      "final": {
+        "task": {
+          "candidate_correct": 32,
+          "strict_EM_correct": 32,
+          "query_count": 32,
+          "nll": 0.00011108597542083405
+        },
+        "keep": {
+          "candidate_correct": 512,
+          "strict_EM_correct": 505,
+          "query_count": 512,
+          "nll": 0.032922824528722944
+        }
+      }
+    }
+  },
+  "language_nll_by_architecture": {
+    "L": {
+      "clean": 2.120082481864213,
+      "initial": 2.120082481864213,
+      "final": 2.121836896357236
+    },
+    "X": {
+      "clean": 2.120082481864213,
+      "initial": 2.120082481864213,
+      "final": 2.1222252647037494
+    }
+  },
+  "final_X_minus_L": {
+    "task": {
+      "candidate_correct": 0,
+      "strict_EM_correct": 0,
+      "nll": 1.1316390613443932e-05
+    },
+    "keep": {
+      "candidate_correct": 1,
+      "strict_EM_correct": 2,
+      "nll": 0.001043376448129761
+    },
+    "language_nll": 0.00038836834651334584
+  },
+  "loss_changes_by_architecture": {
+    "L": {
+      "task": {
+        "injected": 0.0,
+        "recovered": 2.7340451151543204,
+        "residual": -2.7340451151543204
+      },
+      "keep": {
+        "injected": 0.0,
+        "recovered": -0.008227662099471057,
+        "residual": 0.008227662099471057
+      },
+      "language": {
+        "injected": 0.0,
+        "recovered": -0.0017544144930230487,
+        "residual": 0.0017544144930230487
+      }
+    },
+    "X": {
+      "task": {
+        "injected": 0.0,
+        "recovered": 2.734033798763707,
+        "residual": -2.734033798763707
+      },
+      "keep": {
+        "injected": 0.0,
+        "recovered": -0.009271038547600818,
+        "residual": 0.009271038547600818
+      },
+      "language": {
+        "injected": 0.0,
+        "recovered": -0.0021427828395363946,
+        "residual": 0.0021427828395363946
+      }
+    }
+  },
+  "wrapper_wall_seconds_including_possible_lock_wait": {
+    "L": 5392.07329249382,
+    "X": 11123.09387421608
+  },
+  "last_event_process_wall_seconds": {
+    "L": 5376.132861614227,
+    "X": 5674.79688668251
+  },
+  "pair_evidence_reverification": {
+    "non_tensor_files_per_cell": {
+      "L": 75,
+      "X": 75
+    },
+    "remote_unique_tensor_files_sha256_reverified": {
+      "status": "REMOTE_PAIRED_TENSOR_FILE_SHA256_REVERIFIED",
+      "files": 7,
+      "sha256": {
+        "runs/parent_3b_dev_parent_r32_s17_extend512_v2/latest.pt": "1fa4765c5c5d478f8dd0d7089ab6fbecd2f85190cc8d0a875aa1498da6ffc66f",
+        "runs/phi_dev_L_2048_t2_clean_s17/initial.pt": "200e15113799239c93cef3cb61089c70375328eb9a0fa0a85b28a943c88e794c",
+        "runs/phi_dev_L_2048_t2_clean_s17/latest.pt": "ce8e3d7e1c3a8b8f7bc652c934031ed9658eaaa943965f7cfe2120b4043ae181",
+        "runs/phi_mix_O1_L_H2_core_s17_observed_blocking_v8/phi_2048.pt": "524dca70a61125fbc65274d04f319aff71f4cdc889812f09e9888814ffdb0c85",
+        "runs/phi_dev_X_2048_t2_clean_s17/initial.pt": "e952d378a4bb7622408b1feb5c9dfe3b2562c529fa00ebf362a30c1744010f11",
+        "runs/phi_dev_X_2048_t2_clean_s17/latest.pt": "fdc2114b69022bbeb1661edd33dc5fd43fa5365fae146f251cd2d277697431e6",
+        "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/phi_2048.pt": "34e1c605e232805fb89cb494c5266d4de4910e3878be04a4c4cad28bfae9e2ab"
+      }
+    }
+  },
+  "interpretation": "Both learn the second clean fact world from9 to32/32 candidate and strictEM answers. X retains512/505 known keep answers versus L511/503; parent keep is512/504. X has one more keep candidate and two more strictEM answers, while task NLL is higher by0.00001132, keep NLL by0.00104338 and language NLL by0.00038837. This is positive within-world acquisition with small mixed architecture differences: discrete retention favors X but all three NLL values favor L. X keep residual NLL is+0.00927104 and language residual+0.00214278, below the frozen0.1 penalty thresholds but positive. This zero-noise cell does not measure injected-damage recovery. Distinct task32 and keep512 fact-binding pools are verified; no aggregate architecture, matched Adam or held-out generalization conclusion follows.",
+  "limitations": [
+    "CPU inspection of saved tensors and re-aggregation of saved predictions only; no model forward, tokenizer or derivative recomputation.",
+    "Language NLL is checked against the event ledger; no saved per-token language audit.",
+    "Model compute counters omit direct QA candidate/generation calls; they are not total evaluation FLOPs or total model forwards.",
+    "Frozen phi/base flags plus pinned source and file identities are provenance evidence, not an independent in-memory mutation trace.",
+    "No paired-method efficacy, held-out generalization, convergence or multi-seed conclusion from one completed development cell.",
+    "Only five completed X cells, three development tasks and one phi seed; the second fact world has32 evaluation queries and the frozen architecture/dose/task grid remains incomplete.",
+    "Matching configurations and saved initial evaluations do not independently establish tensor-by-tensor equality of initial adapters.",
+    "No architecture selection or conditional extension before completion of the frozen grid."
+  ],
+  "evidence_sha256": {
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t2_clean_s17.json": "df05576367a58704d37379a6ac22ce3edc2472e02e9915ef1051804099ffb5ce",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2048_t2_clean_s17.json": "2fe295779e3d8e0f8903298afcc39af601af10f21a432ff53c1d842566596b7b",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t2_clean_s17_evidence/manifest.json": "7568a91bb45782108b95612068e830ad9ac9aa364c7080fa3bea4ac968ee19e1",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t2_clean_s17_evidence/snapshot/runs/phi_dev_L_2048_t2_clean_s17/config.json": "42484e22cd612cf98e0d15b7bbde12590d9aaefd7861f70f0a5ae3e3fe80d25c",
+    "records/development_completion_20261104_2358/phi_dev_X_2048_t2_clean_s17.json": "387895597b98b4b67f76537c03ace709624d719e8ffd6eab0ba389b25ad2d6d4",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_X_2048_t2_clean_s17.json": "aa970c1b864b981f1435c7c9c702eaaf21e0d4247ff838c6fb1d2d0fefbb6096",
+    "records/development_completion_20261104_2358/phi_dev_X_2048_t2_clean_s17_evidence/manifest.json": "71d5618e8cc8acb7c1d94f9ad7caea7835b6369bd6e80f3abc7561b65fd32369",
+    "records/development_completion_20261104_2358/phi_dev_X_2048_t2_clean_s17_evidence/snapshot/runs/phi_dev_X_2048_t2_clean_s17/config.json": "1e29a765951f2ccebafe05f9b7a7137f8d76c07325f575d59ae3e4b4f1ac0240",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t2_clean_s17_evidence/snapshot/data/synthetic/dev_world_001.jsonl": "50a1c0db27db4f17d7e6e8e2145920cfde8127aa91867f58ab2f89d5f40bdbb4",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t2_clean_s17_evidence/snapshot/data/synthetic/dev_parent.jsonl": "7d4353f9b9a8f1f74c182b503c01d7fb2181836aa464e8d17e1bb3282db25d11",
+    "records/development_completion_20261104_2358/phi_dev_X_2048_t2_clean_s17_evidence/snapshot/data/synthetic/dev_world_001.jsonl": "50a1c0db27db4f17d7e6e8e2145920cfde8127aa91867f58ab2f89d5f40bdbb4",
+    "records/development_completion_20261104_2358/phi_dev_X_2048_t2_clean_s17_evidence/snapshot/data/synthetic/dev_parent.jsonl": "7d4353f9b9a8f1f74c182b503c01d7fb2181836aa464e8d17e1bb3282db25d11",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t2_clean_s17_evidence/snapshot/runs/phi_dev_L_2048_t2_clean_s17/events.jsonl": "62f4738bb5b78edc41021153d4b39509884c82b82e484047157e3c436fec2977",
+    "records/development_completion_20261104_2358/phi_dev_X_2048_t2_clean_s17_evidence/snapshot/runs/phi_dev_X_2048_t2_clean_s17/events.jsonl": "c2475ce3fa6b400510e66beeacd671d06502004ba93bdf3cb49dbec3a96ecaf2",
+    "records/development_completion_20261104_2358/review_fifth_X_20261107.py": "8ab1bf0e02efc47d7c7974331618b7948c875d254f4757b26fc32ff93069350f"
+  },
+  "selection_policy_changed": false,
+  "scientific_receipt_generated": false,
+  "method_validated": false,
+  "full_goal_complete": false,
+  "training_modified_or_restarted": false
+}

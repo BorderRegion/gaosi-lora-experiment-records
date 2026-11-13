@@ -1,0 +1,54 @@
+{
+  "status": "RECOVERY_PREPARATION_PINNED_WAITING_ON_EXISTING_LIVE_TRANSPORT_MAINTAINER",
+  "recorded_at_utc": "2026-11-10T18:23:55.415351+00:00",
+  "evidence_sha256": {
+    "records/pipeline_recovery_20261110_1755/resume_archive.py": "cff043454bc47cd2c561883f81c949a46931b5d3498e44fb98d84bae3666c3df",
+    "records/pipeline_recovery_20261110_1755/launch_observer_v2.py": "53bc6c7f4aaf4f995903d0e9d5ce4c8f9d27e3bee9bd97bb81a0ecd2f8147f08",
+    "records/pipeline_recovery_20261110_1755/resume_archive_v3.py": "4e4a50a6e4511a3a7e000adaa1f4a25c41c103600bef8f413d892c0d90c38c97",
+    "records/pipeline_recovery_20261110_1755/launch_observer.py": "07234e459c8226b2279cd9cbb2b3c1d88d01df20d213a1e226437273398c1251",
+    "records/pipeline_recovery_20261110_1755/resume_archive_attempt1.py": "a6806acebed1fabd8e9a69d5f13487f9c7cf1b2cf881f5b586afe05badda4aba",
+    "records/pipeline_observer_20261110_1755/review_observation.py": "e97fcb66a56f4cc5be7f5671afd4f8d00601985de607876e5c4b25bef0a0c4d6",
+    "records/pipeline_observer_20261110_1755/review_meta_progress.py": "c745c4c5e8f00b101d0a04eaf9b95b671bf9f237d6f3f84f37335b7e8006f74f",
+    "records/pipeline_observer_20261110_1755/record_progress_note.py": "f63b9a8eaf9c4023d74d0aec406b6cb60bd759d4bdc5c0f7344dbf9cd99057d1",
+    "records/pipeline_observer_20261110_1755/wait_next_observation.py": "d344ea69ee260f30a56caff3ad3e1cae88b788c6bc241e5ab1e60e6f6d13e081",
+    "records/pipeline_observer_20261110_1755/collect_snapshot.py": "80329e6a2ec0cc86304c579a79e6a357d715dee542a9bf6e4c85fdd6eff05815",
+    "records/pipeline_observer_20261110_1755/observe.py": "60f4ce000e8271001fa2215cb0a183c5f00c94fa8f1888d380e61089e1ee8372",
+    "records/pipeline_recovery_20261110_1755/README.md": "62b27be902800722a97a579985694562a7f04aa1ecb1b7d3258ef9f9553ba179",
+    "records/pipeline_recovery_20261110_1755/outage_local_note.json": "6013a71910085749ece1697118a0c4ea8988bbff37ea01870eca396792ebd560",
+    "records/pipeline_recovery_20261110_1755/partial_capture_local_note.json": "51f865ad3541f7efd2ec54dd6a6d55bde5d03193a580468d64cce8261ad10884",
+    "records/pipeline_recovery_20261110_1755/partial_capture_review.json": "c2c6cbdf4432e05e7f3430e156a617eb2b9ff1c70cf0e89c571fc62c91c9defc",
+    "records/pipeline_recovery_20261110_1755/partial_capture_result.json": "64432199c9aacdf70a795b52d68824ae1915138bdc4be6599e92380903f5194c"
+  },
+  "all_historical_note_references_rehashed": true,
+  "recovery_sources_parsed": 11,
+  "current_resume_entry": "records/pipeline_recovery_20261110_1755/resume_archive_v3.py",
+  "current_observer_launch_entry": "records/pipeline_recovery_20261110_1755/launch_observer_v2.py",
+  "ssh_maintainer_identity_verified_live": {
+    "pid": 896141,
+    "start_ticks": "146063673",
+    "state": "R"
+  },
+  "transport_state": {
+    "status": "SSH_RETRY_BACKOFF_LOCAL_ONLY",
+    "recorded_at_utc": "2026-11-10T18:23:05.512354+00:00",
+    "identity": {
+      "pid": 896141,
+      "start_ticks": "146063673",
+      "state": "R"
+    },
+    "training_modified_or_restarted": false,
+    "full_goal_complete": false,
+    "attempt": 37,
+    "exit_code": 255,
+    "consecutive_failures": 12,
+    "retry_after_seconds": 300,
+    "log": "ssh_attempt_37.log"
+  },
+  "new_observer_started": false,
+  "archive_resume_started": false,
+  "whole_archive_verified": false,
+  "remote_liveness_verified": false,
+  "training_modified_or_restarted": false,
+  "method_validated": false,
+  "full_goal_complete": false
+}

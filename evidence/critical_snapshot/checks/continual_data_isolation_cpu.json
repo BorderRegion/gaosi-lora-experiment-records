@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "scope": "Synthetic ID fixtures only; no formal rows or GPU use",
+  "tests": {
+    "full_parent_512_stream_8x32_and_probes_4x32_are_pairwise_disjoint": "PASS",
+    "probe_binding_that_was_already_learned_in_parent_is_rejected": "PASS",
+    "missing_query_binding_is_rejected": "PASS",
+    "a_world_with_less_than_32_bindings_is_rejected": "PASS",
+    "learning_world_reused_as_capacity_probe_is_rejected": "PASS"
+  }
+}

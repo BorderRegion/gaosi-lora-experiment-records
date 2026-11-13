@@ -1,0 +1,14 @@
+{
+  "out": "runs/diagnose_L_clean_K2_gradient_s17_v1",
+  "device": "musa",
+  "source_config": "configs/phi_L_real_episode_readiness_s17.json",
+  "source_config_sha256": "dedfe92961ffd2969a4b601b141583f51d4e77c5bfc11ac59a7e873a453896ea",
+  "epsilons": [
+    0.001,
+    0.01,
+    0.1
+  ],
+  "purpose": "Additional diagnosis of anomalous real clean K2 readiness gradient; not training or efficacy",
+  "formal_data_used": false,
+  "script_sha256": "6f33ecca819a412eb0f9819921ab58c6d44f7e0564bcaa5a81907ee24d5efaf8"
+}

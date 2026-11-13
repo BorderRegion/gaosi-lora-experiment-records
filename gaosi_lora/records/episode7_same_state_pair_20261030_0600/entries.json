@@ -1,0 +1,14 @@
+[
+  {
+    "job": "diagnose_L_episode7_same_state_async_r1",
+    "config": "configs/diagnose_L_episode7_same_state_async_r1.json",
+    "config_sha256": "531c4a5830a7f6f8fea42db58378c0ce10f1c8f15b320770b12787e6a52ce366",
+    "MUSA_LAUNCH_BLOCKING": null
+  },
+  {
+    "job": "diagnose_L_episode7_same_state_blocking_r1",
+    "config": "configs/diagnose_L_episode7_same_state_blocking_r1.json",
+    "config_sha256": "fbc5dd6022a978bb2d110376e052573964457de232e2b1987dae587271be5e27",
+    "MUSA_LAUNCH_BLOCKING": "1"
+  }
+]

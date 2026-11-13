@@ -1,0 +1,30 @@
+{
+  "utc": "2026-10-30T00:54:17.430690+00:00",
+  "command": [
+    "python",
+    "tools/validate_prefix_gradient.py",
+    "--config",
+    "configs/diagnose_core_prefix_v7_raw_gradient.json"
+  ],
+  "result": {
+    "status": "PASS",
+    "checks": [
+      "valid_bounded_prefix",
+      "reject_episode_8",
+      "reject_negative_episode",
+      "reject_unbounded_repeats",
+      "reject_formal_data",
+      "reject_production_output",
+      "reject_changed_source_config",
+      "reject_incomplete_source_pin",
+      "reject_changed_source_code",
+      "reject_different_device_lock",
+      "reject_unheld_lock",
+      "accept_own_held_descriptor"
+    ],
+    "check_count": 12,
+    "torch_checks": false,
+    "musa_imported": false,
+    "production_training_started_or_modified": false
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "phi_core_queue_recompute_v7",
+  "command": [
+    "/usr/bin/python",
+    "-u",
+    "/root/autodl-tmp/gaosi_lora/records/pipeline_recompute_v7/tools/phi_core_queue.py"
+  ],
+  "wrapper_pid": 379868,
+  "started_at_utc": "2026-10-29T22:58:25.851796+00:00",
+  "start_epoch": 1793314705.8518145,
+  "status": "RUNNING",
+  "child_pid": 379869,
+  "child_proc_start_ticks": "58877535"
+}

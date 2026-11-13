@@ -1,0 +1,17 @@
+{
+  "name": "confirmation_cpu_v3",
+  "command": [
+    "/usr/bin/python",
+    "-u",
+    "tools/validate_confirmation.py"
+  ],
+  "wrapper_pid": 82959,
+  "started_at_utc": "2026-10-29T13:00:08.128390+00:00",
+  "start_epoch": 1793278808.128409,
+  "status": "PASS",
+  "child_pid": 82960,
+  "child_proc_start_ticks": "55287763",
+  "exit_code": 0,
+  "wall_seconds": 13.731119632720947,
+  "finished_at_utc": "2026-10-29T13:00:21.859538+00:00"
+}

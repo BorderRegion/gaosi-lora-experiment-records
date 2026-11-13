@@ -1,0 +1,38 @@
+{
+  "scope": "CPU FP64 production transition on tiny Qwen RMSNorm/SiLU/eager attention",
+  "reference_precision_changes": [
+    "RMSNorm and attention softmax retain FP64 instead of upstream forced FP32",
+    "cross entropy retains FP64; real MUSA backend is checked separately"
+  ],
+  "tests": {
+    "L_exact_H2": {
+      "status": "PASS",
+      "analytic": -0.00017628570709825293,
+      "finite_difference": -0.0001762857082532321,
+      "relative_error": 6.551745872086176e-09
+    },
+    "L_H1_independent_chain": {
+      "status": "PASS",
+      "max_abs_error": 2.168404344971009e-19
+    },
+    "L_initial_Adam_identity": {
+      "status": "PASS"
+    },
+    "X_exact_H2": {
+      "status": "PASS",
+      "analytic": -0.0001606880167442749,
+      "finite_difference": -0.00016068801622637352,
+      "relative_error": 3.223024211671193e-09
+    },
+    "X_H1_independent_chain": {
+      "status": "PASS",
+      "max_abs_error": 1.6263032587282567e-19
+    },
+    "X_initial_Adam_identity": {
+      "status": "PASS"
+    }
+  },
+  "layers": 2,
+  "adapter_parameters": 1024,
+  "status": "PASS"
+}

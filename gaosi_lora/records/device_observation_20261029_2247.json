@@ -1,0 +1,13 @@
+{
+  "local_time": "2026-10-29T22:47:21+08:00",
+  "source": "mthreads-gmi 2.4.2, driver 5.2.0-server",
+  "device": "MTT S4000",
+  "device_id": 0,
+  "utilization_percent": 95,
+  "memory_used_MiB": 22656,
+  "memory_total_MiB": 49152,
+  "temperature_C": 54,
+  "processes": [{"pid": 102327, "name": "/usr/bin/python", "memory_MiB": 22656}],
+  "corresponding_supervision": "records/supervision_20261029_2247.json",
+  "next_regular_check_local": "2026-10-29T23:18:00+08:00"
+}

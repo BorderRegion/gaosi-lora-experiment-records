@@ -1,0 +1,21 @@
+{
+  "status": "PATH_CONTRACT_REGRESSION_PASS_CANDIDATE_NOT_ACTIVATED",
+  "validated_at_utc": "2026-11-02T19:06:23.481642+00:00",
+  "checks": [
+    "Original legacy namespace remains internally consistent.",
+    "Current generated v8 manifest fails the real writer/manifest contract.",
+    "Candidate main references all four actual produced metadata files.",
+    "Reject duplicate, reordered, stale-existing, missing and wrong-seed paths.",
+    "All training/evaluation/continual functions and main scheduling before final manifest are unchanged.",
+    "Candidate builder changes only the confirmation final manifest across all fifteen controllers."
+  ],
+  "simulated_leaf_metadata_only": true,
+  "training_or_runtime_correctness_inferred": false,
+  "live_sources_modified": false,
+  "source_sha256": {
+    "validate_candidate.py": "48188824adf3b752fb34cc74b58b9edd1f845e6c50249ffc1e34d18faa89ee8f",
+    "prepare_candidate.py": "4d34022a948206422d0ece5ce0afd976c133d4e6e5daf760aa754d9ffc68f29f",
+    "candidate/build_observed_v8_pipeline.py": "c3e803e806897c8c2ca4bdc6e616b1b3e3c42a1baa18f9e41e2f7d60e2e09599",
+    "candidate/confirmation_queue.py": "b1d27d04fadfae1e56ff1f83357e87b0382705c388b7ab96c654fa6ae5f26545"
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "observed_at_utc": "2026-10-30T01:41:35.404831+00:00",
+  "scope": "User-requested brief container restart and storage check; no training mutation; checkpoint metadata only",
+  "container_start_utc": "2026-10-29T08:36:16.304831+00:00",
+  "pid1_start_ticks": 53704581,
+  "pid1_lstart": "Thu Oct 29 16:36:15 2026",
+  "boot_id": "0f99d7c6-c419-42cc-a3dc-18fc7de07ff0",
+  "storage_GiB": {
+    "/root/autodl-tmp": {
+      "total": 1050.0,
+      "free": 983.47
+    },
+    "/": {
+      "total": 30.0,
+      "free": 18.19
+    }
+  },
+  "mount": "/dev/md0[/docker/volumes/autodl-container-kaltlgmeta-f374ee08-storage/_data] /root/autodl-tmp xfs",
+  "job": "phi_mix_O1_L_H2_core_s17_recompute_v7",
+  "job_state": {
+    "status": "RUNNING",
+    "pid": 344804,
+    "start_ticks": "58376943",
+    "identity_live": true
+  },
+  "config_sha256": "f70511613b15835c3eae3ea0fa86e937bb51bf3559301c600a4f9206fca414bc",
+  "config_matches_manifest": true,
+  "completed_episodes_in_log": 63,
+  "inner_updates_in_log": 504,
+  "latest_episode_end": {
+    "event": "episode_end",
+    "utc": "2026-10-30T01:40:40.088269+00:00",
+    "process_wall_seconds": 14733.846849441528,
+    "episode": 62,
+    "inner_updates": 504,
+    "phi_grad_norm": 0.02946141412643234,
+    "compute_counters": {
+      "loss_forwards": 16990,
+      "loss_backwards": 16740,
+      "input_tokens": 8456864,
+      "supervised_tokens": 1691272,
+      "hessian_vector_products": 2522
+    },
+    "query_task": 0.022382961586117744,
+    "query_language": 2.0670392513275146,
+    "query_keep": 0.022382961586117744,
+    "objective": 0.022382961586117744
+  },
+  "latest_event": {
+    "event": "inner",
+    "utc": "2026-10-30T01:41:25.636930+00:00",
+    "process_wall_seconds": 14779.395499229431,
+    "episode": 63,
+    "k": 2,
+    "ld": 6.621232751058415e-05,
+    "lr": 1.2677805423736572,
+    "task_tokens": 546,
+    "language_tokens": 1022,
+    "support_forwards": 22,
+    "keep_tokens": 546,
+    "keep_forwards": 10,
+    "step_seconds": 16.281590938568115,
+    "exact_window": false,
+    "cpu_rss_bytes": 8096612352,
+    "allocated_bytes": 11130643456,
+    "reserved_bytes": 34007416832,
+    "peak_allocated_bytes": 31309677056,
+    "peak_reserved_bytes": 34007416832
+  },
+  "unparsed_event_lines": 0,
+  "checkpoint_metadata": {
+    "bytes": 968309,
+    "mtime_utc": "2026-10-30T01:40:40.092018+00:00"
+  },
+  "large_preclip_norms": [
+    {
+      "episode": 7,
+      "norm": 2.107110211611566e+25
+    }
+  ],
+  "log_error_lines": [],
+  "controllers": {
+    "phi_core_queue_recompute_v7": {
+      "status": "RUNNING",
+      "pid": 379869,
+      "start_ticks": "58877535",
+      "identity_live": true
+    },
+    "phi_development_queue_recompute_v7": {
+      "status": "RUNNING",
+      "pid": 379871,
+      "start_ticks": "58877545",
+      "identity_live": true
+    },
+    "organization_queue_recompute_v7": {
+      "status": "RUNNING",
+      "pid": 379873,
+      "start_ticks": "58877555",
+      "identity_live": true
+    },
+    "final_parent_queue_recompute_v7": {
+      "status": "RUNNING",
+      "pid": 379875,
+      "start_ticks": "58877565",
+      "identity_live": true
+    },
+    "formal_recovery_queue_recompute_v7": {
+      "status": "RUNNING",
+      "pid": 379877,
+      "start_ticks": "58877575",
+      "identity_live": true
+    },
+    "reflow_queue_recompute_v7": {
+      "status": "RUNNING",
+      "pid": 379879,
+      "start_ticks": "58877586",
+      "identity_live": true
+    },
+    "continual_queue_recompute_v7": {
+      "status": "RUNNING",
+      "pid": 379881,
+      "start_ticks": "58877596",
+      "identity_live": true
+    },
+    "seven_b_queue_recompute_v7": {
+      "status": "RUNNING",
+      "pid": 379885,
+      "start_ticks": "58877606",
+      "identity_live": true
+    },
+    "horizon_queue_recompute_v7": {
+      "status": "RUNNING",
+      "pid": 379887,
+      "start_ticks": "58877616",
+      "identity_live": true
+    },
+    "confirmation_queue_recompute_v7": {
+      "status": "RUNNING",
+      "pid": 379889,
+      "start_ticks": "58877626",
+      "identity_live": true
+    },
+    "noise_controls_queue_recompute_v7": {
+      "status": "RUNNING",
+      "pid": 379891,
+      "start_ticks": "58877636",
+      "identity_live": true
+    },
+    "recovery_statistics_queue_recompute_v7": {
+      "status": "RUNNING",
+      "pid": 379893,
+      "start_ticks": "58877646",
+      "identity_live": true
+    },
+    "selective_statistics_queue_recompute_v7": {
+      "status": "RUNNING",
+      "pid": 379895,
+      "start_ticks": "58877656",
+      "identity_live": true
+    },
+    "reflow_statistics_queue_recompute_v7": {
+      "status": "RUNNING",
+      "pid": 379897,
+      "start_ticks": "58877666",
+      "identity_live": true
+    },
+    "continual_statistics_queue_recompute_v7": {
+      "status": "RUNNING",
+      "pid": 379899,
+      "start_ticks": "58877676",
+      "identity_live": true
+    }
+  },
+  "training_changed_or_restarted": false,
+  "numerical_scope": "No new checkpoint deserialization; last full finite-state inspection was 2026-10-30T01:35:04 UTC; earlier gradient spike remains unresolved.",
+  "gpu_observed_at_utc": "2026-10-30T01:40:21.642092+00:00",
+  "gpu_prior_snapshot": {
+    "utilization_percent": 96,
+    "memory_used_MiB": 33890,
+    "memory_total_MiB": 49152,
+    "temperature_C": 55,
+    "only_process_pid": 344804,
+    "source": "preceding direct mthreads-gmi call during this check"
+  },
+  "same_container_start_as_prior_check": true,
+  "local_recorder": {
+    "identity_live": true,
+    "status": "WAITING_30_MINUTES_NO_REMOTE_REQUEST",
+    "next_observation_due_utc": "2026-10-30T02:05:04.254293+00:00"
+  }
+}

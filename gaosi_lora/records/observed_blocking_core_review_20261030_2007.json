@@ -1,0 +1,46 @@
+{
+  "reviewed_at_utc": "2026-10-30T20:07:15.255429+00:00",
+  "previous_goal_turn": "progress: verified warm512 milestone and matching phi/Adam",
+  "current_goal_turn": "verified_wait_and_new_training_evidence",
+  "observer_live_pid": 202579,
+  "observer_start_ticks": "59350385",
+  "observation": {
+    "observation": "records/observed_blocking_core_monitor_20261030_200644_utc",
+    "archive_sha256": "5b31d58652d75eb790b9c2fe1526b8af769bf94814f7cea6682734af88ed6d1e",
+    "verified_source_files": 43,
+    "job_status": "RUNNING",
+    "alerts": [],
+    "production_modified_or_restarted": false
+  },
+  "archive_independently_verified": true,
+  "independently_rehashed_files": 43,
+  "committed_episodes": 66,
+  "committed_inner_updates": 544,
+  "fraction_of_current_L_budget": 0.2125,
+  "all_raw_gradients_finite": true,
+  "max_raw_norm": 0.36208071403479325,
+  "guard_errors": [],
+  "checkpoint": {
+    "copied_artifact_sha256": "2b2a4d83b71ae514e6c190fc6f6aa198f7debb2e61553af1361c3aba008338b3",
+    "next_episode": 66,
+    "inner_updates": 544,
+    "phi_finite": true,
+    "optimizer_finite": true,
+    "config_equal": true
+  },
+  "production_identity": {
+    "pid": 650716,
+    "state": "S",
+    "start_ticks": "62167024",
+    "matches": true,
+    "cmdline": "/usr/bin/python -u tools/train_observed_meta.py --manifest records/observed_blocking_core_20261030_0810/training_manifest.json ",
+    "launch_blocking_environment": [
+      "MUSA_LAUNCH_BLOCKING=1"
+    ]
+  },
+  "next_due_at_utc": "2026-10-30T20:36:44.561675+00:00",
+  "method_validated": false,
+  "downstream_promotion_allowed": false,
+  "production_modified_or_restarted": false,
+  "full_goal": "incomplete; current L and subsequent full protocol execution/review remain"
+}

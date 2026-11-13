@@ -1,0 +1,96 @@
+{
+  "observed_at_utc": "2026-10-30T03:09:08.409728+00:00",
+  "jobs": {
+    "diagnose_core_prefix_v7_raw_gradient_r1": {
+      "job": {
+        "name": "diagnose_core_prefix_v7_raw_gradient_r1",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "tools/diagnose_prefix_gradient.py",
+          "--config",
+          "configs/diagnose_core_prefix_v7_raw_gradient.json",
+          "--execute"
+        ],
+        "wrapper_pid": 465264,
+        "started_at_utc": "2026-10-30T01:44:05.478175+00:00",
+        "start_epoch": 1793324645.4781954,
+        "status": "RUNNING",
+        "device_lock": {
+          "path": "/tmp/gaosi_musa_device0.lock",
+          "version": 1
+        },
+        "child_pid": 465265,
+        "child_proc_start_ticks": "59871498"
+      },
+      "identity_live": true,
+      "raw_norms": [
+        {
+          "episode": 0,
+          "all_raw_gradients_finite": true,
+          "norm": 2.5731238716800286e-05
+        },
+        {
+          "episode": 1,
+          "all_raw_gradients_finite": true,
+          "norm": 0.06615261925098836
+        },
+        {
+          "episode": 2,
+          "all_raw_gradients_finite": true,
+          "norm": 0.029094509364180416
+        },
+        {
+          "episode": 3,
+          "all_raw_gradients_finite": true,
+          "norm": 4.6953800381588306e-05
+        },
+        {
+          "episode": 4,
+          "all_raw_gradients_finite": true,
+          "norm": 0.05485535261842206
+        },
+        {
+          "episode": 5,
+          "all_raw_gradients_finite": true,
+          "norm": 0.08858779017664231
+        },
+        {
+          "episode": 6,
+          "all_raw_gradients_finite": true,
+          "norm": 1.3826114200229862e-05
+        }
+      ],
+      "last_log_lines": [
+        "{\"event\": \"inner\", \"utc\": \"2026-10-30T03:07:30.138147+00:00\", \"process_wall_seconds\": 1804.9783794879913, \"episode\": 7, \"k\": 7, \"ld\": 0.05170612037181854, \"lr\": 1.0387866497039795, \"task_tokens\": 559, \"language_tokens\": 1022, \"support_forwards\": 22, \"keep_tokens\": 559, \"keep_forwards\": 10, \"step_seconds\": 16.42838215827942, \"exact_window\": true, \"cpu_rss_bytes\": 8143138816, \"allocated_bytes\": 13775266816, \"reserved_bytes\": 33571209216, \"peak_allocated_bytes\": 31273333760, \"peak_reserved_bytes\": 33571209216}",
+        "{\"event\": \"inner\", \"utc\": \"2026-10-30T03:07:43.967965+00:00\", \"process_wall_seconds\": 1818.8081941604614, \"episode\": 7, \"k\": 8, \"ld\": 0.014408503659069538, \"lr\": 1.0356216430664062, \"task_tokens\": 525, \"language_tokens\": 1022, \"support_forwards\": 18, \"keep_tokens\": 525, \"keep_forwards\": 8, \"step_seconds\": 13.82687783241272, \"exact_window\": true, \"cpu_rss_bytes\": 8143138816, \"allocated_bytes\": 17653968896, \"reserved_bytes\": 33571209216, \"peak_allocated_bytes\": 31273333760, \"peak_reserved_bytes\": 33571209216}"
+      ]
+    },
+    "diagnose_L_episode72_repeat_recompute_v7_r1": {
+      "job": {
+        "name": "diagnose_L_episode72_repeat_recompute_v7_r1",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "tools/diagnose_repeat_gradient.py",
+          "--config",
+          "configs/diagnose_L_episode72_repeat_recompute_v7_r1.json"
+        ],
+        "wrapper_pid": 503976,
+        "started_at_utc": "2026-10-30T03:08:00.576390+00:00",
+        "start_epoch": 1793329680.5764117,
+        "status": "RUNNING",
+        "device_lock": {
+          "path": "/tmp/gaosi_musa_device0.lock",
+          "version": 1
+        },
+        "child_pid": 503977,
+        "child_proc_start_ticks": "60375008"
+      },
+      "identity_live": true,
+      "last_log_lines": [
+        "{\"event\": \"waiting_device\", \"utc\": \"2026-10-30T03:08:00.607206+00:00\", \"job\": \"diagnose_L_episode72_repeat_recompute_v7_r1\", \"lock\": \"/tmp/gaosi_musa_device0.lock\"}"
+      ]
+    }
+  }
+}

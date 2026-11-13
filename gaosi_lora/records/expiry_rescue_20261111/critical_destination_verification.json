@@ -1,0 +1,7 @@
+{
+  "status": "NORMALIZED_CRITICAL_BACKUP_ALL_2803_MEMBERS_SHA256_VERIFIED_ON_BACKUP_HOST",
+  "utc": "2026-11-11T07:10:45.372800+00:00",
+  "archive_sha256": "4892f1713edc4abf638f3f7a70f3ab088c96ead8f9e96f7c7272103a3cd4e8cc",
+  "files": 2803,
+  "source_checkpoint_sha256": "dc88c3dfd03de88d4a824d57db7350f15b58aead8ad4a9247333024d845c291f"
+}

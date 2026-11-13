@@ -1,0 +1,98 @@
+{
+  "status": "EXITED_OBSERVER_SSH_FAILURE_REVIEWED_CONNECTION_RESTORED",
+  "recorded_at_utc": "2026-11-08T03:31:51.227237+00:00",
+  "old_observer_identity_verified_dead": true,
+  "old_follower_identity_verified_dead": true,
+  "old_observation_count": 157,
+  "last_committed_observation": {
+    "observation": "records/pipeline_monitor_20261108_025556_utc",
+    "archive_sha256": "a3a9ea70cfffa3576304915fde924aa3cef5025aebac2c2c3ac45c8210c7dd45",
+    "verified_source_files": 56,
+    "alerts": [],
+    "pending_scientific_reviews": [],
+    "meta_runs": [],
+    "production_modified_or_restarted": false
+  },
+  "last_snapshot_files_independently_rehashed": 56,
+  "last_completion_receipt_evidence_independently_rehashed": 7,
+  "failure": "SSH exited 255 before the scheduled 03:25 snapshot was created; original control socket was absent.",
+  "recovery": "Authenticated SSH master restored; control check and read-only remote event reads succeeded.",
+  "remote_preflight": {
+    "status": "SSH_RESTORED_NO_FAILED_SLOT_OUTPUT_OR_DEVICE_LOCK_REPLACEMENT",
+    "utc": "2026-11-08T03:31:51.201427+00:00",
+    "device_lock_inode": 31148027670,
+    "last_training_event": {
+      "event": "recover",
+      "utc": "2026-11-08T03:31:50.298249+00:00",
+      "process_wall_seconds": 4101.542847394943,
+      "step": 40,
+      "loss_D": 0.00013851578114554286,
+      "loss_language": 0.9600409865379333,
+      "route_tokens": {
+        "task": 513,
+        "language": 1022,
+        "keep": 527
+      },
+      "step_seconds": 46.75236248970032,
+      "coverage_slot": "task",
+      "coverage": 32,
+      "raw_update_norm": 0.10435071587562561,
+      "update_norm": 0.10435071587562561,
+      "update_norm_scale": 1.0,
+      "compute_counters": {
+        "loss_forwards": 840,
+        "loss_backwards": 795,
+        "input_tokens": 419319,
+        "supervised_tokens": 103871,
+        "hessian_vector_products": 0
+      },
+      "cpu_rss_bytes": 7787388928,
+      "allocated_bytes": 9681292288,
+      "reserved_bytes": 23540531200,
+      "peak_allocated_bytes": 15812325888,
+      "peak_reserved_bytes": 23540531200
+    }
+  },
+  "evidence_sha256": {
+    "records/pipeline_observer_20261104_1301/observer_state.json": "7b83ed5276ba64406f94defa9a5b6d86d59a6395dfcbc0e94bc399f43ccc376d",
+    "records/pipeline_observer_20261104_1301/observations.jsonl": "21b819738e4f2c78d6353f83e77d2f84885607cb37c8b2370590d8ac389e0e04",
+    "records/pipeline_observer_20261104_1301/stderr.log": "fa49db248a58bc20bb6ed9771bef218f1057a3f60933f0418e0bf102dedaad21",
+    "records/scheduled_review_follower_20261108_0230/state.json": "b1e038b3f2d9af584f8125cc51134ead6017df6e1d01b63a0d1776b6a6e6c11f",
+    "records/scheduled_review_follower_20261108_0230/completed.jsonl": "dc4d79c17ddb3d5defaf8f0bee5b164b5b2f3523dc91a3ff3db4ec7aa2b946a5",
+    "records/pipeline_observer_20261104_1301/completion_receipt_20261108_0255.json": "ce7321bdab62a60d540d85e60ad807b55d0238183395a6060d16ba42d1ff083d",
+    "records/pipeline_observer_20261104_1301/followup_20261108_0255.json": "77bb77e41ca59057928ab0f75e341e2a9435795325235f42db57a287da10d35b"
+  },
+  "copied_sources_unchanged": {
+    "observe.py": {
+      "source": "records/pipeline_observer_20261104_1301/observe.py",
+      "sha256": "ebd599f6c6ca93ecc91951b4f71dba4606d4d94f43aab38bd698ee53303f2098"
+    },
+    "collect_snapshot.py": {
+      "source": "records/pipeline_observer_20261104_1301/collect_snapshot.py",
+      "sha256": "a67e876069319e2246601a08f43eefbd94defb7b854a0ab26d0a3e6d3634bb1c"
+    },
+    "wait_next_observation.py": {
+      "source": "records/pipeline_observer_20261104_1301/wait_next_observation.py",
+      "sha256": "a64444e4047cd15f32ad8e8cf0bc2ec4ae9bc1a3bba578d9bdbe9578777878a3"
+    },
+    "review_snapshot.py": {
+      "source": "records/pipeline_observer_20261104_1301/review_snapshot.py",
+      "sha256": "8338feefffe45bb5205e597ff945292a2a34b4e7fbcc10b278fcc0a0e38ad243"
+    },
+    "record_runtime_review.py": {
+      "source": "records/pipeline_observer_20261104_1301/record_runtime_review.py",
+      "sha256": "f518aa6cac7bd7fc1c4aa8c0594adfc61804ea2a96056792b43bda16e63bbf7e"
+    },
+    "complete_scheduled_followup_v1.py": {
+      "source": "records/pipeline_observer_20261104_1301/complete_scheduled_followup_v1.py",
+      "sha256": "fb9bc2f1c027a2e880024f2260a19d2bfe1fc155cc284ecc866d2c7d34abe82a"
+    }
+  },
+  "bridge_followup": "records/pipeline_observer_20261108_0330/previous_observer_followup_20261108_0255.json",
+  "bridge_sha256": "77bb77e41ca59057928ab0f75e341e2a9435795325235f42db57a287da10d35b",
+  "bridge_original": "records/pipeline_observer_20261104_1301/followup_20261108_0255.json",
+  "training_modified_or_restarted": false,
+  "old_observer_modified_or_restarted": false,
+  "method_validated": false,
+  "full_goal_complete": false
+}

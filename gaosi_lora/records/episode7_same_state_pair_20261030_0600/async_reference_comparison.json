@@ -1,0 +1,194 @@
+{
+  "status": "EVIDENCE_COMPARISON_NOT_METHOD_VALIDATION",
+  "utc": "2026-10-30T06:26:35.592295+00:00",
+  "method_validated": false,
+  "production_modified": false,
+  "core_budget_credit": 0,
+  "evidence_sha256": {
+    "records/prefix_gradient_results_20261030_0311/snapshot/runs/diagnostics/core_prefix_v7_raw_gradient_r1/repeat_0/gradient_episode_7.pt": "da04a847a324ae1c0fac5fa37f51a7175f7732de06120fe9453b6ec3f2f4562f",
+    "runs/diagnostics/L_episode7_same_state_async_r1/analytic.pt": "30d2d646c31addd6c44d438ec65a994d4c85782ad4b97eb22f59ded50e73bbc1",
+    "runs/diagnostics/L_episode7_same_state_async_r1/config.json": "230ba6d0bdfb80ab9bac265c56a5ff3cca3e7ead69559110ed5f04f00c86a022",
+    "records/prefix_gradient_results_20261030_0311/snapshot/runs/diagnostics/core_prefix_v7_raw_gradient_r1/repeat_0/before_episode_7.pt": "c4db1810751c460de920cabf1db326109d93edba38e388ab9320b5a62bfd91fa",
+    "runs/diagnostics/L_episode7_same_state_async_r1/repeat_0.pt": "fb41ccfba016e8319f83e0920cb3b55d8bf3cc59a5347dbe153f545ff4c9219a",
+    "runs/diagnostics/L_episode7_same_state_async_r1/repeat_1.pt": "da6ee3824dd164ed6558571a80c4e41f075921eaf9c9d2fce99ab09c03aa4e26",
+    "runs/diagnostics/L_episode7_same_state_async_r1/repeat_2.pt": "8f03f1460a658ad219d61b3e513c208918387d3b659bbe2ced9481cff058cbde",
+    "runs/diagnostics/L_episode7_same_state_async_r1/repeat_3.pt": "fda2a97928f5bbe7b7ee229fcf2f358e01a8c471f79b66eb0cc3d5c5b37d9848"
+  },
+  "repeats": [
+    {
+      "repeat": 0,
+      "forward_records_equal_to_reference": true,
+      "raw_vs_original_anomalous_gradient": {
+        "elements": 78850,
+        "left_finite": true,
+        "right_finite": true,
+        "left_nonfinite_elements": 0,
+        "right_nonfinite_elements": 0,
+        "bitwise_equal": false,
+        "left_norm": 9.478502296614236e+21,
+        "right_norm": 0.061408103830101826,
+        "max_absolute_difference": 6.727628556903517e+21,
+        "relative_l2_difference_to_left": 1.0,
+        "cosine": 0.9652287734834478
+      },
+      "terminal": {
+        "query_task": 0.027008866891264915,
+        "query_language": 2.4372153282165527,
+        "query_keep": 0.027008866891264915,
+        "objective": 0.027008866891264915
+      },
+      "raw_vs_first_repeat": {
+        "elements": 78850,
+        "left_finite": true,
+        "right_finite": true,
+        "left_nonfinite_elements": 0,
+        "right_nonfinite_elements": 0,
+        "bitwise_equal": true,
+        "left_norm": 0.061408103830101826,
+        "right_norm": 0.061408103830101826,
+        "max_absolute_difference": 0.0,
+        "relative_l2_difference_to_left": 0.0,
+        "cosine": 1.0000000000000002
+      }
+    },
+    {
+      "repeat": 1,
+      "forward_records_equal_to_reference": true,
+      "raw_vs_original_anomalous_gradient": {
+        "elements": 78850,
+        "left_finite": true,
+        "right_finite": true,
+        "left_nonfinite_elements": 0,
+        "right_nonfinite_elements": 0,
+        "bitwise_equal": false,
+        "left_norm": 9.478502296614236e+21,
+        "right_norm": 0.06140819779885942,
+        "max_absolute_difference": 6.727628556903517e+21,
+        "relative_l2_difference_to_left": 1.0,
+        "cosine": 0.9652287920543109
+      },
+      "terminal": {
+        "query_task": 0.027008866891264915,
+        "query_language": 2.4372153282165527,
+        "query_keep": 0.027008866891264915,
+        "objective": 0.027008866891264915
+      },
+      "raw_vs_first_repeat": {
+        "elements": 78850,
+        "left_finite": true,
+        "right_finite": true,
+        "left_nonfinite_elements": 0,
+        "right_nonfinite_elements": 0,
+        "bitwise_equal": false,
+        "left_norm": 0.061408103830101826,
+        "right_norm": 0.06140819779885942,
+        "max_absolute_difference": 4.842877388000488e-08,
+        "relative_l2_difference_to_left": 1.6309607488571584e-06,
+        "cosine": 0.9999999999998406
+      }
+    },
+    {
+      "repeat": 2,
+      "forward_records_equal_to_reference": true,
+      "raw_vs_original_anomalous_gradient": {
+        "elements": 78850,
+        "left_finite": true,
+        "right_finite": true,
+        "left_nonfinite_elements": 0,
+        "right_nonfinite_elements": 0,
+        "bitwise_equal": false,
+        "left_norm": 9.478502296614236e+21,
+        "right_norm": 0.06142932755636708,
+        "max_absolute_difference": 6.727628556903517e+21,
+        "relative_l2_difference_to_left": 1.0,
+        "cosine": 0.9652298923387479
+      },
+      "terminal": {
+        "query_task": 0.027008866891264915,
+        "query_language": 2.4372153282165527,
+        "query_keep": 0.027008866891264915,
+        "objective": 0.027008866891264915
+      },
+      "raw_vs_first_repeat": {
+        "elements": 78850,
+        "left_finite": true,
+        "right_finite": true,
+        "left_nonfinite_elements": 0,
+        "right_nonfinite_elements": 0,
+        "bitwise_equal": false,
+        "left_norm": 0.061408103830101826,
+        "right_norm": 0.06142932755636708,
+        "max_absolute_difference": 1.636520028114319e-05,
+        "relative_l2_difference_to_left": 0.0003582698447549137,
+        "cosine": 0.9999999955486871
+      }
+    },
+    {
+      "repeat": 3,
+      "forward_records_equal_to_reference": true,
+      "raw_vs_original_anomalous_gradient": {
+        "elements": 78850,
+        "left_finite": true,
+        "right_finite": true,
+        "left_nonfinite_elements": 0,
+        "right_nonfinite_elements": 0,
+        "bitwise_equal": false,
+        "left_norm": 9.478502296614236e+21,
+        "right_norm": 0.061405237402160535,
+        "max_absolute_difference": 6.727628556903517e+21,
+        "relative_l2_difference_to_left": 1.0,
+        "cosine": 0.9652283530511802
+      },
+      "terminal": {
+        "query_task": 0.027008866891264915,
+        "query_language": 2.4372153282165527,
+        "query_keep": 0.027008866891264915,
+        "objective": 0.027008866891264915
+      },
+      "raw_vs_first_repeat": {
+        "elements": 78850,
+        "left_finite": true,
+        "right_finite": true,
+        "left_nonfinite_elements": 0,
+        "right_nonfinite_elements": 0,
+        "bitwise_equal": false,
+        "left_norm": 0.061408103830101826,
+        "right_norm": 0.061405237402160535,
+        "max_absolute_difference": 2.0973384380340576e-06,
+        "relative_l2_difference_to_left": 4.677193550127537e-05,
+        "cosine": 0.9999999999956264
+      }
+    }
+  ],
+  "saved_starting_phi_reference_vs_async": {
+    "elements": 78850,
+    "left_finite": true,
+    "right_finite": true,
+    "left_nonfinite_elements": 0,
+    "right_nonfinite_elements": 0,
+    "bitwise_equal": true,
+    "left_norm": 13.182982458963181,
+    "right_norm": 13.182982458963181,
+    "max_absolute_difference": 0.0,
+    "relative_l2_difference_to_left": 0.0,
+    "cosine": 0.9999999999999761
+  },
+  "saved_starting_phi_checkpoint_vs_async": {
+    "elements": 78850,
+    "left_finite": true,
+    "right_finite": true,
+    "left_nonfinite_elements": 0,
+    "right_nonfinite_elements": 0,
+    "bitwise_equal": true,
+    "left_norm": 13.182982458963181,
+    "right_norm": 13.182982458963181,
+    "max_absolute_difference": 0.0,
+    "relative_l2_difference_to_left": 0.0,
+    "cosine": 0.9999999999999761
+  },
+  "limitations": [
+    "Recorded ld/lr and token values do not include every support gradient or intermediate state tensor.",
+    "Saved starting phi is byte-equal; repeated replay source restores RNG and streams and performs no optimizer updates.",
+    "No observed normal repeat proves that the earlier nonfinite/giant gradients are fixed."
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "status": "ARCHIVED_X_WARM512_TENSORS_VERIFIED",
+  "checked_at_utc": "2026-11-02T00:46:06.286091+00:00",
+  "run": "/root/autodl-tmp/gaosi_lora/records/pipeline_monitor_20261102_004420_utc/snapshot/runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8",
+  "warm_sha256": "f26d33350129101e5b8a4a6898f41cc44b11a67b2ab12f33cb38e81e254dfdce",
+  "latest_sha256": "c8c7618cf203a05579093d985d2226a3df1febda29b16b8db9a4da17f7937b7f",
+  "architecture": "X",
+  "phi_parameter_count": 83795,
+  "next_episode": 64,
+  "inner_updates": 512,
+  "phi_tensors_equal": true,
+  "optimizer_tensors_equal": true,
+  "phi_and_optimizer_finite": true,
+  "optimizer_steps": [
+    64.0
+  ],
+  "config_equal": true,
+  "original_schedule_equal": true,
+  "method_validated": false,
+  "downstream_promotion_allowed": false,
+  "training_modified_or_restarted": false,
+  "limitations": [
+    "CPU reads of archived tensors only; gradients are not recomputed.",
+    "Finiteness and tensor equality do not validate H2 derivatives."
+  ],
+  "source": "records/pipeline_X_warm512_20261102_0045/inspect_warm512.py",
+  "source_sha256": "22e655f3b109e549a58d94dba56e3294797b8822c9a438169ecfb0259bd39915",
+  "observation": "records/pipeline_monitor_20261102_004420_utc",
+  "archive_sha256": "5fb426e6db421615848ae6e0942b737aa4963767d1b7c56457ba44e6c818afdb",
+  "full_goal_complete": false
+}

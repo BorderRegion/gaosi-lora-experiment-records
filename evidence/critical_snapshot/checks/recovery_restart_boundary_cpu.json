@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "scope": "CPU tiny random Qwen integration only; no acquisition or recovery effect evidence",
+  "tests": {
+    "candidate_correct_answer_NLL_equals_direct_masked_CE": "PASS",
+    "plus_two_steps_match_independent_stock_Adam": "PASS",
+    "minus_two_steps_match_independent_stock_Adam": "PASS",
+    "all_two_steps_match_independent_stock_Adam": "PASS",
+    "Dminus_preserves_R_and_language_exposure_and_half_mass": "PASS",
+    "resume_restores_optimizer_streams_initial_metrics_bitwise": "PASS",
+    "resume_completes_pending_boundary_evaluation_before_next_update": "PASS",
+    "fixed_update_norm_control": "PASS",
+    "new_task_half_language_half_known_retention_matches_independent_Adam": "PASS",
+    "declared_dev_phi_matches_paired_Adam_at_zero_head": "PASS",
+    "unlisted_dev_phi_rejected": "PASS",
+    "all_disjoint_rule_queries_are_evaluated": "PASS"
+  }
+}

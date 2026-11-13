@@ -1,0 +1,49 @@
+{
+  "utc": "2026-10-29T13:18:01.727232+00:00",
+  "job": {
+    "name": "noise_controls_queue_v1",
+    "command": [
+      "/usr/bin/python",
+      "-u",
+      "tools/noise_controls_queue.py"
+    ],
+    "wrapper_pid": 88811,
+    "started_at_utc": "2026-10-29T13:17:08.886770+00:00",
+    "start_epoch": 1793279828.886793,
+    "status": "RUNNING",
+    "child_pid": 88812,
+    "child_proc_start_ticks": "55389839"
+  },
+  "process_identity_live": true,
+  "upstream_job": "organization_queue_v1",
+  "upstream_process_identity_live": true,
+  "stage": "WAITING_FOR_ALL_PHI_FROZEN",
+  "cpu_checks": {
+    "checks/noise_controls_cpu.json": {
+      "status": "PASS",
+      "count": 12,
+      "sha256": "7f71d8e489e7e41a5a206b86fde7ccb84c72feb4edd93e3a330818b599d2c7f0",
+      "scope": "Isolated K32 schedule plus real random tiny CPU K2 numerical/entry checks; not real3B/MUSA or trained-phi effect evidence"
+    },
+    "checks/recovery_norm_history_regression_cpu_v1.json": {
+      "status": "PASS",
+      "count": 12,
+      "sha256": "60b1de1766a7353f4489b806341129684328b8b570dde32be2356be720a5c029",
+      "scope": "CPU tiny random Qwen integration only; no acquisition or recovery effect evidence"
+    }
+  },
+  "source_hashes": {
+    "gaosi/noise_controls.py": "43425dd30dd5542089efb63742ed730adb84664d1f4242701fefa74af4deaf02",
+    "tools/noise_controls_queue.py": "279c98a85ba49714ff5ad9f5136af2e0df842d2a1d9491ab8be802cf16c323cc",
+    "tools/validate_noise_controls.py": "a3060369dabba693e7d16b0e8b4a016e95f6874db6a7e9f0e6a57ccfcba92b4e",
+    "tools/device_guard.py": "b1068dc78b14c3e9dc55547d6d2050e3a0899a5d42407c82b8db56cdd4760bcf",
+    "gaosi/recover.py": "955babb1fb4303e6b367ba848cf909a0d94442620d27a031e215730cf76f44c1",
+    "tools/validate_recovery.py": "d4981f3e110115c566596601444caee4f8dc2014b247f2041b3a4cec538d7ce5"
+  },
+  "production_recover_changed": true,
+  "production_change_scope": "Only explicit norm-target controls refresh next-step history last_update using actual scaled/rounded delta. Existing no-norm branches are unchanged; original recovery regression passed.",
+  "policy": "records/noise_controls_policy_v1.json",
+  "planned_arms": 18,
+  "actual_frozen_phi_noise_control_started": false,
+  "overall_experiment_complete": false
+}

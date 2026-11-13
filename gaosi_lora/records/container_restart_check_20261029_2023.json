@@ -1,0 +1,508 @@
+{
+  "utc": "2026-10-29T12:23:59.319333+00:00",
+  "check": "post-expansion container, storage, active jobs, artifacts, and log-tail check",
+  "container_pid1": {
+    "returncode": 0,
+    "output": "   PID                  STARTED COMMAND\n     1 Thu Oct 29 16:36:15 2026 bash /init/boot/boot.sh\n"
+  },
+  "storage_mounts": {
+    "returncode": 0,
+    "output": "Filesystem     Type     Size  Used Avail Use% Mounted on\n/dev/md0       xfs      1.1T   49G 1002G   5% /root/autodl-tmp\noverlay        overlay   30G   12G   19G  40% /\n"
+  },
+  "supervision": {
+    "utc": "2026-10-29T12:23:11.394489+00:00",
+    "jobs": [
+      {
+        "job": "base_boundary_queue_v1",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 68031,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "tools/base_boundary_queue.py"
+        ]
+      },
+      {
+        "job": "calibration_queue_v3",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 3901,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "records/restart_20261029_1641/continue_calibration.py"
+        ]
+      },
+      {
+        "job": "continual_queue_v1",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 57128,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "tools/continual_queue.py"
+        ]
+      },
+      {
+        "job": "factor_recovery_queue_v1",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 45773,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "tools/factor_recovery_queue.py"
+        ]
+      },
+      {
+        "job": "final_parent_queue_v1",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 18882,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "tools/final_parent_queue.py",
+          "--organization-job",
+          "organization_queue_v1"
+        ]
+      },
+      {
+        "job": "formal_recovery_queue_v2",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 47495,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "tools/formal_recovery_queue.py",
+          "--final-parent-job",
+          "final_parent_queue_v1",
+          "--factor-job",
+          "factor_recovery_queue_v1"
+        ]
+      },
+      {
+        "job": "organization_queue_v1",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 7370,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "tools/organization_queue.py",
+          "--development-job",
+          "phi_development_queue_v1"
+        ]
+      },
+      {
+        "job": "phi_core_queue_v3",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 3902,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "tools/phi_core_queue.py",
+          "--calibration-job",
+          "calibration_queue_v3"
+        ]
+      },
+      {
+        "job": "phi_development_queue_v1",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 5211,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "tools/phi_development_queue.py",
+          "--core-job",
+          "phi_core_queue_v3"
+        ]
+      },
+      {
+        "job": "recovery_dev_factor_ratio1_lr0.0001_s17_v1",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 58178,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "-m",
+          "gaosi.recover",
+          "--config",
+          "configs/recovery_dev_factor_ratio1_lr0.0001_s17_v1.json"
+        ]
+      },
+      {
+        "job": "recovery_dev_uniform_s17",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 66304,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "-m",
+          "gaosi.recover",
+          "--config",
+          "configs/recovery_dev_uniform_s17.json"
+        ]
+      },
+      {
+        "job": "reflow_queue_v1",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 52783,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "tools/reflow_queue.py"
+        ]
+      },
+      {
+        "job": "seven_b_early_queue_v1",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 30266,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "tools/seven_b_early_queue.py"
+        ]
+      },
+      {
+        "job": "seven_b_scale_queue_v1",
+        "status": "RUNNING",
+        "live": true,
+        "pid": 64131,
+        "process_state": "S",
+        "command": [
+          "/usr/bin/python",
+          "-u",
+          "tools/seven_b_queue.py"
+        ]
+      }
+    ],
+    "recent_runs": [
+      {
+        "run": "runs/recovery_dev_factor_ratio1_lr0.0001_s17_v1",
+        "last": {
+          "event": "evaluation",
+          "utc": "2026-10-29T12:23:09.784488+00:00",
+          "process_wall_seconds": 597.3456401824951,
+          "step": 8,
+          "metrics": {
+            "task": {
+              "n": 512,
+              "candidate_accuracy": 0.955078125,
+              "mean_margin": 5.936468443109668,
+              "nll": 0.11527840671787265,
+              "answer_tokens": 1288,
+              "strict_EM": 0.9375,
+              "abnormal_rate": 0.0
+            },
+            "language": {
+              "nll": 2.132170106567077,
+              "answer_tokens": 4463
+            }
+          },
+          "language_residual_nats": 0.012087624702863842,
+          "coverage_slot": "task",
+          "coverage": 512,
+          "pool": 512
+        },
+        "last_evaluation": {
+          "event": "evaluation",
+          "utc": "2026-10-29T12:23:09.784488+00:00",
+          "process_wall_seconds": 597.3456401824951,
+          "step": 8,
+          "metrics": {
+            "task": {
+              "n": 512,
+              "candidate_accuracy": 0.955078125,
+              "mean_margin": 5.936468443109668,
+              "nll": 0.11527840671787265,
+              "answer_tokens": 1288,
+              "strict_EM": 0.9375,
+              "abnormal_rate": 0.0
+            },
+            "language": {
+              "nll": 2.132170106567077,
+              "answer_tokens": 4463
+            }
+          },
+          "language_residual_nats": 0.012087624702863842,
+          "coverage_slot": "task",
+          "coverage": 512,
+          "pool": 512
+        },
+        "checkpoint_mtime_utc": "2026-10-29T12:20:30.755596+00:00"
+      },
+      {
+        "run": "runs/recovery_dev_shrink_s17",
+        "last": {
+          "event": "evaluation",
+          "utc": "2026-10-29T12:12:56.187531+00:00",
+          "process_wall_seconds": 1547.114753961563,
+          "step": 64,
+          "metrics": {
+            "task": {
+              "n": 512,
+              "candidate_accuracy": 0.99609375,
+              "mean_margin": 9.823977673387809,
+              "nll": 0.05529222763891457,
+              "answer_tokens": 1288,
+              "strict_EM": 0.97265625,
+              "abnormal_rate": 0.0
+            },
+            "language": {
+              "nll": 2.127539870986323,
+              "answer_tokens": 4463
+            }
+          },
+          "language_residual_nats": 0.007457389122110136,
+          "coverage_slot": "task",
+          "coverage": 512,
+          "pool": 512
+        },
+        "last_evaluation": {
+          "event": "evaluation",
+          "utc": "2026-10-29T12:12:56.187531+00:00",
+          "process_wall_seconds": 1547.114753961563,
+          "step": 64,
+          "metrics": {
+            "task": {
+              "n": 512,
+              "candidate_accuracy": 0.99609375,
+              "mean_margin": 9.823977673387809,
+              "nll": 0.05529222763891457,
+              "answer_tokens": 1288,
+              "strict_EM": 0.97265625,
+              "abnormal_rate": 0.0
+            },
+            "language": {
+              "nll": 2.127539870986323,
+              "answer_tokens": 4463
+            }
+          },
+          "language_residual_nats": 0.007457389122110136,
+          "coverage_slot": "task",
+          "coverage": 512,
+          "pool": 512
+        },
+        "checkpoint_mtime_utc": "2026-10-29T12:10:16.993450+00:00"
+      },
+      {
+        "run": "runs/recovery_dev_factor_ratio1_lr3e-05_s17_v1",
+        "last": {
+          "event": "evaluation",
+          "utc": "2026-10-29T11:46:51.558452+00:00",
+          "process_wall_seconds": 1677.2053291797638,
+          "step": 64,
+          "metrics": {
+            "task": {
+              "n": 512,
+              "candidate_accuracy": 0.9765625,
+              "mean_margin": 7.444739153690126,
+              "nll": 0.07943606321927296,
+              "answer_tokens": 1288,
+              "strict_EM": 0.958984375,
+              "abnormal_rate": 0.0
+            },
+            "language": {
+              "nll": 2.1162596343211626,
+              "answer_tokens": 4463
+            }
+          },
+          "language_residual_nats": -0.0038228475430504005,
+          "coverage_slot": "task",
+          "coverage": 512,
+          "pool": 512
+        },
+        "last_evaluation": {
+          "event": "evaluation",
+          "utc": "2026-10-29T11:46:51.558452+00:00",
+          "process_wall_seconds": 1677.2053291797638,
+          "step": 64,
+          "metrics": {
+            "task": {
+              "n": 512,
+              "candidate_accuracy": 0.9765625,
+              "mean_margin": 7.444739153690126,
+              "nll": 0.07943606321927296,
+              "answer_tokens": 1288,
+              "strict_EM": 0.958984375,
+              "abnormal_rate": 0.0
+            },
+            "language": {
+              "nll": 2.1162596343211626,
+              "answer_tokens": 4463
+            }
+          },
+          "language_residual_nats": -0.0038228475430504005,
+          "coverage_slot": "task",
+          "coverage": 512,
+          "pool": 512
+        },
+        "checkpoint_mtime_utc": "2026-10-29T11:44:12.501647+00:00"
+      }
+    ],
+    "queue": {
+      "utc": "2026-10-29T05:57:59.297986+00:00",
+      "event": "DEVELOPMENT_AND_PARENTS_COMPLETE",
+      "note": "Noise calibration and production H1/H2 profile are next; phi core is not marked complete."
+    },
+    "storage": {
+      "/root/autodl-tmp": {
+        "free_bytes": 1075844501504,
+        "total_bytes": 1127428915200
+      },
+      "/": {
+        "free_bytes": 19592593408,
+        "total_bytes": 32212254720
+      }
+    }
+  },
+  "device": {
+    "returncode": 0,
+    "output": "Thu Oct 29 20:23:59 2026\n---------------------------------------------------------------------\n    mthreads-gmi:2.4.2           Driver Version:5.2.0-server\n---------------------------------------------------------------------\nID   Name                 |PCIe                |%GPU  Mem             \n     Device Type   Perf   |Pcie Lane Width     |Temp  MPC Capable     \n                                               |      ECC Mode        \n+-------------------------------------------------------------------+\n0    MTT S4000            |00000000:1a:00.0    |81%   23179MiB(49152MiB)\n     Physical      N/A    |16x(16x)            |54C   YES             \n                                               |      N/A             \n---------------------------------------------------------------------\n\n---------------------------------------------------------------------\nProcesses:\nID   PID           Process name                           GPU Memory\n                                                               Usage\n+-------------------------------------------------------------------+\n0    58178         /usr/bin/python                          23179MiB\n---------------------------------------------------------------------\n"
+  },
+  "locks": {
+    "returncode": 0,
+    "output": "66304 python  FLOCK WRITE* /tmp/gaosi_musa_device0.lock\n58178 python  FLOCK WRITE  /tmp/gaosi_musa_device0.lock"
+  },
+  "run_symlinks": {
+    "count": 16,
+    "broken": []
+  },
+  "checkpoints": [
+    {
+      "path": "runs/parent_7b_dev_lr1e-4_s17_continue512_v1/latest.pt",
+      "exists": true,
+      "bytes": 969369357
+    },
+    {
+      "path": "runs/parent_3b_meta_parent_a_r32_s17_extend512_v2/latest.pt",
+      "exists": true,
+      "bytes": 719024717
+    },
+    {
+      "path": "runs/parent_3b_meta_parent_b_r32_s17_extend512_v2/latest.pt",
+      "exists": true,
+      "bytes": 719024717
+    },
+    {
+      "path": "runs/parent_3b_dev_parent_r32_s17_extend512_v2/latest.pt",
+      "exists": true,
+      "bytes": 719023117
+    }
+  ],
+  "active_checkpoint": {
+    "path": "runs/recovery_dev_factor_ratio1_lr0.0001_s17_v1/latest.pt",
+    "exists": true,
+    "bytes": 959382077,
+    "mtime_utc": "2026-10-29T12:23:51.604381+00:00"
+  },
+  "models": [
+    {
+      "name": "Qwen2.5-3B",
+      "exists": true,
+      "safetensors_shards": 2
+    },
+    {
+      "name": "Qwen2.5-7B",
+      "exists": true,
+      "safetensors_shards": 4
+    }
+  ],
+  "log_tail_error_matches": [
+    {
+      "job": "base_boundary_queue_v1",
+      "log": "records/logs/base_boundary_queue_v1.log",
+      "matches": []
+    },
+    {
+      "job": "calibration_queue_v3",
+      "log": "records/logs/calibration_queue_v3.log",
+      "matches": []
+    },
+    {
+      "job": "continual_queue_v1",
+      "log": "records/logs/continual_queue_v1.log",
+      "matches": []
+    },
+    {
+      "job": "factor_recovery_queue_v1",
+      "log": "records/logs/factor_recovery_queue_v1.log",
+      "matches": []
+    },
+    {
+      "job": "final_parent_queue_v1",
+      "log": "records/logs/final_parent_queue_v1.log",
+      "matches": []
+    },
+    {
+      "job": "formal_recovery_queue_v2",
+      "log": "records/logs/formal_recovery_queue_v2.log",
+      "matches": []
+    },
+    {
+      "job": "organization_queue_v1",
+      "log": "records/logs/organization_queue_v1.log",
+      "matches": []
+    },
+    {
+      "job": "phi_core_queue_v3",
+      "log": "records/logs/phi_core_queue_v3.log",
+      "matches": []
+    },
+    {
+      "job": "phi_development_queue_v1",
+      "log": "records/logs/phi_development_queue_v1.log",
+      "matches": []
+    },
+    {
+      "job": "recovery_dev_factor_ratio1_lr0.0001_s17_v1",
+      "log": "records/logs/recovery_dev_factor_ratio1_lr0.0001_s17_v1.log",
+      "matches": []
+    },
+    {
+      "job": "recovery_dev_uniform_s17",
+      "log": "records/logs/recovery_dev_uniform_s17.log",
+      "matches": []
+    },
+    {
+      "job": "reflow_queue_v1",
+      "log": "records/logs/reflow_queue_v1.log",
+      "matches": []
+    },
+    {
+      "job": "seven_b_early_queue_v1",
+      "log": "records/logs/seven_b_early_queue_v1.log",
+      "matches": []
+    },
+    {
+      "job": "seven_b_scale_queue_v1",
+      "log": "records/logs/seven_b_scale_queue_v1.log",
+      "matches": []
+    }
+  ],
+  "recover_sha256": "137254bb3a154b0113c82b841a66e75343f3a333337a465a61101881a828bafa",
+  "calibration_frozen": false
+}

@@ -1,0 +1,60 @@
+{
+  "version": 2,
+  "parent_requirement": "all phi frozen before paired final all/retain-only fitting; complete acquisition and matched R exposure",
+  "main_tasks": "known final parent plus all 32 final worlds; no selection using final scores",
+  "main_methods": [
+    "standard_adam",
+    "paired_adam",
+    "factor_lr",
+    "phi_mix",
+    "phi_clean"
+  ],
+  "factor_lr": "Recovery-specific dev-only 3x3 ratio/LR screen; its frozen setting replaces the acquisition-only ratio.",
+  "main_doses": "zero and development-frozen medium; known task also light",
+  "primary_K": "development-frozen recovery_K, used as the actual trajectory horizon",
+  "main_curve": "0 and predefined 8/16/32/64 steps up to primary_K",
+  "known_noise_seeds": [
+    1729,
+    1730,
+    1731
+  ],
+  "new_world_noise_seed": 1729,
+  "selective": {
+    "request": "64 attribute-zero bindings fixed in original manifest",
+    "retain_fractions": [
+      1.0,
+      0.25
+    ],
+    "subset_seed": 91,
+    "methods": [
+      "standard_adam_Dplus",
+      "standard_adam_Dminus",
+      "phi_mix_Dplus",
+      "phi_mix_Dminus"
+    ],
+    "q": "medium",
+    "noise_seeds": [
+      1729,
+      1730,
+      1731
+    ],
+    "primary_K": "same frozen primary_K",
+    "diagnostic_K64": "separate K64 trajectories for noise seed1729 when primary_K differs; their intermediate phi states are not substituted for primary-horizon results"
+  },
+  "pairing": "same initial adapter bytes within parent/noise seed/dose across tasks, methods and D directions",
+  "support": "Dminus F slot zero; R sampling and mass unchanged; endpoint covers every selected R binding",
+  "references": [
+    "base",
+    "drop_adapter",
+    "retain_only",
+    "parent_all"
+  ],
+  "aggregation": "candidate and strict EM separated; equal world weight within fact/rule, then equal family weight; noise seeds are not independent phi training",
+  "not_completed_by_this_queue": [
+    "pure-R 20/80 reflow",
+    "entity 2-of-8 reteaching",
+    "continual organizations",
+    "7B phi transfer/local training",
+    "independent training confirmations"
+  ]
+}

@@ -1,0 +1,36 @@
+## 2026-10-29 21:54 回流与固定实体诊断汇总接入
+
+新增gaosi/reflow_statistics.py、tools/summarize_reflow.py及独立只读统计队列。
+records/reflow_statistics_policy_v1.json预声明：只用真正primary-K的Dminus终点，按两个dev
+冻结LR，分别报告pure-R20/80与固定实体教2测6；原始0/20/80 F/R、candidate/strictEM、
+语言、异常输出、实际覆盖、分步累计更新耗时及峰值显存导出。full/quarter-R仅指恢复源；
+后续pure-R两者均完整训练448条R，query也完整F64/R448，不缩分母。实体请求保持F8/R504，
+训练只含预先seed91选定的2条F，taught2/untaught6分开评价。
+
+读取原始query与正确答案复算指标，核source checkpoint SHA、冻结phi与LR、原始Dminus的
+primaryK/中档q/相同起点/零F token及完整更新事件，核后续无额外noise/QR/phi调用、精确
+支持ID、0/20/80唯一测量、80步完整覆盖、相同token曝光。两LR必须从相同source字节出发。
+核匹配retain-only父已习得、R曝光匹配且phi先冻结；同一seed/request/LR的reference仅存
+一条，不随方法/原始支持比例/noise复制为独立训练。比较phi-Adam、各自-retain，另列相对
+step0的变化差；F增加表示更多目标答案，不自动给成功/失败或永久删除标签。
+
+pure-R将三noise先在实体内平均，然后按phi seed外层/配对实体内层bootstrap，2000次、
+analysis seed7719；seed17三noise、seed17共同noise、seed29/43、三seed共同noise分报。
+固定实体只代表一个预选请求，不能把未重教6条当6个独立实体；单seed不给总体区间，三seed
+区间仅描述共享父/固定请求上的phi种子变动。所有F/R/语言需联合解读，不称不可变W0删除。
+
+checks/reflow_statistics_cpu.json本地/远程12项PASS，使用明确模拟的40条主seed、72条
+三seed生产格式轨迹，手算配对差及变化差、实体层次、完整R/仅2条教学、起点/token配对、
+source/phi篡改、Dminus混入F、缩query分母、重复共享reference/缺失网格均核，完整JSON/CSV
+导出。不是LLM运行或学成效果。远程reflow_statistics_cpu_v1真实PASS，28.67秒；check SHA
+c8fe40793ca12f4cd69b46d7466ca875abe5a24ec6e3f27e279ba82488bbf3ac。
+
+reflow_statistics_queue_v1已启动，PID99300/start ticks55611627身份匹配非Z；启动时上游
+reflow_queue_v1、confirmation_queue_v1进程身份均有效。start与implementation存证，真实
+统计仍等上游网格；不占训练卡，生产recover未改，SHA仍955babb1fb4303e6b367ba848cf909a0
+d94442620d27a031e215730cf76f44c1。本轮没有提前常规GPU轮询，最近21:42，下次约22:12。
+
+上一goal turn完成扩盘后核查及选择性汇总文档/备份收尾，属实际progress；本轮完成本汇总
+实现、独立验证与真实接队列，同属progress。所有真实phi、正式恢复/回流/持续/7B及最终
+统计报告仍须完成；条件真实文本与16/32轮延长要待机制/流信号判断，完整目标继续active。
+

@@ -1,0 +1,340 @@
+{
+  "status": "CONDITIONAL_REMAINING_DECLARED_GRID_PROCESS_TIME_PROXY_EXCLUDING_LOCK_WAIT",
+  "recorded_at_utc": "2026-11-06T14:30:18.013981+00:00",
+  "completed_base_cells": 22,
+  "declared_base_cells": 60,
+  "remaining_base_cells": 38,
+  "completed_H1_cells": 1,
+  "remaining_H1_cells_including_running": 9,
+  "observed_architecture_cell_counts": {
+    "L": 20,
+    "X": 2,
+    "standard_adam": 0,
+    "paired_adam": 0
+  },
+  "observed_base_process_costs": [
+    {
+      "run": "phi_dev_L_2048_t0_clean_s17",
+      "task": 0,
+      "architecture": "L",
+      "last_event_process_seconds": 7808.195418596268,
+      "wrapper_seconds_including_possible_lock_wait": 7827.016048669815
+    },
+    {
+      "run": "phi_dev_L_2048_t0_medium_s17",
+      "task": 0,
+      "architecture": "L",
+      "last_event_process_seconds": 7941.114598751068,
+      "wrapper_seconds_including_possible_lock_wait": 7966.128138542175
+    },
+    {
+      "run": "phi_dev_L_2048_t1_clean_s17",
+      "task": 1,
+      "architecture": "L",
+      "last_event_process_seconds": 5512.207301855087,
+      "wrapper_seconds_including_possible_lock_wait": 5529.257810592651
+    },
+    {
+      "run": "phi_dev_L_2048_t1_medium_s17",
+      "task": 1,
+      "architecture": "L",
+      "last_event_process_seconds": 5332.472001314163,
+      "wrapper_seconds_including_possible_lock_wait": 5348.336197137833
+    },
+    {
+      "run": "phi_dev_L_2048_t2_clean_s17",
+      "task": 2,
+      "architecture": "L",
+      "last_event_process_seconds": 5376.132861614227,
+      "wrapper_seconds_including_possible_lock_wait": 5392.07329249382
+    },
+    {
+      "run": "phi_dev_L_2048_t2_medium_s17",
+      "task": 2,
+      "architecture": "L",
+      "last_event_process_seconds": 5365.47630906105,
+      "wrapper_seconds_including_possible_lock_wait": 5380.669301509857
+    },
+    {
+      "run": "phi_dev_L_2048_t3_clean_s17",
+      "task": 3,
+      "architecture": "L",
+      "last_event_process_seconds": 6126.283579349518,
+      "wrapper_seconds_including_possible_lock_wait": 6142.186732053757
+    },
+    {
+      "run": "phi_dev_L_2048_t3_medium_s17",
+      "task": 3,
+      "architecture": "L",
+      "last_event_process_seconds": 6276.927718877792,
+      "wrapper_seconds_including_possible_lock_wait": 6295.657640457153
+    },
+    {
+      "run": "phi_dev_L_2048_t4_clean_s17",
+      "task": 4,
+      "architecture": "L",
+      "last_event_process_seconds": 5980.984352827072,
+      "wrapper_seconds_including_possible_lock_wait": 5997.862663507462
+    },
+    {
+      "run": "phi_dev_L_2048_t4_medium_s17",
+      "task": 4,
+      "architecture": "L",
+      "last_event_process_seconds": 6054.759095907211,
+      "wrapper_seconds_including_possible_lock_wait": 6070.521219491959
+    },
+    {
+      "run": "phi_dev_L_2560_t0_clean_s17",
+      "task": 0,
+      "architecture": "L",
+      "last_event_process_seconds": 7494.865123033524,
+      "wrapper_seconds_including_possible_lock_wait": 7510.800407409668
+    },
+    {
+      "run": "phi_dev_L_2560_t0_medium_s17",
+      "task": 0,
+      "architecture": "L",
+      "last_event_process_seconds": 7696.075178146362,
+      "wrapper_seconds_including_possible_lock_wait": 7714.773886442184
+    },
+    {
+      "run": "phi_dev_L_2560_t1_clean_s17",
+      "task": 1,
+      "architecture": "L",
+      "last_event_process_seconds": 5460.288403511047,
+      "wrapper_seconds_including_possible_lock_wait": 5477.475824356079
+    },
+    {
+      "run": "phi_dev_L_2560_t1_medium_s17",
+      "task": 1,
+      "architecture": "L",
+      "last_event_process_seconds": 5435.200667142868,
+      "wrapper_seconds_including_possible_lock_wait": 5451.647019147873
+    },
+    {
+      "run": "phi_dev_L_2560_t2_clean_s17",
+      "task": 2,
+      "architecture": "L",
+      "last_event_process_seconds": 5429.878251552582,
+      "wrapper_seconds_including_possible_lock_wait": 5446.788742303848
+    },
+    {
+      "run": "phi_dev_L_2560_t2_medium_s17",
+      "task": 2,
+      "architecture": "L",
+      "last_event_process_seconds": 5394.888895511627,
+      "wrapper_seconds_including_possible_lock_wait": 5412.802150726318
+    },
+    {
+      "run": "phi_dev_L_2560_t3_clean_s17",
+      "task": 3,
+      "architecture": "L",
+      "last_event_process_seconds": 6196.025333166122,
+      "wrapper_seconds_including_possible_lock_wait": 6213.814972639084
+    },
+    {
+      "run": "phi_dev_L_2560_t3_medium_s17",
+      "task": 3,
+      "architecture": "L",
+      "last_event_process_seconds": 6161.865304946899,
+      "wrapper_seconds_including_possible_lock_wait": 6179.05202293396
+    },
+    {
+      "run": "phi_dev_L_2560_t4_clean_s17",
+      "task": 4,
+      "architecture": "L",
+      "last_event_process_seconds": 5948.964405298233,
+      "wrapper_seconds_including_possible_lock_wait": 5966.688649654388
+    },
+    {
+      "run": "phi_dev_L_2560_t4_medium_s17",
+      "task": 4,
+      "architecture": "L",
+      "last_event_process_seconds": 5993.166350364685,
+      "wrapper_seconds_including_possible_lock_wait": 6010.256709575653
+    },
+    {
+      "run": "phi_dev_X_2048_t0_clean_s17",
+      "task": 0,
+      "architecture": "X",
+      "last_event_process_seconds": 7756.072432756424,
+      "wrapper_seconds_including_possible_lock_wait": 7772.0849051475525
+    },
+    {
+      "run": "phi_dev_X_2048_t0_medium_s17",
+      "task": 0,
+      "architecture": "X",
+      "last_event_process_seconds": 7913.348144054413,
+      "wrapper_seconds_including_possible_lock_wait": 15560.577491283417
+    }
+  ],
+  "task_cost_estimates": {
+    "0": {
+      "completed_base_cells": 6,
+      "remaining_base_cells": 6,
+      "remaining_H1_cells": 1,
+      "mean_saved_process_seconds": 7768.278482556343,
+      "remaining_base_seconds_proxy": 46609.67089533806,
+      "remaining_H1_seconds_proxy": 7768.278482556343
+    },
+    "1": {
+      "completed_base_cells": 4,
+      "remaining_base_cells": 8,
+      "remaining_H1_cells": 2,
+      "mean_saved_process_seconds": 5435.0420934557915,
+      "remaining_base_seconds_proxy": 43480.33674764633,
+      "remaining_H1_seconds_proxy": 10870.084186911583
+    },
+    "2": {
+      "completed_base_cells": 4,
+      "remaining_base_cells": 8,
+      "remaining_H1_cells": 2,
+      "mean_saved_process_seconds": 5391.594079434872,
+      "remaining_base_seconds_proxy": 43132.75263547897,
+      "remaining_H1_seconds_proxy": 10783.188158869743
+    },
+    "3": {
+      "completed_base_cells": 4,
+      "remaining_base_cells": 8,
+      "remaining_H1_cells": 2,
+      "mean_saved_process_seconds": 6190.275484085083,
+      "remaining_base_seconds_proxy": 49522.203872680664,
+      "remaining_H1_seconds_proxy": 12380.550968170166
+    },
+    "4": {
+      "completed_base_cells": 4,
+      "remaining_base_cells": 8,
+      "remaining_H1_cells": 2,
+      "mean_saved_process_seconds": 5994.4685510993,
+      "remaining_base_seconds_proxy": 47955.7484087944,
+      "remaining_H1_seconds_proxy": 11988.9371021986
+    }
+  },
+  "first_H1_last_event_process_seconds": 7613.93866109848,
+  "base_remaining_serial_days_proxy": 2.6701471361103986,
+  "additional_H1_remaining_serial_days_proxy": 0.6225814687350282,
+  "combined_shared_device_remaining_days_proxy": 3.2927286048454265,
+  "communicated_base_only_rough_days": [
+    3,
+    4
+  ],
+  "communicated_base_and_additional_H1_rough_days": [
+    4,
+    5
+  ],
+  "assumptions": [
+    "Use the same-task mean saved process time for unmeasured X, Adam and H1 cells.",
+    "All incomplete cells, including currently active and queued cells, count at full estimated cost.",
+    "The existing two queues share one device; no interruption, retries or new competing work."
+  ],
+  "limitations": [
+    "Last-event process time excludes lock wait and a short process shutdown tail; it is a cost proxy, not total billed device time.",
+    "Two X cells are both the known task; no Adam endpoint and only one H1 endpoint are measured.",
+    "No guarantee, upper bound or exact completion date; conditional extensions and full-protocol later stages are excluded."
+  ],
+  "full_protocol_eta": null,
+  "full_protocol_remaining_scope": [
+    "development selection and conditional matched extension",
+    "organization specialization and matched phi_clean",
+    "formal recovery, selective recovery, reflow and continual experiments",
+    "7B experiments and matched local budgets",
+    "independent phi seeds29/43, statistical analysis and conditional protocol additions"
+  ],
+  "evidence_sha256": {
+    "records/development_completion_20261104_2358/estimate_remaining_20261106_1430.py": "31862a0ba2976e36a5de97f32a70b757da2373b639cc44acd6a2096bf0c6e119",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t0_clean_s17.json": "01546584f94766f18038c2fa7463e6a2f622e91818c781e38e1c9f1985426ba4",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2048_t0_clean_s17.json": "417e47f2bf5486d8349c4a626fab18673bacdcb9287f2b68fbf05dab732295af",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t0_clean_s17_evidence/manifest.json": "7bad87eed4c05dd31d5bb1bfe12bfe0dacf3dcddcaaec0b4e55e7abc854842a3",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t0_clean_s17_evidence/snapshot/runs/phi_dev_L_2048_t0_clean_s17/events.jsonl": "42a283b22b47f9ad2b34624aa3e25ea2146ffc7ce58b30c4aacfa3f8f94a3e7f",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t0_medium_s17.json": "a0fba54f09871edbdb1bb4e507d280fb56b8130ce900f3f9247bd84f3116582e",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2048_t0_medium_s17.json": "5a819593aeaa3231554ada855eaf30ee6b207f89729ca746e128b603e959047a",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t0_medium_s17_evidence/manifest.json": "05f879bd28460c8691fd02d560179e872c007f8da5500138da03cd7e3d6af0a1",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t0_medium_s17_evidence/snapshot/runs/phi_dev_L_2048_t0_medium_s17/events.jsonl": "c8534f632df19be45f774b46aec6c9cfaa27395d87f6ebf6a12f20f0f5357566",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t1_clean_s17.json": "5313d61a4d0ca308b62b78475f4cb89a6b8335816a1a83b7444707b6a7368de9",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2048_t1_clean_s17.json": "5ed86f1cd17163ffddd2df992238e2e191ce314051b46e89685187fd42364e46",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t1_clean_s17_evidence/manifest.json": "6f79a4865248ae94ad259fb8db60d0de1a1ad4a8fc77d2a7c0779a3cc7ca3508",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t1_clean_s17_evidence/snapshot/runs/phi_dev_L_2048_t1_clean_s17/events.jsonl": "3b8f090ba7939e3e58355bea5dec1f29a5a79eb2d414750ebb8000913402246b",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t1_medium_s17.json": "679649781fc4de2b4f6ff01894ae632cebacdde4e02dfc1ed5d9adc2a960b7d7",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2048_t1_medium_s17.json": "f53fc53ed91419d95b1dd71ddaf606fdb273429df3458fbe6c81006b541bf90f",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t1_medium_s17_evidence/manifest.json": "fbc382a8e7717c482168aaf996e7be317eb5efd880c275df29afb7afa5ae9f46",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t1_medium_s17_evidence/snapshot/runs/phi_dev_L_2048_t1_medium_s17/events.jsonl": "20b7a3619e80a47b5768cf66fbf732fd114feaebc530bec6ca0d72d43b78cfef",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t2_clean_s17.json": "df05576367a58704d37379a6ac22ce3edc2472e02e9915ef1051804099ffb5ce",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2048_t2_clean_s17.json": "2fe295779e3d8e0f8903298afcc39af601af10f21a432ff53c1d842566596b7b",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t2_clean_s17_evidence/manifest.json": "7568a91bb45782108b95612068e830ad9ac9aa364c7080fa3bea4ac968ee19e1",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t2_clean_s17_evidence/snapshot/runs/phi_dev_L_2048_t2_clean_s17/events.jsonl": "62f4738bb5b78edc41021153d4b39509884c82b82e484047157e3c436fec2977",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t2_medium_s17.json": "9f0d8dfa7cb3a6dca7c286f997c488a9a175d7990d558bbeefb476abf64a5434",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2048_t2_medium_s17.json": "4d5458e2922899cb9ffc72b9f8cd7f24b3170aef5278d7c747a4e39e4d42f28d",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t2_medium_s17_evidence/manifest.json": "af0a3a4d12a18668a0918bd55fc41f17785388456f5a392886286c400c02dc3c",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t2_medium_s17_evidence/snapshot/runs/phi_dev_L_2048_t2_medium_s17/events.jsonl": "77e3b8ea608f8017b0fbdd4595507f4d5d431dd061c53cce359d0f4863c546d4",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t3_clean_s17.json": "ded804b448440eaaf276142c98ef883a294c6b3d7d615f9580425e9a3a07de59",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2048_t3_clean_s17.json": "00b4aede1b80170a9f232859f3b214d806a6c0f303ca015970a100126cdfa680",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t3_clean_s17_evidence/manifest.json": "ea28b897b4e85cbc36d69a8892d85894b0906b816049ca19cde1889d881ce0a7",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t3_clean_s17_evidence/snapshot/runs/phi_dev_L_2048_t3_clean_s17/events.jsonl": "d09bbeae750c034268356721ba168ab9615fc1cf96ce451638aecce6ffd9e055",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t3_medium_s17.json": "59233801fb5bffc2b42a12559cda32818140ffda29b07a0edb660c7d46619bf9",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2048_t3_medium_s17.json": "1511e60f376d7c17b6cb6e29beb235b7e7db870d691daf19d636883c350c7c73",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t3_medium_s17_evidence/manifest.json": "f5e707a2873e54aad039c3374e6df1d511ae5fddd15f51d8fc5a8d4d9d4118f8",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t3_medium_s17_evidence/snapshot/runs/phi_dev_L_2048_t3_medium_s17/events.jsonl": "04a93efb80730134b2015e8cbf82e5945a7dac80283e34ee3314a51d6c57b0d4",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t4_clean_s17.json": "9a2eee617e208492408377a86383b8a243b487f9df268d909677cc2becc1f525",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2048_t4_clean_s17.json": "111bcd39c7646d936fd1855b9599c453621989af21971a612c9dfe81a1279299",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t4_clean_s17_evidence/manifest.json": "64f2f01c4e0e28ba7a6c8dfefd69c8e7866f2431c42b0ec015f2581acacd89c2",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t4_clean_s17_evidence/snapshot/runs/phi_dev_L_2048_t4_clean_s17/events.jsonl": "f350d9b956c6749697e01dbf8fe04f3086d617cb9feef975549aba415e93b33c",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t4_medium_s17.json": "eba88febdcb8c6729636fd40e2c031a29e8318c1f07c7bd6f400971efb716d72",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2048_t4_medium_s17.json": "951a4c76fc4b494f10c5807d89ccd4c5fc2d110682f41f3c317058b6f0834506",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t4_medium_s17_evidence/manifest.json": "5e0093e19dd146ae4fb958c604cce593448a25cb2020dac853f1e8a559939011",
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t4_medium_s17_evidence/snapshot/runs/phi_dev_L_2048_t4_medium_s17/events.jsonl": "16481083935710690379b89d95f1aab2a0dadd1d80ab453ddf7cb49ff0a973da",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t0_clean_s17.json": "0296fd3695b886874b772dec1f0298538c82789bc08e1f986e52f537739bc54c",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2560_t0_clean_s17.json": "4b58a5c25d4229ef125db1eb482b53e3dcd5d4c3398d599678c2521841ffc4d0",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t0_clean_s17_evidence/manifest.json": "a07e800e678a493e27d2b68749be25d34382eb1b4dec24b84c523c95058c684b",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t0_clean_s17_evidence/snapshot/runs/phi_dev_L_2560_t0_clean_s17/events.jsonl": "9be20573aa72332eddb28f6a4045f339ea47fbd15808ac682d8a683efd8ff0d2",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t0_medium_s17.json": "d5b3a8ae8c4ece5bfe267ef4d5ed9c411ee6e2df737e28000719fc993d8395cb",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2560_t0_medium_s17.json": "5c687f3955311644521703bafd8c817ac469923331b0e9c89abf69a5c3672983",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t0_medium_s17_evidence/manifest.json": "d68e7f07dae2f69eb49992cbce758d2b664400429553425bebb8a6e4a6e744a2",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t0_medium_s17_evidence/snapshot/runs/phi_dev_L_2560_t0_medium_s17/events.jsonl": "0c3c2e8a34992e5be5eed1f90b340af8ecd8536df360a8b7793a9a047690527c",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t1_clean_s17.json": "d1c25c2a3bd439c096c25b8d5f51f22c9819bb7e745c32fb3ff98bfa0fe2696f",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2560_t1_clean_s17.json": "0184c5b3d2ee979ab0e689dbad83079cad9958f18accd9e4344e14a651276ad5",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t1_clean_s17_evidence/manifest.json": "418971c1c32edafcf085e1d166e3515f585891df7c73d48b120bc49e02ea2306",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t1_clean_s17_evidence/snapshot/runs/phi_dev_L_2560_t1_clean_s17/events.jsonl": "8b7d740e995026712df99d68ffcc10f5723bc04ac9f3fb11d6c52b2c702f7473",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t1_medium_s17.json": "32e967c450d09c553c7bb91606296e516b96992aa88a54b09797faac62559f7a",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2560_t1_medium_s17.json": "6e5335b6c0b9aaf9a125d03726af19f431a73326726e376437117d2f4460de87",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t1_medium_s17_evidence/manifest.json": "071ca54d8ecb5d07b83282d4685c999319d0e97021f073addd916b96f1c600a2",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t1_medium_s17_evidence/snapshot/runs/phi_dev_L_2560_t1_medium_s17/events.jsonl": "d355ce09a0f9f77428d1ed3f08daafbc496ba1963b445b2c8e9a436bf4d6f237",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t2_clean_s17.json": "5d9f586e142a1d18a2120906a93d747b4371dc2f4553844d47a4ee98d289f5a2",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2560_t2_clean_s17.json": "f0d0ed16292489b544e4612f1c81235d37437b1f469df8b0b1a7d11e797e2089",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t2_clean_s17_evidence/manifest.json": "ea835e5208916b29d4332b9d2defe972a00fdf4539291bff36cbd4c2d4e34071",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t2_clean_s17_evidence/snapshot/runs/phi_dev_L_2560_t2_clean_s17/events.jsonl": "0f6bc0d1f620a4c04418224d7bc3b564c91d73fab8b2d932e629ed76e0a5d86a",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t2_medium_s17.json": "ca52a99b1f4dfa1c2faf8f57cc9ff48b7533df63c965f9ddeae736ba335ac938",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2560_t2_medium_s17.json": "832fa4a5597daa3fc258c9213857387fbaf64cbd3774fdd59a6fa2d5006d6441",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t2_medium_s17_evidence/manifest.json": "1b836e6bb705f1bbd067a95a7dd93589f601f5c9fffacdb5574ec4e60db123af",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t2_medium_s17_evidence/snapshot/runs/phi_dev_L_2560_t2_medium_s17/events.jsonl": "a64e750a4ebd93a2dbe0fa6bc31c0f2337e19c0787891a9aa5003634b2824607",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t3_clean_s17.json": "b6ae4951568470ebf32bb10fa9a693d21cd9a6ef326d4ecf112c93426d0368d6",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2560_t3_clean_s17.json": "362793917eaea5ac9e105a85bb63f8e26743ccb97a12a5c4bf74e6d4355d4ff7",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t3_clean_s17_evidence/manifest.json": "b087d0178455f9f599bd20d75ab40a52b378c32022f8bd75d86ba094a815ea3b",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t3_clean_s17_evidence/snapshot/runs/phi_dev_L_2560_t3_clean_s17/events.jsonl": "357ba0b61c7182b7d27e72960aafd8d0c176e6f9a879ac3ee8886481b2e98490",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t3_medium_s17.json": "b27c79c1397d4b9f7192ce743edf2f7c619c0ca1d5b37d822d0f8ee1a7a3f752",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2560_t3_medium_s17.json": "0dbd725d54376c2f2ec3753c5ba29fc0ec6e50ebe2f4f139988f9eb84d56b7fd",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t3_medium_s17_evidence/manifest.json": "ea7e50de418b5b943edb9546f29944c3a42f634541460f76af4743c26c372cc9",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t3_medium_s17_evidence/snapshot/runs/phi_dev_L_2560_t3_medium_s17/events.jsonl": "a392cf1696dce83f222fe6955c917d02fe1178db80ed9643f1320831626dba86",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t4_clean_s17.json": "01dc10129f69cfff840b1a203c456b56906c3fd0d67e8e2e8170b0181416b395",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2560_t4_clean_s17.json": "7701f7ce3595812adc3d05860b0d122a585fcf4a4cb31620ca54c81358219b71",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t4_clean_s17_evidence/manifest.json": "931b38b0064cd0fee85a41ae21caf54ca5c7de94779f4fbabec94c6ac4386304",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t4_clean_s17_evidence/snapshot/runs/phi_dev_L_2560_t4_clean_s17/events.jsonl": "61efd42ad726e15906acf1431d8ca57e21903323c4f0eca8d2734b7e512c6ebc",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t4_medium_s17.json": "7a6c073389ac0ba3bffdecf472c3350a1316f4066a3b460993b452b652d195b1",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2560_t4_medium_s17.json": "9840c88a902b1e1a5247813d5232fa68ec92ef5bf0a17a847bcf593f9fda3ce6",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t4_medium_s17_evidence/manifest.json": "81a91213d7aebc4a0b67fa66a3e5912585fb24f6388fcf73d4afbe4bc91aecb2",
+    "records/development_completion_20261104_2358/phi_dev_L_2560_t4_medium_s17_evidence/snapshot/runs/phi_dev_L_2560_t4_medium_s17/events.jsonl": "b8e640a32b9e7f47c532fa9715893980e3fa9a6724d150f0a47f8c27c139e283",
+    "records/development_completion_20261104_2358/phi_dev_X_2048_t0_clean_s17.json": "6224723e50bf1eda5ca1cab8a7e0d2980af3030559d2718d67679985c5fd9b45",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_X_2048_t0_clean_s17.json": "7c1de0c909e7cbe05425ddde90558014182c87b8eeb551c7930297a7bb4a675a",
+    "records/development_completion_20261104_2358/phi_dev_X_2048_t0_clean_s17_evidence/manifest.json": "27cdce03fe5c0322e8e837411b4496112c14f8a720e0337395bcb00f433ae336",
+    "records/development_completion_20261104_2358/phi_dev_X_2048_t0_clean_s17_evidence/snapshot/runs/phi_dev_X_2048_t0_clean_s17/events.jsonl": "48d2bf209e7f1c949b9b2d140950dfe9984343b40a3913c6a681f05b9400228c",
+    "records/development_completion_20261104_2358/phi_dev_X_2048_t0_medium_s17.json": "2a78a6945ee07a13a518ce905f1c45c37fd9de0f029d8d5cdc00ab1ebdeffc28",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_X_2048_t0_medium_s17.json": "f6a76576026b7f610b174cfa986628536ede53e2deac7ee80a7a5d73ab00ea0b",
+    "records/development_completion_20261104_2358/phi_dev_X_2048_t0_medium_s17_evidence/manifest.json": "8e2f1752da147cd16b7e354a702646b2ce1e3191bb71c92556e21ba2babff481",
+    "records/development_completion_20261104_2358/phi_dev_X_2048_t0_medium_s17_evidence/snapshot/runs/phi_dev_X_2048_t0_medium_s17/events.jsonl": "dbbcd1b15eec406a35672b637681d6ded48c3881ec16ca5a33bd161ed2613e64",
+    "records/horizon_effect_monitor_20261106_142546_utc/result.json": "6b4b421355beb0f4bd58a2062f852b9d084d7117eab37153d7bcddd3b40d8f3f",
+    "records/horizon_noise_timing_repair_20261106_1230/first_h1_endpoint_assessment.json": "2d0a1b87be140812658da70755b8d625bb3a41d2d29bb803eb838de11abd2487",
+    "records/development_eta_20261106_1005.json": "11db34fe0a62e63d7ee9d82adb04f6236abaa19d250e77dfbe22d7e785c520ea"
+  },
+  "method_validated": false,
+  "full_goal_complete": false,
+  "training_modified_or_restarted": false
+}

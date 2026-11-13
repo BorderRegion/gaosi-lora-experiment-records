@@ -1,0 +1,42 @@
+{
+  "status": "X_COMPLETION_PUBLICATION_AND_ETA_DOCUMENTED_BOTH_HOSTS",
+  "recorded_at_utc": "2026-11-03T16:33:18.908825+00:00",
+  "note_sha256": "fa59f21ff3ec6fb0e0728029e9a0f1252adfc7ba3753569ad6d1143ba56175a1",
+  "local_document": {
+    "path": "REPORT.md",
+    "before_sha256": "513cf4931f5c0b889213417eae2c3de76cceefc75af1ea75aad8bc4dc220029a",
+    "after_sha256": "0732e43d7ada469028b1dc47e4da02f36f8b43d765ac403eacd534a21a7a1528",
+    "backup": "records/X_core_completion_20261103_1622/documentation_before/local/REPORT.md",
+    "history_preserved": true
+  },
+  "remote_document": {
+    "path": "REPORT.md",
+    "before_sha256": "1bcd681125b4f352ab119e8d67a2b59f6acd3f482d53949b7a39590fddcef8c0",
+    "after_sha256": "7d41ee81f50a6c61d4c689e39ccc7b2586c2d5676576360f49374aac2bf3e9fd",
+    "backup": "records/X_core_completion_20261103_1622/documentation_before/remote/REPORT.md",
+    "history_preserved": true,
+    "note_sha256": "fa59f21ff3ec6fb0e0728029e9a0f1252adfc7ba3753569ad6d1143ba56175a1"
+  },
+  "evidence_sync_receipts": [
+    {
+      "status": "REVIEW_SYNCED_VERIFIED",
+      "path": "records/X_core_completion_20261103_1622/publication_sync_receipt.json",
+      "sha256": "735294e4a04f7bb8279a9df5e782aa2e7441e8df43c0a01088fe908c89d24955"
+    },
+    {
+      "status": "REVIEW_SYNCED_VERIFIED",
+      "path": "records/X_core_completion_20261103_1622/documentation_note.md",
+      "sha256": "fa59f21ff3ec6fb0e0728029e9a0f1252adfc7ba3753569ad6d1143ba56175a1"
+    },
+    {
+      "status": "REVIEW_SYNCED_VERIFIED",
+      "path": "records/X_core_completion_20261103_1622/eta_20261103_1630.json",
+      "sha256": "79d74083c1fbc568b5a2ec8de50e049f3eafb7197b652f4027ff86ec2a215892"
+    }
+  ],
+  "publication_verified_sha256": "8e3d5f84beea0398a1d15039fc7e0faa2907650cbe4ab097641bd22cfeea2d58",
+  "training_modified_or_restarted": false,
+  "additional_remote_training_telemetry_polled": false,
+  "method_validated": false,
+  "full_goal_complete": false
+}

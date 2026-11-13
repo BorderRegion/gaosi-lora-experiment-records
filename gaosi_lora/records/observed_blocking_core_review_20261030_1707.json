@@ -1,0 +1,48 @@
+{
+  "reviewed_at_utc": "2026-10-30T17:07:25.298414+00:00",
+  "previous_goal_turn": "verified_wait_and_new_training_evidence",
+  "current_goal_turn": "verified_wait_and_new_training_evidence",
+  "wait_handle": 26980,
+  "wait_remote_polls": 0,
+  "observer_live_pid": 202579,
+  "observer_start_ticks": "59350385",
+  "observation": {
+    "observation": "records/observed_blocking_core_monitor_20261030_170643_utc",
+    "archive_sha256": "d8ba0a592a22f3ce26bffa8a2db43ea00e3c300d5b5d692ea93bab86c40c1953",
+    "verified_source_files": 42,
+    "job_status": "RUNNING",
+    "alerts": [],
+    "production_modified_or_restarted": false
+  },
+  "archive_independently_verified": true,
+  "independently_rehashed_files": 42,
+  "committed_episodes": 50,
+  "committed_inner_updates": 400,
+  "fraction_of_current_L_budget": 0.15625,
+  "all_raw_gradients_finite": true,
+  "max_raw_norm": 0.22966086724073495,
+  "guard_errors": [],
+  "checkpoint": {
+    "copied_artifact_sha256": "941de26eccc9cca0eec1ca10f4dca4b0991720b1fc9914c6a31afa369200dae3",
+    "next_episode": 50,
+    "inner_updates": 400,
+    "phi_finite": true,
+    "optimizer_finite": true,
+    "config_equal": true
+  },
+  "production_identity": {
+    "pid": 650716,
+    "state": "S",
+    "start_ticks": "62167024",
+    "matches": true,
+    "cmdline": "/usr/bin/python -u tools/train_observed_meta.py --manifest records/observed_blocking_core_20261030_0810/training_manifest.json ",
+    "launch_blocking_environment": [
+      "MUSA_LAUNCH_BLOCKING=1"
+    ]
+  },
+  "next_due_at_utc": "2026-10-30T17:36:43.201842+00:00",
+  "method_validated": false,
+  "downstream_promotion_allowed": false,
+  "production_modified_or_restarted": false,
+  "full_goal": "incomplete; current L and subsequent full protocol execution/review remain"
+}

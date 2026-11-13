@@ -1,0 +1,38 @@
+{
+  "status": "PREPARATION_FILES_SYNCED_AND_REHASHED",
+  "recorded_at_utc": "2026-11-03T08:56:03.018154+00:00",
+  "files": [
+    {
+      "status": "REVIEW_SYNCED_VERIFIED",
+      "path": "records/X_core_completion_preparation_20261103_0852/L_complete_ledger_validation.json",
+      "sha256": "bc2ad401d4ecbc29cc90b3afcbe74cea832ef2ae35d58b6bd413dd4b19b70cee"
+    },
+    {
+      "status": "REVIEW_SYNCED_VERIFIED",
+      "path": "records/X_core_completion_preparation_20261103_0852/README.md",
+      "sha256": "f946665c10133a0a6fbedccdc98c5cf295af009ea0d1d40fb34e4fb4a0051bf0"
+    },
+    {
+      "status": "REVIEW_SYNCED_VERIFIED",
+      "path": "records/X_core_completion_preparation_20261103_0852/X_partial_ledger_validation.json",
+      "sha256": "38fb88a5de36eb01916a88a51fc1bf53e0519ddd347e952ca02f1272fd7d8da1"
+    },
+    {
+      "status": "REVIEW_SYNCED_VERIFIED",
+      "path": "records/X_core_completion_preparation_20261103_0852/review_core_inner_ledger.py",
+      "sha256": "0b097f2b30c353ec147aa817b616c8c31cb1c6d946f686ae72adcbf46a92a0f2"
+    },
+    {
+      "status": "REVIEW_SYNCED_VERIFIED",
+      "path": "records/X_core_completion_preparation_20261103_0852/validation.json",
+      "sha256": "cca9aa520c2cd346755dca054f11003ada37067cf6f06639a618ab9278eb8764"
+    },
+    {
+      "status": "REVIEW_SYNCED_VERIFIED",
+      "path": "records/X_core_completion_preparation_20261103_0852/manifest.json",
+      "sha256": "ac08d0663fd4765ea1d6f329778b803c83c1af44755bbb632258f903dc5329fd"
+    }
+  ],
+  "training_modified_or_restarted": false,
+  "remote_training_telemetry_polled": false
+}

@@ -1,0 +1,12 @@
+{
+  "status": "COMPLETE_REQUIRES_REVIEW",
+  "entry": "meta",
+  "method_validated": false,
+  "downstream_promotion_allowed": false,
+  "formal_data_used": false,
+  "start_episode": 64,
+  "executed_inner_updates": 2048,
+  "raw_norm_stop_before_update": 1000000.0,
+  "episodes": 192,
+  "inner_updates": 2560
+}

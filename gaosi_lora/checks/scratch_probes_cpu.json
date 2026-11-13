@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "scope": "CPU random tiny model only; not a MUSA capacity conclusion",
+  "tests": {
+    "O1_rank16_steps_1_4_16_preserve_main_weights_flags_specs_and_rng": "PASS",
+    "O2_rank16_steps_1_4_16_preserve_main_weights_flags_specs_and_rng": "PASS",
+    "O3_rank16_steps_1_4_16_preserve_main_weights_flags_specs_and_rng": "PASS",
+    "O4_rank16_steps_1_4_16_preserve_main_weights_flags_specs_and_rng": "PASS"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "observed_at_local": "2026-10-30T05:35:48+08:00",
+  "remote_host": "autodl-container-kaltlgmeta-f374ee08",
+  "data_volume": {
+    "device": "/dev/md0",
+    "filesystem": "xfs",
+    "mount": "/root/autodl-tmp",
+    "size_display": "1.1T",
+    "used_display": "67G",
+    "available_display": "984G"
+  },
+  "musa": {
+    "available": true,
+    "device": "MTT S4000",
+    "free_memory_bytes": 49184530432,
+    "total_memory_bytes": 51432370176
+  },
+  "readiness": {
+    "job": "diagnose_L_training_recompute_v7",
+    "repeat_statuses": ["PASS", "PASS"],
+    "episodes_per_repeat": 2,
+    "inner_updates_per_repeat": 4,
+    "hessian_vector_products_per_repeat": 88,
+    "preclip_phi_gradient_norms_fp64": [
+      [0.00011764206748098384, 2.9464245084605425],
+      [0.00011764206911221429, 2.946358559096369]
+    ],
+    "checkpoint_phi_and_optimizer_finite": [true, true],
+    "same_base_digest": true,
+    "phi_global_relative_l2_difference": 2.5887269651388797e-06,
+    "bitwise_identical": false,
+    "raw_elementwise_gradients_saved": false
+  },
+  "formal_training": {
+    "run": "phi_mix_O1_L_H2_core_s17_recompute_v7",
+    "config": "configs/phi_mix_O1_L_H2_core_s17_recompute_v7.json",
+    "config_sha256": "f70511613b15835c3eae3ea0fa86e937bb51bf3559301c600a4f9206fca414bc",
+    "wrapper_pid": 344803,
+    "child_pid": 344804,
+    "started_at_utc": "2026-10-29T21:34:59.932622+00:00",
+    "observed_status": "RUNNING",
+    "episode_0_started": true,
+    "episode_count": 192,
+    "inner_update_budget": 2560,
+    "fresh_phi_initialization": true,
+    "old_failed_104_step_run_preserved": true,
+    "formal_updates_observed_at_launch": 0
+  },
+  "next_check_local": "2026-10-30T06:06:00+08:00"
+}

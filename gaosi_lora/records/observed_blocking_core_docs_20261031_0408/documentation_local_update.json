@@ -1,0 +1,10 @@
+{
+  "NEXT_STEPS.md": {
+    "before_sha256": "402d2e34edfef08d76b771f43f972d306ff884b22dfd384bc97f869af5b81ad8",
+    "after_sha256": "06568abca9c159f63c5dba3b147ced1b803529f664425b87d876844976602ba5"
+  },
+  "REPORT.md": {
+    "before_sha256": "a5315a36273aeb17c7d854fb63cf3cf9bb2ce84c91b19e94d4a9083fc22d94a2",
+    "after_sha256": "67376896e8d1d26858c865bead30a2911d659eb434fba7ae8e848527350f38c7"
+  }
+}

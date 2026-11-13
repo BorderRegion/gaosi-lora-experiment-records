@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "scope": "real MUSA production transition readiness, not learned denoising effect",
+  "command": {
+    "checkpoint": "runs/capacity_3b_all7_r32_lr1e-4_s17_v2/latest.pt",
+    "out": "checks/profile_3b_X_H2_production_recomputed.json",
+    "seq": 512,
+    "effective_tokens": 512,
+    "architecture": "X",
+    "horizon": "EXACT_H2_tail"
+  },
+  "model": {
+    "path": "/root/autodl-tmp/models/Qwen2.5-3B",
+    "rank": 32,
+    "targets": "all7",
+    "organization": "O1",
+    "adapter_parameters": 59867136,
+    "trainable_parameters": 59867136,
+    "base_dtype": "torch.bfloat16",
+    "adapter_dtypes": [
+      "torch.float32"
+    ],
+    "attention": "eager",
+    "use_cache": false,
+    "actual_device": "musa:0"
+  },
+  "seconds": 105.03324866294861,
+  "terminal": {
+    "query_task": 0.8800210952758789,
+    "query_language": 1.7571191787719727,
+    "query_keep": 0.8800210952758789,
+    "objective": 0.8800210952758789
+  },
+  "phi_gradient_norm": 0.37646842883959897,
+  "memory": {
+    "cpu_rss_bytes": 7217270784,
+    "allocated_bytes": 7535179264,
+    "reserved_bytes": 32220643328,
+    "peak_allocated_bytes": 29434511360,
+    "peak_reserved_bytes": 32220643328
+  },
+  "inner_steps": 2,
+  "compute_counters": {
+    "loss_forwards": 110,
+    "loss_backwards": 88,
+    "input_tokens": 54892,
+    "supervised_tokens": 12648,
+    "hessian_vector_products": 22
+  },
+  "full_state_components": [
+    "adapter",
+    "mD",
+    "mR",
+    "v",
+    "loss_ema",
+    "gradient_cosine_ema",
+    "update_ema",
+    "previous_loss",
+    "last_relative_update"
+  ],
+  "noise_summary": {
+    "q": 0.03,
+    "scheme": "subspace",
+    "noise_seed": 17,
+    "QR_device": "cpu",
+    "boundary_seconds": 1.3309903144836426,
+    "composed_clean_squared_raw": 23.346322194689574,
+    "composed_noisy_squared_raw": 23.346669797870682,
+    "composed_damage_squared_raw": 0.7055707515516383,
+    "composed_relative_damage": 0.1738445368528965
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "status": "ADDITIONAL_READ_ONLY_SUPPLEMENT_COLLECTOR_BOUND_TO_EXISTING_SCHEDULE",
+  "files_sha256": {
+    "collect_runtime_v1.py": "26bc221f710dda22304a5292f8a9ce55ef0a589f9fb5a2e04bc568b1c21d5e11",
+    "sample_runtime_v1.py": "cc1f7046944ce49a27bf7e6dacb82c7c428171dca35a7478b01746e5891101e2"
+  },
+  "derived_from_sha256": {
+    "records/development_monitor_20261104_2128/collect.py": "3c83d99802de2d2dd24d2711c4fb1d8b5d19b8c9f9082156790b7a30f282e304",
+    "records/development_monitor_20261104_2128/sample.py": "e80761f70af6f6a3cfbe22ba4960a9c9d97d1e73e14be5b352c30f32b10f48f5"
+  },
+  "purpose": "Observe only the launched supplementary H1 comparison omitted by the original observer name filter. No independent polling, GPU lock acquisition, training or promotion.",
+  "allowed_observation_age_seconds": 600,
+  "frozen_observer_or_training_modified": false,
+  "full_goal_complete": false
+}

@@ -1,0 +1,27 @@
+mate not installed
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00, 1045.18it/s]
+Loading weights:   0%|          | 0/15 [00:00<?, ?it/s]Loading weights: 100%|██████████| 15/15 [00:00<00:00, 6619.80it/s]
+Loading weights:   0%|          | 0/15 [00:00<?, ?it/s]Loading weights: 100%|██████████| 15/15 [00:00<00:00, 7078.60it/s]
+{"event": "model", "utc": "2026-10-29T12:57:17.366603+00:00", "process_wall_seconds": 0.022475719451904297, "path": "/tmp/gaosi_confirmation_cpu_pxuo6ijj/numeric/tiny_qwen", "rank": 2, "targets": "all7", "organization": "O1", "adapter_parameters": 272, "trainable_parameters": 272, "base_dtype": "torch.bfloat16", "adapter_dtypes": ["torch.float32"], "attention": "eager", "use_cache": false, "actual_device": "cpu"}
+Traceback (most recent call last):
+  File "/root/autodl-tmp/gaosi_lora/tools/validate_confirmation.py", line 495, in <module>
+    main()
+  File "/root/autodl-tmp/gaosi_lora/tools/validate_confirmation.py", line 446, in main
+    queue.train_seed(seed, selected, original, 'O2')
+  File "/root/autodl-tmp/gaosi_lora/tools/confirmation_queue.py", line 136, in train_seed
+    result = entry(f'confirm_phi_mix_O1_{architecture}_core_s{seed}_v1', core, 'meta', seed,
+  File "/root/autodl-tmp/gaosi_lora/tools/confirmation_queue.py", line 100, in entry
+    result = run_job(name, ['/usr/bin/python', '-u', '-m', 'gaosi.confirmation', '--config', path],
+  File "/root/autodl-tmp/gaosi_lora/tools/validate_confirmation.py", line 440, in numerical_job
+    dispatch(config)
+  File "/root/autodl-tmp/gaosi_lora/tools/validate_confirmation.py", line 195, in dispatch
+    confirmation.main()
+  File "/root/autodl-tmp/gaosi_lora/gaosi/confirmation.py", line 178, in main
+    train(config, args.resume)
+  File "/root/autodl-tmp/gaosi_lora/gaosi/meta.py", line 232, in train
+    queries['language'], _ = route_batches(qlang, config['device'], config['effective_tokens'])
+  File "/root/autodl-tmp/gaosi_lora/gaosi/data.py", line 177, in route_batches
+    batch = stream.batch(device)
+  File "/root/autodl-tmp/gaosi_lora/gaosi/data.py", line 154, in batch
+    tokens = self.chunks[self.cursor % len(self.chunks)]
+ZeroDivisionError: integer division or modulo by zero

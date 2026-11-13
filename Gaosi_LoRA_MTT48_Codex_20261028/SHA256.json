@@ -1,0 +1,21 @@
+{
+  "EXPERIMENT_PROTOCOL.md": "d5f97deb34905bc20e16a545ea35fad9c425374d5ea3dbeedf8ba33b77669804",
+  "MUSA_SETUP.md": "c90117271bbe59d5305372a9db314aab10ba2b8e513c45e42730a2b4a7195d2b",
+  "NUMERICAL_CONTRACT.md": "ce23cf5c11a3793c5012431b538bcd0bce28de930325adb21ab155b075b557ed",
+  "README.md": "ba1985bf0be27e635d4f6506e9f0dcc1663aab8a22438663218d6395c18ef6ba",
+  "REFERENCES.md": "b338bb2a5d59d05bd57960a6eecbbac0e76afda4f403f5d313357329cace9d58",
+  "SOURCE_MANIFEST.json": "be889f21899cb0b1577c34e36e78fd08c6736560826c284fb77a6cc7bb1aec87",
+  "START_HERE.md": "9a6fa0f9b97e83d030f64396b0f4e6b837a3038b8ebfae5a19a47cc861e40169",
+  "checks/cpu_backend_probe.json": "3fae8b5a44826b7b385e20ea13c6f5cb2897c7ada297872002005e8c2be535a3",
+  "checks/cpu_reference.json": "6abc92f5fffbf3e171c761e6b4bb310eee5dee3ce5db33309141bb0c28fc2864",
+  "checks/data_check.json": "4897ae7a4faf7d03e58f686d6d99c726adedd1aabfe89d19e3656305c223da8c",
+  "checks/package_check.json": "6930a204a9498dde321d8bdc2f265766b5707a6c92f3e5ba11fc669e46e10e58",
+  "checks/static_memory.json": "235dadd23044ebef54a9d82e7233e5b7e1520f73a45f7598fccfda1a3f1b8301",
+  "config.json": "8f02d7b26c5872929bba046e45980290248706bb1c98f3e9918434715334494e",
+  "experiment_queue.csv": "747c8806ebd797be7ce4f70ca17c0b109799b9ec2b085d04191aa72cd74f73c0",
+  "reference/core.py": "d4179fb6b977f2512ab2eac9999620164698b2e6fdd4ed2aa01ced2ac3f46725",
+  "reference/test_reference.py": "c47cb7ad04ae05cf550f4e759d38f2a9a1661099403373832f69d1e9af4be027",
+  "tools/build_tasks.py": "1cfdc497fb747638b87508ceb366bec3cc398e6a428822b82f06678b69e03d8b",
+  "tools/estimate_resources.py": "9160c64830a7b4b58b9aea1a869011db0e95b1883dd6f7af1695818c04f609e2",
+  "tools/probe_backend.py": "d6e8011daec2c5ff03f01ef70ef09c67f5751a342835aaa3a69e2f350555e4ef"
+}

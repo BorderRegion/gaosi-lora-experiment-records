@@ -1,0 +1,245 @@
+{
+  "version": "Gaosi-LoRA-L1-20261028",
+  "status": "DESIGN_AND_CPU_REFERENCE_ONLY",
+  "executor": "Codex",
+  "device": {
+    "primary": "musa",
+    "expected_model": "MTT S4000",
+    "expected_vram_GB": 48,
+    "ram_recommended_GB": 128,
+    "disk_recommended_GB": 200,
+    "auto_paid_resources": false,
+    "auto_shutdown": false
+  },
+  "models": {
+    "main": "Qwen/Qwen2.5-3B",
+    "scale": "Qwen/Qwen2.5-7B",
+    "debug_only": "Qwen/Qwen2.5-1.5B",
+    "revision": "RESOLVE_AND_PIN"
+  },
+  "precision": {
+    "base": "bfloat16",
+    "adapter_master": "float32",
+    "phi": "float32",
+    "fallback": "explicitly_profile_FP32_or_FP16_not_silent"
+  },
+  "lora": {
+    "rank": 32,
+    "alpha": 32,
+    "scale": 1.0,
+    "dropout": 0.0,
+    "bias": "none",
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ],
+    "embeddings_trainable": false,
+    "lm_head_trainable": false,
+    "canonicalize_at_episode_boundary": true
+  },
+  "organizations": {
+    "O1": {
+      "name": "shared_AB",
+      "r": 32
+    },
+    "O2": {
+      "name": "fixed_A_B_only",
+      "r": 32
+    },
+    "O3": {
+      "name": "dual_stage",
+      "rank_stable": 16,
+      "rank_plastic": 16,
+      "day_train": "plastic",
+      "night_train": "both",
+      "noise_scope": "both",
+      "reset_plastic_each_round": false
+    },
+    "O4": {
+      "name": "merge_restart",
+      "r": 32,
+      "merge_after": "night",
+      "persistent_cpu_fp32_base": true,
+      "noise_scope": "nonzero_current_adapter_only"
+    }
+  },
+  "noise": {
+    "primary": "N_subspace",
+    "secondary": "N_factor_O1_only",
+    "base_noise": "small_boundary_diagnostic_only",
+    "q_grid": [
+      0,
+      0.0001,
+      0.0003,
+      0.001,
+      0.003,
+      0.01,
+      0.03,
+      0.1,
+      0.3
+    ],
+    "q_train": [
+      "zero",
+      "light_calibrated",
+      "medium_calibrated"
+    ],
+    "q_apply": [
+      "zero",
+      "medium_calibrated"
+    ],
+    "zero_adapter_noise": "zero_not_a_recovery_task"
+  },
+  "phi": {
+    "features": 48,
+    "hidden": [
+      256,
+      256
+    ],
+    "main": [
+      "L",
+      "X"
+    ],
+    "L_numel": 78850,
+    "X_numel": 83795,
+    "coordinate_chunk": 262144,
+    "alpha_transform": "exp(log(4)*tanh(raw))",
+    "residual_multiplier": 0.1
+  },
+  "inner": {
+    "sequence_length": 512,
+    "micro_batch": 1,
+    "effective_tokens_per_support_route": 512,
+    "lr_candidates": [
+      3e-05,
+      0.0001,
+      0.0003
+    ],
+    "retain_weight": 0.25,
+    "retain_weight_dev": [
+      0.1,
+      0.25,
+      1.0
+    ],
+    "beta1": 0.9,
+    "beta2": 0.999,
+    "epsilon": 1e-08,
+    "epsilon_v": 1e-16,
+    "weight_decay": 0.0,
+    "global_clip_norm": 1.0,
+    "A_B_lr_ratio_candidates": [
+      1,
+      4,
+      16
+    ]
+  },
+  "meta": {
+    "seed_first": 17,
+    "confirm_seeds": [
+      29,
+      43
+    ],
+    "short_episodes": 64,
+    "short_K": 8,
+    "long_episodes": 128,
+    "long_K": 16,
+    "inner_updates_per_core_phi": 2560,
+    "objective": "terminal_K",
+    "primary_horizon": "EXACT_H2_tail_if_real_backend_verified",
+    "fallback_horizon": "H1_tail_explicitly_partial",
+    "phi_step": "once_at_episode_end",
+    "lr": 0.0003,
+    "lr_dev": [
+      0.0001,
+      0.0003
+    ],
+    "clip_norm": 1.0,
+    "reset_adapter_each_episode": true,
+    "org_specialization_episodes": 64,
+    "org_specialization_K": 8,
+    "phi_clean_O1_inner_updates": 3072
+  },
+  "outer": {
+    "language_delta_nats": 0.1,
+    "keep_delta_nats": 0.1,
+    "lambda": 1.0,
+    "lambda_dev": [
+      0.25,
+      1.0,
+      4.0
+    ],
+    "initial_noise_penalty": false
+  },
+  "evaluation": {
+    "known_curves": [
+      0,
+      8,
+      16,
+      32,
+      64
+    ],
+    "stop_rule": "selected_on_dev_then_frozen",
+    "task_metrics": [
+      "strict_EM",
+      "candidate_sequence_logprob",
+      "correct_margin"
+    ],
+    "do_not_use": "startswith",
+    "target_facts": 64,
+    "retain_facts": 448,
+    "retained_subset_fraction": 0.25,
+    "q_train_q_apply_reported_separately": true
+  },
+  "continual": {
+    "rounds_initial": 8,
+    "rounds_extension": [
+      16,
+      32
+    ],
+    "day_updates": 32,
+    "night_updates": 16,
+    "new_facts_per_round": 32,
+    "replay_bindings": 128,
+    "night_four_grid": [
+      "clean_adam",
+      "noisy_adam",
+      "clean_phi",
+      "noisy_phi"
+    ],
+    "phi_frozen": true,
+    "fresh_probe_rounds": [
+      0,
+      4,
+      8
+    ],
+    "fresh_probe_steps": [
+      1,
+      4,
+      16
+    ],
+    "fresh_probe_extra_adapter_rank": 16
+  },
+  "checkpoints": {
+    "save": [
+      "phi",
+      "adapter",
+      "inner_and_meta_optimizer",
+      "rng",
+      "data_cursor",
+      "base_revision",
+      "base_master_if_O4"
+    ],
+    "save_each_candidate_full_base": false
+  },
+  "scope": {
+    "run_RL_first_batch": false,
+    "run_SOTA_claim": false,
+    "capacity_test_before_phi": true,
+    "whole_base_erasure_claim": false,
+    "production_runner_included": false
+  }
+}

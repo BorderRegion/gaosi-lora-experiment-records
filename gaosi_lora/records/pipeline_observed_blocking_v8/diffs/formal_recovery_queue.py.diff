@@ -1,0 +1,11 @@
+--- original/formal_recovery_queue.py
++++ tools/formal_recovery_queue.py
+@@ -60,7 +60,7 @@
+ 
+ def main():
+     parser = argparse.ArgumentParser()
+-    parser.add_argument('--final-parent-job', default='final_parent_queue_v1')
++    parser.add_argument('--final-parent-job', default='final_parent_queue_observed_blocking_v8')
+     parser.add_argument('--factor-job', default='factor_recovery_queue_v1')
+     args = parser.parse_args()
+     preserve_json('records/formal_recovery_policy_v2.json', POLICY)

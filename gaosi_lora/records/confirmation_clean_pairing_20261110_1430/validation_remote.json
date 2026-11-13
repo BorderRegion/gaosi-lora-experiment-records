@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "recorded_at_utc": "2026-11-10T14:35:00.575183+00:00",
+  "scope": "isolated configuration, sample-routing and evidence-guard regression fixtures",
+  "checkpoint_io": "real_torch_save_load_CPU_only_no_tensor_training",
+  "runs": [
+    {
+      "steps": 2560,
+      "second_organization": "O2",
+      "seeds": [
+        29,
+        43
+      ],
+      "simulated_meta_entries": 10,
+      "clean_specialization_streams_paired": 128,
+      "invalid_mutations_rejected": 22,
+      "model_or_training_executed": false
+    },
+    {
+      "steps": 3584,
+      "second_organization": "O4",
+      "seeds": [
+        29,
+        43
+      ],
+      "simulated_meta_entries": 10,
+      "clean_specialization_streams_paired": 128,
+      "invalid_mutations_rejected": 22,
+      "model_or_training_executed": false
+    }
+  ],
+  "source_sha256": {
+    "records/confirmation_clean_pairing_20261110_1430/confirmation_queue_corrected.py": "8df44d6263dcc3b91757f2872e92c76cf188839591ad2aa054a108eb457633cb",
+    "records/confirmation_clean_pairing_20261110_1430/confirmation_runner_corrected.py": "9aab8c4d793989cecec6a3404121a3d105f02abc6f64108b85ee74c7ecccc256",
+    "records/confirmation_clean_pairing_20261110_1430/guarded_pipeline_corrected.py": "721e1b2dd44672a0c7c0db9c7dbde4cbbee9f42f8463199adfb6ee985825e919",
+    "records/confirmation_clean_pairing_20261110_1430/prepare.py": "dd73c2318e1c8d6a31d9e81475f04826045cd15ba855632a06189f5ef2538ace",
+    "records/confirmation_clean_pairing_20261110_1430/publish.py": "068200fc653ec9b854d9ad683bce5a78e7d2a8a54c7d15b8e85c017c8b5dacf6",
+    "records/confirmation_clean_pairing_20261110_1430/train_guarded_confirmation_paired.py": "a50932d6ed767e22e994bf103708d5e7680f47fd1c9393707c77c8126d39fa5a",
+    "records/confirmation_clean_pairing_20261110_1430/validate.py": "1a9931bc67c7da7891c5c92a9444acb2acc45a7c68cfaa0214bb625e8e24bea1"
+  },
+  "production_source_modified": false,
+  "training_submitted": false,
+  "numerical_derivatives_or_efficacy_validated": false,
+  "full_goal_complete": false
+}

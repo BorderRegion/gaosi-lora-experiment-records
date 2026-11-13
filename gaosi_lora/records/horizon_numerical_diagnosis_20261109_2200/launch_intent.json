@@ -1,0 +1,28 @@
+{
+  "status": "ISOLATED_SUPPORT_MODE_PROBE_LAUNCH_INTENT",
+  "recorded_at_utc": "2026-11-09T21:57:14.582249+00:00",
+  "name": "horizon_support_modes_K4_boundary3_s17_observed_blocking_v8",
+  "source_sha256": "014b5cf644b513c1d8746ca4d0ee149f77c721de27ac1c486f3a40ae233868a7",
+  "command": [
+    "/usr/bin/python",
+    "-u",
+    "tools/job.py",
+    "--name",
+    "horizon_support_modes_K4_boundary3_s17_observed_blocking_v8",
+    "--musa-lock",
+    "/tmp/gaosi_musa_device0.lock",
+    "--",
+    "/usr/bin/env",
+    "MUSA_LAUNCH_BLOCKING=1",
+    "/usr/bin/python",
+    "-u",
+    "records/horizon_numerical_diagnosis_20261109_2200/probe.py",
+    "--config",
+    "configs/horizon_known_K4_H2_s17_observed_blocking_v8.json",
+    "--out",
+    "runs/horizon_support_modes_K4_boundary3_s17_observed_blocking_v8"
+  ],
+  "original_sources_modified": false,
+  "original_diagnostic_restarted": false,
+  "full_goal_complete": false
+}

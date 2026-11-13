@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "scope": "Random CPU matrices/tiny model and dev fixtures only; no real3B base corruption or repair result",
+  "tests": {
+    "torch.float32_matches_independent_full_tensor_formula_and_actual_rounded_damage": "PASS",
+    "torch.bfloat16_matches_independent_full_tensor_formula_and_actual_rounded_damage": "PASS",
+    "tied_base_weights_perturbed_once_adapter_buffers_and_global_RNG_untouched": "PASS",
+    "zero_dose_is_bitwise_identity_even_with_small_chunks": "PASS",
+    "fixed_seed_names_and_chunking_reconstruct_base_bytes_exactly": "PASS",
+    "both_clean_and_noisy_base_repair_match_independent_stock_Adam": "PASS",
+    "common_pristine_reference_and_frozen_corrupted_base_have_unambiguous_loss_accounting": "PASS",
+    "resume_reconstructs_noisy_base_and_restores_optimizer_streams_pending_evaluation_bitwise": "PASS",
+    "undeclared_doses_changed_data_and_changed_calibration_are_rejected": "PASS",
+    "pretrained_model_files_are_byte_identical_after_corruption_repair_and_resume": "PASS",
+    "full_base_diagnostic_reuses_single_MUSA_leaf_lock": "PASS"
+  }
+}

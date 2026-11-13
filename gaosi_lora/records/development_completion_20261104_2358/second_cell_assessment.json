@@ -1,0 +1,57 @@
+{
+  "status": "SECOND_COMPLETED_DEVELOPMENT_CELL_WITHIN_CELL_RECOVERY_DESCRIPTIVE_REVIEW_ONLY",
+  "recorded_at_utc": "2026-11-05T01:59:13.349251+00:00",
+  "run": "runs/phi_dev_L_2048_t0_medium_s17",
+  "scope": "L-H2 phi2048, seed17, known development task, q_apply0.7, K64; second of 60 declared base development cells.",
+  "metrics": {
+    "clean": {
+      "candidate_correct": 512,
+      "strict_EM_correct": 504,
+      "query_count": 512,
+      "task_nll": 0.023651785981122126,
+      "language_nll": 2.120082481864213,
+      "frozen_cell_score": 0.9921875
+    },
+    "initial": {
+      "candidate_correct": 364,
+      "strict_EM_correct": 362,
+      "query_count": 512,
+      "task_nll": 0.3426414310627744,
+      "language_nll": 2.140740751632521,
+      "frozen_cell_score": 0.4899947299183477
+    },
+    "final": {
+      "candidate_correct": 510,
+      "strict_EM_correct": 498,
+      "query_count": 512,
+      "task_nll": 0.06108506727984276,
+      "language_nll": 2.1175214745072592,
+      "frozen_cell_score": 0.984375
+    }
+  },
+  "task_nll_residual": 0.03743328129872063,
+  "language_nll_residual": -0.0025610073569537484,
+  "task_and_keep_are_the_same_known_query_pool": true,
+  "job_wall_seconds": 7966.128138542175,
+  "interpretation": "Strong within-cell recovery after injected damage: candidate correct364 to510 and strict EM362 to498 of512. Candidate accuracy remains two errors below clean and strict EM six errors below clean. This supports measurable recovery on this known development pool; no paired Adam result exists, so method superiority, independent retention and generalization remain unproven.",
+  "evidence_sha256": {
+    "records/development_completion_20261104_2358/phi_dev_L_2048_t0_medium_s17.json": "a0fba54f09871edbdb1bb4e507d280fb56b8130ce900f3f9247bd84f3116582e",
+    "records/development_completion_20261104_2358/fetch_receipt_phi_dev_L_2048_t0_medium_s17.json": "5a819593aeaa3231554ada855eaf30ee6b207f89729ca746e128b603e959047a",
+    "records/pipeline_observer_20261104_1301/followup_20261105_0155.json": "09de8408d417c96a57f32a4a3ad16667145a48c2b582f77452781b6a9436a9e6",
+    "records/pipeline_observed_blocking_v8/tools/phi_development_queue.py": "a6a9a393235972a8cfc4f3faa6c3aa96f762185e7b8d875018eb513b7d784978"
+  },
+  "limitations": [
+    "CPU inspection of saved tensors and re-aggregation of saved predictions only; no model forward, tokenizer or derivative recomputation.",
+    "Language NLL is checked against the event ledger; no saved per-token language audit.",
+    "Model compute counters omit direct QA candidate/generation calls; they are not total evaluation FLOPs or total model forwards.",
+    "Frozen phi/base flags plus pinned source and file identities are provenance evidence, not an independent in-memory mutation trace.",
+    "No paired-method efficacy, held-out generalization, convergence or multi-seed conclusion from one completed development cell.",
+    "Known task and keep share the identical query pool; these are not independent retention measurements.",
+    "Single development cell, q0.7 and seed17; no paired Adam efficacy, cross-task, formal-set or multi-seed conclusion."
+  ],
+  "selection_policy_changed": false,
+  "scientific_receipt_generated": false,
+  "method_validated": false,
+  "full_goal_complete": false,
+  "training_modified_or_restarted": false
+}

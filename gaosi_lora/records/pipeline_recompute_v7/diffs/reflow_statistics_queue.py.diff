@@ -1,0 +1,24 @@
+--- original/reflow_statistics_queue.py
++++ tools/reflow_statistics_queue.py
+@@ -3,7 +3,7 @@
+ from pathlib import Path
+ import sys
+ 
+-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
++sys.path.insert(0, str(Path.cwd()))
+ from gaosi.reflow_statistics import POLICY
+ from organization_queue import wait_for
+ from phi_core_queue import run_job
+@@ -14,10 +14,10 @@
+     if json.loads(Path('checks/reflow_statistics_cpu.json').read_text())['status'] != 'PASS':
+         raise RuntimeError('Continuation evidence/statistics checks must pass')
+     preserve_json('records/reflow_statistics_policy_v1.json', POLICY)
+-    wait_for('records/reflow_ready_v1.json', 'reflow_queue_v1')
++    wait_for('records/reflow_ready_v1.json', 'reflow_queue_recompute_v7')
+     for stage, label in [('primary', 'primary'), ('full', 'three_seed')]:
+         if stage == 'full':
+-            wait_for('records/confirmation_ready_v1.json', 'confirmation_queue_v1')
++            wait_for('records/confirmation_ready_v1.json', 'confirmation_queue_recompute_v7')
+         out = f'analysis/reflow_{label}_v1'
+         run_job(f'reflow_statistics_{label}_v1',
+                 ['/usr/bin/python', '-u', 'tools/summarize_reflow.py', '--stage', stage, '--out', out],

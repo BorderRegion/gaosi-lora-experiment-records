@@ -1,0 +1,54 @@
+{
+  "device": "musa",
+  "torch": "2.11.0.post1",
+  "tests": {
+    "native_adapter_backward": {
+      "status": "PASS",
+      "seconds": 3.299625883984845,
+      "details": {
+        "loss": 10.623408317565918,
+        "base_grad": null
+      }
+    },
+    "toy_moment_h2": {
+      "status": "PASS",
+      "seconds": 1.0717428969801404,
+      "details": {
+        "phi_grad_norm": 0.004397485870867968,
+        "note": "toy WITH moments; no real transformer yet"
+      }
+    },
+    "bf16_matmul_backward": {
+      "status": "PASS",
+      "seconds": 0.413708122971002,
+      "details": {
+        "loss": 7.072212219238281
+      }
+    },
+    "real_qwen_lora_backward": {
+      "status": "PASS",
+      "seconds": 10.020964581985027,
+      "details": {
+        "loss": 5.462655544281006,
+        "grad_sq_sum": 92.84195156325586
+      }
+    },
+    "real_qwen_lora_sgd_h2_backend_probe": {
+      "status": "PASS",
+      "seconds": 1.3501333870226517,
+      "details": {
+        "loss": 5.42038106918335,
+        "raw_step_gradient": -0.02254377119243145,
+        "note": "two-step SGD backend probe, NOT production Gaosi Adam-state H2"
+      }
+    }
+  },
+  "torch_musa": "2.11.0.post1+b431668",
+  "device_name": "MTT S4000",
+  "real_model": {
+    "path": "/root/autodl-tmp/models/Qwen2.5-3B",
+    "injected_modules": 252,
+    "trainable_parameters": 59867136
+  },
+  "scope": "compatibility probe, not scientific effect evidence"
+}

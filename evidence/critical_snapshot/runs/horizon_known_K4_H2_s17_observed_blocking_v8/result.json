@@ -1,0 +1,33 @@
+{
+  "status": "FAIL",
+  "diagnostic_status": "ERROR",
+  "config": {
+    "horizon_manifest": "records/horizon_plan_v1.json",
+    "out": "runs/horizon_known_K4_H2_s17_observed_blocking_v8",
+    "data": "data/synthetic/dev_parent.jsonl",
+    "retain_data": "data/synthetic/dev_parent.jsonl",
+    "language_support": "data/language/inner.jsonl",
+    "language_query": "data/language/dev.jsonl",
+    "parent": "runs/parent_3b_dev_parent_r32_s17_extend512_v2/latest.pt",
+    "phi": "runs/phi_mix_O1_X_H2_core_s17_observed_blocking_v8/phi_2560.pt",
+    "architecture": "X",
+    "device": "musa",
+    "K": 4,
+    "tail": 2,
+    "q": 0.7,
+    "inner_lr": 0.0003,
+    "seq": 512,
+    "effective_tokens": 512,
+    "retain_weight": 0.25,
+    "penalty": 1.0,
+    "chunk": 262144,
+    "data_seed": 1701,
+    "query_seed": 1702,
+    "noise_seed": 1729,
+    "reference_endpoint": "runs/horizon_known_K4_H1_s17_observed_blocking_v8/endpoint.pt"
+  },
+  "error": "AssertionError('Tensor-likes are not close!\\n\\nMismatched elements: 43810 / 65536 (66.8%)\\nGreatest absolute difference: 4.427507519721985e-05 at index (5, 813) (up to 1e-06 allowed)\\nGreatest relative difference: 0.8546796441078186 at index (3, 1930) (up to 1e-05 allowed)')",
+  "traceback": "Traceback (most recent call last):\n  File \"/root/autodl-tmp/gaosi_lora/gaosi/horizon.py\", line 227, in main\n    run(config)\n  File \"/root/autodl-tmp/gaosi_lora/gaosi/horizon.py\", line 185, in run\n    comparisons = compare_trees(end, other)\n  File \"/root/autodl-tmp/gaosi_lora/gaosi/horizon.py\", line 89, in compare_trees\n    visit(observed, expected)\n  File \"/root/autodl-tmp/gaosi_lora/gaosi/horizon.py\", line 81, in visit\n    visit(x[key], y[key])\n  File \"/root/autodl-tmp/gaosi_lora/gaosi/horizon.py\", line 81, in visit\n    visit(x[key], y[key])\n  File \"/root/autodl-tmp/gaosi_lora/gaosi/horizon.py\", line 72, in visit\n    torch.testing.assert_close(x, y, atol=atol, rtol=rtol)\n  File \"/usr/local/lib/python3.10/dist-packages/torch/testing/_comparison.py\", line 1600, in assert_close\n    raise error_metas[0].to_error(msg)\nAssertionError: Tensor-likes are not close!\n\nMismatched elements: 43810 / 65536 (66.8%)\nGreatest absolute difference: 4.427507519721985e-05 at index (5, 813) (up to 1e-06 allowed)\nGreatest relative difference: 0.8546796441078186 at index (3, 1930) (up to 1e-05 allowed)\n",
+  "derivative_obtained": false,
+  "scope": "An execution limitation does not provide the missing full derivative."
+}

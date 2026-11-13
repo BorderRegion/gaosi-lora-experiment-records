@@ -1,0 +1,10 @@
+## 2026-11-02 23:48：X 正式训练达到 1280/2560 次更新（50%）
+
+北京时间23:46:54的既有半小时采样确认，phi_mix_O1_X_H2_core_s17_observed_blocking_v8已提交112/192个episode、1280/2560次inner更新，达到本轮更新预算的50%；这不是全协议完成比例。112份已提交raw梯度全部有限，最大norm=0.5486493067867867；复制检查点next_episode112/inner_updates1280、phi及Adam有限、配置相同，SHA=c9b935a54a607aa5ae456b68e47b57bac457c8e316c84faf4616ae15212d785e。episode112虽已记录16个inner步骤，尚未提交，不计入上述进度。
+
+归档records/pipeline_monitor_20261102_154646_utc/的SHA=6fda1ddec477e8d5aa614ded142c544e9b9dd3bd4d5a67462a1e4835b794e5cb；85项文件已独立核验。复核records/pipeline_review_20261102_1547.json，SHA=b62cbcd51c3a6141ce80d52b6cfec906058c6620fc4ffcfa3cdb083f860122e5；进度records/pipeline_observer_20261101_1220/progress_20261102_1547.json，SHA=1256c0431024a0e70132e12f50b8ea1c83b6e9718c808e22b986b1b44929e453。两份记录均已同步并核SHA。15个控制器存活，无告警；原只读观察器2961121/start ticks78120930保持运行，累计55次采样，下次北京时间11月3日00:16:54，继续每1800秒一次。
+
+L完整192轮/2560步已完成并复核，X仍在运行。X结束后需要完整产物审计、保存梯度的Adam重放和独立科学复核，再按证据发布绑定receipt。运行稳定不能证明效果优于Adam或MUSA高阶导数全面正确；method_validated=false，完整目标尚未完成。共同warm H1、开发选择及匹配延长、四组织与clean、正式恢复/选择性/回流/持续、7B、统计、独立phi seeds29/43及协议条件追加范围保持。完整协议暂无可靠完成日期。
+
+本次只更新记录和进度文档。以下保留各端独立历史。
+

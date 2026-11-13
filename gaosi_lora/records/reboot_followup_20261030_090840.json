@@ -1,0 +1,130 @@
+{
+  "observed_utc": "2026-10-30T01:08:40.861574+00:00",
+  "scope": "Brief restart and storage follow-up; active training preserved",
+  "container_start_utc": "2026-10-29T08:36:16.306033+00:00",
+  "data_disk_total_GiB": 1050.0,
+  "data_disk_free_GiB": 983.47,
+  "system_disk_free_GiB": 18.08,
+  "active_job": "phi_mix_O1_L_H2_core_s17_recompute_v7",
+  "identity_live": true,
+  "pid": 344804,
+  "last_event": {
+    "event": "inner",
+    "utc": "2026-10-30T01:08:17.263594+00:00",
+    "process_wall_seconds": 12791.022160053253,
+    "episode": 54,
+    "k": 8,
+    "ld": 4.08423256885726e-05,
+    "lr": 1.0625652074813843,
+    "task_tokens": 518,
+    "language_tokens": 1022,
+    "support_forwards": 18,
+    "keep_tokens": 518,
+    "keep_forwards": 8,
+    "step_seconds": 13.971497535705566,
+    "exact_window": true,
+    "cpu_rss_bytes": 8095211520,
+    "allocated_bytes": 17654403072,
+    "reserved_bytes": 34007416832,
+    "peak_allocated_bytes": 31309677056,
+    "peak_reserved_bytes": 34007416832
+  },
+  "completed_episodes": 54,
+  "last_episode_end": {
+    "event": "episode_end",
+    "utc": "2026-10-30T01:06:00.341763+00:00",
+    "process_wall_seconds": 12654.100336313248,
+    "episode": 53,
+    "inner_updates": 432,
+    "phi_grad_norm": 0.04205676376514146,
+    "compute_counters": {
+      "loss_forwards": 14564,
+      "loss_backwards": 14350,
+      "input_tokens": 7251235,
+      "supervised_tokens": 1450929,
+      "hessian_vector_products": 2162
+    },
+    "query_task": 0.03904431313276291,
+    "query_language": 2.109830617904663,
+    "query_keep": 0.03904431313276291,
+    "objective": 0.03904431313276291
+  },
+  "checkpoints": {
+    "latest.pt": {
+      "bytes": 968309,
+      "mtime_utc": "2026-10-30T01:06:00.346575+00:00"
+    }
+  },
+  "controllers": [
+    {
+      "name": "phi_core_queue_recompute_v7",
+      "live": true
+    },
+    {
+      "name": "phi_mix_O1_L_H2_core_s17_recompute_v7",
+      "live": true
+    },
+    {
+      "name": "phi_development_queue_recompute_v7",
+      "live": true
+    },
+    {
+      "name": "organization_queue_recompute_v7",
+      "live": true
+    },
+    {
+      "name": "final_parent_queue_recompute_v7",
+      "live": true
+    },
+    {
+      "name": "formal_recovery_queue_recompute_v7",
+      "live": true
+    },
+    {
+      "name": "reflow_queue_recompute_v7",
+      "live": true
+    },
+    {
+      "name": "continual_queue_recompute_v7",
+      "live": true
+    },
+    {
+      "name": "seven_b_queue_recompute_v7",
+      "live": true
+    },
+    {
+      "name": "horizon_queue_recompute_v7",
+      "live": true
+    },
+    {
+      "name": "confirmation_queue_recompute_v7",
+      "live": true
+    },
+    {
+      "name": "noise_controls_queue_recompute_v7",
+      "live": true
+    },
+    {
+      "name": "recovery_statistics_queue_recompute_v7",
+      "live": true
+    },
+    {
+      "name": "selective_statistics_queue_recompute_v7",
+      "live": true
+    },
+    {
+      "name": "reflow_statistics_queue_recompute_v7",
+      "live": true
+    },
+    {
+      "name": "continual_statistics_queue_recompute_v7",
+      "live": true
+    }
+  ],
+  "gpu_device_nodes": [
+    "/dev/dri/renderD131",
+    "/dev/dri/card4"
+  ],
+  "changes_to_running_jobs": false,
+  "remote_record": "/root/autodl-tmp/gaosi_lora/records/reboot_followup_20261030_090840.json"
+}

@@ -1,0 +1,26 @@
+--- records/clean_schedule_pairing_20261110_1407/organization_queue_corrected.py
++++ records/organization_clean_pairing_20261110_1620/organization_queue_corrected_v2.py
+@@ -154,9 +154,22 @@
+     clean_result = train(f'phi_clean_O1_{architecture}_matched_s17_observed_blocking_v8', clean)
+     assert clean_result['inner_updates'] == 512
+     assert clean_core_result['inner_updates'] + clean_result['inner_updates'] == plan['total_O1_mix_clean_inner_steps']
++    # gaosi.meta writes settings to config.json; its result.json deliberately
++    # omits config. Validate the actual sidecars instead of assuming a field.
++    clean_configs = []
++    for result, settings in [(clean_core_result, clean_core), (clean_result, clean)]:
++        directory = Path(result['checkpoint']).parent
++        saved = json.loads((directory / 'config.json').read_text())
++        if (saved != dict(settings, out=str(directory))
++                or Path(result['checkpoint']) != directory / 'latest.pt'
++                or result['inner_updates'] != sum(settings['episode_K'])):
++            raise ValueError('Actual clean result/config/checkpoint differs from its paired stage')
++        clean_configs.append(saved)
++    if clean_configs[1]['initial_phi'] != clean_core_result['checkpoint']:
++        raise ValueError('Clean specialization does not inherit its actual clean core')
+     preserve_json('records/clean_training_stage_pairing_v1.json', {
+         'status': 'TWO_ACTUAL_CLEAN_STAGES_COMPLETED_AND_REVIEWED',
+-        'core': clean_core_result['config']['out'], 'specialization': clean_result['config']['out'],
++        'core': clean_configs[0]['out'], 'specialization': clean_configs[1]['out'],
+         'core_inner_steps': clean_core_result['inner_updates'],
+         'specialization_inner_steps': clean_result['inner_updates'],
+         'total_training_inner_steps': plan['total_O1_mix_clean_inner_steps'],

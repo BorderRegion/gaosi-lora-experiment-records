@@ -1,0 +1,10 @@
+--- tools/build_observed_v8_pipeline.py
++++ candidate/build_observed_v8_pipeline.py
+@@ -29,6 +29,7 @@
+         ('_specialize512_s17', '_specialize512_s17_observed_blocking_v8'),
+         ('_matched_s17', '_matched_s17_observed_blocking_v8'),
+         ('_s{seed}_v1', '_s{seed}_observed_blocking_v8'),
++        ('_s{s}_v1', '_s{s}_observed_blocking_v8'),
+         ('_s17_v1', '_s17_observed_blocking_v8'),
+     ]:
+         text = text.replace(old, new)

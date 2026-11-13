@@ -1,0 +1,35 @@
+## 2026-10-29 21:31 主恢复统计入口接入，真实汇总仍待训练
+
+本轮实际进展：新增gaosi/recovery_statistics.py、tools/summarize_recovery.py及
+recovery_statistics_queue.py。records/recovery_statistics_policy_v1.json预声明主恢复统计，
+不选择训练设置。读取完整正式主网格及seed29/43独立复验的原始终点query证据；核实际primary K、
+完整绑定覆盖、唯一更新/终点评估事件、query ID与正确答案、指标复算、冻结phi哈希及训练种子身份，
+逐对核相同起点文件SHA和support/noise/数据设置。缺测或重复网格拒绝输出完整摘要。
+
+分别报告known、fact、integer-affine rule及fact/rule等权组合。候选准确率和strict EM分开；
+事实先实体内平均，再world等权，再family等权。known的三个噪声重复先在实体内平均，
+不当作独立phi训练。预声明2000次配对分层percentile bootstrap，analysis seed7719；外层
+抽phi种子，world/entity抽样在所有种子间共享，以保留共享任务的配对。seed17完整32world
+结果明确条件于单一已训练phi；三seed只用预声明known+首4fact/首4rule共同子集，并另外报告
+seed17和seed29/43两次确认，保留逐seed估计。3个种子的区间仅描述性，条件于共享父adapter
+和固定任务族，不自动给优越结论；没有把query/noise/round当独立训练。原始clean/noisy/final
+指标、覆盖、计算计数、更新耗时和显存另存CSV，NLL/成本未套实体bootstrap区间。
+
+checks/recovery_statistics_cpu.json本地及远程10项PASS。测试在隔离临时目录显式模拟
+345条主seed和525条三seed生产格式轨迹，走真实解析/统计/JSON与CSV导出；手算不等大小
+world/family权重、共同任务/种子层次、重复噪声、单rule不可虚构query独立性、错误K64替代、
+不同初始字节/support种子、重复query、指标不一致、网格缺失/重复、轨迹事件和覆盖均有验证。
+模拟只验证统计逻辑，不是实际训练或效果数据。远程job recovery_statistics_cpu_v1真实PASS，
+10.46秒；检查hash0648b5819a134f39720918e93315a3dd1c0988cbcc2adf9565728a07a941ff01。
+
+recovery_statistics_queue_v1已启动，PID92496/start ticks55468992非Z、身份匹配；
+启动时formal_recovery_queue_v2和confirmation_queue_v1身份均存活。先等完整主网格，再等
+两个独立phi seed复验；真实统计尚未运行。records/recovery_statistics_start_20261029.json
+及records/recovery_statistics_implementation_v1/保存证据与源码hash。生产训练/recover数值源码
+本轮未改，recover仍955babb1fb4303e6b367ba848cf909a0d94442620d27a031e215730cf76f44c1。
+本轮未提前轮询训练GPU；最近常规简查21:14，下次仍约21:44，稳定后每30分钟。
+
+该入口只承担主恢复统计；选择性/回流、持续组织与共同probe、7B、噪声/边界/H4-H8诊断的
+最终报告、条件真实文本和更长流判断、逐项完成审计仍待后续，不把本队列当完整最终报告。
+完整实验目标active，上轮为实际progress，本轮同样有实现/验证/实际接队列的progress。
+

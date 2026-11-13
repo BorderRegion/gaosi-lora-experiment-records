@@ -1,0 +1,19 @@
+{
+  "name": "continual_cost_metadata_cpu_v1",
+  "command": [
+    "/usr/bin/python",
+    "-u",
+    "tools/validate_continual.py",
+    "--out",
+    "checks/continual_cost_metadata_cpu.json"
+  ],
+  "wrapper_pid": 101008,
+  "started_at_utc": "2026-10-29T13:58:50.101358+00:00",
+  "start_epoch": 1793282330.1013768,
+  "status": "PASS",
+  "child_pid": 101009,
+  "child_proc_start_ticks": "55639960",
+  "exit_code": 0,
+  "wall_seconds": 110.6645929813385,
+  "finished_at_utc": "2026-10-29T14:00:40.765976+00:00"
+}

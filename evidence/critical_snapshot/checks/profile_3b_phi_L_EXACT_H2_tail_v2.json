@@ -1,0 +1,65 @@
+{
+  "status": "PASS",
+  "scope": "real MUSA production transition readiness, not learned denoising effect",
+  "command": {
+    "checkpoint": "runs/capacity_3b_all7_r32_lr1e-4_s17_v2/latest.pt",
+    "out": "checks/profile_3b_phi_L_EXACT_H2_tail_v2.json",
+    "seq": 128,
+    "effective_tokens": 32,
+    "architecture": "L",
+    "horizon": "EXACT_H2_tail"
+  },
+  "model": {
+    "path": "/root/autodl-tmp/models/Qwen2.5-3B",
+    "rank": 32,
+    "targets": "all7",
+    "organization": "O1",
+    "adapter_parameters": 59867136,
+    "trainable_parameters": 59867136,
+    "base_dtype": "torch.bfloat16",
+    "adapter_dtypes": [
+      "torch.float32"
+    ],
+    "attention": "eager",
+    "use_cache": false,
+    "actual_device": "musa:0"
+  },
+  "seconds": 24.757033109664917,
+  "terminal": {
+    "query_task": 1.1312772035598755,
+    "query_language": 1.9700523614883423,
+    "query_keep": 1.1312772035598755,
+    "objective": 1.3237602710723877
+  },
+  "phi_gradient_norm": 1.5410601823406194,
+  "memory": {
+    "cpu_rss_bytes": 7118024704,
+    "allocated_bytes": 7487208960,
+    "reserved_bytes": 42039508992,
+    "peak_allocated_bytes": 40234354688,
+    "peak_reserved_bytes": 42039508992
+  },
+  "inner_steps": 2,
+  "full_state_components": [
+    "adapter",
+    "mD",
+    "mR",
+    "v",
+    "loss_ema",
+    "gradient_cosine_ema",
+    "update_ema",
+    "previous_loss",
+    "last_relative_update"
+  ],
+  "noise_summary": {
+    "q": 0.03,
+    "scheme": "subspace",
+    "noise_seed": 17,
+    "QR_device": "cpu",
+    "boundary_seconds": 1.294724702835083,
+    "composed_clean_squared_raw": 23.346322194689574,
+    "composed_noisy_squared_raw": 23.346669797870682,
+    "composed_damage_squared_raw": 0.7055707515516383,
+    "composed_relative_damage": 0.1738445368528965
+  }
+}

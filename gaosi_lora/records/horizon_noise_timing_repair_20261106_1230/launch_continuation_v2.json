@@ -1,0 +1,147 @@
+{
+  "status": "ONE_DISTINCT_V2_POSTPROCESSING_CONTINUATION_STARTED_REUSING_COMPLETED_FIRST_H1",
+  "launched_at_utc": "2026-11-06T12:33:34.989190+00:00",
+  "job": {
+    "name": "phi_horizon_effect_comparison_s17_noise_timing_v2",
+    "command": [
+      "/usr/bin/python",
+      "-u",
+      "records/horizon_effect_comparison_20261103_1005/compare_noise_timing_v2.py",
+      "run"
+    ],
+    "wrapper_pid": 577744,
+    "started_at_utc": "2026-11-06T12:33:34.029276+00:00",
+    "start_epoch": 1793968414.0292954,
+    "status": "RUNNING",
+    "child_pid": 577745,
+    "child_proc_start_ticks": "124248353"
+  },
+  "controller_identity": {
+    "pid": 577745,
+    "start_ticks": "124248353"
+  },
+  "command": [
+    "/usr/bin/python",
+    "-u",
+    "tools/job.py",
+    "--name",
+    "phi_horizon_effect_comparison_s17_noise_timing_v2",
+    "--",
+    "/usr/bin/python",
+    "-u",
+    "records/horizon_effect_comparison_20261103_1005/compare_noise_timing_v2.py",
+    "run"
+  ],
+  "comparison_source_sha256": "ef3208e1a8a173c864fd287dbd51a418037c096bc60b9c8391aff9bbc60bd37a",
+  "launcher_sha256": "39e0e6b87e15e8e0f9c7426b646697d159a4cefda8d0f8f23e5879a40b1a6676",
+  "predecessor_preserved": {
+    "name": "phi_horizon_effect_comparison_s17_v1",
+    "command": [
+      "/usr/bin/python",
+      "-u",
+      "records/horizon_effect_comparison_20261103_1005/compare.py",
+      "run"
+    ],
+    "wrapper_pid": 501760,
+    "started_at_utc": "2026-11-06T08:00:21.450502+00:00",
+    "start_epoch": 1793952021.450523,
+    "status": "FAIL",
+    "child_pid": 501761,
+    "child_proc_start_ticks": "122609095",
+    "exit_code": 1,
+    "wall_seconds": 14514.536902666092,
+    "finished_at_utc": "2026-11-06T12:02:15.987432+00:00"
+  },
+  "predecessor_job_sha256": "cc90e2361c9cb7e9edae60a9d0e9d5727a10c7db9f524748471ce2381633fae6",
+  "validation_sha256": "f1e973cb3e262d6dac9d38faa2ee12272438c87b83e0312c2ff431a6ef70f437",
+  "first_H1_audit_sha256": "2b37bf680a34cdb6d764aacdfc467e243e75f580734ec43e4eab361c6e5f332d",
+  "completed_first_H1_files_unchanged": {
+    "/root/autodl-tmp/gaosi_lora/runs/phi_horizon_L_H1_2560_t0_clean_s17_v1/result.json": "4676d08e937b6744081ea68a4b0ac7bacc33c9b561bb9f33b3b45e0c5a5efef6",
+    "/root/autodl-tmp/gaosi_lora/runs/phi_horizon_L_H1_2560_t0_clean_s17_v1/latest.pt": "eba327d131d4ad8a771c6db054934b0c70c1f9f945176608a5272302a2f520b5",
+    "/root/autodl-tmp/gaosi_lora/records/jobs/phi_horizon_L_H1_2560_t0_clean_s17_v1.json": "d309dd9cf4aab11430628758a114d95b0069005436ca699f55ad17db2b181ae0",
+    "/root/autodl-tmp/gaosi_lora/configs/phi_horizon_L_H1_2560_t0_clean_s17_v1.json": "bbcbddc0ea99ff252cd9daa149bfd4bf61ba88ec78c1884e19f8281509dbc0a2"
+  },
+  "original_15_controller_identities_unchanged": {
+    "phi_core_queue_observed_blocking_v8": {
+      "status": "PASS"
+    },
+    "phi_development_queue_observed_blocking_v8": {
+      "status": "RUNNING",
+      "pid": 761614,
+      "start_ticks": "80739105"
+    },
+    "organization_queue_observed_blocking_v8": {
+      "status": "RUNNING",
+      "pid": 761616,
+      "start_ticks": "80739115"
+    },
+    "final_parent_queue_observed_blocking_v8": {
+      "status": "RUNNING",
+      "pid": 761618,
+      "start_ticks": "80739125"
+    },
+    "formal_recovery_queue_observed_blocking_v8": {
+      "status": "RUNNING",
+      "pid": 761620,
+      "start_ticks": "80739135"
+    },
+    "reflow_queue_observed_blocking_v8": {
+      "status": "RUNNING",
+      "pid": 761624,
+      "start_ticks": "80739145"
+    },
+    "continual_queue_observed_blocking_v8": {
+      "status": "RUNNING",
+      "pid": 761626,
+      "start_ticks": "80739155"
+    },
+    "seven_b_queue_observed_blocking_v8": {
+      "status": "RUNNING",
+      "pid": 761628,
+      "start_ticks": "80739165"
+    },
+    "horizon_queue_observed_blocking_v8": {
+      "status": "RUNNING",
+      "pid": 761630,
+      "start_ticks": "80739175"
+    },
+    "confirmation_queue_observed_blocking_v8": {
+      "status": "RUNNING",
+      "pid": 761695,
+      "start_ticks": "80739193"
+    },
+    "noise_controls_queue_observed_blocking_v8": {
+      "status": "RUNNING",
+      "pid": 761697,
+      "start_ticks": "80739205"
+    },
+    "recovery_statistics_queue_observed_blocking_v8": {
+      "status": "RUNNING",
+      "pid": 761699,
+      "start_ticks": "80739216"
+    },
+    "selective_statistics_queue_observed_blocking_v8": {
+      "status": "RUNNING",
+      "pid": 761701,
+      "start_ticks": "80739226"
+    },
+    "reflow_statistics_queue_observed_blocking_v8": {
+      "status": "RUNNING",
+      "pid": 761703,
+      "start_ticks": "80739236"
+    },
+    "continual_statistics_queue_observed_blocking_v8": {
+      "status": "RUNNING",
+      "pid": 761705,
+      "start_ticks": "80739246"
+    }
+  },
+  "controller_instance_lock_inode": 30085088224,
+  "device_lock_inode": 31148027670,
+  "remaining_numerical_jobs": 9,
+  "completed_numerical_jobs_retried": false,
+  "training_sources_or_configs_changed": false,
+  "original_controllers_restarted": false,
+  "method_validated": false,
+  "full_goal_complete": false
+}

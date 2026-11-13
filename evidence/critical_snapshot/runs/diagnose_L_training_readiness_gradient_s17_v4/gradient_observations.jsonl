@@ -1,0 +1,2 @@
+{"event": "observed_training_clip", "episode": 0, "all_raw_gradients_finite": true, "raw_norm_cpu_fp64": 0.00014438713547735156, "original_clip_return": 0.00014438714424613863, "original_clip_return_finite": true, "clipped_norm_cpu_fp64": 0.00014438713547735156, "all_clipped_gradients_finite": true}
+{"event": "observed_training_clip", "episode": 1, "all_raw_gradients_finite": true, "raw_norm_cpu_fp64": 1.4829657060088282e+36, "original_clip_return": null, "original_clip_return_finite": false, "clipped_norm_cpu_fp64": 0.0, "all_clipped_gradients_finite": true}

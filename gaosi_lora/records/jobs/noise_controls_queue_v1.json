@@ -1,0 +1,14 @@
+{
+  "name": "noise_controls_queue_v1",
+  "command": [
+    "/usr/bin/python",
+    "-u",
+    "tools/noise_controls_queue.py"
+  ],
+  "wrapper_pid": 88811,
+  "started_at_utc": "2026-10-29T13:17:08.886770+00:00",
+  "start_epoch": 1793279828.886793,
+  "status": "RUNNING",
+  "child_pid": 88812,
+  "child_proc_start_ticks": "55389839"
+}
